@@ -13,7 +13,6 @@
 ## 目录
 
 - [ES 与 ZO 的使用方式不同](#es-与-zo-的使用方式不同)
-- [文献概览](#文献概览)
 - [进化策略](#进化策略)
   - [预训练](#预训练)
   - [单轮推理与对齐](#单轮推理与对齐)
@@ -43,15 +42,6 @@ ES 和双点 ZO 都可以看作平滑目标函数的估计方法，但现有大�
 这里描述的是主流实践中的分类，而不是数学上的硬性限制。ES 也可以最小化监督损失；当基于奖励的 ZO 使用大量扰动时，其形式也会逐渐接近 ES。
 
 <!-- GENERATED CATALOG:START -->
-## 文献概览
-
-当前共收录 **50 篇论文**。下列表格和图表均由 [`data/papers.json`](data/papers.json) 自动生成。
-
-<p align="center">
-  <img src="assets/year-distribution-zh.svg" width="48%" alt="论文年度分布">
-  <img src="assets/category-distribution-zh.svg" width="48%" alt="论文类别分布">
-</p>
-
 ## 进化策略
 
 ### 预训练

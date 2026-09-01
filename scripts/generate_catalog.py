@@ -1,14 +1,12 @@
 #!/usr/bin/env python3
-"""Generate the bilingual paper tables and distribution charts."""
+"""Generate the bilingual paper tables."""
 
 from __future__ import annotations
 
 import argparse
-import html
 import json
 import re
 import sys
-from collections import Counter
 from pathlib import Path
 
 
@@ -148,30 +146,12 @@ def render_catalog(papers: list[dict[str, str]], language: str) -> str:
     if language == "en":
         lines.extend(
             [
-                "## Literature overview",
-                "",
-                f"**{len(papers)} papers** are currently included. The tables and figures below are generated from [`data/papers.json`](data/papers.json).",
-                "",
-                '<p align="center">',
-                '  <img src="assets/year-distribution.svg" width="48%" alt="Papers by year">',
-                '  <img src="assets/category-distribution.svg" width="48%" alt="Papers by category">',
-                "</p>",
-                "",
                 "## Evolution strategies",
             ]
         )
     else:
         lines.extend(
             [
-                "## 文献概览",
-                "",
-                f"当前共收录 **{len(papers)} 篇论文**。下列表格和图表均由 [`data/papers.json`](data/papers.json) 自动生成。",
-                "",
-                '<p align="center">',
-                '  <img src="assets/year-distribution-zh.svg" width="48%" alt="论文年度分布">',
-                '  <img src="assets/category-distribution-zh.svg" width="48%" alt="论文类别分布">',
-                "</p>",
-                "",
                 "## 进化策略",
             ]
         )
@@ -240,96 +220,10 @@ def replace_catalog(path: Path, language: str, catalog: str) -> None:
     path.write_text(updated, encoding="utf-8")
 
 
-def svg_document(width: int, height: int, body: str) -> str:
-    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img">
-<style>
-  text {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; fill: #24292f; }}
-  .title {{ font-size: 20px; font-weight: 700; }}
-  .label {{ font-size: 13px; }}
-  .value {{ font-size: 13px; font-weight: 700; }}
-  @media (prefers-color-scheme: dark) {{
-    text {{ fill: #e6edf3; }}
-    .background {{ fill: #161b22; stroke: #30363d; }}
-  }}
-</style>
-<rect class="background" width="100%" height="100%" rx="12" fill="#f6f8fa" stroke="#d0d7de"/>
-{body}
-</svg>
-"""
-
-
-def year_svg(papers: list[dict[str, str]], language: str) -> str:
-    counts = Counter(paper["date"][:4] for paper in papers)
-    years = sorted(counts)
-    width, height = 620, 330
-    left, right, top, bottom = 58, 24, 58, 48
-    chart_width = width - left - right
-    chart_height = height - top - bottom
-    slot = chart_width / len(years)
-    bar_width = min(72, slot * 0.58)
-    maximum = max(counts.values())
-    title = "Papers by year" if language == "en" else "论文年度分布"
-    body = [f'<text x="24" y="34" class="title">{title}</text>']
-    body.append(
-        f'<line x1="{left}" y1="{top + chart_height}" x2="{width - right}" y2="{top + chart_height}" stroke="#8c959f"/>'
-    )
-    for index, year in enumerate(years):
-        count = counts[year]
-        bar_height = chart_height * count / maximum
-        x = left + slot * index + (slot - bar_width) / 2
-        y = top + chart_height - bar_height
-        body.extend(
-            [
-                f'<rect x="{x:.1f}" y="{y:.1f}" width="{bar_width:.1f}" height="{bar_height:.1f}" rx="5" fill="#2f81f7"/>',
-                f'<text x="{x + bar_width / 2:.1f}" y="{y - 8:.1f}" text-anchor="middle" class="value">{count}</text>',
-                f'<text x="{x + bar_width / 2:.1f}" y="{height - 20}" text-anchor="middle" class="label">{year}</text>',
-            ]
-        )
-    return svg_document(width, height, "\n".join(body))
-
-
-def category_svg(papers: list[dict[str, str]], language: str) -> str:
-    counts = Counter(paper["category"] for paper in papers)
-    width = 760
-    row_height = 31
-    top = 58
-    height = top + len(CATEGORIES) * row_height + 24
-    label_width = 315 if language == "en" else 235
-    chart_left = label_width + 24
-    chart_width = width - chart_left - 52
-    maximum = max(counts.values())
-    title = "Papers by category" if language == "en" else "论文类别分布"
-    body = [
-        f'<text x="24" y="34" class="title">{title}</text>',
-        '<rect x="625" y="18" width="12" height="12" rx="2" fill="#a371f7"/>',
-        '<text x="643" y="29" class="label">ES</text>',
-        '<rect x="686" y="18" width="12" height="12" rx="2" fill="#2f81f7"/>',
-        '<text x="704" y="29" class="label">ZO</text>',
-    ]
-    colors = {"ES": "#a371f7", "ZO": "#2f81f7"}
-    for index, category in enumerate(CATEGORIES):
-        count = counts[category["key"]]
-        y = top + index * row_height
-        bar_width = chart_width * count / maximum
-        label = html.escape(category[language])
-        body.extend(
-            [
-                f'<text x="24" y="{y + 17}" class="label">{label}</text>',
-                f'<rect x="{chart_left}" y="{y + 3}" width="{bar_width:.1f}" height="20" rx="4" fill="{colors[category["family"]]}"/>',
-                f'<text x="{chart_left + bar_width + 8:.1f}" y="{y + 18}" class="value">{count}</text>',
-            ]
-        )
-    return svg_document(width, height, "\n".join(body))
-
-
 def generated_files(papers: list[dict[str, str]]) -> dict[Path, str]:
     return {
         ROOT / "README.md": render_catalog(papers, "en"),
         ROOT / "README_zh.md": render_catalog(papers, "zh"),
-        ROOT / "assets" / "year-distribution.svg": year_svg(papers, "en"),
-        ROOT / "assets" / "year-distribution-zh.svg": year_svg(papers, "zh"),
-        ROOT / "assets" / "category-distribution.svg": category_svg(papers, "en"),
-        ROOT / "assets" / "category-distribution-zh.svg": category_svg(papers, "zh"),
     }
 
 
@@ -375,7 +269,7 @@ def main() -> int:
             replace_catalog(path, "zh" if path.name == "README_zh.md" else "en", generated)
         else:
             path.write_text(generated, encoding="utf-8")
-    print(f"Generated bilingual tables and charts for {len(papers)} papers.")
+    print(f"Generated bilingual tables for {len(papers)} papers.")
     return 0
 
 

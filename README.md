@@ -13,7 +13,6 @@ This list covers persistent model parameters: full weights, adapters, low-rank s
 ## Contents
 
 - [ES and ZO are used differently](#es-and-zo-are-used-differently)
-- [Literature overview](#literature-overview)
 - [Evolution strategies](#evolution-strategies)
   - [Pretraining](#pretraining)
   - [Single-turn reasoning and alignment](#single-turn-reasoning-and-alignment)
@@ -43,15 +42,6 @@ Why this split matters: a terminal reasoning reward is often sparse, discrete, a
 This is a taxonomy of prevailing practice, not a mathematical prohibition. ES can minimize a supervised loss, and reward-based ZO with many perturbations begins to look like ES.
 
 <!-- GENERATED CATALOG:START -->
-## Literature overview
-
-**50 papers** are currently included. The tables and figures below are generated from [`data/papers.json`](data/papers.json).
-
-<p align="center">
-  <img src="assets/year-distribution.svg" width="48%" alt="Papers by year">
-  <img src="assets/category-distribution.svg" width="48%" alt="Papers by category">
-</p>
-
 ## Evolution strategies
 
 ### Pretraining

@@ -16,7 +16,7 @@ Open an issue or pull request with:
 
 Add new papers to [`data/papers.json`](data/papers.json) in reverse chronological order within the most specific category. Prefer arXiv, ACL Anthology, OpenReview, PMLR, or the publisher page over secondary summaries. Each record contains the shared title and date, its category key, bilingual descriptions, and bilingual resource links.
 
-After editing the data, regenerate both README tables and all distribution charts:
+After editing the data, regenerate both README tables:
 
 ```bash
 python3 scripts/generate_catalog.py
