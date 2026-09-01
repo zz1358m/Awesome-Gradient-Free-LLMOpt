@@ -1,0 +1,50 @@
+name: Add a paper
+description: Suggest an ES × LLM or ZO × LLM paper
+title: "[Paper] "
+labels:
+  - paper
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Paper title
+    validations:
+      required: true
+  - type: input
+    id: paper_url
+    attributes:
+      label: Primary paper URL
+      description: Prefer arXiv, ACL Anthology, OpenReview, PMLR, or the publisher page.
+    validations:
+      required: true
+  - type: input
+    id: code_url
+    attributes:
+      label: Official code URL
+  - type: dropdown
+    id: family
+    attributes:
+      label: Family
+      options:
+        - Evolution strategies for LLM optimization
+        - Zeroth-order LLM fine-tuning
+        - Prompt or reasoning-state ES/ZO
+    validations:
+      required: true
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Scope justification
+      description: Explain in one or two sentences what is optimized and how ES/ZO is used.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I checked that this paper is not already listed.
+          required: true
+        - label: The link points to a primary source.
+          required: true
+
