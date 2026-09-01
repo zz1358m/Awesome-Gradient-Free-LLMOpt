@@ -6,6 +6,8 @@ This list covers persistent model parameters: full weights, adapters, low-rank s
 
 **Last literature check:** 2026-09-01
 
+**Venue convention:** ![ICML 2026](https://img.shields.io/badge/ICML-2026-orange) denotes a confirmed conference or journal venue. Preprints without a verified venue remain unbadged.
+
 ## Contents
 
 - [ES and ZO are used differently](#es-and-zo-are-used-differently)
@@ -40,9 +42,9 @@ This is a taxonomy of prevailing practice, not a mathematical prohibition. ES ca
 
 ### Single-turn reasoning and alignment
 
-- **Evolution Strategies at Scale: LLM Fine-Tuning Beyond Reinforcement Learning** — Full-parameter, population-parallel ES that directly optimizes rewards for Countdown, math reasoning, Sudoku, conciseness, and ARC-AGI. [paper](https://arxiv.org/abs/2509.24372) · [code](https://github.com/VsonicV/es-at-scale) · [earlier implementation](https://github.com/VsonicV/es-fine-tuning-paper) · ICML 2026
+- **Evolution Strategies at Scale: LLM Fine-Tuning Beyond Reinforcement Learning** — Full-parameter, population-parallel ES that directly optimizes rewards for Countdown, math reasoning, Sudoku, conciseness, and ARC-AGI. [paper](https://arxiv.org/abs/2509.24372) · [code](https://github.com/VsonicV/es-at-scale) · [earlier implementation](https://github.com/VsonicV/es-fine-tuning-paper) · ![ICML 2026](https://img.shields.io/badge/ICML-2026-orange)
 - **Hyper-ES: Effective Evolution Strategies for LLM Reasoning via Descent Direction Merging** — Uses a few gradient runs to create descent directions, then applies CMA-ES to DARE-TIES layer-wise merging coefficients; evaluated on six mathematical-reasoning datasets. [paper](https://arxiv.org/abs/2608.05541) · [code placeholder](https://github.com/kuangrepi/Hyper-ES) · 2026-08
-- **Neural Thickets: Diverse Task Experts Are Dense Around Pretrained Weights** — RandOpt samples parameter perturbations, retains the best experts, and ensembles their predictions; Iterative RandOpt reaches 92.9% on GSM8K with OLMo-3-7B under the reported matched-compute setup. [paper](https://arxiv.org/abs/2603.12228) · [RandOpt code](https://github.com/sunrainyg/RandOpt) · [Iterative RandOpt branch](https://github.com/sunrainyg/RandOpt/tree/iterative-randopt) · ICML 2026 Spotlight
+- **Neural Thickets: Diverse Task Experts Are Dense Around Pretrained Weights** — RandOpt samples parameter perturbations, retains the best experts, and ensembles their predictions; Iterative RandOpt reaches 92.9% on GSM8K with OLMo-3-7B under the reported matched-compute setup. [paper](https://arxiv.org/abs/2603.12228) · [RandOpt code](https://github.com/sunrainyg/RandOpt) · [Iterative RandOpt branch](https://github.com/sunrainyg/RandOpt/tree/iterative-randopt) · ![ICML 2026 Spotlight](https://img.shields.io/badge/ICML_2026-Spotlight-orange)
 - **Quantized Evolution Strategies: High-precision Fine-tuning of Quantized LLMs at Low-precision Cost** — Direct-reward ES over discrete quantized weights with error feedback and seed replay; evaluated on Countdown. [paper](https://arxiv.org/abs/2602.03120) · code not located · 2026-02
 - **ESSAM: A Novel Competitive Evolution Strategies Approach to Reinforcement Learning for Memory Efficient LLMs Fine-Tuning** — Competitive reward-based ES for memory-efficient reasoning fine-tuning, centered on GSM8K with math/code transfer evaluation. [paper](https://arxiv.org/abs/2602.01003) · code not located · 2026-02
 - **Fine-Tuning Language Models to Know What They Know** — ESMA directly optimizes metacognitive calibration and alignment rewards. [paper](https://arxiv.org/abs/2602.02605) · code not located · 2026-02
@@ -50,8 +52,8 @@ This is a taxonomy of prevailing practice, not a mathematical prohibition. ES ca
 - **Evolution Strategies at the Hyperscale** — EGGROLL generates low-rank perturbations while retaining a high-rank population update for scalable reasoning post-training. [paper](https://arxiv.org/abs/2511.16652) · [Transformer/vLLM code](https://github.com/ESHyperscale/eggroll-vllm) · [JAX ES core](https://github.com/ESHyperscale/HyperscaleES) · 2025-11
 - **EA4LLM: A Gradient-Free Approach to Large Language Model Optimization via Evolutionary Algorithms** — Population-based evolutionary optimization demonstrated at roughly one-billion-parameter scale. [paper](https://arxiv.org/abs/2510.10603) · code not located · 2025-10
 - **ESSA: Evolutionary Strategies for Scalable Alignment** — Evolves singular-value coordinates of LoRA adapters and supports low-precision inference; evaluated on GSM8K, PRM800K, and IFEval. [paper](https://arxiv.org/abs/2507.04453) · code not located · 2025-07
-- **When Evolution Strategy Meets Language Models Tuning** — ESO uses output-conditioned perturbations and centered task rewards for language-model tuning. [paper](https://aclanthology.org/2025.coling-main.357/) · [code](https://github.com/boyellow/ESO) · COLING 2025
-- **Derivative-Free Optimization for Low-Rank Adaptation in Large Language Models** — C-LoRA and F-LoRA search projected LoRA spaces with CMA-ES or the Fireworks Algorithm. [paper](https://doi.org/10.1109/TASLP.2024.3477330) · code not located · IEEE/ACM TASLP 2024
+- **When Evolution Strategy Meets Language Models Tuning** — ESO uses output-conditioned perturbations and centered task rewards for language-model tuning. [paper](https://aclanthology.org/2025.coling-main.357/) · [code](https://github.com/boyellow/ESO) · ![COLING 2025](https://img.shields.io/badge/COLING-2025-orange)
+- **Derivative-Free Optimization for Low-Rank Adaptation in Large Language Models** — C-LoRA and F-LoRA search projected LoRA spaces with CMA-ES or the Fireworks Algorithm. [paper](https://doi.org/10.1109/TASLP.2024.3477330) · code not located · ![IEEE/ACM TASLP 2024](https://img.shields.io/badge/IEEE%2FACM_TASLP-2024-orange)
 
 ### Multi-turn and agentic reasoning
 
@@ -59,6 +61,7 @@ This is a taxonomy of prevailing practice, not a mathematical prohibition. ES ca
 
 ### Understanding ES
 
+- **Understanding Evolution Strategies for LLM Reasoning: Broader Reasoning Coverage than GRPO** — Explains ES's higher Pass@K through verifier-projected population diversity, contrasts it with GRPO entropy collapse, and studies sequential GRPO–ES training, functional update sparsity, forgetting, and population scaling. [paper](https://arxiv.org/abs/2608.27351) · code not located · 2026-08
 - **The Blessing of Dimensionality in LLM Fine-tuning: A Variance-Curvature Perspective** — Explains why small ES populations can work in very high dimensions through low effective curvature and a rise-then-decay dynamic; studies GSM8K, ARC-C, and WinoGrande across Qwen2.5 sizes. [paper](https://arxiv.org/abs/2602.00170) · code not located · 2026-02
 - **Matching Accuracy, Different Geometry: Evolution Strategies vs GRPO in LLM Post-Training** — Compares ES and GRPO update geometry even when their reasoning accuracy is similar. [paper](https://arxiv.org/abs/2604.01499) · code not located · 2026-04
 - **Evolutionary Strategies Lead to Catastrophic Forgetting in LLMs** — Diagnoses prior-capability degradation during ES post-training. [paper](https://arxiv.org/abs/2601.20861) · code not located · 2026-01
@@ -74,39 +77,39 @@ Unless an entry says otherwise, these methods optimize a supervised CE/NLL-style
 #### Baselines, sparse updates, and subspaces
 
 - **Fine-Tuning Language Models with Just Forward Passes** — MeZO introduced in-place perturbation and seed replay, reaching inference-level memory for forward-only SFT. [paper](https://arxiv.org/abs/2305.17333) · [code](https://github.com/princeton-nlp/MeZO) · 2023
-- **Sparse MeZO: Less Parameters for Better Performance in Zeroth-Order LLM Fine-Tuning** — Perturbs a selected coordinate subset for more efficient supervised adaptation. [paper](https://arxiv.org/abs/2402.15751) · [code](https://github.com/NUS-HPC-AI-Lab/SparseMeZO) · NeurIPS 2025
+- **Sparse MeZO: Less Parameters for Better Performance in Zeroth-Order LLM Fine-Tuning** — Perturbs a selected coordinate subset for more efficient supervised adaptation. [paper](https://arxiv.org/abs/2402.15751) · [code](https://github.com/NUS-HPC-AI-Lab/SparseMeZO) · ![NeurIPS 2025](https://img.shields.io/badge/NeurIPS-2025-orange)
 - **Zeroth-Order Fine-Tuning of LLMs with Extreme Sparsity** — Selects Fisher-sensitive parameters and keeps frozen weights at low precision. [paper](https://arxiv.org/abs/2406.02913) · [code](https://github.com/GarlGuo/SensZOQ) · 2024
-- **Enhancing Zeroth-order Fine-tuning for Language Models with Low-rank Structures** — LOZO replaces dense random directions with structured low-rank perturbations. [paper](https://arxiv.org/abs/2410.07698) · [code](https://github.com/optsuite/LOZO) · ICLR 2025
-- **Zeroth-Order Fine-Tuning of LLMs in Random Subspaces** — SubZero constructs layer-wise low-rank random subspaces for forward-only adaptation. [paper](https://arxiv.org/abs/2410.08989) · [code](https://github.com/zimingyy/SubZero) · ICCV 2025
+- **Enhancing Zeroth-order Fine-tuning for Language Models with Low-rank Structures** — LOZO replaces dense random directions with structured low-rank perturbations. [paper](https://arxiv.org/abs/2410.07698) · [code](https://github.com/optsuite/LOZO) · ![ICLR 2025](https://img.shields.io/badge/ICLR-2025-orange)
+- **Zeroth-Order Fine-Tuning of LLMs in Random Subspaces** — SubZero constructs layer-wise low-rank random subspaces for forward-only adaptation. [paper](https://arxiv.org/abs/2410.08989) · [code](https://github.com/zimingyy/SubZero) · ![ICCV 2025](https://img.shields.io/badge/ICCV-2025-orange)
 - **TeZO: Empowering the Low-Rankness on the Temporal Dimension in the Zeroth-Order Optimization for Fine-tuning LLMs** — Exploits temporal low-rank structure shared across successive ZO estimates. [paper](https://arxiv.org/abs/2501.19057) · code not located · 2025
-- **RoZO: Geometry-Aware Zeroth-Order Fine-Tuning on Low-Rank Adapters for Black-Box Large Language Models** — Uses tangent-space perturbations, retraction, and vector transport on the LoRA manifold. [paper](https://aclanthology.org/2026.eacl-long.80/) · code not located · EACL 2026
+- **RoZO: Geometry-Aware Zeroth-Order Fine-Tuning on Low-Rank Adapters for Black-Box Large Language Models** — Uses tangent-space perturbations, retraction, and vector transport on the LoRA manifold. [paper](https://aclanthology.org/2026.eacl-long.80/) · code not located · ![EACL 2026](https://img.shields.io/badge/EACL-2026-orange)
 - **ZO-Act: Efficient Zeroth-Order Fine-Tuning via One-Shot Activation-Informed Low-Rank Subspaces** — Builds an activation-informed subspace once, then performs ZO SFT in that space; evaluated on language understanding, QA, and commonsense reasoning with Llama-3-8B and OPT-13B. [paper](https://arxiv.org/abs/2607.01125) · code not located · 2026-07
 - **SubZero+: Efficient Zeroth-Order LLM Fine-Tuning via Large Learning Rates** — Combines multi-query estimation, corrected Haar subspaces, and subspace Adam. [paper](https://arxiv.org/abs/2608.15665) · code not located · 2026-08
 
 #### Better directions and lower variance
 
-- **Variance-reduced Zeroth-Order Methods for Fine-Tuning Language Models** — MeZO-SVRG adds an anchor-based control variate to supervised ZO fine-tuning. [paper](https://arxiv.org/abs/2404.08080) · code not located · ICML 2024
+- **Variance-reduced Zeroth-Order Methods for Fine-Tuning Language Models** — MeZO-SVRG adds an anchor-based control variate to supervised ZO fine-tuning. [paper](https://arxiv.org/abs/2404.08080) · code not located · ![ICML 2024](https://img.shields.io/badge/ICML-2024-orange)
 - **Harmony in Divergence: Towards Fast, Accurate, and Memory-efficient Zeroth-order LLM Fine-tuning** — DiZO uses layer-wise projection and rescaling after analyzing FO/ZO layer divergence. [paper](https://arxiv.org/abs/2502.03304) · [code](https://github.com/Skilteee/DiZO) · 2025
 - **KerZOO: Kernel Function Informed Zeroth-Order Optimization for Accurate and Accelerated LLM Fine-Tuning** — Corrects the estimator using kernel-weighted perturbations. [paper](https://arxiv.org/abs/2505.18886) · code not located · 2025
 - **Towards Fast LLM Fine-tuning through Zeroth-Order Optimization with Projected Gradient-Aligned Perturbations** — P-GAP aligns low-rank perturbations with a projected gradient estimate. [paper](https://arxiv.org/abs/2510.18228) · code not located · 2025
 - **ConMeZO: Adaptive Descent-Direction Sampling for Gradient-Free Finetuning of Large Language Models** — Samples directions from a cone centered on a momentum estimate. [paper](https://arxiv.org/abs/2511.02757) · code not located · 2025
-- **Low-Rank Curvature for Zeroth-Order Optimization in LLM Fine-Tuning** — LOREN combines low-rank block-diagonal curvature with leave-one-out estimation. [paper](https://arxiv.org/abs/2511.07971) · [code](https://github.com/hseung88/loren) · AAAI 2026
+- **Low-Rank Curvature for Zeroth-Order Optimization in LLM Fine-Tuning** — LOREN combines low-rank block-diagonal curvature with leave-one-out estimation. [paper](https://arxiv.org/abs/2511.07971) · [code](https://github.com/hseung88/loren) · ![AAAI 2026](https://img.shields.io/badge/AAAI-2026-orange)
 - **Robust and Efficient Zeroth-Order LLM Fine-Tuning via Adaptive Bayesian Subspace Optimizer** — ABSO aggregates noisy subspace measurements with a Bayesian optimizer. [paper](https://arxiv.org/abs/2601.01452) · code not located · 2026
 - **Prior-Informed Zeroth-Order Optimization with Adaptive Direction Alignment for Memory-Efficient LLM Fine-Tuning** — PIZOO biases samples toward an adaptive prior direction. [paper](https://arxiv.org/abs/2601.04710) · code not located · 2026
 - **AGZO: Activation-Guided Zeroth-Order Optimization for LLM Fine-Tuning** — Shapes perturbation directions with forward activations. [paper](https://arxiv.org/abs/2601.17261) · [implementation](https://github.com/Yining-Jiang/ActivationGuidedZO-NPU) · 2026
 - **Zero-Order Optimization for LLM Fine-Tuning via Learnable Direction Sampling** — ZO-LDSD learns a non-isotropic direction distribution. [paper](https://arxiv.org/abs/2602.13659) · code not located · 2026
 - **Powering Up Zeroth-Order Training via Subspace Gradient Orthogonalization** — ZO-Muon applies spectral orthogonalization to subspace estimates. [paper](https://arxiv.org/abs/2602.17155) · code not located · 2026
 - **CurvZO: Adaptive Curvature-Guided Sparse Zeroth-Order Optimization for Efficient LLM Fine-Tuning** — Combines curvature-aware sparse sampling with probability correction. [paper](https://arxiv.org/abs/2603.21725) · code not located · 2026
-- **Learning a Zeroth-Order Optimizer for Fine-Tuning LLMs** — Learns reusable model-specific perturbation strategies. [paper](https://openreview.net/forum?id=bRS5iwbqlC) · [code](https://github.com/ASTRAL-Group/ZO_Fine_tuner) · ICML 2026
+- **Learning a Zeroth-Order Optimizer for Fine-Tuning LLMs** — Learns reusable model-specific perturbation strategies. [paper](https://openreview.net/forum?id=bRS5iwbqlC) · [code](https://github.com/ASTRAL-Group/ZO_Fine_tuner) · ![ICML 2026](https://img.shields.io/badge/ICML-2026-orange)
 
 #### Memory systems, preconditioning, and quantization
 
 - **Second-Order Fine-Tuning without Pain for LLMs: A Hessian Informed Zeroth-Order Optimizer** — HiZOO estimates diagonal curvature using forward passes. [paper](https://arxiv.org/abs/2402.15173) · code not located · 2024
 - **ZO2: Scalable Zeroth-Order Fine-Tuning for Extremely Large Language Models with Limited GPU Memory** — Adds parameter offloading and execution overlap for large-model ZO SFT. [paper](https://arxiv.org/abs/2503.12668) · [code](https://github.com/liangyuwang/zo2) · 2025
 - **DistZO2: High-Throughput and Memory-Efficient Zeroth-Order Fine-tuning LLMs with Distributed Parallel Computing** — Distributes perturbation evaluations and aggregates only scalar results. [paper](https://arxiv.org/abs/2507.03211) · code not located · 2025
-- **HELENE: Hessian Layer-wise Clipping and Gradient Annealing for Accelerating Fine-tuning LLM with Zeroth-order Optimization** — Adds layer-wise clipping and annealing. [paper](https://aclanthology.org/2025.emnlp-main.1323/) · code not located · EMNLP 2025
-- **QuZO: Quantized Zeroth-Order Fine-Tuning for Large Language Models** — Integrates quantization into forward-only SFT. [paper](https://aclanthology.org/2025.emnlp-main.271/) · code not located · EMNLP 2025
-- **Hi-ZFO: Hierarchical Zeroth- and First-Order LLM Fine-Tuning via Importance-Guided Tensor Selection** — Assigns FO or ZO updates according to tensor importance. [paper](https://aclanthology.org/2026.findings-acl.239/) · code not located · Findings of ACL 2026
+- **HELENE: Hessian Layer-wise Clipping and Gradient Annealing for Accelerating Fine-tuning LLM with Zeroth-order Optimization** — Adds layer-wise clipping and annealing. [paper](https://aclanthology.org/2025.emnlp-main.1323/) · code not located · ![EMNLP 2025](https://img.shields.io/badge/EMNLP-2025-orange)
+- **QuZO: Quantized Zeroth-Order Fine-Tuning for Large Language Models** — Integrates quantization into forward-only SFT. [paper](https://aclanthology.org/2025.emnlp-main.271/) · code not located · ![EMNLP 2025](https://img.shields.io/badge/EMNLP-2025-orange)
+- **Hi-ZFO: Hierarchical Zeroth- and First-Order LLM Fine-Tuning via Importance-Guided Tensor Selection** — Assigns FO or ZO updates according to tensor importance. [paper](https://aclanthology.org/2026.findings-acl.239/) · code not located · ![Findings of ACL 2026](https://img.shields.io/badge/Findings_of_ACL-2026-orange)
 - **AdaMeZO: Adam-style Zeroth-Order Optimizer for LLM Fine-tuning Without Maintaining the Moments** — Approximates adaptive moments without full optimizer states. [paper](https://arxiv.org/abs/2605.00650) · code not located · 2026
 
 ### Multi-turn agent adaptation
