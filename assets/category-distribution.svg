@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="361" viewBox="0 0 760 361" role="img">
+<style>
+  text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; fill: #24292f; }
+  .title { font-size: 20px; font-weight: 700; }
+  .label { font-size: 13px; }
+  .value { font-size: 13px; font-weight: 700; }
+  @media (prefers-color-scheme: dark) {
+    text { fill: #e6edf3; }
+    .background { fill: #161b22; stroke: #30363d; }
+  }
+</style>
+<rect class="background" width="100%" height="100%" rx="12" fill="#f6f8fa" stroke="#d0d7de"/>
+<text x="24" y="34" class="title">Papers by category</text>
+<rect x="625" y="18" width="12" height="12" rx="2" fill="#a371f7"/>
+<text x="643" y="29" class="label">ES</text>
+<rect x="686" y="18" width="12" height="12" rx="2" fill="#2f81f7"/>
+<text x="704" y="29" class="label">ZO</text>
+<text x="24" y="75" class="label">Pretraining</text>
+<rect x="339" y="61" width="28.4" height="20" rx="4" fill="#a371f7"/>
+<text x="375.4" y="76" class="value">1</text>
+<text x="24" y="106" class="label">Single-turn reasoning and alignment</text>
+<rect x="339" y="92" width="255.5" height="20" rx="4" fill="#a371f7"/>
+<text x="602.5" y="107" class="value">9</text>
+<text x="24" y="137" class="label">Multi-turn and agentic reasoning</text>
+<rect x="339" y="123" width="28.4" height="20" rx="4" fill="#a371f7"/>
+<text x="375.4" y="138" class="value">1</text>
+<text x="24" y="168" class="label">Understanding ES</text>
+<rect x="339" y="154" width="170.3" height="20" rx="4" fill="#a371f7"/>
+<text x="517.3" y="169" class="value">6</text>
+<text x="24" y="199" class="label">Baselines, sparse updates, and subspaces</text>
+<rect x="339" y="185" width="255.5" height="20" rx="4" fill="#2f81f7"/>
+<text x="602.5" y="200" class="value">9</text>
+<text x="24" y="230" class="label">Better directions and lower variance</text>
+<rect x="339" y="216" width="369.0" height="20" rx="4" fill="#2f81f7"/>
+<text x="716.0" y="231" class="value">13</text>
+<text x="24" y="261" class="label">Memory systems, preconditioning, and quantization</text>
+<rect x="339" y="247" width="198.7" height="20" rx="4" fill="#2f81f7"/>
+<text x="545.7" y="262" class="value">7</text>
+<text x="24" y="292" class="label">Multi-turn agent adaptation</text>
+<rect x="339" y="278" width="28.4" height="20" rx="4" fill="#2f81f7"/>
+<text x="375.4" y="293" class="value">1</text>
+<text x="24" y="323" class="label">Understanding and systems</text>
+<rect x="339" y="309" width="85.2" height="20" rx="4" fill="#2f81f7"/>
+<text x="432.2" y="324" class="value">3</text>
+</svg>

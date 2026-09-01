@@ -27,6 +27,7 @@ body:
     attributes:
       label: Family
       options:
+        - ES — pretraining
         - ES — single-turn reasoning/alignment
         - ES — multi-turn/agentic reasoning
         - ES — understanding/analysis

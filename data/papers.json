@@ -1,0 +1,452 @@
+[
+  {
+    "title": "EA4LLM: A Gradient-Free Approach to Large Language Model Optimization via Evolutionary Algorithms",
+    "category": "es_pretraining",
+    "date": "2025-10",
+    "description_en": "Full-parameter ES pretraining that uses mean next-token log-probability as fitness; demonstrated on Qwen3-style models from 0.5B to 32B parameters.",
+    "description_zh": "以真实下一 token 的平均对数概率作为适应度，使用全参数 ES 进行预训练；实验覆盖 0.5B 至 32B 参数规模的 Qwen3 风格模型。",
+    "resources_en": "[paper](https://arxiv.org/abs/2510.10603) · code not located · 2025-10",
+    "resources_zh": "[论文](https://arxiv.org/abs/2510.10603) · 未找到代码 · 2025-10"
+  },
+  {
+    "title": "Evolution Strategies at Scale: LLM Fine-Tuning Beyond Reinforcement Learning",
+    "category": "es_single_turn",
+    "date": "2026",
+    "description_en": "Full-parameter, population-parallel ES that directly optimizes rewards for Countdown, math reasoning, Sudoku, conciseness, and ARC-AGI.",
+    "description_zh": "采用全参数、种群并行的 ES，直接优化 Countdown、数学推理、数独、简洁性和 ARC-AGI 等任务的奖励。",
+    "resources_en": "[paper](https://openreview.net/forum?id=i0P4ew9GpS) · [code](https://github.com/VsonicV/es-at-scale) · [earlier implementation](https://github.com/VsonicV/es-fine-tuning-paper) · ![ICML 2026](https://img.shields.io/badge/ICML-2026-orange)",
+    "resources_zh": "[论文](https://openreview.net/forum?id=i0P4ew9GpS) · [代码](https://github.com/VsonicV/es-at-scale) · [早期实现](https://github.com/VsonicV/es-fine-tuning-paper) · ![ICML 2026](https://img.shields.io/badge/ICML-2026-orange)"
+  },
+  {
+    "title": "Hyper-ES: Effective Evolution Strategies for LLM Reasoning via Descent Direction Merging",
+    "category": "es_single_turn",
+    "date": "2026-08",
+    "description_en": "Uses a few gradient runs to create descent directions, then applies CMA-ES to DARE-TIES layer-wise merging coefficients; evaluated on six mathematical-reasoning datasets.",
+    "description_zh": "先通过少量梯度训练获得下降方向，再使用 CMA-ES 优化 DARE-TIES 的逐层合并系数；在六个数学推理数据集上进行评测。",
+    "resources_en": "[paper](https://arxiv.org/abs/2608.05541) · [code placeholder](https://github.com/kuangrepi/Hyper-ES) · 2026-08",
+    "resources_zh": "[论文](https://arxiv.org/abs/2608.05541) · [代码占位仓库](https://github.com/kuangrepi/Hyper-ES) · 2026-08"
+  },
+  {
+    "title": "Neural Thickets: Diverse Task Experts Are Dense Around Pretrained Weights",
+    "category": "es_single_turn",
+    "date": "2026",
+    "description_en": "RandOpt samples parameter perturbations, retains the best experts, and ensembles their predictions; Iterative RandOpt reaches 92.9% on GSM8K with OLMo-3-7B under the reported matched-compute setup.",
+    "description_zh": "RandOpt 对参数扰动进行采样，保留表现最好的专家并集成其预测；在论文报告的等计算量设置下，Iterative RandOpt 使用 OLMo-3-7B 在 GSM8K 上达到 92.9%。",
+    "resources_en": "[paper](https://openreview.net/forum?id=92oF5bU4cU) · [RandOpt code](https://github.com/sunrainyg/RandOpt) · [Iterative RandOpt branch](https://github.com/sunrainyg/RandOpt/tree/iterative-randopt) · ![ICML 2026 Spotlight](https://img.shields.io/badge/ICML_2026-Spotlight-orange)",
+    "resources_zh": "[论文](https://openreview.net/forum?id=92oF5bU4cU) · [RandOpt 代码](https://github.com/sunrainyg/RandOpt) · [Iterative RandOpt 分支](https://github.com/sunrainyg/RandOpt/tree/iterative-randopt) · ![ICML 2026 Spotlight](https://img.shields.io/badge/ICML_2026-Spotlight-orange)"
+  },
+  {
+    "title": "Quantized Evolution Strategies: High-precision Fine-tuning of Quantized LLMs at Low-precision Cost",
+    "category": "es_single_turn",
+    "date": "2026-02",
+    "description_en": "Direct-reward ES over discrete quantized weights with error feedback and seed replay; evaluated on Countdown.",
+    "description_zh": "在离散量化权重上进行直接奖励优化，并结合误差反馈和随机种子重放；在 Countdown 上进行评测。",
+    "resources_en": "[paper](https://arxiv.org/abs/2602.03120) · [code](https://github.com/dibbla/Quantized-Evolution-Strategies) · 2026-02",
+    "resources_zh": "[论文](https://arxiv.org/abs/2602.03120) · [代码](https://github.com/dibbla/Quantized-Evolution-Strategies) · 2026-02"
+  },
+  {
+    "title": "ESSAM: A Novel Competitive Evolution Strategies Approach to Reinforcement Learning for Memory Efficient LLMs Fine-Tuning",
+    "category": "es_single_turn",
+    "date": "2026-02",
+    "description_en": "Competitive reward-based ES for memory-efficient reasoning fine-tuning, centered on GSM8K with math/code transfer evaluation.",
+    "description_zh": "面向内存高效推理微调的竞争式奖励 ES，主要在 GSM8K 上训练，并评估数学与代码任务的迁移能力。",
+    "resources_en": "[paper](https://arxiv.org/abs/2602.01003) · [code](https://github.com/szs777/ESSAM) · 2026-02",
+    "resources_zh": "[论文](https://arxiv.org/abs/2602.01003) · [代码](https://github.com/szs777/ESSAM) · 2026-02"
+  },
+  {
+    "title": "Fine-Tuning Language Models to Know What They Know",
+    "category": "es_single_turn",
+    "date": "2026-02",
+    "description_en": "ESMA directly optimizes metacognitive calibration and alignment rewards.",
+    "description_zh": "ESMA 直接优化元认知校准和对齐奖励。",
+    "resources_en": "[paper](https://arxiv.org/abs/2602.02605) · [code](https://github.com/cosmoquester/ESMA) · 2026-02",
+    "resources_zh": "[论文](https://arxiv.org/abs/2602.02605) · [代码](https://github.com/cosmoquester/ESMA) · 2026-02"
+  },
+  {
+    "title": "Evolutionary System 2 Reasoning: An Empirical Proof",
+    "category": "es_single_turn",
+    "date": "2025",
+    "description_en": "ERO evolves model parameters toward deliberative System-2 reasoning behavior.",
+    "description_zh": "ERO 通过演化模型参数，增强模型的 System 2 reasoning 能力。",
+    "resources_en": "[paper](https://doi.org/10.66361/jiss.38) · [code](https://github.com/MetaEvo/ERO) · ![JISS 2025](https://img.shields.io/badge/JISS-2025-orange)",
+    "resources_zh": "[论文](https://doi.org/10.66361/jiss.38) · [代码](https://github.com/MetaEvo/ERO) · ![JISS 2025](https://img.shields.io/badge/JISS-2025-orange)"
+  },
+  {
+    "title": "Evolution Strategies at the Hyperscale",
+    "category": "es_single_turn",
+    "date": "2026",
+    "description_en": "EGGROLL generates low-rank perturbations while retaining a high-rank population update for scalable reasoning post-training.",
+    "description_zh": "EGGROLL 使用低秩扰动降低开销，同时通过种群聚合保留高秩更新，以支持可扩展的推理后训练。",
+    "resources_en": "[paper](https://openreview.net/forum?id=bfVJ4GsHrO) · [Transformer/vLLM code](https://github.com/ESHyperscale/eggroll-vllm) · [JAX ES core](https://github.com/ESHyperscale/HyperscaleES) · ![ICML 2026](https://img.shields.io/badge/ICML-2026-orange)",
+    "resources_zh": "[论文](https://openreview.net/forum?id=bfVJ4GsHrO) · [Transformer/vLLM 代码](https://github.com/ESHyperscale/eggroll-vllm) · [JAX ES 核心](https://github.com/ESHyperscale/HyperscaleES) · ![ICML 2026](https://img.shields.io/badge/ICML-2026-orange)"
+  },
+  {
+    "title": "ESSA: Evolutionary Strategies for Scalable Alignment",
+    "category": "es_single_turn",
+    "date": "2025-07",
+    "description_en": "Evolves singular-value coordinates of LoRA adapters and supports low-precision inference; evaluated on GSM8K, PRM800K, and IFEval.",
+    "description_zh": "对 LoRA 适配器的奇异值坐标进行演化，并支持低精度推理；在 GSM8K、PRM800K 和 IFEval 上进行评测。",
+    "resources_en": "[paper](https://arxiv.org/abs/2507.04453) · code not located · 2025-07",
+    "resources_zh": "[论文](https://arxiv.org/abs/2507.04453) · 未找到代码 · 2025-07"
+  },
+  {
+    "title": "Agentic ESOpt: Fine-Tuning Long-Horizon LLM Agents with Minimal GPU Requirements",
+    "category": "es_multi_turn",
+    "date": "2026-08",
+    "description_en": "Full-parameter ES evaluates complete agent trajectories with environment rewards, giving trajectory-level parameter attribution without step-level credit assignment. Experiments include 15/45-turn Sudoku, ReAct-style Math and DocVQA, WebArena-Lite, and automatic heuristic design.",
+    "description_zh": "全参数 ES 使用环境奖励评估完整智能体轨迹，无需逐步信用分配即可获得轨迹级参数归因。实验涵盖 15/45 轮数独、ReAct 风格的数学和 DocVQA、WebArena-Lite，以及启发式算法的自动设计。",
+    "resources_en": "[paper](https://arxiv.org/abs/2608.17310) · [code](https://github.com/zz1358m/Agentic-ESOpt) · 2026-08",
+    "resources_zh": "[论文](https://arxiv.org/abs/2608.17310) · [代码](https://github.com/zz1358m/Agentic-ESOpt) · 2026-08"
+  },
+  {
+    "title": "Understanding Evolution Strategies for LLM Reasoning: Broader Reasoning Coverage than GRPO",
+    "category": "es_understanding",
+    "date": "2026-08",
+    "description_en": "Explains ES's higher Pass@K through verifier-projected population diversity, contrasts it with GRPO entropy collapse, and studies sequential GRPO–ES training, functional update sparsity, forgetting, and population scaling.",
+    "description_zh": "从验证器投影后的种群多样性解释 ES 更高的 Pass@K，并将其与 GRPO 的熵坍缩进行对比；还研究了顺序式 GRPO–ES 训练、函数更新稀疏性、遗忘和种群规模扩展。",
+    "resources_en": "[paper](https://arxiv.org/abs/2608.27351) · [code](https://github.com/yunpengba7/understanding-es) · 2026-08",
+    "resources_zh": "[论文](https://arxiv.org/abs/2608.27351) · [代码](https://github.com/yunpengba7/understanding-es) · 2026-08"
+  },
+  {
+    "title": "The Blessing of Dimensionality in LLM Fine-tuning: A Variance-Curvature Perspective",
+    "category": "es_understanding",
+    "date": "2026-02",
+    "description_en": "Explains why small ES populations can work in very high dimensions through low effective curvature and a rise-then-decay dynamic; studies GSM8K, ARC-C, and WinoGrande across Qwen2.5 sizes.",
+    "description_zh": "从较低的有效曲率和先升后降的训练动态解释小规模 ES 种群为何能在极高维空间中工作；实验覆盖 Qwen2.5 的多个规模以及 GSM8K、ARC-C 和 WinoGrande。",
+    "resources_en": "[paper](https://arxiv.org/abs/2602.00170) · code not located · 2026-02",
+    "resources_zh": "[论文](https://arxiv.org/abs/2602.00170) · 未找到代码 · 2026-02"
+  },
+  {
+    "title": "Matching Accuracy, Different Geometry: Evolution Strategies vs GRPO in LLM Post-Training",
+    "category": "es_understanding",
+    "date": "2026-04",
+    "description_en": "Compares ES and GRPO update geometry even when their reasoning accuracy is similar.",
+    "description_zh": "比较 ES 与 GRPO 在推理准确率相近时仍然存在差异的更新几何。",
+    "resources_en": "[paper](https://arxiv.org/abs/2604.01499) · [code](https://github.com/Bhoy1/ESvsGRPO) · 2026-04",
+    "resources_zh": "[论文](https://arxiv.org/abs/2604.01499) · [代码](https://github.com/Bhoy1/ESvsGRPO) · 2026-04"
+  },
+  {
+    "title": "Evolutionary Strategies Lead to Catastrophic Forgetting in LLMs",
+    "category": "es_understanding",
+    "date": "2026-01",
+    "description_en": "Diagnoses prior-capability degradation during ES post-training.",
+    "description_zh": "分析 ES 后训练过程中模型既有能力退化的问题。",
+    "resources_en": "[paper](https://arxiv.org/abs/2601.20861) · code not located · 2026-01",
+    "resources_zh": "[论文](https://arxiv.org/abs/2601.20861) · 未找到代码 · 2026-01"
+  },
+  {
+    "title": "Overcoming Forgetting in LLM Fine-Tuning with Evolution Strategies",
+    "category": "es_understanding",
+    "date": "2026-05",
+    "description_en": "Reframes forgetting as performance drift and proposes anchored weight decay.",
+    "description_zh": "将遗忘重新表述为性能漂移，并提出锚定权重衰减方法。",
+    "resources_en": "[paper](https://arxiv.org/abs/2605.30148) · code not located · 2026-05",
+    "resources_zh": "[论文](https://arxiv.org/abs/2605.30148) · 未找到代码 · 2026-05"
+  },
+  {
+    "title": "Beyond the Best Guess: Improving LLM Solution Coverage with Evolution Strategies",
+    "category": "es_understanding",
+    "date": "2026-08",
+    "description_en": "Shows how ES affects reasoning diversity and pass@k rather than only pass@1.",
+    "description_zh": "说明 ES 不仅影响 pass@1，还会改变推理解法的多样性和 pass@k。",
+    "resources_en": "[paper](https://arxiv.org/abs/2608.12679) · [code](https://github.com/conorfhayes/beyond-the-best-guess) · 2026-08",
+    "resources_zh": "[论文](https://arxiv.org/abs/2608.12679) · [代码](https://github.com/conorfhayes/beyond-the-best-guess) · 2026-08"
+  },
+  {
+    "title": "Fine-Tuning Language Models with Just Forward Passes",
+    "category": "zo_baselines",
+    "date": "2023",
+    "description_en": "MeZO introduced in-place perturbation and seed replay, reaching inference-level memory for forward-only SFT.",
+    "description_zh": "MeZO 引入原位参数扰动和随机种子重放，使纯前向监督微调达到与推理相当的内存占用。",
+    "resources_en": "[paper](https://proceedings.neurips.cc/paper_files/paper/2023/hash/a627810151be4d13f907ac898ff7e948-Abstract-Conference.html) · [code](https://github.com/princeton-nlp/MeZO) · ![NeurIPS 2023](https://img.shields.io/badge/NeurIPS-2023-orange)",
+    "resources_zh": "[论文](https://proceedings.neurips.cc/paper_files/paper/2023/hash/a627810151be4d13f907ac898ff7e948-Abstract-Conference.html) · [代码](https://github.com/princeton-nlp/MeZO) · ![NeurIPS 2023](https://img.shields.io/badge/NeurIPS-2023-orange)"
+  },
+  {
+    "title": "Sparse MeZO: Less Parameters for Better Performance in Zeroth-Order LLM Fine-Tuning",
+    "category": "zo_baselines",
+    "date": "2025",
+    "description_en": "Perturbs a selected coordinate subset for more efficient supervised adaptation.",
+    "description_zh": "仅扰动经过选择的一部分参数坐标，以提高监督适配效率。",
+    "resources_en": "[paper](https://proceedings.neurips.cc/paper_files/paper/2025/hash/1e5c2efbddc02c1d971e2f19ccdb07d0-Abstract-Conference.html) · [code](https://github.com/NUS-HPC-AI-Lab/SparseMeZO) · ![NeurIPS 2025](https://img.shields.io/badge/NeurIPS-2025-orange)",
+    "resources_zh": "[论文](https://proceedings.neurips.cc/paper_files/paper/2025/hash/1e5c2efbddc02c1d971e2f19ccdb07d0-Abstract-Conference.html) · [代码](https://github.com/NUS-HPC-AI-Lab/SparseMeZO) · ![NeurIPS 2025](https://img.shields.io/badge/NeurIPS-2025-orange)"
+  },
+  {
+    "title": "Zeroth-Order Fine-Tuning of LLMs with Extreme Sparsity",
+    "category": "zo_baselines",
+    "date": "2024",
+    "description_en": "Selects Fisher-sensitive parameters and keeps frozen weights at low precision.",
+    "description_zh": "选择 Fisher 敏感参数进行更新，并以低精度保存冻结权重。",
+    "resources_en": "[paper](https://icml.cc/virtual/2024/39663) · [code](https://github.com/GarlGuo/SensZOQ) · ![ICML 2024 Workshop](https://img.shields.io/badge/ICML_2024-ES--FoMo_II-orange)",
+    "resources_zh": "[论文](https://icml.cc/virtual/2024/39663) · [代码](https://github.com/GarlGuo/SensZOQ) · ![ICML 2024 Workshop](https://img.shields.io/badge/ICML_2024-ES--FoMo_II-orange)"
+  },
+  {
+    "title": "Enhancing Zeroth-order Fine-tuning for Language Models with Low-rank Structures",
+    "category": "zo_baselines",
+    "date": "2025",
+    "description_en": "LOZO replaces dense random directions with structured low-rank perturbations.",
+    "description_zh": "LOZO 用结构化低秩扰动替代稠密随机方向。",
+    "resources_en": "[paper](https://proceedings.iclr.cc/paper_files/paper/2025/hash/9ccc9d814d3dee4750debaf23061e733-Abstract-Conference.html) · [code](https://github.com/optsuite/LOZO) · ![ICLR 2025](https://img.shields.io/badge/ICLR-2025-orange)",
+    "resources_zh": "[论文](https://proceedings.iclr.cc/paper_files/paper/2025/hash/9ccc9d814d3dee4750debaf23061e733-Abstract-Conference.html) · [代码](https://github.com/optsuite/LOZO) · ![ICLR 2025](https://img.shields.io/badge/ICLR-2025-orange)"
+  },
+  {
+    "title": "Zeroth-Order Fine-Tuning of LLMs in Random Subspaces",
+    "category": "zo_baselines",
+    "date": "2025",
+    "description_en": "SubZero constructs layer-wise low-rank random subspaces for forward-only adaptation.",
+    "description_zh": "SubZero 构造逐层低秩随机子空间，在其中进行纯前向适配。",
+    "resources_en": "[paper](https://openaccess.thecvf.com/content/ICCV2025/html/Yu_Zeroth-Order_Fine-Tuning_of_LLMs_in_Random_Subspaces_ICCV_2025_paper.html) · [code](https://github.com/zimingyy/SubZero) · ![ICCV 2025](https://img.shields.io/badge/ICCV-2025-orange)",
+    "resources_zh": "[论文](https://openaccess.thecvf.com/content/ICCV2025/html/Yu_Zeroth-Order_Fine-Tuning_of_LLMs_in_Random_Subspaces_ICCV_2025_paper.html) · [代码](https://github.com/zimingyy/SubZero) · ![ICCV 2025](https://img.shields.io/badge/ICCV-2025-orange)"
+  },
+  {
+    "title": "TeZO: Empowering the Low-Rankness on the Temporal Dimension in the Zeroth-Order Optimization for Fine-tuning LLMs",
+    "category": "zo_baselines",
+    "date": "2025",
+    "description_en": "Exploits temporal low-rank structure shared across successive ZO estimates.",
+    "description_zh": "利用连续多个 ZO 估计之间共享的时间低秩结构。",
+    "resources_en": "[paper](https://arxiv.org/abs/2501.19057) · code not located · 2025",
+    "resources_zh": "[论文](https://arxiv.org/abs/2501.19057) · 未找到代码 · 2025"
+  },
+  {
+    "title": "RoZO: Geometry-Aware Zeroth-Order Fine-Tuning on Low-Rank Adapters for Black-Box Large Language Models",
+    "category": "zo_baselines",
+    "date": "2026",
+    "description_en": "Uses tangent-space perturbations, retraction, and vector transport on the LoRA manifold.",
+    "description_zh": "在 LoRA 流形的切空间中使用扰动、回缩和向量传输。",
+    "resources_en": "[paper](https://aclanthology.org/2026.eacl-long.80/) · code not located · ![EACL 2026](https://img.shields.io/badge/EACL-2026-orange)",
+    "resources_zh": "[论文](https://aclanthology.org/2026.eacl-long.80/) · 未找到代码 · ![EACL 2026](https://img.shields.io/badge/EACL-2026-orange)"
+  },
+  {
+    "title": "ZO-Act: Efficient Zeroth-Order Fine-Tuning via One-Shot Activation-Informed Low-Rank Subspaces",
+    "category": "zo_baselines",
+    "date": "2026-07",
+    "description_en": "Builds an activation-informed subspace once, then performs ZO SFT in that space; evaluated on language understanding, QA, and commonsense reasoning with Llama-3-8B and OPT-13B.",
+    "description_zh": "一次性构建由激活信息引导的子空间，随后在该空间中执行 ZO 监督微调；使用 Llama-3-8B 和 OPT-13B 在语言理解、问答和常识推理任务上评测。",
+    "resources_en": "[paper](https://arxiv.org/abs/2607.01125) · code not located · 2026-07",
+    "resources_zh": "[论文](https://arxiv.org/abs/2607.01125) · 未找到代码 · 2026-07"
+  },
+  {
+    "title": "SubZero+: Efficient Zeroth-Order LLM Fine-Tuning via Large Learning Rates",
+    "category": "zo_baselines",
+    "date": "2026-08",
+    "description_en": "Combines multi-query estimation, corrected Haar subspaces, and subspace Adam.",
+    "description_zh": "结合多查询估计、修正后的 Haar 子空间和子空间 Adam。",
+    "resources_en": "[paper](https://arxiv.org/abs/2608.15665) · code not located · 2026-08",
+    "resources_zh": "[论文](https://arxiv.org/abs/2608.15665) · 未找到代码 · 2026-08"
+  },
+  {
+    "title": "Variance-reduced Zeroth-Order Methods for Fine-Tuning Language Models",
+    "category": "zo_directions",
+    "date": "2024",
+    "description_en": "MeZO-SVRG adds an anchor-based control variate to supervised ZO fine-tuning.",
+    "description_zh": "MeZO-SVRG 在监督 ZO 微调中加入基于锚点的控制变量。",
+    "resources_en": "[paper](https://proceedings.mlr.press/v235/gautam24a.html) · [code](https://github.com/amazon-science/mezo_svrg) · ![ICML 2024](https://img.shields.io/badge/ICML-2024-orange)",
+    "resources_zh": "[论文](https://proceedings.mlr.press/v235/gautam24a.html) · [代码](https://github.com/amazon-science/mezo_svrg) · ![ICML 2024](https://img.shields.io/badge/ICML-2024-orange)"
+  },
+  {
+    "title": "Harmony in Divergence: Towards Fast, Accurate, and Memory-efficient Zeroth-order LLM Fine-tuning",
+    "category": "zo_directions",
+    "date": "2025",
+    "description_en": "DiZO uses layer-wise projection and rescaling after analyzing FO/ZO layer divergence.",
+    "description_zh": "DiZO 在分析一阶与零阶优化的逐层差异后，对 ZO 更新进行逐层投影和重缩放。",
+    "resources_en": "[paper](https://proceedings.neurips.cc/paper_files/paper/2025/hash/ffd4f5a2ea6b93e9bf5af9264d568cf2-Abstract-Conference.html) · [code](https://github.com/Skilteee/DiZO) · ![NeurIPS 2025](https://img.shields.io/badge/NeurIPS-2025-orange)",
+    "resources_zh": "[论文](https://proceedings.neurips.cc/paper_files/paper/2025/hash/ffd4f5a2ea6b93e9bf5af9264d568cf2-Abstract-Conference.html) · [代码](https://github.com/Skilteee/DiZO) · ![NeurIPS 2025](https://img.shields.io/badge/NeurIPS-2025-orange)"
+  },
+  {
+    "title": "KerZOO: Kernel Function Informed Zeroth-Order Optimization for Accurate and Accelerated LLM Fine-Tuning",
+    "category": "zo_directions",
+    "date": "2025",
+    "description_en": "Corrects the estimator using kernel-weighted perturbations.",
+    "description_zh": "使用核函数加权扰动修正估计器。",
+    "resources_en": "[paper](https://arxiv.org/abs/2505.18886) · code not located · 2025",
+    "resources_zh": "[论文](https://arxiv.org/abs/2505.18886) · 未找到代码 · 2025"
+  },
+  {
+    "title": "Towards Fast LLM Fine-tuning through Zeroth-Order Optimization with Projected Gradient-Aligned Perturbations",
+    "category": "zo_directions",
+    "date": "2025",
+    "description_en": "P-GAP aligns low-rank perturbations with a projected gradient estimate.",
+    "description_zh": "P-GAP 使低秩扰动与投影后的梯度估计方向对齐。",
+    "resources_en": "[paper](https://arxiv.org/abs/2510.18228) · code not located · 2025",
+    "resources_zh": "[论文](https://arxiv.org/abs/2510.18228) · 未找到代码 · 2025"
+  },
+  {
+    "title": "ConMeZO: Adaptive Descent-Direction Sampling for Gradient-Free Finetuning of Large Language Models",
+    "category": "zo_directions",
+    "date": "2026",
+    "description_en": "Samples directions from a cone centered on a momentum estimate.",
+    "description_zh": "从以动量估计为中心的锥形区域中采样搜索方向。",
+    "resources_en": "[paper](https://proceedings.mlr.press/v300/behric26a.html) · [code](https://github.com/LejsDeen/ConMeZO) · ![AISTATS 2026](https://img.shields.io/badge/AISTATS-2026-orange)",
+    "resources_zh": "[论文](https://proceedings.mlr.press/v300/behric26a.html) · [代码](https://github.com/LejsDeen/ConMeZO) · ![AISTATS 2026](https://img.shields.io/badge/AISTATS-2026-orange)"
+  },
+  {
+    "title": "Low-Rank Curvature for Zeroth-Order Optimization in LLM Fine-Tuning",
+    "category": "zo_directions",
+    "date": "2026",
+    "description_en": "LOREN combines low-rank block-diagonal curvature with leave-one-out estimation.",
+    "description_zh": "LOREN 将低秩分块对角曲率建模与留一估计相结合。",
+    "resources_en": "[paper](https://ojs.aaai.org/index.php/AAAI/article/view/39715) · [code](https://github.com/hseung88/loren) · ![AAAI 2026](https://img.shields.io/badge/AAAI-2026-orange)",
+    "resources_zh": "[论文](https://ojs.aaai.org/index.php/AAAI/article/view/39715) · [代码](https://github.com/hseung88/loren) · ![AAAI 2026](https://img.shields.io/badge/AAAI-2026-orange)"
+  },
+  {
+    "title": "Robust and Efficient Zeroth-Order LLM Fine-Tuning via Adaptive Bayesian Subspace Optimizer",
+    "category": "zo_directions",
+    "date": "2026",
+    "description_en": "ABSO aggregates noisy subspace measurements with a Bayesian optimizer.",
+    "description_zh": "ABSO 使用贝叶斯优化器聚合带噪声的子空间观测。",
+    "resources_en": "[paper](https://arxiv.org/abs/2601.01452) · code not located · 2026",
+    "resources_zh": "[论文](https://arxiv.org/abs/2601.01452) · 未找到代码 · 2026"
+  },
+  {
+    "title": "Prior-Informed Zeroth-Order Optimization with Adaptive Direction Alignment for Memory-Efficient LLM Fine-Tuning",
+    "category": "zo_directions",
+    "date": "2026",
+    "description_en": "PIZOO biases samples toward an adaptive prior direction.",
+    "description_zh": "PIZOO 使采样方向偏向一个能够自适应更新的先验方向。",
+    "resources_en": "[paper](https://arxiv.org/abs/2601.04710) · code not located · 2026",
+    "resources_zh": "[论文](https://arxiv.org/abs/2601.04710) · 未找到代码 · 2026"
+  },
+  {
+    "title": "AGZO: Activation-Guided Zeroth-Order Optimization for LLM Fine-Tuning",
+    "category": "zo_directions",
+    "date": "2026",
+    "description_en": "Shapes perturbation directions with forward activations.",
+    "description_zh": "使用前向激活信息塑造扰动方向。",
+    "resources_en": "[paper](https://openreview.net/forum?id=zfVxpXEZti) · [implementation](https://github.com/Yining-Jiang/ActivationGuidedZO-NPU) · ![ICML 2026](https://img.shields.io/badge/ICML-2026-orange)",
+    "resources_zh": "[论文](https://openreview.net/forum?id=zfVxpXEZti) · [实现](https://github.com/Yining-Jiang/ActivationGuidedZO-NPU) · ![ICML 2026](https://img.shields.io/badge/ICML-2026-orange)"
+  },
+  {
+    "title": "Zero-Order Optimization for LLM Fine-Tuning via Learnable Direction Sampling",
+    "category": "zo_directions",
+    "date": "2026",
+    "description_en": "ZO-LDSD learns a non-isotropic direction distribution.",
+    "description_zh": "ZO-LDSD 学习一个非各向同性的方向分布。",
+    "resources_en": "[paper](https://arxiv.org/abs/2602.13659) · [code](https://github.com/brain-lab-research/zo_ldsd) · 2026",
+    "resources_zh": "[论文](https://arxiv.org/abs/2602.13659) · [代码](https://github.com/brain-lab-research/zo_ldsd) · 2026"
+  },
+  {
+    "title": "Powering Up Zeroth-Order Training via Subspace Gradient Orthogonalization",
+    "category": "zo_directions",
+    "date": "2026",
+    "description_en": "ZO-Muon applies spectral orthogonalization to subspace estimates.",
+    "description_zh": "ZO-Muon 对子空间估计应用谱正交化。",
+    "resources_en": "[paper](https://arxiv.org/abs/2602.17155) · [code](https://github.com/OPTML-Group/ZO-Muon) · 2026",
+    "resources_zh": "[论文](https://arxiv.org/abs/2602.17155) · [代码](https://github.com/OPTML-Group/ZO-Muon) · 2026"
+  },
+  {
+    "title": "CurvZO: Adaptive Curvature-Guided Sparse Zeroth-Order Optimization for Efficient LLM Fine-Tuning",
+    "category": "zo_directions",
+    "date": "2026",
+    "description_en": "Combines curvature-aware sparse sampling with probability correction.",
+    "description_zh": "将曲率感知的稀疏采样与概率校正结合起来。",
+    "resources_en": "[paper](https://openreview.net/forum?id=L35b2JZ8gS) · code not located · ![ICML 2026](https://img.shields.io/badge/ICML-2026-orange)",
+    "resources_zh": "[论文](https://openreview.net/forum?id=L35b2JZ8gS) · 未找到代码 · ![ICML 2026](https://img.shields.io/badge/ICML-2026-orange)"
+  },
+  {
+    "title": "Learning a Zeroth-Order Optimizer for Fine-Tuning LLMs",
+    "category": "zo_directions",
+    "date": "2026",
+    "description_en": "Learns reusable model-specific perturbation strategies.",
+    "description_zh": "学习可以在同一模型上重复使用的扰动策略。",
+    "resources_en": "[paper](https://openreview.net/forum?id=bRS5iwbqlC) · [code](https://github.com/ASTRAL-Group/ZO_Fine_tuner) · ![ICML 2026](https://img.shields.io/badge/ICML-2026-orange)",
+    "resources_zh": "[论文](https://openreview.net/forum?id=bRS5iwbqlC) · [代码](https://github.com/ASTRAL-Group/ZO_Fine_tuner) · ![ICML 2026](https://img.shields.io/badge/ICML-2026-orange)"
+  },
+  {
+    "title": "Second-Order Fine-Tuning without Pain for LLMs: A Hessian Informed Zeroth-Order Optimizer",
+    "category": "zo_systems",
+    "date": "2025",
+    "description_en": "HiZOO estimates diagonal curvature using forward passes.",
+    "description_zh": "HiZOO 使用纯前向计算估计对角曲率。",
+    "resources_en": "[paper](https://proceedings.iclr.cc/paper_files/paper/2025/hash/6bf82cc56a5fa0287c438baa8be65a70-Abstract-Conference.html) · [code](https://github.com/Yanjun-Zhao/HiZOO) · ![ICLR 2025](https://img.shields.io/badge/ICLR-2025-orange)",
+    "resources_zh": "[论文](https://proceedings.iclr.cc/paper_files/paper/2025/hash/6bf82cc56a5fa0287c438baa8be65a70-Abstract-Conference.html) · [代码](https://github.com/Yanjun-Zhao/HiZOO) · ![ICLR 2025](https://img.shields.io/badge/ICLR-2025-orange)"
+  },
+  {
+    "title": "Scalable Zeroth-Order Fine-Tuning for Extremely Large Language Models with Limited GPU Memory",
+    "category": "zo_systems",
+    "date": "2025",
+    "description_en": "ZO2 adds parameter offloading and execution overlap for large-model ZO SFT.",
+    "description_zh": "ZO2 通过参数卸载和执行重叠支持大模型 ZO 监督微调。",
+    "resources_en": "[paper](https://openreview.net/forum?id=s0p9xpORgP) · [code](https://github.com/liangyuwang/zo2) · ![COLM 2025](https://img.shields.io/badge/COLM-2025-orange)",
+    "resources_zh": "[论文](https://openreview.net/forum?id=s0p9xpORgP) · [代码](https://github.com/liangyuwang/zo2) · ![COLM 2025](https://img.shields.io/badge/COLM-2025-orange)"
+  },
+  {
+    "title": "High-Throughput and Memory-Efficient Zeroth-Order Fine-tuning LLMs with Distributed Parallel Computing",
+    "category": "zo_systems",
+    "date": "2026",
+    "description_en": "DistZO2 distributes perturbation evaluations and aggregates only scalar results.",
+    "description_zh": "DistZO2 分布式执行扰动评估，并且只聚合标量结果。",
+    "resources_en": "[paper](https://aclanthology.org/2026.findings-acl.2128/) · [ZO2/DistZO2 code](https://github.com/liangyuwang/zo2) · ![Findings of ACL 2026](https://img.shields.io/badge/Findings_of_ACL-2026-orange)",
+    "resources_zh": "[论文](https://aclanthology.org/2026.findings-acl.2128/) · [ZO2/DistZO2 代码](https://github.com/liangyuwang/zo2) · ![Findings of ACL 2026](https://img.shields.io/badge/Findings_of_ACL-2026-orange)"
+  },
+  {
+    "title": "HELENE: Hessian Layer-wise Clipping and Gradient Annealing for Accelerating Fine-tuning LLM with Zeroth-order Optimization",
+    "category": "zo_systems",
+    "date": "2025",
+    "description_en": "Adds layer-wise clipping and annealing.",
+    "description_zh": "引入逐层裁剪和退火机制。",
+    "resources_en": "[paper](https://aclanthology.org/2025.emnlp-main.1323/) · code not located · ![EMNLP 2025](https://img.shields.io/badge/EMNLP-2025-orange)",
+    "resources_zh": "[论文](https://aclanthology.org/2025.emnlp-main.1323/) · 未找到代码 · ![EMNLP 2025](https://img.shields.io/badge/EMNLP-2025-orange)"
+  },
+  {
+    "title": "QuZO: Quantized Zeroth-Order Fine-Tuning for Large Language Models",
+    "category": "zo_systems",
+    "date": "2025",
+    "description_en": "Integrates quantization into forward-only SFT.",
+    "description_zh": "将量化整合到纯前向监督微调中。",
+    "resources_en": "[paper](https://aclanthology.org/2025.emnlp-main.271/) · [code](https://github.com/lloo099/QuZO) · ![EMNLP 2025](https://img.shields.io/badge/EMNLP-2025-orange)",
+    "resources_zh": "[论文](https://aclanthology.org/2025.emnlp-main.271/) · [代码](https://github.com/lloo099/QuZO) · ![EMNLP 2025](https://img.shields.io/badge/EMNLP-2025-orange)"
+  },
+  {
+    "title": "Hi-ZFO: Hierarchical Zeroth- and First-Order LLM Fine-Tuning via Importance-Guided Tensor Selection",
+    "category": "zo_systems",
+    "date": "2026",
+    "description_en": "Assigns FO or ZO updates according to tensor importance.",
+    "description_zh": "根据张量重要性为其分配一阶或零阶更新。",
+    "resources_en": "[paper](https://aclanthology.org/2026.findings-acl.239/) · code not located · ![Findings of ACL 2026](https://img.shields.io/badge/Findings_of_ACL-2026-orange)",
+    "resources_zh": "[论文](https://aclanthology.org/2026.findings-acl.239/) · 未找到代码 · ![Findings of ACL 2026](https://img.shields.io/badge/Findings_of_ACL-2026-orange)"
+  },
+  {
+    "title": "AdaMeZO: Adam-style Zeroth-Order Optimizer for LLM Fine-tuning Without Maintaining the Moments",
+    "category": "zo_systems",
+    "date": "2026",
+    "description_en": "Approximates adaptive moments without full optimizer states.",
+    "description_zh": "无需保存完整的优化器状态即可近似自适应矩估计。",
+    "resources_en": "[paper](https://openreview.net/forum?id=XLc102wbnT) · [code](https://github.com/shawnnn3di/AdaMeZO) · ![ICML 2026](https://img.shields.io/badge/ICML-2026-orange)",
+    "resources_zh": "[论文](https://openreview.net/forum?id=XLc102wbnT) · [代码](https://github.com/shawnnn3di/AdaMeZO) · ![ICML 2026](https://img.shields.io/badge/ICML-2026-orange)"
+  },
+  {
+    "title": "Beyond the Capability Boundary: Zeroth-Order Optimization for Self-Evolving LLM Agents",
+    "category": "zo_multi_turn",
+    "date": "2026-08",
+    "description_en": "Perturbs LoRA parameters and scores them with answer perplexity, using the successful deep-research trajectories as SFT data to close the loop. This is multi-turn agent adaptation, but its ZO signal remains a smooth SFT-style proxy rather than a sparse terminal reward.",
+    "description_zh": "对 LoRA 参数施加扰动并使用答案困惑度进行评分，再将成功的深度研究轨迹作为监督微调数据形成闭环。该方法属于多轮智能体适配，但其 ZO 信号仍然是平滑的监督微调代理，而不是稀疏终局奖励。",
+    "resources_en": "[paper](https://arxiv.org/abs/2608.09292) · [code](https://github.com/hidk1911/ZOForLLMAgents) · 2026-08",
+    "resources_zh": "[论文](https://arxiv.org/abs/2608.09292) · [代码](https://github.com/hidk1911/ZOForLLMAgents) · 2026-08"
+  },
+  {
+    "title": "Revisiting Zeroth-Order Optimization for Memory-Efficient LLM Fine-Tuning: A Benchmark",
+    "category": "zo_understanding",
+    "date": "2024",
+    "description_en": "ZO-Bench compares objectives, trainable interfaces, and model families across representative language-understanding and generation tasks.",
+    "description_zh": "ZO-Bench 在代表性的语言理解和生成任务上比较不同目标函数、可训练接口和模型系列。",
+    "resources_en": "[paper](https://proceedings.mlr.press/v235/zhang24ad.html) · [code](https://github.com/ZO-Bench/ZO-LLM) · ![ICML 2024](https://img.shields.io/badge/ICML-2024-orange)",
+    "resources_zh": "[论文](https://proceedings.mlr.press/v235/zhang24ad.html) · [代码](https://github.com/ZO-Bench/ZO-LLM) · ![ICML 2024](https://img.shields.io/badge/ICML-2024-orange)"
+  },
+  {
+    "title": "Zeroth-Order Optimization Finds Flat Minima",
+    "category": "zo_understanding",
+    "date": "2025",
+    "description_en": "Connects stochastic ZO dynamics to flat-minimum bias and includes language-model fine-tuning experiments.",
+    "description_zh": "将随机 ZO 动力学与偏向平坦极小值的隐式偏置联系起来，并包含语言模型微调实验。",
+    "resources_en": "[paper](https://proceedings.neurips.cc/paper_files/paper/2025/hash/ebc62a3af9342eb4ebc728e5c5bc4cca-Abstract-Conference.html) · [code](https://github.com/Liang137/FlatZero) · ![NeurIPS 2025](https://img.shields.io/badge/NeurIPS-2025-orange)",
+    "resources_zh": "[论文](https://proceedings.neurips.cc/paper_files/paper/2025/hash/ebc62a3af9342eb4ebc728e5c5bc4cca-Abstract-Conference.html) · [代码](https://github.com/Liang137/FlatZero) · ![NeurIPS 2025](https://img.shields.io/badge/NeurIPS-2025-orange)"
+  },
+  {
+    "title": "LLM Zeroth-Order Fine-Tuning is an Inference Workload",
+    "category": "zo_understanding",
+    "date": "2026",
+    "description_en": "Shows that repeated ZO scoring can be reorganized around an inference-serving runtime.",
+    "description_zh": "说明重复的 ZO 评分过程可以围绕推理服务运行时重新组织。",
+    "resources_en": "[paper](https://arxiv.org/abs/2605.28760) · [code](https://github.com/playeriv65/zo-vllm) · 2026",
+    "resources_zh": "[论文](https://arxiv.org/abs/2605.28760) · [代码](https://github.com/playeriv65/zo-vllm) · 2026"
+  }
+]

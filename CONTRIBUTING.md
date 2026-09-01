@@ -14,7 +14,16 @@ Open an issue or pull request with:
 - the task regime: single-turn, multi-turn/agentic, or understanding/analysis;
 - representative experimental datasets.
 
-Add new papers in reverse chronological order within the most specific section. Prefer arXiv, ACL Anthology, OpenReview, PMLR, or the publisher page over secondary summaries.
+Add new papers to [`data/papers.json`](data/papers.json) in reverse chronological order within the most specific category. Prefer arXiv, ACL Anthology, OpenReview, PMLR, or the publisher page over secondary summaries. Each record contains the shared title and date, its category key, bilingual descriptions, and bilingual resource links.
+
+After editing the data, regenerate both README tables and all distribution charts:
+
+```bash
+python3 scripts/generate_catalog.py
+python3 scripts/generate_catalog.py --check
+```
+
+Do not edit content between the `GENERATED CATALOG` markers directly. The generator overwrites those sections.
 
 ## Scope checks
 
@@ -26,19 +35,20 @@ Prompt evolution, chain-of-thought search, candidate-answer evolution, skill/mem
 
 Choose exactly one primary section:
 
-- ES — single-turn reasoning/alignment
-- ES — multi-turn/agentic reasoning
-- ES — understanding/analysis
-- ZO — single-turn SFT/adaptation
-- ZO — multi-turn agent adaptation
-- ZO — understanding/systems
+- `es_pretraining` — ES pretraining
+- `es_single_turn` — ES single-turn reasoning/alignment
+- `es_multi_turn` — ES multi-turn/agentic reasoning
+- `es_understanding` — ES understanding/analysis
+- `zo_baselines` — ZO baselines, sparse updates, and subspaces
+- `zo_directions` — ZO direction design and variance reduction
+- `zo_systems` — ZO memory systems, preconditioning, and quantization
+- `zo_multi_turn` — ZO multi-turn agent adaptation
+- `zo_understanding` — ZO understanding/systems
+
+Use the exact category keys from `data/papers.json`; the labels above describe where each key appears in the README.
 
 ## Style
 
-Use this format, keeping the implementation entry on the paper's own line:
-
-```markdown
-- **Paper title** — One-sentence contribution and representative datasets. [paper](PRIMARY_URL) · [code](OFFICIAL_URL) · YYYY-MM
-```
+Use the existing JSON records as the format reference. Keep both descriptions factual and to one sentence, and preserve Markdown links in the two `resources_*` fields.
 
 If an implementation cannot be verified, write `code not located`. Do not copy abstracts verbatim.
