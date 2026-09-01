@@ -1,5 +1,5 @@
 name: Add a paper
-description: Suggest an ES × LLM or ZO × LLM paper
+description: Suggest a parameter-space ES or ZO paper for LLMs
 title: "[Paper] "
 labels:
   - paper
@@ -21,21 +21,32 @@ body:
     id: code_url
     attributes:
       label: Official code URL
+      description: Leave blank only if no implementation can be verified.
   - type: dropdown
     id: family
     attributes:
       label: Family
       options:
-        - Evolution strategies for LLM optimization
-        - Zeroth-order LLM fine-tuning
-        - Prompt or reasoning-state ES/ZO
+        - ES — single-turn reasoning/alignment
+        - ES — multi-turn/agentic reasoning
+        - ES — understanding/analysis
+        - ZO — single-turn SFT/adaptation
+        - ZO — multi-turn agent adaptation
+        - ZO — understanding/systems
+    validations:
+      required: true
+  - type: textarea
+    id: datasets
+    attributes:
+      label: Representative datasets
+      description: List the main training and evaluation datasets used by the paper.
     validations:
       required: true
   - type: textarea
     id: rationale
     attributes:
       label: Scope justification
-      description: Explain in one or two sentences what is optimized and how ES/ZO is used.
+      description: Explain what persistent model parameters are optimized and how ES/ZO is used.
     validations:
       required: true
   - type: checkboxes
@@ -47,4 +58,5 @@ body:
           required: true
         - label: The link points to a primary source.
           required: true
-
+        - label: This is not prompt, reasoning-state, candidate-answer, skill, or memory evolution.
+          required: true
