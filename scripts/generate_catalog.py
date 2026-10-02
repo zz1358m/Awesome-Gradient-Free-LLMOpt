@@ -67,6 +67,13 @@ CATEGORIES = [
         "zh": "内存系统、预条件与量化",
     },
     {
+        "key": "zo_alignment",
+        "family": "ZO",
+        "level": 3,
+        "en": "Preference alignment",
+        "zh": "偏好对齐",
+    },
+    {
         "key": "zo_multi_turn",
         "family": "ZO",
         "level": 3,

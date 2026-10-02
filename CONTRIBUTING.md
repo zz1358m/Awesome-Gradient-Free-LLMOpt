@@ -42,6 +42,7 @@ Choose exactly one primary section:
 - `zo_baselines` — ZO baselines, sparse updates, and subspaces
 - `zo_directions` — ZO direction design and variance reduction
 - `zo_systems` — ZO memory systems, preconditioning, and quantization
+- `zo_alignment` — ZO comparison-based preference alignment
 - `zo_multi_turn` — ZO multi-turn agent adaptation
 - `zo_understanding` — ZO understanding/systems
 

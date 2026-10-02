@@ -9,6 +9,24 @@
     "resources_zh": "[论文](https://arxiv.org/abs/2510.10603) · 未找到代码 · 2025-10"
   },
   {
+    "title": "Can Bayesian Optimization Efficiently Find a Strong Single Expert in Neural Thickets?",
+    "category": "es_single_turn",
+    "date": "2026-08",
+    "description_en": "Uses Gaussian-process-guided Bayesian optimization in a random linear weight subspace to select a single deployable expert without LLM backpropagation; preliminary reasoning experiments use Qwen2.5-Instruct 0.5B–3B.",
+    "description_zh": "在随机线性权重子空间中使用高斯过程引导的贝叶斯优化，无需 LLM 反传即可搜索单个可部署专家；初步推理实验使用 Qwen2.5-Instruct 0.5B–3B，方法属于贝叶斯搜索。",
+    "resources_en": "[paper](https://arxiv.org/abs/2608.10867) · code not located · 2026-08",
+    "resources_zh": "[论文](https://arxiv.org/abs/2608.10867) · 未找到代码 · 2026-08"
+  },
+  {
+    "title": "Consolidating Rewarded Perturbations for LLM Post-Training",
+    "category": "es_single_turn",
+    "date": "2026-05",
+    "description_en": "CoRP consolidates rewarded parameter perturbations into one deployable model through reward and compatibility reweighting, held-out validation, and step-size calibration, with no LLM backpropagation.",
+    "description_zh": "CoRP 通过奖励与兼容性重加权、留出验证及步长校准，将高奖励参数扰动合并为单个可部署模型，全程无需 LLM 反传。",
+    "resources_en": "[paper](https://arxiv.org/abs/2605.31494) · [code](https://github.com/oooranz/CoRP) · 2026-05",
+    "resources_zh": "[论文](https://arxiv.org/abs/2605.31494) · [代码](https://github.com/oooranz/CoRP) · 2026-05"
+  },
+  {
     "title": "Evolution Strategies at Scale: LLM Fine-Tuning Beyond Reinforcement Learning",
     "category": "es_single_turn",
     "date": "2026",
@@ -30,10 +48,10 @@
     "title": "Neural Thickets: Diverse Task Experts Are Dense Around Pretrained Weights",
     "category": "es_single_turn",
     "date": "2026",
-    "description_en": "RandOpt samples parameter perturbations, retains the best experts, and ensembles their predictions; Iterative RandOpt reaches 92.9% on GSM8K with OLMo-3-7B under the reported matched-compute setup.",
-    "description_zh": "RandOpt 对参数扰动进行采样，保留表现最好的专家并集成其预测；在论文报告的等计算量设置下，Iterative RandOpt 使用 OLMo-3-7B 在 GSM8K 上达到 92.9%。",
-    "resources_en": "[paper](https://openreview.net/forum?id=92oF5bU4cU) · [RandOpt code](https://github.com/sunrainyg/RandOpt) · [Iterative RandOpt branch](https://github.com/sunrainyg/RandOpt/tree/iterative-randopt) · ![ICML 2026 Spotlight](https://img.shields.io/badge/ICML_2026-Spotlight-orange)",
-    "resources_zh": "[论文](https://openreview.net/forum?id=92oF5bU4cU) · [RandOpt 代码](https://github.com/sunrainyg/RandOpt) · [Iterative RandOpt 分支](https://github.com/sunrainyg/RandOpt/tree/iterative-randopt) · ![ICML 2026 Spotlight](https://img.shields.io/badge/ICML_2026-Spotlight-orange)"
+    "description_en": "RandOpt samples parameter perturbations, selects top experts, and ensembles predictions. The Iterative RandOpt blog extension adds gradient-based distillation and repeats the search, reporting 92.9% on GSM8K with OLMo-3-7B under matched compute; the applicability blog explores sequence-length effects in a sine-wave MLP toy experiment.",
+    "description_zh": "RandOpt 对参数扰动进行采样，筛选最佳专家并集成预测。Iterative RandOpt 博客扩展加入梯度蒸馏并重复搜索，报告在等计算量设置下使用 OLMo-3-7B 在 GSM8K 上达到 92.9%；适用性博客通过正弦波 MLP 玩具实验探索序列长度的影响。",
+    "resources_en": "[paper](https://openreview.net/forum?id=92oF5bU4cU) · [RandOpt code](https://github.com/sunrainyg/RandOpt) · [Iterative RandOpt branch](https://github.com/sunrainyg/RandOpt/tree/iterative-randopt) · [Iterative RandOpt blog](https://thickets.mit.edu/blogs/iter_randopt.html) · [When does RandOpt work? blog](https://kindxiaoming.github.io/blog/2026/randopt/) · ![ICML 2026 Spotlight](https://img.shields.io/badge/ICML_2026-Spotlight-orange)",
+    "resources_zh": "[论文](https://openreview.net/forum?id=92oF5bU4cU) · [RandOpt 代码](https://github.com/sunrainyg/RandOpt) · [Iterative RandOpt 分支](https://github.com/sunrainyg/RandOpt/tree/iterative-randopt) · [Iterative RandOpt 博客](https://thickets.mit.edu/blogs/iter_randopt.html) · [When does RandOpt work? 博客](https://kindxiaoming.github.io/blog/2026/randopt/) · ![ICML 2026 Spotlight](https://img.shields.io/badge/ICML_2026-Spotlight-orange)"
   },
   {
     "title": "Quantized Evolution Strategies: High-precision Fine-tuning of Quantized LLMs at Low-precision Cost",
@@ -153,6 +171,33 @@
     "resources_zh": "[论文](https://arxiv.org/abs/2608.12679) · [代码](https://github.com/conorfhayes/beyond-the-best-guess) · 2026-08"
   },
   {
+    "title": "MpSub: A Momentum p-Dimensional Subspace Trust-Region Method for Derivative-Free Fine-Tuning of Large Language Models",
+    "category": "zo_baselines",
+    "date": "2026-09",
+    "description_en": "Combines momentum and random directions in a low-dimensional subspace, estimates gradients by central differences, and adapts a trust-region radius; evaluated on OPT-125M/350M with CommitmentBank.",
+    "description_zh": "在低维子空间中结合动量与随机方向，以中心有限差分估计梯度并自适应调整信赖域半径；实验使用 OPT-125M/350M 与 CommitmentBank。",
+    "resources_en": "[paper](https://arxiv.org/abs/2609.07666) · code not located · 2026-09",
+    "resources_zh": "[论文](https://arxiv.org/abs/2609.07666) · 未找到代码 · 2026-09"
+  },
+  {
+    "title": "LOZO+: Provably Efficient Zeroth-Order Fine-Tuning via Greedy Low-Rank Subspace Selection",
+    "category": "zo_baselines",
+    "date": "2026",
+    "description_en": "Uses loss-based feedback and adaptive thresholds to greedily retain effective low-rank subspace directions for forward-only LLM fine-tuning.",
+    "description_zh": "利用损失反馈与自适应阈值贪心保留有效低秩子空间方向，实现仅前向的 LLM 微调。",
+    "resources_en": "[paper](https://proceedings.mlr.press/v306/fang26k.html) · code not located · ![ICML 2026](https://img.shields.io/badge/ICML-2026-orange)",
+    "resources_zh": "[论文](https://proceedings.mlr.press/v306/fang26k.html) · 未找到代码 · ![ICML 2026](https://img.shields.io/badge/ICML-2026-orange)"
+  },
+  {
+    "title": "MaZO: Masked Zeroth-Order Optimization for Multi-Task Fine-Tuning of Large Language Models",
+    "category": "zo_baselines",
+    "date": "2025-11",
+    "description_en": "Uses parameter importance and multi-task update masks to reduce the search dimension and task conflicts in ZO fine-tuning.",
+    "description_zh": "利用参数重要性与多任务更新掩码缩小零阶微调的搜索空间并减少任务冲突。",
+    "resources_en": "[paper](https://aclanthology.org/2025.emnlp-main.935/) · code not located · ![EMNLP 2025](https://img.shields.io/badge/EMNLP-2025-orange)",
+    "resources_zh": "[论文](https://aclanthology.org/2025.emnlp-main.935/) · 未找到代码 · ![EMNLP 2025](https://img.shields.io/badge/EMNLP-2025-orange)"
+  },
+  {
     "title": "Fine-Tuning Language Models with Just Forward Passes",
     "category": "zo_baselines",
     "date": "2023",
@@ -232,6 +277,33 @@
     "description_zh": "结合多查询估计、修正后的 Haar 子空间和子空间 Adam。",
     "resources_en": "[paper](https://arxiv.org/abs/2608.15665) · code not located · 2026-08",
     "resources_zh": "[论文](https://arxiv.org/abs/2608.15665) · 未找到代码 · 2026-08"
+  },
+  {
+    "title": "Universally Empowering Zeroth-Order Optimization via Adaptive Layer-wise Sampling",
+    "category": "zo_directions",
+    "date": "2026-07",
+    "description_en": "AdaLeZO uses non-stationary bandit layer selection and inverse-probability-weighted sampling with replacement to improve ZO estimates and runtime; evaluated on LLaMA/OPT models from 6.7B to 30B.",
+    "description_zh": "AdaLeZO 通过非平稳多臂老虎机选层与有放回逆概率加权采样改善零阶估计及运行效率；实验覆盖 6.7B 至 30B 的 LLaMA/OPT 模型。",
+    "resources_en": "[paper](https://aclanthology.org/2026.findings-acl.1999/) · code not located · ![ACL Findings 2026](https://img.shields.io/badge/ACL_Findings-2026-orange)",
+    "resources_zh": "[论文](https://aclanthology.org/2026.findings-acl.1999/) · 未找到代码 · ![ACL Findings 2026](https://img.shields.io/badge/ACL_Findings-2026-orange)"
+  },
+  {
+    "title": "Private Zeroth-Order Optimization with Public Data",
+    "category": "zo_directions",
+    "date": "2025-11",
+    "description_en": "PAZO uses public-data first-order gradients to guide private ZO estimates for differential privacy; text experiments include RoBERTa-base prompt-tuning on MNLI, distinct from preconditioned PaZO.",
+    "description_zh": "PAZO 使用公开数据的一阶梯度引导私有零阶估计以实现差分隐私；文本实验包含 RoBERTa-base 在 MNLI 上的提示参数训练，与预条件 PaZO 为不同工作。",
+    "resources_en": "[paper](https://proceedings.neurips.cc/paper_files/paper/2025/hash/54de3c17e1a2457658a22ad801c721db-Abstract-Conference.html) · [code](https://github.com/xuchengong/PAZO) · ![NeurIPS 2025](https://img.shields.io/badge/NeurIPS-2025-orange)",
+    "resources_zh": "[论文](https://proceedings.neurips.cc/paper_files/paper/2025/hash/54de3c17e1a2457658a22ad801c721db-Abstract-Conference.html) · [代码](https://github.com/xuchengong/PAZO) · ![NeurIPS 2025](https://img.shields.io/badge/NeurIPS-2025-orange)"
+  },
+  {
+    "title": "MUZO: Leveraging Multiple Queries and Momentum for Zeroth-Order Fine-Tuning of Large Language Models",
+    "category": "zo_directions",
+    "date": "2025-11",
+    "description_en": "Averages multiple finite-difference estimates and combines them with Adam for lower-variance forward-only fine-tuning.",
+    "description_zh": "对多次有限差分估计取平均并结合 Adam，实现更低方差的仅前向微调。",
+    "resources_en": "[paper](https://aclanthology.org/2025.emnlp-main.432/) · code not located · ![EMNLP 2025](https://img.shields.io/badge/EMNLP-2025-orange)",
+    "resources_zh": "[论文](https://aclanthology.org/2025.emnlp-main.432/) · 未找到代码 · ![EMNLP 2025](https://img.shields.io/badge/EMNLP-2025-orange)"
   },
   {
     "title": "Variance-reduced Zeroth-Order Methods for Fine-Tuning Language Models",
@@ -351,6 +423,78 @@
     "resources_zh": "[论文](https://openreview.net/forum?id=bRS5iwbqlC) · [代码](https://github.com/ASTRAL-Group/ZO_Fine_tuner) · ![ICML 2026](https://img.shields.io/badge/ICML-2026-orange)"
   },
   {
+    "title": "ZOCheck: CPU-Shadow Checkpointing for Zeroth-Order LLM Fine-Tuning",
+    "category": "zo_systems",
+    "date": "2026-09",
+    "description_en": "Replays seed-and-scalar update logs in a CPU shadow process to build consistent recovery images and persist checkpoints off the GPU critical path for ZO LLM fine-tuning.",
+    "description_zh": "通过 CPU 影子进程重放随机种子与标量更新日志，构建一致恢复镜像并在 GPU 关键路径之外持久化检查点，为零阶 LLM 微调提供容错。",
+    "resources_en": "[paper](https://arxiv.org/abs/2609.27189) · code not located · 2026-09 · SC26 accepted (author-reported)",
+    "resources_zh": "[论文](https://arxiv.org/abs/2609.27189) · 未找到代码 · 2026-09 · SC26 已接收（作者声明）"
+  },
+  {
+    "title": "Global Adaptive Momentum Meets Local Personalized Perturbation: Efficient Federated LLM Fine-Tuning with Zeroth-Order Gradients",
+    "category": "zo_systems",
+    "date": "2026-07",
+    "description_en": "Combines local personalized perturbations, ZO gradient transmission and global reconstruction with adaptive momentum aggregation to improve federated LLM fine-tuning under heterogeneous client data.",
+    "description_zh": "结合本地个性化扰动、零阶梯度传输与全局重构，以及自适应动量聚合，改善客户端数据异质条件下的联邦 LLM 微调。",
+    "resources_en": "[paper](https://aclanthology.org/2026.acl-long.1851/) · code not located · ![ACL 2026](https://img.shields.io/badge/ACL-2026-orange)",
+    "resources_zh": "[论文](https://aclanthology.org/2026.acl-long.1851/) · 未找到代码 · ![ACL 2026](https://img.shields.io/badge/ACL-2026-orange)"
+  },
+  {
+    "title": "HO-SFL: Hybrid-Order Split Federated Learning with Backprop-Free Clients and Dimension-Free Aggregation",
+    "category": "zo_systems",
+    "date": "2026",
+    "description_en": "Combines client-side ZO updates with server-side first-order backpropagation for split federated LoRA fine-tuning, reducing client memory and model-aggregation traffic; split activations still require communication.",
+    "description_zh": "在切分联邦 LoRA 微调中结合客户端零阶更新与服务端一阶反传，降低客户端内存及模型聚合通信；切分激活仍需传输。",
+    "resources_en": "[paper](https://proceedings.mlr.press/v306/chen26fd.html) · code not located · ![ICML 2026](https://img.shields.io/badge/ICML-2026-orange)",
+    "resources_zh": "[论文](https://proceedings.mlr.press/v306/chen26fd.html) · 未找到代码 · ![ICML 2026](https://img.shields.io/badge/ICML-2026-orange)"
+  },
+  {
+    "title": "Converge Faster, Talk Less: Hessian-Informed Federated Zeroth-Order Optimization",
+    "category": "zo_systems",
+    "date": "2026",
+    "description_en": "HiSo reconstructs a global diagonal curvature preconditioner from ZO updates to accelerate federated LLM fine-tuning while exchanging only scalars and random seeds.",
+    "description_zh": "HiSo 从零阶更新重建全局对角曲率预条件器，加速联邦 LLM 微调，并仅传输标量与随机种子。",
+    "resources_en": "[paper](https://proceedings.iclr.cc/paper_files/paper/2026/hash/3e8b1835833ef809059efa74b9df6805-Abstract-Conference.html) · [code](https://github.com/ZidongLiu/DeComFL) · ![ICLR 2026](https://img.shields.io/badge/ICLR-2026-orange)",
+    "resources_zh": "[论文](https://proceedings.iclr.cc/paper_files/paper/2026/hash/3e8b1835833ef809059efa74b9df6805-Abstract-Conference.html) · [代码](https://github.com/ZidongLiu/DeComFL) · ![ICLR 2026](https://img.shields.io/badge/ICLR-2026-orange)"
+  },
+  {
+    "title": "MobiZO: Enabling Efficient LLM Fine-Tuning at the Edge via Inference Engines",
+    "category": "zo_systems",
+    "date": "2025-11",
+    "description_en": "Parallelizes multi-query ZO estimation with Multi-Perturbed LoRA and integrates with ExecuTorch for on-device fine-tuning.",
+    "description_zh": "通过 Multi-Perturbed LoRA 并行执行多查询零阶估计，并接入 ExecuTorch 实现端侧微调。",
+    "resources_en": "[paper](https://aclanthology.org/2025.emnlp-main.1022/) · [code](https://github.com/leigao97/MobiZO) · ![EMNLP 2025](https://img.shields.io/badge/EMNLP-2025-orange)",
+    "resources_zh": "[论文](https://aclanthology.org/2025.emnlp-main.1022/) · [代码](https://github.com/leigao97/MobiZO) · ![EMNLP 2025](https://img.shields.io/badge/EMNLP-2025-orange)"
+  },
+  {
+    "title": "Improving the Straight-Through Estimator with Zeroth-Order Information",
+    "category": "zo_systems",
+    "date": "2025-10",
+    "description_en": "FOGZO combines first-order STE gradients with ZO updates for quantization-aware pretraining, reducing estimator bias and ZO computation; language experiments cover LLaMA models up to 0.3B parameters.",
+    "description_zh": "FOGZO 在量化感知预训练中结合一阶 STE 梯度与零阶更新，降低估计偏差及零阶计算成本；语言实验覆盖至 0.3B 参数的 LLaMA 模型。",
+    "resources_en": "[paper](https://proceedings.neurips.cc/paper_files/paper/2025/hash/f49d76cf84df83a611883c621c96d2d9-Abstract-Conference.html) · [code](https://github.com/1733116199/fogzo) · ![NeurIPS 2025](https://img.shields.io/badge/NeurIPS-2025-orange)",
+    "resources_zh": "[论文](https://proceedings.neurips.cc/paper_files/paper/2025/hash/f49d76cf84df83a611883c621c96d2d9-Abstract-Conference.html) · [代码](https://github.com/1733116199/fogzo) · ![NeurIPS 2025](https://img.shields.io/badge/NeurIPS-2025-orange)"
+  },
+  {
+    "title": "Bilevel ZOFO: Efficient LLM Fine-Tuning and Meta-Training",
+    "category": "zo_systems",
+    "date": "2025",
+    "description_en": "Combines ZO updates of the full backbone with FO adapter updates in a bilevel formulation for fine-tuning and meta-training.",
+    "description_zh": "以双层优化结合全骨干的零阶更新与适配器的一阶更新，用于微调和元训练；属于混合 FO/ZO 方法。",
+    "resources_en": "[paper](https://proceedings.neurips.cc/paper_files/paper/2025/hash/5f999632c48f87cffb214e575581e4a9-Abstract-Conference.html) · code not located · ![NeurIPS 2025](https://img.shields.io/badge/NeurIPS-2025-orange)",
+    "resources_zh": "[论文](https://proceedings.neurips.cc/paper_files/paper/2025/hash/5f999632c48f87cffb214e575581e4a9-Abstract-Conference.html) · 未找到代码 · ![NeurIPS 2025](https://img.shields.io/badge/NeurIPS-2025-orange)"
+  },
+  {
+    "title": "PaZO: Preconditioned Accelerated Zeroth-Order Optimization for Fine-Tuning LLMs",
+    "category": "zo_systems",
+    "date": "2025",
+    "description_en": "Uses preconditioned SPSA with diagonal Hessian estimation and moving averages to stabilize and accelerate ZO fine-tuning.",
+    "description_zh": "采用预条件 SPSA、对角 Hessian 估计与移动平均，稳定并加速零阶微调。",
+    "resources_en": "[paper](https://proceedings.neurips.cc/paper_files/paper/2025/hash/a14193e9d9fb0b03af0b717de1cac8ac-Abstract-Conference.html) · code not located · ![NeurIPS 2025](https://img.shields.io/badge/NeurIPS-2025-orange)",
+    "resources_zh": "[论文](https://proceedings.neurips.cc/paper_files/paper/2025/hash/a14193e9d9fb0b03af0b717de1cac8ac-Abstract-Conference.html) · 未找到代码 · ![NeurIPS 2025](https://img.shields.io/badge/NeurIPS-2025-orange)"
+  },
+  {
     "title": "Second-Order Fine-Tuning without Pain for LLMs: A Hessian Informed Zeroth-Order Optimizer",
     "category": "zo_systems",
     "date": "2025",
@@ -414,6 +558,15 @@
     "resources_zh": "[论文](https://openreview.net/forum?id=XLc102wbnT) · [代码](https://github.com/shawnnn3di/AdaMeZO) · ![ICML 2026](https://img.shields.io/badge/ICML-2026-orange)"
   },
   {
+    "title": "ComPO: Preference Alignment via Comparison Oracles",
+    "category": "zo_alignment",
+    "date": "2025",
+    "description_en": "Aggregates parameter perturbations using one-bit preference comparisons for ZO alignment, combined with gradient-based DPO/SimPO in practice; evaluated on UltraFeedback with AlpacaEval 2, Arena-Hard, and MT-Bench, with a 2026 extension adding online KL control.",
+    "description_zh": "利用一比特偏好比较聚合参数扰动进行零阶对齐，实践结合 DPO/SimPO 梯度训练；在 UltraFeedback 上训练并以 AlpacaEval 2、Arena-Hard 和 MT-Bench 评估，2026 扩展加入在线 KL 控制。",
+    "resources_en": "[paper](https://arxiv.org/abs/2505.05465) · [2026 extension](https://arxiv.org/abs/2609.19144) · [code](https://github.com/PeterLauLukChen/ComparisonPO) · ![NeurIPS 2025](https://img.shields.io/badge/NeurIPS-2025-orange)",
+    "resources_zh": "[论文](https://arxiv.org/abs/2505.05465) · [2026 扩展版](https://arxiv.org/abs/2609.19144) · [代码](https://github.com/PeterLauLukChen/ComparisonPO) · ![NeurIPS 2025](https://img.shields.io/badge/NeurIPS-2025-orange)"
+  },
+  {
     "title": "Beyond the Capability Boundary: Zeroth-Order Optimization for Self-Evolving LLM Agents",
     "category": "zo_multi_turn",
     "date": "2026-08",
@@ -421,6 +574,33 @@
     "description_zh": "对 LoRA 参数施加扰动并使用答案困惑度进行评分，再将成功的深度研究轨迹作为监督微调数据形成闭环。该方法属于多轮智能体适配，但其 ZO 信号仍然是平滑的监督微调代理，而不是稀疏终局奖励。",
     "resources_en": "[paper](https://arxiv.org/abs/2608.09292) · [code](https://github.com/hidk1911/ZOForLLMAgents) · 2026-08",
     "resources_zh": "[论文](https://arxiv.org/abs/2608.09292) · [代码](https://github.com/hidk1911/ZOForLLMAgents) · 2026-08"
+  },
+  {
+    "title": "Zeroth-Order Optimization at the Edge of Stability",
+    "category": "zo_understanding",
+    "date": "2026",
+    "description_en": "Characterizes mean-square linear stability of two-point ZO methods through the Hessian spectrum and derives bounds using its top eigenvalue and trace; empirical edge-of-stability evidence comes from full-batch vision training.",
+    "description_zh": "通过 Hessian 谱刻画两点零阶方法的均方线性稳定性，并以最大特征值和迹给出稳定性界；稳定性边缘的实验证据来自全批量视觉训练。",
+    "resources_en": "[paper](https://proceedings.mlr.press/v306/song26ac.html) · code not located · ![ICML 2026](https://img.shields.io/badge/ICML-2026-orange)",
+    "resources_zh": "[论文](https://proceedings.mlr.press/v306/song26ac.html) · 未找到代码 · ![ICML 2026](https://img.shields.io/badge/ICML-2026-orange)"
+  },
+  {
+    "title": "Position: Zeroth-Order Optimization in Deep Learning Is Underexplored, Not Underpowered",
+    "category": "zo_understanding",
+    "date": "2026",
+    "description_en": "Position paper advocating algorithmic, systems, and evaluation research for ZO deep learning, including subspace structure and query-variance tradeoffs; broader than LLMs and not a new optimizer.",
+    "description_zh": "立场论文，主张加强零阶深度学习的算法、系统与评估研究，讨论子空间结构及查询与方差权衡；范围超出 LLM，并非新优化器。",
+    "resources_en": "[paper](https://proceedings.mlr.press/v306/liu26gv.html) · code not located · ![ICML 2026 Position](https://img.shields.io/badge/ICML_2026-Position-orange)",
+    "resources_zh": "[论文](https://proceedings.mlr.press/v306/liu26gv.html) · 未找到代码 · ![ICML 2026 Position](https://img.shields.io/badge/ICML_2026-Position-orange)"
+  },
+  {
+    "title": "Learning Dynamics of Zeroth-Order Optimization: A Kernel Perspective",
+    "category": "zo_understanding",
+    "date": "2026",
+    "description_en": "Analyzes one-step ZO-SGD learning dynamics through a randomly projected empirical neural tangent kernel, relating kernel approximation fidelity to perturbation count and output size under the analysis assumptions.",
+    "description_zh": "通过随机投影的经验神经切线核分析 ZO-SGD 的单步学习动力学，在分析假设下将核近似精度与扰动数量及输出维数联系起来。",
+    "resources_en": "[paper](https://proceedings.mlr.press/v306/li26in.html) · code not located · ![ICML 2026](https://img.shields.io/badge/ICML-2026-orange)",
+    "resources_zh": "[论文](https://proceedings.mlr.press/v306/li26in.html) · 未找到代码 · ![ICML 2026](https://img.shields.io/badge/ICML-2026-orange)"
   },
   {
     "title": "Revisiting Zeroth-Order Optimization for Memory-Efficient LLM Fine-Tuning: A Benchmark",
