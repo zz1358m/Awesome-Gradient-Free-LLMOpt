@@ -1,0 +1,150 @@
+{
+  "review_date": "2026-10-09",
+  "timezone": "Asia/Shanghai",
+  "window_start_date": "2026-10-02",
+  "window_end_date": "2026-10-09",
+  "window_note_zh": "按日期检索，截止本次执行；不等同于精确到时刻的滚动七天。",
+  "repository": "https://github.com/zz1358m/Awesome-Gradient-Free-LLM",
+  "deduplication_zh": "已核对当前本地及远端同步版本的 data/papers.json 和 papers.bib；六项均未找到既有条目。",
+  "papers": [
+    {
+      "title": "DART-ES: Difficulty-Aware Reweighting and Targeted Replay for Fine-Tuning LLMs with Evolution Strategies",
+      "authors": [
+        "Zhishen Sun",
+        "Hongzhan Wang",
+        "Sizhe Dang",
+        "Guang Dai",
+        "Haishan Ye"
+      ],
+      "first_posted": "2026-10-04T15:42:11+08:00",
+      "primary_url": "https://arxiv.org/abs/2610.06993",
+      "code_url": "https://github.com/szs777/DART-ES-Code",
+      "contribution_zh": "在纯前向全参数 ES 微调中，根据种群通过率和历史难度估计重加权奖励并重放罕见可解样本；评测覆盖数学推理、指令微调、代码生成和 Countdown。",
+      "method_zh": "纯前向全参数演化策略；难度重加权与针对性重放",
+      "relevance_zh": "高；持久模型参数的演化策略微调",
+      "decision": "included",
+      "category": "es_single_turn",
+      "concerns_zh": [
+        "总计算预算、公平比较、重复实验和误差范围需进一步核实。",
+        "作者代码链接已确认，未运行复现。",
+        "未确认正式会议录用。"
+      ]
+    },
+    {
+      "title": "Dust: Pretraining Transformers Without Backpropagation",
+      "authors": [
+        "Samip Dahal",
+        "Bishwas Mandal",
+        "Serdar Gülbahar",
+        "Akshay Vegesna"
+      ],
+      "first_posted": "2026-10",
+      "date_precision": "month",
+      "primary_url": "https://qlabs.sh/research/dust",
+      "code_url": "https://github.com/qlabs-eng/dust",
+      "contribution_zh": "通过逐词元激活扰动和损失反馈分配学习信号，训练语言模型权重，并对残差混合标量使用权重空间 ES；大种群比较需要更多计算，相对 EGGROLL 的效率优势包含外推估计。",
+      "method_zh": "激活空间节点扰动零阶估计；残差混合标量使用权重空间 ES",
+      "relevance_zh": "高；无需反向传播即可训练持久模型权重",
+      "decision": "included_with_date_caveat",
+      "category": "zo_pretraining",
+      "concerns_zh": [
+        "首次公开日期未确认，不能作为严格确定的本周新增统计。",
+        "研究文章的正式会议或预印本发表信息未确认。",
+        "大种群性能需要更多计算；EGGROLL 效率比较包含外推。",
+        "未运行复现。"
+      ]
+    },
+    {
+      "title": "VLA-ZO: Fast Zeroth-Order Adaptation for Vision-Language-Action Models",
+      "authors": [
+        "Jaemin Kim",
+        "Jiahn Kim",
+        "Taesik Gong"
+      ],
+      "first_posted": "2026-10-05T21:05:34+08:00",
+      "primary_url": "https://arxiv.org/abs/2610.06271",
+      "contribution_zh": "冻结视觉语言前缀，跨查询及优化步骤复用条件状态并预取，以加速动作侧零阶适应。",
+      "method_zh": "动作专家或动作头参数的零阶有限差分优化",
+      "relevance_zh": "中；视觉语言动作模型的动作侧参数适应，语言骨干冻结",
+      "decision": "included_by_user_scope_expansion",
+      "concerns_zh": [
+        "动作侧参数适应已按用户要求收录；条目明确语言骨干冻结。",
+        "需核实缓存构建成本、硬件条件和总体适应预算。",
+        "本次未确认官方代码。"
+      ],
+      "category": "zo_systems"
+    },
+    {
+      "title": "AIM-ZO: Activation-Informed Subspace Maintenance for Zeroth-Order LLM Fine-Tuning",
+      "authors": [
+        "Yue Xie",
+        "Zhi Zheng",
+        "Yunpeng Ba",
+        "Xuyang Wu",
+        "Xialiang Tong",
+        "Zhichao Lu",
+        "Tao Zhong",
+        "Zhenkun Wang"
+      ],
+      "first_posted": "2026-09-28T22:20:28+08:00",
+      "primary_url": "https://arxiv.org/abs/2609.35257",
+      "code_url": "https://github.com/EkkoXy/AIM-ZO",
+      "contribution_zh": "利用前向激活持续维护参数子空间，并从中采样较窄的活跃方向集合进行纯前向零阶更新；在相同前向评估预算下评测五种大语言模型和十一个下游任务。",
+      "method_zh": "激活引导的动态参数子空间维护与零阶估计",
+      "relevance_zh": "高；大语言模型参数零阶微调",
+      "decision": "included_backfill",
+      "category": "zo_baselines",
+      "concerns_zh": [
+        "首次提交在本周窗口之前，作为补收录，不能按本周新增统计。",
+        "提交 ICLR 2027 的说明不代表已录用。",
+        "未运行复现。"
+      ]
+    },
+    {
+      "title": "Trust the Direction, Search the Step: Zero-and-First-Order Methods for LLM Fine-Tuning",
+      "authors": [
+        "Cristian McGee",
+        "El Houcine Bergou",
+        "Aritra Dutta"
+      ],
+      "first_posted": "2026-10-02T01:59:28+08:00",
+      "primary_url": "https://arxiv.org/abs/2610.02190",
+      "contribution_zh": "用一阶优化器选择方向，沿该方向进行零阶函数评估并选择曲率感知步长。",
+      "method_zh": "一阶方向与零阶步长搜索的混合优化",
+      "relevance_zh": "中；涉及零阶函数评估，但仍依赖任务梯度和反向传播",
+      "decision": "included_by_user_scope_expansion",
+      "concerns_zh": [
+        "按用户要求收录至混合方法关联研究，明确仍依赖反向传播。",
+        "作者声明已被 NeurIPS 2026 接收，未独立核实官方会议记录。",
+        "上海时间日期与 UTC 日期不同；严格滚动七天窗口还需考虑执行时刻。"
+      ],
+      "category": "related_hybrid",
+      "code_url": "https://github.com/nizswan/Zeroth-First-Order-Framework"
+    },
+    {
+      "title": "HeadEdit: Calibrating Language Model Behavior Through the Frozen Unembedding Matrix",
+      "authors": [
+        "Zirui He",
+        "Haiyan Zhao",
+        "Jingyu Hu",
+        "Yinghao Wu",
+        "Chenxi Yuan",
+        "Yingcong Li",
+        "Yandong Bai",
+        "Mengnan Du"
+      ],
+      "first_posted": "2026-10-01T14:45:29+08:00",
+      "primary_url": "https://arxiv.org/abs/2610.01170",
+      "contribution_zh": "从配对补全中提取低秩行为子空间，并依据输入坐标生成词表范围的输出修正。",
+      "method_zh": "无参数更新的推理时低秩行为校准",
+      "relevance_zh": "低；未优化持久模型参数",
+      "decision": "included_by_user_scope_expansion",
+      "concerns_zh": [
+        "首次提交在本周窗口之前。",
+        "按用户要求在无参数更新的关联研究中收录。"
+      ],
+      "category": "related_inference"
+    }
+  ],
+  "scope_decision_zh": "用户明确要求将暂缓条目也先收录；视觉语言动作适配加入零阶系统，混合梯度与无参数更新的方法在关联研究中明确标注。"
+}

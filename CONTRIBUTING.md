@@ -33,18 +33,23 @@ Prompt evolution, chain-of-thought search, candidate-answer evolution, skill/mem
 
 ## Classification
 
+Scope extensions include persistent action-side ZO adaptation in VLA models. Hybrid methods that retain backpropagation and inference-time calibration without parameter updates belong only in the explicitly labeled related-research categories.
+
 Choose exactly one primary section:
 
 - `es_pretraining` — ES pretraining
 - `es_single_turn` — ES single-turn reasoning/alignment
 - `es_multi_turn` — ES multi-turn/agentic reasoning
 - `es_understanding` — ES understanding/analysis
+- `zo_pretraining` — forward-only ZO pretraining
 - `zo_baselines` — ZO baselines, sparse updates, and subspaces
 - `zo_directions` — ZO direction design and variance reduction
 - `zo_systems` — ZO memory systems, preconditioning, and quantization
 - `zo_alignment` — ZO comparison-based preference alignment
 - `zo_multi_turn` — ZO multi-turn agent adaptation
 - `zo_understanding` — ZO understanding/systems
+- `related_hybrid` — related hybrid first-/zeroth-order methods
+- `related_inference` — related inference-time calibration without parameter updates
 
 Use the exact category keys from `data/papers.json`; the labels above describe where each key appears in the README.
 

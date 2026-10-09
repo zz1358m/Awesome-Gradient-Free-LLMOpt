@@ -9,6 +9,15 @@
     "resources_zh": "[论文](https://arxiv.org/abs/2510.10603) · 未找到代码 · 2025-10"
   },
   {
+    "title": "DART-ES: Difficulty-Aware Reweighting and Targeted Replay for Fine-Tuning LLMs with Evolution Strategies",
+    "category": "es_single_turn",
+    "date": "2026-10",
+    "description_en": "Uses population pass rates and historical difficulty estimates to reweight rewards and replay rarely solved samples during forward-only full-parameter ES fine-tuning; evaluated on mathematical reasoning, instruction tuning, code generation, and Countdown.",
+    "description_zh": "在纯前向全参数 ES 微调中，根据种群通过率和历史难度估计重加权奖励并重放罕见可解样本；评测覆盖数学推理、指令微调、代码生成和 Countdown。",
+    "resources_en": "[paper](https://arxiv.org/abs/2610.06993) · [code](https://github.com/szs777/DART-ES-Code) · 2026-10",
+    "resources_zh": "[论文](https://arxiv.org/abs/2610.06993) · [代码](https://github.com/szs777/DART-ES-Code) · 2026-10"
+  },
+  {
     "title": "Can Bayesian Optimization Efficiently Find a Strong Single Expert in Neural Thickets?",
     "category": "es_single_turn",
     "date": "2026-08",
@@ -169,6 +178,15 @@
     "description_zh": "说明 ES 不仅影响 pass@1，还会改变推理解法的多样性和 pass@k。",
     "resources_en": "[paper](https://arxiv.org/abs/2608.12679) · [code](https://github.com/conorfhayes/beyond-the-best-guess) · 2026-08",
     "resources_zh": "[论文](https://arxiv.org/abs/2608.12679) · [代码](https://github.com/conorfhayes/beyond-the-best-guess) · 2026-08"
+  },
+  {
+    "title": "AIM-ZO: Activation-Informed Subspace Maintenance for Zeroth-Order LLM Fine-Tuning",
+    "category": "zo_baselines",
+    "date": "2026-09",
+    "description_en": "Maintains an evolving activation-informed parameter subspace and samples a narrower active set of directions for forward-only ZO updates; evaluated across five LLMs and eleven downstream tasks under matched forward-evaluation budgets.",
+    "description_zh": "利用前向激活持续维护参数子空间，并从中采样较窄的活跃方向集合进行纯前向零阶更新；在相同前向评估预算下评测五种大语言模型和十一个下游任务。",
+    "resources_en": "[paper](https://arxiv.org/abs/2609.35257) · [code](https://github.com/EkkoXy/AIM-ZO) · 2026-09",
+    "resources_zh": "[论文](https://arxiv.org/abs/2609.35257) · [代码](https://github.com/EkkoXy/AIM-ZO) · 2026-09"
   },
   {
     "title": "MpSub: A Momentum p-Dimensional Subspace Trust-Region Method for Derivative-Free Fine-Tuning of Large Language Models",
@@ -423,6 +441,15 @@
     "resources_zh": "[论文](https://openreview.net/forum?id=bRS5iwbqlC) · [代码](https://github.com/ASTRAL-Group/ZO_Fine_tuner) · ![ICML 2026](https://img.shields.io/badge/ICML-2026-orange)"
   },
   {
+    "title": "VLA-ZO: Fast Zeroth-Order Adaptation for Vision-Language-Action Models",
+    "category": "zo_systems",
+    "date": "2026-10",
+    "description_en": "Adapts persistent action-side parameters in vision-language-action models using ZO finite differences, frozen vision-language state reuse, and schedule-aware prefetching; evaluated on LIBERO shifts with the language backbone frozen.",
+    "description_zh": "通过零阶有限差分、冻结视觉语言状态复用和调度感知预取，适配视觉语言动作模型的持久动作侧参数；在 LIBERO 分布偏移上评测，语言骨干保持冻结。",
+    "resources_en": "[paper](https://arxiv.org/abs/2610.06271) · code not located · 2026-10",
+    "resources_zh": "[论文](https://arxiv.org/abs/2610.06271) · 未找到代码 · 2026-10"
+  },
+  {
     "title": "ZOCheck: CPU-Shadow Checkpointing for Zeroth-Order LLM Fine-Tuning",
     "category": "zo_systems",
     "date": "2026-09",
@@ -628,5 +655,32 @@
     "description_zh": "说明重复的 ZO 评分过程可以围绕推理服务运行时重新组织。",
     "resources_en": "[paper](https://arxiv.org/abs/2605.28760) · [code](https://github.com/playeriv65/zo-vllm) · 2026",
     "resources_zh": "[论文](https://arxiv.org/abs/2605.28760) · [代码](https://github.com/playeriv65/zo-vllm) · 2026"
+  },
+  {
+    "title": "Dust: Pretraining Transformers Without Backpropagation",
+    "category": "zo_pretraining",
+    "date": "2026-10",
+    "description_en": "Trains transformer language-model weights using token-wise activation perturbations and loss-based credit assignment, with weight-space ES for residual mixing scalars; large-population comparisons require more compute and the claimed EGGROLL efficiency gains include extrapolation.",
+    "description_zh": "通过逐词元激活扰动和损失反馈分配学习信号，训练语言模型权重，并对残差混合标量使用权重空间 ES；大种群比较需要更多计算，相对 EGGROLL 的效率优势包含外推估计。",
+    "resources_en": "[research article](https://qlabs.sh/research/dust) · [code](https://github.com/qlabs-eng/dust) · 2026-10 (month only; first-publication day unverified)",
+    "resources_zh": "[研究文章](https://qlabs.sh/research/dust) · [代码](https://github.com/qlabs-eng/dust) · 2026-10（仅确认月份；首次公开日待核实）"
+  },
+  {
+    "title": "Trust the Direction, Search the Step: Zero-and-First-Order Methods for LLM Fine-Tuning",
+    "category": "related_hybrid",
+    "date": "2026-10",
+    "description_en": "Hybrid ZFO uses a backpropagation-based first-order direction and two additional objective evaluations to choose a curvature-aware step; it retains task-gradient computation and is included as related research rather than forward-only training.",
+    "description_zh": "混合 ZFO 使用反向传播得到的一阶方向及两次额外函数评估，选择曲率感知步长；训练仍需任务梯度，作为关联研究收录。",
+    "resources_en": "[paper](https://arxiv.org/abs/2610.02190) · [code](https://github.com/nizswan/Zeroth-First-Order-Framework) · 2026-10 (venue not independently verified)",
+    "resources_zh": "[论文](https://arxiv.org/abs/2610.02190) · [代码](https://github.com/nizswan/Zeroth-First-Order-Framework) · 2026-10（会议录用未独立核实）"
+  },
+  {
+    "title": "HeadEdit: Calibrating Language Model Behavior Through the Frozen Unembedding Matrix",
+    "category": "related_inference",
+    "date": "2026-10",
+    "description_en": "Extracts a low-rank behavioral subspace from paired completions and applies input-dependent vocabulary-wide corrections at inference time through a frozen unembedding matrix; no persistent model parameters are updated.",
+    "description_zh": "从配对补全中提取低秩行为子空间，通过冻结的输出映射矩阵在推理时施加随输入变化的词表范围修正；不更新持久模型参数。",
+    "resources_en": "[paper](https://arxiv.org/abs/2610.01170) · code not located · 2026-10",
+    "resources_zh": "[论文](https://arxiv.org/abs/2610.01170) · 未找到代码 · 2026-10"
   }
 ]

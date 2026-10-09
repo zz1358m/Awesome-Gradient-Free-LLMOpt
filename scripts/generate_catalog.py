@@ -46,6 +46,13 @@ CATEGORIES = [
         "zh": "理解 ES",
     },
     {
+        "key": "zo_pretraining",
+        "family": "ZO",
+        "level": 3,
+        "en": "Pretraining",
+        "zh": "预训练",
+    },
+    {
         "key": "zo_baselines",
         "family": "ZO",
         "level": 4,
@@ -86,6 +93,14 @@ CATEGORIES = [
         "level": 3,
         "en": "Understanding and systems",
         "zh": "机理理解与系统",
+    },
+    {
+        "key": "related_hybrid", "family": "RELATED", "level": 3,
+        "en": "Hybrid first- and zeroth-order methods", "zh": "一阶与零阶混合方法",
+    },
+    {
+        "key": "related_inference", "family": "RELATED", "level": 3,
+        "en": "Inference-time calibration without parameter updates", "zh": "无参数更新的推理时校准",
     },
 ]
 
@@ -183,7 +198,6 @@ def render_catalog(papers: list[dict[str, str]], language: str) -> str:
                 "",
                 "Unless an entry says otherwise, these methods optimize a supervised CE/NLL-style objective with forward-only function evaluations. Their main contribution is making SFT feasible under activation-memory, optimizer-state, or black-box constraints.",
                 "",
-                "### Single-turn SFT and adaptation",
             ]
         )
     else:
@@ -194,12 +208,18 @@ def render_catalog(papers: list[dict[str, str]], language: str) -> str:
                 "",
                 "除非条目另有说明，这些方法通常通过纯前向函数值评估优化监督式 CE/NLL 目标。其主要贡献是使监督微调能够在激活内存、优化器状态或黑盒访问受限的条件下进行。",
                 "",
-                "### 单轮监督微调与适配",
             ]
         )
 
+    category = CATEGORY_BY_KEY["zo_pretraining"]
+    lines.extend([
+        f"### {category[language]}", "",
+        table_for(grouped["zo_pretraining"], language), "",
+        "### Single-turn SFT and adaptation" if language == "en" else "### 单轮监督微调与适配",
+    ])
+
     for category in CATEGORIES:
-        if category["family"] != "ZO":
+        if category["family"] != "ZO" or category["key"] == "zo_pretraining":
             continue
         lines.extend(
             [
@@ -209,6 +229,14 @@ def render_catalog(papers: list[dict[str, str]], language: str) -> str:
                 table_for(grouped[category["key"]], language),
             ]
         )
+    lines.extend([
+        "", "## Related research" if language == "en" else "## 关联研究", "",
+        "These companion entries include methods that retain backpropagation or do not update persistent model parameters; each entry states that boundary explicitly."
+        if language == "en" else "关联条目涵盖仍依赖反向传播或不更新持久模型参数的方法，各条目明确标注这一边界。",
+    ])
+    for category in CATEGORIES:
+        if category["family"] == "RELATED":
+            lines.extend(["", f"### {category[language]}", "", table_for(grouped[category["key"]], language)])
     lines.extend([END, ""])
     return "\n".join(lines)
 

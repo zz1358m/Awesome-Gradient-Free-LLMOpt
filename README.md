@@ -6,7 +6,9 @@ A curated collection of **evolution strategies (ES)** and **zeroth-order optimiz
 
 This list covers persistent model parameters: full weights, adapters, low-rank subspaces, and quantized weights. It deliberately excludes prompt evolution, chain-of-thought search, candidate-answer evolution, and other object-level optimization.
 
-**Last literature check:** 2026-09-01
+**Last literature check:** 2026-10-09
+
+[Latest review and inclusion decisions](data/literature_reviews/2026-10-09.json).
 
 **Venue convention:** ![ICML 2026](https://img.shields.io/badge/ICML-2026-orange) denotes a confirmed conference or journal venue. Preprints without a verified venue remain unbadged.
 
@@ -19,10 +21,12 @@ This list covers persistent model parameters: full weights, adapters, low-rank s
   - [Multi-turn and agentic reasoning](#multi-turn-and-agentic-reasoning)
   - [Understanding ES](#understanding-es)
 - [Zeroth-order optimization](#zeroth-order-optimization)
+  - [Pretraining](#pretraining-1)
   - [Single-turn SFT and adaptation](#single-turn-sft-and-adaptation)
   - [Preference alignment](#preference-alignment)
   - [Multi-turn agent adaptation](#multi-turn-agent-adaptation)
   - [Understanding and systems](#understanding-and-systems)
+- [Related research](#related-research)
 - [Scope](#scope)
 - [Contributing](#contributing)
 
@@ -55,6 +59,7 @@ This is a taxonomy of prevailing practice, not a mathematical prohibition. ES ca
 
 | Date | Paper | Contribution | Resources |
 |---|---|---|---|
+| 2026-10 | **DART-ES: Difficulty-Aware Reweighting and Targeted Replay for Fine-Tuning LLMs with Evolution Strategies** | Uses population pass rates and historical difficulty estimates to reweight rewards and replay rarely solved samples during forward-only full-parameter ES fine-tuning; evaluated on mathematical reasoning, instruction tuning, code generation, and Countdown. | [paper](https://arxiv.org/abs/2610.06993) · [code](https://github.com/szs777/DART-ES-Code) · 2026-10 |
 | 2026-08 | **Can Bayesian Optimization Efficiently Find a Strong Single Expert in Neural Thickets?** | Uses Gaussian-process-guided Bayesian optimization in a random linear weight subspace to select a single deployable expert without LLM backpropagation; preliminary reasoning experiments use Qwen2.5-Instruct 0.5B–3B. | [paper](https://arxiv.org/abs/2608.10867) · code not located · 2026-08 |
 | 2026-05 | **Consolidating Rewarded Perturbations for LLM Post-Training** | CoRP consolidates rewarded parameter perturbations into one deployable model through reward and compatibility reweighting, held-out validation, and step-size calibration, with no LLM backpropagation. | [paper](https://arxiv.org/abs/2605.31494) · [code](https://github.com/oooranz/CoRP) · 2026-05 |
 | 2026 | **Evolution Strategies at Scale: LLM Fine-Tuning Beyond Reinforcement Learning** | Full-parameter, population-parallel ES that directly optimizes rewards for Countdown, math reasoning, Sudoku, conciseness, and ARC-AGI. | [paper](https://openreview.net/forum?id=i0P4ew9GpS) · [code](https://github.com/VsonicV/es-at-scale) · [earlier implementation](https://github.com/VsonicV/es-fine-tuning-paper) · ![ICML 2026](https://img.shields.io/badge/ICML-2026-orange) |
@@ -88,12 +93,19 @@ This is a taxonomy of prevailing practice, not a mathematical prohibition. ES ca
 
 Unless an entry says otherwise, these methods optimize a supervised CE/NLL-style objective with forward-only function evaluations. Their main contribution is making SFT feasible under activation-memory, optimizer-state, or black-box constraints.
 
+### Pretraining
+
+| Date | Paper | Contribution | Resources |
+|---|---|---|---|
+| 2026-10 | **Dust: Pretraining Transformers Without Backpropagation** | Trains transformer language-model weights using token-wise activation perturbations and loss-based credit assignment, with weight-space ES for residual mixing scalars; large-population comparisons require more compute and the claimed EGGROLL efficiency gains include extrapolation. | [research article](https://qlabs.sh/research/dust) · [code](https://github.com/qlabs-eng/dust) · 2026-10 (month only; first-publication day unverified) |
+
 ### Single-turn SFT and adaptation
 
 #### Baselines, sparse updates, and subspaces
 
 | Date | Paper | Contribution | Resources |
 |---|---|---|---|
+| 2026-09 | **AIM-ZO: Activation-Informed Subspace Maintenance for Zeroth-Order LLM Fine-Tuning** | Maintains an evolving activation-informed parameter subspace and samples a narrower active set of directions for forward-only ZO updates; evaluated across five LLMs and eleven downstream tasks under matched forward-evaluation budgets. | [paper](https://arxiv.org/abs/2609.35257) · [code](https://github.com/EkkoXy/AIM-ZO) · 2026-09 |
 | 2026-09 | **MpSub: A Momentum p-Dimensional Subspace Trust-Region Method for Derivative-Free Fine-Tuning of Large Language Models** | Combines momentum and random directions in a low-dimensional subspace, estimates gradients by central differences, and adapts a trust-region radius; evaluated on OPT-125M/350M with CommitmentBank. | [paper](https://arxiv.org/abs/2609.07666) · code not located · 2026-09 |
 | 2026 | **LOZO+: Provably Efficient Zeroth-Order Fine-Tuning via Greedy Low-Rank Subspace Selection** | Uses loss-based feedback and adaptive thresholds to greedily retain effective low-rank subspace directions for forward-only LLM fine-tuning. | [paper](https://proceedings.mlr.press/v306/fang26k.html) · code not located · ![ICML 2026](https://img.shields.io/badge/ICML-2026-orange) |
 | 2025-11 | **MaZO: Masked Zeroth-Order Optimization for Multi-Task Fine-Tuning of Large Language Models** | Uses parameter importance and multi-task update masks to reduce the search dimension and task conflicts in ZO fine-tuning. | [paper](https://aclanthology.org/2025.emnlp-main.935/) · code not located · ![EMNLP 2025](https://img.shields.io/badge/EMNLP-2025-orange) |
@@ -132,6 +144,7 @@ Unless an entry says otherwise, these methods optimize a supervised CE/NLL-style
 
 | Date | Paper | Contribution | Resources |
 |---|---|---|---|
+| 2026-10 | **VLA-ZO: Fast Zeroth-Order Adaptation for Vision-Language-Action Models** | Adapts persistent action-side parameters in vision-language-action models using ZO finite differences, frozen vision-language state reuse, and schedule-aware prefetching; evaluated on LIBERO shifts with the language backbone frozen. | [paper](https://arxiv.org/abs/2610.06271) · code not located · 2026-10 |
 | 2026-09 | **ZOCheck: CPU-Shadow Checkpointing for Zeroth-Order LLM Fine-Tuning** | Replays seed-and-scalar update logs in a CPU shadow process to build consistent recovery images and persist checkpoints off the GPU critical path for ZO LLM fine-tuning. | [paper](https://arxiv.org/abs/2609.27189) · code not located · 2026-09 · SC26 accepted (author-reported) |
 | 2026-07 | **Global Adaptive Momentum Meets Local Personalized Perturbation: Efficient Federated LLM Fine-Tuning with Zeroth-Order Gradients** | Combines local personalized perturbations, ZO gradient transmission and global reconstruction with adaptive momentum aggregation to improve federated LLM fine-tuning under heterogeneous client data. | [paper](https://aclanthology.org/2026.acl-long.1851/) · code not located · ![ACL 2026](https://img.shields.io/badge/ACL-2026-orange) |
 | 2026 | **HO-SFL: Hybrid-Order Split Federated Learning with Backprop-Free Clients and Dimension-Free Aggregation** | Combines client-side ZO updates with server-side first-order backpropagation for split federated LoRA fine-tuning, reducing client memory and model-aggregation traffic; split activations still require communication. | [paper](https://proceedings.mlr.press/v306/chen26fd.html) · code not located · ![ICML 2026](https://img.shields.io/badge/ICML-2026-orange) |
@@ -170,9 +183,27 @@ Unless an entry says otherwise, these methods optimize a supervised CE/NLL-style
 | 2024 | **Revisiting Zeroth-Order Optimization for Memory-Efficient LLM Fine-Tuning: A Benchmark** | ZO-Bench compares objectives, trainable interfaces, and model families across representative language-understanding and generation tasks. | [paper](https://proceedings.mlr.press/v235/zhang24ad.html) · [code](https://github.com/ZO-Bench/ZO-LLM) · ![ICML 2024](https://img.shields.io/badge/ICML-2024-orange) |
 | 2025 | **Zeroth-Order Optimization Finds Flat Minima** | Connects stochastic ZO dynamics to flat-minimum bias and includes language-model fine-tuning experiments. | [paper](https://proceedings.neurips.cc/paper_files/paper/2025/hash/ebc62a3af9342eb4ebc728e5c5bc4cca-Abstract-Conference.html) · [code](https://github.com/Liang137/FlatZero) · ![NeurIPS 2025](https://img.shields.io/badge/NeurIPS-2025-orange) |
 | 2026 | **LLM Zeroth-Order Fine-Tuning is an Inference Workload** | Shows that repeated ZO scoring can be reorganized around an inference-serving runtime. | [paper](https://arxiv.org/abs/2605.28760) · [code](https://github.com/playeriv65/zo-vllm) · 2026 |
+
+## Related research
+
+These companion entries include methods that retain backpropagation or do not update persistent model parameters; each entry states that boundary explicitly.
+
+### Hybrid first- and zeroth-order methods
+
+| Date | Paper | Contribution | Resources |
+|---|---|---|---|
+| 2026-10 | **Trust the Direction, Search the Step: Zero-and-First-Order Methods for LLM Fine-Tuning** | Hybrid ZFO uses a backpropagation-based first-order direction and two additional objective evaluations to choose a curvature-aware step; it retains task-gradient computation and is included as related research rather than forward-only training. | [paper](https://arxiv.org/abs/2610.02190) · [code](https://github.com/nizswan/Zeroth-First-Order-Framework) · 2026-10 (venue not independently verified) |
+
+### Inference-time calibration without parameter updates
+
+| Date | Paper | Contribution | Resources |
+|---|---|---|---|
+| 2026-10 | **HeadEdit: Calibrating Language Model Behavior Through the Frozen Unembedding Matrix** | Extracts a low-rank behavioral subspace from paired completions and applies input-dependent vocabulary-wide corrections at inference time through a frozen unembedding matrix; no persistent model parameters are updated. | [paper](https://arxiv.org/abs/2610.01170) · code not located · 2026-10 |
 <!-- GENERATED CATALOG:END -->
 
 ## Scope
+
+Vision-language-action adaptation is included when ZO updates persistent action-side parameters; the language backbone may remain frozen. The separate **Related research** section includes explicitly labeled hybrid methods and inference-time calibration without parameter updates.
 
 Included methods must optimize persistent LLM parameters or parameter-efficient modules through ES populations, evolutionary selection, or zeroth-order/function-evaluation estimates. Full weights, LoRA/adapters, structured subspaces, and quantized parameters are in scope.
 

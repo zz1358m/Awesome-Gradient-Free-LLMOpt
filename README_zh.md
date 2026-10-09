@@ -6,7 +6,9 @@
 
 本列表关注持久化模型参数，包括完整权重、适配器、低秩子空间和量化权重；有意排除提示词演化、思维链搜索、候选答案演化以及其他仅优化模型外部对象的方法。
 
-**最近一次文献核查：** 2026-09-01
+**最近一次文献核查：** 2026-10-09
+
+[最新核查记录与收录决定](data/literature_reviews/2026-10-09.json)。
 
 **发表信息约定：** ![ICML 2026](https://img.shields.io/badge/ICML-2026-orange) 表示已经确认的会议或期刊发表信息。尚未核实正式发表去向的预印本不添加徽标。
 
@@ -19,10 +21,12 @@
   - [多轮与智能体推理](#多轮与智能体推理)
   - [理解 ES](#理解-es)
 - [零阶优化](#零阶优化)
+  - [预训练](#预训练-1)
   - [单轮监督微调与适配](#单轮监督微调与适配)
   - [偏好对齐](#偏好对齐)
   - [多轮智能体适配](#多轮智能体适配)
   - [机理理解与系统](#机理理解与系统)
+- [关联研究](#关联研究)
 - [收录范围](#收录范围)
 - [参与贡献](#参与贡献)
 
@@ -55,6 +59,7 @@ ES 和双点 ZO 都可以看作平滑目标函数的估计方法，但现有大�
 
 | 日期 | 论文 | 核心贡献 | 资源 |
 |---|---|---|---|
+| 2026-10 | **DART-ES: Difficulty-Aware Reweighting and Targeted Replay for Fine-Tuning LLMs with Evolution Strategies** | 在纯前向全参数 ES 微调中，根据种群通过率和历史难度估计重加权奖励并重放罕见可解样本；评测覆盖数学推理、指令微调、代码生成和 Countdown。 | [论文](https://arxiv.org/abs/2610.06993) · [代码](https://github.com/szs777/DART-ES-Code) · 2026-10 |
 | 2026-08 | **Can Bayesian Optimization Efficiently Find a Strong Single Expert in Neural Thickets?** | 在随机线性权重子空间中使用高斯过程引导的贝叶斯优化，无需 LLM 反传即可搜索单个可部署专家；初步推理实验使用 Qwen2.5-Instruct 0.5B–3B，方法属于贝叶斯搜索。 | [论文](https://arxiv.org/abs/2608.10867) · 未找到代码 · 2026-08 |
 | 2026-05 | **Consolidating Rewarded Perturbations for LLM Post-Training** | CoRP 通过奖励与兼容性重加权、留出验证及步长校准，将高奖励参数扰动合并为单个可部署模型，全程无需 LLM 反传。 | [论文](https://arxiv.org/abs/2605.31494) · [代码](https://github.com/oooranz/CoRP) · 2026-05 |
 | 2026 | **Evolution Strategies at Scale: LLM Fine-Tuning Beyond Reinforcement Learning** | 采用全参数、种群并行的 ES，直接优化 Countdown、数学推理、数独、简洁性和 ARC-AGI 等任务的奖励。 | [论文](https://openreview.net/forum?id=i0P4ew9GpS) · [代码](https://github.com/VsonicV/es-at-scale) · [早期实现](https://github.com/VsonicV/es-fine-tuning-paper) · ![ICML 2026](https://img.shields.io/badge/ICML-2026-orange) |
@@ -88,12 +93,19 @@ ES 和双点 ZO 都可以看作平滑目标函数的估计方法，但现有大�
 
 除非条目另有说明，这些方法通常通过纯前向函数值评估优化监督式 CE/NLL 目标。其主要贡献是使监督微调能够在激活内存、优化器状态或黑盒访问受限的条件下进行。
 
+### 预训练
+
+| 日期 | 论文 | 核心贡献 | 资源 |
+|---|---|---|---|
+| 2026-10 | **Dust: Pretraining Transformers Without Backpropagation** | 通过逐词元激活扰动和损失反馈分配学习信号，训练语言模型权重，并对残差混合标量使用权重空间 ES；大种群比较需要更多计算，相对 EGGROLL 的效率优势包含外推估计。 | [研究文章](https://qlabs.sh/research/dust) · [代码](https://github.com/qlabs-eng/dust) · 2026-10（仅确认月份；首次公开日待核实） |
+
 ### 单轮监督微调与适配
 
 #### 基线、稀疏更新与子空间
 
 | 日期 | 论文 | 核心贡献 | 资源 |
 |---|---|---|---|
+| 2026-09 | **AIM-ZO: Activation-Informed Subspace Maintenance for Zeroth-Order LLM Fine-Tuning** | 利用前向激活持续维护参数子空间，并从中采样较窄的活跃方向集合进行纯前向零阶更新；在相同前向评估预算下评测五种大语言模型和十一个下游任务。 | [论文](https://arxiv.org/abs/2609.35257) · [代码](https://github.com/EkkoXy/AIM-ZO) · 2026-09 |
 | 2026-09 | **MpSub: A Momentum p-Dimensional Subspace Trust-Region Method for Derivative-Free Fine-Tuning of Large Language Models** | 在低维子空间中结合动量与随机方向，以中心有限差分估计梯度并自适应调整信赖域半径；实验使用 OPT-125M/350M 与 CommitmentBank。 | [论文](https://arxiv.org/abs/2609.07666) · 未找到代码 · 2026-09 |
 | 2026 | **LOZO+: Provably Efficient Zeroth-Order Fine-Tuning via Greedy Low-Rank Subspace Selection** | 利用损失反馈与自适应阈值贪心保留有效低秩子空间方向，实现仅前向的 LLM 微调。 | [论文](https://proceedings.mlr.press/v306/fang26k.html) · 未找到代码 · ![ICML 2026](https://img.shields.io/badge/ICML-2026-orange) |
 | 2025-11 | **MaZO: Masked Zeroth-Order Optimization for Multi-Task Fine-Tuning of Large Language Models** | 利用参数重要性与多任务更新掩码缩小零阶微调的搜索空间并减少任务冲突。 | [论文](https://aclanthology.org/2025.emnlp-main.935/) · 未找到代码 · ![EMNLP 2025](https://img.shields.io/badge/EMNLP-2025-orange) |
@@ -132,6 +144,7 @@ ES 和双点 ZO 都可以看作平滑目标函数的估计方法，但现有大�
 
 | 日期 | 论文 | 核心贡献 | 资源 |
 |---|---|---|---|
+| 2026-10 | **VLA-ZO: Fast Zeroth-Order Adaptation for Vision-Language-Action Models** | 通过零阶有限差分、冻结视觉语言状态复用和调度感知预取，适配视觉语言动作模型的持久动作侧参数；在 LIBERO 分布偏移上评测，语言骨干保持冻结。 | [论文](https://arxiv.org/abs/2610.06271) · 未找到代码 · 2026-10 |
 | 2026-09 | **ZOCheck: CPU-Shadow Checkpointing for Zeroth-Order LLM Fine-Tuning** | 通过 CPU 影子进程重放随机种子与标量更新日志，构建一致恢复镜像并在 GPU 关键路径之外持久化检查点，为零阶 LLM 微调提供容错。 | [论文](https://arxiv.org/abs/2609.27189) · 未找到代码 · 2026-09 · SC26 已接收（作者声明） |
 | 2026-07 | **Global Adaptive Momentum Meets Local Personalized Perturbation: Efficient Federated LLM Fine-Tuning with Zeroth-Order Gradients** | 结合本地个性化扰动、零阶梯度传输与全局重构，以及自适应动量聚合，改善客户端数据异质条件下的联邦 LLM 微调。 | [论文](https://aclanthology.org/2026.acl-long.1851/) · 未找到代码 · ![ACL 2026](https://img.shields.io/badge/ACL-2026-orange) |
 | 2026 | **HO-SFL: Hybrid-Order Split Federated Learning with Backprop-Free Clients and Dimension-Free Aggregation** | 在切分联邦 LoRA 微调中结合客户端零阶更新与服务端一阶反传，降低客户端内存及模型聚合通信；切分激活仍需传输。 | [论文](https://proceedings.mlr.press/v306/chen26fd.html) · 未找到代码 · ![ICML 2026](https://img.shields.io/badge/ICML-2026-orange) |
@@ -170,9 +183,27 @@ ES 和双点 ZO 都可以看作平滑目标函数的估计方法，但现有大�
 | 2024 | **Revisiting Zeroth-Order Optimization for Memory-Efficient LLM Fine-Tuning: A Benchmark** | ZO-Bench 在代表性的语言理解和生成任务上比较不同目标函数、可训练接口和模型系列。 | [论文](https://proceedings.mlr.press/v235/zhang24ad.html) · [代码](https://github.com/ZO-Bench/ZO-LLM) · ![ICML 2024](https://img.shields.io/badge/ICML-2024-orange) |
 | 2025 | **Zeroth-Order Optimization Finds Flat Minima** | 将随机 ZO 动力学与偏向平坦极小值的隐式偏置联系起来，并包含语言模型微调实验。 | [论文](https://proceedings.neurips.cc/paper_files/paper/2025/hash/ebc62a3af9342eb4ebc728e5c5bc4cca-Abstract-Conference.html) · [代码](https://github.com/Liang137/FlatZero) · ![NeurIPS 2025](https://img.shields.io/badge/NeurIPS-2025-orange) |
 | 2026 | **LLM Zeroth-Order Fine-Tuning is an Inference Workload** | 说明重复的 ZO 评分过程可以围绕推理服务运行时重新组织。 | [论文](https://arxiv.org/abs/2605.28760) · [代码](https://github.com/playeriv65/zo-vllm) · 2026 |
+
+## 关联研究
+
+关联条目涵盖仍依赖反向传播或不更新持久模型参数的方法，各条目明确标注这一边界。
+
+### 一阶与零阶混合方法
+
+| 日期 | 论文 | 核心贡献 | 资源 |
+|---|---|---|---|
+| 2026-10 | **Trust the Direction, Search the Step: Zero-and-First-Order Methods for LLM Fine-Tuning** | 混合 ZFO 使用反向传播得到的一阶方向及两次额外函数评估，选择曲率感知步长；训练仍需任务梯度，作为关联研究收录。 | [论文](https://arxiv.org/abs/2610.02190) · [代码](https://github.com/nizswan/Zeroth-First-Order-Framework) · 2026-10（会议录用未独立核实） |
+
+### 无参数更新的推理时校准
+
+| 日期 | 论文 | 核心贡献 | 资源 |
+|---|---|---|---|
+| 2026-10 | **HeadEdit: Calibrating Language Model Behavior Through the Frozen Unembedding Matrix** | 从配对补全中提取低秩行为子空间，通过冻结的输出映射矩阵在推理时施加随输入变化的词表范围修正；不更新持久模型参数。 | [论文](https://arxiv.org/abs/2610.01170) · 未找到代码 · 2026-10 |
 <!-- GENERATED CATALOG:END -->
 
 ## 收录范围
+
+视觉语言动作模型通过零阶方法更新持久动作侧参数的适配研究可收录，并注明语言骨干是否冻结。独立的“关联研究”部分收录明确标注的混合梯度方法及无参数更新的推理时校准。
 
 收录的方法必须通过 ES 种群、进化选择或零阶/函数值评估来优化大语言模型的持久化参数或参数高效模块。完整权重、LoRA/适配器、结构化子空间和量化参数均在收录范围内。
 
