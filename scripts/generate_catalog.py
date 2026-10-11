@@ -108,7 +108,11 @@ CATEGORIES = [
     },
     {
         "key": "related_prompt_agent", "family": "RELATED", "level": 3,
-        "en": "Gradient-free search over prompts, agents, and external artifacts", "zh": "提示词、智能体与外部工件的梯度无关搜索",
+        "en": "Non-prompt external-artifact optimization", "zh": "非提示词外部工件优化",
+    },
+    {
+        "key": "related_agent_training", "family": "RELATED", "level": 3,
+        "en": "Related agent model and controller training", "zh": "关联智能体模型与控制器训练",
     },
     {
         "key": "related_unverified", "family": "RELATED", "level": 3,
@@ -247,8 +251,8 @@ def render_catalog(papers: list[dict[str, str]], language: str) -> str:
         )
     lines.extend([
         "", "## Related research" if language == "en" else "## 关联研究", "",
-        "These companion entries may retain backpropagation, use closed-form/local/statistical adaptation, operate at inference time, or optimize prompts, agents, and other external artifacts. Each entry records component-level backpropagation, persistent model weights, persistent external artifacts, and unresolved details only when supported."
-        if language == "en" else "关联条目可包含仍依赖反向传播、采用闭式/局部/统计适配、仅在推理时运行，或优化提示词、智能体及其他外部工件的方法。各条目仅依据原文记录逐组件反传、持久模型权重、持久外部工件和待核实事项。",
+        "These companion entries may retain backpropagation, use closed-form/local/statistical adaptation, operate at inference time, optimize non-prompt external artifacts, or train agent models and controllers. Each entry records component-level backpropagation, persistent model weights, persistent external artifacts, and unresolved details only when supported."
+        if language == "en" else "关联条目可包含仍依赖反向传播、采用闭式/局部/统计适配、仅在推理时运行、优化非提示词外部工件，或训练智能体模型与控制器的方法。各条目仅依据原文记录逐组件反传、持久模型权重、持久外部工件和待核实事项。",
     ])
     for category in CATEGORIES:
         if category["family"] == "RELATED":
