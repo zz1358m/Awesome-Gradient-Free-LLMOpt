@@ -3553,5 +3553,194 @@
     "description_zh": "EVOLYAPUNOV 以匹配扰动分支估计演化响应，只接纳同时改善能力并满足风险稳定性约束的自修改。",
     "resources_en": "[paper](https://openreview.net/forum?id=3t0j2Y05EH) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview record created in 2026; first public date unverified",
     "resources_zh": "[论文](https://openreview.net/forum?id=3t0j2Y05EH) · 未找到代码 · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 记录创建于 2026 年；首次公开日期待核实"
+  },
+  {
+    "title": "SCAMP: Black-Box Knowledge Poisoning Attack on Multimodal Retrieval-Augmented Generation",
+    "category": "related_prompt_agent",
+    "date": "2026",
+    "description_en": "SCAMP uses visual/text attacker agents and retrieval, generation, and consistency feedback to optimize aligned poisoned documents against multimodal RAG without target-gradient access.",
+    "description_zh": "SCAMP 以视觉/文本攻击代理及检索、生成、一致性反馈，在无目标梯度访问下优化多模态 RAG 的联合图文投毒文档。",
+    "resources_en": "[paper](https://openreview.net/forum?id=O26AmnGkFD) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview record created in 2026; first public date unverified",
+    "resources_zh": "[论文](https://openreview.net/forum?id=O26AmnGkFD) · 未找到代码 · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 记录创建于 2026 年；首次公开日期待核实"
+  },
+  {
+    "title": "QK-Wanda: Coupling Queries and Keys for Unstructured Pruning",
+    "category": "related_closed_form",
+    "date": "2026",
+    "description_en": "QK-Wanda derives a closed-form query-key deletion score and prunes LLM attention weights from calibration activations without gradients or retraining.",
+    "description_zh": "QK-Wanda 从校准激活推导 query-key 联合删除的闭式评分，无梯度、无重训练地剪枝 LLM 注意力权重。",
+    "resources_en": "[paper](https://openreview.net/forum?id=HXmRkbSJCb) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview record created in 2026; first public date unverified",
+    "resources_zh": "[论文](https://openreview.net/forum?id=HXmRkbSJCb) · 未找到代码 · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 记录创建于 2026 年；首次公开日期待核实"
+  },
+  {
+    "title": "RAZOR: Pruning Replaceable Experts in LLMs",
+    "category": "related_closed_form",
+    "date": "2026",
+    "description_en": "RAZOR aggregates exact single-deletion consensus-residual scores to prune replaceable LLM experts without gradients or recovery training.",
+    "description_zh": "RAZOR 聚合精确单删除的 consensus-residual 评分，无梯度、无恢复训练地剪除可替代 LLM 专家。",
+    "resources_en": "[paper](https://openreview.net/forum?id=OLS3NKUhWz) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview record created in 2026; first public date unverified",
+    "resources_zh": "[论文](https://openreview.net/forum?id=OLS3NKUhWz) · 未找到代码 · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 记录创建于 2026 年；首次公开日期待核实"
+  },
+  {
+    "title": "HarnessNet: From Engineered Harnesses to a Unified Neural Controller for Self-Evolving Agents",
+    "category": "related_hybrid",
+    "date": "2026",
+    "description_en": "HarnessNet trains a persistent neural harness controller by imitation and same-task outcome comparisons while keeping the controlled LLM frozen.",
+    "description_zh": "HarnessNet 先模仿工程 harness、再比较同任务尝试结果训练持久神经控制器，同时保持受控 LLM 冻结。",
+    "resources_en": "[paper](https://openreview.net/forum?id=cFcaAi8dtG) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview record created in 2026; first public date unverified",
+    "resources_zh": "[论文](https://openreview.net/forum?id=cFcaAi8dtG) · 未找到代码 · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 记录创建于 2026 年；首次公开日期待核实"
+  },
+  {
+    "title": "RC-VQ: Recovering What Calibration Discards with Vector-Quantized Residual Correction",
+    "category": "related_closed_form",
+    "date": "2026",
+    "description_en": "RC-VQ fits a persistent full-rank vector-quantized corrector to compressed-LLM residuals without gradients or recovery data.",
+    "description_zh": "RC-VQ 无梯度、无恢复数据地为压缩 LLM 残差拟合持久全秩向量量化 corrector。",
+    "resources_en": "[paper](https://openreview.net/forum?id=HXmiKD1kS0) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview record created in 2026; first public date unverified",
+    "resources_zh": "[论文](https://openreview.net/forum?id=HXmiKD1kS0) · 未找到代码 · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 记录创建于 2026 年；首次公开日期待核实"
+  },
+  {
+    "title": "Scalar Smoothness Is One Point on a Besov Spectrum",
+    "category": "related_closed_form",
+    "date": "2026",
+    "description_en": "A finite-difference roughness spectrum probes loss under block-matched quantization perturbations and allocates mixed precision across held-out LLMs.",
+    "description_zh": "finite-difference roughness spectrum 探测与各 block 量化误差匹配的损失变化，并为多个 LLM 分配混合精度。",
+    "resources_en": "[paper](https://openreview.net/forum?id=osd72MlzL5) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview record created in 2026; first public date unverified",
+    "resources_zh": "[论文](https://openreview.net/forum?id=osd72MlzL5) · 未找到代码 · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 记录创建于 2026 年；首次公开日期待核实"
+  },
+  {
+    "title": "When Can First-Order Models of Fine-Tuning Bound Forgetting?",
+    "category": "related_hybrid",
+    "date": "2026",
+    "description_en": "Finite-difference probes fit a response surrogate that bounds forgetting during otherwise first-order SGD LoRA fine-tuning.",
+    "description_zh": "有限差分探针拟合响应 surrogate，为本身采用一阶 SGD 的 LoRA 微调遗忘提供概率界。",
+    "resources_en": "[paper](https://openreview.net/forum?id=pOcuwMjDc0) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview record created in 2026; first public date unverified",
+    "resources_zh": "[论文](https://openreview.net/forum?id=pOcuwMjDc0) · 未找到代码 · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 记录创建于 2026 年；首次公开日期待核实"
+  },
+  {
+    "title": "RESCOM: ACTIVATION RESIDUAL COMPENSATION FOR LARGE LANGUAGE MODEL QUANTIZATION",
+    "category": "related_closed_form",
+    "date": "2026",
+    "description_en": "ResCom calibrates a persistent low-rank activation-residual correction in closed form while leaving quantized LLM weights unchanged.",
+    "description_zh": "ResCom 闭式校准持久低秩 activation-residual correction，同时保持量化 LLM 权重不变。",
+    "resources_en": "[paper](https://openreview.net/forum?id=KzeQR3Rqgi) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview record created in 2026; first public date unverified",
+    "resources_zh": "[论文](https://openreview.net/forum?id=KzeQR3Rqgi) · 未找到代码 · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 记录创建于 2026 年；首次公开日期待核实"
+  },
+  {
+    "title": "Beyond Parameter Space: Closed-Form Cross-Trajectory Repair After Harmful Fine-Tuning",
+    "category": "related_closed_form",
+    "date": "2026",
+    "description_en": "CCTR solves regularized least squares in closed form to persistently repair linear-module outputs across attacked and aligned representation trajectories.",
+    "description_zh": "CCTR 对攻击/对齐表征轨迹间的线性模块输出做正则最小二乘闭式修复，并持久修改模块权重。",
+    "resources_en": "[paper](https://openreview.net/forum?id=bLQ22POBgo) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview record created in 2026; first public date unverified",
+    "resources_zh": "[论文](https://openreview.net/forum?id=bLQ22POBgo) · 未找到代码 · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 记录创建于 2026 年；首次公开日期待核实"
+  },
+  {
+    "title": "SHIFT-LLM: Distribution Shift Correction in Depth-Pruned LLMs",
+    "category": "related_closed_form",
+    "date": "2026",
+    "description_en": "SHIFT-LLM fits persistent residual adapters by closed-form least squares to correct hidden-state shift after depth pruning without gradients.",
+    "description_zh": "SHIFT-LLM 用闭式最小二乘拟合持久 residual adapter，无梯度修正 depth-pruned LLM 的 hidden-state shift。",
+    "resources_en": "[paper](https://openreview.net/forum?id=rfbv29Wa3V) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview record created in 2026; first public date unverified",
+    "resources_zh": "[论文](https://openreview.net/forum?id=rfbv29Wa3V) · 未找到代码 · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 记录创建于 2026 年；首次公开日期待核实"
+  },
+  {
+    "title": "Layer-Specialized Model Merging for Training-Free Cross-Modal Reasoning Transfer",
+    "category": "related_closed_form",
+    "date": "2026",
+    "description_en": "Closed-form salience weights and visual-attention decay merge homologous reasoning and multimodal decoders without gradient updates.",
+    "description_zh": "以闭式 salience 权重和 visual-attention decay 无梯度合并同源推理与多模态 decoder。",
+    "resources_en": "[paper](https://openreview.net/forum?id=AYwu267x63) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview record created in 2026; first public date unverified",
+    "resources_zh": "[论文](https://openreview.net/forum?id=AYwu267x63) · 未找到代码 · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 记录创建于 2026 年；首次公开日期待核实"
+  },
+  {
+    "title": "Diagnosing Failure Regimes in LLM Agent Memory with Extraction-Pass Disagreement",
+    "category": "related_inference",
+    "date": "2026",
+    "description_en": "RRC uses repeated memory-consolidation disagreement to route vote budgets, retrieval depth, and answer policy without gradient updates.",
+    "description_zh": "RRC 依据重复记忆整合的分歧，无梯度路由投票预算、检索深度与回答策略。",
+    "resources_en": "[paper](https://openreview.net/forum?id=vpahOt8lBU) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview record created in 2026; first public date unverified",
+    "resources_zh": "[论文](https://openreview.net/forum?id=vpahOt8lBU) · 未找到代码 · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 记录创建于 2026 年；首次公开日期待核实"
+  },
+  {
+    "title": "Do Shared VLM Coordinates Imply Shared Calibration? A Study through Few-Shot Class-Incremental Learning",
+    "category": "related_closed_form",
+    "date": "2026",
+    "description_en": "DS-PoE combines a statistically calibrated visual expert with native text anchors by fixed logit addition under a training-free VLM protocol.",
+    "description_zh": "DS-PoE 在训练无关 VLM 协议下，以固定 logit addition 组合统计校准的视觉 expert 与原生文本 anchors。",
+    "resources_en": "[paper](https://openreview.net/forum?id=9gVp0VCEPN) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview record created in 2026; first public date unverified",
+    "resources_zh": "[论文](https://openreview.net/forum?id=9gVp0VCEPN) · 未找到代码 · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 记录创建于 2026 年；首次公开日期待核实"
+  },
+  {
+    "title": "Don't Retrain, Remix: Adaptation of Web Agents using Mixture Hypernetworks",
+    "category": "related_hybrid",
+    "date": "2026",
+    "description_en": "WebMix scouts an unseen website and uses a router forward pass to compose a persistent target adapter from previously trained LoRAs without target-gradient updates.",
+    "description_zh": "WebMix 探索未见网站后，以一次 router 前向把预训练 LoRA 组合成目标 adapter，无目标域梯度更新。",
+    "resources_en": "[paper](https://openreview.net/forum?id=Eq74LwgkjR) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview record created in 2026; first public date unverified",
+    "resources_zh": "[论文](https://openreview.net/forum?id=Eq74LwgkjR) · 未找到代码 · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 记录创建于 2026 年；首次公开日期待核实"
+  },
+  {
+    "title": "Breaking the Refusal Barrier: Stochastic Discovery of Residual  Unsafe Behaviors in Aligned Language Models",
+    "category": "related_prompt_agent",
+    "date": "2026",
+    "description_en": "SEEK discovers residual unsafe behaviors by gradient-free stochastic input/response sampling, then uses the discoveries for a separate safety-fine-tuning stage.",
+    "description_zh": "SEEK 以无梯度随机输入/响应采样发现残余不安全行为，再将其用于独立安全微调。",
+    "resources_en": "[paper](https://openreview.net/forum?id=T8c8NM6FT4) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview record created in 2026; first public date unverified",
+    "resources_zh": "[论文](https://openreview.net/forum?id=T8c8NM6FT4) · 未找到代码 · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 记录创建于 2026 年；首次公开日期待核实"
+  },
+  {
+    "title": "In-Context Robot Learning with VLM Agents",
+    "category": "related_prompt_agent",
+    "date": "2026",
+    "description_en": "GPT-Policy compiles demonstrations and execution feedback into a VLM-agent context for gradient-free, non-persistent robot adaptation.",
+    "description_zh": "GPT-Policy 将示范和执行反馈编译为 VLM agent 上下文，实现无梯度、无任务参数持久更新的机器人适配。",
+    "resources_en": "[paper](https://openreview.net/forum?id=LIa6SeOhH9) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview record created in 2026; first public date unverified",
+    "resources_zh": "[论文](https://openreview.net/forum?id=LIa6SeOhH9) · 未找到代码 · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 记录创建于 2026 年；首次公开日期待核实"
+  },
+  {
+    "title": "Code-Probe-Adapt: Interactive Heuristic Learning for Self-Evolving Agents",
+    "category": "related_prompt_agent",
+    "date": "2026",
+    "description_en": "COPA persistently probes and revises executable agent heuristics in a REPL with event-triggered feedback and no gradient updates.",
+    "description_zh": "COPA 在持久 REPL 中依据事件反馈持续探测并修订可执行 agent heuristic，且不做梯度更新。",
+    "resources_en": "[paper](https://openreview.net/forum?id=zeF8echOqR) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview record created in 2026; first public date unverified",
+    "resources_zh": "[论文](https://openreview.net/forum?id=zeF8echOqR) · 未找到代码 · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 记录创建于 2026 年；首次公开日期待核实"
+  },
+  {
+    "title": "CISA: Retrofitting Dense Attention Models with Chunk-Indexed Sparse Attention",
+    "category": "related_inference",
+    "date": "2026",
+    "description_en": "CISA retrofits dense LLM attention with key-derived chunk indexing and query-shared selection without gradient updates or sparse training.",
+    "description_zh": "CISA 以 key-derived chunk indexing 与 query-shared selection 无梯度、无 sparse training 地 retrofit 稠密 LLM 注意力。",
+    "resources_en": "[paper](https://openreview.net/forum?id=UpR5uTu7JV) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview record created in 2026; first public date unverified",
+    "resources_zh": "[论文](https://openreview.net/forum?id=UpR5uTu7JV) · 未找到代码 · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 记录创建于 2026 年；首次公开日期待核实"
+  },
+  {
+    "title": "scCoLLM: An LLM-Based Model Using Context-Space Adaptation for Single-Cell Analysis under Domain Shift",
+    "category": "related_inference",
+    "date": "2026",
+    "description_en": "scCoLLM selects a target-domain Bio-Context for zero-shot LLM analysis without gradient updates, labels, or parameter access.",
+    "description_zh": "scCoLLM 选择目标域 Bio-Context 供 LLM 零样本分析，无梯度更新、标签或参数访问。",
+    "resources_en": "[paper](https://openreview.net/forum?id=ICtYd1vctM) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview record created in 2026; first public date unverified",
+    "resources_zh": "[论文](https://openreview.net/forum?id=ICtYd1vctM) · 未找到代码 · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 记录创建于 2026 年；首次公开日期待核实"
+  },
+  {
+    "title": "Eliciting Model Behaviors by Optimizing the Latent Posterior",
+    "category": "related_hybrid",
+    "date": "2026",
+    "description_en": "Posterior Prefix Tuning optimizes a hard-prompt distribution with importance-sampled latent-posterior gradients while avoiding transformer forwards and model backpropagation in its inner loop.",
+    "description_zh": "Posterior Prefix Tuning 以 importance-sampled latent-posterior gradient 优化 hard-prompt 分布，内环无需 Transformer 前向或模型反传。",
+    "resources_en": "[paper](https://openreview.net/forum?id=hw82nCsx4L) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview record created in 2026; first public date unverified",
+    "resources_zh": "[论文](https://openreview.net/forum?id=hw82nCsx4L) · 未找到代码 · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 记录创建于 2026 年；首次公开日期待核实"
+  },
+  {
+    "title": "Suppressing a Rejected Action Costs a KL: Closed-Form Test-Time Updates for LLM Agents",
+    "category": "related_closed_form",
+    "date": "2026",
+    "description_en": "TALE analytically edits an LLM agent's output-side representation after a rejected action, choosing suppression strength by one-dimensional root finding without backpropagation.",
+    "description_zh": "TALE 在 action 被拒后解析编辑 LLM agent 的输出侧表征，并以一维求根无反传确定抑制强度。",
+    "resources_en": "[paper](https://openreview.net/forum?id=e4pspmOVIV) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview record created in 2026; first public date unverified",
+    "resources_zh": "[论文](https://openreview.net/forum?id=e4pspmOVIV) · 未找到代码 · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 记录创建于 2026 年；首次公开日期待核实"
   }
 ]

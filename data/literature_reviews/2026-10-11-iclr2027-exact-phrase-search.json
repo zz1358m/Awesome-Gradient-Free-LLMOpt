@@ -1,0 +1,430 @@
+{
+  "integrated_at": "2026-10-11T17:52:26.020454+08:00",
+  "retrieved_at": null,
+  "retrieved_at_note_zh": "两份上级缓存 manifest 未含抓取时间；此处只记录实际合入时刻，不编造抓取时刻。",
+  "conference": "ICLR 2027",
+  "scope": {
+    "group": "ICLR.cc/2027/Conference",
+    "source": "forum",
+    "limit": 1000
+  },
+  "get_exact_queries": [
+    {
+      "field": "title",
+      "phrase": "Sample the Order, Not the Token",
+      "url": "https://api2.openreview.net/notes/search?term=Sample+the+Order%2C+Not+the+Token&type=exact&content=title&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&count=true",
+      "count": 1,
+      "returned": 1
+    },
+    {
+      "field": "abstract",
+      "phrase": "without backpropagation",
+      "url": "https://api2.openreview.net/notes/search?term=without+backpropagation&type=exact&content=abstract&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&count=true",
+      "count": 20,
+      "returned": 20
+    },
+    {
+      "field": "abstract",
+      "phrase": "without gradients",
+      "url": "https://api2.openreview.net/notes/search?term=without+gradients&type=exact&content=abstract&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&count=true",
+      "count": 11,
+      "returned": 11
+    }
+  ],
+  "exact_method_abstract_queries": [
+    {
+      "phrase": "zeroth-order",
+      "url": "https://api2.openreview.net/notes/search?term=zeroth-order&type=exact&content=abstract&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&count=true",
+      "count": 92,
+      "returned": 92,
+      "complete": true
+    },
+    {
+      "phrase": "zero-order",
+      "url": "https://api2.openreview.net/notes/search?term=zero-order&type=exact&content=abstract&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&count=true",
+      "count": 11,
+      "returned": 11,
+      "complete": true
+    },
+    {
+      "phrase": "gradient-free",
+      "url": "https://api2.openreview.net/notes/search?term=gradient-free&type=exact&content=abstract&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&count=true",
+      "count": 81,
+      "returned": 81,
+      "complete": true
+    },
+    {
+      "phrase": "derivative-free",
+      "url": "https://api2.openreview.net/notes/search?term=derivative-free&type=exact&content=abstract&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&count=true",
+      "count": 19,
+      "returned": 19,
+      "complete": true
+    },
+    {
+      "phrase": "evolution strategies",
+      "url": "https://api2.openreview.net/notes/search?term=evolution+strategies&type=exact&content=abstract&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&count=true",
+      "count": 25,
+      "returned": 25,
+      "complete": true
+    },
+    {
+      "phrase": "evolutionary optimization",
+      "url": "https://api2.openreview.net/notes/search?term=evolutionary+optimization&type=exact&content=abstract&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&count=true",
+      "count": 9,
+      "returned": 9,
+      "complete": true
+    },
+    {
+      "phrase": "weight perturbation",
+      "url": "https://api2.openreview.net/notes/search?term=weight+perturbation&type=exact&content=abstract&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&count=true",
+      "count": 8,
+      "returned": 8,
+      "complete": true
+    },
+    {
+      "phrase": "parameter perturbation",
+      "url": "https://api2.openreview.net/notes/search?term=parameter+perturbation&type=exact&content=abstract&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&count=true",
+      "count": 6,
+      "returned": 6,
+      "complete": true
+    },
+    {
+      "phrase": "finite difference",
+      "url": "https://api2.openreview.net/notes/search?term=finite+difference&type=exact&content=abstract&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&count=true",
+      "count": 48,
+      "returned": 48,
+      "complete": true
+    },
+    {
+      "phrase": "SPSA",
+      "url": "https://api2.openreview.net/notes/search?term=SPSA&type=exact&content=abstract&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&count=true",
+      "count": 3,
+      "returned": 3,
+      "complete": true
+    },
+    {
+      "phrase": "MeZO",
+      "url": "https://api2.openreview.net/notes/search?term=MeZO&type=exact&content=abstract&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&count=true",
+      "count": 7,
+      "returned": 7,
+      "complete": true
+    },
+    {
+      "phrase": "CMA-ES",
+      "url": "https://api2.openreview.net/notes/search?term=CMA-ES&type=exact&content=abstract&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&count=true",
+      "count": 19,
+      "returned": 19,
+      "complete": true
+    },
+    {
+      "phrase": "forward-only",
+      "url": "https://api2.openreview.net/notes/search?term=forward-only&type=exact&content=abstract&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&count=true",
+      "count": 49,
+      "returned": 49,
+      "complete": true
+    },
+    {
+      "phrase": "backpropagation-free",
+      "url": "https://api2.openreview.net/notes/search?term=backpropagation-free&type=exact&content=abstract&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&count=true",
+      "count": 19,
+      "returned": 19,
+      "complete": true
+    },
+    {
+      "phrase": "black-box optimization",
+      "url": "https://api2.openreview.net/notes/search?term=black-box+optimization&type=exact&content=abstract&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&count=true",
+      "count": 48,
+      "returned": 48,
+      "complete": true
+    },
+    {
+      "phrase": "without backward",
+      "url": "https://api2.openreview.net/notes/search?term=without+backward&type=exact&content=abstract&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&count=true",
+      "count": 0,
+      "returned": 0,
+      "complete": true
+    },
+    {
+      "phrase": "without gradient",
+      "url": "https://api2.openreview.net/notes/search?term=without+gradient&type=exact&content=abstract&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&count=true",
+      "count": 39,
+      "returned": 39,
+      "complete": true
+    },
+    {
+      "phrase": "no backpropagation",
+      "url": "https://api2.openreview.net/notes/search?term=no+backpropagation&type=exact&content=abstract&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&count=true",
+      "count": 8,
+      "returned": 8,
+      "complete": true
+    }
+  ],
+  "query_summary": {
+    "query_count": 21,
+    "method_query_count": 18,
+    "all_returned_equal_count": true,
+    "all_counts_below_1000": true,
+    "candidate_records": 35,
+    "unique_candidate_ids": 35,
+    "catalogued": 21,
+    "not_catalogued": 14
+  },
+  "sample_order_existing_record": {
+    "openreview_id": "mISIJ9ktNq",
+    "catalogued_before_this_pass": true,
+    "query_count": 1,
+    "scope_note_zh": "只证明 phrase=Sample the Order, Not the Token 的精确标题查询返回唯一稿件；不代表全会场标题检索完整。"
+  },
+  "coverage_conclusion": {
+    "exact_phrase_queries_complete": true,
+    "full_venue_retrieval_complete": false,
+    "reason_zh": "精确短语查询均完整，但 venueid 正序/倒序各 10000 条零交集且中间日期窗口仍未取得。"
+  },
+  "candidate_decisions": [
+    {
+      "openreview_id": "O26AmnGkFD",
+      "title": "SCAMP: Black-Box Knowledge Poisoning Attack on Multimodal Retrieval-Augmented Generation",
+      "decision": "included_or_updated",
+      "catalog_category": "related_prompt_agent",
+      "decision_note_zh": "收录于 related_prompt_agent：外部搜索边界：存在明确的无梯度黑箱候选优化和 VLM/RAG 应用，但更新对象是投毒文档而非模型参数。"
+    },
+    {
+      "openreview_id": "HXmRkbSJCb",
+      "title": "QK-Wanda: Coupling Queries and Keys for Unstructured Pruning",
+      "decision": "included_or_updated",
+      "catalog_category": "related_closed_form",
+      "decision_note_zh": "收录于 related_closed_form：闭式/统计适配：直接产生持久稀疏 LLM，但不是 ZO 梯度估计器。"
+    },
+    {
+      "openreview_id": "OLS3NKUhWz",
+      "title": "RAZOR: Pruning Replaceable Experts in LLMs",
+      "decision": "included_or_updated",
+      "catalog_category": "related_closed_form",
+      "decision_note_zh": "收录于 related_closed_form：闭式/统计适配：对 LLM MoE 做持久结构剪枝，不把精确删除评分称作 ZO 梯度。"
+    },
+    {
+      "openreview_id": "cFcaAi8dtG",
+      "title": "HarnessNet: From Engineered Harnesses to a Unified Neural Controller for Self-Evolving Agents",
+      "decision": "included_or_updated",
+      "catalog_category": "related_hybrid",
+      "decision_note_zh": "收录于 related_hybrid：混合边界：优化的是 agent harness；摘要不能证明 controller 更新无反传，故不列主 ES/ZO。"
+    },
+    {
+      "openreview_id": "jYLlpt0DOn",
+      "title": "Written as a Record, Read as an Address: What a Forward Pass Leaves in an Operation's KV Cache",
+      "decision": "not_catalogued_after_individual_review",
+      "catalog_category": null,
+      "decision_note_zh": "《Written as a Record, Read as an Address: What a Forward Pass Leaves in an Operation's KV Cache》未收录：有限差分/无梯度措辞只描述机制解释实验中的冻结 forward pass；没有搜索、闭式适配或 LLM 参数优化机制。"
+    },
+    {
+      "openreview_id": "HXmiKD1kS0",
+      "title": "RC-VQ: Recovering What Calibration Discards with Vector-Quantized Residual Correction",
+      "decision": "included_or_updated",
+      "catalog_category": "related_closed_form",
+      "decision_note_zh": "收录于 related_closed_form：闭式/统计适配边界：明确更新压缩模型的持久 corrector，但摘要未把它表述为 ZO/ES。"
+    },
+    {
+      "openreview_id": "DYddkBo6u2",
+      "title": "GENO: Diversity-Preserving Green Optimization for Multi-Objective AI Service Orchestration",
+      "decision": "not_catalogued_after_individual_review",
+      "catalog_category": null,
+      "decision_note_zh": "《GENO: Diversity-Preserving Green Optimization for Multi-Objective AI Service Orchestration》未收录：语言模型只实现次要偏好接口，摘要和消融均把主要优化对象/收益归于服务编排 DDC，没有 LLM 参数、提示词或 agent 工件优化。"
+    },
+    {
+      "openreview_id": "D9uldDQrKv",
+      "title": "Learnable Difference-Aware Embedding: A Lightweight Plug-and-Play Module for Multivariate Time Series Forecasting",
+      "decision": "not_catalogued_after_individual_review",
+      "catalog_category": null,
+      "decision_note_zh": "《Learnable Difference-Aware Embedding: A Lightweight Plug-and-Play Module for Multivariate Time Series Forecasting》未收录：纯时间序列预测方法；Transformer 只是可插拔 backbone 之一，既无语言模型应用，也无梯度无关优化机制。"
+    },
+    {
+      "openreview_id": "IcsDtyQXgw",
+      "title": "Towards Shared Flat Regions: Boosting Adversarial Transferability by Exponentially Tilting Curvature-Regularized Gradients",
+      "decision": "not_catalogued_after_individual_review",
+      "catalog_category": null,
+      "decision_note_zh": "《Towards Shared Flat Regions: Boosting Adversarial Transferability by Exponentially Tilting Curvature-Regularized Gradients》未收录：纯视觉对抗攻击，Transformer 仅是被测目标类型之一；没有 LLM/VLM 优化关联。"
+    },
+    {
+      "openreview_id": "50wgNc7yUX",
+      "title": "RGB-ACD: RGB-Inspired Topology Generation for LLM-Guided Analog Circuit Design",
+      "decision": "not_catalogued_after_individual_review",
+      "catalog_category": null,
+      "decision_note_zh": "《RGB-ACD: RGB-Inspired Topology Generation for LLM-Guided Analog Circuit Design》未收录：LLM 只是电路设计代理接口；摘要的有限差分作用于电路参数，不能证明语言模型优化。"
+    },
+    {
+      "openreview_id": "HteiUnhO1T",
+      "title": "CalibCache: Cache-to-Full Feature Dynamics Calibration for Diffusion Transformers",
+      "decision": "not_catalogued_after_individual_review",
+      "catalog_category": null,
+      "decision_note_zh": "《CalibCache: Cache-to-Full Feature Dynamics Calibration for Diffusion Transformers》未收录：Qwen-Image 只是图像扩散评测模型；方法没有 LLM/VLM 文本推理、参数、提示词或 agent 工件优化。"
+    },
+    {
+      "openreview_id": "osd72MlzL5",
+      "title": "Scalar Smoothness Is One Point on a Besov Spectrum",
+      "decision": "included_or_updated",
+      "catalog_category": "related_closed_form",
+      "decision_note_zh": "收录于 related_closed_form：统计适配边界：函数值扰动探针直接决定持久 LLM 量化配置，但论文并未声称估计训练梯度。"
+    },
+    {
+      "openreview_id": "a9gC9t9Zvc",
+      "title": "TE-VLM: Transfer Entropy-Inspired Distillation for Vision-Language Models",
+      "decision": "not_catalogued_after_individual_review",
+      "catalog_category": null,
+      "decision_note_zh": "《TE-VLM: Transfer Entropy-Inspired Distillation for Vision-Language Models》未收录：属于一阶知识蒸馏；没有独立 ZO/ES、闭式或外部黑箱搜索机制。"
+    },
+    {
+      "openreview_id": "fNrQjgb4Ch",
+      "title": "DV-Lens: Revealing the Functional Organization of Language Model Parameters",
+      "decision": "not_catalogued_after_individual_review",
+      "catalog_category": null,
+      "decision_note_zh": "《DV-Lens: Revealing the Functional Organization of Language Model Parameters》未收录：是解释/诊断工作，有限差分仅验证 DV-Lens readout；没有用该探针搜索或更新 LLM。"
+    },
+    {
+      "openreview_id": "pOcuwMjDc0",
+      "title": "When Can First-Order Models of Fine-Tuning Bound Forgetting?",
+      "decision": "included_or_updated",
+      "catalog_category": "related_hybrid",
+      "decision_note_zh": "收录于 related_hybrid：混合理论边界：有限差分是 LLM 微调诊断机制，实际参数优化仍是一阶 SGD。"
+    },
+    {
+      "openreview_id": "XgB7jpGAnn",
+      "title": "Frozen in a Frame: The Velocity Blind Spot in JEPA World Models",
+      "decision": "not_catalogued_after_individual_review",
+      "catalog_category": null,
+      "decision_note_zh": "《Frozen in a Frame: The Velocity Blind Spot in JEPA World Models》未收录：纯视觉/控制世界模型，语言模型与语言优化均未出现。"
+    },
+    {
+      "openreview_id": "HleG3nAO5S",
+      "title": "Multi-Peptide Prompting Enables In-Context Learning in Protein Language Models",
+      "decision": "not_catalogued_after_individual_review",
+      "catalog_category": null,
+      "decision_note_zh": "《Multi-Peptide Prompting Enables In-Context Learning in Protein Language Models》未收录：虽是无训练的 protein-LM 推理方法，但只使用固定示例提示和差分评分，没有候选搜索、校准更新、闭式适配或持久外部工件更新。"
+    },
+    {
+      "openreview_id": "KzeQR3Rqgi",
+      "title": "RESCOM: ACTIVATION RESIDUAL COMPENSATION FOR LARGE LANGUAGE MODEL QUANTIZATION",
+      "decision": "included_or_updated",
+      "catalog_category": "related_closed_form",
+      "decision_note_zh": "收录于 related_closed_form：闭式适配：安装持久模型 correction，但不是 ZO 梯度估计。"
+    },
+    {
+      "openreview_id": "7bsXysvipt",
+      "title": "Sharp Horizon Scaling of Gradient Variance in On-Policy Distillation",
+      "decision": "not_catalogued_after_individual_review",
+      "catalog_category": null,
+      "decision_note_zh": "《Sharp Horizon Scaling of Gradient Variance in On-Policy Distillation》未收录：虽含 LLM 理论与 score-function 估计，但方法研究的是一阶训练梯度方差，没有独立 gradient-free/ZO 机制。"
+    },
+    {
+      "openreview_id": "bLQ22POBgo",
+      "title": "Beyond Parameter Space: Closed-Form Cross-Trajectory Repair After Harmful Fine-Tuning",
+      "decision": "included_or_updated",
+      "catalog_category": "related_closed_form",
+      "decision_note_zh": "收录于 related_closed_form：闭式安全修复：直接编辑模型参数但不估计 ZO 梯度。"
+    },
+    {
+      "openreview_id": "rfbv29Wa3V",
+      "title": "SHIFT-LLM: Distribution Shift Correction in Depth-Pruned LLMs",
+      "decision": "included_or_updated",
+      "catalog_category": "related_closed_form",
+      "decision_note_zh": "收录于 related_closed_form：闭式适配：持久 adapter 更新；与可选 PEFT 组合时须另视为混合训练。"
+    },
+    {
+      "openreview_id": "AYwu267x63",
+      "title": "Layer-Specialized Model Merging for Training-Free Cross-Modal Reasoning Transfer",
+      "decision": "included_or_updated",
+      "catalog_category": "related_closed_form",
+      "decision_note_zh": "收录于 related_closed_form：闭式模型合并：持久修改 decoder；不是 ZO/ES。"
+    },
+    {
+      "openreview_id": "vpahOt8lBU",
+      "title": "Diagnosing Failure Regimes in LLM Agent Memory with Extraction-Pass Disagreement",
+      "decision": "included_or_updated",
+      "catalog_category": "related_inference",
+      "decision_note_zh": "收录于 related_inference：推理校准边界：适配 agent memory 构建/读取配置，不更新模型权重。"
+    },
+    {
+      "openreview_id": "XetdVGr0yh",
+      "title": "AgentFrontier: Stabilizing Learning Frontiers in Reinforcement Learning for Active Reasoning Agents",
+      "decision": "not_catalogued_after_individual_review",
+      "catalog_category": null,
+      "decision_note_zh": "《AgentFrontier: Stabilizing Learning Frontiers in Reinforcement Learning for Active Reasoning Agents》未收录：纯一阶 RL 稳定化方法，没有独立梯度无关搜索、闭式更新或函数值参数扰动。"
+    },
+    {
+      "openreview_id": "9gVp0VCEPN",
+      "title": "Do Shared VLM Coordinates Imply Shared Calibration? A Study through Few-Shot Class-Incremental Learning",
+      "decision": "included_or_updated",
+      "catalog_category": "related_closed_form",
+      "decision_note_zh": "收录于 related_closed_form：统计适配边界：更新分类校准状态而不训练 VLM 权重。"
+    },
+    {
+      "openreview_id": "Eq74LwgkjR",
+      "title": "Don't Retrain, Remix: Adaptation of Web Agents using Mixture Hypernetworks",
+      "decision": "included_or_updated",
+      "catalog_category": "related_hybrid",
+      "decision_note_zh": "收录于 related_hybrid：外部/组合边界：部署期梯度无关，但依赖先验训练的 adapter bank 与 router。"
+    },
+    {
+      "openreview_id": "T8c8NM6FT4",
+      "title": "Breaking the Refusal Barrier: Stochastic Discovery of Residual  Unsafe Behaviors in Aligned Language Models",
+      "decision": "included_or_updated",
+      "catalog_category": "related_prompt_agent",
+      "decision_note_zh": "收录于 related_prompt_agent：外部搜索边界：核心发现环路以随机输入/响应采样搜索不安全行为且不使用梯度；随后安全微调是独立的一阶阶段。"
+    },
+    {
+      "openreview_id": "LIa6SeOhH9",
+      "title": "In-Context Robot Learning with VLM Agents",
+      "decision": "included_or_updated",
+      "catalog_category": "related_prompt_agent",
+      "decision_note_zh": "收录于 related_prompt_agent：推理/VLA 边界：语言骨干仅做上下文适配，动作执行侧由 harness 组织。"
+    },
+    {
+      "openreview_id": "zeF8echOqR",
+      "title": "Code-Probe-Adapt: Interactive Heuristic Learning for Self-Evolving Agents",
+      "decision": "included_or_updated",
+      "catalog_category": "related_prompt_agent",
+      "decision_note_zh": "收录于 related_prompt_agent：外部工件边界：优化持久脚本/策略，不更新 LLM 参数。"
+    },
+    {
+      "openreview_id": "hJEySPVkkv",
+      "title": "GRAFT: A Lightweight Shared Generative Backbone for Efficient Cross-Schema Tabular Synthesis",
+      "decision": "not_catalogued_after_individual_review",
+      "catalog_category": null,
+      "decision_note_zh": "《GRAFT: A Lightweight Shared Generative Backbone for Efficient Cross-Schema Tabular Synthesis》未收录：纯表格生成方法；“language-model backbones”仅为被比较的昂贵架构，论文没有 LLM/VLM 应用或梯度无关适配。"
+    },
+    {
+      "openreview_id": "z4IXYD4vKw",
+      "title": "Wired to Reason: Connectome Reservoirs Align with Vision-Language Models on Raven's Matrices",
+      "decision": "not_catalogued_after_individual_review",
+      "catalog_category": null,
+      "decision_note_zh": "《Wired to Reason: Connectome Reservoirs Align with Vision-Language Models on Raven's Matrices》未收录：“无 recurrent gradient learning”只是固定 reservoir 的分析条件，没有语言模型优化、适配或外部搜索对象。"
+    },
+    {
+      "openreview_id": "UpR5uTu7JV",
+      "title": "CISA: Retrofitting Dense Attention Models with Chunk-Indexed Sparse Attention",
+      "decision": "included_or_updated",
+      "catalog_category": "related_inference",
+      "decision_note_zh": "收录于 related_inference：推理系统边界：明确无训练地改变 KV 读取路径，但不做参数搜索或持久权重更新。"
+    },
+    {
+      "openreview_id": "ICtYd1vctM",
+      "title": "scCoLLM: An LLM-Based Model Using Context-Space Adaptation for Single-Cell Analysis under Domain Shift",
+      "decision": "included_or_updated",
+      "catalog_category": "related_inference",
+      "decision_note_zh": "收录于 related_inference：推理/上下文边界：适配对象是 context，不是模型参数。"
+    },
+    {
+      "openreview_id": "hw82nCsx4L",
+      "title": "Eliciting Model Behaviors by Optimizing the Latent Posterior",
+      "decision": "included_or_updated",
+      "catalog_category": "related_hybrid",
+      "decision_note_zh": "收录于 related_hybrid：混合外部优化：优化对象是提示分布且使用梯度，只有模型侧不反传，因此不归纯梯度无关主类。"
+    },
+    {
+      "openreview_id": "e4pspmOVIV",
+      "title": "Suppressing a Rejected Action Costs a KL: Closed-Form Test-Time Updates for LLM Agents",
+      "decision": "included_or_updated",
+      "catalog_category": "related_closed_form",
+      "decision_note_zh": "收录于 related_closed_form：闭式测试时更新：模型侧表示会被编辑，但跨会话持久性待核实。"
+    }
+  ]
+}

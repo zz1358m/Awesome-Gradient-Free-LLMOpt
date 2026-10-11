@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T17:03:59+08:00",
+  "generated_at": "2026-10-11T17:52:26.020454+08:00",
   "retrieval_started_at": "2026-10-11T16:32:33+08:00",
   "scoped_retrieval_completed_at": "2026-10-11T16:48:48.064575+08:00",
   "conference": "ICLR 2027",
@@ -1254,7 +1254,20 @@
   "coverage_conclusion": {
     "full_venue_retrieval_complete": false,
     "verified_unique_id_lower_bound": 35728,
-    "reason_zh": "官方 venueid 搜索的 count/结果窗口封顶 10000；cdate 正序与倒序各 10000 条且零交集，中间日期区间未取得。日期过滤参数被忽略，title 排序返回 400；完整 notes endpoint 仍为 ChallengeRequiredError。",
+    "reason_zh": "官方 venueid 搜索的 count/结果窗口封顶 10000；cdate 正序与倒序各 10000 条且零交集，中间日期区间未取得。日期过滤参数被忽略，title 排序返回 400；完整 notes endpoint 仍为 ChallengeRequiredError。 另有 21 个精确短语查询完整返回，但不能恢复中间 venue 窗口。",
     "claim": "Partial, auditable coverage only; never described as all ICLR 2027 submissions."
+  },
+  "supplemental_exact_phrase_search": {
+    "evidence_file": "data/literature_reviews/2026-10-11-iclr2027-exact-phrase-search.json",
+    "integrated_at": "2026-10-11T17:52:26.020454+08:00",
+    "retrieved_at": null,
+    "query_count": 21,
+    "exact_method_abstract_queries": 18,
+    "complete_below_1000": 21,
+    "candidate_records": 35,
+    "unique_candidate_ids": 35,
+    "catalogued": 21,
+    "not_catalogued": 14,
+    "scope_warning_zh": "查询级完整；全会场覆盖仍为 partial。"
   }
 }

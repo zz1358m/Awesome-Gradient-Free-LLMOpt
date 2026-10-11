@@ -12,7 +12,28 @@
     "https://api2.openreview.net/notes/search?term=gradientless&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&count=true",
     "https://api2.openreview.net/notes/search?term=forward-forward&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&count=true",
     "https://api2.openreview.net/notes/search?term=gradient-independent&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&count=true",
-    "https://api2.openreview.net/notes/search?term=without+backpropagation&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&count=true"
+    "https://api2.openreview.net/notes/search?term=without+backpropagation&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&count=true",
+    "https://api2.openreview.net/notes/search?term=Sample+the+Order%2C+Not+the+Token&type=exact&content=title&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&count=true",
+    "https://api2.openreview.net/notes/search?term=without+backpropagation&type=exact&content=abstract&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&count=true",
+    "https://api2.openreview.net/notes/search?term=without+gradients&type=exact&content=abstract&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&count=true",
+    "https://api2.openreview.net/notes/search?term=zeroth-order&type=exact&content=abstract&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&count=true",
+    "https://api2.openreview.net/notes/search?term=zero-order&type=exact&content=abstract&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&count=true",
+    "https://api2.openreview.net/notes/search?term=gradient-free&type=exact&content=abstract&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&count=true",
+    "https://api2.openreview.net/notes/search?term=derivative-free&type=exact&content=abstract&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&count=true",
+    "https://api2.openreview.net/notes/search?term=evolution+strategies&type=exact&content=abstract&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&count=true",
+    "https://api2.openreview.net/notes/search?term=evolutionary+optimization&type=exact&content=abstract&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&count=true",
+    "https://api2.openreview.net/notes/search?term=weight+perturbation&type=exact&content=abstract&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&count=true",
+    "https://api2.openreview.net/notes/search?term=parameter+perturbation&type=exact&content=abstract&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&count=true",
+    "https://api2.openreview.net/notes/search?term=finite+difference&type=exact&content=abstract&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&count=true",
+    "https://api2.openreview.net/notes/search?term=SPSA&type=exact&content=abstract&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&count=true",
+    "https://api2.openreview.net/notes/search?term=MeZO&type=exact&content=abstract&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&count=true",
+    "https://api2.openreview.net/notes/search?term=CMA-ES&type=exact&content=abstract&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&count=true",
+    "https://api2.openreview.net/notes/search?term=forward-only&type=exact&content=abstract&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&count=true",
+    "https://api2.openreview.net/notes/search?term=backpropagation-free&type=exact&content=abstract&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&count=true",
+    "https://api2.openreview.net/notes/search?term=black-box+optimization&type=exact&content=abstract&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&count=true",
+    "https://api2.openreview.net/notes/search?term=without+backward&type=exact&content=abstract&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&count=true",
+    "https://api2.openreview.net/notes/search?term=without+gradient&type=exact&content=abstract&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&count=true",
+    "https://api2.openreview.net/notes/search?term=no+backpropagation&type=exact&content=abstract&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&count=true"
   ],
   "retrieval_conditions": {
     "scope": "ICLR.cc/2027/Conference",
@@ -21,7 +42,9 @@
     "query_count": 31,
     "successful_continuation_requests": 65,
     "continuation_http_429": 0,
-    "note": "多词 term 按 OR 扩张；所有非截断查询按 count 分页到末页，精确标题 OR 查询在 count=10000 上限处仍满页。"
+    "note": "多词 term 按 OR 扩张；所有非截断查询按 count 分页到末页，精确标题 OR 查询在 count=10000 上限处仍满页。",
+    "supplemental_exact_phrase_query_count": 21,
+    "supplemental_exact_phrase_note": "3 个标题/摘要精确查询与 18 个方法短语精确摘要查询均 returned=count<1000；这只证明这些短语查询完整，不证明全会场投稿全量。"
   },
   "coverage_evidence": {
     "scoped_query_records_before_deduplication": 61901,
@@ -31,12 +54,12 @@
     "venue_window_overlap": 0,
     "venue_plus_keyword_union_unique_ids": 35728,
     "full_venue_total": "unknown; official count/results window capped at 10000",
-    "reviewed_candidate_records": 773,
-    "catalog_total": 395,
+    "reviewed_candidate_records": 808,
+    "catalog_total": 416,
     "new_in_boundary_correction": 271,
     "second_pass_boundary_additions": 129,
-    "included_or_updated_candidate_records": 332,
-    "not_catalogued_after_individual_review": 441,
+    "included_or_updated_candidate_records": 353,
+    "not_catalogued_after_individual_review": 455,
     "scoped_keyword_pages": 85,
     "scoped_keyword_complete_queries": 30,
     "scoped_keyword_window_capped_queries": 1,
@@ -65,7 +88,7 @@
     },
     "supplemental_synonym_candidate_records": 7,
     "supplemental_synonym_catalog_additions": 5,
-    "net_catalog_additions_vs_initial_139070817eb5264faa4837c9c667ac68a198e3f9": 318,
+    "net_catalog_additions_vs_initial_139070817eb5264faa4837c9c667ac68a198e3f9": 339,
     "net_catalog_additions_vs_previous_9edac15c828859711b69363909529cd0d126664a": 5,
     "catalog_entries_modified_vs_previous_9edac15c828859711b69363909529cd0d126664a": 272,
     "validation_report": "data/literature_reviews/2026-10-11-iclr2027-validation.json",
@@ -76,10 +99,10 @@
       "es_pretraining": 1,
       "es_single_turn": 13,
       "es_understanding": 9,
-      "related_closed_form": 15,
-      "related_hybrid": 75,
-      "related_inference": 8,
-      "related_prompt_agent": 190,
+      "related_closed_form": 25,
+      "related_hybrid": 79,
+      "related_inference": 11,
+      "related_prompt_agent": 194,
       "zo_alignment": 1,
       "zo_baselines": 14,
       "zo_directions": 32,
@@ -87,7 +110,30 @@
       "zo_pretraining": 3,
       "zo_systems": 23,
       "zo_understanding": 9
-    }
+    },
+    "supplemental_exact_phrase_queries": {
+      "integrated_at": "2026-10-11T17:52:26.020454+08:00",
+      "cache_retrieved_at": null,
+      "cache_retrieved_at_note_zh": "上级缓存 manifest 未记录抓取时刻；不以文件时间冒充抓取时间。",
+      "cache_sources": [
+        "/tmp/iclr2027-parent-get-exact/manifest.txt",
+        "/tmp/iclr2027-parent-exact-methods/manifest.txt"
+      ],
+      "query_count": 21,
+      "exact_method_abstract_queries": 18,
+      "all_queries_complete_below_limit": true,
+      "candidate_notes_reviewed": 35,
+      "unique_candidate_ids": 35,
+      "catalogued": 21,
+      "not_catalogued": 14,
+      "exact_title_sample_order_count": 1,
+      "warning_zh": "精确标题查询的唯一结果只适用于该查询；21 个精确查询完整不等于会议全量覆盖。"
+    },
+    "supplemental_exact_phrase_candidate_records": 35,
+    "supplemental_exact_phrase_catalog_additions": 21,
+    "net_catalog_additions_vs_previous_60b6b7a78f38143f9dc634cf0ee41a73ed0a304b": 21,
+    "exact_phrase_search_evidence": "data/literature_reviews/2026-10-11-iclr2027-exact-phrase-search.json",
+    "exact_phrase_primary_source_audit": "data/literature_reviews/2026-10-11-iclr2027-exact-phrase-primary-sources.md"
   },
   "limitations_zh": [
     "全会议 notes 列表 API 仍返回 ChallengeRequiredError。",
@@ -95,7 +141,8 @@
     "会议限定关键词查询已补齐成功页；多词 OR 查询可能触及 10000 条计数/窗口上限，因此只声明可验证覆盖下界。",
     "OpenReview cdate/tcdate 只记录为 submitted_at/openreview_created_at，绝不作为已核实首次公开日期。",
     "补充分区探测：sort=title:asc 返回官方 400（title 无可排序 mapping），无法用题名字典序切分中间窗口。",
-    "补充同义词查询 “without backpropagation” 的官方 count 返回 10000，但只缓存首 1000 条，覆盖不完整；其余四个新增同义词查询完整。"
+    "补充同义词查询 “without backpropagation” 的官方 count 返回 10000，但只缓存首 1000 条，覆盖不完整；其余四个新增同义词查询完整。",
+    "补充的 21 个精确查询（含 18 个方法短语摘要查询）均低于 1000 条并完整返回；这不填补 venueid 正/倒序 10000 条窗口之间的全会场缺口。"
   ],
   "papers": [
     {
@@ -29792,6 +29839,1428 @@
       "exclusion_evidence_from_official_abstract": [
         "A grouped flow-matching objective with calibrated channel weights keeps every channel group's share of the gradient independent of the number of cells it spans."
       ]
+    },
+    {
+      "openreview_id": "O26AmnGkFD",
+      "title": "SCAMP: Black-Box Knowledge Poisoning Attack on Multimodal Retrieval-Augmented Generation",
+      "authors": "Anonymous",
+      "openreview_created_at": "2026-09-17T06:02:33.687000+00:00",
+      "submitted_at": "2026-09-17T06:02:33.687000+00:00",
+      "first_public_date": null,
+      "first_public_date_note_zh": "OpenReview cdate 仅作为记录创建/投稿时间；未核实更早公开来源。",
+      "paper_url": "https://openreview.net/forum?id=O26AmnGkFD",
+      "code_url": null,
+      "core_contribution_zh": "SCAMP 让视觉与文本攻击代理在检索、生成和跨模态一致性反馈下迭代构造联合图文投毒文档，并以竞争代理模拟良性样本。",
+      "gradient_free_method": "对目标多模态 RAG 无梯度访问的黑箱候选文档优化；class-wise 场景另用 agent-driven prototype synthesis。",
+      "backpropagation": "目标检索器、reranker 与生成模型：摘要明确攻击无需梯度访问；Visual/Text Attacker、Competing Agents 和 Evaluators 是否另行训练及其反传方式：待核实。",
+      "persistent_model_parameter_update": "模型权重：摘要未说明被更新；持久外部对象：优化后的图文投毒文档/视觉原型可作为知识库攻击载荷。",
+      "updated_object": "图文投毒对、视觉原型以及攻击候选；不是目标 VLM 权重",
+      "catalog_category": "related_prompt_agent",
+      "decision": "included_or_updated",
+      "decision_note_zh": "收录于 related_prompt_agent：外部搜索边界：存在明确的无梯度黑箱候选优化和 VLM/RAG 应用，但更新对象是投毒文档而非模型参数。",
+      "unverified_zh": [
+        "作者在双盲期保持 Anonymous；未从方法名或相似题名猜测作者。",
+        "首次公开日期待核实；OpenReview cdate 仅记录投稿/记录创建时间。",
+        "未定位到可核实的官方代码链接。",
+        "事实依据为 OpenReview 官方投稿摘要/作者声明；未独立验证实现。"
+      ],
+      "abstract": "Large vision–language models benefit from multimodal retrieval-augmented generation, which grounds responses in external image–text evidence to mitigate hallucination. However, reliance on external knowledge bases introduces a critical vulnerability: knowledge poisoning. Existing poisoning methods are often impractical, as they rely on white-box access, target limited sample-wise scenarios, and neglect reranking components. Additionally, they underutilize the visual modality's potential and suffer from cross-modal inconsistencies. We propose SCAMP, a black-box framework that iteratively crafts aligned poisoned pairs through a self-competitive agent loop. SCAMP integrates a Visual Attacker and a Text Attacker to jointly optimize, Competing Agents to simulate benign samples and improve attack generalization, and three Evaluators to guide optimization via retrieval, generation, and consistency feedback. For class-wise attacks, we introduce agent-driven prototype synthesis to construct effective visual anchors without gradients. Extensive experiments show SCAMP consistently outperforms baselines in black-box settings and remains robust against diverse defenses.",
+      "keywords": [
+        "Poisoning Attack",
+        "Retrieval-Augmented Generation",
+        "Multimodal Retrieval-Augmented Generation"
+      ],
+      "venue_status": "ICLR 2027 Conference Submission; decision pending",
+      "evidence_basis_zh": "据 OpenReview 官方投稿元数据与官方摘要记录；只记录摘要明确说明的机制。",
+      "component_training_zh": "目标检索器、reranker 与生成模型：摘要明确攻击无需梯度访问；Visual/Text Attacker、Competing Agents 和 Evaluators 是否另行训练及其反传方式：待核实。",
+      "persistent_updates_zh": "模型权重：摘要未说明被更新；持久外部对象：优化后的图文投毒文档/视觉原型可作为知识库攻击载荷。",
+      "repository_relevance_zh": "外部搜索边界：存在明确的无梯度黑箱候选优化和 VLM/RAG 应用，但更新对象是投毒文档而非模型参数。",
+      "official_abstract_method_evidence": [
+        "Large vision–language models benefit from multimodal retrieval-augmented generation, which grounds responses in external image–text evidence to mitigate hallucination. However, reliance on external knowledge bases introduces a critical vulnerability: knowledge poisoning. Existing poisoning methods are often impractical, as they rely on white-box access, target limited sample-wise scenarios, and neglect reranking components. Additionally, they underutilize the visual modality's potential and suffer from cross-modal inconsistencies. We propose SCAMP, a black-box framework that iteratively crafts aligned poisoned pairs through a self-competitive agent loop. SCAMP integrates a Visual Attacker and a Text Attacker to jointly optimize, Competing Agents to simulate benign samples and improve attack generalization, and three Evaluators to guide optimization via retrieval, generation, and consistency feedback. For class-wise attacks, we introduce agent-driven prototype synthesis to construct effective visual anchors without gradients. Extensive experiments show SCAMP consistently outperforms baselines in black-box settings and remains robust against diverse defenses."
+      ]
+    },
+    {
+      "openreview_id": "HXmRkbSJCb",
+      "title": "QK-Wanda: Coupling Queries and Keys for Unstructured Pruning",
+      "authors": "Anonymous",
+      "openreview_created_at": "2026-09-16T17:39:24.001000+00:00",
+      "submitted_at": "2026-09-16T17:39:24.001000+00:00",
+      "first_public_date": null,
+      "first_public_date_note_zh": "OpenReview cdate 仅作为记录创建/投稿时间；未核实更早公开来源。",
+      "paper_url": "https://openreview.net/forum?id=HXmRkbSJCb",
+      "code_url": null,
+      "core_contribution_zh": "QK-Wanda 从因果掩码 query-key 乘积的重构损失推导单权重删除的闭式重要度，并在小校准集上联合衡量 Q/K 权重。",
+      "gradient_free_method": "闭式单权重删除评分；校准阶段不使用梯度或重训练。",
+      "backpropagation": "评分/剪枝：摘要明确无梯度、无重训练；原始 Llama 预训练过程不属于该后训练方法。",
+      "persistent_model_parameter_update": "原始非零权重数值不经训练更新；剪枝掩码和所得稀疏 LLM 检查点是持久模型结构/权重状态。",
+      "updated_object": "LLM query/key 投影的单个权重及其剪枝掩码",
+      "catalog_category": "related_closed_form",
+      "decision": "included_or_updated",
+      "decision_note_zh": "收录于 related_closed_form：闭式/统计适配：直接产生持久稀疏 LLM，但不是 ZO 梯度估计器。",
+      "unverified_zh": [
+        "作者在双盲期保持 Anonymous；未从方法名或相似题名猜测作者。",
+        "首次公开日期待核实；OpenReview cdate 仅记录投稿/记录创建时间。",
+        "未定位到可核实的官方代码链接。",
+        "事实依据为 OpenReview 官方投稿摘要/作者声明；未独立验证实现。"
+      ],
+      "abstract": "Wanda (Sun et al., 2024) prunes large language models by scoring each weight by its magnitude times its input activation, treating every linear projection independently. Self-attention violates this assumption: queries and keys enter the model only through their product, so the importance of a query weight depends on the keys, and vice versa. We introduce QK-Wanda, an unstructured pruning method that scores query and key weights by how much their removal perturbs the joint query-key product rather than either projection alone. Starting from a reconstruction loss on the causally masked query-key product, we derive a closed-form importance score for deleting a single weight; the result is Wanda's magnitude-activation criterion augmented with a term from the opposite projection. Scores are computed from a small calibration set without gradients or retraining, adding only 31-37% to Wanda's calibration and scoring time. On the Llama 3 family, QK-Wanda consistently reduces query-key reconstruction error and lowers perplexity relative to Wanda in most model-sparsity settings, with the largest gains at high sparsity.",
+      "keywords": [
+        "large language models",
+        "model compression",
+        "unstructured pruning",
+        "one-shot pruning",
+        "sparsity",
+        "self-attention",
+        "query-key coupling"
+      ],
+      "venue_status": "ICLR 2027 Conference Submission; decision pending",
+      "evidence_basis_zh": "据 OpenReview 官方投稿元数据与官方摘要记录；只记录摘要明确说明的机制。",
+      "component_training_zh": "评分/剪枝：摘要明确无梯度、无重训练；原始 Llama 预训练过程不属于该后训练方法。",
+      "persistent_updates_zh": "原始非零权重数值不经训练更新；剪枝掩码和所得稀疏 LLM 检查点是持久模型结构/权重状态。",
+      "repository_relevance_zh": "闭式/统计适配：直接产生持久稀疏 LLM，但不是 ZO 梯度估计器。",
+      "official_abstract_method_evidence": [
+        "Wanda (Sun et al., 2024) prunes large language models by scoring each weight by its magnitude times its input activation, treating every linear projection independently. Self-attention violates this assumption: queries and keys enter the model only through their product, so the importance of a query weight depends on the keys, and vice versa. We introduce QK-Wanda, an unstructured pruning method that scores query and key weights by how much their removal perturbs the joint query-key product rather than either projection alone. Starting from a reconstruction loss on the causally masked query-key product, we derive a closed-form importance score for deleting a single weight; the result is Wanda's magnitude-activation criterion augmented with a term from the opposite projection. Scores are computed from a small calibration set without gradients or retraining, adding only 31-37% to Wanda's calibration and scoring time. On the Llama 3 family, QK-Wanda consistently reduces query-key reconstruction error and lowers perplexity relative to Wanda in most model-sparsity settings, with the largest gains at high sparsity."
+      ]
+    },
+    {
+      "openreview_id": "OLS3NKUhWz",
+      "title": "RAZOR: Pruning Replaceable Experts in LLMs",
+      "authors": "Anonymous",
+      "openreview_created_at": "2026-09-19T05:29:32.869000+00:00",
+      "submitted_at": "2026-09-19T05:29:32.869000+00:00",
+      "first_public_date": null,
+      "first_public_date_note_zh": "OpenReview cdate 仅作为记录创建/投稿时间；未核实更早公开来源。",
+      "paper_url": "https://openreview.net/forum?id=OLS3NKUhWz",
+      "code_url": null,
+      "core_contribution_zh": "RAZOR 用专家输出相对原加权混合的 consensus residual 衡量可替代性，并以精确单删除恒等式处理 survivor renormalization 与 router refill。",
+      "gradient_free_method": "训练无关的校准 token 聚合和预算化专家删除；摘要明确无梯度、无 recovery training。",
+      "backpropagation": "MoE 剪枝阶段：无梯度、无恢复训练；模型预训练不在该方法范围内。",
+      "persistent_model_parameter_update": "专家权重数值不训练；专家保留/删除集合及剪枝后的 MoE 检查点持久化。",
+      "updated_object": "LLM MoE 专家及其预算化剪枝集合",
+      "catalog_category": "related_closed_form",
+      "decision": "included_or_updated",
+      "decision_note_zh": "收录于 related_closed_form：闭式/统计适配：对 LLM MoE 做持久结构剪枝，不把精确删除评分称作 ZO 梯度。",
+      "unverified_zh": [
+        "作者在双盲期保持 Anonymous；未从方法名或相似题名猜测作者。",
+        "首次公开日期待核实；OpenReview cdate 仅记录投稿/记录创建时间。",
+        "未定位到可核实的官方代码链接。",
+        "事实依据为 OpenReview 官方投稿摘要/作者声明；未独立验证实现。"
+      ],
+      "abstract": "Mixture-of-experts (MoE) models activate few experts per token but store the\nfull expert pool. Pruning aims to reduce this burden at a fixed budget while\npreserving output distributions and, for reasoning models, reasoning ability.\nDeletion damage depends on functional replaceability by surviving computation,\nnot usage or contribution magnitude alone. We introduce RAZOR,\na training-free method that scores functional replaceability using consensus\nresiduals, the deviations of expert outputs from the original weighted mixture. At a\nfixed layer input, an exact single-deletion identity accounts for survivor\nrenormalization and router-selected refill. We aggregate these local scores over\ncalibration tokens for budgeted pruning without gradients or recovery training.\nOn GLM-4.7-Flash, Qwen3.6-35B-A3B, DeepSeek-V4-Flash-0731, and Hy3 at 25\\% and 50\\%\nexpert removal, RAZOR achieves the highest nine-task macro average among the\nevaluated pruning methods in all eight settings. On the two backbones with\nmatched REAP benchmark runs, it exceeds REAP by 2.12--5.59 points and wins all 36\npaired task comparisons.\nIt also lowers reverse KL relative to REAP in all four matched\nGLM-4.7-Flash and Qwen3.6-35B-A3B model--budget settings. Responses generated by\nQwen3.6-35B-A3B nevertheless change in diversity, formatting, and termination,\nshowing that task retention and predictive fidelity do not ensure generation\nstability.",
+      "keywords": [
+        "LLM",
+        "MoE",
+        "Model Pruning"
+      ],
+      "venue_status": "ICLR 2027 Conference Submission; decision pending",
+      "evidence_basis_zh": "据 OpenReview 官方投稿元数据与官方摘要记录；只记录摘要明确说明的机制。",
+      "component_training_zh": "MoE 剪枝阶段：无梯度、无恢复训练；模型预训练不在该方法范围内。",
+      "persistent_updates_zh": "专家权重数值不训练；专家保留/删除集合及剪枝后的 MoE 检查点持久化。",
+      "repository_relevance_zh": "闭式/统计适配：对 LLM MoE 做持久结构剪枝，不把精确删除评分称作 ZO 梯度。",
+      "official_abstract_method_evidence": [
+        "Mixture-of-experts (MoE) models activate few experts per token but store the\nfull expert pool. Pruning aims to reduce this burden at a fixed budget while\npreserving output distributions and, for reasoning models, reasoning ability.\nDeletion damage depends on functional replaceability by surviving computation,\nnot usage or contribution magnitude alone. We introduce RAZOR,\na training-free method that scores functional replaceability using consensus\nresiduals, the deviations of expert outputs from the original weighted mixture. At a\nfixed layer input, an exact single-deletion identity accounts for survivor\nrenormalization and router-selected refill. We aggregate these local scores over\ncalibration tokens for budgeted pruning without gradients or recovery training.\nOn GLM-4.7-Flash, Qwen3.6-35B-A3B, DeepSeek-V4-Flash-0731, and Hy3 at 25\\% and 50\\%\nexpert removal, RAZOR achieves the highest nine-task macro average among the\nevaluated pruning methods in all eight settings. On the two backbones with\nmatched REAP benchmark runs, it exceeds REAP by 2.12--5.59 points and wins all 36\npaired task comparisons.\nIt also lowers reverse KL relative to REAP in all four matched\nGLM-4.7-Flash and Qwen3.6-35B-A3B model--budget settings. Responses generated by\nQwen3.6-35B-A3B nevertheless change in diversity, formatting, and termination,\nshowing that task retention and predictive fidelity do not ensure generation\nstability."
+      ]
+    },
+    {
+      "openreview_id": "cFcaAi8dtG",
+      "title": "HarnessNet: From Engineered Harnesses to a Unified Neural Controller for Self-Evolving Agents",
+      "authors": "Anonymous",
+      "openreview_created_at": "2026-09-17T14:34:11.218000+00:00",
+      "submitted_at": "2026-09-17T14:34:11.218000+00:00",
+      "first_public_date": null,
+      "first_public_date_note_zh": "OpenReview cdate 仅作为记录创建/投稿时间；未核实更早公开来源。",
+      "paper_url": "https://openreview.net/forum?id=cFcaAi8dtG",
+      "code_url": null,
+      "core_contribution_zh": "HarnessNet 把 LLM agent 的上下文、命令执行、再次调用和终止控制统一为神经反馈控制器，先模仿工程 harness，再按同任务多次尝试的成败改进。",
+      "gradient_free_method": "以任务成功比较驱动 harness controller 更新；摘要只排除梯度穿过冻结 LLM 和环境，未说明 controller 更新本身是否无梯度。",
+      "backpropagation": "LLM：明确冻结，且不通过 LLM/环境反传；HarnessNet controller：先 imitation training、再 reward-driven updates，具体是否反传待核实。",
+      "persistent_model_parameter_update": "LLM 权重不更新；HarnessNet controller 权重经模仿和奖励更新后持久化；交互历史仅为运行时状态。",
+      "updated_object": "神经 harness controller，而非冻结 LLM",
+      "catalog_category": "related_hybrid",
+      "decision": "included_or_updated",
+      "decision_note_zh": "收录于 related_hybrid：混合边界：优化的是 agent harness；摘要不能证明 controller 更新无反传，故不列主 ES/ZO。",
+      "unverified_zh": [
+        "作者在双盲期保持 Anonymous；未从方法名或相似题名猜测作者。",
+        "首次公开日期待核实；OpenReview cdate 仅记录投稿/记录创建时间。",
+        "未定位到可核实的官方代码链接。",
+        "事实依据为 OpenReview 官方投稿摘要/作者声明；未独立验证实现。"
+      ],
+      "abstract": "An LLM agent is shaped not only by its language model, but also by the harness that runs it: the control logic that decides what context the model sees, which proposed commands are executed, when to call the model again, and when to stop. These decisions are central to long-horizon agent performance, yet existing harnesses are typically hand-engineered or obtained through search over harness programs, and remain fixed after deployment. We introduce HarnessNet, a neural feedback controller that learns the harness while keeping the LLM frozen. At each step, HarnessNet reads the interaction history and emits one executable control: request the LLM, execute a previously proposed command, read an environment output, or finish. Controls can reference earlier replies or observations instead of regenerating them, allowing long outputs to be reused exactly. The controller is first trained to imitate an engineered harness, then improved from task success by comparing multiple attempts on the same task, without gradients through the LLM or environment. On AppWorld, HarnessNet matches and then surpasses engineered control. Imitation alone reaches 86.0% success on all 57 development tasks, matching the Meta-Harness baseline under the same budgets. Two reward-driven updates from only 48 training attempts raise success to 91.2%, outperforming both the imitation controller in the same evaluation and the engineered harness. The newly solved tasks mainly come from cases where imitation previously produced invalid controls or exhausted its interaction budget, showing that learning improves how the agent is run rather than the frozen LLM itself.",
+      "keywords": [
+        "Agent Self-Evovling",
+        "Harness",
+        "Controllor",
+        "Agent RL"
+      ],
+      "venue_status": "ICLR 2027 Conference Submission; decision pending",
+      "evidence_basis_zh": "据 OpenReview 官方投稿元数据与官方摘要记录；只记录摘要明确说明的机制。",
+      "component_training_zh": "LLM：明确冻结，且不通过 LLM/环境反传；HarnessNet controller：先 imitation training、再 reward-driven updates，具体是否反传待核实。",
+      "persistent_updates_zh": "LLM 权重不更新；HarnessNet controller 权重经模仿和奖励更新后持久化；交互历史仅为运行时状态。",
+      "repository_relevance_zh": "混合边界：优化的是 agent harness；摘要不能证明 controller 更新无反传，故不列主 ES/ZO。",
+      "official_abstract_method_evidence": [
+        "An LLM agent is shaped not only by its language model, but also by the harness that runs it: the control logic that decides what context the model sees, which proposed commands are executed, when to call the model again, and when to stop. These decisions are central to long-horizon agent performance, yet existing harnesses are typically hand-engineered or obtained through search over harness programs, and remain fixed after deployment. We introduce HarnessNet, a neural feedback controller that learns the harness while keeping the LLM frozen. At each step, HarnessNet reads the interaction history and emits one executable control: request the LLM, execute a previously proposed command, read an environment output, or finish. Controls can reference earlier replies or observations instead of regenerating them, allowing long outputs to be reused exactly. The controller is first trained to imitate an engineered harness, then improved from task success by comparing multiple attempts on the same task, without gradients through the LLM or environment. On AppWorld, HarnessNet matches and then surpasses engineered control. Imitation alone reaches 86.0% success on all 57 development tasks, matching the Meta-Harness baseline under the same budgets. Two reward-driven updates from only 48 training attempts raise success to 91.2%, outperforming both the imitation controller in the same evaluation and the engineered harness. The newly solved tasks mainly come from cases where imitation previously produced invalid controls or exhausted its interaction budget, showing that learning improves how the agent is run rather than the frozen LLM itself."
+      ]
+    },
+    {
+      "openreview_id": "jYLlpt0DOn",
+      "title": "Written as a Record, Read as an Address: What a Forward Pass Leaves in an Operation's KV Cache",
+      "authors": "Anonymous",
+      "openreview_created_at": "2026-09-17T13:54:54.830000+00:00",
+      "submitted_at": "2026-09-17T13:54:54.830000+00:00",
+      "first_public_date": null,
+      "first_public_date_note_zh": "OpenReview cdate 仅作为记录创建/投稿时间；未核实更早公开来源。",
+      "paper_url": "https://openreview.net/forum?id=jYLlpt0DOn",
+      "code_url": null,
+      "core_contribution_zh": "该工作用冻结 writer 与单独训练的 reader 研究操作 token 在 KV cache 中留下的 routing/payload 记录，并用移植干预定位可恢复信息。",
+      "gradient_free_method": "没有提出梯度无关优化；“writer cache is recomputed without gradients”是实验隔离条件。",
+      "backpropagation": "writer：冻结且重算 cache 不用梯度；reader：摘要明确单独训练，训练算法/反传细节未说明。",
+      "persistent_model_parameter_update": "writer 权重不更新；reader 训练会形成持久参数，但不是梯度无关 LLM 优化对象。",
+      "updated_object": "KV cache 记录的机制解释与隔离 reader",
+      "catalog_category": null,
+      "decision": "not_catalogued_after_individual_review",
+      "decision_note_zh": "《Written as a Record, Read as an Address: What a Forward Pass Leaves in an Operation's KV Cache》未收录：有限差分/无梯度措辞只描述机制解释实验中的冻结 forward pass；没有搜索、闭式适配或 LLM 参数优化机制。",
+      "unverified_zh": [
+        "作者在双盲期保持 Anonymous；未从方法名或相似题名猜测作者。",
+        "首次公开日期待核实；OpenReview cdate 仅记录投稿/记录创建时间。",
+        "排除不基于是否持久更新，而基于上述具体方法对象或语言模型关联缺口。",
+        "事实依据为 OpenReview 官方投稿摘要/作者声明；未独立验证实现。"
+      ],
+      "abstract": "When a language model reads an operation such as \"Swap the contents of Box F and Box B'', its forward pass writes keys and values for those tokens into the KV cache. Prior work on entity tracking establishes what models *use*: bindings are resolved at query time rather than stored as explicit latent state. We ask what they *write* at the operation span and how it is accessed. We split a forward pass into a frozen writer and a reader: the writer's cache is recomputed without gradients, while the reader sees only the instruction and operation tokens, with all state descriptions hidden, and is trained in isolation. Anything the reader recovers was therefore already present in the unmodified cache. On a synthetic boxes task, a base reader recovers $\\leq 0.07$ of queried bindings against $0.75$-$1.00$ after training, and recoverability tracks the operation's read/write footprint. We find two modes of access. Across Llama-3.1-8B and Mistral-7B, operation-span transplants causally redirect which visible state is read even when the two worlds hold identical values, revealing a *routing* record. Isolation training preserves routing and adds direct access to the *payload*, the value the operation read, from the single operand-name token in a narrow mid-depth band (layers 12-15 of 32 in Llama-3.1-8B, 14-17 in Mistral-7B) — the same site that holds the routing record. The same recipe extends to further operations, ToMi and GSM8K, but is bounded by training coverage and costs open-book accuracy. Operation tokens thus leave localized, causally recoverable records that support both routing and direct payload access, though the model that writes them reads mainly the address they carry and not the value.",
+      "keywords": [
+        "mechanistic interpretability",
+        "entity tracking",
+        "variable binding",
+        "KV cache",
+        "activation patching",
+        "interchange interventions",
+        "in-context state tracking",
+        "language model reasoning"
+      ],
+      "venue_status": "ICLR 2027 Conference Submission; decision pending",
+      "evidence_basis_zh": "据 OpenReview 官方投稿元数据与官方摘要记录；只记录摘要明确说明的机制。",
+      "component_training_zh": "writer：冻结且重算 cache 不用梯度；reader：摘要明确单独训练，训练算法/反传细节未说明。",
+      "persistent_updates_zh": "writer 权重不更新；reader 训练会形成持久参数，但不是梯度无关 LLM 优化对象。",
+      "repository_relevance_zh": "未收录：有限差分/无梯度措辞只描述机制解释实验中的冻结 forward pass；没有搜索、闭式适配或 LLM 参数优化机制。",
+      "exclusion_evidence_from_official_abstract": [
+        "When a language model reads an operation such as \"Swap the contents of Box F and Box B'', its forward pass writes keys and values for those tokens into the KV cache. Prior work on entity tracking establishes what models *use*: bindings are resolved at query time rather than stored as explicit latent state. We ask what they *write* at the operation span and how it is accessed. We split a forward pass into a frozen writer and a reader: the writer's cache is recomputed without gradients, while the reader sees only the instruction and operation tokens, with all state descriptions hidden, and is trained in isolation. Anything the reader recovers was therefore already present in the unmodified cache. On a synthetic boxes task, a base reader recovers $\\leq 0.07$ of queried bindings against $0.75$-$1.00$ after training, and recoverability tracks the operation's read/write footprint. We find two modes of access. Across Llama-3.1-8B and Mistral-7B, operation-span transplants causally redirect which visible state is read even when the two worlds hold identical values, revealing a *routing* record. Isolation training preserves routing and adds direct access to the *payload*, the value the operation read, from the single operand-name token in a narrow mid-depth band (layers 12-15 of 32 in Llama-3.1-8B, 14-17 in Mistral-7B) — the same site that holds the routing record. The same recipe extends to further operations, ToMi and GSM8K, but is bounded by training coverage and costs open-book accuracy. Operation tokens thus leave localized, causally recoverable records that support both routing and direct payload access, though the model that writes them reads mainly the address they carry and not the value."
+      ]
+    },
+    {
+      "openreview_id": "HXmiKD1kS0",
+      "title": "RC-VQ: Recovering What Calibration Discards with Vector-Quantized Residual Correction",
+      "authors": "Anonymous",
+      "openreview_created_at": "2026-09-16T02:17:01.893000+00:00",
+      "submitted_at": "2026-09-16T02:17:01.893000+00:00",
+      "first_public_date": null,
+      "first_public_date_note_zh": "OpenReview cdate 仅作为记录创建/投稿时间；未核实更早公开来源。",
+      "paper_url": "https://openreview.net/forum?id=HXmiKD1kS0",
+      "code_url": null,
+      "core_contribution_zh": "RC-VQ 以全秩向量量化 corrector 恢复结构压缩和 INT4 量化丢弃的稠密残差，并提出分层 direction-then-refinement 的 PolarVQ 目标。",
+      "gradient_free_method": "直接拟合被丢弃残差的向量量化 corrector；摘要明确不需要梯度或 recovery data。",
+      "backpropagation": "corrector 拟合：无梯度；上游 SVD/INT4-AWQ 检查点如何取得不由摘要展开。",
+      "persistent_model_parameter_update": "基础压缩权重保持；向量量化 codebook/corrector 与组合后的压缩检查点持久化。",
+      "updated_object": "LLM 压缩残差的全秩 VQ corrector/codebook",
+      "catalog_category": "related_closed_form",
+      "decision": "included_or_updated",
+      "decision_note_zh": "收录于 related_closed_form：闭式/统计适配边界：明确更新压缩模型的持久 corrector，但摘要未把它表述为 ZO/ES。",
+      "unverified_zh": [
+        "作者在双盲期保持 Anonymous；未从方法名或相似题名猜测作者。",
+        "首次公开日期待核实；OpenReview cdate 仅记录投稿/记录创建时间。",
+        "未定位到可核实的官方代码链接。",
+        "事实依据为 OpenReview 官方投稿摘要/作者声明；未独立验证实现。"
+      ],
+      "abstract": "Calibration data decides what training-free LLM compression keeps. In activationaware\nfactorization and post-training quantization alike, a small calibration set\ndefines an importance measure over the weights, and whatever it does not certify\nis discarded as a residual. We argue that failing the calibration proxy does not\nmake weights unimportant, and that the discarded residual should be recovered.\nThe standard recovery tool, a low-rank adapter, is structurally mismatched to this\ntask. On LLaMA-2 7B the residuals are dense and spectrally flat. Quantization\nresiduals are statistically indistinguishable from a Marchenko–Pastur noise bulk,\nand truncation residuals form a gapless spectral continuum without isolated spikes,\nso a rank-r corrector recovers a vanishing fraction of either. Across four model\nfamilies, the energy a low-rank corrector recovers grows only linearly in its rank.\nWe propose RC-VQ, a full-rank vector-quantized corrector fitted to the residual\nwithout gradients or recovery data, which composes with SVD factors, INT4\nweights, and their stacked combination. On structural compression of LLaMA-2\n7B, LLaMA-3 8B, and Qwen3 8B, RC-VQ reduces perplexity degradation by\n3–13× against the strongest reported structured baseline at matched checkpoint\nsize. On the INT4-AWQ quantization gap of Qwen3.5 4B, it recovers 96% of the\ndistance to FP16 at three bits per parameter, a budget at which an identically sized\nlow-rank corrector recovers under 40% and a scalar residual branch needs 37%\nmore bits to match. Sweeping codebook objectives across structural, quantization,\nand stacked residuals, we show that each pure objective has a failure regime, while\nthe hierarchical direction-then-refinement objective, PolarVQ, never collapses,\nmaking it the robust default when residual geometry is unknown.",
+      "keywords": [
+        "model compression",
+        "vector quantization",
+        "large language models",
+        "low-rank factorization",
+        "residual correction",
+        "on-device AI"
+      ],
+      "venue_status": "ICLR 2027 Conference Submission; decision pending",
+      "evidence_basis_zh": "据 OpenReview 官方投稿元数据与官方摘要记录；只记录摘要明确说明的机制。",
+      "component_training_zh": "corrector 拟合：无梯度；上游 SVD/INT4-AWQ 检查点如何取得不由摘要展开。",
+      "persistent_updates_zh": "基础压缩权重保持；向量量化 codebook/corrector 与组合后的压缩检查点持久化。",
+      "repository_relevance_zh": "闭式/统计适配边界：明确更新压缩模型的持久 corrector，但摘要未把它表述为 ZO/ES。",
+      "official_abstract_method_evidence": [
+        "Calibration data decides what training-free LLM compression keeps. In activationaware\nfactorization and post-training quantization alike, a small calibration set\ndefines an importance measure over the weights, and whatever it does not certify\nis discarded as a residual. We argue that failing the calibration proxy does not\nmake weights unimportant, and that the discarded residual should be recovered.\nThe standard recovery tool, a low-rank adapter, is structurally mismatched to this\ntask. On LLaMA-2 7B the residuals are dense and spectrally flat. Quantization\nresiduals are statistically indistinguishable from a Marchenko–Pastur noise bulk,\nand truncation residuals form a gapless spectral continuum without isolated spikes,\nso a rank-r corrector recovers a vanishing fraction of either. Across four model\nfamilies, the energy a low-rank corrector recovers grows only linearly in its rank.\nWe propose RC-VQ, a full-rank vector-quantized corrector fitted to the residual\nwithout gradients or recovery data, which composes with SVD factors, INT4\nweights, and their stacked combination. On structural compression of LLaMA-2\n7B, LLaMA-3 8B, and Qwen3 8B, RC-VQ reduces perplexity degradation by\n3–13× against the strongest reported structured baseline at matched checkpoint\nsize. On the INT4-AWQ quantization gap of Qwen3.5 4B, it recovers 96% of the\ndistance to FP16 at three bits per parameter, a budget at which an identically sized\nlow-rank corrector recovers under 40% and a scalar residual branch needs 37%\nmore bits to match. Sweeping codebook objectives across structural, quantization,\nand stacked residuals, we show that each pure objective has a failure regime, while\nthe hierarchical direction-then-refinement objective, PolarVQ, never collapses,\nmaking it the robust default when residual geometry is unknown."
+      ]
+    },
+    {
+      "openreview_id": "DYddkBo6u2",
+      "title": "GENO: Diversity-Preserving Green Optimization for Multi-Objective AI Service Orchestration",
+      "authors": "Anonymous",
+      "openreview_created_at": "2026-09-18T15:38:51.467000+00:00",
+      "submitted_at": "2026-09-18T15:38:51.467000+00:00",
+      "first_public_date": null,
+      "first_public_date_note_zh": "OpenReview cdate 仅作为记录创建/投稿时间；未核实更早公开来源。",
+      "paper_url": "https://openreview.net/forum?id=DYddkBo6u2",
+      "code_url": null,
+      "core_contribution_zh": "GENO 用 Decomposition–Dominance Coordination 维护服务编排的多目标 Pareto archive，并加入本地语言模型实现的偏好权重扰动接口。",
+      "gradient_free_method": "多目标群体优化针对推理能耗、传输能耗、碳、延迟和可靠性等服务编排变量。",
+      "backpropagation": "DDC/状态编码器及本地语言模型是否训练：摘要未说明；不能从 weight-perturbation 字样推断 LLM 权重扰动。",
+      "persistent_model_parameter_update": "持久状态是服务编排 population/archive；LLM 权重或提示词没有被说明为优化对象。",
+      "updated_object": "边云 AI 服务编排方案与 Pareto archive",
+      "catalog_category": null,
+      "decision": "not_catalogued_after_individual_review",
+      "decision_note_zh": "《GENO: Diversity-Preserving Green Optimization for Multi-Objective AI Service Orchestration》未收录：语言模型只实现次要偏好接口，摘要和消融均把主要优化对象/收益归于服务编排 DDC，没有 LLM 参数、提示词或 agent 工件优化。",
+      "unverified_zh": [
+        "作者在双盲期保持 Anonymous；未从方法名或相似题名猜测作者。",
+        "首次公开日期待核实；OpenReview cdate 仅记录投稿/记录创建时间。",
+        "排除不基于是否持久更新，而基于上述具体方法对象或语言模型关联缺口。",
+        "事实依据为 OpenReview 官方投稿摘要/作者声明；未独立验证实现。"
+      ],
+      "abstract": "The proliferation of AI inference services across edge and cloud infrastructures has elevated energy consumption and carbon emissions to critical concerns in service orchestration. On the AI-intensive five-objective formulations we study, conventional decomposition-based multi-objective optimizers exhibit what we term low-energy diversity collapse: neighborhood-restricted updates systematically under-explore the energy-efficient region of the Pareto front spanning inference energy, transport energy, carbon, latency, and reliability. To address this, we propose GENO, a green-aware service orchestration framework built around Decomposition–Dominance Coordination (DDC), a mechanism that synchronizes a dominance archive with the decomposition population via energy-priority redundancy removal and re-association. DDC is complemented by an energy-augmented state encoder, a five-objective formulation that partitions total energy into AI-inference and non-AI components, and a bounded weight-perturbation interface instantiated through a local language model. We establish two formal guarantees: DDC monotonically improves a green-weighted archive score (Proposition 1), and any preference-channel perturbation is Lipschitz-bounded in its effect on the scalarized objective (Proposition 2). Experiments on three service orchestration benchmarks show that, among the eight methods evaluated, GENO is the only one to reach a low-energy operating point (energy-per-request below 0.6 Wh and tail latency under 22 ms) on the AI-EO benchmark, improving energy-per-request over the strongest baseline by roughly a quarter to a third. Component ablation attributes −21.1% HV to DDC removal versus only −2.8% to the language interface, confirming that the gains are algorithmic.",
+      "keywords": [
+        "Green Service Orchestration",
+        "Multi-Objective Optimization",
+        "AI Inference Energy",
+        "Carbon-Aware Computing"
+      ],
+      "venue_status": "ICLR 2027 Conference Submission; decision pending",
+      "evidence_basis_zh": "据 OpenReview 官方投稿元数据与官方摘要记录；只记录摘要明确说明的机制。",
+      "component_training_zh": "DDC/状态编码器及本地语言模型是否训练：摘要未说明；不能从 weight-perturbation 字样推断 LLM 权重扰动。",
+      "persistent_updates_zh": "持久状态是服务编排 population/archive；LLM 权重或提示词没有被说明为优化对象。",
+      "repository_relevance_zh": "未收录：语言模型只实现次要偏好接口，摘要和消融均把主要优化对象/收益归于服务编排 DDC，没有 LLM 参数、提示词或 agent 工件优化。",
+      "exclusion_evidence_from_official_abstract": [
+        "The proliferation of AI inference services across edge and cloud infrastructures has elevated energy consumption and carbon emissions to critical concerns in service orchestration. On the AI-intensive five-objective formulations we study, conventional decomposition-based multi-objective optimizers exhibit what we term low-energy diversity collapse: neighborhood-restricted updates systematically under-explore the energy-efficient region of the Pareto front spanning inference energy, transport energy, carbon, latency, and reliability. To address this, we propose GENO, a green-aware service orchestration framework built around Decomposition–Dominance Coordination (DDC), a mechanism that synchronizes a dominance archive with the decomposition population via energy-priority redundancy removal and re-association. DDC is complemented by an energy-augmented state encoder, a five-objective formulation that partitions total energy into AI-inference and non-AI components, and a bounded weight-perturbation interface instantiated through a local language model. We establish two formal guarantees: DDC monotonically improves a green-weighted archive score (Proposition 1), and any preference-channel perturbation is Lipschitz-bounded in its effect on the scalarized objective (Proposition 2). Experiments on three service orchestration benchmarks show that, among the eight methods evaluated, GENO is the only one to reach a low-energy operating point (energy-per-request below 0.6 Wh and tail latency under 22 ms) on the AI-EO benchmark, improving energy-per-request over the strongest baseline by roughly a quarter to a third. Component ablation attributes −21.1% HV to DDC removal versus only −2.8% to the language interface, confirming that the gains are algorithmic."
+      ]
+    },
+    {
+      "openreview_id": "D9uldDQrKv",
+      "title": "Learnable Difference-Aware Embedding: A Lightweight Plug-and-Play Module for Multivariate Time Series Forecasting",
+      "authors": "Anonymous",
+      "openreview_created_at": "2026-09-09T10:54:56.079000+00:00",
+      "submitted_at": "2026-09-09T10:54:56.079000+00:00",
+      "first_public_date": null,
+      "first_public_date_note_zh": "OpenReview cdate 仅作为记录创建/投稿时间；未核实更早公开来源。",
+      "paper_url": "https://openreview.net/forum?id=D9uldDQrKv",
+      "code_url": null,
+      "core_contribution_zh": "LDAE 用以有限差分 stencil 初始化的可学习卷积构造时间序列变化率和曲率特征。",
+      "gradient_free_method": "finite difference 是时序导数特征的初始化，不是无梯度优化。",
+      "backpropagation": "LDAE 的 learnable convolutions 如何训练未在摘要展开；称为 learnable 并不等于无反传。",
+      "persistent_model_parameter_update": "持久更新对象是时间序列 embedding 模块参数；没有语言模型对象。",
+      "updated_object": "多变量时间序列 forecasting embedding",
+      "catalog_category": null,
+      "decision": "not_catalogued_after_individual_review",
+      "decision_note_zh": "《Learnable Difference-Aware Embedding: A Lightweight Plug-and-Play Module for Multivariate Time Series Forecasting》未收录：纯时间序列预测方法；Transformer 只是可插拔 backbone 之一，既无语言模型应用，也无梯度无关优化机制。",
+      "unverified_zh": [
+        "作者在双盲期保持 Anonymous；未从方法名或相似题名猜测作者。",
+        "首次公开日期待核实；OpenReview cdate 仅记录投稿/记录创建时间。",
+        "排除不基于是否持久更新，而基于上述具体方法对象或语言模型关联缺口。",
+        "事实依据为 OpenReview 官方投稿摘要/作者声明；未独立验证实现。"
+      ],
+      "abstract": "Multivariate time series forecasting supports decision-making in energy, transportation, and other dynamic systems, where models must capture both global dependencies and local temporal changes. However, standard embeddings in representative forecasting backbones do not explicitly encode first- and second-order temporal differences at the initial representation stage. We introduce \\textbf{Learnable Difference-Aware Embedding (LDAE)}, a lightweight plug-and-play module that constructs channel-wise rate-of-change and curvature features using learnable convolutions initialized with finite-difference stencils. LDAE fuses these derivative cues with the backbone representation at the initial embedding interface, while leaving the backbone's internal temporal modeling unchanged. Across 12 real-world datasets, LDAE improves forecasting accuracy in low-to-moderate-noise, non-stationary settings and transfers across Transformer-, CNN-, and MLP-based backbones. These results demonstrate that explicit derivative cues provide a lightweight and transferable inductive bias for multivariate time series forecasting.",
+      "keywords": [
+        "Time series forecasting",
+        "time series data",
+        "deep learning"
+      ],
+      "venue_status": "ICLR 2027 Conference Submission; decision pending",
+      "evidence_basis_zh": "据 OpenReview 官方投稿元数据与官方摘要记录；只记录摘要明确说明的机制。",
+      "component_training_zh": "LDAE 的 learnable convolutions 如何训练未在摘要展开；称为 learnable 并不等于无反传。",
+      "persistent_updates_zh": "持久更新对象是时间序列 embedding 模块参数；没有语言模型对象。",
+      "repository_relevance_zh": "未收录：纯时间序列预测方法；Transformer 只是可插拔 backbone 之一，既无语言模型应用，也无梯度无关优化机制。",
+      "exclusion_evidence_from_official_abstract": [
+        "Multivariate time series forecasting supports decision-making in energy, transportation, and other dynamic systems, where models must capture both global dependencies and local temporal changes. However, standard embeddings in representative forecasting backbones do not explicitly encode first- and second-order temporal differences at the initial representation stage. We introduce \\textbf{Learnable Difference-Aware Embedding (LDAE)}, a lightweight plug-and-play module that constructs channel-wise rate-of-change and curvature features using learnable convolutions initialized with finite-difference stencils. LDAE fuses these derivative cues with the backbone representation at the initial embedding interface, while leaving the backbone's internal temporal modeling unchanged. Across 12 real-world datasets, LDAE improves forecasting accuracy in low-to-moderate-noise, non-stationary settings and transfers across Transformer-, CNN-, and MLP-based backbones. These results demonstrate that explicit derivative cues provide a lightweight and transferable inductive bias for multivariate time series forecasting."
+      ]
+    },
+    {
+      "openreview_id": "IcsDtyQXgw",
+      "title": "Towards Shared Flat Regions: Boosting Adversarial Transferability by Exponentially Tilting Curvature-Regularized Gradients",
+      "authors": "Anonymous",
+      "openreview_created_at": "2026-09-02T13:20:57.559000+00:00",
+      "submitted_at": "2026-09-02T13:20:57.559000+00:00",
+      "first_public_date": null,
+      "first_public_date_note_zh": "OpenReview cdate 仅作为记录创建/投稿时间；未核实更早公开来源。",
+      "paper_url": "https://openreview.net/forum?id=IcsDtyQXgw",
+      "code_url": null,
+      "core_contribution_zh": "TCRA 结合响应引导有限差分、平行/正交梯度分解和指数倾斜提高图像对抗样本迁移性。",
+      "gradient_free_method": "有限差分用于图像攻击方向探测，并与 surrogate gradients 组合。",
+      "backpropagation": "摘要明确依赖 curvature-regularized gradients 和 gradient-based attacks；不是无反传方法。",
+      "persistent_model_parameter_update": "更新对象是图像扰动；不持久更新语言模型。",
+      "updated_object": "ImageNet/CIFAR-10 图像对抗扰动",
+      "catalog_category": null,
+      "decision": "not_catalogued_after_individual_review",
+      "decision_note_zh": "《Towards Shared Flat Regions: Boosting Adversarial Transferability by Exponentially Tilting Curvature-Regularized Gradients》未收录：纯视觉对抗攻击，Transformer 仅是被测目标类型之一；没有 LLM/VLM 优化关联。",
+      "unverified_zh": [
+        "作者在双盲期保持 Anonymous；未从方法名或相似题名猜测作者。",
+        "首次公开日期待核实；OpenReview cdate 仅记录投稿/记录创建时间。",
+        "排除不基于是否持久更新，而基于上述具体方法对象或语言模型关联缺口。",
+        "事实依据为 OpenReview 官方投稿摘要/作者声明；未独立验证实现。"
+      ],
+      "abstract": "Transfer-based adversarial attacks rely on accessible surrogate models to fool unseen targets, but often overfit surrogate-specific loss landscapes.\nAlthough flatness-aware attacks mitigate this issue, local flatness on a surrogate does not guarantee agreement with target models.\nWe investigate neighborhood gradient stability as a surrogate-observable signal for constructing transferable attack directions, motivated by the hypothesis that effective perturbations exploit stable, high-loss regions shared across models.\nWe propose \\underline{T}ilting \\underline{C}urvature \\underline{R}egularized \\underline{A}ttack (\\texttt{TCRA}), which combines response-guided finite-difference probing, parallel--orthogonal gradient decomposition, and exponential tilting.\nLocal probes capture directional gradient changes, while tilting prioritizes candidate directions from high-loss neighborhoods.\nOur analysis bounds the deviation of the constructed direction and establishes sufficient conditions for target-loss ascent under model discrepancy, including momentum and projected sign updates.\nExperiments on ImageNet-compatible and CIFAR-10 benchmarks demonstrate improved transferability across standard, adversarially trained, and Transformer-based targets.\n\\texttt{TCRA} also improves the evaluated gradient-based and input-transformation attacks without target queries or surrogate-parameter tuning.",
+      "keywords": [
+        "Adversarial Transferability"
+      ],
+      "venue_status": "ICLR 2027 Conference Submission; decision pending",
+      "evidence_basis_zh": "据 OpenReview 官方投稿元数据与官方摘要记录；只记录摘要明确说明的机制。",
+      "component_training_zh": "摘要明确依赖 curvature-regularized gradients 和 gradient-based attacks；不是无反传方法。",
+      "persistent_updates_zh": "更新对象是图像扰动；不持久更新语言模型。",
+      "repository_relevance_zh": "未收录：纯视觉对抗攻击，Transformer 仅是被测目标类型之一；没有 LLM/VLM 优化关联。",
+      "exclusion_evidence_from_official_abstract": [
+        "Transfer-based adversarial attacks rely on accessible surrogate models to fool unseen targets, but often overfit surrogate-specific loss landscapes.\nAlthough flatness-aware attacks mitigate this issue, local flatness on a surrogate does not guarantee agreement with target models.\nWe investigate neighborhood gradient stability as a surrogate-observable signal for constructing transferable attack directions, motivated by the hypothesis that effective perturbations exploit stable, high-loss regions shared across models.\nWe propose \\underline{T}ilting \\underline{C}urvature \\underline{R}egularized \\underline{A}ttack (\\texttt{TCRA}), which combines response-guided finite-difference probing, parallel--orthogonal gradient decomposition, and exponential tilting.\nLocal probes capture directional gradient changes, while tilting prioritizes candidate directions from high-loss neighborhoods.\nOur analysis bounds the deviation of the constructed direction and establishes sufficient conditions for target-loss ascent under model discrepancy, including momentum and projected sign updates.\nExperiments on ImageNet-compatible and CIFAR-10 benchmarks demonstrate improved transferability across standard, adversarially trained, and Transformer-based targets.\n\\texttt{TCRA} also improves the evaluated gradient-based and input-transformation attacks without target queries or surrogate-parameter tuning."
+      ]
+    },
+    {
+      "openreview_id": "50wgNc7yUX",
+      "title": "RGB-ACD: RGB-Inspired Topology Generation for LLM-Guided Analog Circuit Design",
+      "authors": "Anonymous",
+      "openreview_created_at": "2026-09-04T07:42:01.965000+00:00",
+      "submitted_at": "2026-09-04T07:42:01.965000+00:00",
+      "first_public_date": null,
+      "first_public_date_note_zh": "OpenReview cdate 仅作为记录创建/投稿时间；未核实更早公开来源。",
+      "paper_url": "https://openreview.net/forum?id=50wgNc7yUX",
+      "code_url": null,
+      "core_contribution_zh": "RGB-ACD 训练 text-to-circuit generator，并让外层 LLM 按仿真残差改写拓扑指令、内层以有限差分估计更新器件参数。",
+      "gradient_free_method": "有限差分优化的是模拟电路器件参数，外层修订的是电路生成指令。",
+      "backpropagation": "generator：摘要明确训练；外层 LLM 是否训练/冻结待核实；内层电路参数更新不需要把它解释为 LLM 梯度。",
+      "persistent_model_parameter_update": "持久对象是 generator、候选电路拓扑与器件参数；未说明更新 LLM 权重或形成通用 LLM 提示工件。",
+      "updated_object": "模拟电路拓扑与连续器件参数",
+      "catalog_category": null,
+      "decision": "not_catalogued_after_individual_review",
+      "decision_note_zh": "《RGB-ACD: RGB-Inspired Topology Generation for LLM-Guided Analog Circuit Design》未收录：LLM 只是电路设计代理接口；摘要的有限差分作用于电路参数，不能证明语言模型优化。",
+      "unverified_zh": [
+        "作者在双盲期保持 Anonymous；未从方法名或相似题名猜测作者。",
+        "首次公开日期待核实；OpenReview cdate 仅记录投稿/记录创建时间。",
+        "排除不基于是否持久更新，而基于上述具体方法对象或语言模型关联缺口。",
+        "事实依据为 OpenReview 官方投稿摘要/作者声明；未独立验证实现。"
+      ],
+      "abstract": "Automating analog circuit design requires searching discrete topologies and continuous device parameters under coupled performance constraints. Translating natural-language requirements into circuit structures that satisfy these constraints remains challenging. We introduce RGB-inspired Analog Circuit Design (RGB-ACD), a large language model (LLM)-guided agent for topology generation and device sizing. RGB-ACD represents circuit topologies as three-channel RGB images and uses this encoding to learn a mapping from text to circuit connectivity. We construct a dataset of 35,200 text-topology pairs and train a generator that predicts electrical connections while preserving fixed device structure. To meet performance targets, the agent couples an outer topology-refinement loop with an inner parameter-optimization loop. The outer LLM uses simulation residuals to revise topology-generation instructions while retaining the original targets. For each candidate topology, the inner loop uses finite-difference gradient estimates to update sensitive parameter groups under process constraints. RGB-ACD outperforms all evaluated baselines in success rate across all three difficulty levels on OCB:Ckt-Bench-101 and AMSBench-Design. On hard tasks, success rates reach 66\\% and 51\\%, exceeding the strongest baselines by 42 and 30 percentage points, respectively.",
+      "keywords": [
+        "Analog Circuit Design",
+        "LLM Agents",
+        "Topology Generation",
+        "RGB Representation",
+        "Simulation-Guided Optimization"
+      ],
+      "venue_status": "ICLR 2027 Conference Submission; decision pending",
+      "evidence_basis_zh": "据 OpenReview 官方投稿元数据与官方摘要记录；只记录摘要明确说明的机制。",
+      "component_training_zh": "generator：摘要明确训练；外层 LLM 是否训练/冻结待核实；内层电路参数更新不需要把它解释为 LLM 梯度。",
+      "persistent_updates_zh": "持久对象是 generator、候选电路拓扑与器件参数；未说明更新 LLM 权重或形成通用 LLM 提示工件。",
+      "repository_relevance_zh": "未收录：LLM 只是电路设计代理接口；摘要的有限差分作用于电路参数，不能证明语言模型优化。",
+      "exclusion_evidence_from_official_abstract": [
+        "Automating analog circuit design requires searching discrete topologies and continuous device parameters under coupled performance constraints. Translating natural-language requirements into circuit structures that satisfy these constraints remains challenging. We introduce RGB-inspired Analog Circuit Design (RGB-ACD), a large language model (LLM)-guided agent for topology generation and device sizing. RGB-ACD represents circuit topologies as three-channel RGB images and uses this encoding to learn a mapping from text to circuit connectivity. We construct a dataset of 35,200 text-topology pairs and train a generator that predicts electrical connections while preserving fixed device structure. To meet performance targets, the agent couples an outer topology-refinement loop with an inner parameter-optimization loop. The outer LLM uses simulation residuals to revise topology-generation instructions while retaining the original targets. For each candidate topology, the inner loop uses finite-difference gradient estimates to update sensitive parameter groups under process constraints. RGB-ACD outperforms all evaluated baselines in success rate across all three difficulty levels on OCB:Ckt-Bench-101 and AMSBench-Design. On hard tasks, success rates reach 66\\% and 51\\%, exceeding the strongest baselines by 42 and 30 percentage points, respectively."
+      ]
+    },
+    {
+      "openreview_id": "HteiUnhO1T",
+      "title": "CalibCache: Cache-to-Full Feature Dynamics Calibration for Diffusion Transformers",
+      "authors": "Anonymous",
+      "openreview_created_at": "2026-08-20T09:15:42.289000+00:00",
+      "submitted_at": "2026-08-20T09:15:42.289000+00:00",
+      "first_public_date": null,
+      "first_public_date_note_zh": "OpenReview cdate 仅作为记录创建/投稿时间；未核实更早公开来源。",
+      "paper_url": "https://openreview.net/forum?id=HteiUnhO1T",
+      "code_url": null,
+      "core_contribution_zh": "CalibCache 从一对 full-compute/cache 图像生成轨迹，以中心最小二乘拟合二阶采样差分的标量加速映射。",
+      "gradient_free_method": "二阶 finite difference 描述扩散采样时间步的 feature acceleration，并非参数扰动或 ZO 梯度。",
+      "backpropagation": "离线 centered least squares 不需在线优化；扩散模型权重保持不变。",
+      "persistent_model_parameter_update": "持久对象是图像扩散缓存校准映射；不更新语言模型。",
+      "updated_object": "图像 diffusion transformer 的 feature-cache dynamics",
+      "catalog_category": null,
+      "decision": "not_catalogued_after_individual_review",
+      "decision_note_zh": "《CalibCache: Cache-to-Full Feature Dynamics Calibration for Diffusion Transformers》未收录：Qwen-Image 只是图像扩散评测模型；方法没有 LLM/VLM 文本推理、参数、提示词或 agent 工件优化。",
+      "unverified_zh": [
+        "作者在双盲期保持 Anonymous；未从方法名或相似题名猜测作者。",
+        "首次公开日期待核实；OpenReview cdate 仅记录投稿/记录创建时间。",
+        "排除不基于是否持久更新，而基于上述具体方法对象或语言模型关联缺口。",
+        "事实依据为 OpenReview 官方投稿摘要/作者声明；未独立验证实现。"
+      ],
+      "abstract": "Diffusion Transformers generate high-quality images, but iterative sampling remains computationally expensive. Feature caching reduces the number of full network evaluations, yet its approximation error can become more severe under short sampling schedules, where fewer full-compute steps and a coarser sampling grid can make history-based extrapolation less reliable. In this paper, we propose CalibCache, a lightweight offline calibration method that corrects systematic discrepancies between cached and full-compute feature dynamics. Specifically, CalibCache calibrates feature acceleration, defined as the second-order finite difference across sampling steps. Using only a single pair of full-compute and naive-cache trajectories at each setting, CalibCache fits scalar acceleration maps offline by centered least squares. These maps are then applied during sampling without additional full-network evaluations or online optimization. Across FLUX.1-dev and Qwen-Image on DrawBench and DiT-XL/2 on ImageNet-256, CalibCache consistently improves fidelity or generation quality over TaylorSeer under 20-step sampling at cache intervals $N=3,4,5$. At $N=5$, it reduces FLUX.1-dev LPIPS from $0.563$ to $0.429$ while achieving a $2.86\\times$ denoising speedup over full-compute sampling, and lowers DiT-XL/2 FID from $16.39$ to $10.37$ relative to TaylorSeer.",
+      "keywords": [
+        "Diffusion Transformers",
+        "Feature Caching",
+        "Inference Acceleration",
+        "Offline Calibration"
+      ],
+      "venue_status": "ICLR 2027 Conference Submission; decision pending",
+      "evidence_basis_zh": "据 OpenReview 官方投稿元数据与官方摘要记录；只记录摘要明确说明的机制。",
+      "component_training_zh": "离线 centered least squares 不需在线优化；扩散模型权重保持不变。",
+      "persistent_updates_zh": "持久对象是图像扩散缓存校准映射；不更新语言模型。",
+      "repository_relevance_zh": "未收录：Qwen-Image 只是图像扩散评测模型；方法没有 LLM/VLM 文本推理、参数、提示词或 agent 工件优化。",
+      "exclusion_evidence_from_official_abstract": [
+        "Diffusion Transformers generate high-quality images, but iterative sampling remains computationally expensive. Feature caching reduces the number of full network evaluations, yet its approximation error can become more severe under short sampling schedules, where fewer full-compute steps and a coarser sampling grid can make history-based extrapolation less reliable. In this paper, we propose CalibCache, a lightweight offline calibration method that corrects systematic discrepancies between cached and full-compute feature dynamics. Specifically, CalibCache calibrates feature acceleration, defined as the second-order finite difference across sampling steps. Using only a single pair of full-compute and naive-cache trajectories at each setting, CalibCache fits scalar acceleration maps offline by centered least squares. These maps are then applied during sampling without additional full-network evaluations or online optimization. Across FLUX.1-dev and Qwen-Image on DrawBench and DiT-XL/2 on ImageNet-256, CalibCache consistently improves fidelity or generation quality over TaylorSeer under 20-step sampling at cache intervals $N=3,4,5$. At $N=5$, it reduces FLUX.1-dev LPIPS from $0.563$ to $0.429$ while achieving a $2.86\\times$ denoising speedup over full-compute sampling, and lowers DiT-XL/2 FID from $16.39$ to $10.37$ relative to TaylorSeer."
+      ]
+    },
+    {
+      "openreview_id": "osd72MlzL5",
+      "title": "Scalar Smoothness Is One Point on a Besov Spectrum",
+      "authors": "Anonymous",
+      "openreview_created_at": "2026-09-14T08:04:25.160000+00:00",
+      "submitted_at": "2026-09-14T08:04:25.160000+00:00",
+      "first_public_date": null,
+      "first_public_date_note_zh": "OpenReview cdate 仅作为记录创建/投稿时间；未核实更早公开来源。",
+      "paper_url": "https://openreview.net/forum?id=osd72MlzL5",
+      "code_url": null,
+      "core_contribution_zh": "该工作以跨扰动尺度、方向和位置的 finite-difference roughness spectrum 统一刻画模型响应，并据量化误差方向上的任务损失增量分配 LLM block 精度。",
+      "gradient_free_method": "对匹配各 block 量化误差的权重扰动做函数值/任务损失探测，再进行 mixed-precision allocation；不是梯度估计器。",
+      "backpropagation": "粗糙度探测与精度分配：摘要未报告反传；GPTQ 权重的上游生成过程和 RSC 图像训练分支需与该 LLM 量化应用区分。",
+      "persistent_model_parameter_update": "基础 LLM 参数在探测时不训练；最终 bit-width allocation 和量化权重检查点持久化。",
+      "updated_object": "LLM block 的量化精度预算及对应量化权重",
+      "catalog_category": "related_closed_form",
+      "decision": "included_or_updated",
+      "decision_note_zh": "收录于 related_closed_form：统计适配边界：函数值扰动探针直接决定持久 LLM 量化配置，但论文并未声称估计训练梯度。",
+      "unverified_zh": [
+        "作者在双盲期保持 Anonymous；未从方法名或相似题名猜测作者。",
+        "首次公开日期待核实；OpenReview cdate 仅记录投稿/记录创建时间。",
+        "未定位到可核实的官方代码链接。",
+        "事实依据为 OpenReview 官方投稿摘要/作者声明；未独立验证实现。"
+      ],
+      "abstract": "Studies of neural network generalization and robustness often summarize smoothness with a single number, such as a Lipschitz constant or a Hessian curvature statistic. However, Lipschitz constants summarize global worst-case sensitivity and Hessian statistics summarize local curvature; neither captures how model responses vary with the size, direction, and location of perturbations encountered in real-world deployment. To measure smoothness under these perturbations, we introduce a finite-difference roughness spectrum that profiles model responses across these conditions. Our roughness spectrum generalizes scalar smoothness measures, bringing Lipschitz sensitivity and directional Hessian curvature into a common framework across perturbation scales. We connect this spectrum to classical Besov theory, which describes how a function's variation changes with scale. Our theoretical analysis also proves that a larger output shift can cause less task damage than a smaller one, and that local curvature alone can miss the blocks most vulnerable to finite perturbations. In image classification, Roughness Source Control (RSC) suppresses margin roughness along noise directions and improves noise robustness in a comparison of 80 checkpoints across four model--dataset combinations. In post-training quantization, we identify blocks that need higher precision by measuring task-loss increases from perturbations matched to the size and direction of each block's quantization error. Our mixed-precision allocation achieves lower perplexity than the Hessian-based HAWQ-V2 baseline under the same GPTQ weights and bit budgets in all 14 settings across seven held-out large language models.",
+      "keywords": [
+        "neural network smoothness",
+        "model robustness",
+        "Besov spaces",
+        "finite differences",
+        "perturbation sensitivity",
+        "post-training quantization"
+      ],
+      "venue_status": "ICLR 2027 Conference Submission; decision pending",
+      "evidence_basis_zh": "据 OpenReview 官方投稿元数据与官方摘要记录；只记录摘要明确说明的机制。",
+      "component_training_zh": "粗糙度探测与精度分配：摘要未报告反传；GPTQ 权重的上游生成过程和 RSC 图像训练分支需与该 LLM 量化应用区分。",
+      "persistent_updates_zh": "基础 LLM 参数在探测时不训练；最终 bit-width allocation 和量化权重检查点持久化。",
+      "repository_relevance_zh": "统计适配边界：函数值扰动探针直接决定持久 LLM 量化配置，但论文并未声称估计训练梯度。",
+      "official_abstract_method_evidence": [
+        "Studies of neural network generalization and robustness often summarize smoothness with a single number, such as a Lipschitz constant or a Hessian curvature statistic. However, Lipschitz constants summarize global worst-case sensitivity and Hessian statistics summarize local curvature; neither captures how model responses vary with the size, direction, and location of perturbations encountered in real-world deployment. To measure smoothness under these perturbations, we introduce a finite-difference roughness spectrum that profiles model responses across these conditions. Our roughness spectrum generalizes scalar smoothness measures, bringing Lipschitz sensitivity and directional Hessian curvature into a common framework across perturbation scales. We connect this spectrum to classical Besov theory, which describes how a function's variation changes with scale. Our theoretical analysis also proves that a larger output shift can cause less task damage than a smaller one, and that local curvature alone can miss the blocks most vulnerable to finite perturbations. In image classification, Roughness Source Control (RSC) suppresses margin roughness along noise directions and improves noise robustness in a comparison of 80 checkpoints across four model--dataset combinations. In post-training quantization, we identify blocks that need higher precision by measuring task-loss increases from perturbations matched to the size and direction of each block's quantization error. Our mixed-precision allocation achieves lower perplexity than the Hessian-based HAWQ-V2 baseline under the same GPTQ weights and bit budgets in all 14 settings across seven held-out large language models."
+      ]
+    },
+    {
+      "openreview_id": "a9gC9t9Zvc",
+      "title": "TE-VLM: Transfer Entropy-Inspired Distillation for Vision-Language Models",
+      "authors": "Anonymous",
+      "openreview_created_at": "2026-09-17T19:33:47.703000+00:00",
+      "submitted_at": "2026-09-17T19:33:47.703000+00:00",
+      "first_public_date": null,
+      "first_public_date_note_zh": "OpenReview cdate 仅作为记录创建/投稿时间；未核实更早公开来源。",
+      "paper_url": "https://openreview.net/forum?id=a9gC9t9Zvc",
+      "code_url": null,
+      "core_contribution_zh": "TE-VLM 从 optimization-step transfer entropy 推导 TE1/TE2 蒸馏正则，使学生匹配教师的 batch 内 embedding 几何。",
+      "gradient_free_method": "finite-difference directions 指 batch 内表征差，而非模型参数扰动的函数值估计。",
+      "backpropagation": "学生 VLM 通过蒸馏目标训练；摘要未说明无反传，且 optimization-step TE 明确围绕学生下一步训练表征。",
+      "persistent_model_parameter_update": "学生 VLM 参数持久更新；教师冻结。",
+      "updated_object": "VLM student embedding geometry",
+      "catalog_category": null,
+      "decision": "not_catalogued_after_individual_review",
+      "decision_note_zh": "《TE-VLM: Transfer Entropy-Inspired Distillation for Vision-Language Models》未收录：属于一阶知识蒸馏；没有独立 ZO/ES、闭式或外部黑箱搜索机制。",
+      "unverified_zh": [
+        "作者在双盲期保持 Anonymous；未从方法名或相似题名猜测作者。",
+        "首次公开日期待核实；OpenReview cdate 仅记录投稿/记录创建时间。",
+        "排除不基于是否持久更新，而基于上述具体方法对象或语言模型关联缺口。",
+        "事实依据为 OpenReview 官方投稿摘要/作者声明；未独立验证实现。"
+      ],
+      "abstract": "Transfer entropy (TE) is a principled measure of directed information flow, but it is intractable to estimate in high-dimensional multimodal representation spaces. We use optimization-step TE, the information a frozen teacher provides about a student's next-step representations beyond the student's current state, as a conceptual lens for vision--language model (VLM) distillation and derive from it two tractable proxy objectives, TE1 and TE2. Both reward the student for reproducing the teacher's local embedding geometry by matching within-batch finite-difference directions up to orientation through squared cosine similarity, per modality (TE1) or jointly across image and text (TE2), with no density estimation, no extra teacher passes, and negligible compute. In CLIP-style distillation with RN50, ViT-B/16, and RN50$\\times$16 teachers and RN34/RN18 students, the proxies consistently improve image-to-text retrieval over contrastive, KL, MSE, interactive-contrastive, mutual-information, and relational Gram-matching baselines while remaining competitive on text-to-image retrieval. With the base objective fixed, adding TE lifts MSCOCO image-to-text R@1 from 6.1\\% to 10.3\\%, against 8.7\\% for the strongest competing regularizer. The gains persist across temperatures, batch sizes, datasets (MSCOCO, Flickr8k, Flickr30k), and five random seeds; transfer better under distribution shift (MSCOCO$\\rightarrow$Flickr8k); and extend to classification, where the distilled student surpasses its teacher in label-free Food-101 evaluation and generalizes better to ImageNet-1k zero-shot classification. Representation-level analyses show that TE-distilled students preserve the teacher's neighborhood structure and joint image-text geometry more faithfully than mutual-information distillation.",
+      "keywords": [
+        "Transfer entropy",
+        "vision-language models",
+        "knowledge distillation",
+        "multimodal learning",
+        "representation alignment"
+      ],
+      "venue_status": "ICLR 2027 Conference Submission; decision pending",
+      "evidence_basis_zh": "据 OpenReview 官方投稿元数据与官方摘要记录；只记录摘要明确说明的机制。",
+      "component_training_zh": "学生 VLM 通过蒸馏目标训练；摘要未说明无反传，且 optimization-step TE 明确围绕学生下一步训练表征。",
+      "persistent_updates_zh": "学生 VLM 参数持久更新；教师冻结。",
+      "repository_relevance_zh": "未收录：属于一阶知识蒸馏；没有独立 ZO/ES、闭式或外部黑箱搜索机制。",
+      "exclusion_evidence_from_official_abstract": [
+        "Transfer entropy (TE) is a principled measure of directed information flow, but it is intractable to estimate in high-dimensional multimodal representation spaces. We use optimization-step TE, the information a frozen teacher provides about a student's next-step representations beyond the student's current state, as a conceptual lens for vision--language model (VLM) distillation and derive from it two tractable proxy objectives, TE1 and TE2. Both reward the student for reproducing the teacher's local embedding geometry by matching within-batch finite-difference directions up to orientation through squared cosine similarity, per modality (TE1) or jointly across image and text (TE2), with no density estimation, no extra teacher passes, and negligible compute. In CLIP-style distillation with RN50, ViT-B/16, and RN50$\\times$16 teachers and RN34/RN18 students, the proxies consistently improve image-to-text retrieval over contrastive, KL, MSE, interactive-contrastive, mutual-information, and relational Gram-matching baselines while remaining competitive on text-to-image retrieval. With the base objective fixed, adding TE lifts MSCOCO image-to-text R@1 from 6.1\\% to 10.3\\%, against 8.7\\% for the strongest competing regularizer. The gains persist across temperatures, batch sizes, datasets (MSCOCO, Flickr8k, Flickr30k), and five random seeds; transfer better under distribution shift (MSCOCO$\\rightarrow$Flickr8k); and extend to classification, where the distilled student surpasses its teacher in label-free Food-101 evaluation and generalizes better to ImageNet-1k zero-shot classification. Representation-level analyses show that TE-distilled students preserve the teacher's neighborhood structure and joint image-text geometry more faithfully than mutual-information distillation."
+      ]
+    },
+    {
+      "openreview_id": "fNrQjgb4Ch",
+      "title": "DV-Lens: Revealing the Functional Organization of Language Model Parameters",
+      "authors": "Anonymous",
+      "openreview_created_at": "2026-08-20T03:53:47.624000+00:00",
+      "submitted_at": "2026-08-20T03:53:47.624000+00:00",
+      "first_public_date": null,
+      "first_public_date_note_zh": "OpenReview cdate 仅作为记录创建/投稿时间；未核实更早公开来源。",
+      "paper_url": "https://openreview.net/forum?id=fNrQjgb4Ch",
+      "code_url": null,
+      "core_contribution_zh": "DV-Lens 估计模块 downstream Jacobian，把原生参数列投影到词表空间，并以消融、steering、swapping 分析参数功能组织。",
+      "gradient_free_method": "有限差分只用于测试 readout 能否预测局部 logit 变化，不是方法的优化或适配更新。",
+      "backpropagation": "Jacobian 估计与 reader/分析计算是否用反传：摘要未说明；不能因 finite-difference tests 推断整体无反传。",
+      "persistent_model_parameter_update": "诊断中有临时消融、steering、swapping；没有提出持久梯度无关训练。",
+      "updated_object": "LLM 参数功能解释与验证干预",
+      "catalog_category": null,
+      "decision": "not_catalogued_after_individual_review",
+      "decision_note_zh": "《DV-Lens: Revealing the Functional Organization of Language Model Parameters》未收录：是解释/诊断工作，有限差分仅验证 DV-Lens readout；没有用该探针搜索或更新 LLM。",
+      "unverified_zh": [
+        "作者在双盲期保持 Anonymous；未从方法名或相似题名猜测作者。",
+        "首次公开日期待核实；OpenReview cdate 仅记录投稿/记录创建时间。",
+        "排除不基于是否持久更新，而基于上述具体方法对象或语言模型关联缺口。",
+        "事实依据为 OpenReview 官方投稿摘要/作者声明；未独立验证实现。"
+      ],
+      "abstract": "Understanding the functional roles of learnable parameters in model computation is important for elucidating the internal mechanisms of large language models (LLMs). \nHowever, how to connect parameters from different modules to verifiable output effects and further characterize the relationship between their functional organization and model capability remains to be explored. \nTo this end, we introduce the downstream vocabulary lens (DV-Lens), a parameter-level interpretability framework that links native parameter directions to their downstream vocabulary responses.\nSpecifically, we first estimate module-specific downstream Jacobians over a reference prompt set for attention query, key, value, and output (Q/K/V/O) projections and feed-forward networks (FFNs).\nSecond, we use these mappings to project native parameter columns into the final vocabulary space, obtaining signed readouts that characterize their average local output responses.\nThird, we group parameter columns by their vocabulary readouts and introduce downstream vocabulary complexity (DV-Complexity), which quantifies within-group structural variation using normalized reconstruction residuals of the original weights.\nAt the parameter level, randomized controls and finite-difference tests show that DV-Lens readouts capture non-random vocabulary structure and predict local logit changes with 98.0\\% coordinate-orientation agreement across 720 cases from nine models.\nThese readouts further guide parameter ablation, steering, and swapping across 21 models, shifting target-token probabilities in the predicted directions under controlled conditions.\nAt the model level, the joint-parameter score of DV-Complexity achieves a Spearman correlation of 0.904 with benchmark-based capability rankings across 48 language models.\nTogether, these results provide intervention-based evidence for DV-Lens interpretations and reveal an association between DV-Complexity and model capability.",
+      "keywords": [
+        "Large Language Models"
+      ],
+      "venue_status": "ICLR 2027 Conference Submission; decision pending",
+      "evidence_basis_zh": "据 OpenReview 官方投稿元数据与官方摘要记录；只记录摘要明确说明的机制。",
+      "component_training_zh": "Jacobian 估计与 reader/分析计算是否用反传：摘要未说明；不能因 finite-difference tests 推断整体无反传。",
+      "persistent_updates_zh": "诊断中有临时消融、steering、swapping；没有提出持久梯度无关训练。",
+      "repository_relevance_zh": "未收录：是解释/诊断工作，有限差分仅验证 DV-Lens readout；没有用该探针搜索或更新 LLM。",
+      "exclusion_evidence_from_official_abstract": [
+        "Understanding the functional roles of learnable parameters in model computation is important for elucidating the internal mechanisms of large language models (LLMs). \nHowever, how to connect parameters from different modules to verifiable output effects and further characterize the relationship between their functional organization and model capability remains to be explored. \nTo this end, we introduce the downstream vocabulary lens (DV-Lens), a parameter-level interpretability framework that links native parameter directions to their downstream vocabulary responses.\nSpecifically, we first estimate module-specific downstream Jacobians over a reference prompt set for attention query, key, value, and output (Q/K/V/O) projections and feed-forward networks (FFNs).\nSecond, we use these mappings to project native parameter columns into the final vocabulary space, obtaining signed readouts that characterize their average local output responses.\nThird, we group parameter columns by their vocabulary readouts and introduce downstream vocabulary complexity (DV-Complexity), which quantifies within-group structural variation using normalized reconstruction residuals of the original weights.\nAt the parameter level, randomized controls and finite-difference tests show that DV-Lens readouts capture non-random vocabulary structure and predict local logit changes with 98.0\\% coordinate-orientation agreement across 720 cases from nine models.\nThese readouts further guide parameter ablation, steering, and swapping across 21 models, shifting target-token probabilities in the predicted directions under controlled conditions.\nAt the model level, the joint-parameter score of DV-Complexity achieves a Spearman correlation of 0.904 with benchmark-based capability rankings across 48 language models.\nTogether, these results provide intervention-based evidence for DV-Lens interpretations and reveal an association between DV-Complexity and model capability."
+      ]
+    },
+    {
+      "openreview_id": "pOcuwMjDc0",
+      "title": "When Can First-Order Models of Fine-Tuning Bound Forgetting?",
+      "authors": "Anonymous",
+      "openreview_created_at": "2026-09-19T03:28:55.380000+00:00",
+      "submitted_at": "2026-09-19T03:28:55.380000+00:00",
+      "first_public_date": null,
+      "first_public_date_note_zh": "OpenReview cdate 仅作为记录创建/投稿时间；未核实更早公开来源。",
+      "paper_url": "https://openreview.net/forum?id=pOcuwMjDc0",
+      "code_url": null,
+      "core_contribution_zh": "该工作用起始点 finite-difference probes 估计逐事实 margin 的一阶响应模型，并为 SGD LoRA 微调期间 margin 首次越界推导与验证 Freedman/Azuma 概率界。",
+      "gradient_free_method": "有限差分探针用于拟合遗忘诊断 surrogate 和界，不用于生成 LoRA 更新。",
+      "backpropagation": "LoRA fine-tuning：摘要明确采用 SGD，通常涉及反向传播；有限差分 probe：函数值测量；二者须分开。",
+      "persistent_model_parameter_update": "SGD 会持久更新 LoRA；response coefficients 和界是诊断产物，不是模型更新。",
+      "updated_object": "LoRA 参数轨迹及受保护事实的 margin-response surrogate",
+      "catalog_category": "related_hybrid",
+      "decision": "included_or_updated",
+      "decision_note_zh": "收录于 related_hybrid：混合理论边界：有限差分是 LLM 微调诊断机制，实际参数优化仍是一阶 SGD。",
+      "unverified_zh": [
+        "作者在双盲期保持 Anonymous；未从方法名或相似题名猜测作者。",
+        "首次公开日期待核实；OpenReview cdate 仅记录投稿/记录创建时间。",
+        "未定位到可核实的官方代码链接。",
+        "事实依据为 OpenReview 官方投稿摘要/作者声明；未独立验证实现。"
+      ],
+      "abstract": "Fine-tuning a language model on new data can make it forget facts that it should keep. We ask whether measurements taken at the start of a fine-tuning run can bound, for each protected fact, the probability that the run makes the model forget it. In LoRA fine-tuning with stochastic gradient descent on models from 0.6B to 14B parameters, a first-order response model estimated by finite-difference probes predicts changes of per-fact margins with correlation 0.974–0.998. Predictions of forgetting built on this model nevertheless failed; in Qwen3-0.6B, forgetting requires parameter changes far outside the region in which the model was validated. The probes can, however, bound the probability that a margin first falls below a boundary near zero: we derive Freedman and Azuma first-passage bounds for a linear surrogate of the margin and test on new runs whether they hold for the model. The bounds contain a term R that measures how much the response coefficients change during the run. The simplified Freedman bound, which sets R = 0, certified most facts but was violated in 14 of 112 conditions, and in these conditions every fact on which it was violated had R ≥ a, where a is the distance of the fact's margin to the boundary. The complete Freedman bound certifies only facts with R < a, and it held in every condition. On the violated facts, the spread of the margin across test runs was a median of 14.6 times the prediction of the response model, so the failures are breakdowns of the model, and in our data they occurred only where R ≥ a. We found this pattern post hoc and tested it in two preregistered confirmatory studies with 43 new conditions: the complete bound held in all of them, and the simplified bound failed there on only 3 facts, each with R ≥ a. A screen that decided for a whole condition whether to use the simplified bound failed on new starting states. First-order models of fine-tuning can thus bound forgetting on the facts whose response coefficients change by less than their distance to the boundary.",
+      "keywords": [
+        "catastrophic forgetting",
+        "fine-tuning",
+        "LoRA",
+        "concentration inequalities",
+        "first-passage bounds",
+        "knowledge retention"
+      ],
+      "venue_status": "ICLR 2027 Conference Submission; decision pending",
+      "evidence_basis_zh": "据 OpenReview 官方投稿元数据与官方摘要记录；只记录摘要明确说明的机制。",
+      "component_training_zh": "LoRA fine-tuning：摘要明确采用 SGD，通常涉及反向传播；有限差分 probe：函数值测量；二者须分开。",
+      "persistent_updates_zh": "SGD 会持久更新 LoRA；response coefficients 和界是诊断产物，不是模型更新。",
+      "repository_relevance_zh": "混合理论边界：有限差分是 LLM 微调诊断机制，实际参数优化仍是一阶 SGD。",
+      "official_abstract_method_evidence": [
+        "Fine-tuning a language model on new data can make it forget facts that it should keep. We ask whether measurements taken at the start of a fine-tuning run can bound, for each protected fact, the probability that the run makes the model forget it. In LoRA fine-tuning with stochastic gradient descent on models from 0.6B to 14B parameters, a first-order response model estimated by finite-difference probes predicts changes of per-fact margins with correlation 0.974–0.998. Predictions of forgetting built on this model nevertheless failed; in Qwen3-0.6B, forgetting requires parameter changes far outside the region in which the model was validated. The probes can, however, bound the probability that a margin first falls below a boundary near zero: we derive Freedman and Azuma first-passage bounds for a linear surrogate of the margin and test on new runs whether they hold for the model. The bounds contain a term R that measures how much the response coefficients change during the run. The simplified Freedman bound, which sets R = 0, certified most facts but was violated in 14 of 112 conditions, and in these conditions every fact on which it was violated had R ≥ a, where a is the distance of the fact's margin to the boundary. The complete Freedman bound certifies only facts with R < a, and it held in every condition. On the violated facts, the spread of the margin across test runs was a median of 14.6 times the prediction of the response model, so the failures are breakdowns of the model, and in our data they occurred only where R ≥ a. We found this pattern post hoc and tested it in two preregistered confirmatory studies with 43 new conditions: the complete bound held in all of them, and the simplified bound failed there on only 3 facts, each with R ≥ a. A screen that decided for a whole condition whether to use the simplified bound failed on new starting states. First-order models of fine-tuning can thus bound forgetting on the facts whose response coefficients change by less than their distance to the boundary."
+      ]
+    },
+    {
+      "openreview_id": "XgB7jpGAnn",
+      "title": "Frozen in a Frame: The Velocity Blind Spot in JEPA World Models",
+      "authors": "Anonymous",
+      "openreview_created_at": "2026-09-19T11:01:51.520000+00:00",
+      "submitted_at": "2026-09-19T11:01:51.520000+00:00",
+      "first_public_date": null,
+      "first_public_date_note_zh": "OpenReview cdate 仅作为记录创建/投稿时间；未核实更早公开来源。",
+      "paper_url": "https://openreview.net/forum?id=XgB7jpGAnn",
+      "code_url": null,
+      "core_contribution_zh": "TI-JEPA 将视觉世界模型 latent 分成 pose code 与显式有限差分 motion code，以修复单帧目标的速度不可识别性。",
+      "gradient_free_method": "finite difference 构造视觉运动表示，不是梯度无关优化。",
+      "backpropagation": "摘要称在视觉环境从头训练；未声称避免反传。",
+      "persistent_model_parameter_update": "持久更新视觉 encoder/predictor；没有语言模型对象。",
+      "updated_object": "视觉 JEPA world model 的 pose/motion latent",
+      "catalog_category": null,
+      "decision": "not_catalogued_after_individual_review",
+      "decision_note_zh": "《Frozen in a Frame: The Velocity Blind Spot in JEPA World Models》未收录：纯视觉/控制世界模型，语言模型与语言优化均未出现。",
+      "unverified_zh": [
+        "作者在双盲期保持 Anonymous；未从方法名或相似题名猜测作者。",
+        "首次公开日期待核实；OpenReview cdate 仅记录投稿/记录创建时间。",
+        "排除不基于是否持久更新，而基于上述具体方法对象或语言模型关联缺口。",
+        "事实依据为 OpenReview 官方投稿摘要/作者声明；未独立验证实现。"
+      ],
+      "abstract": "Joint-embedding predictive architectures for world modeling train an encoder so that a predictor can map a current frame embedding and an action to the embedding of the next frame. The target for this prediction always comes from a single rendered frame. We show that this choice has a structural blind spot. Every renderer without motion blur is instantaneous: it draws a scene from its configuration alone and leaves no trace of how fast that configuration is changing. So a single-frame embedding is a deterministic function of configuration alone, and it carries no information about velocity. This holds for the optimal predictor under any encoder, however large, including the official released LeWM weights. We confirm this on official checkpoints across four real benchmarks, PushT, Reacher, Cube, and TwoRoom, where every linear velocity probe sits at or below its own chance floor while position probes reach $R^2 \\approx 0.95$. We then introduce RateIdent, a three-stage diagnostic protocol, and TI-JEPA, a lightweight fix that splits the latent into a pose code and an explicit finite-difference motion code and predicts both. Across three physically grounded environments, TI-JEPA gives a statistically significant, seed-robust improvement on a stop-at-goal planning task over a matched-memory baseline, for example a 55% lower final distance on Pendulum ($p=3.2\\times10^{-10}$) and 64% lower on CartPole ($p=5.1\\times10^{-15}$). We reproduce the theory's central prediction at official ViT-Tiny plus AdaLN-transformer scale on two environments, then push the same recipe onto real dm_control Reacher photographs trained entirely from scratch, where TI-JEPA's kill-experiment branch separation exceeds the memory-having baseline's by roughly $38\\times$, the largest margin in the paper. We also compare directly against a recurrent RSSM-style predictor at the same footprint. Its opaque hidden state matches or beats TI-JEPA's raw rollout accuracy on two of three environments, but it cannot be probed for pose and motion separately the way TI-JEPA's explicit split can, and it loses outright on the environment with the most coupled dynamics. Together, a checkable formal argument and six evaluated environments show that single-frame targets are the wrong object to predict when velocity matters, and that a small, interpretable structural change fixes it without any privileged supervision.",
+      "keywords": [
+        "world models",
+        "joint-embedding predictive architecture",
+        "identifiability",
+        "self-supervised representation learning",
+        "video prediction",
+        "latent dynamics",
+        "velocity estimation",
+        "model-based planning",
+        "recurrent state-space models"
+      ],
+      "venue_status": "ICLR 2027 Conference Submission; decision pending",
+      "evidence_basis_zh": "据 OpenReview 官方投稿元数据与官方摘要记录；只记录摘要明确说明的机制。",
+      "component_training_zh": "摘要称在视觉环境从头训练；未声称避免反传。",
+      "persistent_updates_zh": "持久更新视觉 encoder/predictor；没有语言模型对象。",
+      "repository_relevance_zh": "未收录：纯视觉/控制世界模型，语言模型与语言优化均未出现。",
+      "exclusion_evidence_from_official_abstract": [
+        "Joint-embedding predictive architectures for world modeling train an encoder so that a predictor can map a current frame embedding and an action to the embedding of the next frame. The target for this prediction always comes from a single rendered frame. We show that this choice has a structural blind spot. Every renderer without motion blur is instantaneous: it draws a scene from its configuration alone and leaves no trace of how fast that configuration is changing. So a single-frame embedding is a deterministic function of configuration alone, and it carries no information about velocity. This holds for the optimal predictor under any encoder, however large, including the official released LeWM weights. We confirm this on official checkpoints across four real benchmarks, PushT, Reacher, Cube, and TwoRoom, where every linear velocity probe sits at or below its own chance floor while position probes reach $R^2 \\approx 0.95$. We then introduce RateIdent, a three-stage diagnostic protocol, and TI-JEPA, a lightweight fix that splits the latent into a pose code and an explicit finite-difference motion code and predicts both. Across three physically grounded environments, TI-JEPA gives a statistically significant, seed-robust improvement on a stop-at-goal planning task over a matched-memory baseline, for example a 55% lower final distance on Pendulum ($p=3.2\\times10^{-10}$) and 64% lower on CartPole ($p=5.1\\times10^{-15}$). We reproduce the theory's central prediction at official ViT-Tiny plus AdaLN-transformer scale on two environments, then push the same recipe onto real dm_control Reacher photographs trained entirely from scratch, where TI-JEPA's kill-experiment branch separation exceeds the memory-having baseline's by roughly $38\\times$, the largest margin in the paper. We also compare directly against a recurrent RSSM-style predictor at the same footprint. Its opaque hidden state matches or beats TI-JEPA's raw rollout accuracy on two of three environments, but it cannot be probed for pose and motion separately the way TI-JEPA's explicit split can, and it loses outright on the environment with the most coupled dynamics. Together, a checkable formal argument and six evaluated environments show that single-frame targets are the wrong object to predict when velocity matters, and that a small, interpretable structural change fixes it without any privileged supervision."
+      ]
+    },
+    {
+      "openreview_id": "HleG3nAO5S",
+      "title": "Multi-Peptide Prompting Enables In-Context Learning in Protein Language Models",
+      "authors": "Anonymous",
+      "openreview_created_at": "2026-09-19T02:47:46.666000+00:00",
+      "submitted_at": "2026-09-19T02:47:46.666000+00:00",
+      "first_public_date": null,
+      "first_public_date_note_zh": "OpenReview cdate 仅作为记录创建/投稿时间；未核实更早公开来源。",
+      "paper_url": "https://openreview.net/forum?id=HleG3nAO5S",
+      "code_url": null,
+      "core_contribution_zh": "MPEP 把带类别含义的示例 peptide 经 glycine spacer 拼接为上下文，并以正负示例提示概率的差分分数完成少样本 peptide 分类。",
+      "gradient_free_method": "固定的 in-context example prompting 与概率差分评分；没有搜索或参数梯度。",
+      "backpropagation": "protein LM：摘要明确无梯度更新、任务重训练或架构修改；示例选择是否另经优化未说明。",
+      "persistent_model_parameter_update": "模型权重和任务参数不持久更新；prompt/context 只在推理时存在。",
+      "updated_object": "protein LM 的多 peptide 上下文与正负概率差分分数",
+      "catalog_category": null,
+      "decision": "not_catalogued_after_individual_review",
+      "decision_note_zh": "《Multi-Peptide Prompting Enables In-Context Learning in Protein Language Models》未收录：虽是无训练的 protein-LM 推理方法，但只使用固定示例提示和差分评分，没有候选搜索、校准更新、闭式适配或持久外部工件更新。",
+      "unverified_zh": [
+        "作者在双盲期保持 Anonymous；未从方法名或相似题名猜测作者。",
+        "首次公开日期待核实；OpenReview cdate 仅记录投稿/记录创建时间。",
+        "排除不基于是否持久更新，而基于上述具体方法对象或语言模型关联缺口。",
+        "事实依据为 OpenReview 官方投稿摘要/作者声明；未独立验证实现。"
+      ],
+      "abstract": "We show that single-sequence PLMs can perform in-context peptide learning without gradient updates, task-specific retraining, or architectural modification. We introduce multi-peptide example prompts (MPEPs), in which demonstration peptides are concatenated with glycine spacers and used as context for scoring query peptides by their prompted probability. We evaluate this approach across multiple tasks, using both encoder-only ESM-2 models and decoder-only ProGen2 models. Across most tasks, performance improves with the number of peptide examples and with model scale, indicating that PLMs can extract shared properties from prompted examples. We further introduce a difference score that contrasts positive-example and negative-example MPEPs, reducing compositional biases in raw PLM probabilities and substantially improving classification. Perhaps surprisingly, when applied to few-shot peptide learning problems MPEP-based classification is competitive with classifiers trained on frozen ESM-2 embeddings, despite requiring no training. These results reveal an unexpected in-context inference capability in single-sequence PLMs and establish in-context learning as a potential lightweight strategy for low-data peptide classification.",
+      "keywords": [
+        "Protein language models",
+        "in-context learning"
+      ],
+      "venue_status": "ICLR 2027 Conference Submission; decision pending",
+      "evidence_basis_zh": "据 OpenReview 官方投稿元数据与官方摘要记录；只记录摘要明确说明的机制。",
+      "component_training_zh": "protein LM：摘要明确无梯度更新、任务重训练或架构修改；示例选择是否另经优化未说明。",
+      "persistent_updates_zh": "模型权重和任务参数不持久更新；prompt/context 只在推理时存在。",
+      "repository_relevance_zh": "未收录：虽是无训练的 protein-LM 推理方法，但只使用固定示例提示和差分评分，没有候选搜索、校准更新、闭式适配或持久外部工件更新。",
+      "exclusion_evidence_from_official_abstract": [
+        "We show that single-sequence PLMs can perform in-context peptide learning without gradient updates, task-specific retraining, or architectural modification. We introduce multi-peptide example prompts (MPEPs), in which demonstration peptides are concatenated with glycine spacers and used as context for scoring query peptides by their prompted probability. We evaluate this approach across multiple tasks, using both encoder-only ESM-2 models and decoder-only ProGen2 models. Across most tasks, performance improves with the number of peptide examples and with model scale, indicating that PLMs can extract shared properties from prompted examples. We further introduce a difference score that contrasts positive-example and negative-example MPEPs, reducing compositional biases in raw PLM probabilities and substantially improving classification. Perhaps surprisingly, when applied to few-shot peptide learning problems MPEP-based classification is competitive with classifiers trained on frozen ESM-2 embeddings, despite requiring no training. These results reveal an unexpected in-context inference capability in single-sequence PLMs and establish in-context learning as a potential lightweight strategy for low-data peptide classification."
+      ]
+    },
+    {
+      "openreview_id": "KzeQR3Rqgi",
+      "title": "RESCOM: ACTIVATION RESIDUAL COMPENSATION FOR LARGE LANGUAGE MODEL QUANTIZATION",
+      "authors": "Anonymous",
+      "openreview_created_at": "2026-09-18T16:36:23.825000+00:00",
+      "submitted_at": "2026-09-18T16:36:23.825000+00:00",
+      "first_public_date": null,
+      "first_public_date_note_zh": "OpenReview cdate 仅作为记录创建/投稿时间；未核实更早公开来源。",
+      "paper_url": "https://openreview.net/forum?id=KzeQR3Rqgi",
+      "code_url": null,
+      "core_contribution_zh": "ResCom 用 activation rounding residual 补偿量化层输出误差，并通过 output-aware calibration 选择低秩残差方向、闭式求解 correction。",
+      "gradient_free_method": "reduced-rank regression/闭式低秩 correction；摘要明确无 gradient training。",
+      "backpropagation": "ResCom 校准：无梯度训练；基础 PTQ/GPTQ 过程不在摘要方法说明范围内。",
+      "persistent_model_parameter_update": "已校准基础权重不更新；低秩 activation-residual correction 参数作为模型侧模块持久化。",
+      "updated_object": "LLM 量化层的低秩 activation-residual correction",
+      "catalog_category": "related_closed_form",
+      "decision": "included_or_updated",
+      "decision_note_zh": "收录于 related_closed_form：闭式适配：安装持久模型 correction，但不是 ZO 梯度估计。",
+      "unverified_zh": [
+        "作者在双盲期保持 Anonymous；未从方法名或相似题名猜测作者。",
+        "首次公开日期待核实；OpenReview cdate 仅记录投稿/记录创建时间。",
+        "未定位到可核实的官方代码链接。",
+        "事实依据为 OpenReview 官方投稿摘要/作者声明；未独立验证实现。"
+      ],
+      "abstract": "Low-bit weight–activation quantization reduces the memory and computation needed to deploy large language models, but activation rounding can still degrade accuracy after calibration. Reconstruction from rounded inputs cannot distinguish activations within the same quantization bin. We propose ResCom, a low-rank correction that uses the activation rounding residual to compensate for the result\u0002ing layer-output error. An output-aware calibration procedure selects residual di\u0002rections by their contribution to output reconstruction and computes the correction in closed form, without gradient training or updates to the calibrated weights. On Llama-3-8B with four-bit weights and activations, rank-32 attention corrections reduce WikiText-2 perplexity from 7.708 to 7.147, improve MMLU by 2.89 per\u0002centage points, and raise five-shot GSM8K accuracy from 23.96 to 36.16 percent. Evaluations on models from 1B to 70B parameters and on held-out C4 test the method beyond this setting. On B200, the evaluated FP32 implementation adds 2.25 percent to 4K prefill time; a separate compact-storage implementation retains a 27.7 percent peak-memory reduction relative to FP16.",
+      "keywords": [
+        "large language models",
+        "post-training quantization",
+        "weight-activation quantization",
+        "activation quantization residuals",
+        "low-rank compensation",
+        "reduced-rank regression"
+      ],
+      "venue_status": "ICLR 2027 Conference Submission; decision pending",
+      "evidence_basis_zh": "据 OpenReview 官方投稿元数据与官方摘要记录；只记录摘要明确说明的机制。",
+      "component_training_zh": "ResCom 校准：无梯度训练；基础 PTQ/GPTQ 过程不在摘要方法说明范围内。",
+      "persistent_updates_zh": "已校准基础权重不更新；低秩 activation-residual correction 参数作为模型侧模块持久化。",
+      "repository_relevance_zh": "闭式适配：安装持久模型 correction，但不是 ZO 梯度估计。",
+      "official_abstract_method_evidence": [
+        "Low-bit weight–activation quantization reduces the memory and computation needed to deploy large language models, but activation rounding can still degrade accuracy after calibration. Reconstruction from rounded inputs cannot distinguish activations within the same quantization bin. We propose ResCom, a low-rank correction that uses the activation rounding residual to compensate for the result\u0002ing layer-output error. An output-aware calibration procedure selects residual di\u0002rections by their contribution to output reconstruction and computes the correction in closed form, without gradient training or updates to the calibrated weights. On Llama-3-8B with four-bit weights and activations, rank-32 attention corrections reduce WikiText-2 perplexity from 7.708 to 7.147, improve MMLU by 2.89 per\u0002centage points, and raise five-shot GSM8K accuracy from 23.96 to 36.16 percent. Evaluations on models from 1B to 70B parameters and on held-out C4 test the method beyond this setting. On B200, the evaluated FP32 implementation adds 2.25 percent to 4K prefill time; a separate compact-storage implementation retains a 27.7 percent peak-memory reduction relative to FP16."
+      ]
+    },
+    {
+      "openreview_id": "7bsXysvipt",
+      "title": "Sharp Horizon Scaling of Gradient Variance in On-Policy Distillation",
+      "authors": "Anonymous",
+      "openreview_created_at": "2026-09-17T13:43:53.160000+00:00",
+      "submitted_at": "2026-09-17T13:43:53.160000+00:00",
+      "first_public_date": null,
+      "first_public_date_note_zh": "OpenReview cdate 仅作为记录创建/投稿时间；未核实更早公开来源。",
+      "paper_url": "https://openreview.net/forum?id=7bsXysvipt",
+      "code_url": null,
+      "core_contribution_zh": "该工作推导 on-policy distillation 中 token-local、full-return 与 reward-to-go policy-gradient 方差的紧确 horizon scaling。",
+      "gradient_free_method": "研究对象是 score-function/policy gradient 方差，而非无梯度函数值优化。",
+      "backpropagation": "GPT-2/Qwen/Llama 实验涉及常规梯度测量和训练；摘要明确讨论 effective gradient、gradient clipping。",
+      "persistent_model_parameter_update": "持久更新 student 模型参数。",
+      "updated_object": "一阶 on-policy distillation 参数与梯度估计",
+      "catalog_category": null,
+      "decision": "not_catalogued_after_individual_review",
+      "decision_note_zh": "《Sharp Horizon Scaling of Gradient Variance in On-Policy Distillation》未收录：虽含 LLM 理论与 score-function 估计，但方法研究的是一阶训练梯度方差，没有独立 gradient-free/ZO 机制。",
+      "unverified_zh": [
+        "作者在双盲期保持 Anonymous；未从方法名或相似题名猜测作者。",
+        "首次公开日期待核实；OpenReview cdate 仅记录投稿/记录创建时间。",
+        "排除不基于是否持久更新，而基于上述具体方法对象或语言模型关联缺口。",
+        "事实依据为 OpenReview 官方投稿摘要/作者声明；未独立验证实现。"
+      ],
+      "abstract": "On-policy distillation (OPD) trains a student on self-generated sequences using positionwise teacher feedback. Temporal credit rules pair feedback with scores differently, but their tight horizon dependence remains unclear. Using a score–feedback matrix and conditional score centering, we show that past links affect variance without changing the mean, while future links can carry sequence credit. Under bounded feedback and scores, arbitrary prefix dependence, and shared parameters, we establish tight worst-case total variance of $\\\\Theta(T^{2})$ for token-local and $\\\\Theta(T^{3})$ for full-return and reward-to-go (RTG) in unnormalized rollout updates. One shared-parameter OPD construction attains all three rates at a fixed nonzero teacher–student gap, tightening the previous quartic full-return bound. Our control analysis characterizes removable variance and approximation costs; even optimal time-only controls retain cubic worst-case sequence variance. Full-parameter Qwen and Llama measurements show nearly linear token-local variance and faster sequence variance growth, revealing different length sensitivities. In controlled GPT-2 training with matched objectives and rollout budgets, RTG improves optimization, reducing normalized final reverse KL from 0.73 to 0.35 at $T = 512$. This advantage persists without gradient clipping.",
+      "keywords": [
+        "on-policy distillation",
+        "temporal credit assignment",
+        "gradient variance",
+        "reward-to-go",
+        "large language models"
+      ],
+      "venue_status": "ICLR 2027 Conference Submission; decision pending",
+      "evidence_basis_zh": "据 OpenReview 官方投稿元数据与官方摘要记录；只记录摘要明确说明的机制。",
+      "component_training_zh": "GPT-2/Qwen/Llama 实验涉及常规梯度测量和训练；摘要明确讨论 effective gradient、gradient clipping。",
+      "persistent_updates_zh": "持久更新 student 模型参数。",
+      "repository_relevance_zh": "未收录：虽含 LLM 理论与 score-function 估计，但方法研究的是一阶训练梯度方差，没有独立 gradient-free/ZO 机制。",
+      "exclusion_evidence_from_official_abstract": [
+        "On-policy distillation (OPD) trains a student on self-generated sequences using positionwise teacher feedback. Temporal credit rules pair feedback with scores differently, but their tight horizon dependence remains unclear. Using a score–feedback matrix and conditional score centering, we show that past links affect variance without changing the mean, while future links can carry sequence credit. Under bounded feedback and scores, arbitrary prefix dependence, and shared parameters, we establish tight worst-case total variance of $\\\\Theta(T^{2})$ for token-local and $\\\\Theta(T^{3})$ for full-return and reward-to-go (RTG) in unnormalized rollout updates. One shared-parameter OPD construction attains all three rates at a fixed nonzero teacher–student gap, tightening the previous quartic full-return bound. Our control analysis characterizes removable variance and approximation costs; even optimal time-only controls retain cubic worst-case sequence variance. Full-parameter Qwen and Llama measurements show nearly linear token-local variance and faster sequence variance growth, revealing different length sensitivities. In controlled GPT-2 training with matched objectives and rollout budgets, RTG improves optimization, reducing normalized final reverse KL from 0.73 to 0.35 at $T = 512$. This advantage persists without gradient clipping."
+      ]
+    },
+    {
+      "openreview_id": "bLQ22POBgo",
+      "title": "Beyond Parameter Space: Closed-Form Cross-Trajectory Repair After Harmful Fine-Tuning",
+      "authors": "Anonymous",
+      "openreview_created_at": "2026-08-20T13:27:40.509000+00:00",
+      "submitted_at": "2026-08-20T13:27:40.509000+00:00",
+      "first_public_date": null,
+      "first_public_date_note_zh": "OpenReview cdate 仅作为记录创建/投稿时间；未核实更早公开来源。",
+      "paper_url": "https://openreview.net/forum?id=bLQ22POBgo",
+      "code_url": null,
+      "core_contribution_zh": "CCTR 在受攻击模型产生的表征上拟合 aligned-reference 跨轨迹输出残差，并以 utility activations 约束漂移，把每个目标线性模块写成正则最小二乘闭式解。",
+      "gradient_free_method": "闭式 cross-trajectory regularized least squares repair；不做 gradient-based optimization。",
+      "backpropagation": "repair：摘要明确无梯度优化；此前 harmful fine-tuning 会训练模型，但不是 repair 算法的一部分。",
+      "persistent_model_parameter_update": "目标线性模块权重经闭式解持久修改；aligned reference/attacked model 作为校准来源。",
+      "updated_object": "harmful-fine-tuned LLM 的目标线性模块权重",
+      "catalog_category": "related_closed_form",
+      "decision": "included_or_updated",
+      "decision_note_zh": "收录于 related_closed_form：闭式安全修复：直接编辑模型参数但不估计 ZO 梯度。",
+      "unverified_zh": [
+        "作者在双盲期保持 Anonymous；未从方法名或相似题名猜测作者。",
+        "首次公开日期待核实；OpenReview cdate 仅记录投稿/记录创建时间。",
+        "未定位到可核实的官方代码链接。",
+        "事实依据为 OpenReview 官方投稿摘要/作者声明；未独立验证实现。"
+      ],
+      "abstract": "Safety-aligned language models are routinely adapted after deployment to improve downstream task performance, yet the fine-tuning process may be vulnerable to a small fraction of harmful examples that compromise their safety alignment. Existing safety repair methods intervene through diverse mechanisms, including parameter or update modification, model merging, and additional optimization. However, harmful fine-tuning can also change the internal representations propagated through the model, so the aligned reference and attacked models may reach the same module with different representations even for the same input. Motivated by this observation, we propose CCTR (Closed-Form Cross-Trajectory Repair), a post-hoc repair method that fits the full cross-trajectory output residual on representations produced by the attacked model while constraining output drift on task-agnostic utility activations. For each target linear module, these two objectives form a regularized least-squares problem with a closed-form solution, enabling repair without gradient-based optimization or downstream-task supervision. Compared with the strongest state-of-the-art safety repair method, CCTR lowers the average Harmful Score from 2.30% to 0.38% across varying harmful-data ratios. In experiments on different downstream tasks, it lowers the score from 2.85% to 0.77% and improves average task accuracy by 3.53%.",
+      "keywords": [
+        "LLM safety",
+        "harmful fine-tuning",
+        "post-hoc repair",
+        "safety alignment",
+        "model editing"
+      ],
+      "venue_status": "ICLR 2027 Conference Submission; decision pending",
+      "evidence_basis_zh": "据 OpenReview 官方投稿元数据与官方摘要记录；只记录摘要明确说明的机制。",
+      "component_training_zh": "repair：摘要明确无梯度优化；此前 harmful fine-tuning 会训练模型，但不是 repair 算法的一部分。",
+      "persistent_updates_zh": "目标线性模块权重经闭式解持久修改；aligned reference/attacked model 作为校准来源。",
+      "repository_relevance_zh": "闭式安全修复：直接编辑模型参数但不估计 ZO 梯度。",
+      "official_abstract_method_evidence": [
+        "Safety-aligned language models are routinely adapted after deployment to improve downstream task performance, yet the fine-tuning process may be vulnerable to a small fraction of harmful examples that compromise their safety alignment. Existing safety repair methods intervene through diverse mechanisms, including parameter or update modification, model merging, and additional optimization. However, harmful fine-tuning can also change the internal representations propagated through the model, so the aligned reference and attacked models may reach the same module with different representations even for the same input. Motivated by this observation, we propose CCTR (Closed-Form Cross-Trajectory Repair), a post-hoc repair method that fits the full cross-trajectory output residual on representations produced by the attacked model while constraining output drift on task-agnostic utility activations. For each target linear module, these two objectives form a regularized least-squares problem with a closed-form solution, enabling repair without gradient-based optimization or downstream-task supervision. Compared with the strongest state-of-the-art safety repair method, CCTR lowers the average Harmful Score from 2.30% to 0.38% across varying harmful-data ratios. In experiments on different downstream tasks, it lowers the score from 2.85% to 0.77% and improves average task accuracy by 3.53%."
+      ]
+    },
+    {
+      "openreview_id": "rfbv29Wa3V",
+      "title": "SHIFT-LLM: Distribution Shift Correction in Depth-Pruned LLMs",
+      "authors": "Anonymous",
+      "openreview_created_at": "2026-09-18T00:26:22.323000+00:00",
+      "submitted_at": "2026-09-18T00:26:22.323000+00:00",
+      "first_public_date": null,
+      "first_public_date_note_zh": "OpenReview cdate 仅作为记录创建/投稿时间；未核实更早公开来源。",
+      "paper_url": "https://openreview.net/forum?id=rfbv29Wa3V",
+      "code_url": null,
+      "core_contribution_zh": "SHIFT-LLM 在 depth-pruning 缺口插入保留 identity pathway 的 Linear Residual Adapter，并用校准集闭式 least-squares 拟合被删 block 的残差更新。",
+      "gradient_free_method": "闭式 least-squares adapter calibration；摘要明确无 gradient computation。",
+      "backpropagation": "LRA 校准：无梯度；可选的后续 PEFT 被作为额外恢复组合，若启用则会有训练。",
+      "persistent_model_parameter_update": "基础剩余权重不更新；每个 pruning site 的 LRA 参数及合并后的 adapter 持久化。",
+      "updated_object": "depth-pruned LLM pruning site 的 Linear Residual Adapter",
+      "catalog_category": "related_closed_form",
+      "decision": "included_or_updated",
+      "decision_note_zh": "收录于 related_closed_form：闭式适配：持久 adapter 更新；与可选 PEFT 组合时须另视为混合训练。",
+      "unverified_zh": [
+        "作者在双盲期保持 Anonymous；未从方法名或相似题名猜测作者。",
+        "首次公开日期待核实；OpenReview cdate 仅记录投稿/记录创建时间。",
+        "未定位到可核实的官方代码链接。",
+        "事实依据为 OpenReview 官方投稿摘要/作者声明；未独立验证实现。"
+      ],
+      "abstract": "Depth pruning removes entire Transformer blocks to reduce the inference cost\nof large language models, but disrupts the hidden-state distributions expected by\ndownstream layers, leading to significant accuracy loss. We introduce SHIFT-\nLLM, a training-free post-pruning correction framework that inserts a Linear\nResidual Adapter (LRA) at each pruning site. Each LRA preserves the identity\npathway of the original residual block and adds a lightweight affine residual\ncorrection. This correction is calibrated via closed-form least-squares regression\non a small held-out set, without gradient computation, to approximate the missing\nresidual update produced by the pruned block. Together with the preserved identity\npathway, the resulting LRA output approximates the hidden state produced by the\noriginal block, thereby mitigating the distributional mismatch introduced by layer\nremoval while avoiding the expensive attention and feed-forward computations\nof the removed blocks. The resulting LRAs support low-rank factorization and\nexact merging across consecutive pruned layers for additional compression, and\ncombine naturally with parameter-efficient fine-tuning for further recovery beyond\nfine-tuning the pruned model alone. Experiments on five model families, six\nlayer-selection criteria, and seven zero-shot benchmarks show that SHIFT-LLM\nconsistently recovers accuracy lost to depth pruning across most configurations,\nachieving gains up to +15.7 points on Llama-3.1-8B-Instruct while requiring only\na few hundred calibration samples and no gradient computation.",
+      "keywords": [
+        "Large Language Models (LLMs)",
+        "Depth Pruning",
+        "Post-Pruning Correction",
+        "Linear Residual Adapter (LRA)"
+      ],
+      "venue_status": "ICLR 2027 Conference Submission; decision pending",
+      "evidence_basis_zh": "据 OpenReview 官方投稿元数据与官方摘要记录；只记录摘要明确说明的机制。",
+      "component_training_zh": "LRA 校准：无梯度；可选的后续 PEFT 被作为额外恢复组合，若启用则会有训练。",
+      "persistent_updates_zh": "基础剩余权重不更新；每个 pruning site 的 LRA 参数及合并后的 adapter 持久化。",
+      "repository_relevance_zh": "闭式适配：持久 adapter 更新；与可选 PEFT 组合时须另视为混合训练。",
+      "official_abstract_method_evidence": [
+        "Depth pruning removes entire Transformer blocks to reduce the inference cost\nof large language models, but disrupts the hidden-state distributions expected by\ndownstream layers, leading to significant accuracy loss. We introduce SHIFT-\nLLM, a training-free post-pruning correction framework that inserts a Linear\nResidual Adapter (LRA) at each pruning site. Each LRA preserves the identity\npathway of the original residual block and adds a lightweight affine residual\ncorrection. This correction is calibrated via closed-form least-squares regression\non a small held-out set, without gradient computation, to approximate the missing\nresidual update produced by the pruned block. Together with the preserved identity\npathway, the resulting LRA output approximates the hidden state produced by the\noriginal block, thereby mitigating the distributional mismatch introduced by layer\nremoval while avoiding the expensive attention and feed-forward computations\nof the removed blocks. The resulting LRAs support low-rank factorization and\nexact merging across consecutive pruned layers for additional compression, and\ncombine naturally with parameter-efficient fine-tuning for further recovery beyond\nfine-tuning the pruned model alone. Experiments on five model families, six\nlayer-selection criteria, and seven zero-shot benchmarks show that SHIFT-LLM\nconsistently recovers accuracy lost to depth pruning across most configurations,\nachieving gains up to +15.7 points on Llama-3.1-8B-Instruct while requiring only\na few hundred calibration samples and no gradient computation."
+      ]
+    },
+    {
+      "openreview_id": "AYwu267x63",
+      "title": "Layer-Specialized Model Merging for Training-Free Cross-Modal Reasoning Transfer",
+      "authors": "Anonymous",
+      "openreview_created_at": "2026-09-18T09:18:16.412000+00:00",
+      "submitted_at": "2026-09-18T09:18:16.412000+00:00",
+      "first_public_date": null,
+      "first_public_date_note_zh": "OpenReview cdate 仅作为记录创建/投稿时间；未核实更早公开来源。",
+      "paper_url": "https://openreview.net/forum?id=AYwu267x63",
+      "code_url": null,
+      "core_contribution_zh": "该方法把同源 text reasoner 与 MLLM decoder 表示为相对共享 base 的 task vectors，以 salience 闭式计算融合权重，再按逐层 visual-attention decay 校准深浅层分工。",
+      "gradient_free_method": "label-free closed-form task-vector fusion 与固定 attention-decay calibration。",
+      "backpropagation": "合并阶段：摘要明确无 gradient updates；源模型的既往训练不属于该合并步骤。",
+      "persistent_model_parameter_update": "视觉 encoder/projector 保持；融合后的 decoder 权重是持久模型参数。",
+      "updated_object": "同源 text-reasoner/MLLM decoder task vectors 与逐层融合权重",
+      "catalog_category": "related_closed_form",
+      "decision": "included_or_updated",
+      "decision_note_zh": "收录于 related_closed_form：闭式模型合并：持久修改 decoder；不是 ZO/ES。",
+      "unverified_zh": [
+        "作者在双盲期保持 Anonymous；未从方法名或相似题名猜测作者。",
+        "首次公开日期待核实；OpenReview cdate 仅记录投稿/记录创建时间。",
+        "未定位到可核实的官方代码链接。",
+        "事实依据为 OpenReview 官方投稿摘要/作者声明；未独立验证实现。"
+      ],
+      "abstract": "Text-only reasoning LLMs are strong multi-step problem solvers, but transferring this behavior to multimodal LLMs (MLLMs) usually requires costly multimodal post-training and scarce verifiable reasoning supervision. We study a training-free alternative: fusing a text-only reasoning decoder with a homologous MLLM decoder while keeping the MLLM visual encoder and projector unchanged. This setting is more delicate than standard model merging because the fused decoder must integrate reasoning behavior from a text-only model while continuing to interpret visual inputs. We introduce \\method{} (\\textbf{A}ttention-calibrated \\textbf{N}orm-\\textbf{O}rthogonal merging), a layer-specialized fusion method for cross-modal reasoning transfer. \\method{} represents the two decoders as task vectors relative to a shared base model and computes closed-form, label-free fusion weights from task-vector salience. To account for depth-dependent visual-token use, it calibrates these weights with the MLLM's layer-wise visual-attention decay, using a continuous prior that favors the vision branch in shallow layers and the reasoning branch in deeper layers. Across homologous MLLM--reasoner pairs, \\method{} improves reasoning-heavy multimodal benchmarks without gradient updates or labeled multimodal reasoning data. We also evaluate the boundary of this transfer: MME-RW perception results and MathVista performance reveal task-dependent tradeoffs between reasoning gains and visual capabilities. Together, the results suggest that layer-specialized merging is a practical route for training-free cross-modal reasoning transfer within the studied homologous model families.",
+      "keywords": [
+        "model merge",
+        "LLM",
+        "MLLM"
+      ],
+      "venue_status": "ICLR 2027 Conference Submission; decision pending",
+      "evidence_basis_zh": "据 OpenReview 官方投稿元数据与官方摘要记录；只记录摘要明确说明的机制。",
+      "component_training_zh": "合并阶段：摘要明确无 gradient updates；源模型的既往训练不属于该合并步骤。",
+      "persistent_updates_zh": "视觉 encoder/projector 保持；融合后的 decoder 权重是持久模型参数。",
+      "repository_relevance_zh": "闭式模型合并：持久修改 decoder；不是 ZO/ES。",
+      "official_abstract_method_evidence": [
+        "Text-only reasoning LLMs are strong multi-step problem solvers, but transferring this behavior to multimodal LLMs (MLLMs) usually requires costly multimodal post-training and scarce verifiable reasoning supervision. We study a training-free alternative: fusing a text-only reasoning decoder with a homologous MLLM decoder while keeping the MLLM visual encoder and projector unchanged. This setting is more delicate than standard model merging because the fused decoder must integrate reasoning behavior from a text-only model while continuing to interpret visual inputs. We introduce \\method{} (\\textbf{A}ttention-calibrated \\textbf{N}orm-\\textbf{O}rthogonal merging), a layer-specialized fusion method for cross-modal reasoning transfer. \\method{} represents the two decoders as task vectors relative to a shared base model and computes closed-form, label-free fusion weights from task-vector salience. To account for depth-dependent visual-token use, it calibrates these weights with the MLLM's layer-wise visual-attention decay, using a continuous prior that favors the vision branch in shallow layers and the reasoning branch in deeper layers. Across homologous MLLM--reasoner pairs, \\method{} improves reasoning-heavy multimodal benchmarks without gradient updates or labeled multimodal reasoning data. We also evaluate the boundary of this transfer: MME-RW perception results and MathVista performance reveal task-dependent tradeoffs between reasoning gains and visual capabilities. Together, the results suggest that layer-specialized merging is a practical route for training-free cross-modal reasoning transfer within the studied homologous model families."
+      ]
+    },
+    {
+      "openreview_id": "vpahOt8lBU",
+      "title": "Diagnosing Failure Regimes in LLM Agent Memory with Extraction-Pass Disagreement",
+      "authors": "Anonymous",
+      "openreview_created_at": "2026-09-18T08:14:10.635000+00:00",
+      "submitted_at": "2026-09-18T08:14:10.635000+00:00",
+      "first_public_date": null,
+      "first_public_date_note_zh": "OpenReview cdate 仅作为记录创建/投稿时间；未核实更早公开来源。",
+      "paper_url": "https://openreview.net/forum?id=vpahOt8lBU",
+      "code_url": null,
+      "core_contribution_zh": "RRC 重复执行 agent memory consolidation，以 extraction-pass disagreement 和 backbone capability 判断随机遗漏或能力偏差，再路由投票预算、检索深度和回答策略。",
+      "gradient_free_method": "训练无关的重复抽取、disagreement estimation 与规则化配置路由。",
+      "backpropagation": "摘要明确 RRC 不做 gradient updates；Memory-R1 仅是 RL-trained baseline。",
+      "persistent_model_parameter_update": "模型权重不更新；长期 memory store 本身持久，RRC 的 vote/retrieval/answer 配置按诊断路由，是否跨任务持久化待核实。",
+      "updated_object": "LLM agent memory consolidation passes 与推理配置",
+      "catalog_category": "related_inference",
+      "decision": "included_or_updated",
+      "decision_note_zh": "收录于 related_inference：推理校准边界：适配 agent memory 构建/读取配置，不更新模型权重。",
+      "unverified_zh": [
+        "作者在双盲期保持 Anonymous；未从方法名或相似题名猜测作者。",
+        "首次公开日期待核实；OpenReview cdate 仅记录投稿/记录创建时间。",
+        "未定位到可核实的官方代码链接。",
+        "事实依据为 OpenReview 官方投稿摘要/作者声明；未独立验证实现。"
+      ],
+      "abstract": "LLM agents build long-term memory by consolidating interaction history into a structured store, and this consolidation is lossy in two ways. In the first, a stochastic pass drops information that another pass may keep, and computation removes the error. In the second, a capability-limited backbone compresses history into a low-rank sketch, and the bias it introduces is beyond the reach of computation. The two failures look the same in aggregate accuracy, so existing systems apply the same remedy to both. We propose Regime-Routed Construction (RRC), a training-free configuration layer whose routing follows the diagnosed failure regime. RRC repeats consolidation on the same history and reads how much the passes disagree. The disagreement estimator, combined with backbone capability, routes the vote budget, the retrieval depth, and the answer policy. A noisy reading brings more extraction passes merged by majority vote. A quiet reading deepens retrieval and calibrates the answer policy when the backbone sits above its capability threshold, and declines what the store cannot support below it. A Fano-type argument shows that below a capability threshold, error on relational questions is irreducible. Across two benchmarks and backbones from 1.5B to frontier API models, RRC improves on the strongest published LoCoMo result by +4.7 F1 and outperforms the RL-trained Memory-R1 at matched backbones without gradient updates. On LongMemEval, the gains are small and insignificant, consistent with a diagnosis of little headroom.",
+      "keywords": [
+        "LLM agents",
+        "long-term memory",
+        "memory consolidation",
+        "extraction disagreement",
+        "test-time compute",
+        "retrieval",
+        "information theory"
+      ],
+      "venue_status": "ICLR 2027 Conference Submission; decision pending",
+      "evidence_basis_zh": "据 OpenReview 官方投稿元数据与官方摘要记录；只记录摘要明确说明的机制。",
+      "component_training_zh": "摘要明确 RRC 不做 gradient updates；Memory-R1 仅是 RL-trained baseline。",
+      "persistent_updates_zh": "模型权重不更新；长期 memory store 本身持久，RRC 的 vote/retrieval/answer 配置按诊断路由，是否跨任务持久化待核实。",
+      "repository_relevance_zh": "推理校准边界：适配 agent memory 构建/读取配置，不更新模型权重。",
+      "official_abstract_method_evidence": [
+        "LLM agents build long-term memory by consolidating interaction history into a structured store, and this consolidation is lossy in two ways. In the first, a stochastic pass drops information that another pass may keep, and computation removes the error. In the second, a capability-limited backbone compresses history into a low-rank sketch, and the bias it introduces is beyond the reach of computation. The two failures look the same in aggregate accuracy, so existing systems apply the same remedy to both. We propose Regime-Routed Construction (RRC), a training-free configuration layer whose routing follows the diagnosed failure regime. RRC repeats consolidation on the same history and reads how much the passes disagree. The disagreement estimator, combined with backbone capability, routes the vote budget, the retrieval depth, and the answer policy. A noisy reading brings more extraction passes merged by majority vote. A quiet reading deepens retrieval and calibrates the answer policy when the backbone sits above its capability threshold, and declines what the store cannot support below it. A Fano-type argument shows that below a capability threshold, error on relational questions is irreducible. Across two benchmarks and backbones from 1.5B to frontier API models, RRC improves on the strongest published LoCoMo result by +4.7 F1 and outperforms the RL-trained Memory-R1 at matched backbones without gradient updates. On LongMemEval, the gains are small and insignificant, consistent with a diagnosis of little headroom."
+      ]
+    },
+    {
+      "openreview_id": "XetdVGr0yh",
+      "title": "AgentFrontier: Stabilizing Learning Frontiers in Reinforcement Learning for Active Reasoning Agents",
+      "authors": "Anonymous",
+      "openreview_created_at": "2026-09-18T01:14:21.220000+00:00",
+      "submitted_at": "2026-09-18T01:14:21.220000+00:00",
+      "first_public_date": null,
+      "first_public_date_note_zh": "OpenReview cdate 仅作为记录创建/投稿时间；未核实更早公开来源。",
+      "paper_url": "https://openreview.net/forum?id=XetdVGr0yh",
+      "code_url": null,
+      "core_contribution_zh": "AgentFrontier 以 behavioral regularization 保留已掌握 prompt，并用 difficulty-aware batches 稳定 group-relative RL 的有效学习前沿。",
+      "gradient_free_method": "优化机制是显式 gradient signals 下的 RL batch/regularization 设计。",
+      "backpropagation": "policy 通过 RL 反向更新；摘要反复讨论 effective gradient computation。",
+      "persistent_model_parameter_update": "持久更新 LLM agent policy 权重。",
+      "updated_object": "active-reasoning LLM policy",
+      "catalog_category": null,
+      "decision": "not_catalogued_after_individual_review",
+      "decision_note_zh": "《AgentFrontier: Stabilizing Learning Frontiers in Reinforcement Learning for Active Reasoning Agents》未收录：纯一阶 RL 稳定化方法，没有独立梯度无关搜索、闭式更新或函数值参数扰动。",
+      "unverified_zh": [
+        "作者在双盲期保持 Anonymous；未从方法名或相似题名猜测作者。",
+        "首次公开日期待核实；OpenReview cdate 仅记录投稿/记录创建时间。",
+        "排除不基于是否持久更新，而基于上述具体方法对象或语言模型关联缺口。",
+        "事实依据为 OpenReview 官方投稿摘要/作者声明；未独立验证实现。"
+      ],
+      "abstract": "Active reasoning requires large language model (LLM) agents to interact with external environments and strategically acquire missing information across multiple turns. Reinforcement learning (RL) with outcome rewards has become a standard approach for training such agents, particularly through group-relative algorithms that compare multiple rollouts from the same prompt to form relative learning signals. However, we observe that RL training for active reasoning often exhibits a sharp collapse after rapid initial improvement. We trace this instability to \\emph{learning-frontier non-stationarity}: under binary outcome rewards, a prompt contributes effective gradient signals only when its rollout group contains both successful and failed trajectories. As easier prompts become mastered, they silently exit the effective gradient computation, causing the learning frontier to shrink and concentrate on a narrow subset of hard prompts. Continued optimization then over-adapts to this shifting frontier while leaving mastered capabilities without gradient protection. To address this, we propose \\ourmethod, a simple framework that stabilizes learning frontiers during RL training. \\ourmethod combines \\emph{Frontier Retention}, which anchors the policy on mastered prompts through lightweight behavioral regularization, and \\emph{Frontier Stabilization}, which constructs difficulty-aware batches to smooth frontier composition across updates. Across  active reasoning tasks, \\ourmethod consistently improves training stability and final performance, achieving gains of up to  with improvements on  out of  reported metrics, while reducing reward variance by over . These results highlight learning-frontier stability as a key principle for building reliable LLM agents capable of active reasoning.",
+      "keywords": [
+        "LLM agents",
+        "reinforcement learning",
+        "active reasoning",
+        "training stability"
+      ],
+      "venue_status": "ICLR 2027 Conference Submission; decision pending",
+      "evidence_basis_zh": "据 OpenReview 官方投稿元数据与官方摘要记录；只记录摘要明确说明的机制。",
+      "component_training_zh": "policy 通过 RL 反向更新；摘要反复讨论 effective gradient computation。",
+      "persistent_updates_zh": "持久更新 LLM agent policy 权重。",
+      "repository_relevance_zh": "未收录：纯一阶 RL 稳定化方法，没有独立梯度无关搜索、闭式更新或函数值参数扰动。",
+      "exclusion_evidence_from_official_abstract": [
+        "Active reasoning requires large language model (LLM) agents to interact with external environments and strategically acquire missing information across multiple turns. Reinforcement learning (RL) with outcome rewards has become a standard approach for training such agents, particularly through group-relative algorithms that compare multiple rollouts from the same prompt to form relative learning signals. However, we observe that RL training for active reasoning often exhibits a sharp collapse after rapid initial improvement. We trace this instability to \\emph{learning-frontier non-stationarity}: under binary outcome rewards, a prompt contributes effective gradient signals only when its rollout group contains both successful and failed trajectories. As easier prompts become mastered, they silently exit the effective gradient computation, causing the learning frontier to shrink and concentrate on a narrow subset of hard prompts. Continued optimization then over-adapts to this shifting frontier while leaving mastered capabilities without gradient protection. To address this, we propose \\ourmethod, a simple framework that stabilizes learning frontiers during RL training. \\ourmethod combines \\emph{Frontier Retention}, which anchors the policy on mastered prompts through lightweight behavioral regularization, and \\emph{Frontier Stabilization}, which constructs difficulty-aware batches to smooth frontier composition across updates. Across  active reasoning tasks, \\ourmethod consistently improves training stability and final performance, achieving gains of up to  with improvements on  out of  reported metrics, while reducing reward variance by over . These results highlight learning-frontier stability as a key principle for building reliable LLM agents capable of active reasoning."
+      ]
+    },
+    {
+      "openreview_id": "9gVp0VCEPN",
+      "title": "Do Shared VLM Coordinates Imply Shared Calibration? A Study through Few-Shot Class-Incremental Learning",
+      "authors": "Anonymous",
+      "openreview_created_at": "2026-09-14T07:08:02.552000+00:00",
+      "submitted_at": "2026-09-14T07:08:02.552000+00:00",
+      "first_public_date": null,
+      "first_public_date_note_zh": "OpenReview cdate 仅作为记录创建/投稿时间；未核实更早公开来源。",
+      "paper_url": "https://openreview.net/forum?id=9gVp0VCEPN",
+      "code_url": null,
+      "core_contribution_zh": "该工作揭示 VLM 视觉/文本参考在共享坐标下的 calibration asymmetry，并提出 DS-PoE：保留原生文本 expert、用 base-calibrated visual expert 与固定 logit addition 组合证据。",
+      "gradient_free_method": "support/statistics-derived diagonal calibration 与固定 Product-of-Experts 组合；无梯度更新。",
+      "backpropagation": "摘要明确训练无关且无 gradient updates；预训练 VLM 不更新。",
+      "persistent_model_parameter_update": "模型权重不更新；视觉校准统计、class estimates 和文本 anchors 可作为增量分类状态持久保存。",
+      "updated_object": "VLM few-shot class-incremental visual calibration 与双 expert 分数",
+      "catalog_category": "related_closed_form",
+      "decision": "included_or_updated",
+      "decision_note_zh": "收录于 related_closed_form：统计适配边界：更新分类校准状态而不训练 VLM 权重。",
+      "unverified_zh": [
+        "作者在双盲期保持 Anonymous；未从方法名或相似题名猜测作者。",
+        "首次公开日期待核实；OpenReview cdate 仅记录投稿/记录创建时间。",
+        "未定位到可核实的官方代码链接。",
+        "事实依据为 OpenReview 官方投稿摘要/作者声明；未独立验证实现。"
+      ],
+      "abstract": "Pretrained vision-language models place visual and textual class references in shared coordinates, but alignment does not determine their compatibility with downstream geometric calibration. We expose this distinction through training-free few-shot class-incremental learning, where support-derived visual estimates and pretrained textual anchors are evaluated against the same image queries. Crossing visual- and text-derived diagonal calibration transforms with the two isolated scorers reveals a reproducible role-dependent calibration asymmetry. Across three encoders and four benchmarks, visual-derived calibration is more favorable to visual than textual scoring in all 12 settings. Textual accuracy decreases in every setting, even when the calibration uses textual statistics from base classes or all currently known classes. Our geometric analysis and source-matched counterexample explain the key distinction: calibration replaces native cosine with an affine Mahalanobis-like cosine, and matching reference marginals does not ensure preservation of image-to-reference class ordering. These results motivate source-preserving scoring: calibrate the empirical visual estimate, preserve the pretrained textual anchor, and compose their class evidence. We instantiate this principle as Dual-Space Product-of-Experts (DS-PoE), combining a base-calibrated visual expert and a native textual expert through fixed logit addition, without gradient updates, replay, or dataset-specific modality weights. Across four benchmarks, DS-PoE achieves state-of-the-art performance, attaining the best mean session accuracy on every benchmark and a four-benchmark mean of 78.6% under the evaluated training-free protocol. Our code is included in the supplementary material.",
+      "keywords": [
+        "few-shot class-incremental learning",
+        "continual learning",
+        "vision-language models"
+      ],
+      "venue_status": "ICLR 2027 Conference Submission; decision pending",
+      "evidence_basis_zh": "据 OpenReview 官方投稿元数据与官方摘要记录；只记录摘要明确说明的机制。",
+      "component_training_zh": "摘要明确训练无关且无 gradient updates；预训练 VLM 不更新。",
+      "persistent_updates_zh": "模型权重不更新；视觉校准统计、class estimates 和文本 anchors 可作为增量分类状态持久保存。",
+      "repository_relevance_zh": "统计适配边界：更新分类校准状态而不训练 VLM 权重。",
+      "official_abstract_method_evidence": [
+        "Pretrained vision-language models place visual and textual class references in shared coordinates, but alignment does not determine their compatibility with downstream geometric calibration. We expose this distinction through training-free few-shot class-incremental learning, where support-derived visual estimates and pretrained textual anchors are evaluated against the same image queries. Crossing visual- and text-derived diagonal calibration transforms with the two isolated scorers reveals a reproducible role-dependent calibration asymmetry. Across three encoders and four benchmarks, visual-derived calibration is more favorable to visual than textual scoring in all 12 settings. Textual accuracy decreases in every setting, even when the calibration uses textual statistics from base classes or all currently known classes. Our geometric analysis and source-matched counterexample explain the key distinction: calibration replaces native cosine with an affine Mahalanobis-like cosine, and matching reference marginals does not ensure preservation of image-to-reference class ordering. These results motivate source-preserving scoring: calibrate the empirical visual estimate, preserve the pretrained textual anchor, and compose their class evidence. We instantiate this principle as Dual-Space Product-of-Experts (DS-PoE), combining a base-calibrated visual expert and a native textual expert through fixed logit addition, without gradient updates, replay, or dataset-specific modality weights. Across four benchmarks, DS-PoE achieves state-of-the-art performance, attaining the best mean session accuracy on every benchmark and a four-benchmark mean of 78.6% under the evaluated training-free protocol. Our code is included in the supplementary material."
+      ]
+    },
+    {
+      "openreview_id": "Eq74LwgkjR",
+      "title": "Don't Retrain, Remix: Adaptation of Web Agents using Mixture Hypernetworks",
+      "authors": "Anonymous",
+      "openreview_created_at": "2026-09-19T00:33:20.250000+00:00",
+      "submitted_at": "2026-09-19T00:33:20.250000+00:00",
+      "first_public_date": null,
+      "first_public_date_note_zh": "OpenReview cdate 仅作为记录创建/投稿时间；未核实更早公开来源。",
+      "paper_url": "https://openreview.net/forum?id=Eq74LwgkjR",
+      "code_url": null,
+      "core_contribution_zh": "WebMix 让 scout agent 把目标网站探索归纳成 manual，再由轻量 router 预测已有 LoRA adapter bank 的混合系数，生成目标接口 adapter。",
+      "gradient_free_method": "部署期一次 scouting 与 router forward pass 完成 adapter composition；目标域不做 gradient updates。",
+      "backpropagation": "source adapters：摘要明确预先训练；router/hypernetwork 的训练方式待正文核实；目标接口适配不做梯度更新。",
+      "persistent_model_parameter_update": "源 adapter bank 持久；为目标接口组合出的新 adapter 可持久保存；base LLM 权重不在部署期更新。",
+      "updated_object": "web-agent LoRA adapter bank 的混合系数与组合 adapter",
+      "catalog_category": "related_hybrid",
+      "decision": "included_or_updated",
+      "decision_note_zh": "收录于 related_hybrid：外部/组合边界：部署期梯度无关，但依赖先验训练的 adapter bank 与 router。",
+      "unverified_zh": [
+        "作者在双盲期保持 Anonymous；未从方法名或相似题名猜测作者。",
+        "首次公开日期待核实；OpenReview cdate 仅记录投稿/记录创建时间。",
+        "未定位到可核实的官方代码链接。",
+        "事实依据为 OpenReview 官方投稿摘要/作者声明；未独立验证实现。"
+      ],
+      "abstract": "The web is not static or uniform. Websites that serve the same purpose can look and navigate very differently. Even within a single site, successive redesigns can change how familiar features are presented and accessed. Humans adapt to this by recognizing familiar interaction patterns and reusing what they already know. We give web agents a similar ability with WebMix, a mixture hypernetwork that adapts them to unseen interfaces by composing previously trained low-rank adapters. WebMix begins with a bank of adapters trained on source interfaces. At deployment, a scout agent explores the target interface and summarizes its observations into a compact manual. A lightweight router uses this manual to predict mixing coefficients over the adapter bank, which combine the existing adapters into a new one for inference. Adapting to a new interface takes only a scouting run and a forward pass, without gradient updates on the target. With Qwen and Llama models, we evaluate *domain transfer* on TimeWarp and WebArena-Lite-v2, and *version transfer* on TimeWarp. In all three settings, WebMix matches or outperforms in-context learning and LoRA baselines, often matching the average success of specialists trained directly on those interfaces. On TimeWarp domain transfer, it gains about 8 percentage points on average over the best baseline with both models. These gains do not come at the cost of seen interfaces, where WebMix keeps its lead, and extend to version transfer. Adapting to a new interface can therefore rely on exploration and composition instead of retraining.",
+      "keywords": [
+        "Web Agents",
+        "Agent Generalization",
+        "Mixture of Adapters",
+        "LoRA Adapters"
+      ],
+      "venue_status": "ICLR 2027 Conference Submission; decision pending",
+      "evidence_basis_zh": "据 OpenReview 官方投稿元数据与官方摘要记录；只记录摘要明确说明的机制。",
+      "component_training_zh": "source adapters：摘要明确预先训练；router/hypernetwork 的训练方式待正文核实；目标接口适配不做梯度更新。",
+      "persistent_updates_zh": "源 adapter bank 持久；为目标接口组合出的新 adapter 可持久保存；base LLM 权重不在部署期更新。",
+      "repository_relevance_zh": "外部/组合边界：部署期梯度无关，但依赖先验训练的 adapter bank 与 router。",
+      "official_abstract_method_evidence": [
+        "The web is not static or uniform. Websites that serve the same purpose can look and navigate very differently. Even within a single site, successive redesigns can change how familiar features are presented and accessed. Humans adapt to this by recognizing familiar interaction patterns and reusing what they already know. We give web agents a similar ability with WebMix, a mixture hypernetwork that adapts them to unseen interfaces by composing previously trained low-rank adapters. WebMix begins with a bank of adapters trained on source interfaces. At deployment, a scout agent explores the target interface and summarizes its observations into a compact manual. A lightweight router uses this manual to predict mixing coefficients over the adapter bank, which combine the existing adapters into a new one for inference. Adapting to a new interface takes only a scouting run and a forward pass, without gradient updates on the target. With Qwen and Llama models, we evaluate *domain transfer* on TimeWarp and WebArena-Lite-v2, and *version transfer* on TimeWarp. In all three settings, WebMix matches or outperforms in-context learning and LoRA baselines, often matching the average success of specialists trained directly on those interfaces. On TimeWarp domain transfer, it gains about 8 percentage points on average over the best baseline with both models. These gains do not come at the cost of seen interfaces, where WebMix keeps its lead, and extend to version transfer. Adapting to a new interface can therefore rely on exploration and composition instead of retraining."
+      ]
+    },
+    {
+      "openreview_id": "T8c8NM6FT4",
+      "title": "Breaking the Refusal Barrier: Stochastic Discovery of Residual  Unsafe Behaviors in Aligned Language Models",
+      "authors": "Anonymous",
+      "openreview_created_at": "2026-09-18T10:02:55.859000+00:00",
+      "submitted_at": "2026-09-18T10:02:55.859000+00:00",
+      "first_public_date": null,
+      "first_public_date_note_zh": "OpenReview cdate 仅作为记录创建/投稿时间；未核实更早公开来源。",
+      "paper_url": "https://openreview.net/forum?id=T8c8NM6FT4",
+      "code_url": null,
+      "core_contribution_zh": "SEEK 随机扰动输入并重复采样回答，以 coverage objective 探索拒绝模式之外的残余不安全行为，再把发现的失败转为安全训练数据。",
+      "gradient_free_method": "inference-only stochastic exploration；不做梯度优化、语义 prompt engineering 或 attacker-LLM 优化。",
+      "backpropagation": "发现阶段：无梯度；最终 safety fine-tuning：会持久训练模型，但摘要未说明具体反传配置。",
+      "persistent_model_parameter_update": "发现阶段持久产出不安全行为/训练数据；后续安全微调更新模型权重。",
+      "updated_object": "输入扰动、残余不安全响应覆盖集与后续 safety-tuned LLM",
+      "catalog_category": "related_prompt_agent",
+      "decision": "included_or_updated",
+      "decision_note_zh": "收录于 related_prompt_agent：外部搜索边界：核心发现环路以随机输入/响应采样搜索不安全行为且不使用梯度；随后安全微调是独立的一阶阶段。",
+      "unverified_zh": [
+        "作者在双盲期保持 Anonymous；未从方法名或相似题名猜测作者。",
+        "首次公开日期待核实；OpenReview cdate 仅记录投稿/记录创建时间。",
+        "未定位到可核实的官方代码链接。",
+        "事实依据为 OpenReview 官方投稿摘要/作者声明；未独立验证实现。"
+      ],
+      "abstract": "LLM safety alignment often creates refusal modes: dominant, high-probability regions of the output space that steer generation toward refusals, while residual unsafe behaviors persist in low-probability regions. Alignment suppresses harmful responses but need not eliminate these underlying behaviors, raising a practical question for iterative safety hardening: how can residual unsafe behaviors be efficiently discovered and converted into safety-training data? We formulate this as stochastic exploration rather than adversarial prompt optimization, showing that random input perturbations redistribute the model's response distribution away from dominant refusal modes and toward low-probability unsafe modes. Building on this, we introduce SEEK (Stochastic Exploration to Elicit residual-behavior Knowledge), a simple inference-only framework that repeatedly samples perturbed inputs and responses to discover diverse residual unsafe behaviors, without gradient optimization, semantic prompt engineering, or auxiliary attacker LLMs. We cast discovery as a coverage objective and show that coverage increases monotonically with the sampling budget, asymptotically recovering all reachable unsafe behaviors. Across five safety-tuned LLMs and two benchmarks, SEEK's discovery matches or exceeds white-box optimization at larger budgets while using one to two orders of magnitude less compute, and consistently exceeds more efficient optimization-, embedding-, transfer-, and attacker-LLM-based methods. Finally, fine-tuning on SEEK-discovered failures substantially improves robustness, cutting attack success from $90-100\\%$ to at most $22\\%$ across optimization-, embedding-, transfer- and attacker-LLM-based attacks, while preserving general task performance. Stochastic exploration thus offers a simple, efficient alternative to adversarial prompt optimization for residual-behavior discovery and safety-data generation.",
+      "keywords": [
+        "Large Language Models",
+        "LLM Safety",
+        "Alignment",
+        "Negative-Response Discovery",
+        "Stochastic Exploration",
+        "Red Teaming",
+        "Safety Tuning"
+      ],
+      "venue_status": "ICLR 2027 Conference Submission; decision pending",
+      "evidence_basis_zh": "据 OpenReview 官方投稿元数据与官方摘要记录；只记录摘要明确说明的机制。",
+      "component_training_zh": "发现阶段：无梯度；最终 safety fine-tuning：会持久训练模型，但摘要未说明具体反传配置。",
+      "persistent_updates_zh": "发现阶段持久产出不安全行为/训练数据；后续安全微调更新模型权重。",
+      "repository_relevance_zh": "外部搜索边界：核心发现环路以随机输入/响应采样搜索不安全行为且不使用梯度；随后安全微调是独立的一阶阶段。",
+      "official_abstract_method_evidence": [
+        "LLM safety alignment often creates refusal modes: dominant, high-probability regions of the output space that steer generation toward refusals, while residual unsafe behaviors persist in low-probability regions. Alignment suppresses harmful responses but need not eliminate these underlying behaviors, raising a practical question for iterative safety hardening: how can residual unsafe behaviors be efficiently discovered and converted into safety-training data? We formulate this as stochastic exploration rather than adversarial prompt optimization, showing that random input perturbations redistribute the model's response distribution away from dominant refusal modes and toward low-probability unsafe modes. Building on this, we introduce SEEK (Stochastic Exploration to Elicit residual-behavior Knowledge), a simple inference-only framework that repeatedly samples perturbed inputs and responses to discover diverse residual unsafe behaviors, without gradient optimization, semantic prompt engineering, or auxiliary attacker LLMs. We cast discovery as a coverage objective and show that coverage increases monotonically with the sampling budget, asymptotically recovering all reachable unsafe behaviors. Across five safety-tuned LLMs and two benchmarks, SEEK's discovery matches or exceeds white-box optimization at larger budgets while using one to two orders of magnitude less compute, and consistently exceeds more efficient optimization-, embedding-, transfer-, and attacker-LLM-based methods. Finally, fine-tuning on SEEK-discovered failures substantially improves robustness, cutting attack success from $90-100\\%$ to at most $22\\%$ across optimization-, embedding-, transfer- and attacker-LLM-based attacks, while preserving general task performance. Stochastic exploration thus offers a simple, efficient alternative to adversarial prompt optimization for residual-behavior discovery and safety-data generation."
+      ]
+    },
+    {
+      "openreview_id": "LIa6SeOhH9",
+      "title": "In-Context Robot Learning with VLM Agents",
+      "authors": "Anonymous",
+      "openreview_created_at": "2026-09-18T04:33:49.725000+00:00",
+      "submitted_at": "2026-09-18T04:33:49.725000+00:00",
+      "first_public_date": null,
+      "first_public_date_note_zh": "OpenReview cdate 仅作为记录创建/投稿时间；未核实更早公开来源。",
+      "paper_url": "https://openreview.net/forum?id=LIa6SeOhH9",
+      "code_url": null,
+      "core_contribution_zh": "GPT-Policy 用 context compiler 组织示范和交互反馈，并以 geometric grounding、action chunking 与闭环执行 harness 把 VLM 输出转为机器人动作。",
+      "gradient_free_method": "deployment-time in-context adaptation；无梯度更新或任务参数持久修改。",
+      "backpropagation": "VLM：摘要明确不做 gradient updates；context compiler/harness 是运行时机制，是否含另训组件待核实。",
+      "persistent_model_parameter_update": "任务特定模型参数不持久更新；示范、反馈与编译 context 在会话中更新。",
+      "updated_object": "VLM agent 的部署期 context、grounding 与 action chunks",
+      "catalog_category": "related_prompt_agent",
+      "decision": "included_or_updated",
+      "decision_note_zh": "收录于 related_prompt_agent：推理/VLA 边界：语言骨干仅做上下文适配，动作执行侧由 harness 组织。",
+      "unverified_zh": [
+        "作者在双盲期保持 Anonymous；未从方法名或相似题名猜测作者。",
+        "首次公开日期待核实；OpenReview cdate 仅记录投稿/记录创建时间。",
+        "未定位到可核实的官方代码链接。",
+        "事实依据为 OpenReview 官方投稿摘要/作者声明；未独立验证实现。"
+      ],
+      "abstract": "Enabling robots to adapt to unfamiliar environments as readily as humans remains a moonshot goal of embodied AI. No finite collection of demonstrations can cover every task and situation a robot will encounter, making the ability to learn from context at deployment essential for generalization. Such in-context learning (ICL), however, remains largely beyond the reach of existing robotic policies. The broad agentic capabilities of commercial vision-language models (VLMs), such as GPT-6 Astra, raise a compelling question: can these models learn from demonstrations and interaction feedback, then translate that information into executable robot behavior without gradient updates or persistent changes to task-specific parameters? We introduce GPT-Policy, a general-agent framework for in-context robot learning. GPT-Policy equips a VLM agent with a context compiler that organizes task-relevant information and an execution harness that supports geometric grounding, action chunking, and closed-loop decision-making through execution feedback. We evaluate GPT-Policy on ten real-world tasks spanning five context types and six RoboDojo simulation tasks. Across four real-world demonstration tasks, mean success rate increases from 10% without demonstrations to 80% with human videos or robot demonstrations that include action references. Videos provide procedural guidance, while action references can clarify motion details. Targeted ablations suggest that calibrated localization and action chunking improve success and execution efficiency. On these six RoboDojo tasks, one-shot GPT-Policy achieves 83.3% mean success. These results suggest that general-purpose VLMs can use deployment-time context to adapt robot behavior, while reliable physical execution remains a challenge.",
+      "keywords": [
+        "Robot Learning",
+        "In-Context Learning",
+        "Embodied AI",
+        "Vision-Language Models",
+        "Robot Manipulation"
+      ],
+      "venue_status": "ICLR 2027 Conference Submission; decision pending",
+      "evidence_basis_zh": "据 OpenReview 官方投稿元数据与官方摘要记录；只记录摘要明确说明的机制。",
+      "component_training_zh": "VLM：摘要明确不做 gradient updates；context compiler/harness 是运行时机制，是否含另训组件待核实。",
+      "persistent_updates_zh": "任务特定模型参数不持久更新；示范、反馈与编译 context 在会话中更新。",
+      "repository_relevance_zh": "推理/VLA 边界：语言骨干仅做上下文适配，动作执行侧由 harness 组织。",
+      "official_abstract_method_evidence": [
+        "Enabling robots to adapt to unfamiliar environments as readily as humans remains a moonshot goal of embodied AI. No finite collection of demonstrations can cover every task and situation a robot will encounter, making the ability to learn from context at deployment essential for generalization. Such in-context learning (ICL), however, remains largely beyond the reach of existing robotic policies. The broad agentic capabilities of commercial vision-language models (VLMs), such as GPT-6 Astra, raise a compelling question: can these models learn from demonstrations and interaction feedback, then translate that information into executable robot behavior without gradient updates or persistent changes to task-specific parameters? We introduce GPT-Policy, a general-agent framework for in-context robot learning. GPT-Policy equips a VLM agent with a context compiler that organizes task-relevant information and an execution harness that supports geometric grounding, action chunking, and closed-loop decision-making through execution feedback. We evaluate GPT-Policy on ten real-world tasks spanning five context types and six RoboDojo simulation tasks. Across four real-world demonstration tasks, mean success rate increases from 10% without demonstrations to 80% with human videos or robot demonstrations that include action references. Videos provide procedural guidance, while action references can clarify motion details. Targeted ablations suggest that calibrated localization and action chunking improve success and execution efficiency. On these six RoboDojo tasks, one-shot GPT-Policy achieves 83.3% mean success. These results suggest that general-purpose VLMs can use deployment-time context to adapt robot behavior, while reliable physical execution remains a challenge."
+      ]
+    },
+    {
+      "openreview_id": "zeF8echOqR",
+      "title": "Code-Probe-Adapt: Interactive Heuristic Learning for Self-Evolving Agents",
+      "authors": "Anonymous",
+      "openreview_created_at": "2026-09-11T17:52:39.031000+00:00",
+      "submitted_at": "2026-09-11T17:52:39.031000+00:00",
+      "first_public_date": null,
+      "first_public_date_note_zh": "OpenReview cdate 仅作为记录创建/投稿时间；未核实更早公开来源。",
+      "paper_url": "https://openreview.net/forum?id=zeF8echOqR",
+      "code_url": null,
+      "core_contribution_zh": "COPA 用持久 REPL、事件触发中断和自适应步数预算，让 LLM 在线探测失败并立即修订 code-as-policy heuristic。",
+      "gradient_free_method": "执行反馈驱动的交互式脚本/heuristic refinement；摘要明确无 gradient updates。",
+      "backpropagation": "LLM 与 policy refinement：摘要声明整体结果无需 gradient updates；是否调用固定商业/开源模型待正文核实。",
+      "persistent_model_parameter_update": "模型权重不更新；REPL 中的代码策略和 heuristic 会在交互中持久修订。",
+      "updated_object": "agent 的可执行 code-as-policy 与 heuristic",
+      "catalog_category": "related_prompt_agent",
+      "decision": "included_or_updated",
+      "decision_note_zh": "收录于 related_prompt_agent：外部工件边界：优化持久脚本/策略，不更新 LLM 参数。",
+      "unverified_zh": [
+        "作者在双盲期保持 Anonymous；未从方法名或相似题名猜测作者。",
+        "首次公开日期待核实；OpenReview cdate 仅记录投稿/记录创建时间。",
+        "未定位到可核实的官方代码链接。",
+        "事实依据为 OpenReview 官方投稿摘要/作者声明；未独立验证实现。"
+      ],
+      "abstract": "Existing LLM-based autonomous agents generally follow two paradigms: ReAct-\nstyle methods, which interleave dense reasoning with continuous API calls; and\ncode-as-policy methods, which synthesize executable code to bypass LLM infer-\nence at runtime. However, in long-horizon interactive tasks, ReAct agents incur\nprohibitive inference costs and context overload, whereas offline policies lack test-\ntime adaptability to unforeseen environmental dynamics. To bridge this gap, we\nintroduce Code-Probe-Adapt (COPA), an interactive heuristic learning framework\nthat transitions LLM agents from post-hoc log analyzers to active, online policy\ndesigners. Equipped with a persistent REPL (Read-Eval-Print Loop) harness,\nCOPA enables live, on-demand introspection. To enable adaptive code-as-policy,\nCOPA modulates policy execution using adaptive step budgets and event-triggered\ninterruptions, returning control to the agent for immediate diagnostic probing and\npolicy refinement. Evaluated on five games, COPA significantly outperforms re-\ncent LLM-based policy synthesizers, and demonstrates superior sample efficiency\ncompared to extensively trained reinforcement learning (RL) algorithms. Notably,\non the hard-exploration task Montezuma’s Revenge, where offline LLM heuristic\nlearning fails entirely (scoring 0 even after 6.0M steps), COPA’s interactive prob-\ning achieves an average score of 4,900 in 2.4M steps. This result also compares\nfavorably against the RL baseline DreamerV3 (1,853.5 at 200M steps, digitized\nfrom its learning curve), scoring 2.6× as high with fewer environment interactions.\nAttained entirely without gradient updates or task-specific engineering, COPA\nsuccessfully unites the execution efficiency of code with the adaptive power of live\ndebugging.",
+      "keywords": [
+        "LLM agents",
+        "interactive heuristic learning",
+        "code-as-policy",
+        "test-time adaptation"
+      ],
+      "venue_status": "ICLR 2027 Conference Submission; decision pending",
+      "evidence_basis_zh": "据 OpenReview 官方投稿元数据与官方摘要记录；只记录摘要明确说明的机制。",
+      "component_training_zh": "LLM 与 policy refinement：摘要声明整体结果无需 gradient updates；是否调用固定商业/开源模型待正文核实。",
+      "persistent_updates_zh": "模型权重不更新；REPL 中的代码策略和 heuristic 会在交互中持久修订。",
+      "repository_relevance_zh": "外部工件边界：优化持久脚本/策略，不更新 LLM 参数。",
+      "official_abstract_method_evidence": [
+        "Existing LLM-based autonomous agents generally follow two paradigms: ReAct-\nstyle methods, which interleave dense reasoning with continuous API calls; and\ncode-as-policy methods, which synthesize executable code to bypass LLM infer-\nence at runtime. However, in long-horizon interactive tasks, ReAct agents incur\nprohibitive inference costs and context overload, whereas offline policies lack test-\ntime adaptability to unforeseen environmental dynamics. To bridge this gap, we\nintroduce Code-Probe-Adapt (COPA), an interactive heuristic learning framework\nthat transitions LLM agents from post-hoc log analyzers to active, online policy\ndesigners. Equipped with a persistent REPL (Read-Eval-Print Loop) harness,\nCOPA enables live, on-demand introspection. To enable adaptive code-as-policy,\nCOPA modulates policy execution using adaptive step budgets and event-triggered\ninterruptions, returning control to the agent for immediate diagnostic probing and\npolicy refinement. Evaluated on five games, COPA significantly outperforms re-\ncent LLM-based policy synthesizers, and demonstrates superior sample efficiency\ncompared to extensively trained reinforcement learning (RL) algorithms. Notably,\non the hard-exploration task Montezuma’s Revenge, where offline LLM heuristic\nlearning fails entirely (scoring 0 even after 6.0M steps), COPA’s interactive prob-\ning achieves an average score of 4,900 in 2.4M steps. This result also compares\nfavorably against the RL baseline DreamerV3 (1,853.5 at 200M steps, digitized\nfrom its learning curve), scoring 2.6× as high with fewer environment interactions.\nAttained entirely without gradient updates or task-specific engineering, COPA\nsuccessfully unites the execution efficiency of code with the adaptive power of live\ndebugging."
+      ]
+    },
+    {
+      "openreview_id": "hJEySPVkkv",
+      "title": "GRAFT: A Lightweight Shared Generative Backbone for Efficient Cross-Schema Tabular Synthesis",
+      "authors": "Anonymous",
+      "openreview_created_at": "2026-09-16T20:02:56.210000+00:00",
+      "submitted_at": "2026-09-16T20:02:56.210000+00:00",
+      "first_public_date": null,
+      "first_public_date_note_zh": "OpenReview cdate 仅作为记录创建/投稿时间；未核实更早公开来源。",
+      "paper_url": "https://openreview.net/forum?id=hJEySPVkkv",
+      "code_url": null,
+      "core_contribution_zh": "GRAFT 预训练共享 tabular generator，并为新 schema 训练 mapping layer 与 local discriminator。",
+      "gradient_free_method": "没有梯度无关机制；single forward pass 只描述生成采样速度。",
+      "backpropagation": "摘要明确对新 schema 训练 mapping layer/discriminator 十个 epoch；generator 冻结。",
+      "persistent_model_parameter_update": "持久更新表格 mapping/discriminator 参数；无语言模型优化对象。",
+      "updated_object": "跨 schema tabular synthesis 模型",
+      "catalog_category": null,
+      "decision": "not_catalogued_after_individual_review",
+      "decision_note_zh": "《GRAFT: A Lightweight Shared Generative Backbone for Efficient Cross-Schema Tabular Synthesis》未收录：纯表格生成方法；“language-model backbones”仅为被比较的昂贵架构，论文没有 LLM/VLM 应用或梯度无关适配。",
+      "unverified_zh": [
+        "作者在双盲期保持 Anonymous；未从方法名或相似题名猜测作者。",
+        "首次公开日期待核实；OpenReview cdate 仅记录投稿/记录创建时间。",
+        "排除不基于是否持久更新，而基于上述具体方法对象或语言模型关联缺口。",
+        "事实依据为 OpenReview 官方投稿摘要/作者声明；未独立验证实现。"
+      ],
+      "abstract": "Tabular data underpins decision-making in finance, healthcare, and business intelligence, yet many real-world tables are small, imbalanced, or access-restricted. Predictive foundation models for tabular data have matured rapidly, and a first generation of generative tabular foundation models has emerged. These generators, however, are built on diffusion, transformer, or language-model backbones that are expensive to adapt to a new schema and slow to sample. We ask whether a far lighter design can play the same role where synthetic data matters most. We propose GRAFT, a cross-schema generative model that decouples universal tabular structure from schema-specific detail. A single sub-million-parameter generator, conditioned on a fixed-length meta-feature vector describing the target table, is shared across all schemas. Lightweight per-schema mapping layers project its output into each feature space, and per-schema local discriminators supply specialized feedback without gradient interference. After pretraining on a corpus of heterogeneous public tables, the generator is frozen and adapts to an unseen schema by training only a new mapping layer and discriminator for ten epochs. Under a strict held-out protocol over 86 unseen schemas and three downstream evaluators, GRAFT improves augmented-classifier accuracy over from-scratch CTGAN and TVAE trained for the same or thirty times larger budgets (Wilcoxon p<10−3 in all cases). It also matches the augmentation utility of TabPFGen, a training-free generator built on a pretrained transformer an order of magnitude larger, while producing rows in a single forward pass rather than an iterative Langevin loop. The advantage is concentrated where it matters most: on the smallest fifth of tables GRAFT leads every baseline, including TabPFGen. We also quantify the price of this design, an augmentation-versus-fidelity trade-off.",
+      "keywords": [
+        "tabular data generation",
+        "generative adversarial networks",
+        "abular foundation models",
+        "cross-schema transfer"
+      ],
+      "venue_status": "ICLR 2027 Conference Submission; decision pending",
+      "evidence_basis_zh": "据 OpenReview 官方投稿元数据与官方摘要记录；只记录摘要明确说明的机制。",
+      "component_training_zh": "摘要明确对新 schema 训练 mapping layer/discriminator 十个 epoch；generator 冻结。",
+      "persistent_updates_zh": "持久更新表格 mapping/discriminator 参数；无语言模型优化对象。",
+      "repository_relevance_zh": "未收录：纯表格生成方法；“language-model backbones”仅为被比较的昂贵架构，论文没有 LLM/VLM 应用或梯度无关适配。",
+      "exclusion_evidence_from_official_abstract": [
+        "Tabular data underpins decision-making in finance, healthcare, and business intelligence, yet many real-world tables are small, imbalanced, or access-restricted. Predictive foundation models for tabular data have matured rapidly, and a first generation of generative tabular foundation models has emerged. These generators, however, are built on diffusion, transformer, or language-model backbones that are expensive to adapt to a new schema and slow to sample. We ask whether a far lighter design can play the same role where synthetic data matters most. We propose GRAFT, a cross-schema generative model that decouples universal tabular structure from schema-specific detail. A single sub-million-parameter generator, conditioned on a fixed-length meta-feature vector describing the target table, is shared across all schemas. Lightweight per-schema mapping layers project its output into each feature space, and per-schema local discriminators supply specialized feedback without gradient interference. After pretraining on a corpus of heterogeneous public tables, the generator is frozen and adapts to an unseen schema by training only a new mapping layer and discriminator for ten epochs. Under a strict held-out protocol over 86 unseen schemas and three downstream evaluators, GRAFT improves augmented-classifier accuracy over from-scratch CTGAN and TVAE trained for the same or thirty times larger budgets (Wilcoxon p<10−3 in all cases). It also matches the augmentation utility of TabPFGen, a training-free generator built on a pretrained transformer an order of magnitude larger, while producing rows in a single forward pass rather than an iterative Langevin loop. The advantage is concentrated where it matters most: on the smallest fifth of tables GRAFT leads every baseline, including TabPFGen. We also quantify the price of this design, an augmentation-versus-fidelity trade-off."
+      ]
+    },
+    {
+      "openreview_id": "z4IXYD4vKw",
+      "title": "Wired to Reason: Connectome Reservoirs Align with Vision-Language Models on Raven's Matrices",
+      "authors": "Anonymous",
+      "openreview_created_at": "2026-09-07T14:12:55.393000+00:00",
+      "submitted_at": "2026-09-07T14:12:55.393000+00:00",
+      "first_public_date": null,
+      "first_public_date_note_zh": "OpenReview cdate 仅作为记录创建/投稿时间；未核实更早公开来源。",
+      "paper_url": "https://openreview.net/forum?id=z4IXYD4vKw",
+      "code_url": null,
+      "core_contribution_zh": "该工作把经验 connectome 固定为 reservoir recurrent dynamics，并比较其状态与已训练 VLM 在 Raven 矩阵上的表征对齐。",
+      "gradient_free_method": "reservoir recurrent weights 固定；研究的是结构归纳偏置与表征对齐，而非优化。",
+      "backpropagation": "reservoir recurrent operator 不训练；VLM 是已训练的比较对象；其他 readout/评测组件训练信息待核实。",
+      "persistent_model_parameter_update": "没有更新 VLM 或语言模型参数；connectome reservoir 是固定系统。",
+      "updated_object": "固定 connectome reservoir 与 VLM 表征相关性",
+      "catalog_category": null,
+      "decision": "not_catalogued_after_individual_review",
+      "decision_note_zh": "《Wired to Reason: Connectome Reservoirs Align with Vision-Language Models on Raven's Matrices》未收录：“无 recurrent gradient learning”只是固定 reservoir 的分析条件，没有语言模型优化、适配或外部搜索对象。",
+      "unverified_zh": [
+        "作者在双盲期保持 Anonymous；未从方法名或相似题名猜测作者。",
+        "首次公开日期待核实；OpenReview cdate 仅记录投稿/记录创建时间。",
+        "排除不基于是否持久更新，而基于上述具体方法对象或语言模型关联缺口。",
+        "事实依据为 OpenReview 官方投稿摘要/作者声明；未独立验证实现。"
+      ],
+      "abstract": "The human brain and large neural networks have independently converged on surprisingly similar internal representations, a finding typically attributed to learning at scale. But what if a part of this convergence requires no gradient learning in the\nrecurrent operators? We test this using a connectome-wired reservoir: a recurrent dynamical system whose bilinear operators are derived entirely from empirical brain connectivity matrices, with no learning in the recurrent weights. Remark-\nably, the internal states this system builds during visual reasoning align with the layer-wise representations of a trained vision-language model in a structured and interpretable way: alignment varies systematically across recurrent states and VLM\ndepth, with stronger alignment for correct trials in several model–metric combinations, without gradient-based optimization. This alignment is not a statistical artifact: empirical FC exhibits modest but consistently stronger alignment than the\nmatched random control, while temporal-memory removal alters the alignment structure. Moreover, reservoirs instantiated with connectomes from both neurotypical and autistic individuals produce consistent visual reasoning performance that\nsubstantially exceeds random-weight baselines, indicating that this advantage generalizes across both cohorts rather than being tied to any particular population or diagnostic profile; structure-matched null controls further indicate that the empiri-\ncal connectome’s regional arrangement, not any single isolated property, underlies the alignment advantage. Taken together, our results suggest that the partial convergence between biological and vision-language models (VLMs) is not exclusively\nlearned: FC-derived recurrent organization provides a structural inductive bias for partial CWR–VLM representational correspondence. Here, connectome-wired refers specifically to the use of an empirical brain connectivity matrix to determine\nthe fixed recurrent dynamics of the reservoir. No measured neural activity is used as a representation target: all alignment analyses compare reservoir states with representations from trained vision-language models.",
+      "keywords": [
+        "Reservoir computing",
+        "connectome",
+        "VLMs",
+        "visual reasoning",
+        "alignment"
+      ],
+      "venue_status": "ICLR 2027 Conference Submission; decision pending",
+      "evidence_basis_zh": "据 OpenReview 官方投稿元数据与官方摘要记录；只记录摘要明确说明的机制。",
+      "component_training_zh": "reservoir recurrent operator 不训练；VLM 是已训练的比较对象；其他 readout/评测组件训练信息待核实。",
+      "persistent_updates_zh": "没有更新 VLM 或语言模型参数；connectome reservoir 是固定系统。",
+      "repository_relevance_zh": "未收录：“无 recurrent gradient learning”只是固定 reservoir 的分析条件，没有语言模型优化、适配或外部搜索对象。",
+      "exclusion_evidence_from_official_abstract": [
+        "The human brain and large neural networks have independently converged on surprisingly similar internal representations, a finding typically attributed to learning at scale. But what if a part of this convergence requires no gradient learning in the\nrecurrent operators? We test this using a connectome-wired reservoir: a recurrent dynamical system whose bilinear operators are derived entirely from empirical brain connectivity matrices, with no learning in the recurrent weights. Remark-\nably, the internal states this system builds during visual reasoning align with the layer-wise representations of a trained vision-language model in a structured and interpretable way: alignment varies systematically across recurrent states and VLM\ndepth, with stronger alignment for correct trials in several model–metric combinations, without gradient-based optimization. This alignment is not a statistical artifact: empirical FC exhibits modest but consistently stronger alignment than the\nmatched random control, while temporal-memory removal alters the alignment structure. Moreover, reservoirs instantiated with connectomes from both neurotypical and autistic individuals produce consistent visual reasoning performance that\nsubstantially exceeds random-weight baselines, indicating that this advantage generalizes across both cohorts rather than being tied to any particular population or diagnostic profile; structure-matched null controls further indicate that the empiri-\ncal connectome’s regional arrangement, not any single isolated property, underlies the alignment advantage. Taken together, our results suggest that the partial convergence between biological and vision-language models (VLMs) is not exclusively\nlearned: FC-derived recurrent organization provides a structural inductive bias for partial CWR–VLM representational correspondence. Here, connectome-wired refers specifically to the use of an empirical brain connectivity matrix to determine\nthe fixed recurrent dynamics of the reservoir. No measured neural activity is used as a representation target: all alignment analyses compare reservoir states with representations from trained vision-language models."
+      ]
+    },
+    {
+      "openreview_id": "UpR5uTu7JV",
+      "title": "CISA: Retrofitting Dense Attention Models with Chunk-Indexed Sparse Attention",
+      "authors": "Anonymous",
+      "openreview_created_at": "2026-09-18T17:43:17.641000+00:00",
+      "submitted_at": "2026-09-18T17:43:17.641000+00:00",
+      "first_public_date": null,
+      "first_public_date_note_zh": "OpenReview cdate 仅作为记录创建/投稿时间；未核实更早公开来源。",
+      "paper_url": "https://openreview.net/forum?id=UpR5uTu7JV",
+      "code_url": null,
+      "core_contribution_zh": "CISA 用模型已有 key 的 compact summaries 索引固定长度 KV chunks，并以 QShare 在相邻 prefill queries 间复用 chunk 选择，以 retrofit 稠密注意力。",
+      "gradient_free_method": "训练无关的 chunk indexing、selection 与 query-sharing 推理规则；不是 ZO 梯度估计。",
+      "backpropagation": "摘要明确 retrofit 不做 gradient updates/sparse training；预训练 dense model 保持不变。",
+      "persistent_model_parameter_update": "模型权重不更新；KV summaries、chunk index 与 selections 是推理时缓存/状态，通常不写回检查点。",
+      "updated_object": "长上下文 LLM 的 KV chunk index 与 sparse-attention 读取集合",
+      "catalog_category": "related_inference",
+      "decision": "included_or_updated",
+      "decision_note_zh": "收录于 related_inference：推理系统边界：明确无训练地改变 KV 读取路径，但不做参数搜索或持久权重更新。",
+      "unverified_zh": [
+        "作者在双盲期保持 Anonymous；未从方法名或相似题名猜测作者。",
+        "首次公开日期待核实；OpenReview cdate 仅记录投稿/记录创建时间。",
+        "未定位到可核实的官方代码链接。",
+        "事实依据为 OpenReview 官方投稿摘要/作者声明；未独立验证实现。"
+      ],
+      "abstract": "As context becomes grows, LLM inference becomes increasingly expensive because attention repeatedly reads a growing key-value (KV) history.\nWe introduce Chunk-Indexed Sparse Attention (CISA), a method for retrofitting pretrained dense attention models without gradient updates.\nCISA selects fixed-size chunks of the KV history using compact summaries derived from the model's existing keys, avoiding token-level indexing and a separate full-length index cache.\nFor indexing, CISA uses a single query per KV group and shares the selected chunks across the query in that group.\nDuring prefill, we reuse chunk selections across adjacent queries to reduce indexing cost and improve KV reuse and GPU utilization.\nWe call this technique *QShare*.\n\nWe evaluate CISA on the NVIDIA Nemotron~3 Nano and Ultra models, as well as on Inkling-Small.\nIn one-layer BF16 benchmarks at batch size 32 using Ultra's per-device attention dimensions, CISA accelerates core attention by $11.7\\times$ for prefill queries near the end of a 1M-token prompt and $13.0\\times$ during decode.\nIncluding chunk scoring, selection, and all other measured GPU work, the corresponding speedups are $8.6\\times$ and $3.0\\times$.\nOn Ultra NVFP4, at $k_{\\mathrm{chunks}}=4{,}096$, CISA keeps aggregate scores within 1.5 percentage points of dense attention on MRCR, LongBench v2, and GraphWalks.\nRULER sweeps on Nano and Ultra BF16 up to one million tokens show scores within 2.05 percentage points of dense attention with 8--16$\\times$ fewer KV reads.\n\nWhen serving million-token prompts with 32 concurrent requests and 4K output tokens per request, CISA achieves $2.29\\times$ the end-to-end throughput of dense attention using Nemotron~3 Ultra NVFP4 on four NVIDIA B300 GPUs.\nSelecting fewer chunks increases throughput to $2.61\\times$ compared with dense attention; in separate GraphWalks evaluations, the smaller budget widens the aggregate score gap from 1.49 to 3.59 percentage points. These results expose a practical quality--speed tradeoff without requiring sparse training.",
+      "keywords": [
+        "attention",
+        "sparse attention",
+        "efficiency"
+      ],
+      "venue_status": "ICLR 2027 Conference Submission; decision pending",
+      "evidence_basis_zh": "据 OpenReview 官方投稿元数据与官方摘要记录；只记录摘要明确说明的机制。",
+      "component_training_zh": "摘要明确 retrofit 不做 gradient updates/sparse training；预训练 dense model 保持不变。",
+      "persistent_updates_zh": "模型权重不更新；KV summaries、chunk index 与 selections 是推理时缓存/状态，通常不写回检查点。",
+      "repository_relevance_zh": "推理系统边界：明确无训练地改变 KV 读取路径，但不做参数搜索或持久权重更新。",
+      "official_abstract_method_evidence": [
+        "As context becomes grows, LLM inference becomes increasingly expensive because attention repeatedly reads a growing key-value (KV) history.\nWe introduce Chunk-Indexed Sparse Attention (CISA), a method for retrofitting pretrained dense attention models without gradient updates.\nCISA selects fixed-size chunks of the KV history using compact summaries derived from the model's existing keys, avoiding token-level indexing and a separate full-length index cache.\nFor indexing, CISA uses a single query per KV group and shares the selected chunks across the query in that group.\nDuring prefill, we reuse chunk selections across adjacent queries to reduce indexing cost and improve KV reuse and GPU utilization.\nWe call this technique *QShare*.\n\nWe evaluate CISA on the NVIDIA Nemotron~3 Nano and Ultra models, as well as on Inkling-Small.\nIn one-layer BF16 benchmarks at batch size 32 using Ultra's per-device attention dimensions, CISA accelerates core attention by $11.7\\times$ for prefill queries near the end of a 1M-token prompt and $13.0\\times$ during decode.\nIncluding chunk scoring, selection, and all other measured GPU work, the corresponding speedups are $8.6\\times$ and $3.0\\times$.\nOn Ultra NVFP4, at $k_{\\mathrm{chunks}}=4{,}096$, CISA keeps aggregate scores within 1.5 percentage points of dense attention on MRCR, LongBench v2, and GraphWalks.\nRULER sweeps on Nano and Ultra BF16 up to one million tokens show scores within 2.05 percentage points of dense attention with 8--16$\\times$ fewer KV reads.\n\nWhen serving million-token prompts with 32 concurrent requests and 4K output tokens per request, CISA achieves $2.29\\times$ the end-to-end throughput of dense attention using Nemotron~3 Ultra NVFP4 on four NVIDIA B300 GPUs.\nSelecting fewer chunks increases throughput to $2.61\\times$ compared with dense attention; in separate GraphWalks evaluations, the smaller budget widens the aggregate score gap from 1.49 to 3.59 percentage points. These results expose a practical quality--speed tradeoff without requiring sparse training."
+      ]
+    },
+    {
+      "openreview_id": "ICtYd1vctM",
+      "title": "scCoLLM: An LLM-Based Model Using Context-Space Adaptation for Single-Cell Analysis under Domain Shift",
+      "authors": "Anonymous",
+      "openreview_created_at": "2026-09-04T06:22:57.098000+00:00",
+      "submitted_at": "2026-09-04T06:22:57.098000+00:00",
+      "first_public_date": null,
+      "first_public_date_note_zh": "OpenReview cdate 仅作为记录创建/投稿时间；未核实更早公开来源。",
+      "paper_url": "https://openreview.net/forum?id=ICtYd1vctM",
+      "code_url": null,
+      "core_contribution_zh": "scCoLLM 从无标签目标单细胞数据检索兼顾局部相关性和全局代表性的 cell-profile pairs，组成 Bio-Context 供通用 LLM 零样本分析。",
+      "gradient_free_method": "query-conditioned context selection 与 in-context domain adaptation；不访问参数或做梯度更新。",
+      "backpropagation": "通用 LLM：摘要明确无 gradient updates、标签或参数访问；检索器/选择规则是否含训练组件待核实。",
+      "persistent_model_parameter_update": "模型权重不更新；Bio-Context 按 query/目标数据构造，是否跨查询持久缓存待核实。",
+      "updated_object": "目标域 cell-profile Bio-Context",
+      "catalog_category": "related_inference",
+      "decision": "included_or_updated",
+      "decision_note_zh": "收录于 related_inference：推理/上下文边界：适配对象是 context，不是模型参数。",
+      "unverified_zh": [
+        "作者在双盲期保持 Anonymous；未从方法名或相似题名猜测作者。",
+        "首次公开日期待核实；OpenReview cdate 仅记录投稿/记录创建时间。",
+        "未定位到可核实的官方代码链接。",
+        "事实依据为 OpenReview 官方投稿摘要/作者声明；未独立验证实现。"
+      ],
+      "abstract": "Deep learning has been adopted throughout single-cell analysis with remarkable success. However, once the target data to be analyzed depart from the distribution a single-cell model was trained on, current single-cell models exhibit marked performance degradation. Such domain shift is the rule rather than the exception in practice: newly profiled data routinely come from unfamiliar cell types, tissues, and donors. We attribute much of this degradation to a missing conditioning signal: existing methods predict each query cell from its own expression profile alone, ignoring the target-domain-specific biological context carried by the target dataset itself. Closing this gap by training or fine-tuning on the target domain is often infeasible, since every such remedy requires an additional training run for each new target, its supervised variants further require ground truth annotations that a newly profiled dataset does not carry, and the strongest models may not release their weights. We therefore recast target-domain adaptation from parameter space to context space. We introduce **s**ingle-**c**ell **Co**ntext **LLM** (**scCoLLM**), a training-free framework that performs **Context-Space Adaptation** on top of general-purpose LLMs such as GPT. Given a query cell, scCoLLM retrieves a query-conditioned biological context set from the unlabeled target data, selected to balance query-level local relevance against target-domain global representativeness, yielding a set of cell--profile pairs through zero-shot reasoning. The resulting cell–profile pairs form the **Bio-Context**. Conditioned on this Bio-Context, scCoLLM analyzes the query cell while aware of the biological context of the target domain, and thereby adapts to that domain without gradient updates, ground-truth labels, or access to model parameters. Under three domain shift tasks---cross-cell type, cross-tissue, and cross-donor---scCoLLM attains state-of-the-art performance, improving on the strongest of 12 baselines by up to 9\\%. Further experiments confirmed the soundness of the Bio-Context design and its decisive role in improvement, as well as the robustness and transferability of scCoLLM.",
+      "keywords": [
+        "Single-Cell Analysis",
+        "Single-cell Transcriptomics",
+        "domain shift"
+      ],
+      "venue_status": "ICLR 2027 Conference Submission; decision pending",
+      "evidence_basis_zh": "据 OpenReview 官方投稿元数据与官方摘要记录；只记录摘要明确说明的机制。",
+      "component_training_zh": "通用 LLM：摘要明确无 gradient updates、标签或参数访问；检索器/选择规则是否含训练组件待核实。",
+      "persistent_updates_zh": "模型权重不更新；Bio-Context 按 query/目标数据构造，是否跨查询持久缓存待核实。",
+      "repository_relevance_zh": "推理/上下文边界：适配对象是 context，不是模型参数。",
+      "official_abstract_method_evidence": [
+        "Deep learning has been adopted throughout single-cell analysis with remarkable success. However, once the target data to be analyzed depart from the distribution a single-cell model was trained on, current single-cell models exhibit marked performance degradation. Such domain shift is the rule rather than the exception in practice: newly profiled data routinely come from unfamiliar cell types, tissues, and donors. We attribute much of this degradation to a missing conditioning signal: existing methods predict each query cell from its own expression profile alone, ignoring the target-domain-specific biological context carried by the target dataset itself. Closing this gap by training or fine-tuning on the target domain is often infeasible, since every such remedy requires an additional training run for each new target, its supervised variants further require ground truth annotations that a newly profiled dataset does not carry, and the strongest models may not release their weights. We therefore recast target-domain adaptation from parameter space to context space. We introduce **s**ingle-**c**ell **Co**ntext **LLM** (**scCoLLM**), a training-free framework that performs **Context-Space Adaptation** on top of general-purpose LLMs such as GPT. Given a query cell, scCoLLM retrieves a query-conditioned biological context set from the unlabeled target data, selected to balance query-level local relevance against target-domain global representativeness, yielding a set of cell--profile pairs through zero-shot reasoning. The resulting cell–profile pairs form the **Bio-Context**. Conditioned on this Bio-Context, scCoLLM analyzes the query cell while aware of the biological context of the target domain, and thereby adapts to that domain without gradient updates, ground-truth labels, or access to model parameters. Under three domain shift tasks---cross-cell type, cross-tissue, and cross-donor---scCoLLM attains state-of-the-art performance, improving on the strongest of 12 baselines by up to 9\\%. Further experiments confirmed the soundness of the Bio-Context design and its decisive role in improvement, as well as the robustness and transferability of scCoLLM."
+      ]
+    },
+    {
+      "openreview_id": "hw82nCsx4L",
+      "title": "Eliciting Model Behaviors by Optimizing the Latent Posterior",
+      "authors": "Anonymous",
+      "openreview_created_at": "2026-09-15T18:37:46.117000+00:00",
+      "submitted_at": "2026-09-15T18:37:46.117000+00:00",
+      "first_public_date": null,
+      "first_public_date_note_zh": "OpenReview cdate 仅作为记录创建/投稿时间；未核实更早公开来源。",
+      "paper_url": "https://openreview.net/forum?id=hw82nCsx4L",
+      "code_url": null,
+      "core_contribution_zh": "Posterior Prefix Tuning 在 Bayes-filtered Transformer 的精确 latent-posterior 模型上，用 predictive Monte Carlo 与 importance sampling 优化 hard-prompt 分布，并可跨 utility 复用 prior samples。",
+      "gradient_free_method": "对外部 prompt-distribution 参数做显式 gradient optimization；内环不调用 Transformer forward，也不穿过模型反传。",
+      "backpropagation": "BFT：meta-trained 源模型，部署优化时不反传；prompt distribution：用 tilted-posterior covariance gradient 更新。",
+      "persistent_model_parameter_update": "Transformer 权重不更新；prompt distribution 参数及选出的 hard prompt 可持久保存。",
+      "updated_object": "hard-prompt 分布参数与提示词",
+      "catalog_category": "related_hybrid",
+      "decision": "included_or_updated",
+      "decision_note_zh": "收录于 related_hybrid：混合外部优化：优化对象是提示分布且使用梯度，只有模型侧不反传，因此不归纯梯度无关主类。",
+      "unverified_zh": [
+        "作者在双盲期保持 Anonymous；未从方法名或相似题名猜测作者。",
+        "首次公开日期待核实；OpenReview cdate 仅记录投稿/记录创建时间。",
+        "未定位到可核实的官方代码链接。",
+        "事实依据为 OpenReview 官方投稿摘要/作者声明；未独立验证实现。"
+      ],
+      "abstract": "In the \\emph{latent posterior model} of transformer behavior, the next-token distribution arises from a posterior over latent predictive models conditioned on the context, mixed to generate continuations. We exploit this model in settings where it is exact, namely Bayes-filtered transformers (BFTs) meta-trained on sequences from a hierarchical prior, to introduce \\textbf{Posterior Prefix Tuning (PPT)}, a new method for \\emph{eliciting} behavior from a transformer: given a utility function on continuations, find a prompt under which the model's expected utility is large. For a BFT, the elicitation objective factors through the latent posterior, and we show that the gradient of a tilted surrogate is a covariance over the tilted posterior between the per-model utility and the score of the tilt. PPT optimizes the parameters of a distribution over hard prompts, drawing latent-model samples once from the BFT's prior via predictive Monte Carlo (PMC) and computing its gradient by importance sampling. The inner loop performs no transformer forwards and no backpropagation through the model, and the prior samples are utility-independent, so the cost of characterizing the BFT amortizes across utilities. We validate PPT and a Rao--Blackwellized variant on Beta--Bernoulli and reinforced urn BFTs across three utility families (reverse cross-entropy, frequency matching, Dyck validity).",
+      "keywords": [
+        "Bayesian inference",
+        "in-context learning",
+        "meta-learning",
+        "elicitation",
+        "prefix tuning",
+        "importance sampling",
+        "transformers"
+      ],
+      "venue_status": "ICLR 2027 Conference Submission; decision pending",
+      "evidence_basis_zh": "据 OpenReview 官方投稿元数据与官方摘要记录；只记录摘要明确说明的机制。",
+      "component_training_zh": "BFT：meta-trained 源模型，部署优化时不反传；prompt distribution：用 tilted-posterior covariance gradient 更新。",
+      "persistent_updates_zh": "Transformer 权重不更新；prompt distribution 参数及选出的 hard prompt 可持久保存。",
+      "repository_relevance_zh": "混合外部优化：优化对象是提示分布且使用梯度，只有模型侧不反传，因此不归纯梯度无关主类。",
+      "official_abstract_method_evidence": [
+        "In the \\emph{latent posterior model} of transformer behavior, the next-token distribution arises from a posterior over latent predictive models conditioned on the context, mixed to generate continuations. We exploit this model in settings where it is exact, namely Bayes-filtered transformers (BFTs) meta-trained on sequences from a hierarchical prior, to introduce \\textbf{Posterior Prefix Tuning (PPT)}, a new method for \\emph{eliciting} behavior from a transformer: given a utility function on continuations, find a prompt under which the model's expected utility is large. For a BFT, the elicitation objective factors through the latent posterior, and we show that the gradient of a tilted surrogate is a covariance over the tilted posterior between the per-model utility and the score of the tilt. PPT optimizes the parameters of a distribution over hard prompts, drawing latent-model samples once from the BFT's prior via predictive Monte Carlo (PMC) and computing its gradient by importance sampling. The inner loop performs no transformer forwards and no backpropagation through the model, and the prior samples are utility-independent, so the cost of characterizing the BFT amortizes across utilities. We validate PPT and a Rao--Blackwellized variant on Beta--Bernoulli and reinforced urn BFTs across three utility families (reverse cross-entropy, frequency matching, Dyck validity)."
+      ]
+    },
+    {
+      "openreview_id": "e4pspmOVIV",
+      "title": "Suppressing a Rejected Action Costs a KL: Closed-Form Test-Time Updates for LLM Agents",
+      "authors": "Anonymous",
+      "openreview_created_at": "2026-09-17T06:26:05.687000+00:00",
+      "submitted_at": "2026-09-17T06:26:05.687000+00:00",
+      "first_public_date": null,
+      "first_public_date_note_zh": "OpenReview cdate 仅作为记录创建/投稿时间；未核实更早公开来源。",
+      "paper_url": "https://openreview.net/forum?id=e4pspmOVIV",
+      "code_url": null,
+      "core_contribution_zh": "TALE 把一次不可执行 action 的 rejection 转为精确 likelihood-suppression target，在模型输出侧做低秩 representation edit，并以一维单调求根确定抑制强度。",
+      "gradient_free_method": "解析更新方向加一维 monotone root finding；无 backpropagation。",
+      "backpropagation": "test-time edit：摘要明确无反传；base model 既往训练不在该方法范围内。",
+      "persistent_model_parameter_update": "模型输出侧低秩 edit 在后续尝试中生效；摘要未说明是否跨会话写回持久 checkpoint。",
+      "updated_object": "LLM agent 输出侧局部概率空间与被拒 action neighborhood",
+      "catalog_category": "related_closed_form",
+      "decision": "included_or_updated",
+      "decision_note_zh": "收录于 related_closed_form：闭式测试时更新：模型侧表示会被编辑，但跨会话持久性待核实。",
+      "unverified_zh": [
+        "作者在双盲期保持 Anonymous；未从方法名或相似题名猜测作者。",
+        "首次公开日期待核实；OpenReview cdate 仅记录投稿/记录创建时间。",
+        "未定位到可核实的官方代码链接。",
+        "事实依据为 OpenReview 官方投稿摘要/作者声明；未独立验证实现。"
+      ],
+      "abstract": "Large language models are widely deployed as agents that interact with external environments through structured actions such as shell commands, tool calls, or search queries. Once the model emits an action that the environment cannot execute, the interaction step is interrupted. In-place recovery then faces a dilemma: with frozen weights, stateless resampling tends to fall back into similar invalid outputs and repeat the same failure; with weight updates after every rejection, gradient-based adaptation introduces substantial latency and compute cost. We propose TALE (Test-time Adaptation via Likelihood Enforcement). TALE turns an observed rejection into an exact likelihood-suppression target and applies a low-rank representation edit at the model's output side; the update direction is determined analytically and the suppression intensity is fixed by a one-dimensional monotone root-finding procedure, with no backpropagation. The edit reshapes the local probability space and moves subsequent attempts away from the failed neighborhood. Across four benchmarks covering terminal commands, tool calls, and web search, at three model scales, TALE reduces the unresolved rate of interaction steps relative to update-free resampling and saves a large fraction of model calls; relative to gradient-based test-time adaptation methods, it attains comparable or higher task success while cutting end-to-end latency by a factor of several, with negligible additional GPU memory.",
+      "keywords": [
+        "LLM agents",
+        "test-time adaptation",
+        "model editing",
+        "test-time compute",
+        "verifier-guided reasoning",
+        "closed-form updates"
+      ],
+      "venue_status": "ICLR 2027 Conference Submission; decision pending",
+      "evidence_basis_zh": "据 OpenReview 官方投稿元数据与官方摘要记录；只记录摘要明确说明的机制。",
+      "component_training_zh": "test-time edit：摘要明确无反传；base model 既往训练不在该方法范围内。",
+      "persistent_updates_zh": "模型输出侧低秩 edit 在后续尝试中生效；摘要未说明是否跨会话写回持久 checkpoint。",
+      "repository_relevance_zh": "闭式测试时更新：模型侧表示会被编辑，但跨会话持久性待核实。",
+      "official_abstract_method_evidence": [
+        "Large language models are widely deployed as agents that interact with external environments through structured actions such as shell commands, tool calls, or search queries. Once the model emits an action that the environment cannot execute, the interaction step is interrupted. In-place recovery then faces a dilemma: with frozen weights, stateless resampling tends to fall back into similar invalid outputs and repeat the same failure; with weight updates after every rejection, gradient-based adaptation introduces substantial latency and compute cost. We propose TALE (Test-time Adaptation via Likelihood Enforcement). TALE turns an observed rejection into an exact likelihood-suppression target and applies a low-rank representation edit at the model's output side; the update direction is determined analytically and the suppression intensity is fixed by a one-dimensional monotone root-finding procedure, with no backpropagation. The edit reshapes the local probability space and moves subsequent attempts away from the failed neighborhood. Across four benchmarks covering terminal commands, tool calls, and web search, at three model scales, TALE reduces the unresolved rate of interaction steps relative to update-free resampling and saves a large fraction of model calls; relative to gradient-based test-time adaptation methods, it attains comparable or higher task success while cutting end-to-end latency by a factor of several, with negligible additional GPU memory."
+      ]
     }
   ],
   "existing_catalog_corrections": [
@@ -29813,13 +31282,13 @@
     }
   ],
   "method_audit": {
-    "audited_at": "2026-10-11T17:35:43.361278+08:00",
-    "scope": "all 332 included/updated records, all 441 excluded candidate records, the 7 supplemental synonym candidates, and existing Hyper-ES/CZqew9w981 corrections",
+    "audited_at": "2026-10-11T17:52:26.020454+08:00",
+    "scope": "全部 353 条收录/更新记录、455 条逐项排除记录及新增 35 条精确短语候选",
     "rule_zh": "仅把官方摘要明确写出的机制、训练组件和持久状态记为确定事实；evolving/self-improvement 不自动等同 evolutionary search；其余逐组件标待核实。",
     "special_audit_list": "/tmp/iclr2027-catalog-20261011-attempt5/parent-method-audit.txt (76 records; all mapped through this audit)",
-    "audited_included_records": 332,
+    "audited_included_records": 353,
     "deterministic_default_statements_remaining": 0,
-    "audited_excluded_records": 441,
+    "audited_excluded_records": 455,
     "excluded_records_with_official_abstract_evidence": 441,
     "mechanical_hybrid_records_reviewed": 61,
     "mechanical_hybrid_kept_with_method_side_training_evidence": 31,
@@ -29833,7 +31302,8 @@
       "records_with_abstract_supported_field_corrections": 156,
       "rule_zh": "逐篇读取报告内官方摘要；删除批量贡献套话；仅按摘要修正模块级反传、持久状态、更新对象和分类。"
     },
-    "repository_relevance_records": 773,
-    "validation_checked_at": "2026-10-11T17:41:07.599404+08:00"
-  }
+    "repository_relevance_records": 808,
+    "validation_checked_at": "2026-10-11T17:56:28.036892+08:00"
+  },
+  "audit_updated_at": "2026-10-11T17:56:28.036892+08:00"
 }

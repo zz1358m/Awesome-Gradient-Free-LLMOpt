@@ -1,15 +1,36 @@
 {
-  "checked_at": "2026-10-11T17:41:07.599404+08:00",
+  "checked_at": "2026-10-11T17:57:10.329638+08:00",
   "baseline_commit": "9edac15c828859711b69363909529cd0d126664a",
   "catalog": {
-    "total": 395,
-    "added": 5,
+    "total": 416,
+    "added": 26,
     "added_titles": [
+      "Beyond Parameter Space: Closed-Form Cross-Trajectory Repair After Harmful Fine-Tuning",
       "Block-Level Positional Reconstruction for Sparse Long-context Prefilling",
+      "Breaking the Refusal Barrier: Stochastic Discovery of Residual  Unsafe Behaviors in Aligned Language Models",
+      "CISA: Retrofitting Dense Attention Models with Chunk-Indexed Sparse Attention",
+      "Code-Probe-Adapt: Interactive Heuristic Learning for Self-Evolving Agents",
       "DeltaNet-PC: Test-Time Memory Without Backpropagation Through Time",
+      "Diagnosing Failure Regimes in LLM Agent Memory with Extraction-Pass Disagreement",
+      "Do Shared VLM Coordinates Imply Shared Calibration? A Study through Few-Shot Class-Incremental Learning",
+      "Don't Retrain, Remix: Adaptation of Web Agents using Mixture Hypernetworks",
+      "Eliciting Model Behaviors by Optimizing the Latent Posterior",
       "Functional Memory Compilation: Behavior-Level Migration of Aggregate LoRA Memory",
+      "HarnessNet: From Engineered Harnesses to a Unified Neural Controller for Self-Evolving Agents",
+      "In-Context Robot Learning with VLM Agents",
+      "Layer-Specialized Model Merging for Training-Free Cross-Modal Reasoning Transfer",
+      "QK-Wanda: Coupling Queries and Keys for Unstructured Pruning",
+      "RAZOR: Pruning Replaceable Experts in LLMs",
+      "RC-VQ: Recovering What Calibration Discards with Vector-Quantized Residual Correction",
+      "RESCOM: ACTIVATION RESIDUAL COMPENSATION FOR LARGE LANGUAGE MODEL QUANTIZATION",
       "ReLaDrift: Recurrent Language Generation via Drifting for Test-Time Scaling",
-      "Towards Unbiased Test-Time Adaptation for Vision–Language Models"
+      "SCAMP: Black-Box Knowledge Poisoning Attack on Multimodal Retrieval-Augmented Generation",
+      "SHIFT-LLM: Distribution Shift Correction in Depth-Pruned LLMs",
+      "Scalar Smoothness Is One Point on a Besov Spectrum",
+      "Suppressing a Rejected Action Costs a KL: Closed-Form Test-Time Updates for LLM Agents",
+      "Towards Unbiased Test-Time Adaptation for Vision–Language Models",
+      "When Can First-Order Models of Fine-Tuning Bound Forgetting?",
+      "scCoLLM: An LLM-Based Model Using Context-Space Adaptation for Single-Cell Analysis under Domain Shift"
     ],
     "modified_existing": 272,
     "modified_existing_titles": [
@@ -292,10 +313,10 @@
       "es_pretraining": 1,
       "es_single_turn": 13,
       "es_understanding": 9,
-      "related_closed_form": 15,
-      "related_hybrid": 75,
-      "related_inference": 8,
-      "related_prompt_agent": 190,
+      "related_closed_form": 25,
+      "related_hybrid": 79,
+      "related_inference": 11,
+      "related_prompt_agent": 194,
       "zo_alignment": 1,
       "zo_baselines": 14,
       "zo_directions": 32,
@@ -306,11 +327,14 @@
     }
   },
   "review_report": {
-    "records": 773,
-    "included_or_updated": 332,
-    "not_catalogued": 441,
+    "records": 808,
+    "included_or_updated": 353,
+    "not_catalogued": 455,
+    "new_exact_phrase_records": 35,
+    "new_exact_phrase_included": 21,
+    "new_exact_phrase_excluded": 14,
     "repository_relevance_complete": true,
-    "first_public_date_nonnull_records": []
+    "new_first_public_date_nonnull_records": []
   },
   "duplicates": {
     "exact_titles": [],
@@ -322,18 +346,20 @@
     "bibtex_openreview_ids": []
   },
   "bibtex": {
-    "entry_count": 396,
-    "catalog_count": 395,
-    "intentional_extra_entry": "A Zeroth-Order Paradigm for LLM Preference Alignment (2026 extension linked from the ComPO catalog entry)",
-    "openreview_link_count": 326,
+    "entry_count": 417,
+    "catalog_count": 416,
+    "intentional_extra_entries": 1,
+    "intentional_extra_entry_note": "A Zeroth-Order Paradigm for LLM Preference Alignment extension remains the one catalog-external entry.",
+    "openreview_link_count": 347,
     "catalog_openreview_links_missing_from_bib": [],
-    "biber_validation_log": "/tmp/iclr2027-catalog-20261011-attempt7/biber.log",
-    "biber_status": "parsed; datamodel validation complete; 6 pre-existing legacy month-format warnings"
+    "biber_validation_log": "/tmp/iclr2027-catalog-20261011-attempt8/biber.log",
+    "biber_status": "exit 0; parsed; datamodel validation complete; 6 pre-existing legacy month-format warnings"
   },
   "catalog_generation": {
-    "readme_rows": 395,
-    "readme_zh_rows": 395,
-    "check_status": "passed after final submission-badge regeneration"
+    "readme_rows": 416,
+    "readme_zh_rows": 416,
+    "expected_rows": 416,
+    "check_status": "passed"
   },
   "template_audit": {
     "prohibited_hits": {
@@ -346,7 +372,18 @@
     },
     "paper_specific_core_duplicates": [],
     "description_en_duplicates": [],
-    "description_zh_duplicates": []
+    "description_zh_duplicates": [],
+    "latest_exact_phrase_update": {
+      "prohibited_hits_in_new_records": {
+        "no for the catalogued search loop unless separately noted": 0,
+        "no persistent model-weight update": 0,
+        "据 ICLR 2027 官方投稿摘要": 0,
+        "可归于本目录": 0,
+        "提示词、智能体工件、安全机制或推理配置": 0
+      },
+      "new_description_en_duplicates": [],
+      "new_description_zh_duplicates": []
+    }
   },
   "submission_status": {
     "false_iclr_2027_acceptance_markers": [],
@@ -366,6 +403,47 @@
       "without backpropagation"
     ],
     "without_backpropagation_returned": 1000,
-    "without_backpropagation_count_field": 10000
+    "without_backpropagation_count_field": 10000,
+    "exact_phrase_queries": {
+      "query_count": 21,
+      "exact_method_abstract_queries": 18,
+      "all_returned_equal_count": true,
+      "all_counts_below_1000": true,
+      "full_venue_retrieval_complete": false,
+      "venue_plus_keyword_union_unique_ids_lower_bound": 35728,
+      "scope_note_zh": "21 个精确查询在各自范围内完整；venueid 正/倒序窗口之间仍有缺口，会议全量覆盖未证实。"
+    }
+  },
+  "latest_update": {
+    "baseline_commit": "60b6b7a78f38143f9dc634cf0ee41a73ed0a304b",
+    "catalog_added": 21,
+    "catalog_added_titles": [
+      "Beyond Parameter Space: Closed-Form Cross-Trajectory Repair After Harmful Fine-Tuning",
+      "Breaking the Refusal Barrier: Stochastic Discovery of Residual  Unsafe Behaviors in Aligned Language Models",
+      "CISA: Retrofitting Dense Attention Models with Chunk-Indexed Sparse Attention",
+      "Code-Probe-Adapt: Interactive Heuristic Learning for Self-Evolving Agents",
+      "Diagnosing Failure Regimes in LLM Agent Memory with Extraction-Pass Disagreement",
+      "Do Shared VLM Coordinates Imply Shared Calibration? A Study through Few-Shot Class-Incremental Learning",
+      "Don't Retrain, Remix: Adaptation of Web Agents using Mixture Hypernetworks",
+      "Eliciting Model Behaviors by Optimizing the Latent Posterior",
+      "HarnessNet: From Engineered Harnesses to a Unified Neural Controller for Self-Evolving Agents",
+      "In-Context Robot Learning with VLM Agents",
+      "Layer-Specialized Model Merging for Training-Free Cross-Modal Reasoning Transfer",
+      "QK-Wanda: Coupling Queries and Keys for Unstructured Pruning",
+      "RAZOR: Pruning Replaceable Experts in LLMs",
+      "RC-VQ: Recovering What Calibration Discards with Vector-Quantized Residual Correction",
+      "RESCOM: ACTIVATION RESIDUAL COMPENSATION FOR LARGE LANGUAGE MODEL QUANTIZATION",
+      "SCAMP: Black-Box Knowledge Poisoning Attack on Multimodal Retrieval-Augmented Generation",
+      "SHIFT-LLM: Distribution Shift Correction in Depth-Pruned LLMs",
+      "Scalar Smoothness Is One Point on a Besov Spectrum",
+      "Suppressing a Rejected Action Costs a KL: Closed-Form Test-Time Updates for LLM Agents",
+      "When Can First-Order Models of Fine-Tuning Bound Forgetting?",
+      "scCoLLM: An LLM-Based Model Using Context-Space Adaptation for Single-Cell Analysis under Domain Shift"
+    ],
+    "catalog_modified_existing": 0,
+    "catalog_removed": 0,
+    "candidate_records": 35,
+    "included": 21,
+    "excluded": 14
   }
 }
