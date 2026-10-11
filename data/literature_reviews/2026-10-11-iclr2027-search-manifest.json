@@ -1,0 +1,1260 @@
+{
+  "generated_at": "2026-10-11T17:03:59+08:00",
+  "retrieval_started_at": "2026-10-11T16:32:33+08:00",
+  "scoped_retrieval_completed_at": "2026-10-11T16:48:48.064575+08:00",
+  "conference": "ICLR 2027",
+  "scope": {
+    "group": "ICLR.cc/2027/Conference",
+    "source": "forum",
+    "submission_venueid": "ICLR.cc/2027/Conference/Submission",
+    "limit": 1000
+  },
+  "official_sources": [
+    "https://api2.openreview.net/groups?id=ICLR.cc/2027/Conference",
+    "https://api2.openreview.net/notes/search?group=ICLR.cc/2027/Conference&source=forum",
+    "https://api2.openreview.net/notes/search?content=venueid&term=ICLR.cc/2027/Conference/Submission&group=ICLR.cc/2027/Conference&source=forum"
+  ],
+  "keyword_queries": [
+    {
+      "term": "zeroth-order",
+      "official_count": 99,
+      "pages_fetched": 1,
+      "records_fetched": 99,
+      "unique_ids": 99,
+      "complete_to_reported_count": true,
+      "window_capped": false,
+      "initial_parent_error": null,
+      "pages": [
+        {
+          "offset": 0,
+          "returned": 99,
+          "count": 99,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt4/parent-scoped-search/01-0.json",
+          "url": "https://api2.openreview.net/notes/search?term=zeroth-order&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&offset=0&count=true"
+        }
+      ]
+    },
+    {
+      "term": "zero-order",
+      "official_count": 14,
+      "pages_fetched": 1,
+      "records_fetched": 14,
+      "unique_ids": 14,
+      "complete_to_reported_count": true,
+      "window_capped": false,
+      "initial_parent_error": null,
+      "pages": [
+        {
+          "offset": 0,
+          "returned": 14,
+          "count": 14,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt4/parent-scoped-search/02-0.json",
+          "url": "https://api2.openreview.net/notes/search?term=zero-order&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&offset=0&count=true"
+        }
+      ]
+    },
+    {
+      "term": "gradient-free",
+      "official_count": 92,
+      "pages_fetched": 1,
+      "records_fetched": 92,
+      "unique_ids": 92,
+      "complete_to_reported_count": true,
+      "window_capped": false,
+      "initial_parent_error": null,
+      "pages": [
+        {
+          "offset": 0,
+          "returned": 92,
+          "count": 92,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt4/parent-scoped-search/03-0.json",
+          "url": "https://api2.openreview.net/notes/search?term=gradient-free&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&offset=0&count=true"
+        }
+      ]
+    },
+    {
+      "term": "derivative-free",
+      "official_count": 24,
+      "pages_fetched": 1,
+      "records_fetched": 24,
+      "unique_ids": 24,
+      "complete_to_reported_count": true,
+      "window_capped": false,
+      "initial_parent_error": null,
+      "pages": [
+        {
+          "offset": 0,
+          "returned": 24,
+          "count": 24,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt4/parent-scoped-search/04-0.json",
+          "url": "https://api2.openreview.net/notes/search?term=derivative-free&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&offset=0&count=true"
+        }
+      ]
+    },
+    {
+      "term": "forward-only",
+      "official_count": 52,
+      "pages_fetched": 1,
+      "records_fetched": 52,
+      "unique_ids": 52,
+      "complete_to_reported_count": true,
+      "window_capped": false,
+      "initial_parent_error": null,
+      "pages": [
+        {
+          "offset": 0,
+          "returned": 52,
+          "count": 52,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt4/parent-scoped-search/05-0.json",
+          "url": "https://api2.openreview.net/notes/search?term=forward-only&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&offset=0&count=true"
+        }
+      ]
+    },
+    {
+      "term": "backpropagation-free",
+      "official_count": 23,
+      "pages_fetched": 1,
+      "records_fetched": 23,
+      "unique_ids": 23,
+      "complete_to_reported_count": true,
+      "window_capped": false,
+      "initial_parent_error": null,
+      "pages": [
+        {
+          "offset": 0,
+          "returned": 23,
+          "count": 23,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt4/parent-scoped-search/06-0.json",
+          "url": "https://api2.openreview.net/notes/search?term=backpropagation-free&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&offset=0&count=true"
+        }
+      ]
+    },
+    {
+      "term": "MeZO",
+      "official_count": 7,
+      "pages_fetched": 1,
+      "records_fetched": 7,
+      "unique_ids": 7,
+      "complete_to_reported_count": true,
+      "window_capped": false,
+      "initial_parent_error": null,
+      "pages": [
+        {
+          "offset": 0,
+          "returned": 7,
+          "count": 7,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt4/parent-scoped-search/07-0.json",
+          "url": "https://api2.openreview.net/notes/search?term=MeZO&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&offset=0&count=true"
+        }
+      ]
+    },
+    {
+      "term": "SPSA",
+      "official_count": 3,
+      "pages_fetched": 1,
+      "records_fetched": 3,
+      "unique_ids": 3,
+      "complete_to_reported_count": true,
+      "window_capped": false,
+      "initial_parent_error": null,
+      "pages": [
+        {
+          "offset": 0,
+          "returned": 3,
+          "count": 3,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt4/parent-scoped-search/08-0.json",
+          "url": "https://api2.openreview.net/notes/search?term=SPSA&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&offset=0&count=true"
+        }
+      ]
+    },
+    {
+      "term": "evolution strategies",
+      "official_count": 3187,
+      "pages_fetched": 4,
+      "records_fetched": 3187,
+      "unique_ids": 3187,
+      "complete_to_reported_count": true,
+      "window_capped": false,
+      "initial_parent_error": null,
+      "pages": [
+        {
+          "offset": 0,
+          "returned": 1000,
+          "count": 3187,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt4/parent-scoped-search/09-0.json",
+          "url": "https://api2.openreview.net/notes/search?term=evolution+strategies&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&offset=0&count=true"
+        },
+        {
+          "offset": 1000,
+          "returned": 1000,
+          "count": 3187,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt4/parent-scoped-search/09-1000.json",
+          "url": "https://api2.openreview.net/notes/search?term=evolution+strategies&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&offset=1000&count=true"
+        },
+        {
+          "offset": 2000,
+          "returned": 1000,
+          "count": 3187,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt4/parent-scoped-search/09-2000.json",
+          "url": "https://api2.openreview.net/notes/search?term=evolution+strategies&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&offset=2000&count=true"
+        },
+        {
+          "offset": 3000,
+          "returned": 187,
+          "count": 3187,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt4/parent-scoped-search/09-3000.json",
+          "url": "https://api2.openreview.net/notes/search?term=evolution+strategies&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&offset=3000&count=true"
+        }
+      ]
+    },
+    {
+      "term": "evolutionary optimization",
+      "official_count": 6336,
+      "pages_fetched": 7,
+      "records_fetched": 6336,
+      "unique_ids": 6336,
+      "complete_to_reported_count": true,
+      "window_capped": false,
+      "initial_parent_error": "HTTP Error 429: Too Many Requests",
+      "pages": [
+        {
+          "offset": 0,
+          "returned": 1000,
+          "count": 6336,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt4/parent-scoped-search/10-0.json",
+          "url": "https://api2.openreview.net/notes/search?term=evolutionary+optimization&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&offset=0&count=true"
+        },
+        {
+          "offset": 1000,
+          "returned": 1000,
+          "count": 6336,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt4/parent-scoped-search/10-1000.json",
+          "url": "https://api2.openreview.net/notes/search?term=evolutionary+optimization&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&offset=1000&count=true"
+        },
+        {
+          "offset": 2000,
+          "returned": 1000,
+          "count": 6336,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt4/parent-scoped-search/10-2000.json",
+          "url": "https://api2.openreview.net/notes/search?term=evolutionary+optimization&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&offset=2000&count=true"
+        },
+        {
+          "offset": 3000,
+          "returned": 1000,
+          "count": 6336,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/scoped-search/10-3000.json",
+          "url": "https://api2.openreview.net/notes/search?term=evolutionary optimization&group=ICLR.cc/2027/Conference&source=forum&limit=1000&offset=3000&count=true"
+        },
+        {
+          "offset": 4000,
+          "returned": 1000,
+          "count": 6336,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/scoped-search/10-4000.json",
+          "url": "https://api2.openreview.net/notes/search?term=evolutionary optimization&group=ICLR.cc/2027/Conference&source=forum&limit=1000&offset=4000&count=true"
+        },
+        {
+          "offset": 5000,
+          "returned": 1000,
+          "count": 6336,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/scoped-search/10-5000.json",
+          "url": "https://api2.openreview.net/notes/search?term=evolutionary optimization&group=ICLR.cc/2027/Conference&source=forum&limit=1000&offset=5000&count=true"
+        },
+        {
+          "offset": 6000,
+          "returned": 336,
+          "count": 6336,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/scoped-search/10-6000.json",
+          "url": "https://api2.openreview.net/notes/search?term=evolutionary optimization&group=ICLR.cc/2027/Conference&source=forum&limit=1000&offset=6000&count=true"
+        }
+      ]
+    },
+    {
+      "term": "neuroevolution",
+      "official_count": 8,
+      "pages_fetched": 1,
+      "records_fetched": 8,
+      "unique_ids": 8,
+      "complete_to_reported_count": true,
+      "window_capped": false,
+      "initial_parent_error": null,
+      "pages": [
+        {
+          "offset": 0,
+          "returned": 8,
+          "count": 8,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt4/parent-scoped-search/11-0.json",
+          "url": "https://api2.openreview.net/notes/search?term=neuroevolution&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&offset=0&count=true"
+        }
+      ]
+    },
+    {
+      "term": "CMA-ES",
+      "official_count": 19,
+      "pages_fetched": 1,
+      "records_fetched": 19,
+      "unique_ids": 19,
+      "complete_to_reported_count": true,
+      "window_capped": false,
+      "initial_parent_error": null,
+      "pages": [
+        {
+          "offset": 0,
+          "returned": 19,
+          "count": 19,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt4/parent-scoped-search/12-0.json",
+          "url": "https://api2.openreview.net/notes/search?term=CMA-ES&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&offset=0&count=true"
+        }
+      ]
+    },
+    {
+      "term": "parameter perturbation",
+      "official_count": 4738,
+      "pages_fetched": 5,
+      "records_fetched": 4738,
+      "unique_ids": 4738,
+      "complete_to_reported_count": true,
+      "window_capped": false,
+      "initial_parent_error": "HTTP Error 429: Too Many Requests",
+      "pages": [
+        {
+          "offset": 0,
+          "returned": 1000,
+          "count": 4738,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt4/parent-scoped-search/13-0.json",
+          "url": "https://api2.openreview.net/notes/search?term=parameter+perturbation&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&offset=0&count=true"
+        },
+        {
+          "offset": 1000,
+          "returned": 1000,
+          "count": 4738,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt4/parent-scoped-search/13-1000.json",
+          "url": "https://api2.openreview.net/notes/search?term=parameter+perturbation&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&offset=1000&count=true"
+        },
+        {
+          "offset": 2000,
+          "returned": 1000,
+          "count": 4738,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt4/parent-scoped-search/13-2000.json",
+          "url": "https://api2.openreview.net/notes/search?term=parameter+perturbation&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&offset=2000&count=true"
+        },
+        {
+          "offset": 3000,
+          "returned": 1000,
+          "count": 4738,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/scoped-search/13-3000.json",
+          "url": "https://api2.openreview.net/notes/search?term=parameter perturbation&group=ICLR.cc/2027/Conference&source=forum&limit=1000&offset=3000&count=true"
+        },
+        {
+          "offset": 4000,
+          "returned": 738,
+          "count": 4738,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/scoped-search/13-4000.json",
+          "url": "https://api2.openreview.net/notes/search?term=parameter perturbation&group=ICLR.cc/2027/Conference&source=forum&limit=1000&offset=4000&count=true"
+        }
+      ]
+    },
+    {
+      "term": "weight perturbation",
+      "official_count": 3767,
+      "pages_fetched": 4,
+      "records_fetched": 3767,
+      "unique_ids": 3766,
+      "complete_to_reported_count": true,
+      "window_capped": false,
+      "initial_parent_error": "HTTP Error 429: Too Many Requests",
+      "pages": [
+        {
+          "offset": 0,
+          "returned": 1000,
+          "count": 3767,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/scoped-search/14-0.json",
+          "url": "https://api2.openreview.net/notes/search?term=weight perturbation&group=ICLR.cc/2027/Conference&source=forum&limit=1000&offset=0&count=true"
+        },
+        {
+          "offset": 1000,
+          "returned": 1000,
+          "count": 3767,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/scoped-search/14-1000.json",
+          "url": "https://api2.openreview.net/notes/search?term=weight perturbation&group=ICLR.cc/2027/Conference&source=forum&limit=1000&offset=1000&count=true"
+        },
+        {
+          "offset": 2000,
+          "returned": 1000,
+          "count": 3767,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/scoped-search/14-2000.json",
+          "url": "https://api2.openreview.net/notes/search?term=weight perturbation&group=ICLR.cc/2027/Conference&source=forum&limit=1000&offset=2000&count=true"
+        },
+        {
+          "offset": 3000,
+          "returned": 767,
+          "count": 3767,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/scoped-search/14-3000.json",
+          "url": "https://api2.openreview.net/notes/search?term=weight perturbation&group=ICLR.cc/2027/Conference&source=forum&limit=1000&offset=3000&count=true"
+        }
+      ]
+    },
+    {
+      "term": "random subspace",
+      "official_count": 3007,
+      "pages_fetched": 4,
+      "records_fetched": 3007,
+      "unique_ids": 3007,
+      "complete_to_reported_count": true,
+      "window_capped": false,
+      "initial_parent_error": "HTTP Error 429: Too Many Requests",
+      "pages": [
+        {
+          "offset": 0,
+          "returned": 1000,
+          "count": 3007,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/scoped-search/15-0.json",
+          "url": "https://api2.openreview.net/notes/search?term=random subspace&group=ICLR.cc/2027/Conference&source=forum&limit=1000&offset=0&count=true"
+        },
+        {
+          "offset": 1000,
+          "returned": 1000,
+          "count": 3007,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/scoped-search/15-1000.json",
+          "url": "https://api2.openreview.net/notes/search?term=random subspace&group=ICLR.cc/2027/Conference&source=forum&limit=1000&offset=1000&count=true"
+        },
+        {
+          "offset": 2000,
+          "returned": 1000,
+          "count": 3007,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/scoped-search/15-2000.json",
+          "url": "https://api2.openreview.net/notes/search?term=random subspace&group=ICLR.cc/2027/Conference&source=forum&limit=1000&offset=2000&count=true"
+        },
+        {
+          "offset": 3000,
+          "returned": 7,
+          "count": 3007,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/scoped-search/15-3000.json",
+          "url": "https://api2.openreview.net/notes/search?term=random subspace&group=ICLR.cc/2027/Conference&source=forum&limit=1000&offset=3000&count=true"
+        }
+      ]
+    },
+    {
+      "term": "AIM-ZO",
+      "official_count": 1,
+      "pages_fetched": 1,
+      "records_fetched": 1,
+      "unique_ids": 1,
+      "complete_to_reported_count": true,
+      "window_capped": false,
+      "initial_parent_error": "HTTP Error 429: Too Many Requests",
+      "pages": [
+        {
+          "offset": 0,
+          "returned": 1,
+          "count": 1,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/scoped-search/16-0.json",
+          "url": "https://api2.openreview.net/notes/search?term=AIM-ZO&group=ICLR.cc/2027/Conference&source=forum&limit=1000&offset=0&count=true"
+        }
+      ]
+    },
+    {
+      "term": "DART-ES",
+      "official_count": 1,
+      "pages_fetched": 1,
+      "records_fetched": 1,
+      "unique_ids": 1,
+      "complete_to_reported_count": true,
+      "window_capped": false,
+      "initial_parent_error": "HTTP Error 429: Too Many Requests",
+      "pages": [
+        {
+          "offset": 0,
+          "returned": 1,
+          "count": 1,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/scoped-search/17-0.json",
+          "url": "https://api2.openreview.net/notes/search?term=DART-ES&group=ICLR.cc/2027/Conference&source=forum&limit=1000&offset=0&count=true"
+        }
+      ]
+    },
+    {
+      "term": "Agentic ESOpt",
+      "official_count": 1863,
+      "pages_fetched": 2,
+      "records_fetched": 1863,
+      "unique_ids": 1863,
+      "complete_to_reported_count": true,
+      "window_capped": false,
+      "initial_parent_error": "HTTP Error 429: Too Many Requests",
+      "pages": [
+        {
+          "offset": 0,
+          "returned": 1000,
+          "count": 1863,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/scoped-search/18-0.json",
+          "url": "https://api2.openreview.net/notes/search?term=Agentic ESOpt&group=ICLR.cc/2027/Conference&source=forum&limit=1000&offset=0&count=true"
+        },
+        {
+          "offset": 1000,
+          "returned": 863,
+          "count": 1863,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/scoped-search/18-1000.json",
+          "url": "https://api2.openreview.net/notes/search?term=Agentic ESOpt&group=ICLR.cc/2027/Conference&source=forum&limit=1000&offset=1000&count=true"
+        }
+      ]
+    },
+    {
+      "term": "SubZero",
+      "official_count": 1,
+      "pages_fetched": 1,
+      "records_fetched": 1,
+      "unique_ids": 1,
+      "complete_to_reported_count": true,
+      "window_capped": false,
+      "initial_parent_error": "HTTP Error 429: Too Many Requests",
+      "pages": [
+        {
+          "offset": 0,
+          "returned": 1,
+          "count": 1,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/scoped-search/19-0.json",
+          "url": "https://api2.openreview.net/notes/search?term=SubZero&group=ICLR.cc/2027/Conference&source=forum&limit=1000&offset=0&count=true"
+        }
+      ]
+    },
+    {
+      "term": "LOZO",
+      "official_count": 2,
+      "pages_fetched": 1,
+      "records_fetched": 2,
+      "unique_ids": 2,
+      "complete_to_reported_count": true,
+      "window_capped": false,
+      "initial_parent_error": "HTTP Error 429: Too Many Requests",
+      "pages": [
+        {
+          "offset": 0,
+          "returned": 2,
+          "count": 2,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/scoped-search/20-0.json",
+          "url": "https://api2.openreview.net/notes/search?term=LOZO&group=ICLR.cc/2027/Conference&source=forum&limit=1000&offset=0&count=true"
+        }
+      ]
+    },
+    {
+      "term": "ZO-Act",
+      "official_count": 1,
+      "pages_fetched": 1,
+      "records_fetched": 1,
+      "unique_ids": 1,
+      "complete_to_reported_count": true,
+      "window_capped": false,
+      "initial_parent_error": "HTTP Error 429: Too Many Requests",
+      "pages": [
+        {
+          "offset": 0,
+          "returned": 1,
+          "count": 1,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/scoped-search/21-0.json",
+          "url": "https://api2.openreview.net/notes/search?term=ZO-Act&group=ICLR.cc/2027/Conference&source=forum&limit=1000&offset=0&count=true"
+        }
+      ]
+    },
+    {
+      "term": "ZoAQ",
+      "official_count": 1,
+      "pages_fetched": 1,
+      "records_fetched": 1,
+      "unique_ids": 1,
+      "complete_to_reported_count": true,
+      "window_capped": false,
+      "initial_parent_error": "HTTP Error 429: Too Many Requests",
+      "pages": [
+        {
+          "offset": 0,
+          "returned": 1,
+          "count": 1,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/scoped-search/22-0.json",
+          "url": "https://api2.openreview.net/notes/search?term=ZoAQ&group=ICLR.cc/2027/Conference&source=forum&limit=1000&offset=0&count=true"
+        }
+      ]
+    },
+    {
+      "term": "Sample the Order, Not the Token",
+      "official_count": 10000,
+      "pages_fetched": 10,
+      "records_fetched": 10000,
+      "unique_ids": 9958,
+      "complete_to_reported_count": false,
+      "window_capped": true,
+      "initial_parent_error": "HTTP Error 429: Too Many Requests",
+      "pages": [
+        {
+          "offset": 0,
+          "returned": 1000,
+          "count": 10000,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/scoped-search/23-0.json",
+          "url": "https://api2.openreview.net/notes/search?term=Sample the Order, Not the Token&group=ICLR.cc/2027/Conference&source=forum&limit=1000&offset=0&count=true"
+        },
+        {
+          "offset": 1000,
+          "returned": 1000,
+          "count": 10000,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/scoped-search/23-1000.json",
+          "url": "https://api2.openreview.net/notes/search?term=Sample the Order, Not the Token&group=ICLR.cc/2027/Conference&source=forum&limit=1000&offset=1000&count=true"
+        },
+        {
+          "offset": 2000,
+          "returned": 1000,
+          "count": 10000,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/scoped-search/23-2000.json",
+          "url": "https://api2.openreview.net/notes/search?term=Sample the Order, Not the Token&group=ICLR.cc/2027/Conference&source=forum&limit=1000&offset=2000&count=true"
+        },
+        {
+          "offset": 3000,
+          "returned": 1000,
+          "count": 10000,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/scoped-search/23-3000.json",
+          "url": "https://api2.openreview.net/notes/search?term=Sample the Order, Not the Token&group=ICLR.cc/2027/Conference&source=forum&limit=1000&offset=3000&count=true"
+        },
+        {
+          "offset": 4000,
+          "returned": 1000,
+          "count": 10000,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/scoped-search/23-4000.json",
+          "url": "https://api2.openreview.net/notes/search?term=Sample the Order, Not the Token&group=ICLR.cc/2027/Conference&source=forum&limit=1000&offset=4000&count=true"
+        },
+        {
+          "offset": 5000,
+          "returned": 1000,
+          "count": 10000,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/scoped-search/23-5000.json",
+          "url": "https://api2.openreview.net/notes/search?term=Sample the Order, Not the Token&group=ICLR.cc/2027/Conference&source=forum&limit=1000&offset=5000&count=true"
+        },
+        {
+          "offset": 6000,
+          "returned": 1000,
+          "count": 10000,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/scoped-search/23-6000.json",
+          "url": "https://api2.openreview.net/notes/search?term=Sample the Order, Not the Token&group=ICLR.cc/2027/Conference&source=forum&limit=1000&offset=6000&count=true"
+        },
+        {
+          "offset": 7000,
+          "returned": 1000,
+          "count": 10000,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/scoped-search/23-7000.json",
+          "url": "https://api2.openreview.net/notes/search?term=Sample the Order, Not the Token&group=ICLR.cc/2027/Conference&source=forum&limit=1000&offset=7000&count=true"
+        },
+        {
+          "offset": 8000,
+          "returned": 1000,
+          "count": 10000,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/scoped-search/23-8000.json",
+          "url": "https://api2.openreview.net/notes/search?term=Sample the Order, Not the Token&group=ICLR.cc/2027/Conference&source=forum&limit=1000&offset=8000&count=true"
+        },
+        {
+          "offset": 9000,
+          "returned": 1000,
+          "count": 10000,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/scoped-search/23-9000.json",
+          "url": "https://api2.openreview.net/notes/search?term=Sample the Order, Not the Token&group=ICLR.cc/2027/Conference&source=forum&limit=1000&offset=9000&count=true"
+        }
+      ]
+    },
+    {
+      "term": "black-box",
+      "official_count": 718,
+      "pages_fetched": 1,
+      "records_fetched": 718,
+      "unique_ids": 718,
+      "complete_to_reported_count": true,
+      "window_capped": false,
+      "initial_parent_error": "HTTP Error 429: Too Many Requests",
+      "pages": [
+        {
+          "offset": 0,
+          "returned": 718,
+          "count": 718,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/scoped-search/24-0.json",
+          "url": "https://api2.openreview.net/notes/search?term=black-box&group=ICLR.cc/2027/Conference&source=forum&limit=1000&offset=0&count=true"
+        }
+      ]
+    },
+    {
+      "term": "backprop-free",
+      "official_count": 4,
+      "pages_fetched": 1,
+      "records_fetched": 4,
+      "unique_ids": 4,
+      "complete_to_reported_count": true,
+      "window_capped": false,
+      "initial_parent_error": "HTTP Error 429: Too Many Requests",
+      "pages": [
+        {
+          "offset": 0,
+          "returned": 4,
+          "count": 4,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/scoped-search/25-0.json",
+          "url": "https://api2.openreview.net/notes/search?term=backprop-free&group=ICLR.cc/2027/Conference&source=forum&limit=1000&offset=0&count=true"
+        }
+      ]
+    },
+    {
+      "term": "backpropagation free",
+      "official_count": 5646,
+      "pages_fetched": 6,
+      "records_fetched": 5646,
+      "unique_ids": 5646,
+      "complete_to_reported_count": true,
+      "window_capped": false,
+      "initial_parent_error": "HTTP Error 429: Too Many Requests",
+      "pages": [
+        {
+          "offset": 0,
+          "returned": 1000,
+          "count": 5646,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/scoped-search/26-0.json",
+          "url": "https://api2.openreview.net/notes/search?term=backpropagation free&group=ICLR.cc/2027/Conference&source=forum&limit=1000&offset=0&count=true"
+        },
+        {
+          "offset": 1000,
+          "returned": 1000,
+          "count": 5646,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/scoped-search/26-1000.json",
+          "url": "https://api2.openreview.net/notes/search?term=backpropagation free&group=ICLR.cc/2027/Conference&source=forum&limit=1000&offset=1000&count=true"
+        },
+        {
+          "offset": 2000,
+          "returned": 1000,
+          "count": 5646,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/scoped-search/26-2000.json",
+          "url": "https://api2.openreview.net/notes/search?term=backpropagation free&group=ICLR.cc/2027/Conference&source=forum&limit=1000&offset=2000&count=true"
+        },
+        {
+          "offset": 3000,
+          "returned": 1000,
+          "count": 5646,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/scoped-search/26-3000.json",
+          "url": "https://api2.openreview.net/notes/search?term=backpropagation free&group=ICLR.cc/2027/Conference&source=forum&limit=1000&offset=3000&count=true"
+        },
+        {
+          "offset": 4000,
+          "returned": 1000,
+          "count": 5646,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/scoped-search/26-4000.json",
+          "url": "https://api2.openreview.net/notes/search?term=backpropagation free&group=ICLR.cc/2027/Conference&source=forum&limit=1000&offset=4000&count=true"
+        },
+        {
+          "offset": 5000,
+          "returned": 646,
+          "count": 5646,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/scoped-search/26-5000.json",
+          "url": "https://api2.openreview.net/notes/search?term=backpropagation free&group=ICLR.cc/2027/Conference&source=forum&limit=1000&offset=5000&count=true"
+        }
+      ]
+    },
+    {
+      "term": "forward gradient",
+      "official_count": 5360,
+      "pages_fetched": 6,
+      "records_fetched": 5360,
+      "unique_ids": 5360,
+      "complete_to_reported_count": true,
+      "window_capped": false,
+      "initial_parent_error": "HTTP Error 429: Too Many Requests",
+      "pages": [
+        {
+          "offset": 0,
+          "returned": 1000,
+          "count": 5360,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/scoped-search/27-0.json",
+          "url": "https://api2.openreview.net/notes/search?term=forward gradient&group=ICLR.cc/2027/Conference&source=forum&limit=1000&offset=0&count=true"
+        },
+        {
+          "offset": 1000,
+          "returned": 1000,
+          "count": 5360,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/scoped-search/27-1000.json",
+          "url": "https://api2.openreview.net/notes/search?term=forward gradient&group=ICLR.cc/2027/Conference&source=forum&limit=1000&offset=1000&count=true"
+        },
+        {
+          "offset": 2000,
+          "returned": 1000,
+          "count": 5360,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/scoped-search/27-2000.json",
+          "url": "https://api2.openreview.net/notes/search?term=forward gradient&group=ICLR.cc/2027/Conference&source=forum&limit=1000&offset=2000&count=true"
+        },
+        {
+          "offset": 3000,
+          "returned": 1000,
+          "count": 5360,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/scoped-search/27-3000.json",
+          "url": "https://api2.openreview.net/notes/search?term=forward gradient&group=ICLR.cc/2027/Conference&source=forum&limit=1000&offset=3000&count=true"
+        },
+        {
+          "offset": 4000,
+          "returned": 1000,
+          "count": 5360,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/scoped-search/27-4000.json",
+          "url": "https://api2.openreview.net/notes/search?term=forward gradient&group=ICLR.cc/2027/Conference&source=forum&limit=1000&offset=4000&count=true"
+        },
+        {
+          "offset": 5000,
+          "returned": 360,
+          "count": 5360,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/scoped-search/27-5000.json",
+          "url": "https://api2.openreview.net/notes/search?term=forward gradient&group=ICLR.cc/2027/Conference&source=forum&limit=1000&offset=5000&count=true"
+        }
+      ]
+    },
+    {
+      "term": "finite difference",
+      "official_count": 3949,
+      "pages_fetched": 4,
+      "records_fetched": 3949,
+      "unique_ids": 3949,
+      "complete_to_reported_count": true,
+      "window_capped": false,
+      "initial_parent_error": "HTTP Error 429: Too Many Requests",
+      "pages": [
+        {
+          "offset": 0,
+          "returned": 1000,
+          "count": 3949,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/scoped-search/28-0.json",
+          "url": "https://api2.openreview.net/notes/search?term=finite difference&group=ICLR.cc/2027/Conference&source=forum&limit=1000&offset=0&count=true"
+        },
+        {
+          "offset": 1000,
+          "returned": 1000,
+          "count": 3949,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/scoped-search/28-1000.json",
+          "url": "https://api2.openreview.net/notes/search?term=finite difference&group=ICLR.cc/2027/Conference&source=forum&limit=1000&offset=1000&count=true"
+        },
+        {
+          "offset": 2000,
+          "returned": 1000,
+          "count": 3949,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/scoped-search/28-2000.json",
+          "url": "https://api2.openreview.net/notes/search?term=finite difference&group=ICLR.cc/2027/Conference&source=forum&limit=1000&offset=2000&count=true"
+        },
+        {
+          "offset": 3000,
+          "returned": 949,
+          "count": 3949,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/scoped-search/28-3000.json",
+          "url": "https://api2.openreview.net/notes/search?term=finite difference&group=ICLR.cc/2027/Conference&source=forum&limit=1000&offset=3000&count=true"
+        }
+      ]
+    },
+    {
+      "term": "evolution strategy",
+      "official_count": 3666,
+      "pages_fetched": 4,
+      "records_fetched": 3666,
+      "unique_ids": 3666,
+      "complete_to_reported_count": true,
+      "window_capped": false,
+      "initial_parent_error": "HTTP Error 429: Too Many Requests",
+      "pages": [
+        {
+          "offset": 0,
+          "returned": 1000,
+          "count": 3666,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/scoped-search/29-0.json",
+          "url": "https://api2.openreview.net/notes/search?term=evolution strategy&group=ICLR.cc/2027/Conference&source=forum&limit=1000&offset=0&count=true"
+        },
+        {
+          "offset": 1000,
+          "returned": 1000,
+          "count": 3666,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/scoped-search/29-1000.json",
+          "url": "https://api2.openreview.net/notes/search?term=evolution strategy&group=ICLR.cc/2027/Conference&source=forum&limit=1000&offset=1000&count=true"
+        },
+        {
+          "offset": 2000,
+          "returned": 1000,
+          "count": 3666,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/scoped-search/29-2000.json",
+          "url": "https://api2.openreview.net/notes/search?term=evolution strategy&group=ICLR.cc/2027/Conference&source=forum&limit=1000&offset=2000&count=true"
+        },
+        {
+          "offset": 3000,
+          "returned": 666,
+          "count": 3666,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/scoped-search/29-3000.json",
+          "url": "https://api2.openreview.net/notes/search?term=evolution strategy&group=ICLR.cc/2027/Conference&source=forum&limit=1000&offset=3000&count=true"
+        }
+      ]
+    },
+    {
+      "term": "evolutionary search",
+      "official_count": 3129,
+      "pages_fetched": 4,
+      "records_fetched": 3129,
+      "unique_ids": 3129,
+      "complete_to_reported_count": true,
+      "window_capped": false,
+      "initial_parent_error": "HTTP Error 429: Too Many Requests",
+      "pages": [
+        {
+          "offset": 0,
+          "returned": 1000,
+          "count": 3129,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/scoped-search/30-0.json",
+          "url": "https://api2.openreview.net/notes/search?term=evolutionary search&group=ICLR.cc/2027/Conference&source=forum&limit=1000&offset=0&count=true"
+        },
+        {
+          "offset": 1000,
+          "returned": 1000,
+          "count": 3129,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/scoped-search/30-1000.json",
+          "url": "https://api2.openreview.net/notes/search?term=evolutionary search&group=ICLR.cc/2027/Conference&source=forum&limit=1000&offset=1000&count=true"
+        },
+        {
+          "offset": 2000,
+          "returned": 1000,
+          "count": 3129,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/scoped-search/30-2000.json",
+          "url": "https://api2.openreview.net/notes/search?term=evolutionary search&group=ICLR.cc/2027/Conference&source=forum&limit=1000&offset=2000&count=true"
+        },
+        {
+          "offset": 3000,
+          "returned": 129,
+          "count": 3129,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/scoped-search/30-3000.json",
+          "url": "https://api2.openreview.net/notes/search?term=evolutionary search&group=ICLR.cc/2027/Conference&source=forum&limit=1000&offset=3000&count=true"
+        }
+      ]
+    },
+    {
+      "term": "ES optimization",
+      "official_count": 6183,
+      "pages_fetched": 7,
+      "records_fetched": 6183,
+      "unique_ids": 6183,
+      "complete_to_reported_count": true,
+      "window_capped": false,
+      "initial_parent_error": "HTTP Error 429: Too Many Requests",
+      "pages": [
+        {
+          "offset": 0,
+          "returned": 1000,
+          "count": 6183,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/scoped-search/31-0.json",
+          "url": "https://api2.openreview.net/notes/search?term=ES optimization&group=ICLR.cc/2027/Conference&source=forum&limit=1000&offset=0&count=true"
+        },
+        {
+          "offset": 1000,
+          "returned": 1000,
+          "count": 6183,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/scoped-search/31-1000.json",
+          "url": "https://api2.openreview.net/notes/search?term=ES optimization&group=ICLR.cc/2027/Conference&source=forum&limit=1000&offset=1000&count=true"
+        },
+        {
+          "offset": 2000,
+          "returned": 1000,
+          "count": 6183,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/scoped-search/31-2000.json",
+          "url": "https://api2.openreview.net/notes/search?term=ES optimization&group=ICLR.cc/2027/Conference&source=forum&limit=1000&offset=2000&count=true"
+        },
+        {
+          "offset": 3000,
+          "returned": 1000,
+          "count": 6183,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/scoped-search/31-3000.json",
+          "url": "https://api2.openreview.net/notes/search?term=ES optimization&group=ICLR.cc/2027/Conference&source=forum&limit=1000&offset=3000&count=true"
+        },
+        {
+          "offset": 4000,
+          "returned": 1000,
+          "count": 6183,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/scoped-search/31-4000.json",
+          "url": "https://api2.openreview.net/notes/search?term=ES optimization&group=ICLR.cc/2027/Conference&source=forum&limit=1000&offset=4000&count=true"
+        },
+        {
+          "offset": 5000,
+          "returned": 1000,
+          "count": 6183,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/scoped-search/31-5000.json",
+          "url": "https://api2.openreview.net/notes/search?term=ES optimization&group=ICLR.cc/2027/Conference&source=forum&limit=1000&offset=5000&count=true"
+        },
+        {
+          "offset": 6000,
+          "returned": 183,
+          "count": 6183,
+          "http_status": 200,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/scoped-search/31-6000.json",
+          "url": "https://api2.openreview.net/notes/search?term=ES optimization&group=ICLR.cc/2027/Conference&source=forum&limit=1000&offset=6000&count=true"
+        }
+      ]
+    }
+  ],
+  "keyword_summary": {
+    "query_count": 31,
+    "pages_fetched": 85,
+    "records_before_cross_query_dedup": 61901,
+    "unique_openreview_ids": 29623,
+    "complete_queries": 30,
+    "window_capped_queries": 1,
+    "continuation_requests": 65,
+    "continuation_http_429": 0,
+    "term_semantics": "Multi-word term is OR-expanded by the service; candidates were filtered again against title, abstract, and keywords."
+  },
+  "venue_windows": {
+    "ascending": {
+      "sort": "cdate:asc",
+      "pages_fetched": 10,
+      "records_fetched": 10000,
+      "unique_ids": 10000,
+      "official_count": 10000,
+      "min_cdate_ms": 1787141330137,
+      "max_cdate_ms": 1789215224711,
+      "pages": [
+        {
+          "offset": 0,
+          "returned": 1000,
+          "count": 10000,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/allvenue/asc-0.json"
+        },
+        {
+          "offset": 1000,
+          "returned": 1000,
+          "count": 10000,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/allvenue/asc-1000.json"
+        },
+        {
+          "offset": 2000,
+          "returned": 1000,
+          "count": 10000,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/allvenue/asc-2000.json"
+        },
+        {
+          "offset": 3000,
+          "returned": 1000,
+          "count": 10000,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/allvenue/asc-3000.json"
+        },
+        {
+          "offset": 4000,
+          "returned": 1000,
+          "count": 10000,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/allvenue/asc-4000.json"
+        },
+        {
+          "offset": 5000,
+          "returned": 1000,
+          "count": 10000,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/allvenue/asc-5000.json"
+        },
+        {
+          "offset": 6000,
+          "returned": 1000,
+          "count": 10000,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/allvenue/asc-6000.json"
+        },
+        {
+          "offset": 7000,
+          "returned": 1000,
+          "count": 10000,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/allvenue/asc-7000.json"
+        },
+        {
+          "offset": 8000,
+          "returned": 1000,
+          "count": 10000,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/allvenue/asc-8000.json"
+        },
+        {
+          "offset": 9000,
+          "returned": 1000,
+          "count": 10000,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/allvenue/asc-9000.json"
+        }
+      ]
+    },
+    "descending": {
+      "sort": "cdate:desc",
+      "pages_fetched": 10,
+      "records_fetched": 10000,
+      "unique_ids": 10000,
+      "official_count": 10000,
+      "min_cdate_ms": 1789748368818,
+      "max_cdate_ms": 1789819923012,
+      "pages": [
+        {
+          "offset": 0,
+          "returned": 1000,
+          "count": 10000,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/allvenue/desc-0.json"
+        },
+        {
+          "offset": 1000,
+          "returned": 1000,
+          "count": 10000,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/allvenue/desc-1000.json"
+        },
+        {
+          "offset": 2000,
+          "returned": 1000,
+          "count": 10000,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/allvenue/desc-2000.json"
+        },
+        {
+          "offset": 3000,
+          "returned": 1000,
+          "count": 10000,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/allvenue/desc-3000.json"
+        },
+        {
+          "offset": 4000,
+          "returned": 1000,
+          "count": 10000,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/allvenue/desc-4000.json"
+        },
+        {
+          "offset": 5000,
+          "returned": 1000,
+          "count": 10000,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/allvenue/desc-5000.json"
+        },
+        {
+          "offset": 6000,
+          "returned": 1000,
+          "count": 10000,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/allvenue/desc-6000.json"
+        },
+        {
+          "offset": 7000,
+          "returned": 1000,
+          "count": 10000,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/allvenue/desc-7000.json"
+        },
+        {
+          "offset": 8000,
+          "returned": 1000,
+          "count": 10000,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/allvenue/desc-8000.json"
+        },
+        {
+          "offset": 9000,
+          "returned": 1000,
+          "count": 10000,
+          "cache": "/tmp/iclr2027-catalog-20261011-attempt5/allvenue/desc-9000.json"
+        }
+      ]
+    },
+    "overlap_unique_ids": 0,
+    "middle_cdate_gap_ms": [
+      1789215224711,
+      1789748368818
+    ],
+    "venue_window_union_unique_ids": 20000,
+    "venue_plus_keyword_union_unique_ids": 35728
+  },
+  "partition_probes": [
+    {
+      "parameters": [
+        "after",
+        "before",
+        "fromdate",
+        "todate"
+      ],
+      "result": "ignored by search service; count and first note unchanged",
+      "status": "not usable for complete partitioning"
+    },
+    {
+      "parameters": [
+        "sort=title:asc"
+      ],
+      "attempted_at": "2026-10-11T17:01:25+08:00",
+      "http_status": 400,
+      "official_error": "No mapping found for [title] in order to sort on",
+      "cache": "/tmp/iclr2027-catalog-20261011-attempt5/allvenue/titleasc-0.json"
+    }
+  ],
+  "coverage_conclusion": {
+    "full_venue_retrieval_complete": false,
+    "verified_unique_id_lower_bound": 35728,
+    "reason_zh": "官方 venueid 搜索的 count/结果窗口封顶 10000；cdate 正序与倒序各 10000 条且零交集，中间日期区间未取得。日期过滤参数被忽略，title 排序返回 400；完整 notes endpoint 仍为 ChallengeRequiredError。",
+    "claim": "Partial, auditable coverage only; never described as all ICLR 2027 submissions."
+  }
+}

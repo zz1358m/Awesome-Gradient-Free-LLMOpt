@@ -27,9 +27,9 @@ Do not edit content between the `GENERATED CATALOG` markers directly. The genera
 
 ## Scope checks
 
-The optimized object must be persistent LLM parameters, adapters, structured parameter subspaces, or quantized weights. The optimization loop must explicitly use function evaluations, a zeroth-order estimator, evolutionary selection, or a population ES update.
+Core ES/ZO sections require persistent LLM parameters, adapters, structured parameter subspaces, or quantized weights, with function evaluations, a zeroth-order estimator, evolutionary selection, or a population ES update.
 
-Prompt evolution, chain-of-thought search, candidate-answer evolution, skill/memory evolution, and other object-level methods are out of scope. General reinforcement learning and generic agent self-improvement are not sufficient.
+Boundary work on prompts, chain-of-thought, candidate answers, skills, workflows, harnesses, scripts, memory, reward modules, model composition, and inference-time search belongs in a labeled related section when the official abstract establishes a concrete LLM/VLM optimization connection. Do not include papers that merely use “evolving” as rhetoric without a concrete method connection. Do not infer frozen weights, absence of backpropagation, or absence of persistent model updates from an external search object; record each model, proposer, scorer/verifier, surrogate, and external artifact separately, and mark missing facts as unverified.
 
 ## Classification
 
@@ -50,6 +50,7 @@ Choose exactly one primary section:
 - `zo_understanding` — ZO understanding/systems
 - `related_hybrid` — related hybrid first-/zeroth-order methods
 - `related_inference` — related inference-time calibration without parameter updates
+- `related_prompt_agent` — gradient-free search over prompts, agent skills/workflows/harnesses, memory, scripts, rewards, model composition, or other external artifacts; separately record model-weight updates, external-artifact persistence, and unknown component training
 
 Use the exact category keys from `data/papers.json`; the labels above describe where each key appears in the README.
 

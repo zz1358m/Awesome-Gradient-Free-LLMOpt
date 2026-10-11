@@ -102,6 +102,10 @@ CATEGORIES = [
         "key": "related_inference", "family": "RELATED", "level": 3,
         "en": "Inference-time calibration without parameter updates", "zh": "无参数更新的推理时校准",
     },
+    {
+        "key": "related_prompt_agent", "family": "RELATED", "level": 3,
+        "en": "Gradient-free search over prompts, agents, and external artifacts", "zh": "提示词、智能体与外部工件的梯度无关搜索",
+    },
 ]
 
 CATEGORY_BY_KEY = {category["key"]: category for category in CATEGORIES}
@@ -231,8 +235,8 @@ def render_catalog(papers: list[dict[str, str]], language: str) -> str:
         )
     lines.extend([
         "", "## Related research" if language == "en" else "## 关联研究", "",
-        "These companion entries include methods that retain backpropagation or do not update persistent model parameters; each entry states that boundary explicitly."
-        if language == "en" else "关联条目涵盖仍依赖反向传播或不更新持久模型参数的方法，各条目明确标注这一边界。",
+        "These companion entries may retain backpropagation, operate at inference time, or optimize prompts, agents, and other external artifacts. Each entry records component-level backpropagation, persistent model weights, persistent external artifacts, and unresolved details only when supported."
+        if language == "en" else "关联条目可包含仍依赖反向传播、仅在推理时运行，或优化提示词、智能体及其他外部工件的方法。各条目仅依据原文记录逐组件反传、持久模型权重、持久外部工件和待核实事项。",
     ])
     for category in CATEGORIES:
         if category["family"] == "RELATED":
@@ -245,7 +249,7 @@ def replace_catalog(path: Path, language: str, catalog: str) -> None:
     content = path.read_text(encoding="utf-8")
     if START in content and END in content:
         pattern = re.compile(re.escape(START) + r".*?" + re.escape(END) + r"\n?", re.S)
-        updated = pattern.sub(catalog, content, count=1)
+        updated = pattern.sub(lambda _match: catalog, content, count=1)
     else:
         start_heading = "## Evolution strategies" if language == "en" else "## 进化策略"
         end_heading = "## Scope" if language == "en" else "## 收录范围"
