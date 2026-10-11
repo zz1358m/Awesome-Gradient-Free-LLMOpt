@@ -1,0 +1,341 @@
+{
+  "review_date": "2026-10-12",
+  "candidate_count": 37,
+  "deferred_count": 34,
+  "retained_count": 3,
+  "decisions": [
+    {
+      "title": "TITRATE: Adapting Self-Distillation Weight and Skill Refresh to Training Dynamics",
+      "openreview_id": "sCJWZK42vA",
+      "source_url": "https://openreview.net/forum?id=sCJWZK42vA",
+      "original_category": "related_hybrid",
+      "decision": "defer",
+      "reason_zh": "官方摘要显示技能是主要研究对象或核心机制：TITRATE 在 on-policy self-distillation RL 中联合维护版本化 skill bank、依据 rollout 证据和调用预算决定技能复用或刷新，并按训练进展及梯度冲突自适应调整蒸馏权重。",
+      "evidence_basis_zh": "现有 OpenReview 官方投稿摘要与仓库 2026-10-11 主审查记录；未启动新检索。"
+    },
+    {
+      "title": "RideSkill: A Hierarchical Algorithm for Generalized Ride Sharing with LLM-Driven Automatic Evolution",
+      "openreview_id": "fmCe2SzUjW",
+      "source_url": "https://openreview.net/forum?id=fmCe2SzUjW",
+      "original_category": "related_prompt_agent",
+      "decision": "defer",
+      "reason_zh": "官方摘要显示技能是主要研究对象或核心机制：把共享出行决策分解为从技能库为车辆分配策略的 combiner 与顺序重定位空车的 repositioner，并用 LLM-based automatic evolutionary method 联合构建技能库和这两个部署组件。",
+      "evidence_basis_zh": "现有 OpenReview 官方投稿摘要与仓库 2026-10-11 主审查记录；未启动新检索。"
+    },
+    {
+      "title": "OR-Skill: Self Evolutionary Agent Skills for Optimization Modeling",
+      "openreview_id": "oGepteMxUI",
+      "source_url": "https://openreview.net/forum?id=oGepteMxUI",
+      "original_category": "related_hybrid",
+      "decision": "defer",
+      "reason_zh": "官方摘要显示技能是主要研究对象或核心机制：让通用 coding agent 执行带候选技能的优化建模任务，从失败反馈形成分层诊断报告，再按错误严重度逆序级联修订技能。",
+      "evidence_basis_zh": "现有 OpenReview 官方投稿摘要与仓库 2026-10-11 主审查记录；未启动新检索。"
+    },
+    {
+      "title": "MoS-VLA: A Vision-Language-Action Model with One-Shot Skill Adaptation",
+      "openreview_id": "jeYa5D7gYZ",
+      "source_url": "https://openreview.net/forum?id=jeYa5D7gYZ",
+      "original_category": "related_prompt_agent",
+      "decision": "defer",
+      "reason_zh": "官方摘要显示技能是主要研究对象或核心机制：把机器人策略表示为已学习基函数的连续线性组合，并在测试时用一次专家示范和梯度无关凸优化求解最小化 L1 动作误差的混合系数。",
+      "evidence_basis_zh": "现有 OpenReview 官方投稿摘要与仓库 2026-10-11 主审查记录；未启动新检索。"
+    },
+    {
+      "title": "When Small Evaluator Biases Become Permanent: Phase Transitions in Self-Evolving Agent Skill Libraries",
+      "openreview_id": "zEFUowQZuR",
+      "source_url": "https://openreview.net/forum?id=zEFUowQZuR",
+      "original_category": "related_prompt_agent",
+      "decision": "defer",
+      "reason_zh": "官方摘要显示技能是主要研究对象或核心机制：CRR 用质量加权的属性频率与群体暴露差异刻画技能库中的评估选择、mutation/repair 方向和检索强化，结合因果干预与层次 Bayesian state-space 估计机制参数，并据 posterior 选择兼顾效用的稳定裕度控制。",
+      "evidence_basis_zh": "现有 OpenReview 官方投稿摘要与仓库 2026-10-11 主审查记录；未启动新检索。"
+    },
+    {
+      "title": "Test Time Computing for Evolving Agent Skill Optimization",
+      "openreview_id": "LUKh19HsU1",
+      "source_url": "https://openreview.net/forum?id=LUKh19HsU1",
+      "original_category": "related_prompt_agent",
+      "decision": "defer",
+      "reason_zh": "官方摘要显示技能是主要研究对象或核心机制：EvoBranch 在既有技能修订器之外增加分支局部修订、跨分支突变与交叉及基于验证的 Top-M 波束选择，以探索单一路径早期决策可能错过的技能改进方向。",
+      "evidence_basis_zh": "现有 OpenReview 官方投稿摘要与仓库 2026-10-11 主审查记录；未启动新检索。"
+    },
+    {
+      "title": "Socratic-SWE: Self-Evolving Coding Agents via Trace-Derived Agent Skills",
+      "openreview_id": "xEKG0mb0Ny",
+      "source_url": "https://openreview.net/forum?id=xEKG0mb0Ny",
+      "original_category": "related_hybrid",
+      "decision": "defer",
+      "reason_zh": "官方摘要显示技能是主要研究对象或核心机制：SOCRATIC-SWE 把历史求解轨迹蒸馏为描述失败与修复模式的结构化技能，用这些技能在真实仓库生成针对性 repair tasks，并以执行验证和 solver-gradient alignment reward 筛选任务后更新 Solver，形成逐轮变化的训练课程。",
+      "evidence_basis_zh": "现有 OpenReview 官方投稿摘要与仓库 2026-10-11 主审查记录；未启动新检索。"
+    },
+    {
+      "title": "Skills and Challenges Co-Evolve: Learnability-Aware Autocurricula for Agent Skill Evolution",
+      "openreview_id": "PoxAW0RMer",
+      "source_url": "https://openreview.net/forum?id=PoxAW0RMer",
+      "original_category": "related_prompt_agent",
+      "decision": "defer",
+      "reason_zh": "官方摘要显示技能是主要研究对象或核心机制：SCOPE 共同维护技能与可执行挑战两个群体，以可区分技能、可产生可行改进信号和可暴露新失败来评价挑战，经可解性门过滤后用存活挑战指导结构化技能突变与选择。",
+      "evidence_basis_zh": "现有 OpenReview 官方投稿摘要与仓库 2026-10-11 主审查记录；未启动新检索。"
+    },
+    {
+      "title": "SkillSmith: Co-Evolving Skills and Tools for Self-Improving Agent Systems",
+      "openreview_id": "sATDr8QpEQ",
+      "source_url": "https://openreview.net/forum?id=sATDr8QpEQ",
+      "original_category": "related_prompt_agent",
+      "decision": "defer",
+      "reason_zh": "官方摘要显示技能是主要研究对象或核心机制：SkillSmith 让 reflection 生成同时修改技能与工具的原子 bundle，并从执行轨迹估计技能交互矩阵，以互补性和冲突信号控制检索、变异优先级和淘汰，同时用 anti-pattern 记录阻止重复失败。",
+      "evidence_basis_zh": "现有 OpenReview 官方投稿摘要与仓库 2026-10-11 主审查记录；未启动新检索。"
+    },
+    {
+      "title": "SkillNEO: Non-Elitist Evolutionary Optimization of Agent Skills",
+      "openreview_id": "DScGkPg0NR",
+      "source_url": "https://openreview.net/forum?id=DScGkPg0NR",
+      "original_category": "related_prompt_agent",
+      "decision": "defer",
+      "reason_zh": "官方摘要显示技能是主要研究对象或核心机制：据官方摘要，SkillNEO 允许未超过父本或历史最优的中间 skill version 继续繁衍，并用重复、亲子及同胞执行证据指导后续修订。",
+      "evidence_basis_zh": "现有 OpenReview 官方投稿摘要与仓库 2026-10-11 主审查记录；未启动新检索。"
+    },
+    {
+      "title": "SkillGRACE: Group-Relative Advantage-Guided Contrastive Editing of Agent Skills",
+      "openreview_id": "l9IMRiLRHo",
+      "source_url": "https://openreview.net/forum?id=l9IMRiLRHo",
+      "original_category": "related_prompt_agent",
+      "decision": "defer",
+      "reason_zh": "官方摘要显示技能是主要研究对象或核心机制：从同一任务的多次 rollout 计算组相对优势，形成对比证据来生成技能 patch，再用候选技能重放轨迹选择 patch，从而减少单独验证集和强外部编辑器需求。",
+      "evidence_basis_zh": "现有 OpenReview 官方投稿摘要与仓库 2026-10-11 主审查记录；未启动新检索。"
+    },
+    {
+      "title": "Skill-R1: Agent Skill Evolution via Reinforcement Learning",
+      "openreview_id": "1b8Jj09JxE",
+      "source_url": "https://openreview.net/forum?id=1b8Jj09JxE",
+      "original_category": "related_hybrid",
+      "decision": "defer",
+      "reason_zh": "官方摘要显示技能是主要研究对象或核心机制：Skill-R1 将技能改进建模为双层强化学习，训练轻量 skill generator 根据任务、既往 rollout 与验证结果生成技能，并分别用代内比较和跨代群体改进构造 group-relative 优势。",
+      "evidence_basis_zh": "现有 OpenReview 官方投稿摘要与仓库 2026-10-11 主审查记录；未启动新检索。"
+    },
+    {
+      "title": "Skill-MAP-Elites: Open-Ended Evolution of Agent Skills through Behavioral Niches",
+      "openreview_id": "TvzNP3tmRz",
+      "source_url": "https://openreview.net/forum?id=TvzNP3tmRz",
+      "original_category": "related_prompt_agent",
+      "decision": "defer",
+      "reason_zh": "官方摘要显示技能是主要研究对象或核心机制：将可复用的多文件技能演化表述为质量多样性搜索，以执行所得的失败类型、工具调用、任务阶段、成本和鲁棒性等行为描述符划分生态位，并通过局部精英保留与行为级变异维持互补技能。",
+      "evidence_basis_zh": "现有 OpenReview 官方投稿摘要与仓库 2026-10-11 主审查记录；未启动新检索。"
+    },
+    {
+      "title": "Skill-$\\pi$: Skill-Policy Co-Evolution for Self-Improving Multimodal Reasoning",
+      "openreview_id": "dXqMUjWpme",
+      "source_url": "https://openreview.net/forum?id=dXqMUjWpme",
+      "original_category": "related_prompt_agent",
+      "decision": "defer",
+      "reason_zh": "官方摘要显示技能是主要研究对象或核心机制：让共享 MLLM policy 共同承担技能选择、使用和演化，以阶段特定信用分配把成功经验同时用于扩展可复用技能库和改进参数化 policy。",
+      "evidence_basis_zh": "现有 OpenReview 官方投稿摘要与仓库 2026-10-11 主审查记录；未启动新检索。"
+    },
+    {
+      "title": "Skill Self-Play: Pushing the Frontier of LLM Capability with Co-Evolving Skills",
+      "openreview_id": "07pvXM8POP",
+      "source_url": "https://openreview.net/forum?id=07pvXM8POP",
+      "original_category": "related_unverified",
+      "decision": "defer",
+      "reason_zh": "官方摘要显示技能是主要研究对象或核心机制：据官方摘要，Skill-SP 由 proposer、solver 与 dynamic skill controller 组成，并通过 reinforcement learning loop 共同演化、依据执行反馈扩展 skill library；摘要没有说明独立的 ES/遗传搜索算子。",
+      "evidence_basis_zh": "现有 OpenReview 官方投稿摘要与仓库 2026-10-11 主审查记录；未启动新检索。"
+    },
+    {
+      "title": "Self-Regression-Test:Continuous Integration for Self-Evolving Agents That Rewrite Their Own Skills",
+      "openreview_id": "OjV808LATw",
+      "source_url": "https://openreview.net/forum?id=OjV808LATw",
+      "original_category": "related_prompt_agent",
+      "decision": "defer",
+      "reason_zh": "官方摘要显示技能是主要研究对象或核心机制：SRT 为每项可重写技能维护由历史轨迹合成的版本化可执行回归谓词，并在候选更新时给出提交、有限修复或回滚决定，以显式保护已覆盖行为。",
+      "evidence_basis_zh": "现有 OpenReview 官方投稿摘要与仓库 2026-10-11 主审查记录；未启动新检索。"
+    },
+    {
+      "title": "Residual Skill Optimization for Text-to-SQL Ensembles",
+      "openreview_id": "cEWctQOQL4",
+      "source_url": "https://openreview.net/forum?id=cEWctQOQL4",
+      "original_category": "related_prompt_agent",
+      "decision": "defer",
+      "reason_zh": "官方摘要显示技能是主要研究对象或核心机制：逐次在当前技能集失败的样例上优化新技能，使每个新增技能针对其对 Pass@K 的边际贡献，从而构建失败模式互补的 Text-to-SQL ensemble。",
+      "evidence_basis_zh": "现有 OpenReview 官方投稿摘要与仓库 2026-10-11 主审查记录；未启动新检索。"
+    },
+    {
+      "title": "Rent or Recompute?: Learning-Augmented Placement of Agent KV Caches Across Memory and Shared Storage Tiers",
+      "openreview_id": "5MJgRASpik",
+      "source_url": "https://openreview.net/forum?id=5MJgRASpik",
+      "original_category": "related_hybrid",
+      "decision": "retain",
+      "reason_zh": "核心是 KV cache 在 GPU/主存/存储/重计算之间的分层放置与 learning-augmented ski-rental；摘要中的“predictor has no skill”只是普通语言中的预测能力。",
+      "evidence_basis_zh": "现有 OpenReview 官方投稿摘要与仓库 2026-10-11 主审查记录；未启动新检索。"
+    },
+    {
+      "title": "PackAgent: Evolving Three Coordinated Skills for State-Adaptive 3D Bin Packing",
+      "openreview_id": "xVyJHWHTMw",
+      "source_url": "https://openreview.net/forum?id=xVyJHWHTMw",
+      "original_category": "related_prompt_agent",
+      "decision": "defer",
+      "reason_zh": "官方摘要显示技能是主要研究对象或核心机制：PackAgent 让 LLM 离线共同演化 state reflection、item selection 和 placement scoring 三个可执行技能，部署时由 reflection 根据当前装箱状态生成阶段提示与因子权重，以逐步调节后两项决策，并由固定 solver 保证几何可行。",
+      "evidence_basis_zh": "现有 OpenReview 官方投稿摘要与仓库 2026-10-11 主审查记录；未启动新检索。"
+    },
+    {
+      "title": "PROTEUS: Provable Self-Evolution for Skill-Composing Language Agents",
+      "openreview_id": "XnVVAhxbSu",
+      "source_url": "https://openreview.net/forum?id=XnVVAhxbSu",
+      "original_category": "related_prompt_agent",
+      "decision": "defer",
+      "reason_zh": "官方摘要显示技能是主要研究对象或核心机制：把智能体自演化形式化为技能图空间上的约束随机优化，以相对参考提议校准的反思变异限制剧烈编辑，用带不确定性的能力后验跟踪技能，并为保支持的精英混合选择给出稳态邻域和 KL 漂移界。",
+      "evidence_basis_zh": "现有 OpenReview 官方投稿摘要与仓库 2026-10-11 主审查记录；未启动新检索。"
+    },
+    {
+      "title": "Open-Ended Skill Speciation: Evolving New Abstractions for Agent Skills",
+      "openreview_id": "AWQyYRvaOE",
+      "source_url": "https://openreview.net/forum?id=AWQyYRvaOE",
+      "original_category": "related_prompt_agent",
+      "decision": "defer",
+      "reason_zh": "官方摘要显示技能是主要研究对象或核心机制：OESS 以技能签名、时间抽象层次、工具依赖图、失败修复画像和执行轨迹定义 species，并通过把重复过程封装成例程、组合子技能或提取 planner/verifier 的 macro-mutations 跨越抽象层次。",
+      "evidence_basis_zh": "现有 OpenReview 官方投稿摘要与仓库 2026-10-11 主审查记录；未启动新检索。"
+    },
+    {
+      "title": "MILO: Automated Harness Discovery via Orchestrated Multi-Agent Evolution",
+      "openreview_id": "AUiAVv2xU2",
+      "source_url": "https://openreview.net/forum?id=AUiAVv2xU2",
+      "original_category": "related_prompt_agent",
+      "decision": "retain",
+      "reason_zh": "核心是完整 agent harness 与搜索策略的共同演化；skills 只在背景中作为既有工作优化 harness 局部组件的例子。",
+      "evidence_basis_zh": "现有 OpenReview 官方投稿摘要与仓库 2026-10-11 主审查记录；未启动新检索。"
+    },
+    {
+      "title": "MAS-Skill: Skill-Guided Multi-Agent Systems via Collaborative Topology Transfer",
+      "openreview_id": "1oiohnxg31",
+      "source_url": "https://openreview.net/forum?id=1oiohnxg31",
+      "original_category": "related_prompt_agent",
+      "decision": "defer",
+      "reason_zh": "官方摘要显示技能是主要研究对象或核心机制：MAS-Skill 先通过受控 A/B 测试选出准确率—成本 Pareto 最优的多智能体拓扑，再依据成功与失败轨迹对记录了角色、工具和综合策略的协作技能进行遗传重组与突变，供推理时检索复用。",
+      "evidence_basis_zh": "现有 OpenReview 官方投稿摘要与仓库 2026-10-11 主审查记录；未启动新检索。"
+    },
+    {
+      "title": "Lifetime Learning of Skills: Evolving the Skill-Learning Algorithm Itself",
+      "openreview_id": "IqsyZEhbYe",
+      "source_url": "https://openreview.net/forum?id=IqsyZEhbYe",
+      "original_category": "related_prompt_agent",
+      "decision": "defer",
+      "reason_zh": "官方摘要显示技能是主要研究对象或核心机制：把技能构造、评估和维护生命周期表示为可执行 meta-program，由内环据此构建技能，外层 population-based loop 按跨任务遗憾、anytime 性能、预算、迁移、复杂度与安全约束演化这些 meta-programs。",
+      "evidence_basis_zh": "现有 OpenReview 官方投稿摘要与仓库 2026-10-11 主审查记录；未启动新检索。"
+    },
+    {
+      "title": "Learning to Evolve: Skill–Policy Co-Evolution for Self-Evolving Agents",
+      "openreview_id": "5LaVWdURJZ",
+      "source_url": "https://openreview.net/forum?id=5LaVWdURJZ",
+      "original_category": "related_hybrid",
+      "decision": "defer",
+      "reason_zh": "官方摘要显示技能是主要研究对象或核心机制：SCALE 学习 skill-conditioned velocity field 来估计技能如何改变轨迹分布，并以该分布到 reward-reweighted 目标分布的 Wasserstein 距离构造 evolution-aware reward，从而筛选与长期策略演化一致的技能。",
+      "evidence_basis_zh": "现有 OpenReview 官方投稿摘要与仓库 2026-10-11 主审查记录；未启动新检索。"
+    },
+    {
+      "title": "GraphSkillEvo: Evolutionary Optimization of Graph-Structured Agent Skills",
+      "openreview_id": "FrghfkhvZh",
+      "source_url": "https://openreview.net/forum?id=FrghfkhvZh",
+      "original_category": "related_prompt_agent",
+      "decision": "defer",
+      "reason_zh": "官方摘要显示技能是主要研究对象或核心机制：据官方摘要，GraphSkillEvo 把 skill 表示为带执行步骤和条件转移的图，并对 skill population 施加 mutation/crossover。",
+      "evidence_basis_zh": "现有 OpenReview 官方投稿摘要与仓库 2026-10-11 主审查记录；未启动新检索。"
+    },
+    {
+      "title": "Execution-Grounded Credit Assignment for Self-Evolving Agents",
+      "openreview_id": "V2OwjDmLOC",
+      "source_url": "https://openreview.net/forum?id=V2OwjDmLOC",
+      "original_category": "related_prompt_agent",
+      "decision": "defer",
+      "reason_zh": "官方摘要显示技能是主要研究对象或核心机制：用结果相关的执行模式形成变异意图，针对指令、工具代码和技能生成可追踪修改，再从记录的决策点进行短程模拟筛选候选，并把意图表达、行为和任务结果蒸馏为跨轮次信用。",
+      "evidence_basis_zh": "现有 OpenReview 官方投稿摘要与仓库 2026-10-11 主审查记录；未启动新检索。"
+    },
+    {
+      "title": "EvoORSkill: When Optimization Skills Evolve, Who Checks The Math?",
+      "openreview_id": "htz6wPMz4Z",
+      "source_url": "https://openreview.net/forum?id=htz6wPMz4Z",
+      "original_category": "related_prompt_agent",
+      "decision": "defer",
+      "reason_zh": "官方摘要显示技能是主要研究对象或核心机制：以技能超图共同维护可执行运筹建模流程、数学关系、适用条件和版本，在每次修订时追踪受影响依赖并经规格、需求和保留检查准入，再用历史重放比较和改进修订策略。",
+      "evidence_basis_zh": "现有 OpenReview 官方投稿摘要与仓库 2026-10-11 主审查记录；未启动新检索。"
+    },
+    {
+      "title": "EvoGenome: Genotype-Phenotype Evolution for Compositional Agent Skills",
+      "openreview_id": "KerlEXgtZe",
+      "source_url": "https://openreview.net/forum?id=KerlEXgtZe",
+      "original_category": "related_prompt_agent",
+      "decision": "defer",
+      "reason_zh": "官方摘要显示技能是主要研究对象或核心机制：把复合代理技能拆成带类型、功能定义且可独立遗传的基因单元，经编译器生成可执行技能包，并以受类型与接口约束的 mutation、同源 crossover、剪枝和跨域移植演化技能。",
+      "evidence_basis_zh": "现有 OpenReview 官方投稿摘要与仓库 2026-10-11 主审查记录；未启动新检索。"
+    },
+    {
+      "title": "DIVE: Unlocking Self-Improvement in Frozen Language Models Through Diversity-Driven Skill Evolution",
+      "openreview_id": "ogu2wTp6nS",
+      "source_url": "https://openreview.net/forum?id=ogu2wTp6nS",
+      "original_category": "related_prompt_agent",
+      "decision": "defer",
+      "reason_zh": "官方摘要显示技能是主要研究对象或核心机制：让冻结 LLM 从经验和 verifier 反馈独立演化多个自然语言技能种群，并通过多样变换与互补集合选择降低单一路径过拟合和搜索方差。",
+      "evidence_basis_zh": "现有 OpenReview 官方投稿摘要与仓库 2026-10-11 主审查记录；未启动新检索。"
+    },
+    {
+      "title": "CtrlSkill: A Control-Theoretic View of Controllable Skill Self-Evolution",
+      "openreview_id": "R22SK8XC1h",
+      "source_url": "https://openreview.net/forum?id=R22SK8XC1h",
+      "original_category": "related_prompt_agent",
+      "decision": "defer",
+      "reason_zh": "官方摘要显示技能是主要研究对象或核心机制：CtrlSkill 从轨迹中分离意图动作、工具执行和结果证据，据共享缺口生成带适用条件与验证要求的候选技能，并在后续匹配任务上以接受、延后或拒绝控制其是否替换现行技能政策。",
+      "evidence_basis_zh": "现有 OpenReview 官方投稿摘要与仓库 2026-10-11 主审查记录；未启动新检索。"
+    },
+    {
+      "title": "Cross-Model Reproductive Fitness: Evolving Transferable Skills across Model Hosts",
+      "openreview_id": "L18vEjanZr",
+      "source_url": "https://openreview.net/forum?id=L18vEjanZr",
+      "original_category": "related_prompt_agent",
+      "decision": "defer",
+      "reason_zh": "官方摘要显示技能是主要研究对象或核心机制：把不同模型—harness 配置视为异质演化岛，按总体增益、跨 host 波动、弱模型增益和最差 host 表现选择技能，并在迁移后按目的 host 的实际效用给予繁殖信用。",
+      "evidence_basis_zh": "现有 OpenReview 官方投稿摘要与仓库 2026-10-11 主审查记录；未启动新检索。"
+    },
+    {
+      "title": "COBRA-Skills: Contextual Bandit-Guided Evolution for Agent Skill Optimization",
+      "openreview_id": "6XFoqlavXz",
+      "source_url": "https://openreview.net/forum?id=6XFoqlavXz",
+      "original_category": "related_prompt_agent",
+      "decision": "defer",
+      "reason_zh": "官方摘要显示技能是主要研究对象或核心机制：COBRA-Skills 把技能改进表述为动态候选空间上的预算序贯优化，以 contextual bandit 优先评估有前景或信息量高的技能，并依据实际执行反馈持续修订技能群体。",
+      "evidence_basis_zh": "现有 OpenReview 官方投稿摘要与仓库 2026-10-11 主审查记录；未启动新检索。"
+    },
+    {
+      "title": "AgentPSO: Evolving Agent Reasoning Skill via Multi-agent Particle Swarm Optimization",
+      "openreview_id": "wDZ9eU8YuD",
+      "source_url": "https://openreview.net/forum?id=wDZ9eU8YuD",
+      "original_category": "related_prompt_agent",
+      "decision": "defer",
+      "reason_zh": "官方摘要显示技能是主要研究对象或核心机制：AgentPSO 把每个 agent 的自然语言 reasoning skill 当作 particle state、语义改写方向当作 velocity，并结合上一速度、个体最优、全局最优和从同伴轨迹反思得到的方向迭代更新可迁移技能。",
+      "evidence_basis_zh": "现有 OpenReview 官方投稿摘要与仓库 2026-10-11 主审查记录；未启动新检索。"
+    },
+    {
+      "title": "AIProver: Agentic Auto-Formalization of Mathematical Research via Certificate-Driven Evolving Harness",
+      "openreview_id": "R9kJupcBxE",
+      "source_url": "https://openreview.net/forum?id=R9kJupcBxE",
+      "original_category": "related_hybrid",
+      "decision": "retain",
+      "reason_zh": "核心是 119B 模型后训练与 HarnessEvolve 对工具调用控制流的演化；作为 Claude Code/Codex skill 只是部署和评测角色。",
+      "evidence_basis_zh": "现有 OpenReview 官方投稿摘要与仓库 2026-10-11 主审查记录；未启动新检索。"
+    },
+    {
+      "title": "A Kinetic Theory of the Gated Self-Evolving LLM Agent",
+      "openreview_id": "23VDi5bfRj",
+      "source_url": "https://openreview.net/forum?id=23VDi5bfRj",
+      "original_category": "related_prompt_agent",
+      "decision": "defer",
+      "reason_zh": "官方摘要显示技能是主要研究对象或核心机制：该稿为带验证门的 DSH 插件自改写建立命中时间证书、验证预算分辨率定律和评价者分离定理，并以 plugin×version×task 主方程推导可检验的群体统计信号。",
+      "evidence_basis_zh": "现有 OpenReview 官方投稿摘要与仓库 2026-10-11 主审查记录；未启动新检索。"
+    },
+    {
+      "title": "Discover and Internalize: A Continual Co-Evolving Training Loop for Self-Improvement Agents",
+      "openreview_id": "FT2AzenhGs",
+      "source_url": "https://openreview.net/forum?id=FT2AzenhGs",
+      "original_category": "related_hybrid",
+      "decision": "defer",
+      "reason_zh": "官方摘要显示技能是主要研究对象或核心机制：把技能视为待检验的行为假设，以演化和组合技能负责发现候选行为，再把有前景行为内化到模型权重中，形成发现与策略更新相互促进的循环。",
+      "evidence_basis_zh": "现有 OpenReview 官方投稿摘要与仓库 2026-10-11 主审查记录；未启动新检索。"
+    }
+  ]
+}

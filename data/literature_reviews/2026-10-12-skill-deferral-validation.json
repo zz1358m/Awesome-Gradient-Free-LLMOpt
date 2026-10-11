@@ -1,0 +1,65 @@
+{
+  "baseline_commit": "443f4bcf1f3e9bad31104a6e40c2895007eb86bd",
+  "catalog_before": 423,
+  "catalog_after": 389,
+  "candidate_count": 37,
+  "deferred_count": 34,
+  "retained_count": 3,
+  "removed_titles_equal_archive": true,
+  "removed_count": 34,
+  "archive_count": 34,
+  "unrelated_added_titles": [],
+  "unrelated_modified_retained_titles": [],
+  "archive_catalog_record_mismatches": [],
+  "archive_bib_entries_missing_from_baseline": [],
+  "retained_candidates_present": {
+    "Rent or Recompute?: Learning-Augmented Placement of Agent KV Caches Across Memory and Shared Storage Tiers": true,
+    "MILO: Automated Harness Discovery via Orchestrated Multi-Agent Evolution": true,
+    "AIProver: Agentic Auto-Formalization of Mathematical Research via Certificate-Driven Evolving Harness": true
+  },
+  "deferred_candidates_absent": true,
+  "bib_entries_before": 424,
+  "bib_entries_after": 390,
+  "bib_removed_count": 34,
+  "bib_removed_titles_equal_archive": true,
+  "bib_added_titles": [],
+  "archived_openreview_ids_absent_from_current_catalog": true,
+  "archived_openreview_ids_remaining": [],
+  "catalog_titles_missing_from_bib": [],
+  "bib_extra_titles": [
+    "A Zeroth-Order Paradigm for LLM Preference Alignment"
+  ],
+  "duplicate_catalog_titles": [],
+  "duplicate_catalog_openreview_ids": [],
+  "category_delta": {
+    "related_hybrid": -6,
+    "related_prompt_agent": -27,
+    "related_unverified": -1
+  },
+  "category_counts_after": {
+    "es_pretraining": 1,
+    "es_single_turn": 13,
+    "related_hybrid": 73,
+    "es_multi_turn": 1,
+    "es_understanding": 9,
+    "zo_pretraining": 3,
+    "zo_baselines": 14,
+    "related_closed_form": 28,
+    "zo_directions": 32,
+    "zo_systems": 24,
+    "zo_alignment": 1,
+    "zo_multi_turn": 1,
+    "zo_understanding": 10,
+    "related_prompt_agent": 167,
+    "related_inference": 11,
+    "related_forward_gradient": 1
+  },
+  "historical_2026_10_11_main_report_unchanged": true,
+  "decision_counts": {
+    "defer": 34,
+    "retain": 3
+  },
+  "passed": true,
+  "audit_report_contains_all_37_titles": true,
+  "audit_report_contains_all_37_source_links": true
+}

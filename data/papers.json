@@ -1179,15 +1179,6 @@
     "resources_zh": "[论文](https://openreview.net/forum?id=7hs0vjh7L4) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
   },
   {
-    "title": "TITRATE: Adapting Self-Distillation Weight and Skill Refresh to Training Dynamics",
-    "category": "related_hybrid",
-    "date": "2026",
-    "description_en": "TITRATE couples a versioned skill bank and evidence-gated refresh controller with a progress- and conflict-aware distillation schedule during on-policy self-distillation reinforcement learning.",
-    "description_zh": "TITRATE 将版本化技能库、证据门控刷新和自适应蒸馏权重嵌入 on-policy self-distillation RL。",
-    "resources_en": "[paper](https://openreview.net/forum?id=sCJWZK42vA) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
-    "resources_zh": "[论文](https://openreview.net/forum?id=sCJWZK42vA) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
-  },
-  {
     "title": "TEMPA: Temporally Extended Memory for Policy Adaptation",
     "category": "related_prompt_agent",
     "date": "2026",
@@ -1222,15 +1213,6 @@
     "description_zh": "以轻量程序提议器、证据汇总器和稀疏的前沿模型干预协同推进候选程序群体。",
     "resources_en": "[paper](https://openreview.net/forum?id=LOHzPGrcTQ) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
     "resources_zh": "[论文](https://openreview.net/forum?id=LOHzPGrcTQ) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
-  },
-  {
-    "title": "RideSkill: A Hierarchical Algorithm for Generalized Ride Sharing with LLM-Driven Automatic Evolution",
-    "category": "related_prompt_agent",
-    "date": "2026",
-    "description_en": "RideSkill evolves a dispatch-skill repository, a vehicle-to-skill combiner, and a sequential idle-vehicle repositioner offline with an LLM-assisted automatic evolutionary method.",
-    "description_zh": "以 LLM 辅助的自动演化离线构建调度技能库、车辆技能 combiner 和空车 repositioner，部署时无需 LLM 调用。",
-    "resources_en": "[paper](https://openreview.net/forum?id=fmCe2SzUjW) · [code](https://anonymous.4open.science/r/RideSkill-6AAD) · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
-    "resources_zh": "[论文](https://openreview.net/forum?id=fmCe2SzUjW) · [代码](https://anonymous.4open.science/r/RideSkill-6AAD) · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
   },
   {
     "title": "Reshaping Guidance Objective with Large Language Models",
@@ -1323,15 +1305,6 @@
     "resources_zh": "[论文](https://openreview.net/forum?id=xuYAIX5ouE) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
   },
   {
-    "title": "OR-Skill: Self Evolutionary Agent Skills for Optimization Modeling",
-    "category": "related_hybrid",
-    "date": "2026",
-    "description_en": "OR-Skill evolves an optimization-modeling skill by turning task failures into hierarchical diagnostic reports and applying cascade revisions in reverse severity order.",
-    "description_zh": "把优化建模任务失败归纳为分层诊断，并按错误严重度逆序级联修订代理技能。",
-    "resources_en": "[paper](https://openreview.net/forum?id=oGepteMxUI) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
-    "resources_zh": "[论文](https://openreview.net/forum?id=oGepteMxUI) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
-  },
-  {
     "title": "Noisy Replicator-Mutator Dynamics in Multi-Agent Learning",
     "category": "related_hybrid",
     "date": "2026",
@@ -1348,15 +1321,6 @@
     "description_zh": "该多智能体 LLM 系统共同演化 C++ 游戏搜索机制与从规则合成的领域启发式。",
     "resources_en": "[paper](https://openreview.net/forum?id=7Ukbo7ZShy) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
     "resources_zh": "[论文](https://openreview.net/forum?id=7Ukbo7ZShy) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
-  },
-  {
-    "title": "MoS-VLA: A Vision-Language-Action Model with One-Shot Skill Adaptation",
-    "category": "related_prompt_agent",
-    "date": "2026",
-    "description_en": "MoS-VLA adapts a pretrained skill basis from one demonstration by solving a gradient-free convex problem over mixture coefficients that minimizes L1 action error.",
-    "description_zh": "用一次专家示范对已学习技能基函数的混合系数做梯度无关凸优化，以适配机器人动作策略。",
-    "resources_en": "[paper](https://openreview.net/forum?id=jeYa5D7gYZ) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
-    "resources_zh": "[论文](https://openreview.net/forum?id=jeYa5D7gYZ) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
   },
   {
     "title": "MiniRep: Robust Reputation-Based Aggregation for Multi-Agent Debate",
@@ -1845,15 +1809,6 @@
     "resources_zh": "[论文](https://openreview.net/forum?id=OTIZLTbN5q) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
   },
   {
-    "title": "When Small Evaluator Biases Become Permanent: Phase Transitions in Self-Evolving Agent Skill Libraries",
-    "category": "related_prompt_agent",
-    "date": "2026",
-    "description_en": "CRR models how evaluator selection, directional skill transformation, and retrieval reinforcement amplify irrelevant attributes, then estimates mechanisms with a Bayesian state-space model and derives a stability-margin controller.",
-    "description_zh": "CRR 建模技能评估、mutation/repair 与检索强化如何放大偏差，并用 Bayesian state-space posterior 配置稳定控制。",
-    "resources_en": "[paper](https://openreview.net/forum?id=zEFUowQZuR) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
-    "resources_zh": "[论文](https://openreview.net/forum?id=zEFUowQZuR) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
-  },
-  {
     "title": "When Correct Memory Goes Wrong: Fuzzing Persistent Memory Use in LLM Agents",
     "category": "related_prompt_agent",
     "date": "2026",
@@ -1917,15 +1872,6 @@
     "resources_zh": "[论文](https://openreview.net/forum?id=2e5z57jIPK) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
   },
   {
-    "title": "Test Time Computing for Evolving Agent Skill Optimization",
-    "category": "related_prompt_agent",
-    "date": "2026",
-    "description_en": "EvoBranch wraps an existing skill reviser with branch-local proposals, cross-branch mutation and crossover, and validation-based Top-M selection.",
-    "description_zh": "在原有技能修订器外加入分支局部提议、跨分支突变与交叉以及验证驱动的 Top-M 选择。",
-    "resources_en": "[paper](https://openreview.net/forum?id=LUKh19HsU1) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
-    "resources_zh": "[论文](https://openreview.net/forum?id=LUKh19HsU1) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
-  },
-  {
     "title": "TabEvo: LLM-Guided Evolution of Dataset-Conditional Programs for Tabular In-Context Learning",
     "category": "related_prompt_agent",
     "date": "2026",
@@ -1980,87 +1926,6 @@
     "resources_zh": "[论文](https://openreview.net/forum?id=mSO30AmGJA) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
   },
   {
-    "title": "Socratic-SWE: Self-Evolving Coding Agents via Trace-Derived Agent Skills",
-    "category": "related_hybrid",
-    "date": "2026",
-    "description_en": "SOCRATIC-SWE distills solver traces into repair skills, uses them to generate execution-validated repository tasks, filters tasks with a solver-gradient alignment reward, and updates the solver in a closed curriculum loop.",
-    "description_zh": "SOCRATIC-SWE 将求解轨迹蒸馏成修复技能，生成并验证真实仓库任务，再用 alignment reward 筛选课程以更新 Solver。",
-    "resources_en": "[paper](https://openreview.net/forum?id=xEKG0mb0Ny) · code not located · ![ICLR 2027 Desk Rejected](https://img.shields.io/badge/ICLR_2027-Desk_Rejected-red) · OpenReview record created in 2026; first public date unverified",
-    "resources_zh": "[论文](https://openreview.net/forum?id=xEKG0mb0Ny) · 未找到代码 · ![ICLR 2027 初筛拒稿](https://img.shields.io/badge/ICLR_2027-Desk_Rejected-red) · OpenReview 记录创建于 2026 年；首次公开日期待核实"
-  },
-  {
-    "title": "Skills and Challenges Co-Evolve: Learnability-Aware Autocurricula for Agent Skill Evolution",
-    "category": "related_prompt_agent",
-    "date": "2026",
-    "description_en": "SCOPE co-evolves skill and executable-challenge populations, filters challenges through solvability checks, and uses learnability signals to guide structured skill mutations and selection.",
-    "description_zh": "共同演化技能与可执行挑战群体，以可解性和可学习性筛选挑战并指导技能突变。",
-    "resources_en": "[paper](https://openreview.net/forum?id=PoxAW0RMer) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
-    "resources_zh": "[论文](https://openreview.net/forum?id=PoxAW0RMer) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
-  },
-  {
-    "title": "SkillSmith: Co-Evolving Skills and Tools for Self-Improving Agent Systems",
-    "category": "related_prompt_agent",
-    "date": "2026",
-    "description_en": "SkillSmith jointly proposes skill-and-tool edits, estimates pairwise skill interactions from execution traces to prioritize retrieval and mutation, and records anti-patterns to veto repeated failures.",
-    "description_zh": "SkillSmith 联合改写技能与工具，并用轨迹估计的技能互补/冲突关系和 anti-pattern 记录引导候选保留与变异。",
-    "resources_en": "[paper](https://openreview.net/forum?id=sATDr8QpEQ) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
-    "resources_zh": "[论文](https://openreview.net/forum?id=sATDr8QpEQ) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
-  },
-  {
-    "title": "SkillNEO: Non-Elitist Evolutionary Optimization of Agent Skills",
-    "category": "related_prompt_agent",
-    "date": "2026",
-    "description_en": "SkillNEO evolves persistent agent skills without updating model weights, allowing low-scoring intermediate versions and archived traces to contribute to later revisions.",
-    "description_zh": "SkillNEO 在不更新模型权重的前提下演化持久技能，允许低分中间版本和归档轨迹参与后续修订。",
-    "resources_en": "[paper](https://openreview.net/forum?id=DScGkPg0NR) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
-    "resources_zh": "[论文](https://openreview.net/forum?id=DScGkPg0NR) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
-  },
-  {
-    "title": "SkillGRACE: Group-Relative Advantage-Guided Contrastive Editing of Agent Skills",
-    "category": "related_prompt_agent",
-    "date": "2026",
-    "description_en": "SkillGRACE turns same-task rollout advantages into contrastive evidence for generating skill patches and selects patches by replaying trajectories under candidate skills.",
-    "description_zh": "把同任务 rollout 的组相对优势转为对比证据生成技能 patch，并以候选技能重放轨迹完成选择。",
-    "resources_en": "[paper](https://openreview.net/forum?id=l9IMRiLRHo) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
-    "resources_zh": "[论文](https://openreview.net/forum?id=l9IMRiLRHo) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
-  },
-  {
-    "title": "Skill-R1: Agent Skill Evolution via Reinforcement Learning",
-    "category": "related_hybrid",
-    "date": "2026",
-    "description_en": "Skill-R1 trains a lightweight skill generator with intra-generation and inter-generation group-relative objectives to steer a frozen task LLM.",
-    "description_zh": "Skill-R1 用代内与跨代 group-relative 目标训练轻量技能生成器，以技能引导冻结的任务 LLM。",
-    "resources_en": "[paper](https://openreview.net/forum?id=1b8Jj09JxE) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
-    "resources_zh": "[论文](https://openreview.net/forum?id=1b8Jj09JxE) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
-  },
-  {
-    "title": "Skill-MAP-Elites: Open-Ended Evolution of Agent Skills through Behavioral Niches",
-    "category": "related_prompt_agent",
-    "date": "2026",
-    "description_en": "Skill-MAP-Elites evolves reusable agent-skill artifacts with execution-grounded behavioral niches, local elites, behavior-level mutations, and uncertainty-aware archive admission.",
-    "description_zh": "以执行行为生态位、局部精英和行为级变异演化可复用智能体技能，并用不确定性准入减少稀疏评估造成的错误归档。",
-    "resources_en": "[paper](https://openreview.net/forum?id=TvzNP3tmRz) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
-    "resources_zh": "[论文](https://openreview.net/forum?id=TvzNP3tmRz) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
-  },
-  {
-    "title": "Skill-$\\pi$: Skill-Policy Co-Evolution for Self-Improving Multimodal Reasoning",
-    "category": "related_prompt_agent",
-    "date": "2026",
-    "description_en": "Skill-π assigns stage-specific credit to a shared MLLM policy's skill selection, use, and evolution so recovered successes update both a reusable skill library and the parametric policy.",
-    "description_zh": "以阶段特定信用分配协调共享 MLLM 的技能选择、使用和演化，使成功经验同时扩展技能库并更新参数化 policy。",
-    "resources_en": "[paper](https://openreview.net/forum?id=dXqMUjWpme) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
-    "resources_zh": "[论文](https://openreview.net/forum?id=dXqMUjWpme) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
-  },
-  {
-    "title": "Skill Self-Play: Pushing the Frontier of LLM Capability with Co-Evolving Skills",
-    "category": "related_unverified",
-    "date": "2026",
-    "description_en": "Mechanism-unverified boundary: the abstract describes an RL loop co-evolving a proposer, solver, skill controller, and skill library, but does not establish separate gradient-free search or the components' training paths.",
-    "description_zh": "机制待核实边界：摘要仅说明 RL 环路共同演化 proposer、solver、skill controller 与 skill library，未证明独立梯度无关搜索或各组件训练路径。",
-    "resources_en": "[paper](https://openreview.net/forum?id=07pvXM8POP) · code not located · ![ICLR 2027 Desk Rejected](https://img.shields.io/badge/ICLR_2027-Desk_Rejected-red) · OpenReview record created in 2026; first public date unverified",
-    "resources_zh": "[论文](https://openreview.net/forum?id=07pvXM8POP) · 未找到代码 · ![ICLR 2027 初筛拒稿](https://img.shields.io/badge/ICLR_2027-Desk_Rejected-red) · OpenReview 记录创建于 2026 年；首次公开日期待核实"
-  },
-  {
     "title": "Sensitivity-Guided Mixed-Precision Quantization for Large Language Models",
     "category": "related_prompt_agent",
     "date": "2026",
@@ -2104,15 +1969,6 @@
     "description_zh": "以标签等变差分进化搜索整数编码的指令 genotype，并在停滞时动态扩展句法 scaffold 和槽位动作。",
     "resources_en": "[paper](https://openreview.net/forum?id=nwDOqi2Qri) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
     "resources_zh": "[论文](https://openreview.net/forum?id=nwDOqi2Qri) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
-  },
-  {
-    "title": "Self-Regression-Test:Continuous Integration for Self-Evolving Agents That Rewrite Their Own Skills",
-    "category": "related_prompt_agent",
-    "date": "2026",
-    "description_en": "SRT attaches a versioned executable regression suite to each rewritable skill and maps predicate-level results to commit, bounded repair, or rollback actions.",
-    "description_zh": "为可重写技能维护版本化回归谓词，并据逐项测试结果执行提交、有限修复或回滚。",
-    "resources_en": "[paper](https://openreview.net/forum?id=OjV808LATw) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
-    "resources_zh": "[论文](https://openreview.net/forum?id=OjV808LATw) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
   },
   {
     "title": "Self-Improving Language Models with Bidirectional Evolutionary Search",
@@ -2176,15 +2032,6 @@
     "description_zh": "FedMUSE 以分块零阶估计搜索多模态提示，再从联邦充分统计闭式求解全局 residual。",
     "resources_en": "[paper](https://openreview.net/forum?id=wBmaKUqoBB) · [code](https://anonymous.4open.science/r/FedMUSE-04C1) · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
     "resources_zh": "[论文](https://openreview.net/forum?id=wBmaKUqoBB) · [代码](https://anonymous.4open.science/r/FedMUSE-04C1) · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
-  },
-  {
-    "title": "Residual Skill Optimization for Text-to-SQL Ensembles",
-    "category": "related_prompt_agent",
-    "date": "2026",
-    "description_en": "DivSkill-SQL adds each skill by optimizing it on examples failed by the current ensemble, explicitly targeting the new skill's marginal contribution to Pass@K without model fine-tuning.",
-    "description_zh": "在现有技能集的残余失败样例上逐次优化新技能，直接提高其对 Pass@K 的边际贡献且不微调模型。",
-    "resources_en": "[paper](https://openreview.net/forum?id=cEWctQOQL4) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
-    "resources_zh": "[论文](https://openreview.net/forum?id=cEWctQOQL4) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
   },
   {
     "title": "Rent or Recompute?: Learning-Augmented Placement of Agent KV Caches Across Memory and Shared Storage Tiers",
@@ -2295,24 +2142,6 @@
     "resources_zh": "[论文](https://openreview.net/forum?id=eTpwBeLmHO) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
   },
   {
-    "title": "PackAgent: Evolving Three Coordinated Skills for State-Adaptive 3D Bin Packing",
-    "category": "related_prompt_agent",
-    "date": "2026",
-    "description_en": "PackAgent has an LLM jointly evolve executable reflection, item-selection, and placement-scoring skills offline, then uses state-derived cues to modulate the latter two while a fixed solver enforces feasibility.",
-    "description_zh": "PackAgent 离线共同演化反思、选物和放置评分技能，并在部署时按状态反思动态调节决策因子。",
-    "resources_en": "[paper](https://openreview.net/forum?id=xVyJHWHTMw) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
-    "resources_zh": "[论文](https://openreview.net/forum?id=xVyJHWHTMw) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
-  },
-  {
-    "title": "PROTEUS: Provable Self-Evolution for Skill-Composing Language Agents",
-    "category": "related_prompt_agent",
-    "date": "2026",
-    "description_en": "PROTEUS combines divergence-calibrated LLM-guided skill-graph mutations, an uncertainty-aware capability posterior, and support-preserving elite-mixture selection with stationarity and KL-drift guarantees.",
-    "description_zh": "用散度校准的技能图变异、带不确定性的能力后验和保支持精英混合选择组织智能体自演化，并分析其稳态与漂移界。",
-    "resources_en": "[paper](https://openreview.net/forum?id=XnVVAhxbSu) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
-    "resources_zh": "[论文](https://openreview.net/forum?id=XnVVAhxbSu) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
-  },
-  {
     "title": "PRISM: Transparent Strategy Search for Privacy Risks in LLM Agents",
     "category": "related_prompt_agent",
     "date": "2026",
@@ -2356,15 +2185,6 @@
     "description_zh": "以结构特征覆盖和 Kendall 距离选择固定内容 prompt 的有限排列集合，候选构造无需标签、logits、梯度或模型分数。",
     "resources_en": "[paper](https://openreview.net/forum?id=hciep78aST) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
     "resources_zh": "[论文](https://openreview.net/forum?id=hciep78aST) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
-  },
-  {
-    "title": "Open-Ended Skill Speciation: Evolving New Abstractions for Agent Skills",
-    "category": "related_prompt_agent",
-    "date": "2026",
-    "description_en": "OESS speciates skills by behavioral structure and applies macro-mutations that create higher-level routines, planners, verifiers, and state-dependent controllers.",
-    "description_zh": "OESS 按行为结构划分技能物种，并用 macro-mutations 产生例程、planner、verifier 和状态依赖控制器。",
-    "resources_en": "[paper](https://openreview.net/forum?id=AWQyYRvaOE) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
-    "resources_zh": "[论文](https://openreview.net/forum?id=AWQyYRvaOE) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
   },
   {
     "title": "Online Automated Algorithm Design with Large Language models",
@@ -2457,15 +2277,6 @@
     "resources_zh": "[论文](https://openreview.net/forum?id=AUiAVv2xU2) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
   },
   {
-    "title": "MAS-Skill: Skill-Guided Multi-Agent Systems via Collaborative Topology Transfer",
-    "category": "related_prompt_agent",
-    "date": "2026",
-    "description_en": "MAS-Skill evolves reusable multi-agent collaboration skills through Pareto-based configuration selection, genetic recombination, and mutation, then retrieves them at inference time.",
-    "description_zh": "MAS-Skill 从准确率—成本 Pareto 配置出发，经遗传重组和突变形成可在推理时复用的协作技能。",
-    "resources_en": "[paper](https://openreview.net/forum?id=1oiohnxg31) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
-    "resources_zh": "[论文](https://openreview.net/forum?id=1oiohnxg31) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
-  },
-  {
     "title": "MAPF-Evo: LLM-Driven Evolution of Heuristics for Conflict Elimination in Multi-Agent Path Finding",
     "category": "related_prompt_agent",
     "date": "2026",
@@ -2473,24 +2284,6 @@
     "description_zh": "把 MAPF 求解器运行状态反馈给 LLM 进化环路，自动设计利用冲突结构的 LNS destroy heuristics。",
     "resources_en": "[paper](https://openreview.net/forum?id=jtF7cAh4OE) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
     "resources_zh": "[论文](https://openreview.net/forum?id=jtF7cAh4OE) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
-  },
-  {
-    "title": "Lifetime Learning of Skills: Evolving the Skill-Learning Algorithm Itself",
-    "category": "related_prompt_agent",
-    "date": "2026",
-    "description_en": "Evolves executable meta-programs that control the full lifecycle for constructing, evaluating, deploying, and rolling back agent skills.",
-    "description_zh": "以种群外环演化控制技能构造、评估、部署和回滚全过程的可执行 meta-program。",
-    "resources_en": "[paper](https://openreview.net/forum?id=IqsyZEhbYe) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
-    "resources_zh": "[论文](https://openreview.net/forum?id=IqsyZEhbYe) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
-  },
-  {
-    "title": "Learning to Evolve: Skill–Policy Co-Evolution for Self-Evolving Agents",
-    "category": "related_hybrid",
-    "date": "2026",
-    "description_en": "SCALE scores candidate skills through a learned skill-conditioned trajectory velocity field and a Wasserstein-distance reward tied to long-term policy evolution.",
-    "description_zh": "SCALE 用技能条件化轨迹速度场和 Wasserstein 演化奖励，评估技能对长期策略改进的作用。",
-    "resources_en": "[paper](https://openreview.net/forum?id=5LaVWdURJZ) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
-    "resources_zh": "[论文](https://openreview.net/forum?id=5LaVWdURJZ) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
   },
   {
     "title": "Learning Compact State Abstractions for LLM Agents",
@@ -2601,15 +2394,6 @@
     "resources_zh": "[论文](https://openreview.net/forum?id=FxMC3n6AdZ) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
   },
   {
-    "title": "GraphSkillEvo: Evolutionary Optimization of Graph-Structured Agent Skills",
-    "category": "related_prompt_agent",
-    "date": "2026",
-    "description_en": "GraphSkillEvo applies population-based mutation and crossover to graph-structured natural-language skills.",
-    "description_zh": "GraphSkillEvo 对图结构自然语言技能执行 population-based mutation 与 crossover。",
-    "resources_en": "[paper](https://openreview.net/forum?id=FrghfkhvZh) · [code](https://anonymous.4open.science/r/GraphSkillEvo) · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
-    "resources_zh": "[论文](https://openreview.net/forum?id=FrghfkhvZh) · [代码](https://anonymous.4open.science/r/GraphSkillEvo) · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
-  },
-  {
     "title": "Geometry of Large Language Model Controllability",
     "category": "related_prompt_agent",
     "date": "2026",
@@ -2682,15 +2466,6 @@
     "resources_zh": "[论文](https://openreview.net/forum?id=WDqlWS75gR) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
   },
   {
-    "title": "Execution-Grounded Credit Assignment for Self-Evolving Agents",
-    "category": "related_prompt_agent",
-    "date": "2026",
-    "description_en": "The method links mutations of instructions, tool code, and skills to execution-derived intents, prunes candidates with bounded simulations from recorded decision points, and distills behavior-aware credit across rounds.",
-    "description_zh": "从执行历史提取变异意图，对指令、工具代码和技能做可追踪修改，并以局部模拟和行为信用指导后续演化。",
-    "resources_en": "[paper](https://openreview.net/forum?id=V2OwjDmLOC) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
-    "resources_zh": "[论文](https://openreview.net/forum?id=V2OwjDmLOC) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
-  },
-  {
     "title": "Evolutionary Adversarial Attacks Meet LLMs: Semantic-aware Adaptive Optimization Against Vision-Language Pre-trained Models",
     "category": "related_prompt_agent",
     "date": "2026",
@@ -2700,15 +2475,6 @@
     "resources_zh": "[论文](https://openreview.net/forum?id=u82Fkl3jwy) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
   },
   {
-    "title": "EvoORSkill: When Optimization Skills Evolve, Who Checks The Math?",
-    "category": "related_prompt_agent",
-    "date": "2026",
-    "description_en": "EvoORSkill evolves versioned operations-research procedures and revision strategies in a dependency-aware skill hypergraph, admitting revisions through mathematical checks and comparing strategies by historical replay without retraining the LLM.",
-    "description_zh": "在依赖感知技能超图中演化带版本的运筹流程与修订策略，并以数学检查和历史重放控制技能库更新。",
-    "resources_en": "[paper](https://openreview.net/forum?id=htz6wPMz4Z) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
-    "resources_zh": "[论文](https://openreview.net/forum?id=htz6wPMz4Z) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
-  },
-  {
     "title": "EvoMem: Memory-Augmented Evolution for Code Optimization",
     "category": "related_prompt_agent",
     "date": "2026",
@@ -2716,15 +2482,6 @@
     "description_zh": "将成功变异存为带来源的任务感知建议，并在后续程序进化中检索相关指令指导变异。",
     "resources_en": "[paper](https://openreview.net/forum?id=nrx0FyO4my) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
     "resources_zh": "[论文](https://openreview.net/forum?id=nrx0FyO4my) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
-  },
-  {
-    "title": "EvoGenome: Genotype-Phenotype Evolution for Compositional Agent Skills",
-    "category": "related_prompt_agent",
-    "date": "2026",
-    "description_en": "Evolves typed compositional skill genomes with constrained mutation, homologous crossover, specialization, pruning, and transplantation.",
-    "description_zh": "以受类型约束的变异、同源交叉、专门化、剪枝和移植演化复合代理技能基因组。",
-    "resources_en": "[paper](https://openreview.net/forum?id=KerlEXgtZe) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
-    "resources_zh": "[论文](https://openreview.net/forum?id=KerlEXgtZe) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
   },
   {
     "title": "EvoG: A Modular Framework for Evolutionary Optimization of Agentic Workflows",
@@ -2862,15 +2619,6 @@
     "resources_zh": "[论文](https://openreview.net/forum?id=XVvUgp3Bu8) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
   },
   {
-    "title": "DIVE: Unlocking Self-Improvement in Frozen Language Models Through Diversity-Driven Skill Evolution",
-    "category": "related_prompt_agent",
-    "date": "2026",
-    "description_en": "DIVE uses a frozen LLM to evolve multiple persistent natural-language skill populations from experience and verifier feedback, then selects a complementary skill set.",
-    "description_zh": "由冻结 LLM 基于经验和 verifier 反馈演化多个持久技能种群，再选择互补技能集合。",
-    "resources_en": "[paper](https://openreview.net/forum?id=ogu2wTp6nS) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
-    "resources_zh": "[论文](https://openreview.net/forum?id=ogu2wTp6nS) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
-  },
-  {
     "title": "DIA-GRPO: Guiding Policy Optimization with Cross-Prompt Diagnosis",
     "category": "related_hybrid",
     "date": "2026",
@@ -2896,24 +2644,6 @@
     "description_zh": "把记忆建模拆为静态结构与动态策略，并以验证反馈驱动变异、crossover 和 pruning 进化场景策略。",
     "resources_en": "[paper](https://openreview.net/forum?id=qm5Z3S6e4g) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
     "resources_zh": "[论文](https://openreview.net/forum?id=qm5Z3S6e4g) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
-  },
-  {
-    "title": "CtrlSkill: A Control-Theoretic View of Controllable Skill Self-Evolution",
-    "category": "related_prompt_agent",
-    "date": "2026",
-    "description_en": "CtrlSkill builds structured execution evidence, proposes condition-scoped skills from shared gaps, and gates policy adoption through later matched-task validation.",
-    "description_zh": "从结构化执行证据生成带适用条件的候选技能，并用后续匹配任务决定接受、延后或拒绝。",
-    "resources_en": "[paper](https://openreview.net/forum?id=R22SK8XC1h) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
-    "resources_zh": "[论文](https://openreview.net/forum?id=R22SK8XC1h) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
-  },
-  {
-    "title": "Cross-Model Reproductive Fitness: Evolving Transferable Skills across Model Hosts",
-    "category": "related_prompt_agent",
-    "date": "2026",
-    "description_en": "Selects and migrates skills across heterogeneous model–harness islands using transfer-aware reproductive fitness.",
-    "description_zh": "在异质模型—harness 岛之间迁移技能，并以跨 host 效用给予繁殖信用。",
-    "resources_en": "[paper](https://openreview.net/forum?id=L18vEjanZr) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
-    "resources_zh": "[论文](https://openreview.net/forum?id=L18vEjanZr) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
   },
   {
     "title": "Context-Space Adaptation of Frozen Multimodal Large Language Models for Medical Image Diagnosis",
@@ -3042,15 +2772,6 @@
     "resources_zh": "[论文](https://openreview.net/forum?id=Rfj9wv4EDR) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
   },
   {
-    "title": "COBRA-Skills: Contextual Bandit-Guided Evolution for Agent Skill Optimization",
-    "category": "related_prompt_agent",
-    "date": "2026",
-    "description_en": "COBRA-Skills uses contextual-bandit prioritization to allocate execution evaluations while evolving a skill population from grounded feedback.",
-    "description_zh": "COBRA-Skills 用 contextual bandit 分配技能执行评估，并依据实际反馈持续演化技能群体。",
-    "resources_en": "[paper](https://openreview.net/forum?id=6XFoqlavXz) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
-    "resources_zh": "[论文](https://openreview.net/forum?id=6XFoqlavXz) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
-  },
-  {
     "title": "CB-Orchestrator: Adaptive Workflow Optimization for LLM Agents via Contextual Bandits",
     "category": "related_prompt_agent",
     "date": "2026",
@@ -3150,15 +2871,6 @@
     "resources_zh": "[论文](https://openreview.net/forum?id=ZIF61XReMF) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
   },
   {
-    "title": "AgentPSO: Evolving Agent Reasoning Skill via Multi-agent Particle Swarm Optimization",
-    "category": "related_prompt_agent",
-    "date": "2026",
-    "description_en": "AgentPSO represents each agent's natural-language skill as a particle state and updates it from semantic velocity, personal and global best skills, and peer-trajectory reflection without changing backbone parameters.",
-    "description_zh": "AgentPSO 将自然语言技能视为粒子状态，用个体/全局最优及同伴轨迹反思形成的语义速度迭代技能。",
-    "resources_en": "[paper](https://openreview.net/forum?id=wDZ9eU8YuD) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
-    "resources_zh": "[论文](https://openreview.net/forum?id=wDZ9eU8YuD) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
-  },
-  {
     "title": "Adaptive Transfer for Cost-Aware Bayesian Optimization of LLM Agent Configurations",
     "category": "related_prompt_agent",
     "date": "2026",
@@ -3240,15 +2952,6 @@
     "resources_zh": "[论文](https://openreview.net/forum?id=Q5iYGwAe9W) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
   },
   {
-    "title": "A Kinetic Theory of the Gated Self-Evolving LLM Agent",
-    "category": "related_prompt_agent",
-    "date": "2026",
-    "description_en": "The paper develops certificates and a kinetic population model for validation-gated rewriting of DSH-class skill plugins, with measurable predictions at the plugin-instance level.",
-    "description_zh": "该稿为验证门控的 DSH 技能插件改写建立证书与群体动力学模型，并给出可测统计信号。",
-    "resources_en": "[paper](https://openreview.net/forum?id=23VDi5bfRj) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
-    "resources_zh": "[论文](https://openreview.net/forum?id=23VDi5bfRj) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
-  },
-  {
     "title": "A Closer Look at Agentic BBO: Benchmarking LLM Agents for Black-Box Optimization",
     "category": "related_prompt_agent",
     "date": "2026",
@@ -3319,15 +3022,6 @@
     "description_zh": "联合训练专用模型与 RL 代理，并以进化搜索调整二者的信息交换和样本选择 harness。",
     "resources_en": "[paper](https://openreview.net/forum?id=E1rsriszaM) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
     "resources_zh": "[论文](https://openreview.net/forum?id=E1rsriszaM) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
-  },
-  {
-    "title": "Discover and Internalize: A Continual Co-Evolving Training Loop for Self-Improvement Agents",
-    "category": "related_hybrid",
-    "date": "2026",
-    "description_en": "Evolves and composes skills as behavioral hypotheses, then internalizes promising behaviors into model weights in a continual loop.",
-    "description_zh": "演化并组合技能作为行为假设，再把有前景行为内化进模型权重以持续改进代理。",
-    "resources_en": "[paper](https://openreview.net/forum?id=FT2AzenhGs) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
-    "resources_zh": "[论文](https://openreview.net/forum?id=FT2AzenhGs) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
   },
   {
     "title": "Inference-Time Machine Unlearning via Gated Activation Redirection",
