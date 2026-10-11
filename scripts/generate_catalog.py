@@ -108,7 +108,7 @@ CATEGORIES = [
     },
     {
         "key": "related_prompt_agent", "family": "RELATED", "level": 3,
-        "en": "Non-prompt external-artifact optimization", "zh": "非提示词外部工件优化",
+        "en": "Other black-box methods and analyses", "zh": "其他黑箱方法与分析",
     },
     {
         "key": "related_agent_training", "family": "RELATED", "level": 3,
@@ -251,8 +251,8 @@ def render_catalog(papers: list[dict[str, str]], language: str) -> str:
         )
     lines.extend([
         "", "## Related research" if language == "en" else "## 关联研究", "",
-        "These companion entries may retain backpropagation, use closed-form/local/statistical adaptation, operate at inference time, optimize non-prompt external artifacts, or train agent models and controllers. Each entry records component-level backpropagation, persistent model weights, persistent external artifacts, and unresolved details only when supported."
-        if language == "en" else "关联条目可包含仍依赖反向传播、采用闭式/局部/统计适配、仅在推理时运行、优化非提示词外部工件，或训练智能体模型与控制器的方法。各条目仅依据原文记录逐组件反传、持久模型权重、持久外部工件和待核实事项。",
+        "These companion entries may retain backpropagation, use closed-form/local/statistical adaptation, operate at inference time, analyze or attack models, or train agent models and controllers. Frozen-LLM feedback loops that optimize external programs, algorithms, workflows, knowledge, memory, or search state are deferred. Each entry records component-level backpropagation, persistent model weights, persistent external artifacts, and unresolved details only when supported."
+        if language == "en" else "关联条目可包含仍依赖反向传播、采用闭式/局部/统计适配、仅在推理时运行、分析或攻击模型，或训练智能体模型与控制器的方法。冻结 LLM 依据反馈优化外部程序、算法、workflow、知识、记忆或搜索状态的闭环暂缓收录。各条目仅依据原文记录逐组件反传、持久模型权重、持久外部工件和待核实事项。",
     ])
     for category in CATEGORIES:
         if category["family"] == "RELATED":

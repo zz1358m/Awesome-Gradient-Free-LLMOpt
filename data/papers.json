@@ -1179,15 +1179,6 @@
     "resources_zh": "[论文](https://openreview.net/forum?id=j51J8bLIFh) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
   },
   {
-    "title": "Reshaping Guidance Objective with Large Language Models",
-    "category": "related_hybrid",
-    "date": "2026",
-    "description_en": "Joint Objective Reshaping combines LLM-driven structural edits with zeroth-order optimization in a reparameterized latent space to improve downstream guidance objectives.",
-    "description_zh": "结合 LLM 结构改写与重参数化潜空间的零阶数值优化，联合重塑下游求解器的指导目标。",
-    "resources_en": "[paper](https://openreview.net/forum?id=mL3MYH1pYu) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
-    "resources_zh": "[论文](https://openreview.net/forum?id=mL3MYH1pYu) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
-  },
-  {
     "title": "Recursive Self-Improvement through Multi-Agent Self-Supervision",
     "category": "related_hybrid",
     "date": "2026",
@@ -1384,15 +1375,6 @@
     "description_zh": "BCC 按行为等价实现的先验质量计量量化模型复杂度，并提供前向 bit-width 筛选、可认证编辑和总体损失界。",
     "resources_en": "[paper](https://openreview.net/forum?id=BLtMieC3Ds) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
     "resources_zh": "[论文](https://openreview.net/forum?id=BLtMieC3Ds) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
-  },
-  {
-    "title": "BOReFT: Manifold Steering of Language Models for Black-box Optimization",
-    "category": "related_prompt_agent",
-    "date": "2026",
-    "description_en": "BOReFT learns a low-dimensional hidden-state intervention space in a frozen language model and searches it with Bayesian optimization against an external score.",
-    "description_zh": "学习冻结语言模型的低维隐藏状态干预空间，再用外部评分驱动的贝叶斯优化进行搜索。",
-    "resources_en": "[paper](https://openreview.net/forum?id=M38068rlvo) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
-    "resources_zh": "[论文](https://openreview.net/forum?id=M38068rlvo) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
   },
   {
     "title": "Are We Measuring the Right Angles? Spherical Test-Time Adaptation of Vision-Language Models",
@@ -1593,15 +1575,6 @@
     "resources_zh": "[论文](https://openreview.net/forum?id=9fBck6CClD) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
   },
   {
-    "title": "SageLLM-BO: High-Dimensional Bayesian Optimization via Large Language Model-Guided Search Geometry",
-    "category": "related_prompt_agent",
-    "date": "2026",
-    "description_en": "SageLLM-BO asks an LLM to choose high-dimensional Bayesian-optimization search geometries from optimization indicators and quality-annotated examples.",
-    "description_zh": "SageLLM-BO 用优化指标与带质量估计的示例 search geometries 提示 LLM，让 LLM 自适应选择高维 BO 的低维子空间或 local trust region，取代固定的 geometry adaptation rules。",
-    "resources_en": "[paper](https://openreview.net/forum?id=REys9S1BcO) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
-    "resources_zh": "[论文](https://openreview.net/forum?id=REys9S1BcO) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
-  },
-  {
     "title": "SGA: Stamp Guided Black-box Adversarial Attack against Vision-Language Models",
     "category": "related_prompt_agent",
     "date": "2026",
@@ -1638,15 +1611,6 @@
     "resources_zh": "[论文](https://openreview.net/forum?id=nYra38pdbe) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
   },
   {
-    "title": "Meta-Delta: Evolving Knowledge through Global Review for LLM-Driven Optimization",
-    "category": "related_prompt_agent",
-    "date": "2026",
-    "description_en": "Meta-Delta co-evolves candidate solutions and a Delta Bank whose evidence-backed lessons are locally updated and periodically revised by a global review.",
-    "description_zh": "Meta-Delta 共同演化候选解和 Delta Bank，并用局部实验教训与全局审查持续修订搜索知识。",
-    "resources_en": "[paper](https://openreview.net/forum?id=982s77OSTT) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
-    "resources_zh": "[论文](https://openreview.net/forum?id=982s77OSTT) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
-  },
-  {
     "title": "Mask-On: Compact Activation-Calibrated Merging for Autoregressive and Diffusion Language Models",
     "category": "related_prompt_agent",
     "date": "2026",
@@ -1674,15 +1638,6 @@
     "resources_zh": "[论文](https://openreview.net/forum?id=fbzXTjTZ9x) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
   },
   {
-    "title": "Large Language Model Driven Operator Evolution: A Paradigm for Operator Pool Reconstruction and Adaptation",
-    "category": "related_prompt_agent",
-    "date": "2026",
-    "description_en": "The framework uses performance feedback to have an LLM reconstruct bounded search operators that combine exploration, constraint improvement, convergence, and diversity restoration while preserving GA/DE variation interfaces.",
-    "description_zh": "该框架依据实际搜索反馈让 LLM 重构 GA/DE operator pool，同时保留原始算子和既有 offspring 接口。",
-    "resources_en": "[paper](https://openreview.net/forum?id=wqsoOi2vaP) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
-    "resources_zh": "[论文](https://openreview.net/forum?id=wqsoOi2vaP) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
-  },
-  {
     "title": "Is Flat Merging Enough? Evolutionary Search for Tree-Structured Model Merging",
     "category": "related_prompt_agent",
     "date": "2026",
@@ -1690,24 +1645,6 @@
     "description_zh": "EvoTM 以遗传编程联合搜索树式模型合并的拓扑、专家选择和专家复用。",
     "resources_en": "[paper](https://openreview.net/forum?id=9Ntfc5vVGp) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
     "resources_zh": "[论文](https://openreview.net/forum?id=9Ntfc5vVGp) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
-  },
-  {
-    "title": "Improving LLM-driven program evolution with dynamic scope",
-    "category": "related_prompt_agent",
-    "date": "2026",
-    "description_en": "DyScope makes the editable program boundary an executable search state and verifies requested scope transitions against realized parent-child diffs.",
-    "description_zh": "把程序编辑边界变成可选择、可执行并能由父子差异验证的搜索状态。",
-    "resources_en": "[paper](https://openreview.net/forum?id=MXINrso5QC) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
-    "resources_zh": "[论文](https://openreview.net/forum?id=MXINrso5QC) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
-  },
-  {
-    "title": "Hill Sampling for Test-Time Scaling: A Simple and Better Alternative to Repeated Sampling, Evolution, and Training",
-    "category": "related_prompt_agent",
-    "date": "2026",
-    "description_en": "Hill Sampling repeatedly samples programs from a frozen LLM, retains the best verified program, and conditions subsequent samples on that incumbent.",
-    "description_zh": "从冻结 LLM 反复采样程序、保留最佳验证程序，并以当前最优解条件化后续采样。",
-    "resources_en": "[paper](https://openreview.net/forum?id=m1xdCQou1Z) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
-    "resources_zh": "[论文](https://openreview.net/forum?id=m1xdCQou1Z) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
   },
   {
     "title": "HapBO: Harnessed α–π Bayesian Optimization via Expert Natural Language Priors",
@@ -1719,24 +1656,6 @@
     "resources_zh": "[论文](https://openreview.net/forum?id=45k9l8zWbL) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
   },
   {
-    "title": "FrugalEvo: Towards Cost-Aware LLM-Guided Program Evolution",
-    "category": "related_prompt_agent",
-    "date": "2026",
-    "description_en": "FrugalEvo assigns strategy exploration to a stronger LLM and iterative code refinement to a cheaper LLM, with prefix-cache reuse and a cost-integrated evaluation metric.",
-    "description_zh": "由强模型探索策略、廉价模型实现并迭代改代码，同时利用前缀缓存和成本积分指标控制演化开销。",
-    "resources_en": "[paper](https://openreview.net/forum?id=QT9UN9GxWQ) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
-    "resources_zh": "[论文](https://openreview.net/forum?id=QT9UN9GxWQ) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
-  },
-  {
-    "title": "From Experience to Knowledge: Algorithm Design for Black-Box Optimization with Large Language Models",
-    "category": "related_prompt_agent",
-    "date": "2026",
-    "description_en": "FETK searches EA architectures on training problems, validates distilled design knowledge, and reuses it to generate an architecture for each new problem with one LLM call.",
-    "description_zh": "搜索训练问题上的 EA 架构、验证蒸馏出的设计知识，并以一次 LLM 调用为新问题生成架构。",
-    "resources_en": "[paper](https://openreview.net/forum?id=QDfuYx1Rp8) · [code](https://anonymous.4open.science/r/fetk-DE22) · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
-    "resources_zh": "[论文](https://openreview.net/forum?id=QDfuYx1Rp8) · [代码](https://anonymous.4open.science/r/fetk-DE22) · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
-  },
-  {
     "title": "Explicit Trajectory Diversity for RL-Based Post-Training of LLM Agents",
     "category": "related_hybrid",
     "date": "2026",
@@ -1746,24 +1665,6 @@
     "resources_zh": "[论文](https://openreview.net/forum?id=WDqlWS75gR) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
   },
   {
-    "title": "Evolutionary Adversarial Attacks Meet LLMs: Semantic-aware Adaptive Optimization Against Vision-Language Pre-trained Models",
-    "category": "related_prompt_agent",
-    "date": "2026",
-    "description_en": "LEA uses an LLM to adapt semantic priors, operator choice, and search parameters while a heterogeneous evolutionary pool searches image perturbations without victim-model gradients.",
-    "description_zh": "LEA 让 LLM 高层控制语义先验与算子调度，再以异构进化算子池无梯度搜索 VLM 对抗扰动。",
-    "resources_en": "[paper](https://openreview.net/forum?id=u82Fkl3jwy) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
-    "resources_zh": "[论文](https://openreview.net/forum?id=u82Fkl3jwy) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
-  },
-  {
-    "title": "EvoMem: Memory-Augmented Evolution for Code Optimization",
-    "category": "related_prompt_agent",
-    "date": "2026",
-    "description_en": "EvoMem stores successful mutations as provenance-aware advice and retrieves context-relevant instructions to guide later evolutionary program-search runs.",
-    "description_zh": "将成功变异存为带来源的任务感知建议，并在后续程序进化中检索相关指令指导变异。",
-    "resources_en": "[paper](https://openreview.net/forum?id=nrx0FyO4my) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
-    "resources_zh": "[论文](https://openreview.net/forum?id=nrx0FyO4my) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
-  },
-  {
     "title": "EvoComp-2: Learning to Compress Audio-Video Tokens for Omnimodal Large Language Models via Topic-Guided Evolutionary Labeling",
     "category": "related_hybrid",
     "date": "2026",
@@ -1771,15 +1672,6 @@
     "description_zh": "通过主题引导的时间聚类和进化式 token 保留标注构造监督，再训练压缩器学习时间区域与模态的重要性。",
     "resources_en": "[paper](https://openreview.net/forum?id=ZPkgIda8N5) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
     "resources_zh": "[论文](https://openreview.net/forum?id=ZPkgIda8N5) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
-  },
-  {
-    "title": "EviGate: Evidence-Gated Inheritance for Self-Evolving Program-Repair Agents",
-    "category": "related_hybrid",
-    "date": "2026",
-    "description_en": "EviGate admits program-repair candidates, memory changes, and parameter adaptations only after staged promotion, regression, and safety checks, recording every inheritance decision in an append-only lineage.",
-    "description_zh": "以执行证据和分阶段 promotion、regression、safety checks 审批补丁、记忆与参数继承，并保存完整 lineage。",
-    "resources_en": "[paper](https://openreview.net/forum?id=gU0o6s2tHP) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
-    "resources_zh": "[论文](https://openreview.net/forum?id=gU0o6s2tHP) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
   },
   {
     "title": "Do Vision-Language Models Use the Regions They Cite? A Step-Specific Intervention Test",
@@ -1809,15 +1701,6 @@
     "resources_zh": "[论文](https://openreview.net/forum?id=lXuaseCyXd) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
   },
   {
-    "title": "Context-Space Adaptation of Frozen Multimodal Large Language Models for Medical Image Diagnosis",
-    "category": "related_prompt_agent",
-    "date": "2026",
-    "description_en": "The Clinician Mimetic Workflow adapts a frozen medical MLLM by jointly constructing retrieved visual exemplars and a self-refined diagnostic experience state.",
-    "description_zh": "Clinician Mimetic Workflow 为冻结医学 MLLM 联合构造检索视觉样例与自精炼诊断经验状态。",
-    "resources_en": "[paper](https://openreview.net/forum?id=6JkxoF616C) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
-    "resources_zh": "[论文](https://openreview.net/forum?id=6JkxoF616C) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
-  },
-  {
     "title": "Constructive Prediction: The Role of Lexical Code Organization in Language Modeling",
     "category": "related_prompt_agent",
     "date": "2026",
@@ -1834,15 +1717,6 @@
     "description_zh": "构造 block 内解码顺序的 permutation tree，以置信度分区剪枝后用一次批量前向验证选定接受路径。",
     "resources_en": "[paper](https://openreview.net/forum?id=heTK8MXaWg) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
     "resources_zh": "[论文](https://openreview.net/forum?id=heTK8MXaWg) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
-  },
-  {
-    "title": "Code to Control: Synthesizing Parameterized Reactive Controllers",
-    "category": "related_agent_training",
-    "date": "2026",
-    "description_en": "Code to Control has an LLM synthesize Python controller structure and fits its continuous parameters with derivative-free environment feedback, producing a standalone reactive policy.",
-    "description_zh": "Code to Control 由 LLM 合成 controller 结构，再用环境反馈的 derivative-free search 拟合其连续参数。",
-    "resources_en": "[paper](https://openreview.net/forum?id=z62vbEOWDO) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
-    "resources_zh": "[论文](https://openreview.net/forum?id=z62vbEOWDO) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
   },
   {
     "title": "CoHARL: Co-Evolving Agent Policies and Executable Harnesses with Reinforcement Learning",
@@ -2032,15 +1906,6 @@
     "description_zh": "EdgeEdit 用零阶敏感度和动态规划配置端侧混合精度量化，并以显著性引导的视觉 token 裁剪保留编辑证据。",
     "resources_en": "[paper](https://openreview.net/forum?id=szkL8iUTnD) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
     "resources_zh": "[论文](https://openreview.net/forum?id=szkL8iUTnD) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
-  },
-  {
-    "title": "Generate and Select: A Framework for Bayesian Optimization with LLM Proposals",
-    "category": "related_prompt_agent",
-    "date": "2026",
-    "description_en": "GaS separates black-box LLM candidate generation from Gaussian-process Bayesian selection over a cumulative pool and analyzes regret relative to the best generator-reachable object.",
-    "description_zh": "GaS 让黑盒 LLM 生成结构化候选，再由 GP Bayesian optimizer 从累计池中选择昂贵评估对象。",
-    "resources_en": "[paper](https://openreview.net/forum?id=zENuM3JgRz) · code not located · ![ICLR 2027 Withdrawn](https://img.shields.io/badge/ICLR_2027-Withdrawn-orange) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
-    "resources_zh": "[论文](https://openreview.net/forum?id=zENuM3JgRz) · 未找到代码 · ![ICLR 2027 已撤稿](https://img.shields.io/badge/ICLR_2027-Withdrawn-orange) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
   },
   {
     "title": "QK-Wanda: Coupling Queries and Keys for Unstructured Pruning",
