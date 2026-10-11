@@ -31,6 +31,12 @@ Core ES/ZO sections require persistent LLM parameters, adapters, structured para
 
 Boundary work on prompts, chain-of-thought, candidate answers, skills, workflows, harnesses, scripts, memory, reward modules, model composition, and inference-time search belongs in a labeled related section when the official abstract establishes a concrete LLM/VLM optimization connection. Do not include papers that merely use “evolving” as rhetoric without a concrete method connection. Do not infer frozen weights, absence of backpropagation, or absence of persistent model updates from an external search object; record each model, proposer, scorer/verifier, surrogate, and external artifact separately, and mark missing facts as unverified.
 
+## Literature-search scope
+
+For conference updates, discover candidates with explicit gradient-free method names or exact phrases, such as `zeroth-order`, `zero-order`, `gradient-free`, `derivative-free`, `backpropagation-free`, `forward-only`, `without backpropagation`, `without gradients`, `MeZO`, `SPSA`, `CMA-ES`, `evolution strategies`, `evolutionary optimization`, `neuroevolution`, parameter/weight perturbation, finite differences, and forward gradients. Prefer conference-scoped OpenReview queries with `type=exact`, `content=all`, the conference `group`, and `source=forum`; retain query URLs, counts, pages, timestamps, and deduplicated IDs.
+
+Do not discover candidates by enumerating the full conference or by searching bare terms such as `language model`, `large language`, `LLM`, `vision-language`, `evolving`, or `training-free`. A broad corpus may be retained as historical evidence or used to correct metadata for papers already in the catalog, but it must not supply new catalog candidates. Every candidate must retain the exact method query that found it, and every inclusion or exclusion must be based on the paper-specific official abstract or another primary source rather than substring matching. Baselines and related-work components must not be attributed to the proposed method.
+
 ## Classification
 
 Scope extensions include persistent action-side ZO adaptation in VLA models. Hybrid methods that retain backpropagation and inference-time calibration without parameter updates belong only in the explicitly labeled related-research categories.
@@ -52,6 +58,7 @@ Choose exactly one primary section:
 - `related_inference` — related inference-time calibration without parameter updates
 - `related_closed_form` — closed-form, local, predictive-coding, or statistics-based adaptation that avoids a conventional end-to-end backward update; separately record whether it installs persistent adapters, classifiers, class statistics, memory states, or calibration profiles
 - `related_prompt_agent` — gradient-free search over prompts, agent skills/workflows/harnesses, memory, scripts, rewards, model composition, or other external artifacts; separately record model-weight updates, external-artifact persistence, and unknown component training
+- `related_unverified` — boundary work with a concrete LLM/VLM optimization or self-improvement connection whose official abstract does not establish whether an independent gradient-free mechanism, first-order training path, or persistent update exists; state the unresolved mechanism explicitly and do not present it as verified ES/ZO or hybrid optimization
 
 Use the exact category keys from `data/papers.json`; the labels above describe where each key appears in the README.
 

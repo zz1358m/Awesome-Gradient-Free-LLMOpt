@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T17:52:26.020454+08:00",
+  "generated_at": "2026-10-11T19:02:38.896542+08:00",
   "retrieval_started_at": "2026-10-11T16:32:33+08:00",
   "scoped_retrieval_completed_at": "2026-10-11T16:48:48.064575+08:00",
   "conference": "ICLR 2027",
@@ -1252,10 +1252,15 @@
     }
   ],
   "coverage_conclusion": {
+    "user_scoped_method_queries_complete": true,
+    "method_query_count": 18,
+    "method_query_union_unique_ids": 387,
+    "new_candidates_reviewed": 181,
+    "unresolved_candidates": 0,
     "full_venue_retrieval_complete": false,
-    "verified_unique_id_lower_bound": 35728,
-    "reason_zh": "官方 venueid 搜索的 count/结果窗口封顶 10000；cdate 正序与倒序各 10000 条且零交集，中间日期区间未取得。日期过滤参数被忽略，title 排序返回 400；完整 notes endpoint 仍为 ChallengeRequiredError。 另有 21 个精确短语查询完整返回，但不能恢复中间 venue 窗口。",
-    "claim": "Partial, auditable coverage only; never described as all ICLR 2027 submissions."
+    "full_venue_enumeration_required_for_this_update": false,
+    "reason_zh": "18个用户指定方法短语的type=exact、content=all会议限定查询均完整返回官方count，全部新增候选已逐摘要处理。未进行也不声称全会场枚举；历史正序/倒序窗口与广泛语言语料不用于本轮发现。",
+    "claim": "Complete for the 18 user-scoped method-directed exact queries; no claim of complete ICLR 2027 venue coverage."
   },
   "supplemental_exact_phrase_search": {
     "evidence_file": "data/literature_reviews/2026-10-11-iclr2027-exact-phrase-search.json",
@@ -1269,5 +1274,43 @@
     "catalogued": 21,
     "not_catalogued": 14,
     "scope_warning_zh": "查询级完整；全会场覆盖仍为 partial。"
+  },
+  "method_directed_exact_search": {
+    "scope": "OpenReview ICLR.cc/2027/Conference; source=forum; type=exact; content=all; only the 18 explicit gradient-free method phrases",
+    "started_at": "2026-10-11T19:02:01.928575+08:00",
+    "finished_at": "2026-10-11T19:02:38.896542+08:00",
+    "query_count": 18,
+    "pages": 18,
+    "query_result_id_union": 387,
+    "already_in_review_report": 206,
+    "new_candidates_individually_reviewed": 181,
+    "included_new": 7,
+    "excluded_after_individual_review": 174,
+    "unresolved": 0,
+    "all_queries_complete_to_reported_count": true,
+    "full_conference_enumeration_claimed": false,
+    "cache_manifest": "/tmp/iclr2027-catalog-20261011-attempt10/method-exact-all/manifest.json",
+    "decision_validation": "/tmp/iclr2027-catalog-20261011-attempt10/method-exact-all/decision-validation.json",
+    "review_files": [
+      "data/literature_reviews/2026-10-11-iclr2027-method-exact-batch-1.md",
+      "data/literature_reviews/2026-10-11-iclr2027-method-exact-batch-2.md",
+      "data/literature_reviews/2026-10-11-iclr2027-method-exact-batch-3.md",
+      "data/literature_reviews/2026-10-11-iclr2027-method-exact-batch-4.md",
+      "data/literature_reviews/2026-10-11-iclr2027-method-exact-batch-5.md",
+      "data/literature_reviews/2026-10-11-iclr2027-method-exact-batch-6.md"
+    ],
+    "note_zh": "18 个方法短语查询均完整返回其官方 count；这只证明这些定向查询完整，不证明覆盖全部 ICLR 2027 投稿。14,990 条广泛语言语料、409 条词面命中和 14,581 条未命中二筛未用于本轮候选发现或收录。",
+    "evidence_file": "data/literature_reviews/2026-10-11-iclr2027-method-directed-search.json"
+  },
+  "historical_broad_search_status": {
+    "used_for_candidate_discovery_in_this_update": false,
+    "used_for_scientific_exclusions_in_this_update": false,
+    "preserved_for_history_and_existing_entry_metadata_corrections": true,
+    "excluded_inputs": [
+      "/tmp/iclr2027-parent-language-coverage/corpus-union.json",
+      "/tmp/iclr2027-parent-language-coverage/candidate-hits.json",
+      "14,581-record non-hit screen"
+    ],
+    "reason_zh": "按用户范围约束停止广泛语言语料和全会议枚举；这些历史数据不构成本轮候选或科学排除。"
   }
 }

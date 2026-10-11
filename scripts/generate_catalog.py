@@ -110,6 +110,10 @@ CATEGORIES = [
         "key": "related_prompt_agent", "family": "RELATED", "level": 3,
         "en": "Gradient-free search over prompts, agents, and external artifacts", "zh": "提示词、智能体与外部工件的梯度无关搜索",
     },
+    {
+        "key": "related_unverified", "family": "RELATED", "level": 3,
+        "en": "Mechanism-unverified boundary work", "zh": "机制待核实的边界研究",
+    },
 ]
 
 CATEGORY_BY_KEY = {category["key"]: category for category in CATEGORIES}

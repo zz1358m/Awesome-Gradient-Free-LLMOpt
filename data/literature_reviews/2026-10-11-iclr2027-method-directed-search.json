@@ -1,0 +1,2667 @@
+{
+  "name": "method_directed_exact_content_all_2026-10-11",
+  "scope": "OpenReview ICLR.cc/2027/Conference; source=forum; type=exact; content=all; only the 18 explicit gradient-free method phrases",
+  "started_at": "2026-10-11T19:02:01.928575+08:00",
+  "finished_at": "2026-10-11T19:02:38.896542+08:00",
+  "queries": [
+    {
+      "phrase": "zeroth-order",
+      "type": "exact",
+      "content": "all",
+      "official_count": 94,
+      "unique_ids": 94,
+      "pages": 1,
+      "complete_to_official_count": true,
+      "url": "https://api2.openreview.net/notes/search?term=zeroth-order&type=exact&content=all&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&offset=0&count=true&sort=cdate%3Aasc",
+      "retrieved_at": "2026-10-11T19:02:03.083874+08:00",
+      "cache_file": "00-00000.json"
+    },
+    {
+      "phrase": "zero-order",
+      "type": "exact",
+      "content": "all",
+      "official_count": 13,
+      "unique_ids": 13,
+      "pages": 1,
+      "complete_to_official_count": true,
+      "url": "https://api2.openreview.net/notes/search?term=zero-order&type=exact&content=all&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&offset=0&count=true&sort=cdate%3Aasc",
+      "retrieved_at": "2026-10-11T19:02:05.020711+08:00",
+      "cache_file": "01-00000.json"
+    },
+    {
+      "phrase": "gradient-free",
+      "type": "exact",
+      "content": "all",
+      "official_count": 85,
+      "unique_ids": 85,
+      "pages": 1,
+      "complete_to_official_count": true,
+      "url": "https://api2.openreview.net/notes/search?term=gradient-free&type=exact&content=all&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&offset=0&count=true&sort=cdate%3Aasc",
+      "retrieved_at": "2026-10-11T19:02:07.462142+08:00",
+      "cache_file": "02-00000.json"
+    },
+    {
+      "phrase": "derivative-free",
+      "type": "exact",
+      "content": "all",
+      "official_count": 20,
+      "unique_ids": 20,
+      "pages": 1,
+      "complete_to_official_count": true,
+      "url": "https://api2.openreview.net/notes/search?term=derivative-free&type=exact&content=all&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&offset=0&count=true&sort=cdate%3Aasc",
+      "retrieved_at": "2026-10-11T19:02:09.506446+08:00",
+      "cache_file": "03-00000.json"
+    },
+    {
+      "phrase": "backpropagation-free",
+      "type": "exact",
+      "content": "all",
+      "official_count": 19,
+      "unique_ids": 19,
+      "pages": 1,
+      "complete_to_official_count": true,
+      "url": "https://api2.openreview.net/notes/search?term=backpropagation-free&type=exact&content=all&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&offset=0&count=true&sort=cdate%3Aasc",
+      "retrieved_at": "2026-10-11T19:02:11.483877+08:00",
+      "cache_file": "04-00000.json"
+    },
+    {
+      "phrase": "forward-only",
+      "type": "exact",
+      "content": "all",
+      "official_count": 51,
+      "unique_ids": 51,
+      "pages": 1,
+      "complete_to_official_count": true,
+      "url": "https://api2.openreview.net/notes/search?term=forward-only&type=exact&content=all&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&offset=0&count=true&sort=cdate%3Aasc",
+      "retrieved_at": "2026-10-11T19:02:13.723385+08:00",
+      "cache_file": "05-00000.json"
+    },
+    {
+      "phrase": "without backpropagation",
+      "type": "exact",
+      "content": "all",
+      "official_count": 22,
+      "unique_ids": 22,
+      "pages": 1,
+      "complete_to_official_count": true,
+      "url": "https://api2.openreview.net/notes/search?term=without+backpropagation&type=exact&content=all&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&offset=0&count=true&sort=cdate%3Aasc",
+      "retrieved_at": "2026-10-11T19:02:15.727764+08:00",
+      "cache_file": "06-00000.json"
+    },
+    {
+      "phrase": "without gradients",
+      "type": "exact",
+      "content": "all",
+      "official_count": 13,
+      "unique_ids": 13,
+      "pages": 1,
+      "complete_to_official_count": true,
+      "url": "https://api2.openreview.net/notes/search?term=without+gradients&type=exact&content=all&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&offset=0&count=true&sort=cdate%3Aasc",
+      "retrieved_at": "2026-10-11T19:02:17.758846+08:00",
+      "cache_file": "07-00000.json"
+    },
+    {
+      "phrase": "MeZO",
+      "type": "exact",
+      "content": "all",
+      "official_count": 7,
+      "unique_ids": 7,
+      "pages": 1,
+      "complete_to_official_count": true,
+      "url": "https://api2.openreview.net/notes/search?term=MeZO&type=exact&content=all&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&offset=0&count=true&sort=cdate%3Aasc",
+      "retrieved_at": "2026-10-11T19:02:19.656483+08:00",
+      "cache_file": "08-00000.json"
+    },
+    {
+      "phrase": "SPSA",
+      "type": "exact",
+      "content": "all",
+      "official_count": 3,
+      "unique_ids": 3,
+      "pages": 1,
+      "complete_to_official_count": true,
+      "url": "https://api2.openreview.net/notes/search?term=SPSA&type=exact&content=all&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&offset=0&count=true&sort=cdate%3Aasc",
+      "retrieved_at": "2026-10-11T19:02:21.729866+08:00",
+      "cache_file": "09-00000.json"
+    },
+    {
+      "phrase": "CMA-ES",
+      "type": "exact",
+      "content": "all",
+      "official_count": 19,
+      "unique_ids": 19,
+      "pages": 1,
+      "complete_to_official_count": true,
+      "url": "https://api2.openreview.net/notes/search?term=CMA-ES&type=exact&content=all&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&offset=0&count=true&sort=cdate%3Aasc",
+      "retrieved_at": "2026-10-11T19:02:23.714418+08:00",
+      "cache_file": "10-00000.json"
+    },
+    {
+      "phrase": "evolution strategies",
+      "type": "exact",
+      "content": "all",
+      "official_count": 30,
+      "unique_ids": 30,
+      "pages": 1,
+      "complete_to_official_count": true,
+      "url": "https://api2.openreview.net/notes/search?term=evolution+strategies&type=exact&content=all&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&offset=0&count=true&sort=cdate%3Aasc",
+      "retrieved_at": "2026-10-11T19:02:25.789223+08:00",
+      "cache_file": "11-00000.json"
+    },
+    {
+      "phrase": "evolutionary optimization",
+      "type": "exact",
+      "content": "all",
+      "official_count": 19,
+      "unique_ids": 19,
+      "pages": 1,
+      "complete_to_official_count": true,
+      "url": "https://api2.openreview.net/notes/search?term=evolutionary+optimization&type=exact&content=all&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&offset=0&count=true&sort=cdate%3Aasc",
+      "retrieved_at": "2026-10-11T19:02:27.698428+08:00",
+      "cache_file": "12-00000.json"
+    },
+    {
+      "phrase": "neuroevolution",
+      "type": "exact",
+      "content": "all",
+      "official_count": 7,
+      "unique_ids": 7,
+      "pages": 1,
+      "complete_to_official_count": true,
+      "url": "https://api2.openreview.net/notes/search?term=neuroevolution&type=exact&content=all&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&offset=0&count=true&sort=cdate%3Aasc",
+      "retrieved_at": "2026-10-11T19:02:29.607880+08:00",
+      "cache_file": "13-00000.json"
+    },
+    {
+      "phrase": "parameter perturbation",
+      "type": "exact",
+      "content": "all",
+      "official_count": 7,
+      "unique_ids": 7,
+      "pages": 1,
+      "complete_to_official_count": true,
+      "url": "https://api2.openreview.net/notes/search?term=parameter+perturbation&type=exact&content=all&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&offset=0&count=true&sort=cdate%3Aasc",
+      "retrieved_at": "2026-10-11T19:02:31.548695+08:00",
+      "cache_file": "14-00000.json"
+    },
+    {
+      "phrase": "weight perturbation",
+      "type": "exact",
+      "content": "all",
+      "official_count": 8,
+      "unique_ids": 8,
+      "pages": 1,
+      "complete_to_official_count": true,
+      "url": "https://api2.openreview.net/notes/search?term=weight+perturbation&type=exact&content=all&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&offset=0&count=true&sort=cdate%3Aasc",
+      "retrieved_at": "2026-10-11T19:02:33.461225+08:00",
+      "cache_file": "15-00000.json"
+    },
+    {
+      "phrase": "finite difference",
+      "type": "exact",
+      "content": "all",
+      "official_count": 48,
+      "unique_ids": 48,
+      "pages": 1,
+      "complete_to_official_count": true,
+      "url": "https://api2.openreview.net/notes/search?term=finite+difference&type=exact&content=all&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&offset=0&count=true&sort=cdate%3Aasc",
+      "retrieved_at": "2026-10-11T19:02:35.778953+08:00",
+      "cache_file": "16-00000.json"
+    },
+    {
+      "phrase": "forward gradient",
+      "type": "exact",
+      "content": "all",
+      "official_count": 4,
+      "unique_ids": 4,
+      "pages": 1,
+      "complete_to_official_count": true,
+      "url": "https://api2.openreview.net/notes/search?term=forward+gradient&type=exact&content=all&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&offset=0&count=true&sort=cdate%3Aasc",
+      "retrieved_at": "2026-10-11T19:02:37.642939+08:00",
+      "cache_file": "17-00000.json"
+    }
+  ],
+  "query_count": 18,
+  "pages": 18,
+  "query_result_id_union": 387,
+  "already_in_review_report": 206,
+  "new_candidates_individually_reviewed": 181,
+  "included_new": 7,
+  "excluded_after_individual_review": 174,
+  "unresolved": 0,
+  "all_queries_complete_to_reported_count": true,
+  "broad_language_corpus_used_for_candidate_discovery": false,
+  "full_conference_enumeration_claimed": false,
+  "cache_manifest": "/tmp/iclr2027-catalog-20261011-attempt10/method-exact-all/manifest.json",
+  "decision_validation": "/tmp/iclr2027-catalog-20261011-attempt10/method-exact-all/decision-validation.json",
+  "review_files": [
+    "data/literature_reviews/2026-10-11-iclr2027-method-exact-batch-1.md",
+    "data/literature_reviews/2026-10-11-iclr2027-method-exact-batch-2.md",
+    "data/literature_reviews/2026-10-11-iclr2027-method-exact-batch-3.md",
+    "data/literature_reviews/2026-10-11-iclr2027-method-exact-batch-4.md",
+    "data/literature_reviews/2026-10-11-iclr2027-method-exact-batch-5.md",
+    "data/literature_reviews/2026-10-11-iclr2027-method-exact-batch-6.md"
+  ],
+  "note_zh": "18 个方法短语查询均完整返回其官方 count；这只证明这些定向查询完整，不证明覆盖全部 ICLR 2027 投稿。14,990 条广泛语言语料、409 条词面命中和 14,581 条未命中二筛未用于本轮候选发现或收录。",
+  "query_union_ids": [
+    "0LAE4kdRGl",
+    "0MiTxo4j9d",
+    "0QXB9nl5QA",
+    "0e0urElUyG",
+    "0e6fe2MG5z",
+    "1A2seNVDZG",
+    "1DyQYjjUM3",
+    "1Ijpq0Nino",
+    "1UIq0cjyZB",
+    "1aoQWfoqRQ",
+    "2KFNPsh1y4",
+    "2ShTYfwNWk",
+    "2jfW67zbil",
+    "3zKL0tfzM3",
+    "4nrxgYbatB",
+    "4rQFijPAgb",
+    "4tp5TPhaoL",
+    "50wgNc7yUX",
+    "51E3DimEN4",
+    "55geiEe08j",
+    "59ufz75SkM",
+    "5Azm1dweoz",
+    "5FWBc0Cays",
+    "5GdFuqdQwr",
+    "5H9yPPYAla",
+    "61uAE11t92",
+    "63OyUCD9HC",
+    "66ynaH1898",
+    "6JkxoF616C",
+    "6UF4T1CzoK",
+    "6kwgPuiq8R",
+    "6wHdHqhDuM",
+    "74gLFx6JkB",
+    "7RDJEZraD1",
+    "7Yl2JKKec1",
+    "7hs0vjh7L4",
+    "7x4AAlYBDM",
+    "97XCQK26JE",
+    "982s77OSTT",
+    "9FMfQxOc3b",
+    "9Lrcxvs7GS",
+    "9Ntfc5vVGp",
+    "9O4ySWc0G1",
+    "9PoJmVxDG5",
+    "9TVnxhsWUC",
+    "9lEvG6Tfku",
+    "9xbgm7J1m9",
+    "ACuCPfyRs1",
+    "APkYU4FkeR",
+    "Al9NxBL54h",
+    "B4QWjbtwO0",
+    "BD501aT6sD",
+    "BLtMieC3Ds",
+    "BZlMmPacyO",
+    "BldtP95aQi",
+    "BtHTmI1zJL",
+    "C1HGhWNaYZ",
+    "C69ql69qP4",
+    "CADnUczyZQ",
+    "CYZbnNobTC",
+    "CZqew9w981",
+    "CfM6pUY6ro",
+    "CiCNIXROuS",
+    "CkuA2Se9vX",
+    "D8E6bb0Ioc",
+    "D9uldDQrKv",
+    "DSJoxz1Vh5",
+    "DScGkPg0NR",
+    "DUw0xNquRF",
+    "DXeChT9fBB",
+    "DYddkBo6u2",
+    "DnAsidFUmk",
+    "EQuFNpm6gc",
+    "EjCA4aPW5K",
+    "EnBpzU8b3z",
+    "EplKUVCy5D",
+    "EsBS8s9n6I",
+    "FZAUWsJD3m",
+    "FjGiCaa2p1",
+    "FrghfkhvZh",
+    "FtpY3WzkCB",
+    "G6fuD02eUD",
+    "G8GNLtlyAV",
+    "GW2ZqLgLdX",
+    "Gty08pINJE",
+    "H1G5NrhRUc",
+    "HDeeHC6So7",
+    "HFXtAkQ0YH",
+    "HKCvQhA1y4",
+    "HXmRkbSJCb",
+    "HXmiKD1kS0",
+    "HdeuL9qztS",
+    "HmjQwigXa8",
+    "HteiUnhO1T",
+    "HzgD4jnaaZ",
+    "I0AW0dp7WL",
+    "I3q1ZdbQow",
+    "IA3PSttexX",
+    "IJWhEOL1pT",
+    "IRVmSRiS4I",
+    "IS4e3W7Xc0",
+    "IWiOh98M8n",
+    "IcsDtyQXgw",
+    "IgzZOlnr2t",
+    "ImyrQKmvTo",
+    "IsgBzBG5mv",
+    "IuMamxh76q",
+    "IwgY4l6lax",
+    "J5QiZLm5qs",
+    "JEeD6leWDn",
+    "JOo32CtWHH",
+    "JQwie0bKBb",
+    "JadfZVJabx",
+    "JgMy03717F",
+    "Jq6I5yUXXR",
+    "JqlxDi0k8a",
+    "JruDtQUl8A",
+    "JzPDBEz1rL",
+    "JzjNi4rkcX",
+    "K3CKXzcHDE",
+    "KISxCpKBIf",
+    "KJ0mwI2BjI",
+    "KUuqUEtSMZ",
+    "KdCdB5V6ku",
+    "Ke3tLwqK3L",
+    "KeLPu3WVjq",
+    "Kkw09db5oE",
+    "KlnPPPCCiO",
+    "Kra8djk0Ys",
+    "KzW87to1Wm",
+    "L6QLnBFEml",
+    "LGeMWMPk3s",
+    "LOwG4xUpfa",
+    "LR8wVOqE28",
+    "LX2ejcw9e7",
+    "LXWbf5UWeX",
+    "LfIpbuIKLb",
+    "Lk9tVmpC2Q",
+    "LsJ9H83guc",
+    "MP2k9NOHFo",
+    "MsqBCJeXIT",
+    "N7EPk5dvDX",
+    "N7iu8vT1Dp",
+    "NCqeOwpR0z",
+    "NFtZmpfvFx",
+    "NR8lYUNnka",
+    "NSvIJnAORy",
+    "NTEyoXZUdw",
+    "NYnvponx1H",
+    "Ne1CKI7ey9",
+    "NqKMGp6N98",
+    "O26AmnGkFD",
+    "O7sF24j7wO",
+    "OBDZfSiQXp",
+    "OBMw8FwmyZ",
+    "ODnc0BqTZ5",
+    "OF8CUj7TD8",
+    "OHpBhncDM2",
+    "OLS3NKUhWz",
+    "OMX73ebh7p",
+    "ORAHHcnXVe",
+    "P4mrdHxWu2",
+    "P9tPg5GAyt",
+    "PADSR4oMaD",
+    "PCZw5EG9Ft",
+    "PEDv0gnlhd",
+    "PLRaAvjC3v",
+    "PdHbXU64LT",
+    "PgUvaCo2j4",
+    "PnuDAO3uyl",
+    "PsUk9GYqO8",
+    "Psl8GgO2we",
+    "Pz7PpCK6Py",
+    "QFIRgU2Gex",
+    "QH3ykEheO3",
+    "QHEILFxGty",
+    "QPRPX7pOHD",
+    "Qa7SpKjN6C",
+    "R5AzsIf1CQ",
+    "R8obaNz0uu",
+    "RBnIugC2ZF",
+    "RRmA0m7gUL",
+    "ReQSSCt1Eo",
+    "Rfj9wv4EDR",
+    "RlyUgxpm8I",
+    "RqaiUMwaSV",
+    "RsMuuQsUtz",
+    "S4bbdlhtsZ",
+    "S9iWSROf54",
+    "SAuycm49Dr",
+    "SQtxCmG7qM",
+    "TU8fNJdRF6",
+    "TnAOz7rQfI",
+    "Up5xuigQyG",
+    "UxsGk4on0e",
+    "VXb6iC5X71",
+    "W5wPEmfLn0",
+    "WGmQvuKFU7",
+    "WHwzkjcW2p",
+    "WeBggKgUhn",
+    "WwFl5oMZuN",
+    "XGgv7TfxJl",
+    "XT4JL995TY",
+    "XZemvCFYHL",
+    "XfKMDwoz1B",
+    "XgB7jpGAnn",
+    "XhdOPTxLyT",
+    "XjKQSAmTGd",
+    "XnF8RSUPxE",
+    "YHSlikDOqO",
+    "YJvSS3wCbn",
+    "YRoVIXOAky",
+    "ZIF61XReMF",
+    "ZJBy5QMwdt",
+    "ZoTnXQHanX",
+    "ZpeZKr5jon",
+    "ZqdECWlEIg",
+    "ZsDGfzVnKt",
+    "Zsrit98zS3",
+    "ZyafEp0RQn",
+    "ZzJWMU6dUI",
+    "a04cCyok2x",
+    "a9gC9t9Zvc",
+    "a9jMLEKM50",
+    "aFpFrd5AF0",
+    "aKo2pnRE0y",
+    "aMg25b6WKq",
+    "aiqFcQWTWT",
+    "axMSdpe80b",
+    "ayiQSugiuW",
+    "b26gPbGN9O",
+    "bYjgxvhArw",
+    "baKjpOzPGt",
+    "bbhfFx9iqO",
+    "bixmDdl5TS",
+    "blwMIPuyBh",
+    "bmxM07322c",
+    "bstvvfFV4y",
+    "bv2vITgGyH",
+    "cFcaAi8dtG",
+    "cUSWy17TNR",
+    "cgGAzHaB9R",
+    "d2noaCSlZm",
+    "d394H1GLAg",
+    "d7T8HVLoWJ",
+    "db6NrHuZbK",
+    "dcWHMLpYZE",
+    "dtVcF6LLYr",
+    "dvDkcUni2P",
+    "e5rlO61XDB",
+    "e8tYFmI6d8",
+    "eO4BOwz40Q",
+    "eVAaz2QSye",
+    "eawCHNGHAo",
+    "elcVIsGXqC",
+    "enaDfCn4w0",
+    "esnxNWIVMO",
+    "fKWM0tmEOE",
+    "fNrQjgb4Ch",
+    "fXrQoDssZW",
+    "fY24M8lXXp",
+    "fYBjJWGrNR",
+    "fbvBYNTB0C",
+    "foulTd1ZUb",
+    "fuXZocOUBF",
+    "g6I3UjiMa7",
+    "gK96j8p3Vx",
+    "gbmohVa04D",
+    "grVXhl52br",
+    "hKNOcBcEpB",
+    "hRc0sauHSE",
+    "hXQZONZ5eS",
+    "i2EdO6YkEj",
+    "iNHpKDFZRy",
+    "iP3mhGLBfO",
+    "iVQu1sp529",
+    "ibXtIxvO2e",
+    "imjxSp8e1N",
+    "isaVxUY5zV",
+    "jDFuw9smxN",
+    "jRLlZdU76s",
+    "jYLlpt0DOn",
+    "jeYa5D7gYZ",
+    "jvGWlQfQLJ",
+    "k7VrTpZ9RJ",
+    "kCPZKv2VbP",
+    "kFVK8WyNiQ",
+    "kFWeDYnQyB",
+    "kaA2itb1S8",
+    "kbCX1FVPSj",
+    "kbNjFLXanS",
+    "kny8uL2w7v",
+    "kvzlRwS73X",
+    "kw1764GtFE",
+    "lB4XQBr9SX",
+    "lD3w05aIiT",
+    "lECATRfbhM",
+    "lK8a8TOOcC",
+    "lWpHQ7sBfm",
+    "lXiUD5V7wG",
+    "lgAbT33ZED",
+    "llCtjFLimR",
+    "m1xdCQou1Z",
+    "mBjfVGFp8m",
+    "mDDEcTyT5B",
+    "mL3MYH1pYu",
+    "mNg0noT9XG",
+    "mPl8sAMr9g",
+    "mkncGn42Ir",
+    "mlVqTuV7b8",
+    "mrISpV3Pax",
+    "n7i8pUutpH",
+    "n9u2EkRfz5",
+    "nFi5ndxzyk",
+    "nM3Mq6pJKX",
+    "nZByC53zgL",
+    "ncIgYIZi4s",
+    "nvUl5uZXor",
+    "ohKw6V7xaU",
+    "oow1GzZSQm",
+    "osd72MlzL5",
+    "pHZvxtuPkK",
+    "pOcuwMjDc0",
+    "pYpybkF5Yi",
+    "pZjhFo9XgF",
+    "per4W4wDLF",
+    "phwjDb6goi",
+    "pnWcegvgL8",
+    "pqw6kWr6kt",
+    "pwseyFaKAp",
+    "qNhfYunjC7",
+    "qOGMXFJFTz",
+    "qY8l677bHH",
+    "qh1N46HjOP",
+    "qixS3l1Wsf",
+    "qqOjD3pcxL",
+    "qwAOJhaINd",
+    "qy0AJWUh1L",
+    "r9LXL9LP7B",
+    "rNFEqXFSAU",
+    "rUvkw2SVCR",
+    "rX09aLiLs7",
+    "rtIp1pxlSG",
+    "rtYZbUFotI",
+    "s5Es57znPS",
+    "sluZT3V92I",
+    "szkL8iUTnD",
+    "t26i2Tk32y",
+    "tAxD9PKXww",
+    "tDrV3iV2Zb",
+    "tkUqPJJvZk",
+    "u82Fkl3jwy",
+    "uASUNrduuj",
+    "uZh7BlEzg3",
+    "ubKC2O6rQo",
+    "uggzfUoAgS",
+    "uh7b7doBNd",
+    "upWPVRvJgl",
+    "v1SEW28Ij4",
+    "v4g5vcM4mg",
+    "v5JpKDwFAO",
+    "vUT5dDG1HY",
+    "vYAFQ2gP7r",
+    "va11jyCoT0",
+    "vgJbgsHx68",
+    "w2w4TwPsCl",
+    "w5DM9caMRz",
+    "wBmaKUqoBB",
+    "wcae0JKDe0",
+    "whvp3RjkiO",
+    "wsSHfjSrMC",
+    "wso7l8n8ms",
+    "wwgUVpgO9P",
+    "xCAqHcFbH7",
+    "xjhDSxr3GE",
+    "y8bfpQh6gX",
+    "yFhZjcfTiN",
+    "yMxixVoJCr",
+    "yXeFhKZFO7",
+    "yngr3bVtsX",
+    "ypBUtS8SON",
+    "yryzq0PrWy",
+    "z62vbEOWDO",
+    "zkIJpaca3W",
+    "zkLx90uwGY",
+    "zl4U97GZ9L",
+    "zndZYf5lWa"
+  ],
+  "new_candidate_decisions": [
+    {
+      "openreview_id": "5FWBc0Cays",
+      "title": "4D Point Splatting for mmWave Radar Micro-Doppler Differentiable Rendering",
+      "matched_method_queries": [
+        "forward-only"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "纯雷达感知与可微渲染，无LLM/VLM优化关联。",
+      "source_url": "https://openreview.net/forum?id=5FWBc0Cays"
+    },
+    {
+      "openreview_id": "bv2vITgGyH",
+      "title": "AdaptoFlux: A Typed Graph Representation Substrate for Stateful Symbolic Program Synthesis",
+      "matched_method_queries": [
+        "gradient-free"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "一般符号程序合成，摘要没有语言模型或语言代理应用。",
+      "source_url": "https://openreview.net/forum?id=bv2vITgGyH"
+    },
+    {
+      "openreview_id": "vgJbgsHx68",
+      "title": "Are Neural Models Always Necessary For Irregular Time Series Forecasting?",
+      "matched_method_queries": [
+        "gradient-free"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "纯时间序列预测诊断，与语言模型优化无关。",
+      "source_url": "https://openreview.net/forum?id=vgJbgsHx68"
+    },
+    {
+      "openreview_id": "ibXtIxvO2e",
+      "title": "Caffeinate: Recovering Dormant Subnetworks in Modern Convolutional Neural Networks",
+      "matched_method_queries": [
+        "without gradients"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "实验全部为ImageNet CNN，无语言模型关联。",
+      "source_url": "https://openreview.net/forum?id=ibXtIxvO2e"
+    },
+    {
+      "openreview_id": "n7i8pUutpH",
+      "title": "CMDO: A Cognitive Memory-Driven Optimization Algorithm for Adaptive Population-Based Search",
+      "matched_method_queries": [
+        "derivative-free",
+        "CMA-ES"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "通用BBOB/CEC与光伏参数估计，无语言模型应用。",
+      "source_url": "https://openreview.net/forum?id=n7i8pUutpH"
+    },
+    {
+      "openreview_id": "d394H1GLAg",
+      "title": "Continuous Search Allocation: Jointly Shaping Probes and Updates for Query-Efficient Black-Box Video Attacks",
+      "matched_method_queries": [
+        "zeroth-order"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "纯视频识别黑盒攻击，摘要无VLM或语言模型。",
+      "source_url": "https://openreview.net/forum?id=d394H1GLAg"
+    },
+    {
+      "openreview_id": "oow1GzZSQm",
+      "title": "DECAF: Decomposition of Evidence, Contradiction, and Fragility in Perturbation Responses",
+      "matched_method_queries": [
+        "forward-only"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "实验为视觉和表格模型，无语言模型应用。",
+      "source_url": "https://openreview.net/forum?id=oow1GzZSQm"
+    },
+    {
+      "openreview_id": "BZlMmPacyO",
+      "title": "Divergence-Aware Flow Likelihoods for Industrial Anomaly Localization",
+      "matched_method_queries": [
+        "forward-only",
+        "finite difference"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "工业视觉异常定位，无语言模型关联。",
+      "source_url": "https://openreview.net/forum?id=BZlMmPacyO"
+    },
+    {
+      "openreview_id": "ncIgYIZi4s",
+      "title": "Evolutionary One-Step Generators: Fast and Diverse Sampling for Discrete Design",
+      "matched_method_queries": [
+        "evolution strategies"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "面向分子与NAS离散设计，不是语言模型或语言代理优化。",
+      "source_url": "https://openreview.net/forum?id=ncIgYIZi4s"
+    },
+    {
+      "openreview_id": "PADSR4oMaD",
+      "title": "Fed-MOZOO: Federated Multi-Objective Online Zeroth-Order Optimization with Intermittent Communication",
+      "matched_method_queries": [
+        "zeroth-order"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "仅合成与凸多目标任务，无语言模型应用。",
+      "source_url": "https://openreview.net/forum?id=PADSR4oMaD"
+    },
+    {
+      "openreview_id": "ZJBy5QMwdt",
+      "title": "Gauss–Newton is Blind to Embedded Saddles: Value-Trained Surrogates as a Derivative Oracle for Amortized Inversion",
+      "matched_method_queries": [
+        "finite difference"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "物理逆问题，无语言模型关联。",
+      "source_url": "https://openreview.net/forum?id=ZJBy5QMwdt"
+    },
+    {
+      "openreview_id": "t26i2Tk32y",
+      "title": "Geometry-Aware Robust Denoising via Hierarchical Manifold Traversal",
+      "matched_method_queries": [
+        "zero-order"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "引力波、MNIST/CIFAR/CelebA去噪，无语言模型关联。",
+      "source_url": "https://openreview.net/forum?id=t26i2Tk32y"
+    },
+    {
+      "openreview_id": "mDDEcTyT5B",
+      "title": "GS-MoE: Training-Free MoE Compression via Groupwise Subspace Sharing and Pruning",
+      "matched_method_queries": [
+        "gradient-free"
+      ],
+      "decision": "included",
+      "catalog_category": "related_closed_form",
+      "repository_relevance_zh": "直接压缩大规模MoE语言模型，属于闭式/评分驱动、非反传训练式的语言模型参数适配边界。",
+      "source_url": "https://openreview.net/forum?id=mDDEcTyT5B"
+    },
+    {
+      "openreview_id": "bixmDdl5TS",
+      "title": "Informed Plastic Attractors for Adaptive Few-Shot Learning",
+      "matched_method_queries": [
+        "gradient-free",
+        "without gradients"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "实验是图像少样本与持续学习，无VLM/语言模型关联。",
+      "source_url": "https://openreview.net/forum?id=bixmDdl5TS"
+    },
+    {
+      "openreview_id": "ubKC2O6rQo",
+      "title": "Latent Search Manifolds: Reusing Control Experience for PDE-Constrained Optimization",
+      "matched_method_queries": [
+        "derivative-free"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "PDE约束控制，无语言模型关联。",
+      "source_url": "https://openreview.net/forum?id=ubKC2O6rQo"
+    },
+    {
+      "openreview_id": "WHwzkjcW2p",
+      "title": "Learning Physics from an Imperfect Ancestor",
+      "matched_method_queries": [
+        "finite difference"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "PDE科学机器学习，无语言模型关联。",
+      "source_url": "https://openreview.net/forum?id=WHwzkjcW2p"
+    },
+    {
+      "openreview_id": "qwAOJhaINd",
+      "title": "Lower Bounds For Gradient-Free Convex Optimization And Convex-Concave Saddle-Point Problems",
+      "matched_method_queries": [
+        "gradient-free"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "虽属零阶理论，但摘要没有大语言模型应用，未满足仓库要求。",
+      "source_url": "https://openreview.net/forum?id=qwAOJhaINd"
+    },
+    {
+      "openreview_id": "KJ0mwI2BjI",
+      "title": "NeuroContext-TTA: Source-Anchored Context Calibration for Cross-Subject EEG Emotion Recognition",
+      "matched_method_queries": [
+        "forward-only"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "EEG情绪识别，无语言模型或VLM关联。",
+      "source_url": "https://openreview.net/forum?id=KJ0mwI2BjI"
+    },
+    {
+      "openreview_id": "MP2k9NOHFo",
+      "title": "One Gradient, Yet More Robust Policies: Momentum-Guided Policy Optimization",
+      "matched_method_queries": [
+        "parameter perturbation"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "通用鲁棒RL且依赖一阶梯度，无语言模型应用。",
+      "source_url": "https://openreview.net/forum?id=MP2k9NOHFo"
+    },
+    {
+      "openreview_id": "CYZbnNobTC",
+      "title": "PathSpeed: Accelerating Structural Recovery in Flow Matching",
+      "matched_method_queries": [
+        "finite difference"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "图像生成实验，无语言模型优化关联。",
+      "source_url": "https://openreview.net/forum?id=CYZbnNobTC"
+    },
+    {
+      "openreview_id": "P4mrdHxWu2",
+      "title": "PILOT: Probe-guided Imputation via Local Subspace Optimization for Time-Series Forecasting",
+      "matched_method_queries": [
+        "finite difference"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "时间序列基础模型，不是语言模型。",
+      "source_url": "https://openreview.net/forum?id=P4mrdHxWu2"
+    },
+    {
+      "openreview_id": "ZoTnXQHanX",
+      "title": "Probabilistic Agentic Memory: Learning Distributional Evidence for Skill Reuse",
+      "matched_method_queries": [
+        "without gradients"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "“agentic”指预测技能复用，任务是流行病预测且摘要无LLM代理。",
+      "source_url": "https://openreview.net/forum?id=ZoTnXQHanX"
+    },
+    {
+      "openreview_id": "R5AzsIf1CQ",
+      "title": "Reducing the Sample Complexity of Sampling-based Control via Horizon Splitting",
+      "matched_method_queries": [
+        "zeroth-order",
+        "CMA-ES"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "机器人控制，无VLM/语言模型优化关联。",
+      "source_url": "https://openreview.net/forum?id=R5AzsIf1CQ"
+    },
+    {
+      "openreview_id": "NSvIJnAORy",
+      "title": "Same Target, Different Origins: Aligning Latent Rollout for Consistent PDE Emulation",
+      "matched_method_queries": [
+        "zeroth-order"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "PDE仿真，无语言模型关联。",
+      "source_url": "https://openreview.net/forum?id=NSvIJnAORy"
+    },
+    {
+      "openreview_id": "Al9NxBL54h",
+      "title": "Second-Order Motion Representations: Grassmannian Differential Kinematics for Unsupervised Hand-Object Interaction Segmentation",
+      "matched_method_queries": [
+        "zero-order"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "纯视觉动作分割，无语言模型关联。",
+      "source_url": "https://openreview.net/forum?id=Al9NxBL54h"
+    },
+    {
+      "openreview_id": "1aoQWfoqRQ",
+      "title": "Slot-MPC: Goal-Conditioned Model Predictive Control with Object-Centric Representations",
+      "matched_method_queries": [
+        "gradient-free"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "机器人视觉控制，无语言模型关联且主方法是一阶规划。",
+      "source_url": "https://openreview.net/forum?id=1aoQWfoqRQ"
+    },
+    {
+      "openreview_id": "OBDZfSiQXp",
+      "title": "STRIDE: An Efficient SNN Training-to-Deployment Framework on Real-World Vision Tasks",
+      "matched_method_queries": [
+        "without backpropagation"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "纯视觉SNN软硬件协同，无语言模型关联。",
+      "source_url": "https://openreview.net/forum?id=OBDZfSiQXp"
+    },
+    {
+      "openreview_id": "lB4XQBr9SX",
+      "title": "The Normalization Landscape in Continual Learning: Resolving Moving-Average Breakdown and Subspace Interference for Buffer-Free Edge Intelligence",
+      "matched_method_queries": [
+        "without backpropagation"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "CIFAR视觉持续学习与边缘系统，无语言模型关联。",
+      "source_url": "https://openreview.net/forum?id=lB4XQBr9SX"
+    },
+    {
+      "openreview_id": "ZsDGfzVnKt",
+      "title": "ViLo-TM: Visual-Logic Mapping from Deep CNNs to Tsetlin Machines",
+      "matched_method_queries": [
+        "gradient-free"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "纯计算机视觉，无语言模型关联。",
+      "source_url": "https://openreview.net/forum?id=ZsDGfzVnKt"
+    },
+    {
+      "openreview_id": "y8bfpQh6gX",
+      "title": "Which features remain vulnerable in robust models?",
+      "matched_method_queries": [
+        "gradient-free"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "纯视觉鲁棒性分析，无语言模型关联。",
+      "source_url": "https://openreview.net/forum?id=y8bfpQh6gX"
+    },
+    {
+      "openreview_id": "9xbgm7J1m9",
+      "title": "ZOFOSGDA: A Hybrid Method for Nonsmooth Nonconvex-Nonconcave Minimax Optimization",
+      "matched_method_queries": [
+        "zeroth-order"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "通用优化理论与分类基准，没有语言模型应用。",
+      "source_url": "https://openreview.net/forum?id=9xbgm7J1m9"
+    },
+    {
+      "openreview_id": "WGmQvuKFU7",
+      "title": "A Decodability-Grounded Audit of Clinical Prediction Claims in PPG Foundation Models",
+      "matched_method_queries": [
+        "derivative-free"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "纯生理信号基础模型审计，没有语言模型优化对象，排除。",
+      "source_url": "https://openreview.net/forum?id=WGmQvuKFU7"
+    },
+    {
+      "openreview_id": "upWPVRvJgl",
+      "title": "Adversarial Nonlinear Semi-Bandits: Hidden Interactions and Amplitude-Sensitive Regret",
+      "matched_method_queries": [
+        "finite difference"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "纯bandit理论且无语言模型应用，排除。",
+      "source_url": "https://openreview.net/forum?id=upWPVRvJgl"
+    },
+    {
+      "openreview_id": "PLRaAvjC3v",
+      "title": "Beyond Endpoint Flatness: Policy Scale Dynamics Shape Robustness in SAM-PPO",
+      "matched_method_queries": [
+        "parameter perturbation"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "纯MuJoCo控制，无语言模型关联，且方法依赖一阶SAM，排除。",
+      "source_url": "https://openreview.net/forum?id=PLRaAvjC3v"
+    },
+    {
+      "openreview_id": "nM3Mq6pJKX",
+      "title": "Capturing Inter-Task Reinforcement Learning Dynamics for Adaptive Task-Sampling",
+      "matched_method_queries": [
+        "evolution strategies"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "虽有真实ES，但应用仅为网格、MuJoCo和Meta-World多任务RL，没有语言模型或语言代理，排除。",
+      "source_url": "https://openreview.net/forum?id=nM3Mq6pJKX"
+    },
+    {
+      "openreview_id": "fY24M8lXXp",
+      "title": "CoFlow: Coordinated Few-Step Flow for Offline Multi-Agent Decision Making",
+      "matched_method_queries": [
+        "finite difference"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "MPE/SMAC多智能体控制，无语言模型或语言代理优化，排除。",
+      "source_url": "https://openreview.net/forum?id=fY24M8lXXp"
+    },
+    {
+      "openreview_id": "1DyQYjjUM3",
+      "title": "Control-Guided Molecular Diffusion for Training-Free Conditional 3D Molecule Generation",
+      "matched_method_queries": [
+        "zeroth-order"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "纯3D分子生成，没有语言模型/VLM关联，排除。",
+      "source_url": "https://openreview.net/forum?id=1DyQYjjUM3"
+    },
+    {
+      "openreview_id": "NCqeOwpR0z",
+      "title": "Decentralized Zeroth-Order Gradient Tracking For Bilevel Optimization",
+      "matched_method_queries": [
+        "zeroth-order"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "真实ZO理论/算法，但摘要没有LLM、VLM或语言代理应用，排除。",
+      "source_url": "https://openreview.net/forum?id=NCqeOwpR0z"
+    },
+    {
+      "openreview_id": "RRmA0m7gUL",
+      "title": "Do Not Cross the Boundary: Within-Class Whitening for Test-Time Adaptation",
+      "matched_method_queries": [
+        "without backpropagation"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "仅泛称多种数据集与backbones，未给出LLM/VLM或语言任务，不能据此纳入，排除。",
+      "source_url": "https://openreview.net/forum?id=RRmA0m7gUL"
+    },
+    {
+      "openreview_id": "w5DM9caMRz",
+      "title": "Evolving Hybrid Quantum–Classical Architectures for Image Classification",
+      "matched_method_queries": [
+        "neuroevolution"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "纯MNIST/Fashion-MNIST/CIFAR图像分类，无语言模型关联，排除。",
+      "source_url": "https://openreview.net/forum?id=w5DM9caMRz"
+    },
+    {
+      "openreview_id": "uZh7BlEzg3",
+      "title": "FENCE: Enforcing Mixed Functional Constraints in Neural Fields",
+      "matched_method_queries": [
+        "finite difference"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "神经场/热设计/动作重定向，无语言模型关联；且命中来自验证检查，排除。",
+      "source_url": "https://openreview.net/forum?id=uZh7BlEzg3"
+    },
+    {
+      "openreview_id": "YJvSS3wCbn",
+      "title": "GCAM-Gym: A Benchmark for AI-Driven Climate Policy Design",
+      "matched_method_queries": [
+        "CMA-ES"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "真实CMA-ES应用但对象是气候政策，无语言模型或语言代理优化，排除。",
+      "source_url": "https://openreview.net/forum?id=YJvSS3wCbn"
+    },
+    {
+      "openreview_id": "kFVK8WyNiQ",
+      "title": "GFlowNets build feasible designs for directed evolution campaigns",
+      "matched_method_queries": [
+        "CMA-ES"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "序列是生物分子序列，不是语言模型优化；方法词来自基线，排除。",
+      "source_url": "https://openreview.net/forum?id=kFVK8WyNiQ"
+    },
+    {
+      "openreview_id": "0QXB9nl5QA",
+      "title": "HermiteTwin: Bicubic Hermite Shell Digital Twins for Contact-Rich Deformable Manipulation",
+      "matched_method_queries": [
+        "CMA-ES"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "纯机器人布料/泡沫物理重建，无语言模型关联，排除。",
+      "source_url": "https://openreview.net/forum?id=0QXB9nl5QA"
+    },
+    {
+      "openreview_id": "fYBjJWGrNR",
+      "title": "Interaction Steering for Compositional Robustness in Vision Models",
+      "matched_method_queries": [
+        "finite difference"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "纯视觉鲁棒性与机制监督，无语言模型/VLM优化，排除。",
+      "source_url": "https://openreview.net/forum?id=fYBjJWGrNR"
+    },
+    {
+      "openreview_id": "EsBS8s9n6I",
+      "title": "Latent Space Planning with Sequential Monte Carlo",
+      "matched_method_queries": [
+        "zero-order"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "一般世界模型规划且没有语言模型、语言代理或VLM证据，排除。",
+      "source_url": "https://openreview.net/forum?id=EsBS8s9n6I"
+    },
+    {
+      "openreview_id": "n9u2EkRfz5",
+      "title": "Learning to Adapt Without Gradients: Emergence of Mental Representations via Second-Order Learning",
+      "matched_method_queries": [
+        "without gradients"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "应用为迷宫和道路网络图，无语言模型/VLM关联，排除。",
+      "source_url": "https://openreview.net/forum?id=n9u2EkRfz5"
+    },
+    {
+      "openreview_id": "BD501aT6sD",
+      "title": "Masked Diffusion Modeling for Anomaly Detection",
+      "matched_method_queries": [
+        "forward-only"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "虽有文本异常检测实验，但没有优化LLM/VLM或语言代理；命中含义也不是梯度无关训练，排除。",
+      "source_url": "https://openreview.net/forum?id=BD501aT6sD"
+    },
+    {
+      "openreview_id": "ZpeZKr5jon",
+      "title": "Non-Smooth Non-Convex Stochastic Optimization: Sign-Based Methods and Beyond",
+      "matched_method_queries": [
+        "zeroth-order"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "纯优化理论，无语言模型应用或实验，排除。",
+      "source_url": "https://openreview.net/forum?id=ZpeZKr5jon"
+    },
+    {
+      "openreview_id": "cUSWy17TNR",
+      "title": "Orthogonalization Separates Sharpness Exploration from Perturbed Gradient Updates",
+      "matched_method_queries": [
+        "parameter perturbation"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "摘要只称‘language tasks’，没有说明LLM/VLM或语言代理，且方法明确是一阶；不足以作为主题内混合边界纳入，排除。",
+      "source_url": "https://openreview.net/forum?id=cUSWy17TNR"
+    },
+    {
+      "openreview_id": "RlyUgxpm8I",
+      "title": "Peering over the Manifold Vistas:  A Unified Geometric Framework for Counterfactual XAI",
+      "matched_method_queries": [
+        "zeroth-order"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "XAI与半导体计量，无语言模型/VLM应用，排除。",
+      "source_url": "https://openreview.net/forum?id=RlyUgxpm8I"
+    },
+    {
+      "openreview_id": "ODnc0BqTZ5",
+      "title": "Plasmax: Differentiable & Parallelizable Environments for Tokamak Control",
+      "matched_method_queries": [
+        "CMA-ES",
+        "evolution strategies"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "核聚变控制，无语言模型或语言代理关联，排除。",
+      "source_url": "https://openreview.net/forum?id=ODnc0BqTZ5"
+    },
+    {
+      "openreview_id": "FtpY3WzkCB",
+      "title": "Probability Measure Gradient Flows for Diffusion-Based Amortized Optimization",
+      "matched_method_queries": [
+        "zeroth-order"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "一般非凸优化及未命名应用，没有语言模型/VLM证据，排除。",
+      "source_url": "https://openreview.net/forum?id=FtpY3WzkCB"
+    },
+    {
+      "openreview_id": "e5rlO61XDB",
+      "title": "Regressive-Dual PINN: Faster and More Reliable Training for Long-Horizon PDEs.",
+      "matched_method_queries": [
+        "finite difference"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "纯PDE求解，无语言模型关联，排除。",
+      "source_url": "https://openreview.net/forum?id=e5rlO61XDB"
+    },
+    {
+      "openreview_id": "cgGAzHaB9R",
+      "title": "Sample Efficient World Models using Gradient Penalized Latent Dynamics",
+      "matched_method_queries": [
+        "finite difference"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "连续控制DreamerV3，无语言模型或语言代理关联，排除。",
+      "source_url": "https://openreview.net/forum?id=cgGAzHaB9R"
+    },
+    {
+      "openreview_id": "RBnIugC2ZF",
+      "title": "SGIQ: Sparse-Gradient-Informed Gradient Estimation for Variational Quantum Circuits",
+      "matched_method_queries": [
+        "SPSA"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "纯量子机器学习/电路回归，无语言模型关联，排除。",
+      "source_url": "https://openreview.net/forum?id=RBnIugC2ZF"
+    },
+    {
+      "openreview_id": "S4bbdlhtsZ",
+      "title": "SPADE-DFL: Communication-Efficient Decentralized Federated Learning via Derivative-Free Linearized ADMM",
+      "matched_method_queries": [
+        "derivative-free"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "虽是真实DFO，但四个分类任务未指明语言模型/VLM，排除。",
+      "source_url": "https://openreview.net/forum?id=S4bbdlhtsZ"
+    },
+    {
+      "openreview_id": "QHEILFxGty",
+      "title": "Structure-Preserving Frozen Neural Operators",
+      "matched_method_queries": [
+        "gradient-free"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "纯神经算子/PDE，无语言模型关联，排除。",
+      "source_url": "https://openreview.net/forum?id=QHEILFxGty"
+    },
+    {
+      "openreview_id": "BldtP95aQi",
+      "title": "To Gate or Not to Gate? When Does an Input-Dependent Gating Pay Off in Multi-Class Dendritic Gated Networks",
+      "matched_method_queries": [
+        "without backpropagation"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "纯图像持续分类（rotation/noise、CIFAR-100），无语言模型关联，排除。",
+      "source_url": "https://openreview.net/forum?id=BldtP95aQi"
+    },
+    {
+      "openreview_id": "ReQSSCt1Eo",
+      "title": "Wall-Clock Complexity for Zeroth-Order Optimization with Tunable Oracle Fidelity",
+      "matched_method_queries": [
+        "zeroth-order"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "无语言模型/VLM应用、实验或特定对象，排除。",
+      "source_url": "https://openreview.net/forum?id=ReQSSCt1Eo"
+    },
+    {
+      "openreview_id": "51E3DimEN4",
+      "title": "Why Learn What You Can Compute? Closed-Form Operators for Periodic Time-Series Forecasting",
+      "matched_method_queries": [
+        "gradient-free"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "纯时间序列预测，无语言模型/VLM关联，排除。",
+      "source_url": "https://openreview.net/forum?id=51E3DimEN4"
+    },
+    {
+      "openreview_id": "rtYZbUFotI",
+      "title": "A Logarithmic Regret Bound for Optimistic Hedge in General-Sum Games",
+      "matched_method_queries": [
+        "finite difference"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "不相关：一般博弈理论，方法命中来自分析中的 finite-difference interpolation。",
+      "source_url": "https://openreview.net/forum?id=rtYZbUFotI"
+    },
+    {
+      "openreview_id": "B4QWjbtwO0",
+      "title": "AEGIS: Differentiable Mars Climate Model with Neural Closures",
+      "matched_method_queries": [
+        "finite difference"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "不相关：物理气候建模，且有限差分仅为梯度验证。",
+      "source_url": "https://openreview.net/forum?id=B4QWjbtwO0"
+    },
+    {
+      "openreview_id": "4nrxgYbatB",
+      "title": "Beyond Estimator Moments: Minimal Information for Predicting Zeroth-Order Adam's Response",
+      "matched_method_queries": [
+        "zeroth-order"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "不相关：真实 ZO 理论，但没有 LLM/VLM/语言代理应用。",
+      "source_url": "https://openreview.net/forum?id=4nrxgYbatB"
+    },
+    {
+      "openreview_id": "QH3ykEheO3",
+      "title": "CAT-Flow: Curvature-Adaptive sTeps for Flow Matching",
+      "matched_method_queries": [
+        "finite difference"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "不纳入：纯生成采样器加速，未建立语言模型优化关联。",
+      "source_url": "https://openreview.net/forum?id=QH3ykEheO3"
+    },
+    {
+      "openreview_id": "IWiOh98M8n",
+      "title": "Complexity Guarantees for Heterogeneous Federated Bilevel Optimization with Lower-Level Constraints",
+      "matched_method_queries": [
+        "zeroth-order"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "不相关：一般联邦优化与个性化学习，没有 LLM/VLM 应用。",
+      "source_url": "https://openreview.net/forum?id=IWiOh98M8n"
+    },
+    {
+      "openreview_id": "lgAbT33ZED",
+      "title": "Controlling Symmetry Drift in Forward-Only Continual Learning",
+      "matched_method_queries": [
+        "forward-only"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "不相关：明确 forward-only，但摘要没有 LLM/VLM 应用。",
+      "source_url": "https://openreview.net/forum?id=lgAbT33ZED"
+    },
+    {
+      "openreview_id": "sluZT3V92I",
+      "title": "Decision-Aware Residual Calibration: Bridging the Prediction–Decision Gap in Electromagnetic Design with Sparse Feedback",
+      "matched_method_queries": [
+        "gradient-free"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "不相关：电磁设计，未涉及语言模型。",
+      "source_url": "https://openreview.net/forum?id=sluZT3V92I"
+    },
+    {
+      "openreview_id": "a04cCyok2x",
+      "title": "Does Scaling Reinforcement Learning Really Require More Training?",
+      "matched_method_queries": [
+        "gradient-free"
+      ],
+      "decision": "included",
+      "catalog_category": "related_closed_form",
+      "repository_relevance_zh": "相关闭式/结构化模型合并：语言推理与代码模型的训练后权重融合，不是 ZO 梯度估计。",
+      "source_url": "https://openreview.net/forum?id=a04cCyok2x"
+    },
+    {
+      "openreview_id": "EjCA4aPW5K",
+      "title": "Evolving Neural Solvers for Multi-objective Combinatorial Optimization",
+      "matched_method_queries": [
+        "evolution strategies"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "不相关：虽有 ES 参数优化，但任务是一般多目标组合优化，无语言模型关联。",
+      "source_url": "https://openreview.net/forum?id=EjCA4aPW5K"
+    },
+    {
+      "openreview_id": "YHSlikDOqO",
+      "title": "FHEvolve: Constraint-Guided Evolution of Efficient FHE Programs",
+      "matched_method_queries": [
+        "evolutionary optimization"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "不相关：一般程序演化，未说明 LLM 生成器或语言模型优化。",
+      "source_url": "https://openreview.net/forum?id=YHSlikDOqO"
+    },
+    {
+      "openreview_id": "NYnvponx1H",
+      "title": "Generalizing On-Policy Self-Distillation for Diffusion Models",
+      "matched_method_queries": [
+        "without gradients"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "不纳入：纯图像生成训练，即使在 Qwen-Image-Bench 评测也无语言模型优化证据。",
+      "source_url": "https://openreview.net/forum?id=NYnvponx1H"
+    },
+    {
+      "openreview_id": "vYAFQ2gP7r",
+      "title": "Gradient Clipping at and Beyond the Edge of Stability",
+      "matched_method_queries": [
+        "zeroth-order"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "不相关：ZO 优化研究未给出 LLM/VLM 应用。",
+      "source_url": "https://openreview.net/forum?id=vYAFQ2gP7r"
+    },
+    {
+      "openreview_id": "XGgv7TfxJl",
+      "title": "HIRA: GRADIENT-FREE RESIDUAL RETRIEVAL FOR LONG-HORIZON TIME-SERIES FORECASTING",
+      "matched_method_queries": [
+        "gradient-free"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "不相关：时间序列 foundation model，并非语言模型。",
+      "source_url": "https://openreview.net/forum?id=XGgv7TfxJl"
+    },
+    {
+      "openreview_id": "TnAOz7rQfI",
+      "title": "Is your uncertainty map wrong, or is its target? Exact diagnostics for the Tweedie diagonal, and a gradient-free alternative",
+      "matched_method_queries": [
+        "gradient-free"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "不相关：医学图像不确定性诊断，无语言模型优化。",
+      "source_url": "https://openreview.net/forum?id=TnAOz7rQfI"
+    },
+    {
+      "openreview_id": "lWpHQ7sBfm",
+      "title": "Learn Feasibility Once, Optimize All Objectives: Derivative-Free Diffusion Models for Chance-Constrained Programming",
+      "matched_method_queries": [
+        "derivative-free"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "不相关：通用 chance-constrained programming，无语言模型应用。",
+      "source_url": "https://openreview.net/forum?id=lWpHQ7sBfm"
+    },
+    {
+      "openreview_id": "61uAE11t92",
+      "title": "Learning to Search Beyond Lines",
+      "matched_method_queries": [
+        "derivative-free"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "不相关：通用 DFO 理论和 BBOB/线性网络实验，无 LLM/VLM 应用。",
+      "source_url": "https://openreview.net/forum?id=61uAE11t92"
+    },
+    {
+      "openreview_id": "LGeMWMPk3s",
+      "title": "Master-and-Stop Training for Out-of-Distribution Detection",
+      "matched_method_queries": [
+        "zero-order"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "不相关：术语误命中，且无语言模型应用。",
+      "source_url": "https://openreview.net/forum?id=LGeMWMPk3s"
+    },
+    {
+      "openreview_id": "wso7l8n8ms",
+      "title": "Not All Observations Are Equal: Guiding Derivative-Free Ensembles via Uncertainty Contraction",
+      "matched_method_queries": [
+        "derivative-free"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "不相关：物理反问题，无 LLM/VLM 应用。",
+      "source_url": "https://openreview.net/forum?id=wso7l8n8ms"
+    },
+    {
+      "openreview_id": "mkncGn42Ir",
+      "title": "Parallel Decoding Distillation for Fast Image and Video Generation",
+      "matched_method_queries": [
+        "finite difference"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "不纳入：纯视觉生成蒸馏，方法词来自被避免的有限差分。",
+      "source_url": "https://openreview.net/forum?id=mkncGn42Ir"
+    },
+    {
+      "openreview_id": "pnWcegvgL8",
+      "title": "Performance Without Evidence: A Placebo-Controlled Audit of Medical Foundation Model Adaptation",
+      "matched_method_queries": [
+        "gradient-free"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "不相关：医学视觉适配且 gradient-free 仅描述 null baseline。",
+      "source_url": "https://openreview.net/forum?id=pnWcegvgL8"
+    },
+    {
+      "openreview_id": "N7iu8vT1Dp",
+      "title": "POMDP Interfaces in Agentic Reinforcement Learning: A Framework-Driven Review",
+      "matched_method_queries": [
+        "finite difference"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "不纳入：虽与语言代理相关，但方法命中只是分析公式，未提出梯度无关优化机制。",
+      "source_url": "https://openreview.net/forum?id=N7iu8vT1Dp"
+    },
+    {
+      "openreview_id": "HKCvQhA1y4",
+      "title": "Problem-Dual Augmentation and Training for Neural Combinatorial Optimization",
+      "matched_method_queries": [
+        "forward-only"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "不相关：组合优化，且 forward-only 不是梯度无关语言模型优化。",
+      "source_url": "https://openreview.net/forum?id=HKCvQhA1y4"
+    },
+    {
+      "openreview_id": "ohKw6V7xaU",
+      "title": "Rethinking Learning-Based Influence Maximization: Simple Neural Surrogates and Native Discrete Search",
+      "matched_method_queries": [
+        "without gradients"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "不相关：图 influence maximization，无语言模型应用。",
+      "source_url": "https://openreview.net/forum?id=ohKw6V7xaU"
+    },
+    {
+      "openreview_id": "NTEyoXZUdw",
+      "title": "SCMO: Stochastic Control for Optimization over Probability Measures on Infinite-Dimensional Spaces",
+      "matched_method_queries": [
+        "gradient-free"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "不相关：通用测度优化与机器人任务，无 LLM/VLM 应用。",
+      "source_url": "https://openreview.net/forum?id=NTEyoXZUdw"
+    },
+    {
+      "openreview_id": "0LAE4kdRGl",
+      "title": "SHARD-SAM: Signed Hessian-Amplified Radius and Direction for Sharpness-Aware Minimizatio",
+      "matched_method_queries": [
+        "zeroth-order"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "不相关：纯视觉 CNN/ViT，且无语言模型应用。",
+      "source_url": "https://openreview.net/forum?id=0LAE4kdRGl"
+    },
+    {
+      "openreview_id": "7x4AAlYBDM",
+      "title": "Stabilizing Multi-Step Diffusion Distillation with Student Perturbation Consistency",
+      "matched_method_queries": [
+        "finite difference"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "不纳入：纯图像生成蒸馏，未优化语言骨干。",
+      "source_url": "https://openreview.net/forum?id=7x4AAlYBDM"
+    },
+    {
+      "openreview_id": "qOGMXFJFTz",
+      "title": "Sufficiency of Zeroth-Order Reward Shaping for Policy Gradient in Stabilization Control",
+      "matched_method_queries": [
+        "zeroth-order"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "不相关：术语误命中且为机器人控制，无语言模型应用。",
+      "source_url": "https://openreview.net/forum?id=qOGMXFJFTz"
+    },
+    {
+      "openreview_id": "O7sF24j7wO",
+      "title": "TORE: Token-Wise Taylor Order Selection via Decomposed Residual Error Estimation for Diffusion Acceleration",
+      "matched_method_queries": [
+        "finite difference"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "不纳入：纯视觉 diffusion 推理加速，无语言模型优化关联。",
+      "source_url": "https://openreview.net/forum?id=O7sF24j7wO"
+    },
+    {
+      "openreview_id": "kFWeDYnQyB",
+      "title": "Weil-R: Automatic Differentiation of Exact Riemannian Hessians",
+      "matched_method_queries": [
+        "finite difference"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "不相关：一般流形二阶优化，无语言模型应用，且不是梯度无关方法。",
+      "source_url": "https://openreview.net/forum?id=kFWeDYnQyB"
+    },
+    {
+      "openreview_id": "S9iWSROf54",
+      "title": "Zeroth-Order Momentum and Adaptive Methods for Nonsmooth Policy Optimization from Human Preferences",
+      "matched_method_queries": [
+        "zeroth-order"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "不收录：论文提出真实偏好驱动ZO policy optimization，但官方摘要只以RLHF为动机，实验仅为受控偏好环境，未给出LLM/VLM应用。",
+      "source_url": "https://openreview.net/forum?id=S9iWSROf54"
+    },
+    {
+      "openreview_id": "RsMuuQsUtz",
+      "title": "Accelerated Methods for Nonconvex Optimization Using Comparisons",
+      "matched_method_queries": [
+        "zeroth-order"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "是 ZO 理论工作，但摘要没有 LLM/VLM 应用，超出本仓库语言模型范围。",
+      "source_url": "https://openreview.net/forum?id=RsMuuQsUtz"
+    },
+    {
+      "openreview_id": "Gty08pINJE",
+      "title": "AESplat: Advancing Pose-Free Feed-Forward 3D Gaussian Splatting via Decoupled Appearance Modeling",
+      "matched_method_queries": [
+        "zeroth-order"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "纯3D视觉，且命中属于术语歧义。",
+      "source_url": "https://openreview.net/forum?id=Gty08pINJE"
+    },
+    {
+      "openreview_id": "Qa7SpKjN6C",
+      "title": "Budget-Aware Step Selection for Forward-Only Recovery of Analog Accelerators",
+      "matched_method_queries": [
+        "forward-only"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "硬件恢复工作，没有 LLM/VLM 应用。",
+      "source_url": "https://openreview.net/forum?id=Qa7SpKjN6C"
+    },
+    {
+      "openreview_id": "G6fuD02eUD",
+      "title": "Causal Discovery via complexity-gated spiking neural networks",
+      "matched_method_queries": [
+        "gradient-free"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "纯时间序列因果发现，无语言模型关联。",
+      "source_url": "https://openreview.net/forum?id=G6fuD02eUD"
+    },
+    {
+      "openreview_id": "foulTd1ZUb",
+      "title": "Constrained Diffusion from Binary Evaluations via Learned Doob h-Functions",
+      "matched_method_queries": [
+        "derivative-free"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "扩散生成工作，方法查询仅命中基线，且无 LLM/VLM 优化。",
+      "source_url": "https://openreview.net/forum?id=foulTd1ZUb"
+    },
+    {
+      "openreview_id": "JQwie0bKBb",
+      "title": "Correcting Trajectory Drift in Flow Matching Models",
+      "matched_method_queries": [
+        "finite difference"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "纯生成模型数值采样，无明确语言模型应用。",
+      "source_url": "https://openreview.net/forum?id=JQwie0bKBb"
+    },
+    {
+      "openreview_id": "fuXZocOUBF",
+      "title": "Detecting Audio-Visual Deepfakes Outside the Generator Objective",
+      "matched_method_queries": [
+        "zero-order"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "音视频检测，无语言模型优化关联。",
+      "source_url": "https://openreview.net/forum?id=fuXZocOUBF"
+    },
+    {
+      "openreview_id": "mPl8sAMr9g",
+      "title": "EG-Opt: Efficient Learning for Nonlinear Programming via Explicit Gradients from Sample-Calibrated Linear Surrogates",
+      "matched_method_queries": [
+        "zeroth-order"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "一般工程优化且方法并非梯度无关。",
+      "source_url": "https://openreview.net/forum?id=mPl8sAMr9g"
+    },
+    {
+      "openreview_id": "i2EdO6YkEj",
+      "title": "Exposing Local Vulnerabilities in Neural Routing Solvers with an Efficient Black-Box Attack",
+      "matched_method_queries": [
+        "evolution strategies"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "神经组合优化而非语言模型应用。",
+      "source_url": "https://openreview.net/forum?id=i2EdO6YkEj"
+    },
+    {
+      "openreview_id": "JadfZVJabx",
+      "title": "First-Order Bilevel Optimization for Non-truthful Auction Design",
+      "matched_method_queries": [
+        "zeroth-order"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "无语言模型关联，且所提方法不是梯度无关。",
+      "source_url": "https://openreview.net/forum?id=JadfZVJabx"
+    },
+    {
+      "openreview_id": "iP3mhGLBfO",
+      "title": "Generative Refinement for Low-Budget Black Box Optimization",
+      "matched_method_queries": [
+        "evolutionary optimization"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "通用科学工程黑盒优化，摘要无 LLM/VLM 应用。",
+      "source_url": "https://openreview.net/forum?id=iP3mhGLBfO"
+    },
+    {
+      "openreview_id": "tAxD9PKXww",
+      "title": "Gradient Estimation View of Zeroth-Order Optimizers",
+      "matched_method_queries": [
+        "zeroth-order",
+        "derivative-free",
+        "evolution strategies",
+        "finite difference"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "有直接 ZO 理论价值，但用户范围要求有语言模型应用，摘要未提供。",
+      "source_url": "https://openreview.net/forum?id=tAxD9PKXww"
+    },
+    {
+      "openreview_id": "iVQu1sp529",
+      "title": "HO-FL: Hybrid-Order Federated Learning for Heterogeneous Edge Devices",
+      "matched_method_queries": [
+        "zeroth-order"
+      ],
+      "decision": "included",
+      "catalog_category": "related_hybrid",
+      "repository_relevance_zh": "真实将 ZO 用于语言任务上的模型参数训练，但依赖顶段一阶训练，按规则放 related_hybrid。",
+      "source_url": "https://openreview.net/forum?id=iVQu1sp529"
+    },
+    {
+      "openreview_id": "jDFuw9smxN",
+      "title": "JANUS: Online Jacobian-Aligned Infill for Black-Box Optimization",
+      "matched_method_queries": [
+        "CMA-ES"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "通用黑盒优化，无语言模型应用。",
+      "source_url": "https://openreview.net/forum?id=jDFuw9smxN"
+    },
+    {
+      "openreview_id": "zkIJpaca3W",
+      "title": "Learnable Membrane Time Constants for Structure Dynamics in Recurrent Spiking Neural Networks",
+      "matched_method_queries": [
+        "backpropagation-free",
+        "forward gradient"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "仅 Brax 连续控制，无语言模型关联。",
+      "source_url": "https://openreview.net/forum?id=zkIJpaca3W"
+    },
+    {
+      "openreview_id": "tkUqPJJvZk",
+      "title": "Learning Where to Search: Evolutionary Embedding Search for High-Dimensional Bayesian Optimization",
+      "matched_method_queries": [
+        "derivative-free"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "通用 BO，应用为轨迹规划和 SVM，无 LLM/VLM。",
+      "source_url": "https://openreview.net/forum?id=tkUqPJJvZk"
+    },
+    {
+      "openreview_id": "I3q1ZdbQow",
+      "title": "MetaLearnNCA: Few-Shot Offline Meta-Learning via Interacting Neural Cellular Automata",
+      "matched_method_queries": [
+        "gradient-free"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "仅 Omniglot/MNIST 等视觉分类，无语言模型。",
+      "source_url": "https://openreview.net/forum?id=I3q1ZdbQow"
+    },
+    {
+      "openreview_id": "JzjNi4rkcX",
+      "title": "Not Every Correction Helps: Gain-Guided Continual Test-Time Adaptation",
+      "matched_method_queries": [
+        "backpropagation-free",
+        "without backpropagation"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "测试时适配机制相关，但只报告视觉基准，无 LLM/VLM 关联。",
+      "source_url": "https://openreview.net/forum?id=JzjNi4rkcX"
+    },
+    {
+      "openreview_id": "KlnPPPCCiO",
+      "title": "Parallel Memristive-Friendly Reservoirs for Gradient-Free Long-Sequence Classification",
+      "matched_method_queries": [
+        "gradient-free"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "纯长时间序列分类，不能因“sequence model”纳入语言模型目录。",
+      "source_url": "https://openreview.net/forum?id=KlnPPPCCiO"
+    },
+    {
+      "openreview_id": "e8tYFmI6d8",
+      "title": "PHASE: Packet-level Hierarchical Adversarial Semantic Exploitation for Targeted Steering of Retrieval-Augmented Diffusion Models",
+      "matched_method_queries": [
+        "gradient-free"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "研究图像扩散安全，未给出语言或视觉语言模型优化证据。",
+      "source_url": "https://openreview.net/forum?id=e8tYFmI6d8"
+    },
+    {
+      "openreview_id": "JzPDBEz1rL",
+      "title": "PoSTCache: From Forecasting to Postdictive Smoothing for Revisable Diffusion Caching",
+      "matched_method_queries": [
+        "forward-only"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "纯图像/视频生成缓存，无语言模型关联。",
+      "source_url": "https://openreview.net/forum?id=JzPDBEz1rL"
+    },
+    {
+      "openreview_id": "fXrQoDssZW",
+      "title": "Procedural Adversarial Training",
+      "matched_method_queries": [
+        "zeroth-order"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "纯计算机视觉任务，无语言模型应用。",
+      "source_url": "https://openreview.net/forum?id=fXrQoDssZW"
+    },
+    {
+      "openreview_id": "pqw6kWr6kt",
+      "title": "Risk Decomposition for Hallucination-Aware Video Sampling",
+      "matched_method_queries": [
+        "finite difference"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "视频生成，不是语言模型优化；有限差分只是评分估计。",
+      "source_url": "https://openreview.net/forum?id=pqw6kWr6kt"
+    },
+    {
+      "openreview_id": "55geiEe08j",
+      "title": "SCULPT: Backpropagation-Free Linear-Head Adaptation with Symbolic Constraints",
+      "matched_method_queries": [
+        "backpropagation-free"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "机制相关，但摘要没有 LLM/VLM 应用，不能仅因 routing 纳入。",
+      "source_url": "https://openreview.net/forum?id=55geiEe08j"
+    },
+    {
+      "openreview_id": "pwseyFaKAp",
+      "title": "Sharpen Your Flow: Sharpness-Aware Sampling for Flow Matching",
+      "matched_method_queries": [
+        "finite difference"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "一般生成模型采样，无语言模型应用。",
+      "source_url": "https://openreview.net/forum?id=pwseyFaKAp"
+    },
+    {
+      "openreview_id": "d7T8HVLoWJ",
+      "title": "Stabilizing Variational Information Bottleneck Under Covariance Shift",
+      "matched_method_queries": [
+        "finite difference"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "纯视觉分类且有限差分不是独立梯度无关优化。",
+      "source_url": "https://openreview.net/forum?id=d7T8HVLoWJ"
+    },
+    {
+      "openreview_id": "1UIq0cjyZB",
+      "title": "SWAGES: System-Wide Attention and Guided Evolution for Dynamic Workflow Scheduling",
+      "matched_method_queries": [
+        "evolution strategies"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "一般云工作流调度，无语言模型关联。",
+      "source_url": "https://openreview.net/forum?id=1UIq0cjyZB"
+    },
+    {
+      "openreview_id": "axMSdpe80b",
+      "title": "Touch2Predict: Learning Physical Properties from a Single Tactile Interaction",
+      "matched_method_queries": [
+        "derivative-free"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "机器人逆物理，无语言模型应用。",
+      "source_url": "https://openreview.net/forum?id=axMSdpe80b"
+    },
+    {
+      "openreview_id": "D8E6bb0Ioc",
+      "title": "When and Why Can Test-Time Adaptation Succeed?",
+      "matched_method_queries": [
+        "backpropagation-free"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "仅视觉分布偏移基准，无 LLM/VLM 关联。",
+      "source_url": "https://openreview.net/forum?id=D8E6bb0Ioc"
+    },
+    {
+      "openreview_id": "WwFl5oMZuN",
+      "title": "Zeroth-Order SGD with Momentum Resetting Achieves Dimension-Dependent Optimality\\\\in Nonsmooth Nonconvex Optimization",
+      "matched_method_queries": [
+        "zeroth-order"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "纯 ZO 理论，无语言模型应用。",
+      "source_url": "https://openreview.net/forum?id=WwFl5oMZuN"
+    },
+    {
+      "openreview_id": "mrISpV3Pax",
+      "title": "Adaptation as Memory: Learning to Correct Time Series Foundation Models",
+      "matched_method_queries": [
+        "without backpropagation"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "不满足本轮“具体梯度无关机制与语言模型优化有明确关联”的收录范围。",
+      "source_url": "https://openreview.net/forum?id=mrISpV3Pax"
+    },
+    {
+      "openreview_id": "v5JpKDwFAO",
+      "title": "AlphaG-OPD: Reliability-Gated Sibling Counterfactuals for On-Policy Distillation in Symbolic Alpha Factor Discovery",
+      "matched_method_queries": [
+        "forward gradient"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "不满足本轮“具体梯度无关机制与语言模型优化有明确关联”的收录范围。",
+      "source_url": "https://openreview.net/forum?id=v5JpKDwFAO"
+    },
+    {
+      "openreview_id": "OMX73ebh7p",
+      "title": "Building Neural Policies through Developmental Rewiring",
+      "matched_method_queries": [
+        "neuroevolution"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "不满足本轮“具体梯度无关机制与语言模型优化有明确关联”的收录范围。",
+      "source_url": "https://openreview.net/forum?id=OMX73ebh7p"
+    },
+    {
+      "openreview_id": "mlVqTuV7b8",
+      "title": "Closing the Loop on Masking Difficulty for Joint-Embedding Predictive Learning",
+      "matched_method_queries": [
+        "gradient-free"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "不满足本轮“具体梯度无关机制与语言模型优化有明确关联”的收录范围。",
+      "source_url": "https://openreview.net/forum?id=mlVqTuV7b8"
+    },
+    {
+      "openreview_id": "0e6fe2MG5z",
+      "title": "Continual Learning on Graphs via Gradient-free Condensation",
+      "matched_method_queries": [
+        "gradient-free"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "不满足本轮“具体梯度无关机制与语言模型优化有明确关联”的收录范围。",
+      "source_url": "https://openreview.net/forum?id=0e6fe2MG5z"
+    },
+    {
+      "openreview_id": "a9jMLEKM50",
+      "title": "DACS: From Historical Inertia to Forward Evidence for Behavioral Authentication",
+      "matched_method_queries": [
+        "forward-only"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "不满足本轮“具体梯度无关机制与语言模型优化有明确关联”的收录范围。",
+      "source_url": "https://openreview.net/forum?id=a9jMLEKM50"
+    },
+    {
+      "openreview_id": "2KFNPsh1y4",
+      "title": "DifferenceFlow: Dynamic Implicit Differences for One-Step Generative Modeling",
+      "matched_method_queries": [
+        "finite difference"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "不满足本轮“具体梯度无关机制与语言模型优化有明确关联”的收录范围。",
+      "source_url": "https://openreview.net/forum?id=2KFNPsh1y4"
+    },
+    {
+      "openreview_id": "9O4ySWc0G1",
+      "title": "EnRep: Energy-Induced Representations for Classification without Backpropagation",
+      "matched_method_queries": [
+        "without backpropagation"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "不满足本轮“具体梯度无关机制与语言模型优化有明确关联”的收录范围。",
+      "source_url": "https://openreview.net/forum?id=9O4ySWc0G1"
+    },
+    {
+      "openreview_id": "qNhfYunjC7",
+      "title": "FASE: Factor-Aware Spectral Evolution for Gradient-Free Continuation of Diffusion Post-Training",
+      "matched_method_queries": [
+        "gradient-free",
+        "CMA-ES",
+        "evolution strategies"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "不满足本轮“具体梯度无关机制与语言模型优化有明确关联”的收录范围。",
+      "source_url": "https://openreview.net/forum?id=qNhfYunjC7"
+    },
+    {
+      "openreview_id": "CADnUczyZQ",
+      "title": "Forward-Only Learning Across Black-Box Interfaces: State Persistence and Pilot Recovery",
+      "matched_method_queries": [
+        "forward-only"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "不满足本轮“具体梯度无关机制与语言模型优化有明确关联”的收录范围。",
+      "source_url": "https://openreview.net/forum?id=CADnUczyZQ"
+    },
+    {
+      "openreview_id": "s5Es57znPS",
+      "title": "GenInv: Generative Inverse Learning for Cell Perturbation Prediction",
+      "matched_method_queries": [
+        "forward-only"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "不满足本轮“具体梯度无关机制与语言模型优化有明确关联”的收录范围。",
+      "source_url": "https://openreview.net/forum?id=s5Es57znPS"
+    },
+    {
+      "openreview_id": "6wHdHqhDuM",
+      "title": "Gradient-Free Sampling from Generative Models via Stochastic Bounded Extremum Seeking",
+      "matched_method_queries": [
+        "gradient-free"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "不满足本轮“具体梯度无关机制与语言模型优化有明确关联”的收录范围。",
+      "source_url": "https://openreview.net/forum?id=6wHdHqhDuM"
+    },
+    {
+      "openreview_id": "PnuDAO3uyl",
+      "title": "How Sparsity Allocation Shapes Label-Free Post-Pruning Recoverability",
+      "matched_method_queries": [
+        "gradient-free"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "不满足本轮“具体梯度无关机制与语言模型优化有明确关联”的收录范围。",
+      "source_url": "https://openreview.net/forum?id=PnuDAO3uyl"
+    },
+    {
+      "openreview_id": "baKjpOzPGt",
+      "title": "KSOS-BO: Improving Sampling in Bayesian Optimization via Kernel Sum of Squares",
+      "matched_method_queries": [
+        "CMA-ES"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "不满足本轮“具体梯度无关机制与语言模型优化有明确关联”的收录范围。",
+      "source_url": "https://openreview.net/forum?id=baKjpOzPGt"
+    },
+    {
+      "openreview_id": "KzW87to1Wm",
+      "title": "Learning from Historical Overlap Errors: Adaptive Pointwise Reweighting for Time Series Forecasting",
+      "matched_method_queries": [
+        "gradient-free"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "不满足本轮“具体梯度无关机制与语言模型优化有明确关联”的收录范围。",
+      "source_url": "https://openreview.net/forum?id=KzW87to1Wm"
+    },
+    {
+      "openreview_id": "G8GNLtlyAV",
+      "title": "Learning While Generating in a Single Forward Pass",
+      "matched_method_queries": [
+        "forward gradient"
+      ],
+      "decision": "included",
+      "catalog_category": "zo_directions",
+      "repository_relevance_zh": "直接面向部署中 LLM 的随机方向前向梯度适配，是仓库主线的 forward-only/ZO 参数更新方法。",
+      "source_url": "https://openreview.net/forum?id=G8GNLtlyAV"
+    },
+    {
+      "openreview_id": "HDeeHC6So7",
+      "title": "NearestPDE: Structured Backward Error for Ambiguity-Aware PDE Diagnosis",
+      "matched_method_queries": [
+        "finite difference"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "不满足本轮“具体梯度无关机制与语言模型优化有明确关联”的收录范围。",
+      "source_url": "https://openreview.net/forum?id=HDeeHC6So7"
+    },
+    {
+      "openreview_id": "fbvBYNTB0C",
+      "title": "NyS-Binary: A Feature-Free, Algebraic Framework for Binary Node Representation Learning",
+      "matched_method_queries": [
+        "gradient-free"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "不满足本轮“具体梯度无关机制与语言模型优化有明确关联”的收录范围。",
+      "source_url": "https://openreview.net/forum?id=fbvBYNTB0C"
+    },
+    {
+      "openreview_id": "enaDfCn4w0",
+      "title": "Partially Informed Stochastic Optimization via Zeroth-Order Residual Tracking",
+      "matched_method_queries": [
+        "zeroth-order"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "不满足本轮“具体梯度无关机制与语言模型优化有明确关联”的收录范围。",
+      "source_url": "https://openreview.net/forum?id=enaDfCn4w0"
+    },
+    {
+      "openreview_id": "Ne1CKI7ey9",
+      "title": "PhysibleMDM: Enforcing Inference-Time Physical Feasibility Constraints on Motion Diffusion Models via Noise Optimization",
+      "matched_method_queries": [
+        "CMA-ES"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "不满足本轮“具体梯度无关机制与语言模型优化有明确关联”的收录范围。",
+      "source_url": "https://openreview.net/forum?id=Ne1CKI7ey9"
+    },
+    {
+      "openreview_id": "KdCdB5V6ku",
+      "title": "PotentialEP: Backprop-Free Training of CIFAR-Scale Generative Models via Equilibrium Propagation",
+      "matched_method_queries": [
+        "backpropagation-free",
+        "without backpropagation"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "不满足本轮“具体梯度无关机制与语言模型优化有明确关联”的收录范围。",
+      "source_url": "https://openreview.net/forum?id=KdCdB5V6ku"
+    },
+    {
+      "openreview_id": "XfKMDwoz1B",
+      "title": "Q-Guided Drifting Policy: Value-Guided Target Construction for One-Step Offline Reinforcement Learning",
+      "matched_method_queries": [
+        "zeroth-order"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "不满足本轮“具体梯度无关机制与语言模型优化有明确关联”的收录范围。",
+      "source_url": "https://openreview.net/forum?id=XfKMDwoz1B"
+    },
+    {
+      "openreview_id": "HdeuL9qztS",
+      "title": "Rollback and Repair: Reusing Trajectory Assets for Test-Time Scaling in Protein Design",
+      "matched_method_queries": [
+        "derivative-free"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "不满足本轮“具体梯度无关机制与语言模型优化有明确关联”的收录范围。",
+      "source_url": "https://openreview.net/forum?id=HdeuL9qztS"
+    },
+    {
+      "openreview_id": "aiqFcQWTWT",
+      "title": "Searchability of Gene-Encoded Spiking Controllers under a Forward-and-Reproduction Energy Ledger",
+      "matched_method_queries": [
+        "gradient-free",
+        "neuroevolution"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "不满足本轮“具体梯度无关机制与语言模型优化有明确关联”的收录范围。",
+      "source_url": "https://openreview.net/forum?id=aiqFcQWTWT"
+    },
+    {
+      "openreview_id": "CiCNIXROuS",
+      "title": "Shrinkage in Zeroth-Order Optimization: Estimation Risk and Expected Descent",
+      "matched_method_queries": [
+        "zeroth-order"
+      ],
+      "decision": "included",
+      "catalog_category": "zo_understanding",
+      "repository_relevance_zh": "以 OPT-125M 为实证对象分析零阶梯度估计改进为何不必然带来更好优化下降，属于 LLM 零阶优化理论边界。",
+      "source_url": "https://openreview.net/forum?id=CiCNIXROuS"
+    },
+    {
+      "openreview_id": "IA3PSttexX",
+      "title": "State-Aware Zeroth-Order Search for DR-Submodular Maximization",
+      "matched_method_queries": [
+        "zeroth-order"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "不满足本轮“具体梯度无关机制与语言模型优化有明确关联”的收录范围。",
+      "source_url": "https://openreview.net/forum?id=IA3PSttexX"
+    },
+    {
+      "openreview_id": "5H9yPPYAla",
+      "title": "Tangent On-Policy Distillation: Local-Direction Supervision Beyond Outputs",
+      "matched_method_queries": [
+        "finite difference"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "不满足本轮“具体梯度无关机制与语言模型优化有明确关联”的收录范围。",
+      "source_url": "https://openreview.net/forum?id=5H9yPPYAla"
+    },
+    {
+      "openreview_id": "74gLFx6JkB",
+      "title": "UNACT: GRADIENT-FREE UNLEARNING VIA TARGETED ACTIVATION INTERVENTION",
+      "matched_method_queries": [
+        "gradient-free"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "不满足本轮“具体梯度无关机制与语言模型优化有明确关联”的收录范围。",
+      "source_url": "https://openreview.net/forum?id=74gLFx6JkB"
+    },
+    {
+      "openreview_id": "lXiUD5V7wG",
+      "title": "When Are Nearby Experts Composable? Cross-Task Model Merging in Neural Thickets",
+      "matched_method_queries": [
+        "finite difference"
+      ],
+      "decision": "included",
+      "catalog_category": "related_closed_form",
+      "repository_relevance_zh": "真实涉及 LLM 权重扰动专家及无梯度的模型合并选择，但不是零阶梯度估计，作为模型合并/闭式选择边界收录。",
+      "source_url": "https://openreview.net/forum?id=lXiUD5V7wG"
+    },
+    {
+      "openreview_id": "XhdOPTxLyT",
+      "title": "ZO-COSMO: Index-Free One-Hop Mixing for Decentralized Zeroth-Order Optimization",
+      "matched_method_queries": [
+        "zeroth-order"
+      ],
+      "decision": "included",
+      "catalog_category": "zo_systems",
+      "repository_relevance_zh": "直接以 Qwen2-7B LoRA 为对象研究通信高效的去中心化零阶优化，属于主线 ZO 参数优化。",
+      "source_url": "https://openreview.net/forum?id=XhdOPTxLyT"
+    },
+    {
+      "openreview_id": "gK96j8p3Vx",
+      "title": "Adaptive Stepsizes Meet Momentum: An Improved Zeroth-Order Method",
+      "matched_method_queries": [
+        "zeroth-order",
+        "gradient-free"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "The abstract contains no language-model, VLM, prompting, or agent application; this is generic ZO theory.",
+      "source_url": "https://openreview.net/forum?id=gK96j8p3Vx"
+    },
+    {
+      "openreview_id": "b26gPbGN9O",
+      "title": "An Energy-Aware Sampling Method for Physics-Informed Neural Networks",
+      "matched_method_queries": [
+        "derivative-free"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "Scientific PDE/PINN work with no language-model or VLM connection.",
+      "source_url": "https://openreview.net/forum?id=b26gPbGN9O"
+    },
+    {
+      "openreview_id": "FZAUWsJD3m",
+      "title": "CABM: Efficient Concept Augmentation for Interpretable Deep Models",
+      "matched_method_queries": [
+        "parameter perturbation"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "No language-model application, and “parameter perturbation” denotes the formulation rather than ZO perturbation estimation.",
+      "source_url": "https://openreview.net/forum?id=FZAUWsJD3m"
+    },
+    {
+      "openreview_id": "PgUvaCo2j4",
+      "title": "Closing the Train-Test Gap in World Models for Gradient-Based Planning",
+      "matched_method_queries": [
+        "gradient-free"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "Robotics/navigation work with no language-model link; a baseline mention cannot qualify the proposed method.",
+      "source_url": "https://openreview.net/forum?id=PgUvaCo2j4"
+    },
+    {
+      "openreview_id": "UxsGk4on0e",
+      "title": "Continual Reinforcement Learning with Neuroevolution",
+      "matched_method_queries": [
+        "evolution strategies",
+        "neuroevolution"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "No LLM, VLM, language-agent, or language-policy application is stated.",
+      "source_url": "https://openreview.net/forum?id=UxsGk4on0e"
+    },
+    {
+      "openreview_id": "NqKMGp6N98",
+      "title": "Data Selection for Conditional Flow Matching via State–Velocity Geometry",
+      "matched_method_queries": [
+        "zero-order"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "Image flow-matching experiments only; no language-model optimization.",
+      "source_url": "https://openreview.net/forum?id=NqKMGp6N98"
+    },
+    {
+      "openreview_id": "ZzJWMU6dUI",
+      "title": "Distilling Diffusion Score Discrepancy for Efficient Training Data Attribution",
+      "matched_method_queries": [
+        "forward-only"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "Diffusion image attribution rather than language-model optimization.",
+      "source_url": "https://openreview.net/forum?id=ZzJWMU6dUI"
+    },
+    {
+      "openreview_id": "qY8l677bHH",
+      "title": "Epistemic Forward Models: Learning Predictive States for Action-Conditioned Future Distinguishability",
+      "matched_method_queries": [
+        "finite difference"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "Pure RGB-D robotics/active sensing with no LLM or VLM language backbone.",
+      "source_url": "https://openreview.net/forum?id=qY8l677bHH"
+    },
+    {
+      "openreview_id": "phwjDb6goi",
+      "title": "Fast-Weight Memory for Adaptive Recommendation",
+      "matched_method_queries": [
+        "gradient-free"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "A recommender-system adaptation mechanism with no language-model or VLM application.",
+      "source_url": "https://openreview.net/forum?id=phwjDb6goi"
+    },
+    {
+      "openreview_id": "6kwgPuiq8R",
+      "title": "From Decoder Backward to Encoder Forward: Antisymmetric Latent Updates for Diffusion Inverse Solvers",
+      "matched_method_queries": [
+        "forward-only"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "Image, video, and CT inverse solving with no language-model relevance.",
+      "source_url": "https://openreview.net/forum?id=6kwgPuiq8R"
+    },
+    {
+      "openreview_id": "rtIp1pxlSG",
+      "title": "Geometric Regularization of Learned Behavior Spaces in Unsupervised Quality-Diversity Optimization",
+      "matched_method_queries": [
+        "neuroevolution"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "Robot quality-diversity optimization without language-model or VLM use.",
+      "source_url": "https://openreview.net/forum?id=rtIp1pxlSG"
+    },
+    {
+      "openreview_id": "pYpybkF5Yi",
+      "title": "Grow or Prune? Constructive Neuroevolution of Kolmogorov–Arnold Networks",
+      "matched_method_queries": [
+        "neuroevolution"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "Symbolic regression/KAN architecture search, not language-model optimization.",
+      "source_url": "https://openreview.net/forum?id=pYpybkF5Yi"
+    },
+    {
+      "openreview_id": "per4W4wDLF",
+      "title": "Hq-Recycle: Efficient Bilevel Optimization through Adjoint Recycling",
+      "matched_method_queries": [
+        "finite difference"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "Only linear classification and ridge regression are stated; no language-model application.",
+      "source_url": "https://openreview.net/forum?id=per4W4wDLF"
+    },
+    {
+      "openreview_id": "qixS3l1Wsf",
+      "title": "LaDiM: Layered Diagnosis for Multi-Agent Code Migration",
+      "matched_method_queries": [
+        "forward gradient"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "LLMs are used, but there is no qualifying gradient-free optimization mechanism.",
+      "source_url": "https://openreview.net/forum?id=qixS3l1Wsf"
+    },
+    {
+      "openreview_id": "JqlxDi0k8a",
+      "title": "Learning Invariant Spike Representations For Robust Remote Sensing Detection",
+      "matched_method_queries": [
+        "without backpropagation"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "Remote-sensing vision/SNN work without language models.",
+      "source_url": "https://openreview.net/forum?id=JqlxDi0k8a"
+    },
+    {
+      "openreview_id": "ORAHHcnXVe",
+      "title": "LESS: Lightweight Evolutionary Supernet Search in Minutes",
+      "matched_method_queries": [
+        "CMA-ES",
+        "evolutionary optimization"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "NAS-Bench/CIFAR/ImageNet architecture search with no language-model application.",
+      "source_url": "https://openreview.net/forum?id=ORAHHcnXVe"
+    },
+    {
+      "openreview_id": "zl4U97GZ9L",
+      "title": "Neighbor Averaging as Perturbation: Risk-Aware Decentralized Federated Learning via Noise-Probed Sensitivity",
+      "matched_method_queries": [
+        "parameter perturbation"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "Generic/CIFAR federated learning with no LLM or VLM optimization.",
+      "source_url": "https://openreview.net/forum?id=zl4U97GZ9L"
+    },
+    {
+      "openreview_id": "C69ql69qP4",
+      "title": "Observable Geometry for Derivative-Free Optimization of Dynamical Systems",
+      "matched_method_queries": [
+        "derivative-free"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "Scientific dynamical systems and spiking digits only; no language-model application.",
+      "source_url": "https://openreview.net/forum?id=C69ql69qP4"
+    },
+    {
+      "openreview_id": "R8obaNz0uu",
+      "title": "Past2Next: Past Action Conditioning Policy with Data-Augmented Tokenization",
+      "matched_method_queries": [
+        "finite difference"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "Robot imitation learning without a language model or qualifying VLM optimization.",
+      "source_url": "https://openreview.net/forum?id=R8obaNz0uu"
+    },
+    {
+      "openreview_id": "9TVnxhsWUC",
+      "title": "Physics-Informed Stochastic Configuration Machine: A Backpropagation-Free Neural Network with Fast Training involving Nonlinear Differential Equations",
+      "matched_method_queries": [
+        "backpropagation-free"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "Scientific PDE learning without language-model or VLM use.",
+      "source_url": "https://openreview.net/forum?id=9TVnxhsWUC"
+    },
+    {
+      "openreview_id": "L6QLnBFEml",
+      "title": "Principled Backpropagation-Free Training via Layerwise Fenchel-Young Lifting",
+      "matched_method_queries": [
+        "backpropagation-free"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "General neural-network training theory with no LLM/VLM application stated.",
+      "source_url": "https://openreview.net/forum?id=L6QLnBFEml"
+    },
+    {
+      "openreview_id": "hRc0sauHSE",
+      "title": "Query Efficient Black-box Adversarial Attack via Dataset Distillation",
+      "matched_method_queries": [
+        "gradient-free"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "The abstract gives generic/adversarially trained model evaluation, with no language-model or VLM target.",
+      "source_url": "https://openreview.net/forum?id=hRc0sauHSE"
+    },
+    {
+      "openreview_id": "k7VrTpZ9RJ",
+      "title": "Rollback: Experience Backtracking in World Models for Policy Improvement",
+      "matched_method_queries": [
+        "forward-only"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "Real-robot policy improvement without language-model optimization.",
+      "source_url": "https://openreview.net/forum?id=k7VrTpZ9RJ"
+    },
+    {
+      "openreview_id": "JruDtQUl8A",
+      "title": "Second-Order Geometry of Generative Paths: Fragility and Targeted Refinement",
+      "matched_method_queries": [
+        "finite difference"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "Visual flow/image-editing analysis without language-model connection.",
+      "source_url": "https://openreview.net/forum?id=JruDtQUl8A"
+    },
+    {
+      "openreview_id": "IJWhEOL1pT",
+      "title": "Simulator-Refined Diffusion for Radio-Frequency Inverse Design",
+      "matched_method_queries": [
+        "zeroth-order"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "RF circuit inverse design, not language-model/VLM optimization.",
+      "source_url": "https://openreview.net/forum?id=IJWhEOL1pT"
+    },
+    {
+      "openreview_id": "JOo32CtWHH",
+      "title": "Stein Guidance without Gradients: Discretization Uniform Diffusion Inference Time Scaling beyond Particle SMC",
+      "matched_method_queries": [
+        "derivative-free",
+        "without gradients"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "Generic diffusion sampling theory with no text/LLM application in the abstract.",
+      "source_url": "https://openreview.net/forum?id=JOo32CtWHH"
+    },
+    {
+      "openreview_id": "7Yl2JKKec1",
+      "title": "The Multi-Query Paradox in Zeroth-Order Optimization",
+      "matched_method_queries": [
+        "zeroth-order"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "Generic zeroth-order theory with no language-model experiment or analysis.",
+      "source_url": "https://openreview.net/forum?id=7Yl2JKKec1"
+    },
+    {
+      "openreview_id": "zndZYf5lWa",
+      "title": "Value-Twisted Sequential Monte Carlo for Task-Aware Missing-Modality Connectome Completion",
+      "matched_method_queries": [
+        "gradient-free"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "Medical imaging/connectome completion without language-model relevance.",
+      "source_url": "https://openreview.net/forum?id=zndZYf5lWa"
+    },
+    {
+      "openreview_id": "ayiQSugiuW",
+      "title": "When Does Derivative Supervision Help? A Study of Label Construction and Noise",
+      "matched_method_queries": [
+        "finite difference"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "Scientific derivative-supervision study without language-model application.",
+      "source_url": "https://openreview.net/forum?id=ayiQSugiuW"
+    },
+    {
+      "openreview_id": "4tp5TPhaoL",
+      "title": "ZOBA: An Efficient Single-loop Zeroth-order Bilevel Optimization Algorithm",
+      "matched_method_queries": [
+        "zeroth-order",
+        "finite difference"
+      ],
+      "decision": "excluded",
+      "catalog_category": null,
+      "repository_relevance_zh": "Generic theory and an unspecified adversarial-ML task; no LLM/VLM application.",
+      "source_url": "https://openreview.net/forum?id=4tp5TPhaoL"
+    }
+  ],
+  "response_sha256": {
+    "00-00000.json": "c054a877f8763881641333dce186d0fc6d2c4d4fc7bdae926034af360af5b01f",
+    "01-00000.json": "b09a747626f50b51b131e63fad3db622f85fdc0df079d1565f3f97240cea5ab6",
+    "02-00000.json": "8ad44d1ecb03ffa5246f5a41b2d6fbc25755a071f94e1830f6fe6a989607b0af",
+    "03-00000.json": "1c8387dea4edecbd37b62ee9807c0092fd6dffb977dfb6e89750ae673af6bc44",
+    "04-00000.json": "89b8aeff1f126a2b313b4e59bd055b1faff96a33a549122585a291b73cfbcbdc",
+    "05-00000.json": "bd49c67762592b086ec520bc0df536c0e9e1477d6c1698e0f482a98f338a6d3e",
+    "06-00000.json": "ade913028088abb02fa78c04e781bbc9aa5642680184e3c86d244e20d83cd03a",
+    "07-00000.json": "dd2df5063f7ff6baaab2a5e080924878efeb095824dbe9e4e058ef12f4ef7118",
+    "08-00000.json": "d31119ac7d088db3d44cf731ec4feb25328cf069c9d57c1578463862a0361280",
+    "09-00000.json": "b14fdb7be1f480cf20fca622bd96256899f261dc6f93aa879d4a7927a4468775",
+    "10-00000.json": "0729959733dee99bee2e9508474c59ca4fa8333d734e6b99e493079bb3ef59bb",
+    "11-00000.json": "aa2b31c98447cd4233b8a5c0ab289f517291b1ae9e43707822fcbe8a10f8b6ab",
+    "12-00000.json": "c355619efbbf2139098421c118cd1a5f6d80f12c1c2e0edf5be1ec69d67a8bf9",
+    "13-00000.json": "19af27e76106c51e5a4b0c8d844ff01b5248bb06ed4c4f68db91ad509e6c358a",
+    "14-00000.json": "e210c22445636053ecacf8cd7ed12d42a8303bb9d94da31a4f0a45a767de4551",
+    "15-00000.json": "015df7f29089522bcf858765fe38a380f8ddcc693a4fca582b9ce2c1b4646d8f",
+    "16-00000.json": "1629c39fb9cd1fcea65b8e6a45ff215a11d7192b95721a04f94a41d8fd0c6bb4",
+    "17-00000.json": "62955d883185d3472bf210a514998071bfe741627a997eb13f7d1df7f5b7e583"
+  }
+}

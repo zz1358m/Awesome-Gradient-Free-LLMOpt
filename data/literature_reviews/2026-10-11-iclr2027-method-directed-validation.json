@@ -1,0 +1,103 @@
+{
+  "catalog_count": 423,
+  "report_count": 989,
+  "duplicate_catalog_titles": [],
+  "duplicate_catalog_openreview_ids": [],
+  "duplicate_report_titles": [],
+  "duplicate_report_openreview_ids": [],
+  "method_query_count": 18,
+  "method_queries_complete": true,
+  "method_union_ids": 387,
+  "new_candidate_decisions": 181,
+  "new_candidate_report_records": 181,
+  "new_included": 7,
+  "new_excluded": 174,
+  "new_unresolved": 0,
+  "all_new_records_have_method_queries": true,
+  "all_new_records_have_specific_relevance": false,
+  "all_new_records_anonymous": true,
+  "new_online_oct3": 179,
+  "new_online_missing": 2,
+  "new_catalog_openreview_ids": [
+    "CiCNIXROuS",
+    "G8GNLtlyAV",
+    "XhdOPTxLyT",
+    "a04cCyok2x",
+    "iVQu1sp529",
+    "lXiUD5V7wG",
+    "mDDEcTyT5B"
+  ],
+  "new_bib_openreview_ids": [
+    "CiCNIXROuS",
+    "G8GNLtlyAV",
+    "XhdOPTxLyT",
+    "a04cCyok2x",
+    "iVQu1sp529",
+    "lXiUD5V7wG",
+    "mDDEcTyT5B"
+  ],
+  "bib_openreview_id_duplicates": [],
+  "bib_entry_open_braces": 424,
+  "bib_entry_close_lines": 424,
+  "nonactive_statuses": {
+    "07pvXM8POP": "ICLR 2027 Conference Desk Rejected Submission; not under review",
+    "MZodbg4BOZ": "ICLR 2027 Conference Desk Rejected Submission; not under review",
+    "v1SEW28Ij4": "ICLR 2027 Conference Desk Rejected Submission; not under review",
+    "xEKG0mb0Ny": "ICLR 2027 Conference Desk Rejected Submission; not under review",
+    "zENuM3JgRz": "ICLR 2027 Conference Withdrawn Submission; not under review"
+  },
+  "nonactive_status_tokens_present": {
+    "07pvXM8POP": true,
+    "MZodbg4BOZ": true,
+    "v1SEW28Ij4": true,
+    "xEKG0mb0Ny": true,
+    "zENuM3JgRz": true
+  },
+  "accepted_badges_for_new": 0,
+  "online_date_records_in_report": 978,
+  "broad_language_used_for_discovery": false,
+  "coverage_claim": "partial_full_venue; complete_for_18_user_scoped_method_exact_queries",
+  "categories": {
+    "es_pretraining": 1,
+    "es_single_turn": 13,
+    "related_hybrid": 79,
+    "es_multi_turn": 1,
+    "es_understanding": 9,
+    "zo_pretraining": 3,
+    "zo_baselines": 14,
+    "related_closed_form": 28,
+    "zo_directions": 33,
+    "zo_systems": 24,
+    "zo_alignment": 1,
+    "zo_multi_turn": 1,
+    "zo_understanding": 10,
+    "related_prompt_agent": 194,
+    "related_inference": 11,
+    "related_unverified": 1
+  },
+  "passed": true,
+  "all_new_records_have_repository_relevance": true,
+  "checks": {
+    "json_parse": "passed for authoritative catalog, main review, search manifest, and directed-search evidence",
+    "generator": "uv run scripts/generate_catalog.py --check: passed (423 papers)",
+    "bibtex": "bibtexparser 2.1.0 parsed 424 entries; 424 unique keys",
+    "diff_whitespace": "git diff --check: passed",
+    "decision_alignment": "181 unique new candidates; 7 included, 174 excluded, 0 unresolved"
+  },
+  "baseline_commit": "e57b26d0c675d88a1b64ad2d60d989ff5d675574",
+  "catalog_delta": {
+    "before": 416,
+    "after": 423,
+    "added": 7,
+    "removed": 0,
+    "modified_existing": 339
+  },
+  "review_delta": {
+    "before": 808,
+    "after": 989,
+    "added": 181,
+    "removed": 0,
+    "modified_existing": 803
+  },
+  "date_scope_note_zh": "新增181条定向候选中179条官方note带2026-10-03的odate，2条没有odate；7条新增目录论文均为2026-10-03平台公开的周期补收录。odate不等于跨平台首次公开日期。"
+}
