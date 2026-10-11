@@ -3772,10 +3772,10 @@
   },
   {
     "title": "Learning While Generating in a Single Forward Pass",
-    "category": "zo_directions",
+    "category": "related_forward_gradient",
     "date": "2026",
-    "description_en": "OFTA records the response log-probability directional derivative along a random parameter direction during the same Qwen3 generation pass, then converts the trace into a feedback-conditioned parameter update without backpropagation or a second model run.",
-    "description_zh": "提出 One-Pass Forward-Trace Adaptation（OFTA）：在 LLM 生成时沿随机参数方向记录响应对数概率的变化，反馈到达后直接把该记录转换为参数更新，从而省去反馈后的第二次模型运行。",
+    "description_en": "OFTA records a response log-probability directional derivative along a random parameter direction during the same Qwen3 generation pass, then turns that derivative trace into a feedback-conditioned parameter update without reverse-mode backpropagation or a second model run; the abstract does not establish a function-value-only zeroth-order estimator.",
+    "description_zh": "OFTA 在同一次 Qwen3 生成前向中记录响应对数概率沿随机参数方向的方向导数，反馈到达后将导数轨迹转为参数更新，无需反向传播或第二次模型运行；官方摘要未证明它是仅依赖函数值查询的严格零阶估计器。",
     "resources_en": "[paper](https://openreview.net/forum?id=G8GNLtlyAV) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
     "resources_zh": "[论文](https://openreview.net/forum?id=G8GNLtlyAV) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
   },

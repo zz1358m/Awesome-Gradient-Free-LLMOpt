@@ -2148,8 +2148,8 @@
         "forward gradient"
       ],
       "decision": "included",
-      "catalog_category": "zo_directions",
-      "repository_relevance_zh": "直接面向部署中 LLM 的随机方向前向梯度适配，是仓库主线的 forward-only/ZO 参数更新方法。",
+      "catalog_category": "related_forward_gradient",
+      "repository_relevance_zh": "直接面向部署中 LLM 的 forward-gradient 随机方向导数适配；摘要未证明函数值-only零阶估计，故作为无反向传播适配边界收录而非 ZO 主分类。",
       "source_url": "https://openreview.net/forum?id=G8GNLtlyAV"
     },
     {
@@ -2317,7 +2317,7 @@
       ],
       "decision": "excluded",
       "catalog_category": null,
-      "repository_relevance_zh": "The abstract contains no language-model, VLM, prompting, or agent application; this is generic ZO theory.",
+      "repository_relevance_zh": "摘要未涉及语言模型、VLM、提示词或智能体应用，属于通用零阶优化理论。",
       "source_url": "https://openreview.net/forum?id=gK96j8p3Vx"
     },
     {
@@ -2328,7 +2328,7 @@
       ],
       "decision": "excluded",
       "catalog_category": null,
-      "repository_relevance_zh": "Scientific PDE/PINN work with no language-model or VLM connection.",
+      "repository_relevance_zh": "属于科学 PDE/PINN 工作，未体现语言模型或 VLM 关联。",
       "source_url": "https://openreview.net/forum?id=b26gPbGN9O"
     },
     {
@@ -2339,7 +2339,7 @@
       ],
       "decision": "excluded",
       "catalog_category": null,
-      "repository_relevance_zh": "No language-model application, and “parameter perturbation” denotes the formulation rather than ZO perturbation estimation.",
+      "repository_relevance_zh": "未涉及语言模型应用；“parameter perturbation”指问题表述，不是零阶扰动估计。",
       "source_url": "https://openreview.net/forum?id=FZAUWsJD3m"
     },
     {
@@ -2350,7 +2350,7 @@
       ],
       "decision": "excluded",
       "catalog_category": null,
-      "repository_relevance_zh": "Robotics/navigation work with no language-model link; a baseline mention cannot qualify the proposed method.",
+      "repository_relevance_zh": "属于机器人/导航工作，未关联语言模型；仅提及基线不能使所提方法符合收录条件。",
       "source_url": "https://openreview.net/forum?id=PgUvaCo2j4"
     },
     {
@@ -2362,7 +2362,7 @@
       ],
       "decision": "excluded",
       "catalog_category": null,
-      "repository_relevance_zh": "No LLM, VLM, language-agent, or language-policy application is stated.",
+      "repository_relevance_zh": "摘要未说明 LLM、VLM、语言智能体或语言策略应用。",
       "source_url": "https://openreview.net/forum?id=UxsGk4on0e"
     },
     {
@@ -2373,7 +2373,7 @@
       ],
       "decision": "excluded",
       "catalog_category": null,
-      "repository_relevance_zh": "Image flow-matching experiments only; no language-model optimization.",
+      "repository_relevance_zh": "实验仅涉及图像 flow matching，未涉及语言模型优化。",
       "source_url": "https://openreview.net/forum?id=NqKMGp6N98"
     },
     {
@@ -2384,7 +2384,7 @@
       ],
       "decision": "excluded",
       "catalog_category": null,
-      "repository_relevance_zh": "Diffusion image attribution rather than language-model optimization.",
+      "repository_relevance_zh": "研究对象是扩散图像归因，而非语言模型优化。",
       "source_url": "https://openreview.net/forum?id=ZzJWMU6dUI"
     },
     {
@@ -2395,7 +2395,7 @@
       ],
       "decision": "excluded",
       "catalog_category": null,
-      "repository_relevance_zh": "Pure RGB-D robotics/active sensing with no LLM or VLM language backbone.",
+      "repository_relevance_zh": "属于纯 RGB-D 机器人/主动感知研究，没有 LLM 或 VLM 语言骨干。",
       "source_url": "https://openreview.net/forum?id=qY8l677bHH"
     },
     {
@@ -2406,7 +2406,7 @@
       ],
       "decision": "excluded",
       "catalog_category": null,
-      "repository_relevance_zh": "A recommender-system adaptation mechanism with no language-model or VLM application.",
+      "repository_relevance_zh": "属于推荐系统适配机制，未涉及语言模型或 VLM 应用。",
       "source_url": "https://openreview.net/forum?id=phwjDb6goi"
     },
     {
@@ -2417,7 +2417,7 @@
       ],
       "decision": "excluded",
       "catalog_category": null,
-      "repository_relevance_zh": "Image, video, and CT inverse solving with no language-model relevance.",
+      "repository_relevance_zh": "用于图像、视频和 CT 逆问题求解，与语言模型无关。",
       "source_url": "https://openreview.net/forum?id=6kwgPuiq8R"
     },
     {
@@ -2428,7 +2428,7 @@
       ],
       "decision": "excluded",
       "catalog_category": null,
-      "repository_relevance_zh": "Robot quality-diversity optimization without language-model or VLM use.",
+      "repository_relevance_zh": "属于机器人质量多样性优化，未使用语言模型或 VLM。",
       "source_url": "https://openreview.net/forum?id=rtIp1pxlSG"
     },
     {
@@ -2439,7 +2439,7 @@
       ],
       "decision": "excluded",
       "catalog_category": null,
-      "repository_relevance_zh": "Symbolic regression/KAN architecture search, not language-model optimization.",
+      "repository_relevance_zh": "属于符号回归/KAN 架构搜索，并非语言模型优化。",
       "source_url": "https://openreview.net/forum?id=pYpybkF5Yi"
     },
     {
@@ -2450,7 +2450,7 @@
       ],
       "decision": "excluded",
       "catalog_category": null,
-      "repository_relevance_zh": "Only linear classification and ridge regression are stated; no language-model application.",
+      "repository_relevance_zh": "摘要仅涉及线性分类和岭回归，没有语言模型应用。",
       "source_url": "https://openreview.net/forum?id=per4W4wDLF"
     },
     {
@@ -2461,7 +2461,7 @@
       ],
       "decision": "excluded",
       "catalog_category": null,
-      "repository_relevance_zh": "LLMs are used, but there is no qualifying gradient-free optimization mechanism.",
+      "repository_relevance_zh": "虽然使用 LLM，但不存在符合范围的梯度无关优化机制。",
       "source_url": "https://openreview.net/forum?id=qixS3l1Wsf"
     },
     {
@@ -2472,7 +2472,7 @@
       ],
       "decision": "excluded",
       "catalog_category": null,
-      "repository_relevance_zh": "Remote-sensing vision/SNN work without language models.",
+      "repository_relevance_zh": "属于遥感视觉/SNN 工作，不涉及语言模型。",
       "source_url": "https://openreview.net/forum?id=JqlxDi0k8a"
     },
     {
@@ -2484,7 +2484,7 @@
       ],
       "decision": "excluded",
       "catalog_category": null,
-      "repository_relevance_zh": "NAS-Bench/CIFAR/ImageNet architecture search with no language-model application.",
+      "repository_relevance_zh": "属于 NAS-Bench/CIFAR/ImageNet 架构搜索，未涉及语言模型应用。",
       "source_url": "https://openreview.net/forum?id=ORAHHcnXVe"
     },
     {
@@ -2495,7 +2495,7 @@
       ],
       "decision": "excluded",
       "catalog_category": null,
-      "repository_relevance_zh": "Generic/CIFAR federated learning with no LLM or VLM optimization.",
+      "repository_relevance_zh": "属于通用/CIFAR 联邦学习，未涉及 LLM 或 VLM 优化。",
       "source_url": "https://openreview.net/forum?id=zl4U97GZ9L"
     },
     {
@@ -2506,7 +2506,7 @@
       ],
       "decision": "excluded",
       "catalog_category": null,
-      "repository_relevance_zh": "Scientific dynamical systems and spiking digits only; no language-model application.",
+      "repository_relevance_zh": "仅涉及科学动力系统与脉冲数字实验，没有语言模型应用。",
       "source_url": "https://openreview.net/forum?id=C69ql69qP4"
     },
     {
@@ -2517,7 +2517,7 @@
       ],
       "decision": "excluded",
       "catalog_category": null,
-      "repository_relevance_zh": "Robot imitation learning without a language model or qualifying VLM optimization.",
+      "repository_relevance_zh": "属于机器人模仿学习，没有语言模型或符合范围的 VLM 优化。",
       "source_url": "https://openreview.net/forum?id=R8obaNz0uu"
     },
     {
@@ -2528,7 +2528,7 @@
       ],
       "decision": "excluded",
       "catalog_category": null,
-      "repository_relevance_zh": "Scientific PDE learning without language-model or VLM use.",
+      "repository_relevance_zh": "属于科学 PDE 学习，未使用语言模型或 VLM。",
       "source_url": "https://openreview.net/forum?id=9TVnxhsWUC"
     },
     {
@@ -2539,7 +2539,7 @@
       ],
       "decision": "excluded",
       "catalog_category": null,
-      "repository_relevance_zh": "General neural-network training theory with no LLM/VLM application stated.",
+      "repository_relevance_zh": "属于通用神经网络训练理论，摘要未说明 LLM/VLM 应用。",
       "source_url": "https://openreview.net/forum?id=L6QLnBFEml"
     },
     {
@@ -2550,7 +2550,7 @@
       ],
       "decision": "excluded",
       "catalog_category": null,
-      "repository_relevance_zh": "The abstract gives generic/adversarially trained model evaluation, with no language-model or VLM target.",
+      "repository_relevance_zh": "摘要只说明通用/对抗训练模型评估，没有语言模型或 VLM 目标。",
       "source_url": "https://openreview.net/forum?id=hRc0sauHSE"
     },
     {
@@ -2561,7 +2561,7 @@
       ],
       "decision": "excluded",
       "catalog_category": null,
-      "repository_relevance_zh": "Real-robot policy improvement without language-model optimization.",
+      "repository_relevance_zh": "属于真实机器人策略改进，不涉及语言模型优化。",
       "source_url": "https://openreview.net/forum?id=k7VrTpZ9RJ"
     },
     {
@@ -2572,7 +2572,7 @@
       ],
       "decision": "excluded",
       "catalog_category": null,
-      "repository_relevance_zh": "Visual flow/image-editing analysis without language-model connection.",
+      "repository_relevance_zh": "属于视觉 flow/图像编辑分析，未关联语言模型。",
       "source_url": "https://openreview.net/forum?id=JruDtQUl8A"
     },
     {
@@ -2583,7 +2583,7 @@
       ],
       "decision": "excluded",
       "catalog_category": null,
-      "repository_relevance_zh": "RF circuit inverse design, not language-model/VLM optimization.",
+      "repository_relevance_zh": "用于 RF 电路逆向设计，并非语言模型/VLM 优化。",
       "source_url": "https://openreview.net/forum?id=IJWhEOL1pT"
     },
     {
@@ -2595,7 +2595,7 @@
       ],
       "decision": "excluded",
       "catalog_category": null,
-      "repository_relevance_zh": "Generic diffusion sampling theory with no text/LLM application in the abstract.",
+      "repository_relevance_zh": "属于通用扩散采样理论，摘要未涉及文本/LLM 应用。",
       "source_url": "https://openreview.net/forum?id=JOo32CtWHH"
     },
     {
@@ -2606,7 +2606,7 @@
       ],
       "decision": "excluded",
       "catalog_category": null,
-      "repository_relevance_zh": "Generic zeroth-order theory with no language-model experiment or analysis.",
+      "repository_relevance_zh": "属于通用零阶理论，没有语言模型实验或分析。",
       "source_url": "https://openreview.net/forum?id=7Yl2JKKec1"
     },
     {
@@ -2617,7 +2617,7 @@
       ],
       "decision": "excluded",
       "catalog_category": null,
-      "repository_relevance_zh": "Medical imaging/connectome completion without language-model relevance.",
+      "repository_relevance_zh": "属于医学影像/连接组补全，与语言模型无关。",
       "source_url": "https://openreview.net/forum?id=zndZYf5lWa"
     },
     {
@@ -2628,7 +2628,7 @@
       ],
       "decision": "excluded",
       "catalog_category": null,
-      "repository_relevance_zh": "Scientific derivative-supervision study without language-model application.",
+      "repository_relevance_zh": "属于科学导数监督研究，未涉及语言模型应用。",
       "source_url": "https://openreview.net/forum?id=ayiQSugiuW"
     },
     {
@@ -2640,7 +2640,7 @@
       ],
       "decision": "excluded",
       "catalog_category": null,
-      "repository_relevance_zh": "Generic theory and an unspecified adversarial-ML task; no LLM/VLM application.",
+      "repository_relevance_zh": "属于通用理论和未具体说明的对抗机器学习任务，没有 LLM/VLM 应用。",
       "source_url": "https://openreview.net/forum?id=4tp5TPhaoL"
     }
   ],
@@ -2663,5 +2663,12 @@
     "15-00000.json": "015df7f29089522bcf858765fe38a380f8ddcc693a4fca582b9ce2c1b4646d8f",
     "16-00000.json": "1629c39fb9cd1fcea65b8e6a45ff215a11d7192b95721a04f94a41d8fd0c6bb4",
     "17-00000.json": "62955d883185d3472bf210a514998071bfe741627a997eb13f7d1df7f5b7e583"
-  }
+  },
+  "focused_method_audits": [
+    {
+      "openreview_id": "G8GNLtlyAV",
+      "report": "data/literature_reviews/2026-10-11-iclr2027-ofta-method-audit.md",
+      "conclusion": "related_forward_gradient; forward-gradient and backpropagation-free are supported by the official abstract; strict zeroth-order and gradient-free are not established; official PDF access returned HTTP 403"
+    }
+  ]
 }

@@ -11,12 +11,12 @@
 - OpenReview：[G8GNLtlyAV](https://openreview.net/forum?id=G8GNLtlyAV)
 - 查询命中：forward gradient
 - 核心贡献：提出 One-Pass Forward-Trace Adaptation（OFTA）：在 LLM 生成时沿随机参数方向记录响应对数概率的变化，反馈到达后直接把该记录转换为参数更新，从而省去反馈后的第二次模型运行。
-- 方法：在单次生成前向中计算随机参数方向的 forward-gradient 方向导数记录；反馈后以该记录形成无反向传播的更新。摘要称该估计与反馈后另跑一遍所得方向导数相同且无偏。
-- 优化对象：Qwen3 系列语言模型参数；具体参数子集、完整更新式和检查点保存策略仅凭摘要待核实。
-- 反向传播：OFTA 适配更新：据官方摘要不使用 backpropagation；底座模型原始训练不在摘要核验范围内。
+- 方法：在单次生成前向中记录随机参数方向的 forward-gradient 方向导数；反馈后以该导数轨迹形成无反向传播的更新。摘要称它与反馈后另跑一遍得到相同方向导数，并保留 forward-gradient 方法的无偏估计；这使用导数信息，摘要未证明是仅凭函数值查询的严格零阶方法。
+- 优化对象：Qwen3 系列语言模型参数与每次响应的方向导数记录；具体参数子集、完整更新式和检查点保存策略仅凭摘要待核实。
+- 反向传播：官方摘要明确 OFTA 适配更新不使用 backpropagation 或保留激活；“无需反向传播”不等于“无需任何梯度/导数”。官方 PDF 的合法入口本次均返回 HTTP 403，forward-mode AD/JVP 的具体实现待核实；底座模型原始训练不在摘要核验范围内。
 - 持久状态：模型参数会随连续反馈被更新，因而存在跨交互持久模型状态；摘要未说明更新参数范围及存储粒度。
-- 仓库关联：直接面向部署中 LLM 的随机方向前向梯度适配，是仓库主线的 forward-only/ZO 参数更新方法。
-- 待核实：作者身份、跨平台首次公开日期、代码（如摘要未列）、完整实现细节与评审结果待核实；实验结果仅按作者摘要记录。
+- 仓库关联：直接面向部署中 LLM 的 forward-gradient 随机方向导数适配；归入 `related_forward_gradient`，不作为严格 ZO 主分类，也没有证据将其写成一阶/零阶混合方法。
+- 待核实：作者身份、跨平台首次公开日期、代码、forward-mode AD/JVP 具体实现、更新参数范围、检查点持久化与评审结果待核实；实验结果仅按作者摘要记录。
 
 ### Shrinkage in Zeroth-Order Optimization: Estimation Risk and Expected Descent
 

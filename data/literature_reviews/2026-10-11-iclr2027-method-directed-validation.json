@@ -66,14 +66,15 @@
     "zo_pretraining": 3,
     "zo_baselines": 14,
     "related_closed_form": 28,
-    "zo_directions": 33,
+    "zo_directions": 32,
     "zo_systems": 24,
     "zo_alignment": 1,
     "zo_multi_turn": 1,
     "zo_understanding": 10,
     "related_prompt_agent": 194,
     "related_inference": 11,
-    "related_unverified": 1
+    "related_unverified": 1,
+    "related_forward_gradient": 1
   },
   "passed": true,
   "all_new_records_have_repository_relevance": true,
@@ -82,7 +83,12 @@
     "generator": "uv run scripts/generate_catalog.py --check: passed (423 papers)",
     "bibtex": "bibtexparser 2.1.0 parsed 424 entries; 424 unique keys",
     "diff_whitespace": "git diff --check: passed",
-    "decision_alignment": "181 unique new candidates; 7 included, 174 excluded, 0 unresolved"
+    "decision_alignment": "181 unique new candidates; 7 included, 174 excluded, 0 unresolved",
+    "ofta_method_boundary": "passed: related_forward_gradient; official abstract supports directional derivative/forward-gradient/backpropagation-free, not strict function-value-only ZO; PDF HTTP 403 recorded",
+    "new_bibliography_cycle_note": "passed: all 7 new BibTeX records state OpenReview public 2026-10-03, cross-platform first-public date unverified, and cycle backfill outside the weekly window",
+    "batch6_chinese_fields": "passed: 30/30 records translated; paper titles, method names, standard terms, and original English abstracts retained where appropriate",
+    "official_title_and_link_check": "passed: all 181 records match cached official note titles and forum IDs",
+    "chinese_field_check": "passed: no complete English explanatory sentence remains in the selected Chinese fields for the 181 records"
   },
   "baseline_commit": "e57b26d0c675d88a1b64ad2d60d989ff5d675574",
   "catalog_delta": {
@@ -99,5 +105,22 @@
     "removed": 0,
     "modified_existing": 803
   },
-  "date_scope_note_zh": "新增181条定向候选中179条官方note带2026-10-03的odate，2条没有odate；7条新增目录论文均为2026-10-03平台公开的周期补收录。odate不等于跨平台首次公开日期。"
+  "date_scope_note_zh": "新增181条定向候选中179条官方note带2026-10-03的odate，2条没有odate；7条新增目录论文均为2026-10-03平台公开的周期补收录。odate不等于跨平台首次公开日期。",
+  "catalog_total": 423,
+  "report_total": 989,
+  "method_query_union": 387,
+  "new_decisions": 181,
+  "official_title_mismatches": [],
+  "official_link_mismatches": [],
+  "query_source_missing": [],
+  "catalog_report_category_mismatches": [],
+  "decision_evidence_category_mismatches": [],
+  "full_english_chinese_fields": [],
+  "ofta_catalog_category": "related_forward_gradient",
+  "ofta_report_category": "related_forward_gradient",
+  "ofta_old_zo_phrase_present": false,
+  "ofta_boundary_explicit": true,
+  "new_bib_cycle_notes_complete": true,
+  "new_accepted_badges": 0,
+  "all_181_titles_and_links_match_official_cache": true
 }

@@ -32,6 +32,7 @@
 - 实际检索开始：`2026-10-11T19:02:01.928575+08:00`
 - 实际检索结束：`2026-10-11T19:02:38.896542+08:00`
 - 机器可读查询 URL、逐页时间、响应哈希和 181 条决定：[`2026-10-11-iclr2027-method-directed-search.json`](2026-10-11-iclr2027-method-directed-search.json)
+- OFTA 方法边界专项审计：[`2026-10-11-iclr2027-ofta-method-audit.md`](2026-10-11-iclr2027-ofta-method-audit.md)
 - 官方原始响应缓存：`/tmp/iclr2027-catalog-20261011-attempt10/method-exact-all/`
 
 ## 新收录
@@ -41,7 +42,7 @@
 | [mDDEcTyT5B](https://openreview.net/forum?id=mDDEcTyT5B) | GS-MoE | `related_closed_form` | training-free MoE 压缩与 gradient-free 层重要性评分；不是 ZO 梯度估计。 |
 | [a04cCyok2x](https://openreview.net/forum?id=a04cCyok2x) | SURGE | `related_closed_form` | 谱分解融合既有 RL checkpoint；融合阶段不继续训练，原 RL 训练方式待核实。 |
 | [iVQu1sp529](https://openreview.net/forum?id=iVQu1sp529) | HO-FL | `related_hybrid` | 模型底段用 ZO，顶段明确用 FO/backpropagation。 |
-| [G8GNLtlyAV](https://openreview.net/forum?id=G8GNLtlyAV) | OFTA | `zo_directions` | 在一次 LLM 生成前向中记录随机参数方向导数，反馈后更新参数。 |
+| [G8GNLtlyAV](https://openreview.net/forum?id=G8GNLtlyAV) | OFTA | `related_forward_gradient` | 在一次 LLM 生成前向中记录随机参数方向导数，反馈后更新参数；摘要未证明函数值-only的严格 ZO。 |
 | [CiCNIXROuS](https://openreview.net/forum?id=CiCNIXROuS) | Shrinkage in Zeroth-Order Optimization | `zo_understanding` | 分析 shrinkage 的估计风险与期望下降，并在 OPT-125M 邻域审计。 |
 | [lXiUD5V7wG](https://openreview.net/forum?id=lXiUD5V7wG) | Neural Thickets | `related_closed_form` | 随机权重扰动专家的有限差分分解与谱选择；候选专家训练方式待核实。 |
 | [XhdOPTxLyT](https://openreview.net/forum?id=XhdOPTxLyT) | ZO-COSMO | `zo_systems` | 两查询 ZO 与 masked consensus，用于 Qwen2-7B QNLI LoRA worker。 |

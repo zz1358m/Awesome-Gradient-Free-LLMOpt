@@ -59,6 +59,7 @@ Choose exactly one primary section:
 - `related_closed_form` — closed-form, local, predictive-coding, or statistics-based adaptation that avoids a conventional end-to-end backward update; separately record whether it installs persistent adapters, classifiers, class statistics, memory states, or calibration profiles
 - `related_prompt_agent` — gradient-free search over prompts, agent skills/workflows/harnesses, memory, scripts, rewards, model composition, or other external artifacts; separately record model-weight updates, external-artifact persistence, and unknown component training
 - `related_unverified` — boundary work with a concrete LLM/VLM optimization or self-improvement connection whose official abstract does not establish whether an independent gradient-free mechanism, first-order training path, or persistent update exists; state the unresolved mechanism explicitly and do not present it as verified ES/ZO or hybrid optimization
+- `related_forward_gradient` — forward-gradient, directional-derivative, forward-mode automatic-differentiation, or other backpropagation-free adaptation that still computes derivative information; do not call it strict zeroth-order optimization unless the primary source establishes a function-value-only estimator
 
 Use the exact category keys from `data/papers.json`; the labels above describe where each key appears in the README.
 

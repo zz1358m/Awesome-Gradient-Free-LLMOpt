@@ -162,7 +162,6 @@ ES 和双点 ZO 都可以看作平滑目标函数的估计方法，但现有大�
 | 2025 | **KerZOO: Kernel Function Informed Zeroth-Order Optimization for Accurate and Accelerated LLM Fine-Tuning** | 使用核函数加权扰动修正估计器。 | [论文](https://arxiv.org/abs/2505.18886) · 未找到代码 · 2025 |
 | 2025 | **Harmony in Divergence: Towards Fast, Accurate, and Memory-efficient Zeroth-order LLM Fine-tuning** | DiZO 在分析一阶与零阶优化的逐层差异后，对 ZO 更新进行逐层投影和重缩放。 | [论文](https://proceedings.neurips.cc/paper_files/paper/2025/hash/ffd4f5a2ea6b93e9bf5af9264d568cf2-Abstract-Conference.html) · [代码](https://github.com/Skilteee/DiZO) · ![NeurIPS 2025](https://img.shields.io/badge/NeurIPS-2025-orange) |
 | 2024 | **Variance-reduced Zeroth-Order Methods for Fine-Tuning Language Models** | MeZO-SVRG 在监督 ZO 微调中加入基于锚点的控制变量。 | [论文](https://proceedings.mlr.press/v235/gautam24a.html) · [代码](https://github.com/amazon-science/mezo_svrg) · ![ICML 2024](https://img.shields.io/badge/ICML-2024-orange) |
-| 2026 | **Learning While Generating in a Single Forward Pass** | 提出 One-Pass Forward-Trace Adaptation（OFTA）：在 LLM 生成时沿随机参数方向记录响应对数概率的变化，反馈到达后直接把该记录转换为参数更新，从而省去反馈后的第二次模型运行。 | [论文](https://openreview.net/forum?id=G8GNLtlyAV) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录 |
 
 #### 内存系统、预条件与量化
 
@@ -561,6 +560,12 @@ ES 和双点 ZO 都可以看作平滑目标函数的估计方法，但现有大�
 | 日期 | 论文 | 核心贡献 | 资源 |
 |---|---|---|---|
 | 2026 | **Skill Self-Play: Pushing the Frontier of LLM Capability with Co-Evolving Skills** | 机制待核实边界：摘要仅说明 RL 环路共同演化 proposer、solver、skill controller 与 skill library，未证明独立梯度无关搜索或各组件训练路径。 | [论文](https://openreview.net/forum?id=07pvXM8POP) · 未找到代码 · ![ICLR 2027 初筛拒稿](https://img.shields.io/badge/ICLR_2027-Desk_Rejected-red) · OpenReview 记录创建于 2026 年；首次公开日期待核实 |
+
+### 前向梯度与无反向传播适配
+
+| 日期 | 论文 | 核心贡献 | 资源 |
+|---|---|---|---|
+| 2026 | **Learning While Generating in a Single Forward Pass** | OFTA 在同一次 Qwen3 生成前向中记录响应对数概率沿随机参数方向的方向导数，反馈到达后将导数轨迹转为参数更新，无需反向传播或第二次模型运行；官方摘要未证明它是仅依赖函数值查询的严格零阶估计器。 | [论文](https://openreview.net/forum?id=G8GNLtlyAV) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录 |
 <!-- GENERATED CATALOG:END -->
 
 ## 收录范围

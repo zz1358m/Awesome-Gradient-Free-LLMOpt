@@ -162,7 +162,6 @@ Unless an entry says otherwise, these methods optimize a supervised CE/NLL-style
 | 2025 | **KerZOO: Kernel Function Informed Zeroth-Order Optimization for Accurate and Accelerated LLM Fine-Tuning** | Corrects the estimator using kernel-weighted perturbations. | [paper](https://arxiv.org/abs/2505.18886) · code not located · 2025 |
 | 2025 | **Harmony in Divergence: Towards Fast, Accurate, and Memory-efficient Zeroth-order LLM Fine-tuning** | DiZO uses layer-wise projection and rescaling after analyzing FO/ZO layer divergence. | [paper](https://proceedings.neurips.cc/paper_files/paper/2025/hash/ffd4f5a2ea6b93e9bf5af9264d568cf2-Abstract-Conference.html) · [code](https://github.com/Skilteee/DiZO) · ![NeurIPS 2025](https://img.shields.io/badge/NeurIPS-2025-orange) |
 | 2024 | **Variance-reduced Zeroth-Order Methods for Fine-Tuning Language Models** | MeZO-SVRG adds an anchor-based control variate to supervised ZO fine-tuning. | [paper](https://proceedings.mlr.press/v235/gautam24a.html) · [code](https://github.com/amazon-science/mezo_svrg) · ![ICML 2024](https://img.shields.io/badge/ICML-2024-orange) |
-| 2026 | **Learning While Generating in a Single Forward Pass** | OFTA records the response log-probability directional derivative along a random parameter direction during the same Qwen3 generation pass, then converts the trace into a feedback-conditioned parameter update without backpropagation or a second model run. | [paper](https://openreview.net/forum?id=G8GNLtlyAV) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window |
 
 #### Memory systems, preconditioning, and quantization
 
@@ -561,6 +560,12 @@ These companion entries may retain backpropagation, use closed-form/local/statis
 | Date | Paper | Contribution | Resources |
 |---|---|---|---|
 | 2026 | **Skill Self-Play: Pushing the Frontier of LLM Capability with Co-Evolving Skills** | Mechanism-unverified boundary: the abstract describes an RL loop co-evolving a proposer, solver, skill controller, and skill library, but does not establish separate gradient-free search or the components' training paths. | [paper](https://openreview.net/forum?id=07pvXM8POP) · code not located · ![ICLR 2027 Desk Rejected](https://img.shields.io/badge/ICLR_2027-Desk_Rejected-red) · OpenReview record created in 2026; first public date unverified |
+
+### Forward gradients and backpropagation-free adaptation
+
+| Date | Paper | Contribution | Resources |
+|---|---|---|---|
+| 2026 | **Learning While Generating in a Single Forward Pass** | OFTA records a response log-probability directional derivative along a random parameter direction during the same Qwen3 generation pass, then turns that derivative trace into a feedback-conditioned parameter update without reverse-mode backpropagation or a second model run; the abstract does not establish a function-value-only zeroth-order estimator. | [paper](https://openreview.net/forum?id=G8GNLtlyAV) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window |
 <!-- GENERATED CATALOG:END -->
 
 ## Scope

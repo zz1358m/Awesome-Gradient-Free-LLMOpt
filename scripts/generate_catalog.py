@@ -114,6 +114,10 @@ CATEGORIES = [
         "key": "related_unverified", "family": "RELATED", "level": 3,
         "en": "Mechanism-unverified boundary work", "zh": "机制待核实的边界研究",
     },
+    {
+        "key": "related_forward_gradient", "family": "RELATED", "level": 3,
+        "en": "Forward gradients and backpropagation-free adaptation", "zh": "前向梯度与无反向传播适配",
+    },
 ]
 
 CATEGORY_BY_KEY = {category["key"]: category for category in CATEGORIES}

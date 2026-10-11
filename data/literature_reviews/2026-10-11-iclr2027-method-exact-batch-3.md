@@ -381,7 +381,7 @@
 - 核心贡献：提出 Weil-R，把有限维 Weil algebra 经 manifold retraction 提升，在单次 forward pass 提取精确 Riemannian Hessian。
 - 方法：论文明确不使用 finite-difference step size；命中来自对照描述。
 - 更新对象：流形约束优化变量；非语言模型。
-- 反传分模块：使用 automatic differentiation/Hessian-vector products。
+- 反传分模块：使用自动微分与 Hessian-vector product（HVP）。
 - 持久状态：优化变量依下游 Newton/trust-region 持续更新。
 - 与仓库关系：不相关：一般流形二阶优化，无语言模型应用，且不是梯度无关方法。
 - 待核实：JAX 自动微分实现细节待全文核实。
