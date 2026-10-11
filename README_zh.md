@@ -8,7 +8,7 @@
 
 **最近一次文献核查：** 2026-10-09
 
-[最新核查记录与收录决定](data/literature_reviews/2026-10-09.json)。
+[最新 ICLR 2027 核查（覆盖范围有限）](data/literature_reviews/2026-10-11-iclr2027.json) · [2026-10-09 核查记录](data/literature_reviews/2026-10-09.json)。
 
 **发表信息约定：** ![ICML 2026](https://img.shields.io/badge/ICML-2026-orange) 表示已经确认的会议或期刊发表信息。尚未核实正式发表去向的预印本不添加徽标。
 
@@ -105,7 +105,7 @@ ES 和双点 ZO 都可以看作平滑目标函数的估计方法，但现有大�
 
 | 日期 | 论文 | 核心贡献 | 资源 |
 |---|---|---|---|
-| 2026-09 | **AIM-ZO: Activation-Informed Subspace Maintenance for Zeroth-Order LLM Fine-Tuning** | 利用前向激活持续维护参数子空间，并从中采样较窄的活跃方向集合进行纯前向零阶更新；在相同前向评估预算下评测五种大语言模型和十一个下游任务。 | [论文](https://arxiv.org/abs/2609.35257) · [代码](https://github.com/EkkoXy/AIM-ZO) · 2026-09 |
+| 2026-09 | **AIM-ZO: Activation-Informed Subspace Maintenance for Zeroth-Order LLM Fine-Tuning** | 利用前向激活持续维护参数子空间，并从中采样较窄的活跃方向集合进行纯前向零阶更新；在相同前向评估预算下评测五种大语言模型和十一个下游任务。 | [论文](https://arxiv.org/abs/2609.35257) · [代码](https://github.com/EkkoXy/AIM-ZO) · 2026-09 · 已投稿 ICLR 2027（作者声明；录用待定） |
 | 2026-09 | **MpSub: A Momentum p-Dimensional Subspace Trust-Region Method for Derivative-Free Fine-Tuning of Large Language Models** | 在低维子空间中结合动量与随机方向，以中心有限差分估计梯度并自适应调整信赖域半径；实验使用 OPT-125M/350M 与 CommitmentBank。 | [论文](https://arxiv.org/abs/2609.07666) · 未找到代码 · 2026-09 |
 | 2026 | **LOZO+: Provably Efficient Zeroth-Order Fine-Tuning via Greedy Low-Rank Subspace Selection** | 利用损失反馈与自适应阈值贪心保留有效低秩子空间方向，实现仅前向的 LLM 微调。 | [论文](https://proceedings.mlr.press/v306/fang26k.html) · 未找到代码 · ![ICML 2026](https://img.shields.io/badge/ICML-2026-orange) |
 | 2025-11 | **MaZO: Masked Zeroth-Order Optimization for Multi-Task Fine-Tuning of Large Language Models** | 利用参数重要性与多任务更新掩码缩小零阶微调的搜索空间并减少任务冲突。 | [论文](https://aclanthology.org/2025.emnlp-main.935/) · 未找到代码 · ![EMNLP 2025](https://img.shields.io/badge/EMNLP-2025-orange) |
@@ -117,12 +117,13 @@ ES 和双点 ZO 都可以看作平滑目标函数的估计方法，但现有大�
 | 2025 | **TeZO: Empowering the Low-Rankness on the Temporal Dimension in the Zeroth-Order Optimization for Fine-tuning LLMs** | 利用连续多个 ZO 估计之间共享的时间低秩结构。 | [论文](https://arxiv.org/abs/2501.19057) · 未找到代码 · 2025 |
 | 2026 | **RoZO: Geometry-Aware Zeroth-Order Fine-Tuning on Low-Rank Adapters for Black-Box Large Language Models** | 在 LoRA 流形的切空间中使用扰动、回缩和向量传输。 | [论文](https://aclanthology.org/2026.eacl-long.80/) · 未找到代码 · ![EACL 2026](https://img.shields.io/badge/EACL-2026-orange) |
 | 2026-07 | **ZO-Act: Efficient Zeroth-Order Fine-Tuning via One-Shot Activation-Informed Low-Rank Subspaces** | 一次性构建由激活信息引导的子空间，随后在该空间中执行 ZO 监督微调；使用 Llama-3-8B 和 OPT-13B 在语言理解、问答和常识推理任务上评测。 | [论文](https://arxiv.org/abs/2607.01125) · 未找到代码 · 2026-07 |
-| 2026-08 | **SubZero+: Efficient Zeroth-Order LLM Fine-Tuning via Large Learning Rates** | 结合多查询估计、修正后的 Haar 子空间和子空间 Adam。 | [论文](https://arxiv.org/abs/2608.15665) · 未找到代码 · 2026-08 |
+| 2026-08 | **SubZero+: Memory-Efficient Adaptive Zeroth-Order LLM Fine-Tuning in Random Subspaces** | 在周期刷新随机子空间中进行多查询前向差分，结合低维 Adam 和周期性动量重启，无需反向传播即可进行全权重或 LoRA 微调；在 SuperGLUE 上评测 1.3B 至 32B 模型。 | [论文](https://arxiv.org/abs/2608.15665) · 未找到代码 · 2026-08 · 第二版更新于 2026-09-28；ICLR 2027 投稿状态待核实 |
 
 #### 更优方向与更低方差
 
 | 日期 | 论文 | 核心贡献 | 资源 |
 |---|---|---|---|
+| 2026-08 | **ZoAQ: Adaptive Zeroth-Order Querying via Query-Reuse Coupling** | 复用带种子的历史双边函数评估，并通过动量一致性门控自适应分配查询预算，无需额外验证查询；纯前向 OPT 微调更新 LoRA 参数并减少评估次数，历史反馈过时偏差仍需关注。 | [论文](https://arxiv.org/abs/2609.22115) · [作者提供的匿名实现](https://anonymous.4open.science/r/ZoAQ-312A) · 2026-08（按 arXiv 提交历史；ICLR 2027 投稿状态待核实） |
 | 2026-07 | **Universally Empowering Zeroth-Order Optimization via Adaptive Layer-wise Sampling** | AdaLeZO 通过非平稳多臂老虎机选层与有放回逆概率加权采样改善零阶估计及运行效率；实验覆盖 6.7B 至 30B 的 LLaMA/OPT 模型。 | [论文](https://aclanthology.org/2026.findings-acl.1999/) · 未找到代码 · ![ACL Findings 2026](https://img.shields.io/badge/ACL_Findings-2026-orange) |
 | 2025-11 | **Private Zeroth-Order Optimization with Public Data** | PAZO 使用公开数据的一阶梯度引导私有零阶估计以实现差分隐私；文本实验包含 RoBERTa-base 在 MNLI 上的提示参数训练，与预条件 PaZO 为不同工作。 | [论文](https://proceedings.neurips.cc/paper_files/paper/2025/hash/54de3c17e1a2457658a22ad801c721db-Abstract-Conference.html) · [代码](https://github.com/xuchengong/PAZO) · ![NeurIPS 2025](https://img.shields.io/badge/NeurIPS-2025-orange) |
 | 2025-11 | **MUZO: Leveraging Multiple Queries and Momentum for Zeroth-Order Fine-Tuning of Large Language Models** | 对多次有限差分估计取平均并结合 Adam，实现更低方差的仅前向微调。 | [论文](https://aclanthology.org/2025.emnlp-main.432/) · 未找到代码 · ![EMNLP 2025](https://img.shields.io/badge/EMNLP-2025-orange) |

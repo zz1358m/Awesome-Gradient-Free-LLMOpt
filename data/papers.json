@@ -185,8 +185,8 @@
     "date": "2026-09",
     "description_en": "Maintains an evolving activation-informed parameter subspace and samples a narrower active set of directions for forward-only ZO updates; evaluated across five LLMs and eleven downstream tasks under matched forward-evaluation budgets.",
     "description_zh": "利用前向激活持续维护参数子空间，并从中采样较窄的活跃方向集合进行纯前向零阶更新；在相同前向评估预算下评测五种大语言模型和十一个下游任务。",
-    "resources_en": "[paper](https://arxiv.org/abs/2609.35257) · [code](https://github.com/EkkoXy/AIM-ZO) · 2026-09",
-    "resources_zh": "[论文](https://arxiv.org/abs/2609.35257) · [代码](https://github.com/EkkoXy/AIM-ZO) · 2026-09"
+    "resources_en": "[paper](https://arxiv.org/abs/2609.35257) · [code](https://github.com/EkkoXy/AIM-ZO) · 2026-09 · ICLR 2027 submitted (author-reported; decision pending)",
+    "resources_zh": "[论文](https://arxiv.org/abs/2609.35257) · [代码](https://github.com/EkkoXy/AIM-ZO) · 2026-09 · 已投稿 ICLR 2027（作者声明；录用待定）"
   },
   {
     "title": "MpSub: A Momentum p-Dimensional Subspace Trust-Region Method for Derivative-Free Fine-Tuning of Large Language Models",
@@ -288,13 +288,22 @@
     "resources_zh": "[论文](https://arxiv.org/abs/2607.01125) · 未找到代码 · 2026-07"
   },
   {
-    "title": "SubZero+: Efficient Zeroth-Order LLM Fine-Tuning via Large Learning Rates",
+    "title": "SubZero+: Memory-Efficient Adaptive Zeroth-Order LLM Fine-Tuning in Random Subspaces",
     "category": "zo_baselines",
     "date": "2026-08",
-    "description_en": "Combines multi-query estimation, corrected Haar subspaces, and subspace Adam.",
-    "description_zh": "结合多查询估计、修正后的 Haar 子空间和子空间 Adam。",
-    "resources_en": "[paper](https://arxiv.org/abs/2608.15665) · code not located · 2026-08",
-    "resources_zh": "[论文](https://arxiv.org/abs/2608.15665) · 未找到代码 · 2026-08"
+    "description_en": "Combines multi-query forward differences in periodically refreshed random subspaces with low-dimensional Adam and periodic moment restarts for backpropagation-free full-weight or LoRA fine-tuning; evaluated on SuperGLUE with 1.3B–32B models.",
+    "description_zh": "在周期刷新随机子空间中进行多查询前向差分，结合低维 Adam 和周期性动量重启，无需反向传播即可进行全权重或 LoRA 微调；在 SuperGLUE 上评测 1.3B 至 32B 模型。",
+    "resources_en": "[paper](https://arxiv.org/abs/2608.15665) · code not located · 2026-08 · v2 revised 2026-09-28; ICLR 2027 status unverified",
+    "resources_zh": "[论文](https://arxiv.org/abs/2608.15665) · 未找到代码 · 2026-08 · 第二版更新于 2026-09-28；ICLR 2027 投稿状态待核实"
+  },
+  {
+    "title": "ZoAQ: Adaptive Zeroth-Order Querying via Query-Reuse Coupling",
+    "category": "zo_directions",
+    "date": "2026-08",
+    "description_en": "Reuses seeded historical two-sided function evaluations and a momentum-consistency gate to adapt query budgets without separate validation calls; forward-only OPT fine-tuning reduces evaluations while updating LoRA parameters, with stale-response bias as a limitation.",
+    "description_zh": "复用带种子的历史双边函数评估，并通过动量一致性门控自适应分配查询预算，无需额外验证查询；纯前向 OPT 微调更新 LoRA 参数并减少评估次数，历史反馈过时偏差仍需关注。",
+    "resources_en": "[paper](https://arxiv.org/abs/2609.22115) · [author-linked anonymous implementation](https://anonymous.4open.science/r/ZoAQ-312A) · 2026-08 (arXiv history; ICLR 2027 status unverified)",
+    "resources_zh": "[论文](https://arxiv.org/abs/2609.22115) · [作者提供的匿名实现](https://anonymous.4open.science/r/ZoAQ-312A) · 2026-08（按 arXiv 提交历史；ICLR 2027 投稿状态待核实）"
   },
   {
     "title": "Universally Empowering Zeroth-Order Optimization via Adaptive Layer-wise Sampling",

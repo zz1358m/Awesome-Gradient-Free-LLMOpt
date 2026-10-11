@@ -1,0 +1,133 @@
+{
+  "review_date": "2026-10-11",
+  "conference": "ICLR 2027",
+  "cycle_note_zh": "2026 年秋季开放的投稿轮次；投稿和作者声明均不代表录用。",
+  "coverage": "partial",
+  "limitations_zh": [
+    "OpenReview API、论文页面及 PDF 要求浏览器验证；电脑操作连接多次超时，未读取全量投稿。",
+    "本次依靠可读取的 arXiv 原文与作者页面核实；不得视为 ICLR 2027 全量筛查完成。",
+    "搜索引擎或第三方索引只用于发现线索，无法独立确认的投稿不添加录用徽标。"
+  ],
+  "keywords": [
+    "zeroth-order",
+    "zero-order",
+    "gradient-free",
+    "derivative-free",
+    "forward-only",
+    "backpropagation-free",
+    "MeZO",
+    "SPSA",
+    "evolution strategies",
+    "evolutionary optimization",
+    "neuroevolution",
+    "CMA-ES",
+    "parameter perturbation",
+    "weight perturbation",
+    "random subspace",
+    "LLM",
+    "language model",
+    "fine-tuning",
+    "pretraining",
+    "AIM-ZO",
+    "DART-ES",
+    "Agentic ESOpt",
+    "SubZero",
+    "LOZO",
+    "ZO-Act"
+  ],
+  "papers": [
+    {
+      "title": "AIM-ZO: Activation-Informed Subspace Maintenance for Zeroth-Order LLM Fine-Tuning",
+      "authors": [
+        "Yue Xie",
+        "Zhi Zheng",
+        "Yunpeng Ba",
+        "Xuyang Wu",
+        "Xialiang Tong",
+        "Zhichao Lu",
+        "Tao Zhong",
+        "Zhenkun Wang"
+      ],
+      "first_posted": "2026-09-28",
+      "primary_url": "https://arxiv.org/abs/2609.35257",
+      "category": "zo_baselines",
+      "action": "updated_submission_note",
+      "contribution_zh": "利用前向激活持续维护参数子空间，并从中采样较窄的活跃方向集合进行纯前向零阶更新；在相同前向评估预算下评测五种大语言模型和十一个下游任务。",
+      "method_zh": "激活引导参数子空间内的纯前向零阶更新",
+      "venue_status": "ICLR 2027 submitted, author-reported",
+      "concerns_zh": [
+        "原文声明已投稿；对应 OpenReview 页面尚未核实。",
+        "会议决定待定，未添加已录用徽标。"
+      ]
+    },
+    {
+      "title": "SubZero+: Memory-Efficient Adaptive Zeroth-Order LLM Fine-Tuning in Random Subspaces",
+      "previous_title": "SubZero+: Efficient Zeroth-Order LLM Fine-Tuning via Large Learning Rates",
+      "authors": [
+        "Ziming Yu",
+        "Shuyao Xiao",
+        "Xingyu Zhao",
+        "Sike Wang",
+        "Pan Zhou",
+        "Peiyu Zang",
+        "Xiangda Yan",
+        "Yongjie Yang",
+        "Jia Li"
+      ],
+      "first_posted": "2026-08-16",
+      "latest_revision": "2026-09-28",
+      "primary_url": "https://arxiv.org/abs/2608.15665",
+      "category": "zo_baselines",
+      "action": "updated_title_and_method",
+      "contribution_zh": "在周期刷新随机子空间中进行多查询前向差分，结合低维 Adam 和周期性动量重启，无需反向传播即可进行全权重或 LoRA 微调；在 SuperGLUE 上评测 1.3B 至 32B 模型。",
+      "method_zh": "多查询前向差分、随机参数子空间和低维 Adam；无需反向传播",
+      "venue_status": "unverified",
+      "concerns_zh": [
+        "以同一 arXiv 编号更新旧条目，保留首次发布日期。",
+        "ICLR 2027 投稿状态尚未确认。",
+        "本次未发现可核实的官方代码链接。"
+      ]
+    },
+    {
+      "title": "ZoAQ: Adaptive Zeroth-Order Querying via Query-Reuse Coupling",
+      "authors": [
+        "Yangyang Feng",
+        "Yao Shu"
+      ],
+      "first_posted": "2026-08-19",
+      "primary_url": "https://arxiv.org/abs/2609.22115",
+      "code_url": "https://anonymous.4open.science/r/ZoAQ-312A",
+      "category": "zo_directions",
+      "action": "included_backfill",
+      "contribution_zh": "复用带种子的历史双边函数评估，并通过动量一致性门控自适应分配查询预算，无需额外验证查询；纯前向 OPT 微调更新 LoRA 参数并减少评估次数，历史反馈过时偏差仍需关注。",
+      "method_zh": "双边零阶估计、历史查询复用和动量一致性门控；OPT 实验更新 LoRA 参数",
+      "venue_status": "unverified",
+      "concerns_zh": [
+        "ICLR 2027 索引中发现线索，投稿状态尚未从原始会议页面确认。",
+        "arXiv 编号属于九月，但提交历史显示八月十九日；按原始历史记日期并保留差异。",
+        "匿名代码链接来自论文脚注，代码未运行；历史响应过时可引入偏差。"
+      ]
+    },
+    {
+      "title": "Sample the Order, Not the Token: Test-Time Scaling for Masked Diffusion Language Models",
+      "primary_url": "https://openreview.net/forum?id=mISIJ9ktNq",
+      "discovery_url": "https://acceptodds.com/papers/iclr2027-50735",
+      "action": "primary_access_blocked",
+      "authors": null,
+      "first_posted": null,
+      "concerns_zh": [
+        "仅取得第三方摘要和指向原始页面的链接，原始论文尚未读到；真实性与方法仍需原始来源核实，未依据第三方摘要编写目录条目。"
+      ]
+    }
+  ],
+  "checked_existing_primary_urls": [
+    "https://arxiv.org/abs/2608.10867",
+    "https://arxiv.org/abs/2608.05541",
+    "https://arxiv.org/abs/2608.12679",
+    "https://arxiv.org/abs/2608.09292",
+    "https://arxiv.org/abs/2609.07666",
+    "https://arxiv.org/abs/2608.17310",
+    "https://arxiv.org/abs/2608.27351",
+    "https://arxiv.org/abs/2607.01125"
+  ]
+}
