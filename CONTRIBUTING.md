@@ -50,6 +50,7 @@ Choose exactly one primary section:
 - `zo_understanding` — ZO understanding/systems
 - `related_hybrid` — related hybrid first-/zeroth-order methods
 - `related_inference` — related inference-time calibration without parameter updates
+- `related_closed_form` — closed-form, local, predictive-coding, or statistics-based adaptation that avoids a conventional end-to-end backward update; separately record whether it installs persistent adapters, classifiers, class statistics, memory states, or calibration profiles
 - `related_prompt_agent` — gradient-free search over prompts, agent skills/workflows/harnesses, memory, scripts, rewards, model composition, or other external artifacts; separately record model-weight updates, external-artifact persistence, and unknown component training
 
 Use the exact category keys from `data/papers.json`; the labels above describe where each key appears in the README.

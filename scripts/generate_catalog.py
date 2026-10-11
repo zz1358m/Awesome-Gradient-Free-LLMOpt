@@ -103,6 +103,10 @@ CATEGORIES = [
         "en": "Inference-time calibration without parameter updates", "zh": "无参数更新的推理时校准",
     },
     {
+        "key": "related_closed_form", "family": "RELATED", "level": 3,
+        "en": "Closed-form, local, and statistical adaptation", "zh": "闭式、局部与统计适配",
+    },
+    {
         "key": "related_prompt_agent", "family": "RELATED", "level": 3,
         "en": "Gradient-free search over prompts, agents, and external artifacts", "zh": "提示词、智能体与外部工件的梯度无关搜索",
     },
@@ -235,8 +239,8 @@ def render_catalog(papers: list[dict[str, str]], language: str) -> str:
         )
     lines.extend([
         "", "## Related research" if language == "en" else "## 关联研究", "",
-        "These companion entries may retain backpropagation, operate at inference time, or optimize prompts, agents, and other external artifacts. Each entry records component-level backpropagation, persistent model weights, persistent external artifacts, and unresolved details only when supported."
-        if language == "en" else "关联条目可包含仍依赖反向传播、仅在推理时运行，或优化提示词、智能体及其他外部工件的方法。各条目仅依据原文记录逐组件反传、持久模型权重、持久外部工件和待核实事项。",
+        "These companion entries may retain backpropagation, use closed-form/local/statistical adaptation, operate at inference time, or optimize prompts, agents, and other external artifacts. Each entry records component-level backpropagation, persistent model weights, persistent external artifacts, and unresolved details only when supported."
+        if language == "en" else "关联条目可包含仍依赖反向传播、采用闭式/局部/统计适配、仅在推理时运行，或优化提示词、智能体及其他外部工件的方法。各条目仅依据原文记录逐组件反传、持久模型权重、持久外部工件和待核实事项。",
     ])
     for category in CATEGORIES:
         if category["family"] == "RELATED":

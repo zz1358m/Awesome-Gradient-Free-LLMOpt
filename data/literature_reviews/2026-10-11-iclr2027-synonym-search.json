@@ -1,0 +1,111 @@
+{
+  "retrieved_at": "2026-10-11T17:24:01.163756+08:00",
+  "source": "OpenReview API2 official notes search; reused parent cache without re-downloading successful pages",
+  "group": "ICLR.cc/2027/Conference",
+  "source_parameter": "forum",
+  "queries": [
+    {
+      "term": "backward-free",
+      "count": 0,
+      "returned": 0,
+      "url": "https://api2.openreview.net/notes/search?term=backward-free&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&count=true"
+    },
+    {
+      "term": "gradientless",
+      "count": 0,
+      "returned": 0,
+      "url": "https://api2.openreview.net/notes/search?term=gradientless&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&count=true"
+    },
+    {
+      "term": "forward-forward",
+      "count": 10,
+      "returned": 10,
+      "url": "https://api2.openreview.net/notes/search?term=forward-forward&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&count=true"
+    },
+    {
+      "term": "gradient-independent",
+      "count": 3,
+      "returned": 3,
+      "url": "https://api2.openreview.net/notes/search?term=gradient-independent&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&count=true"
+    },
+    {
+      "term": "without backpropagation",
+      "count": 10000,
+      "returned": 1000,
+      "url": "https://api2.openreview.net/notes/search?term=without+backpropagation&group=ICLR.cc%2F2027%2FConference&source=forum&limit=1000&count=true"
+    }
+  ],
+  "coverage_assessment": {
+    "complete_terms": [
+      "backward-free",
+      "gradientless",
+      "forward-forward",
+      "gradient-independent"
+    ],
+    "incomplete_terms": [
+      "without backpropagation"
+    ],
+    "incomplete_reason_zh": "without backpropagation 的 count 显示 10000（可能为计数/窗口上限），只返回并缓存 1000 条；未继续分页。",
+    "full_venue_claim": false
+  },
+  "candidate_note_ids": [
+    "03wjv3G8UP",
+    "KuIOR6EwIp",
+    "I0AW0dp7WL",
+    "2jfW67zbil",
+    "fKWM0tmEOE",
+    "C1HGhWNaYZ",
+    "yngr3bVtsX"
+  ],
+  "decisions": [
+    {
+      "openreview_id": "fKWM0tmEOE",
+      "title": "Functional Memory Compilation: Behavior-Level Migration of Aggregate LoRA Memory",
+      "decision": "included_or_updated",
+      "catalog_category": "related_closed_form",
+      "decision_note_zh": "收录于 related_closed_form：与语言模型持久适配参数直接相关，更新由前向行为约束和解析拟合完成；不硬称 ZO/ES。"
+    },
+    {
+      "openreview_id": "yngr3bVtsX",
+      "title": "Towards Unbiased Test-Time Adaptation for Vision–Language Models",
+      "decision": "included_or_updated",
+      "catalog_category": "related_closed_form",
+      "decision_note_zh": "收录于 related_closed_form：VLM 测试时统计适配无需反传，但更新的是累积类别状态/分类器而非已确认的模型权重。"
+    },
+    {
+      "openreview_id": "2jfW67zbil",
+      "title": "Block-Level Positional Reconstruction for Sparse Long-context Prefilling",
+      "decision": "included_or_updated",
+      "catalog_category": "related_closed_form",
+      "decision_note_zh": "收录于 related_closed_form：长上下文 LLM 前向统计校准产生可复用轮廓，明确不改模型参数。"
+    },
+    {
+      "openreview_id": "I0AW0dp7WL",
+      "title": "DeltaNet-PC: Test-Time Memory Without Backpropagation Through Time",
+      "decision": "included_or_updated",
+      "catalog_category": "related_closed_form",
+      "decision_note_zh": "边界收录于 related_closed_form：论文以 LLM attention 为动机并推导无 BPTT 的局部测试时记忆，但是否用于完整 LLM 及局部梯度形式待核实。"
+    },
+    {
+      "openreview_id": "C1HGhWNaYZ",
+      "title": "ReLaDrift: Recurrent Language Generation via Drifting for Test-Time Scaling",
+      "decision": "included_or_updated",
+      "catalog_category": "related_hybrid",
+      "decision_note_zh": "边界收录于 related_hybrid：语言生成训练避免跨轮 BPTT，但仍保留单轮损失训练；不是纯梯度无关方法。"
+    },
+    {
+      "openreview_id": "03wjv3G8UP",
+      "title": "Local-Window Contrastive Forward-Forward Learning with Masked Reconstruction",
+      "decision": "not_catalogued_after_individual_review",
+      "catalog_category": null,
+      "decision_note_zh": "未收录：研究对象是纯视觉 ViT，在 CIFAR-10、ImageNet-1K 和手姿态数据上训练；摘要没有 LLM/VLM 语言骨干或语言模型应用，且活动窗口明确仍做反向传播。"
+    },
+    {
+      "openreview_id": "KuIOR6EwIp",
+      "title": "TopX: Skeleton-Aware In-Context Text-to-Motion Diffusion Across Heterogeneous Topologies",
+      "decision": "not_catalogued_after_individual_review",
+      "catalog_category": null,
+      "decision_note_zh": "未收录：虽使用文本条件，但研究对象是动物骨架动作扩散而非 LLM/VLM 的梯度无关优化；关键词命中来自“梯度贡献不随单元数变化”，不是 gradient-independent optimizer。"
+    }
+  ]
+}
