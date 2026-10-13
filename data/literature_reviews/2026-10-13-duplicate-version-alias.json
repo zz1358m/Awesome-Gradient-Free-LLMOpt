@@ -1,0 +1,97 @@
+{
+  "reason_zh": "合并同一作品不同题名版本：arXiv v1旧题名为LLM Zeroth-Order Fine-Tuning is an Inference Workload，v3题名为Inference-Native Zeroth-Order Optimization for LLMs；原条目及书目保留于可恢复记录。",
+  "canonical_before": {
+    "title": "Inference-Native Zeroth-Order Optimization for LLMs",
+    "category": "zo_systems",
+    "date": "2026",
+    "description_en": "Reorganizes LLM zeroth-order optimization around inference-native execution and forward evaluations.",
+    "description_zh": "围绕推理原生执行与前向评估重组大语言模型零阶优化。",
+    "resources_en": "[paper](https://openreview.net/forum?id=EnBpzU8b3z) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
+    "resources_zh": "[论文](https://openreview.net/forum?id=EnBpzU8b3z) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
+  },
+  "alias_removed": {
+    "title": "LLM Zeroth-Order Fine-Tuning is an Inference Workload",
+    "category": "zo_understanding",
+    "date": "2026",
+    "description_en": "Shows that repeated ZO scoring can be reorganized around an inference-serving runtime.",
+    "description_zh": "说明重复的 ZO 评分过程可以围绕推理服务运行时重新组织。",
+    "resources_en": "[paper](https://arxiv.org/abs/2605.28760) · [code](https://github.com/playeriv65/zo-vllm) · 2026",
+    "resources_zh": "[论文](https://arxiv.org/abs/2605.28760) · [代码](https://github.com/playeriv65/zo-vllm) · 2026"
+  },
+  "canonical_after": {
+    "title": "Inference-Native Zeroth-Order Optimization for LLMs",
+    "category": "zo_systems",
+    "date": "2026-05",
+    "description_en": "Reorganizes zeroth-order adaptation as an inference-serving workload. Function-value updates persistently change low-rank parameter deltas/adapter states without backpropagation; base weights may remain frozen, with deltas retained or merged for deployment. First arXiv release 2026-05-27 UTC; the v3 title replaces the v1 alias. Performance across system configurations remains to be independently verified.",
+    "description_zh": "将零阶适配重组为推理服务工作负载，通过函数值持久更新低秩参数差量及适配状态，无需反向传播；语言骨干的基础权重可冻结，部署时保留或合并差量。arXiv v1于2026-05-27（UTC）首发，v3更改题名，旧题名条目已合并；不同系统配置的性能声明待独立验证。",
+    "resources_en": "[paper](https://openreview.net/forum?id=EnBpzU8b3z) · [arXiv/version history](https://arxiv.org/abs/2605.28760) · [code](https://github.com/playeriv65/zo-vllm) · ICLR 2027 submission, decision pending · first public 2026-05-27 UTC",
+    "resources_zh": "[论文](https://openreview.net/forum?id=EnBpzU8b3z) · [arXiv及版本历史](https://arxiv.org/abs/2605.28760) · [代码](https://github.com/playeriv65/zo-vllm) · ICLR 2027投稿，录用待核实 · 首次公开2026-05-27（UTC）"
+  },
+  "removed_bibliography": "@article{li2026zoinference,\n  title={LLM Zeroth-Order Fine-Tuning is an Inference Workload},\n  author={Li, Zelin and Ding, Caiwen},\n  journal={arXiv preprint arXiv:2605.28760}, year={2026},\n  url={https://arxiv.org/abs/2605.28760}\n}",
+  "canonical_bibliography_before": "@unpublished{iclr2027inferencenativezerothorderoptimizati,\n  title={Inference-Native Zeroth-Order Optimization for LLMs},\n  author={Anonymous},\n  note={ICLR 2027 Conference Submission; decision pending; OpenReview public 2026-10-03; cross-platform first public date unverified; cycle backfill outside 2026-10-04--2026-10-11 window}, year={2026},\n  url={https://openreview.net/forum?id=EnBpzU8b3z}\n}",
+  "source_evidence": {
+    "generated_unix": 1791818259,
+    "snapshot_count": 233,
+    "confirmed_same_work_groups": [
+      {
+        "group_id": "arxiv:2605.28760",
+        "snapshot_indices": [
+          92,
+          118
+        ],
+        "unique_work_count": 1,
+        "catalog_entry_count": 2,
+        "version_titles": {
+          "v1": "LLM Zeroth-Order Fine-Tuning is an Inference Workload",
+          "v3_and_openreview": "Inference-Native Zeroth-Order Optimization for LLMs"
+        },
+        "authors": [
+          "Zelin Li",
+          "Caiwen Ding"
+        ],
+        "evidence_urls": [
+          "https://arxiv.org/abs/2605.28760v1",
+          "https://arxiv.org/abs/2605.28760v3",
+          "https://openreview.net/forum?id=EnBpzU8b3z"
+        ]
+      }
+    ],
+    "automated_candidate_pairs": [
+      {
+        "indices": [
+          72,
+          73
+        ],
+        "titles": [
+          "AGZO: Activation-Guided Zeroth-Order Optimization for LLM Fine-Tuning",
+          "AGOZO: Activation-Guided Orthogonalized Zeroth-Order Optimization for LLM Fine-Tuning"
+        ],
+        "title_similarity": 0.8947,
+        "abstract_token_jaccard": 0.0,
+        "same_pdf_sha256": false,
+        "adjudication": "not_proven_same_work",
+        "reason": "Automated within-snapshot candidate only; no shared official identifier/version evidence was found."
+      },
+      {
+        "indices": [
+          92,
+          118
+        ],
+        "titles": [
+          "Inference-Native Zeroth-Order Optimization for LLMs",
+          "LLM Zeroth-Order Fine-Tuning is an Inference Workload"
+        ],
+        "title_similarity": 0.4615,
+        "abstract_token_jaccard": 0.0,
+        "same_pdf_sha256": true,
+        "adjudication": "confirmed_same_work_version_alias",
+        "reason": "Official arXiv v1/v3 title history, same authors, and v3/OpenReview abstract identity."
+      }
+    ],
+    "shared_catalog_identifiers": {},
+    "entry_count": 233,
+    "unique_work_count_after_confirmed_aliases": 232,
+    "warning": "Candidate similarity is not identity proof; only the arXiv/OpenReview version group is confirmed."
+  },
+  "first_public_verified": "2026-05-27T17:19:19Z"
+}

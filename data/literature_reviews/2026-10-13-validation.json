@@ -1,0 +1,19 @@
+{
+  "catalog_entries": 234,
+  "unique_normalized_titles": 234,
+  "bibliography_entries": 235,
+  "bibliography_extra_explanation": "ComPO has a separately cited 2026 extension, linked within the same catalog row.",
+  "unique_bib_keys": 235,
+  "confirmed_alias_group_merged": true,
+  "original_review_records": 233,
+  "original_review_pdf_hashes_checked": 84,
+  "original_review_read_counts": {
+    "full_text_read": 84,
+    "abstract_only": 148,
+    "technical_article_read": 1
+  },
+  "review_classification": "provisional",
+  "root_audit_counts_consistent": true,
+  "catalog_generation_check": "passed",
+  "diff_whitespace_check": "passed"
+}

@@ -1,0 +1,212 @@
+{
+  "generated_at": "2026-10-13T14:33:20.940837+00:00",
+  "notice": "审阅初稿：233条均已逐条检查，其中84条论文正文、1篇官方技术长文已读，148条仅依据原始摘要。分类计数属于待复核的工作判断，不能当作233篇全文阅读后的最终结论。没有持久参数更新本身不足以排除非智能体的分析、压缩、合并、闭式适配与推理研究；原自动审阅的范围冲突标签已改为边界待复核，不据此自动移出目录。",
+  "before_counts": {
+    "strict_nonagent_lm_gradient_free_parameters": 88,
+    "training_agent_model_parameters": 31,
+    "other_related": 78,
+    "scope_conflict": 31,
+    "evidence_insufficient": 5
+  },
+  "after_counts": {
+    "strict_nonagent_lm_gradient_free_parameters": 88,
+    "other_related": 80,
+    "evidence_insufficient": 5,
+    "training_agent_model_parameters": 31,
+    "boundary_review": 29
+  },
+  "scope_label_corrections": [
+    {
+      "snapshot_index": 124,
+      "title": "Towards Unbiased Test-Time Adaptation for Vision–Language Models",
+      "before": "scope_conflict",
+      "reason": "边界待复核：须根据实际机制判断是否属于提示词优化或固定模型优化外部工件。非智能体的模型内部分析、压缩、合并、闭式适配和推理研究继续按既有范围判断，不能仅因没有持久参数更新而排除。"
+    },
+    {
+      "snapshot_index": 125,
+      "title": "Block-Level Positional Reconstruction for Sparse Long-context Prefilling",
+      "before": "scope_conflict",
+      "reason": "边界待复核：须根据实际机制判断是否属于提示词优化或固定模型优化外部工件。非智能体的模型内部分析、压缩、合并、闭式适配和推理研究继续按既有范围判断，不能仅因没有持久参数更新而排除。"
+    },
+    {
+      "snapshot_index": 126,
+      "title": "DeltaNet-PC: Test-Time Memory Without Backpropagation Through Time",
+      "before": "scope_conflict",
+      "reason": "边界待复核：须根据实际机制判断是否属于提示词优化或固定模型优化外部工件。非智能体的模型内部分析、压缩、合并、闭式适配和推理研究继续按既有范围判断，不能仅因没有持久参数更新而排除。"
+    },
+    {
+      "snapshot_index": 134,
+      "title": "Profiling Compression, Disrupting Distributions: Structured Adversarial Attacks on Token-Compressed Large Vision-Language Models",
+      "before": "scope_conflict",
+      "reason": "边界待复核：须根据实际机制判断是否属于提示词优化或固定模型优化外部工件。非智能体的模型内部分析、压缩、合并、闭式适配和推理研究继续按既有范围判断，不能仅因没有持久参数更新而排除。"
+    },
+    {
+      "snapshot_index": 136,
+      "title": "Phase Geometry of Reasoning: Predicting and Controlling Evidence Integration in Large Language Models",
+      "before": "scope_conflict",
+      "reason": "边界待复核：须根据实际机制判断是否属于提示词优化或固定模型优化外部工件。非智能体的模型内部分析、压缩、合并、闭式适配和推理研究继续按既有范围判断，不能仅因没有持久参数更新而排除。"
+    },
+    {
+      "snapshot_index": 138,
+      "title": "MaRR: Map-Based Rotation Reasoning for Vision--Language Models",
+      "before": "scope_conflict",
+      "reason": "边界待复核：须根据实际机制判断是否属于提示词优化或固定模型优化外部工件。非智能体的模型内部分析、压缩、合并、闭式适配和推理研究继续按既有范围判断，不能仅因没有持久参数更新而排除。"
+    },
+    {
+      "snapshot_index": 149,
+      "title": "Budget-Constrained Test-Time Adaptation for Vision-Language Models: A Protocol, Diagnosis, and Lightweight Fix",
+      "before": "scope_conflict",
+      "reason": "边界待复核：须根据实际机制判断是否属于提示词优化或固定模型优化外部工件。非智能体的模型内部分析、压缩、合并、闭式适配和推理研究继续按既有范围判断，不能仅因没有持久参数更新而排除。"
+    },
+    {
+      "snapshot_index": 153,
+      "title": "Are We Measuring the Right Angles? Spherical Test-Time Adaptation of Vision-Language Models",
+      "before": "scope_conflict",
+      "reason": "边界待复核：须根据实际机制判断是否属于提示词优化或固定模型优化外部工件。非智能体的模型内部分析、压缩、合并、闭式适配和推理研究继续按既有范围判断，不能仅因没有持久参数更新而排除。"
+    },
+    {
+      "snapshot_index": 156,
+      "title": "HeadEdit: Calibrating Language Model Behavior Through the Frozen Unembedding Matrix",
+      "before": "scope_conflict",
+      "reason": "边界待复核：须根据实际机制判断是否属于提示词优化或固定模型优化外部工件。非智能体的模型内部分析、压缩、合并、闭式适配和推理研究继续按既有范围判断，不能仅因没有持久参数更新而排除。"
+    },
+    {
+      "snapshot_index": 157,
+      "title": "ZOSteer: Steering Language Models from Scalar Rewards Alone",
+      "before": "scope_conflict",
+      "reason": "边界待复核：须根据实际机制判断是否属于提示词优化或固定模型优化外部工件。非智能体的模型内部分析、压缩、合并、闭式适配和推理研究继续按既有范围判断，不能仅因没有持久参数更新而排除。"
+    },
+    {
+      "snapshot_index": 161,
+      "title": "Rethinking Neural Thickets Without Weight Perturbations",
+      "before": "scope_conflict",
+      "reason": "边界待复核：须根据实际机制判断是否属于提示词优化或固定模型优化外部工件。非智能体的模型内部分析、压缩、合并、闭式适配和推理研究继续按既有范围判断，不能仅因没有持久参数更新而排除。"
+    },
+    {
+      "snapshot_index": 164,
+      "title": "Modular Norm RandOpt: Population-Efficient Ensembling through Architecture-Aware Perturbations",
+      "before": "scope_conflict",
+      "reason": "边界待复核：须根据实际机制判断是否属于提示词优化或固定模型优化外部工件。非智能体的模型内部分析、压缩、合并、闭式适配和推理研究继续按既有范围判断，不能仅因没有持久参数更新而排除。"
+    },
+    {
+      "snapshot_index": 167,
+      "title": "ActivationSMC: Sequential Monte Carlo for Optimizing Activation Steering",
+      "before": "scope_conflict",
+      "reason": "边界待复核：须根据实际机制判断是否属于提示词优化或固定模型优化外部工件。非智能体的模型内部分析、压缩、合并、闭式适配和推理研究继续按既有范围判断，不能仅因没有持久参数更新而排除。"
+    },
+    {
+      "snapshot_index": 168,
+      "title": "Word-Level Text Unmixing via Evidence-Preserving Ownership Routing with Language Models",
+      "before": "scope_conflict",
+      "reason": "边界待复核：须根据实际机制判断是否属于提示词优化或固定模型优化外部工件。非智能体的模型内部分析、压缩、合并、闭式适配和推理研究继续按既有范围判断，不能仅因没有持久参数更新而排除。"
+    },
+    {
+      "snapshot_index": 169,
+      "title": "Vision-Language Models Can Report Which Image's Visual-Token Activations Were Perturbed",
+      "before": "scope_conflict",
+      "reason": "边界待复核：须根据实际机制判断是否属于提示词优化或固定模型优化外部工件。非智能体的模型内部分析、压缩、合并、闭式适配和推理研究继续按既有范围判断，不能仅因没有持久参数更新而排除。"
+    },
+    {
+      "snapshot_index": 170,
+      "title": "Thermal Plume Attack: Physics-Inspired Attacks on Infrared Vision-Language Models",
+      "before": "scope_conflict",
+      "reason": "边界待复核：须根据实际机制判断是否属于提示词优化或固定模型优化外部工件。非智能体的模型内部分析、压缩、合并、闭式适配和推理研究继续按既有范围判断，不能仅因没有持久参数更新而排除。"
+    },
+    {
+      "snapshot_index": 171,
+      "title": "Solve, Recover, Reuse: LLM Reasoning Across Workflows with Corrupted Contexts",
+      "before": "scope_conflict",
+      "reason": "边界待复核：须根据实际机制判断是否属于提示词优化或固定模型优化外部工件。非智能体的模型内部分析、压缩、合并、闭式适配和推理研究继续按既有范围判断，不能仅因没有持久参数更新而排除。"
+    },
+    {
+      "snapshot_index": 173,
+      "title": "SemanticBBOBench: A Benchmark for Semantic Black-Box Optimization with Large Language Models",
+      "before": "scope_conflict",
+      "reason": "边界待复核：须根据实际机制判断是否属于提示词优化或固定模型优化外部工件。非智能体的模型内部分析、压缩、合并、闭式适配和推理研究继续按既有范围判断，不能仅因没有持久参数更新而排除。"
+    },
+    {
+      "snapshot_index": 174,
+      "title": "SemAdapt: Adaptive Semantic Watermarking with Paraphrase Robustness for Large Language Models",
+      "before": "scope_conflict",
+      "reason": "边界待复核：须根据实际机制判断是否属于提示词优化或固定模型优化外部工件。非智能体的模型内部分析、压缩、合并、闭式适配和推理研究继续按既有范围判断，不能仅因没有持久参数更新而排除。"
+    },
+    {
+      "snapshot_index": 175,
+      "title": "SGA: Stamp Guided Black-box Adversarial Attack against Vision-Language Models",
+      "before": "scope_conflict",
+      "reason": "边界待复核：须根据实际机制判断是否属于提示词优化或固定模型优化外部工件。非智能体的模型内部分析、压缩、合并、闭式适配和推理研究继续按既有范围判断，不能仅因没有持久参数更新而排除。"
+    },
+    {
+      "snapshot_index": 176,
+      "title": "Predicting Where Recall Fails: The Fact Matters More Than the Entity in Black-Box Language Models",
+      "before": "scope_conflict",
+      "reason": "边界待复核：须根据实际机制判断是否属于提示词优化或固定模型优化外部工件。非智能体的模型内部分析、压缩、合并、闭式适配和推理研究继续按既有范围判断，不能仅因没有持久参数更新而排除。"
+    },
+    {
+      "snapshot_index": 183,
+      "title": "HapBO: Harnessed α–π Bayesian Optimization via Expert Natural Language Priors",
+      "before": "scope_conflict",
+      "reason": "边界待复核：须根据实际机制判断是否属于提示词优化或固定模型优化外部工件。非智能体的模型内部分析、压缩、合并、闭式适配和推理研究继续按既有范围判断，不能仅因没有持久参数更新而排除。"
+    },
+    {
+      "snapshot_index": 186,
+      "title": "Do Vision-Language Models Use the Regions They Cite? A Step-Specific Intervention Test",
+      "before": "scope_conflict",
+      "reason": "边界待复核：须根据实际机制判断是否属于提示词优化或固定模型优化外部工件。非智能体的模型内部分析、压缩、合并、闭式适配和推理研究继续按既有范围判断，不能仅因没有持久参数更新而排除。"
+    },
+    {
+      "snapshot_index": 190,
+      "title": "Confidence-Adaptive Permutation-Tree Self Speculative Decoding for Diffusion Large Language Models",
+      "before": "scope_conflict",
+      "reason": "边界待复核：须根据实际机制判断是否属于提示词优化或固定模型优化外部工件。非智能体的模型内部分析、压缩、合并、闭式适配和推理研究继续按既有范围判断，不能仅因没有持久参数更新而排除。"
+    },
+    {
+      "snapshot_index": 192,
+      "title": "BoLT: A Benchmark to Democratize Black-box Optimization Research for Expensive LLM Tasks",
+      "before": "scope_conflict",
+      "reason": "边界待复核：须根据实际机制判断是否属于提示词优化或固定模型优化外部工件。非智能体的模型内部分析、压缩、合并、闭式适配和推理研究继续按既有范围判断，不能仅因没有持久参数更新而排除。"
+    },
+    {
+      "snapshot_index": 195,
+      "title": "A Narrow Residual Bottleneck from Evidence to Answer in Language Models",
+      "before": "scope_conflict",
+      "reason": "边界待复核：须根据实际机制判断是否属于提示词优化或固定模型优化外部工件。非智能体的模型内部分析、压缩、合并、闭式适配和推理研究继续按既有范围判断，不能仅因没有持久参数更新而排除。"
+    },
+    {
+      "snapshot_index": 200,
+      "title": "Inference-Time Machine Unlearning via Gated Activation Redirection",
+      "before": "scope_conflict",
+      "reason": "边界待复核：须根据实际机制判断是否属于提示词优化或固定模型优化外部工件。非智能体的模型内部分析、压缩、合并、闭式适配和推理研究继续按既有范围判断，不能仅因没有持久参数更新而排除。"
+    },
+    {
+      "snapshot_index": 209,
+      "title": "ECO: Energy-Oriented Configuration Optimization for Attention–FFN Disaggregated LLM Serving",
+      "before": "scope_conflict",
+      "reason": "边界待复核：须根据实际机制判断是否属于提示词优化或固定模型优化外部工件。非智能体的模型内部分析、压缩、合并、闭式适配和推理研究继续按既有范围判断，不能仅因没有持久参数更新而排除。"
+    },
+    {
+      "snapshot_index": 222,
+      "title": "Do Shared VLM Coordinates Imply Shared Calibration? A Study through Few-Shot Class-Incremental Learning",
+      "before": "scope_conflict",
+      "reason": "边界待复核：须根据实际机制判断是否属于提示词优化或固定模型优化外部工件。非智能体的模型内部分析、压缩、合并、闭式适配和推理研究继续按既有范围判断，不能仅因没有持久参数更新而排除。"
+    },
+    {
+      "snapshot_index": 224,
+      "title": "Breaking the Refusal Barrier: Stochastic Discovery of Residual  Unsafe Behaviors in Aligned Language Models",
+      "before": "scope_conflict",
+      "reason": "边界待复核：须根据实际机制判断是否属于提示词优化或固定模型优化外部工件。非智能体的模型内部分析、压缩、合并、闭式适配和推理研究继续按既有范围判断，不能仅因没有持久参数更新而排除。"
+    },
+    {
+      "snapshot_index": 225,
+      "title": "CISA: Retrofitting Dense Attention Models with Chunk-Indexed Sparse Attention",
+      "before": "scope_conflict",
+      "reason": "边界待复核：须根据实际机制判断是否属于提示词优化或固定模型优化外部工件。非智能体的模型内部分析、压缩、合并、闭式适配和推理研究继续按既有范围判断，不能仅因没有持久参数更新而排除。"
+    }
+  ],
+  "training_evidence_corrections": {
+    "138": "官方摘要明确说明对Qwen3.5-4B进行微调，因此更新持久视觉语言模型参数；具体参数子集和优化器待正文核实，不据此判为纯梯度无关。",
+    "168": "官方摘要明确说明训练因果语言模型预测规范化归属路由，并报告4B模型，因此存在持久模型参数训练；具体训练模块和是否反向传播待正文核实。"
+  },
+  "catalog_removals_from_this_audit": 0,
+  "raw_worker_backup": "/tmp/llm-full233-review-20261012/root-pre-audit-2026-10-12-full233-method-review.json"
+}

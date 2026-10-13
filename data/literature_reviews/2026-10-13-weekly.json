@@ -1,0 +1,192 @@
+{
+  "date": "2026-10-13",
+  "window_start": "2026-10-06",
+  "window_end": "2026-10-13",
+  "window_timezone": "Asia/Shanghai",
+  "result_zh": "本周未发现值得收录的新文献。本轮补收录2篇已存在但目录遗漏的窗口外论文，合并1组同一作品的题名版本别名。此结论限于本轮明确方法关键词的公开检索；未进行通用语言模型语料筛选或会议全量抓取，OpenReview全文访问仍不完整。",
+  "limitations_zh": "检索以arXiv、OpenReview和会议官方页面、作者主页为原始证据；搜索引擎可能遗漏近期投稿。233条旧快照的完整正文仅取得85条（84个独立作品），148条摘要审阅尚需正文核实。分类初稿保留，未根据无持久参数更新这一单一条件批量删除关联研究。",
+  "queries": [
+    "\"zeroth-order\" \"language\" \"2026\" \"October\"",
+    "\"gradient-free\" \"LLM\" arxiv",
+    "\"evolution strategies\" \"fine-tuning\" arxiv",
+    "\"backpropagation-free\" language model",
+    "site:arxiv.org/abs/2610 \"zeroth-order\" \"language\"",
+    "site:arxiv.org/abs/2610 \"gradient-free\" \"language\"",
+    "site:arxiv.org/abs/2610 \"evolution strategies\" language",
+    "site:openreview.net \"zeroth-order\" \"2027\" \"Oct\"",
+    "\"zeroth-order\" LLM October 2026 fine-tuning",
+    "\"forward-only\" \"fine-tuning\" October 2026",
+    "\"derivative-free\" \"language model\" October 2026",
+    "\"evolution strategies\" LLM \"Oct\" 2026"
+  ],
+  "confirmed_new_in_window": 0,
+  "backfilled": [
+    {
+      "title": "Asynchronous Is Nearly Free for Evolution Strategies on Long-Horizon Agentic Tasks",
+      "category": "es_multi_turn",
+      "date": "2026-10",
+      "description_en": "Bounded-staleness asynchronous full-parameter Gaussian ES for long-horizon agents. Updates Qwen2.5-7B-Instruct weights using rewards without backpropagation in the proposed ES procedure. Backfill: first public 2026-10-03 UTC. Higher-lag experiments use controlled artificial staleness; large-scale wall-clock gains and venue status remain unverified.",
+      "description_zh": "在长时程智能体任务中，以有界延迟异步高斯ES通过奖励持久更新Qwen2.5-7B-Instruct全模型权重，所提ES更新无需反向传播。补收录：首次公开于2026-10-03（UTC）。较高延迟实验使用人为控制的过期更新；大规模实际耗时收益及会议状态待核实。",
+      "resources_en": "[paper](https://arxiv.org/abs/2610.04196) · [code](https://github.com/Bhoy1/async-es) · backfill · 2026-10-03 UTC",
+      "resources_zh": "[论文](https://arxiv.org/abs/2610.04196) · [代码](https://github.com/Bhoy1/async-es) · 补收录 · 2026-10-03（UTC）",
+      "authors": [
+        "William Hoy",
+        "Jingxuan Fan",
+        "Nurcin Celik",
+        "Xu Pan"
+      ],
+      "first_public": "2026-10-03T01:18:02Z",
+      "sources": [
+        "https://arxiv.org/abs/2610.04196",
+        "https://arxiv.org/html/2610.04196v1",
+        "https://jingxuanf0214.github.io/"
+      ],
+      "contribution": "将长轨迹训练中的过期奖励纳入有界延迟ES更新；作者报告最大延迟1时成功率25.9%，同步版本25.4%。",
+      "method": "全参数高斯ES；异步工作节点只回传随机种子与标量奖励。",
+      "backpropagation": "所提ES训练无需反向传播；GRPO为另行使用反向传播的对照基线。",
+      "persistent_parameters": "是，全模型权重。",
+      "modules": "Qwen2.5-7B-Instruct语言模型骨干全参数。",
+      "relevance": "高：直接通过函数值奖励训练语言模型参数，且满足训练型智能体范围。",
+      "read_basis": "原始公开正文及相关附录已读。",
+      "uncertainties": [
+        "作者报告的结果未独立复现实验。",
+        "三个评测种子不等于三个独立训练种子；较大过期程度主要使用人为控制，实际大规模吞吐收益待验证。",
+        "计算量比较不包含环境与评分开销；会议录用状态待核实。"
+      ]
+    },
+    {
+      "title": "FZOO: Fast Zeroth-Order Optimizer for Fine-Tuning Large Language Models towards Adam-Scale Speed",
+      "category": "zo_directions",
+      "date": "2025-06",
+      "description_en": "Batched one-sided zeroth-order updates with Rademacher perturbations and loss-scale normalization/step-size adjustment; persistent full-parameter or PEFT fine-tuning without backpropagation in the proposed updates. Backfill: first public 2025-06-10 UTC; ICLR 2026 publication verified. Reported forward-pass savings do not establish universal wall-clock parity with Adam; preparation details and version differences remain to be checked.",
+      "description_zh": "结合批量单边零阶估计、Rademacher扰动及损失尺度归一化和步长调整，无需反向传播即可持久微调全模型参数或参数高效适配模块。补收录：首次公开于2025-06-10（UTC），已核实发表于ICLR 2026。作者报告的前向次数节省不等于普遍达到Adam实际耗时；准备阶段细节及版本差异待核实。",
+      "resources_en": "[paper](https://arxiv.org/abs/2506.09034) · [ICLR 2026](https://proceedings.iclr.cc/paper_files/paper/2026/hash/b8d4c82b365d9361863000f8d1e86f1b-Abstract-Conference.html) · [code](https://github.com/DKmiyan/FZOO) · backfill · 2025-06-10 UTC",
+      "resources_zh": "[论文](https://arxiv.org/abs/2506.09034) · [ICLR 2026](https://proceedings.iclr.cc/paper_files/paper/2026/hash/b8d4c82b365d9361863000f8d1e86f1b-Abstract-Conference.html) · [代码](https://github.com/DKmiyan/FZOO) · 补收录 · 2025-06-10（UTC）",
+      "authors": [
+        "Sizhe Dang",
+        "Yangyang Guo",
+        "Yanjun Zhao",
+        "Haishan Ye",
+        "Xiaodong Zheng",
+        "Guang Dai",
+        "Ivor Tsang"
+      ],
+      "proceedings_authors": [
+        "Sizhe Dang",
+        "Yangyang Guo",
+        "Yanjun Zhao",
+        "Xiaodong Zheng",
+        "Guang Dai",
+        "Ivor Tsang",
+        "Haishan Ye"
+      ],
+      "first_public": "2025-06-10T17:56:53Z",
+      "sources": [
+        "https://arxiv.org/abs/2506.09034",
+        "https://proceedings.iclr.cc/paper_files/paper/2026/hash/b8d4c82b365d9361863000f8d1e86f1b-Abstract-Conference.html",
+        "https://github.com/DKmiyan/FZOO"
+      ],
+      "contribution": "降低零阶微调的函数查询负担；作者摘要报告相对MeZO平均约三倍的前向次数节省及准确率提升。",
+      "method": "批量单边函数值估计，Rademacher正负一扰动，损失尺度归一化与步长调整。",
+      "backpropagation": "所提参数更新不依赖反向传播；Adam及归一化SGD用于比较或理论联系。完整准备路径待核实。",
+      "persistent_parameters": "是，语言模型全参数或参数高效适配参数。",
+      "modules": "论文及官方代码支持全参数与参数高效微调；各实验的具体模块待正文核实。",
+      "relevance": "高：直接零阶语言模型参数微调。",
+      "read_basis": "已核实arXiv原始摘要、首发历史、官方ICLR论文页面与作者代码仓库；本轮未完整阅读正文。",
+      "uncertainties": [
+        "不同来源的作者顺序不同，分别保留arXiv与正式论文集顺序。",
+        "全流程准备细节、不同版本与实验更新模块待完整正文核实。",
+        "查询次数节省与实际耗时须分别判断；作者性能声明未独立复现。"
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "title": "Large Language Models As Evolution Strategies",
+      "url": "https://arxiv.org/abs/2402.18381",
+      "reason": "核心为提示词优化，按用户范围暂不收录。 摘要亦披露可选指令微调，但核心上下文提示机制仍触发用户提示词范围限制。",
+      "authors": [
+        "Robert Tjarko Lange",
+        "Yingtao Tian",
+        "Yujin Tang"
+      ],
+      "first_public": "2024-02-28T15:02:17Z"
+    },
+    {
+      "title": "Large Language Models for Tuning Evolution Strategies",
+      "url": "https://arxiv.org/abs/2405.10999",
+      "reason": "固定语言模型优化外部算法或配置，未见语言模型参数训练证据，按用户范围暂不收录。",
+      "authors": [
+        "Oliver Kramer"
+      ],
+      "first_public": "2024-05-16T21:14:32Z"
+    },
+    {
+      "title": "Towards Explainable Evolution Strategies with Large Language Models",
+      "url": "https://arxiv.org/abs/2407.08331",
+      "reason": "相关性较低：用语言模型总结经典ES优化日志，未提供语言模型参数优化方法或模型内部分析；本轮不收录。",
+      "authors": [
+        "Jill Baumann",
+        "Oliver Kramer"
+      ],
+      "first_public": "2024-07-11T09:28:27Z"
+    }
+  ],
+  "existing_duplicates": [
+    "Evolution Strategies at Scale (2509.24372)",
+    "Overcoming Forgetting in ES (2605.30148)",
+    "Quantized Evolution Strategies (2602.03120)",
+    "Matching Accuracy, Different Geometry (2604.01499)",
+    "Learning a Zeroth-Order Optimizer (2510.00419)",
+    "Inference-Native Zeroth-Order Optimization for LLMs (2605.28760)",
+    "SubZero+ (2608.15665)",
+    "LOREN (AAAI 39715)",
+    "Projected Gradient-Aligned Zeroth-Order Fine-Tuning (2510.18228)",
+    "Hi-ZFO (2026.findings-acl.239)",
+    "Federated Globally Adaptive Momentum (2026.acl-long.1851)"
+  ],
+  "catalog_before": 233,
+  "catalog_after": 234,
+  "known_same_work_aliases_merged": 1,
+  "category_counts": {
+    "es_pretraining": 1,
+    "es_single_turn": 13,
+    "related_hybrid": 60,
+    "es_multi_turn": 2,
+    "es_understanding": 9,
+    "zo_pretraining": 3,
+    "zo_baselines": 14,
+    "related_closed_form": 26,
+    "zo_directions": 32,
+    "zo_systems": 24,
+    "zo_alignment": 1,
+    "zo_multi_turn": 1,
+    "zo_understanding": 9,
+    "related_prompt_agent": 27,
+    "related_agent_training": 4,
+    "related_inference": 7,
+    "related_forward_gradient": 1
+  },
+  "full233_review_snapshot_count": 233,
+  "full233_review_status": "provisional",
+  "checks": {
+    "catalog_entries": 234,
+    "unique_normalized_titles": 234,
+    "bibliography_entries": 235,
+    "bibliography_extra_explanation": "ComPO has a separately cited 2026 extension, linked within the same catalog row.",
+    "unique_bib_keys": 235,
+    "confirmed_alias_group_merged": true,
+    "original_review_records": 233,
+    "original_review_pdf_hashes_checked": 84,
+    "original_review_read_counts": {
+      "full_text_read": 84,
+      "abstract_only": 148,
+      "technical_article_read": 1
+    },
+    "review_classification": "provisional",
+    "root_audit_counts_consistent": true,
+    "catalog_generation_check": "passed",
+    "diff_whitespace_check": "passed"
+  },
+  "commit_push": "Prepared and validated; final publication state is available from Git history and the heartbeat response."
+}

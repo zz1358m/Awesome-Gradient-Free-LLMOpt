@@ -830,11 +830,11 @@
   {
     "title": "Inference-Native Zeroth-Order Optimization for LLMs",
     "category": "zo_systems",
-    "date": "2026",
-    "description_en": "Reorganizes LLM zeroth-order optimization around inference-native execution and forward evaluations.",
-    "description_zh": "围绕推理原生执行与前向评估重组大语言模型零阶优化。",
-    "resources_en": "[paper](https://openreview.net/forum?id=EnBpzU8b3z) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
-    "resources_zh": "[论文](https://openreview.net/forum?id=EnBpzU8b3z) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
+    "date": "2026-05",
+    "description_en": "Reorganizes zeroth-order adaptation as an inference-serving workload. Function-value updates persistently change low-rank parameter deltas/adapter states without backpropagation; base weights may remain frozen, with deltas retained or merged for deployment. First arXiv release 2026-05-27 UTC; the v3 title replaces the v1 alias. Performance across system configurations remains to be independently verified.",
+    "description_zh": "将零阶适配重组为推理服务工作负载，通过函数值持久更新低秩参数差量及适配状态，无需反向传播；语言骨干的基础权重可冻结，部署时保留或合并差量。arXiv v1于2026-05-27（UTC）首发，v3更改题名，旧题名条目已合并；不同系统配置的性能声明待独立验证。",
+    "resources_en": "[paper](https://openreview.net/forum?id=EnBpzU8b3z) · [arXiv/version history](https://arxiv.org/abs/2605.28760) · [code](https://github.com/playeriv65/zo-vllm) · ICLR 2027 submission, decision pending · first public 2026-05-27 UTC",
+    "resources_zh": "[论文](https://openreview.net/forum?id=EnBpzU8b3z) · [arXiv及版本历史](https://arxiv.org/abs/2605.28760) · [代码](https://github.com/playeriv65/zo-vllm) · ICLR 2027投稿，录用待核实 · 首次公开2026-05-27（UTC）"
   },
   {
     "title": "High-Throughput and Memory-Efficient Zeroth-Order Fine-tuning LLMs with Distributed Parallel Computing",
@@ -1060,15 +1060,6 @@
     "description_zh": "通过随机投影的经验神经切线核分析 ZO-SGD 的单步学习动力学，在分析假设下将核近似精度与扰动数量及输出维数联系起来。",
     "resources_en": "[paper](https://proceedings.mlr.press/v306/li26in.html) · code not located · ![ICML 2026](https://img.shields.io/badge/ICML-2026-orange)",
     "resources_zh": "[论文](https://proceedings.mlr.press/v306/li26in.html) · 未找到代码 · ![ICML 2026](https://img.shields.io/badge/ICML-2026-orange)"
-  },
-  {
-    "title": "LLM Zeroth-Order Fine-Tuning is an Inference Workload",
-    "category": "zo_understanding",
-    "date": "2026",
-    "description_en": "Shows that repeated ZO scoring can be reorganized around an inference-serving runtime.",
-    "description_zh": "说明重复的 ZO 评分过程可以围绕推理服务运行时重新组织。",
-    "resources_en": "[paper](https://arxiv.org/abs/2605.28760) · [code](https://github.com/playeriv65/zo-vllm) · 2026",
-    "resources_zh": "[论文](https://arxiv.org/abs/2605.28760) · [代码](https://github.com/playeriv65/zo-vllm) · 2026"
   },
   {
     "title": "Zeroth-Order Optimization Finds Flat Minima",
@@ -2095,5 +2086,23 @@
     "description_zh": "提出 ZO-COSMO，把两查询零阶估计与保持平均值的 masked consensus 结合，在无需显式坐标索引的一跳通信中完成稀疏去中心化更新，并在八个逻辑 Qwen LoRA worker 上验证。",
     "resources_en": "[paper](https://openreview.net/forum?id=XhdOPTxLyT) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
     "resources_zh": "[论文](https://openreview.net/forum?id=XhdOPTxLyT) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
+  },
+  {
+    "title": "Asynchronous Is Nearly Free for Evolution Strategies on Long-Horizon Agentic Tasks",
+    "category": "es_multi_turn",
+    "date": "2026-10",
+    "description_en": "Bounded-staleness asynchronous full-parameter Gaussian ES for long-horizon agents. Updates Qwen2.5-7B-Instruct weights using rewards without backpropagation in the proposed ES procedure. Backfill: first public 2026-10-03 UTC. Higher-lag experiments use controlled artificial staleness; large-scale wall-clock gains and venue status remain unverified.",
+    "description_zh": "在长时程智能体任务中，以有界延迟异步高斯ES通过奖励持久更新Qwen2.5-7B-Instruct全模型权重，所提ES更新无需反向传播。补收录：首次公开于2026-10-03（UTC）。较高延迟实验使用人为控制的过期更新；大规模实际耗时收益及会议状态待核实。",
+    "resources_en": "[paper](https://arxiv.org/abs/2610.04196) · [code](https://github.com/Bhoy1/async-es) · backfill · 2026-10-03 UTC",
+    "resources_zh": "[论文](https://arxiv.org/abs/2610.04196) · [代码](https://github.com/Bhoy1/async-es) · 补收录 · 2026-10-03（UTC）"
+  },
+  {
+    "title": "FZOO: Fast Zeroth-Order Optimizer for Fine-Tuning Large Language Models towards Adam-Scale Speed",
+    "category": "zo_directions",
+    "date": "2025-06",
+    "description_en": "Batched one-sided zeroth-order updates with Rademacher perturbations and loss-scale normalization/step-size adjustment; persistent full-parameter or PEFT fine-tuning without backpropagation in the proposed updates. Backfill: first public 2025-06-10 UTC; ICLR 2026 publication verified. Reported forward-pass savings do not establish universal wall-clock parity with Adam; preparation details and version differences remain to be checked.",
+    "description_zh": "结合批量单边零阶估计、Rademacher扰动及损失尺度归一化和步长调整，无需反向传播即可持久微调全模型参数或参数高效适配模块。补收录：首次公开于2025-06-10（UTC），已核实发表于ICLR 2026。作者报告的前向次数节省不等于普遍达到Adam实际耗时；准备阶段细节及版本差异待核实。",
+    "resources_en": "[paper](https://arxiv.org/abs/2506.09034) · [ICLR 2026](https://proceedings.iclr.cc/paper_files/paper/2026/hash/b8d4c82b365d9361863000f8d1e86f1b-Abstract-Conference.html) · [code](https://github.com/DKmiyan/FZOO) · backfill · 2025-06-10 UTC",
+    "resources_zh": "[论文](https://arxiv.org/abs/2506.09034) · [ICLR 2026](https://proceedings.iclr.cc/paper_files/paper/2026/hash/b8d4c82b365d9361863000f8d1e86f1b-Abstract-Conference.html) · [代码](https://github.com/DKmiyan/FZOO) · 补收录 · 2025-06-10（UTC）"
   }
 ]
