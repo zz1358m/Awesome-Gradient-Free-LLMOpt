@@ -27,6 +27,15 @@
     "resources_zh": "[论文](https://arxiv.org/abs/2608.05541) · [代码占位仓库](https://github.com/kuangrepi/Hyper-ES) · 2026-08"
   },
   {
+    "title": "How Low Can You Go: Fine-Tuning LLMs with Bayesian Optimization (LlMBO)",
+    "category": "es_single_turn",
+    "date": "2026-10",
+    "description_en": "Uses Bayesian optimization over the handful of parameters in TinyLoRA-style fine-tuning to optimize greedy-decoding accuracy directly without gradients, compared against GRPO on a math benchmark suite; the method is Bayesian search rather than ES.",
+    "description_zh": "在 TinyLoRA 式的极少参数微调中使用贝叶斯优化，无需梯度、直接优化贪心解码准确率，并在数学基准上与 GRPO 比较；方法属于贝叶斯搜索而非 ES。",
+    "resources_en": "[paper](https://arxiv.org/abs/2610.18504) · code not located · 2026-10",
+    "resources_zh": "[论文](https://arxiv.org/abs/2610.18504) · 未找到代码 · 2026-10"
+  },
+  {
     "title": "Can Bayesian Optimization Efficiently Find a Strong Single Expert in Neural Thickets?",
     "category": "es_single_turn",
     "date": "2026-08",
@@ -277,6 +286,24 @@
     "description_zh": "在空闲纯前向设备上以零阶查询估计曲率，用其精炼主训练端的一阶全参数更新。",
     "resources_en": "[paper](https://openreview.net/forum?id=qh1N46HjOP) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
     "resources_zh": "[论文](https://openreview.net/forum?id=qh1N46HjOP) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
+  },
+  {
+    "title": "Zeroth-Order Fine-Tuning of LLMs in Learnable Low-Rank Subspaces",
+    "category": "zo_baselines",
+    "date": "2026-10",
+    "description_en": "AdaSub-ZO learns layer-wise low-rank projection matrices from finite-difference feedback instead of fixing random subspaces, and adds subspace momentum for forward-only LLM fine-tuning; evaluated on natural language understanding tasks.",
+    "description_zh": "AdaSub-ZO 不再固定随机子空间，而是从有限差分反馈中学习逐层低秩投影矩阵，并加入子空间动量进行纯前向 LLM 微调；在自然语言理解任务上评测。",
+    "resources_en": "[paper](https://arxiv.org/abs/2610.15225) · code not located · 2026-10",
+    "resources_zh": "[论文](https://arxiv.org/abs/2610.15225) · 未找到代码 · 2026-10"
+  },
+  {
+    "title": "StructZO: Structured Zeroth-Order Optimization for Memory-Efficient LLM Fine-Tuning",
+    "category": "zo_baselines",
+    "date": "2026-10",
+    "description_en": "Performs large-query ZO estimation in an activation-induced low-rank subspace and applies spectral control to the reduced update before mapping it back to the full weights; experiments use OPT-series models and Llama3.1-8B.",
+    "description_zh": "在由激活诱导的低秩子空间内做大查询量零阶估计，并在映射回原参数前对降维更新施加谱控制；实验覆盖 OPT 系列和 Llama3.1-8B。",
+    "resources_en": "[paper](https://arxiv.org/abs/2610.16451) · code not located · 2026-10",
+    "resources_zh": "[论文](https://arxiv.org/abs/2610.16451) · 未找到代码 · 2026-10"
   },
   {
     "title": "MpSub: A Momentum p-Dimensional Subspace Trust-Region Method for Derivative-Free Fine-Tuning of Large Language Models",
@@ -1006,6 +1033,15 @@
     "description_zh": "对 LoRA 参数施加扰动并使用答案困惑度进行评分，再将成功的深度研究轨迹作为监督微调数据形成闭环。该方法属于多轮智能体适配，但其 ZO 信号仍然是平滑的监督微调代理，而不是稀疏终局奖励。",
     "resources_en": "[paper](https://arxiv.org/abs/2608.09292) · [code](https://github.com/hidk1911/ZOForLLMAgents) · 2026-08 · [ICLR 2027 submission](https://openreview.net/forum?id=qqOjD3pcxL)",
     "resources_zh": "[论文](https://arxiv.org/abs/2608.09292) · [代码](https://github.com/hidk1911/ZOForLLMAgents) · 2026-08 · [ICLR 2027 投稿](https://openreview.net/forum?id=qqOjD3pcxL)"
+  },
+  {
+    "title": "ZOIF: Zeroth-Order Influence Function Estimation for LLM Data Selection Using Only Forward Passes",
+    "category": "zo_understanding",
+    "date": "2026-10",
+    "description_en": "Estimates influence functions for LLM data selection with forward passes only, combining a ZO proxy gradient, an inverse Hessian-vector product solved as an auxiliary ZO problem, and finite-difference per-sample scores; it is a data-selection tool, not a fine-tuning optimizer.",
+    "description_zh": "仅用前向传播估计影响函数以做 LLM 数据选择：零阶估计代理梯度，将逆 Hessian 向量积改写为辅助零阶优化求解，再以有限差分得到逐样本分数；它是数据选择工具，不是微调优化器。",
+    "resources_en": "[paper](https://arxiv.org/abs/2610.15336) · code not located · 2026-10",
+    "resources_zh": "[论文](https://arxiv.org/abs/2610.15336) · 未找到代码 · 2026-10"
   },
   {
     "title": "Zeroth-Order Optimization at the Edge of Stability",
