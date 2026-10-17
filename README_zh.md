@@ -6,7 +6,7 @@
 
 主目录关注持久化模型参数，包括完整权重、适配器、低秩子空间和量化权重。提示词核心研究现已暂缓；智能体研究仅在原始来源确认持久训练或合成语言模型、策略模型、适配器或等价神经控制器参数时保留。其他非提示词、非智能体边界研究仍可进入明确标注的关联分类。
 
-**最近一次文献核查：** 2026-10-11
+**最近一次文献核查：** 2026-10-15
 
 [最新 ICLR 2027 核查（覆盖范围有限）](data/literature_reviews/2026-10-11-iclr2027.json) · [2026-10-09 核查记录](data/literature_reviews/2026-10-09.json)。
 
@@ -60,6 +60,7 @@ ES 和双点 ZO 都可以看作平滑目标函数的估计方法，但现有大�
 | 日期 | 论文 | 核心贡献 | 资源 |
 |---|---|---|---|
 | 2026-10 | **DART-ES: Difficulty-Aware Reweighting and Targeted Replay for Fine-Tuning LLMs with Evolution Strategies** | 在纯前向全参数 ES 微调中，根据种群通过率和历史难度估计重加权奖励并重放罕见可解样本；评测覆盖数学推理、指令微调、代码生成和 Countdown。 | [论文](https://arxiv.org/abs/2610.06993) · [代码](https://github.com/szs777/DART-ES-Code) · 2026-10 · [ICLR 2027 投稿](https://openreview.net/forum?id=dtVcF6LLYr) |
+| 2026-10 | **How Low Can You Go: Fine-Tuning LLMs with Bayesian Optimization (LlMBO)** | 在 TinyLoRA 式的极少参数微调中使用贝叶斯优化，无需梯度、直接优化贪心解码准确率，并在数学基准上与 GRPO 比较；方法属于贝叶斯搜索而非 ES。 | [论文](https://arxiv.org/abs/2610.18504) · 未找到代码 · 2026-10 |
 | 2026-08 | **Can Bayesian Optimization Efficiently Find a Strong Single Expert in Neural Thickets?** | 在随机线性权重子空间中使用高斯过程引导的贝叶斯优化，无需 LLM 反传即可搜索单个可部署专家；初步推理实验使用 Qwen2.5-Instruct 0.5B–3B，方法属于贝叶斯搜索。 | [论文](https://arxiv.org/abs/2608.10867) · 未找到代码 · 2026-08 |
 | 2026-05 | **Consolidating Rewarded Perturbations for LLM Post-Training** | CoRP 通过奖励与兼容性重加权、留出验证及步长校准，将高奖励参数扰动合并为单个可部署模型，全程无需 LLM 反传。 | [论文](https://arxiv.org/abs/2605.31494) · [代码](https://github.com/oooranz/CoRP) · 2026-05 |
 | 2026-02 | **Quantized Evolution Strategies: High-precision Fine-tuning of Quantized LLMs at Low-precision Cost** | 在离散量化权重上进行直接奖励优化，并结合误差反馈和随机种子重放；在 Countdown 上进行评测。 | [论文](https://arxiv.org/abs/2602.03120) · [代码](https://github.com/dibbla/Quantized-Evolution-Strategies) · 2026-02 · [ICLR 2027 投稿](https://openreview.net/forum?id=LR8wVOqE28) |
@@ -113,6 +114,8 @@ ES 和双点 ZO 都可以看作平滑目标函数的估计方法，但现有大�
 
 | 日期 | 论文 | 核心贡献 | 资源 |
 |---|---|---|---|
+| 2026-10 | **Zeroth-Order Fine-Tuning of LLMs in Learnable Low-Rank Subspaces** | AdaSub-ZO 不再固定随机子空间，而是从有限差分反馈中学习逐层低秩投影矩阵，并加入子空间动量进行纯前向 LLM 微调；在自然语言理解任务上评测。 | [论文](https://arxiv.org/abs/2610.15225) · 未找到代码 · 2026-10 |
+| 2026-10 | **StructZO: Structured Zeroth-Order Optimization for Memory-Efficient LLM Fine-Tuning** | 在前向激活构造的子空间中进行多查询零阶估计，并通过Muon式谱整形持久更新语言模型线性权重；优化过程无需反向传播，论文的一阶梯度仅用于独立诊断。 | [论文](https://arxiv.org/abs/2610.16451) / 代码待核实 / 确定本周新增 / 2026-10-12T09:16:30Z |
 | 2026-09 | **MpSub: A Momentum p-Dimensional Subspace Trust-Region Method for Derivative-Free Fine-Tuning of Large Language Models** | 在低维子空间中结合动量与随机方向，以中心有限差分估计梯度并自适应调整信赖域半径；实验使用 OPT-125M/350M 与 CommitmentBank。 | [论文](https://arxiv.org/abs/2609.07666) · 未找到代码 · 2026-09 |
 | 2026-09 | **AIM-ZO: Activation-Informed Subspace Maintenance for Zeroth-Order LLM Fine-Tuning** | 利用前向激活持续维护参数子空间，并从中采样较窄的活跃方向集合进行纯前向零阶更新；在相同前向评估预算下评测五种大语言模型和十一个下游任务。 | [论文](https://arxiv.org/abs/2609.35257) · [代码](https://github.com/EkkoXy/AIM-ZO) · 2026-09 · 已投稿 ICLR 2027（作者声明；录用待定） · [ICLR 2027 投稿](https://openreview.net/forum?id=LsJ9H83guc) |
 | 2026-08 | **SubZero+: Memory-Efficient Adaptive Zeroth-Order LLM Fine-Tuning in Random Subspaces** | 在周期刷新随机子空间中进行多查询前向差分，结合低维 Adam 和周期性动量重启，无需反向传播即可进行全权重或 LoRA 微调；在 SuperGLUE 上评测 1.3B 至 32B 模型。 | [论文](https://arxiv.org/abs/2608.15665) · 未找到代码 · 2026-08 · 第二版更新于 2026-09-28；ICLR 2027 投稿状态待核实 · [ICLR 2027 投稿](https://openreview.net/forum?id=pZjhFo9XgF) |
@@ -132,7 +135,6 @@ ES 和双点 ZO 都可以看作平滑目标函数的估计方法，但现有大�
 
 | 日期 | 论文 | 核心贡献 | 资源 |
 |---|---|---|---|
-| 2026-10 | **StructZO: Structured Zeroth-Order Optimization for Memory-Efficient LLM Fine-Tuning** | 在前向激活构造的子空间中进行多查询零阶估计，并通过Muon式谱整形持久更新语言模型线性权重；优化过程无需反向传播，论文的一阶梯度仅用于独立诊断。 | [论文](https://arxiv.org/abs/2610.16451) / 代码待核实 / 确定本周新增 / 2026-10-12T09:16:30Z |
 | 2026-08 | **ZoAQ: Adaptive Zeroth-Order Querying via Query-Reuse Coupling** | 复用带种子的历史双边函数评估，并通过动量一致性门控自适应分配查询预算，无需额外验证查询；纯前向 OPT 微调更新 LoRA 参数并减少评估次数，历史反馈过时偏差仍需关注。 | [论文](https://arxiv.org/abs/2609.22115) · [作者提供的匿名实现](https://anonymous.4open.science/r/ZoAQ-312A) · 2026-08（按 arXiv 提交历史；ICLR 2027 投稿状态待核实） · [ICLR 2027 投稿](https://openreview.net/forum?id=wwgUVpgO9P) |
 | 2026-07 | **Universally Empowering Zeroth-Order Optimization via Adaptive Layer-wise Sampling** | AdaLeZO 通过非平稳多臂老虎机选层与有放回逆概率加权采样改善零阶估计及运行效率；实验覆盖 6.7B 至 30B 的 LLaMA/OPT 模型。 | [论文](https://aclanthology.org/2026.findings-acl.1999/) · 未找到代码 · ![ACL Findings 2026](https://img.shields.io/badge/ACL_Findings-2026-orange) |
 | 2026-06 | **GRZO: Group-Relative Zeroth-Order Optimization for Large Language Model Fine-Tuning** | 通过样本级伪独立扰动与组内损失归一化，聚合零阶方向并持久微调语言模型参数，所提更新无需反向传播。补收录：首发2026-06-01（UTC）；作者称获EMNLP 2026 Findings录用，待官方论文集核实。 | [论文](https://arxiv.org/abs/2606.02857) / 代码待核实 / 窗口外补收录 / 2026-06-01T20:19:36Z |
@@ -213,6 +215,7 @@ ES 和双点 ZO 都可以看作平滑目标函数的估计方法，但现有大�
 
 | 日期 | 论文 | 核心贡献 | 资源 |
 |---|---|---|---|
+| 2026-10 | **ZOIF: Zeroth-Order Influence Function Estimation for LLM Data Selection Using Only Forward Passes** | 仅用前向传播估计影响函数以做 LLM 数据选择：零阶估计代理梯度，将逆 Hessian 向量积改写为辅助零阶优化求解，再以有限差分得到逐样本分数；它是数据选择工具，不是微调优化器。 | [论文](https://arxiv.org/abs/2610.15336) · 未找到代码 · 2026-10 |
 | 2026 | **Zeroth-Order Optimization at the Edge of Stability** | 通过 Hessian 谱刻画两点零阶方法的均方线性稳定性，并以最大特征值和迹给出稳定性界；稳定性边缘的实验证据来自全批量视觉训练。 | [论文](https://proceedings.mlr.press/v306/song26ac.html) · 未找到代码 · ![ICML 2026](https://img.shields.io/badge/ICML-2026-orange) |
 | 2026 | **When Does Symmetry Reduce Effective Rank in Zeroth-Order Optimization?** | 用对称轨道余维界定 Hessian 有效秩，并推导 ZO-SGD 的有限样本维度无关查询界。 | [论文](https://openreview.net/forum?id=EplKUVCy5D) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录 |
 | 2026 | **Understanding Clipping in Zeroth-order Optimization** | 研究裁剪在零阶优化中的行为及影响，并包含语言模型场景。 | [论文](https://openreview.net/forum?id=nZByC53zgL) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录 |

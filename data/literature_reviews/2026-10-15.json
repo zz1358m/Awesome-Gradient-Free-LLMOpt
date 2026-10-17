@@ -1,0 +1,194 @@
+{
+  "review_date": "2026-10-15",
+  "timezone": "Asia/Shanghai",
+  "window_start_date": "2026-10-08",
+  "window_end_date": "2026-10-15",
+  "window_note_zh": "arXiv 按首次提交或最近更新日期在最近 7 天内筛选，截止本次执行。",
+  "repository": "https://github.com/zz1358m/Awesome-Gradient-Free-LLMOpt",
+  "deduplication_zh": "已核对 data/papers.json 及 data/literature_reviews/ 下全部 JSON 记录；四项新收录均无既有条目。arXiv 近 7 天另有 2604.11399、2605.12765、2610.12566 已在目录中。",
+  "queries": {
+    "arxiv": [
+      "all:\"evolution strategies\" AND (all:LLM OR all:\"language model\")",
+      "all:\"zeroth-order\" AND all:\"fine-tuning\"",
+      "all:\"gradient-free\" AND all:\"language model\"",
+      "all:\"forward-only\" AND (all:LLM OR all:\"language model\")",
+      "all:MeZO"
+    ],
+    "openreview_iclr2027_exact": {
+      "without backpropagation": 22,
+      "without gradients": 13,
+      "evolutionary optimization": 19,
+      "parameter perturbation": 7,
+      "weight perturbation": 8,
+      "finite differences": 15,
+      "forward gradients": 0
+    },
+    "openreview_note_zh": "补跑 2026-10-12 未覆盖的 7 个方法短语（group=ICLR.cc/2027/Conference，type=exact，content=all，source=forum）；去重后 83 个编号，其中 74 个已在既有审计记录中，其余 9 个逐篇读摘要后均不在范围内。"
+  },
+  "papers": [
+    {
+      "title": "Zeroth-Order Fine-Tuning of LLMs in Learnable Low-Rank Subspaces",
+      "authors": [
+        "Chuang Tong",
+        "Ling Chen"
+      ],
+      "first_posted": "2026-10-11T07:33:23+08:00",
+      "primary_url": "https://arxiv.org/abs/2610.15225",
+      "contribution_zh": "AdaSub-ZO 从有限差分反馈中学习逐层低秩投影矩阵，替代固定随机子空间，并加入子空间动量；在自然语言理解任务上评测。",
+      "method_zh": "可学习低秩子空间内的纯前向零阶微调",
+      "relevance_zh": "高；持久模型参数的零阶微调",
+      "decision": "included",
+      "category": "zo_baselines",
+      "concerns_zh": [
+        "仅依据 arXiv 原始摘要，本轮未阅读正文。",
+        "官方代码本轮未定位。",
+        "未确认正式会议录用。"
+      ],
+      "found_by_query": "all:\"zeroth-order\" AND all:\"fine-tuning\""
+    },
+    {
+      "title": "ZOIF: Zeroth-Order Influence Function Estimation for LLM Data Selection Using Only Forward Passes",
+      "authors": [
+        "Lisong He",
+        "Yunxuan Jiang",
+        "Haishan Ye",
+        "Xiangyu Chang"
+      ],
+      "first_posted": "2026-10-11T12:25:40+08:00",
+      "primary_url": "https://arxiv.org/abs/2610.15336",
+      "contribution_zh": "用零阶代理梯度、辅助零阶优化求解的逆 Hessian 向量积和有限差分逐样本分数，仅凭前向传播估计影响函数并用于数据选择。",
+      "method_zh": "零阶梯度估计与有限差分；不直接更新模型参数",
+      "relevance_zh": "中；零阶方法用于 LLM 训练数据选择，本身不是微调优化器",
+      "decision": "included",
+      "category": "zo_understanding",
+      "concerns_zh": [
+        "仅依据 arXiv 原始摘要，本轮未阅读正文。",
+        "官方代码本轮未定位。",
+        "未确认正式会议录用。",
+        "分类为 understanding/systems 属边界判断，待人工复核。"
+      ],
+      "found_by_query": "all:\"zeroth-order\" AND all:\"fine-tuning\""
+    },
+    {
+      "title": "StructZO: Structured Zeroth-Order Optimization for Memory-Efficient LLM Fine-Tuning",
+      "authors": [
+        "Xuanlin Yang",
+        "Jia Li",
+        "Zhouchen Lin"
+      ],
+      "first_posted": "2026-10-12T17:16:30+08:00",
+      "primary_url": "https://arxiv.org/abs/2610.16451",
+      "contribution_zh": "在激活诱导的低秩子空间中进行大查询量零阶估计，并对降维更新做谱控制后映射回原参数；实验覆盖 OPT 系列与 Llama3.1-8B。",
+      "method_zh": "结构化子空间零阶估计与谱控制",
+      "relevance_zh": "高；持久模型参数的零阶微调",
+      "decision": "included",
+      "category": "zo_baselines",
+      "concerns_zh": [
+        "仅依据 arXiv 原始摘要，本轮未阅读正文。",
+        "官方代码本轮未定位。",
+        "未确认正式会议录用。"
+      ],
+      "found_by_query": "all:\"zeroth-order\" AND all:\"fine-tuning\""
+    },
+    {
+      "title": "How Low Can You Go: Fine-Tuning LLMs with Bayesian Optimization (LlMBO)",
+      "authors": [
+        "Aditya Kulkarni",
+        "Davide Sartor",
+        "Carlos Soto",
+        "Nathan Wycoff"
+      ],
+      "first_posted": "2026-10-13T22:58:27+08:00",
+      "primary_url": "https://arxiv.org/abs/2610.18504",
+      "contribution_zh": "在极少参数的 TinyLoRA 式微调中用贝叶斯优化直接优化贪心解码准确率，并在数学基准上与 GRPO 比较。",
+      "method_zh": "低维适配参数上的贝叶斯优化（函数值查询，无梯度）",
+      "relevance_zh": "中高；持久适配参数的无梯度优化，方法属于贝叶斯搜索而非 ES",
+      "decision": "included",
+      "category": "es_single_turn",
+      "concerns_zh": [
+        "仅依据 arXiv 原始摘要，本轮未阅读正文。",
+        "官方代码本轮未定位。",
+        "未确认正式会议录用。",
+        "按既有贝叶斯优化条目（2608.10867）的先例归入 es_single_turn，描述中已注明非 ES。"
+      ],
+      "found_by_query": "all:\"gradient-free\" AND all:\"language model\""
+    }
+  ],
+  "excluded": [
+    {
+      "id": "arXiv:2610.15047",
+      "title": "Multilevel Monte Carlo for Zeroth-Order Stochastic Bilevel Optimization with Inexact Lower Level Solves",
+      "reason_zh": "成像中变分正则化参数的双层学习，不涉及语言模型参数。"
+    },
+    {
+      "id": "arXiv:2610.11620",
+      "title": "Where to Adapt Matters: Layer-Selective Fine-Tuning for Capability Retention",
+      "reason_zh": "前向代理只用于层排序，适配本身为常规参数高效微调（2026-10-12 已判）。"
+    },
+    {
+      "id": "arXiv:2506.24056",
+      "title": "Logit-Gap Steering: A Forward-Pass Diagnostic for Alignment Robustness",
+      "reason_zh": "提示后缀搜索，按 2026-10-12 提示词范围例外暂缓（v4 更新，已判）。"
+    },
+    {
+      "id": "arXiv:2503.06917",
+      "title": "Sample-Efficient Optimization over Generative Priors via Coarse Learnability",
+      "reason_zh": "生成先验下的解空间优化理论，非 LLM 参数优化（已判）。"
+    },
+    {
+      "id": "OpenReview:ECfSMcJMpb",
+      "title": "Dynamics Hessian Penalty for Disentangled Representation Learning",
+      "reason_zh": "扩散模型解耦表示正则，有限差分仅用于实现惩罚项。",
+      "found_by_query": "finite differences"
+    },
+    {
+      "id": "OpenReview:FlONn79ctX",
+      "title": "Optimal Stochastic Bilevel Optimization with First-Order Oracles",
+      "reason_zh": "一阶预言机下的双层优化理论。",
+      "found_by_query": "finite differences"
+    },
+    {
+      "id": "OpenReview:g36UdlaLQn",
+      "title": "Diverse Sampling in Diffusion Models with Divergence-Free Particle Guidance",
+      "reason_zh": "扩散模型采样多样性，无 LLM 参数优化。",
+      "found_by_query": "finite differences"
+    },
+    {
+      "id": "OpenReview:5zpTIz2Lly",
+      "title": "Discrete Score Matching Enables Causal Discovery from Count Data",
+      "reason_zh": "计数数据因果发现。",
+      "found_by_query": "finite differences"
+    },
+    {
+      "id": "OpenReview:P1DcvijjA3",
+      "title": "DynaMiCS: Fine-tuning LLMs with Performance Constraints using Dynamic Mixtures",
+      "reason_zh": "优化数据混合权重，模型仍用常规梯度微调，未见零阶或演化参数更新。",
+      "found_by_query": "finite differences"
+    },
+    {
+      "id": "OpenReview:ghJDbik365",
+      "title": "Caustic Spectroscopy: Identifiability and Acquisition Limits of Topological Event Timing",
+      "reason_zh": "光学焦散的可辨识性分析。",
+      "found_by_query": "finite differences"
+    },
+    {
+      "id": "OpenReview:MUjUSjeBIw",
+      "title": "Recursive Improvement of a Differentiable Scientific Software Ecosystem",
+      "reason_zh": "可微分科学软件生态，与无梯度优化相反。",
+      "found_by_query": "finite differences"
+    },
+    {
+      "id": "OpenReview:ZZhFWPoJ3z",
+      "title": "Confluence: WHEN DOES CONSERVED-FLOW ROUTING HELP? A COUPLING CONDITION FOR MIXTURE-OF-EXPERTS, WITH A LEGALITY GUARANTEE",
+      "reason_zh": "可微 MoE 路由。",
+      "found_by_query": "finite differences"
+    },
+    {
+      "id": "OpenReview:KjpPZFLyEV",
+      "title": "Perceptive Closure: Identifying Authorization-Resource Counterfactuals",
+      "reason_zh": "授权反事实的形式化分析。",
+      "found_by_query": "finite differences"
+    }
+  ],
+  "scope_decision_zh": "按现行范围规则收录四篇持久参数的无梯度或零阶工作；技能与提示词两项暂缓例外照常适用，本轮无候选触发。"
+}

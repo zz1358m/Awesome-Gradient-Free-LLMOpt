@@ -1,20 +1,20 @@
 {
-  "catalog_count": 242,
-  "original_entries_unchanged": 234,
-  "added_entries": 8,
-  "unique_normalized_titles": 242,
-  "bibliography_count": 243,
+  "catalog_count": 245,
+  "remote_base_catalog_count": 238,
+  "remote_entries_preserved_except_structzo_metadata": 237,
+  "added_entries": 7,
+  "updated_existing_entries": 1,
+  "unique_normalized_titles": 245,
+  "bibliography_count": 246,
   "bibliography_keys_unique": true,
-  "bibliography_note": "One existing ComPO row cites both original and extension entries.",
+  "bibliography_repairs_for_remote_entries": 3,
+  "bibliography_note": "One ComPO row has two bibliography entries, including its extension.",
   "bilingual_generation_check": "passed",
   "diff_whitespace_check": "passed",
   "window_status_counts": {
-    "confirmed_new": 1,
     "backfill": 5,
     "first_date_unverified": 2
   },
-  "duplicate_records_checked": 10,
-  "scope_exclusions": 3,
-  "new_entries_all_have_primary_urls_and_method_boundaries": true,
-  "catalog_sha256": "9fc9d07bca439b6b119a96ac86d686aca7f89c26101bfab34a088de0fb606006"
+  "confirmed_new_after_remote_deduplication": 0,
+  "catalog_sha256": "b886810af4bf04e2c0d41352910457b9b42d7a49b8d28ce07dc749c297efe8c6"
 }
