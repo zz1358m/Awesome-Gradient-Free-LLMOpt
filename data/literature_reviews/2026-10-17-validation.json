@@ -1,0 +1,20 @@
+{
+  "catalog_count": 242,
+  "original_entries_unchanged": 234,
+  "added_entries": 8,
+  "unique_normalized_titles": 242,
+  "bibliography_count": 243,
+  "bibliography_keys_unique": true,
+  "bibliography_note": "One existing ComPO row cites both original and extension entries.",
+  "bilingual_generation_check": "passed",
+  "diff_whitespace_check": "passed",
+  "window_status_counts": {
+    "confirmed_new": 1,
+    "backfill": 5,
+    "first_date_unverified": 2
+  },
+  "duplicate_records_checked": 10,
+  "scope_exclusions": 3,
+  "new_entries_all_have_primary_urls_and_method_boundaries": true,
+  "catalog_sha256": "9fc9d07bca439b6b119a96ac86d686aca7f89c26101bfab34a088de0fb606006"
+}
