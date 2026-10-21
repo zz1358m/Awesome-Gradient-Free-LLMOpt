@@ -145,7 +145,7 @@ def load_papers() -> list[dict[str, str]]:
             raise ValueError(f"Paper {index} is missing fields: {sorted(missing)}")
         if paper["category"] not in CATEGORY_BY_KEY:
             raise ValueError(f"Unknown category for {paper['title']}: {paper['category']}")
-        if not re.fullmatch(r"20\d{2}(?:-\d{2})?", paper["date"]):
+        if paper["date"] != "unknown" and not re.fullmatch(r"20\d{2}(?:-\d{2})?", paper["date"]):
             raise ValueError(f"Invalid date for {paper['title']}: {paper['date']}")
         if paper["title"] in titles:
             raise ValueError(f"Duplicate paper title: {paper['title']}")
@@ -170,7 +170,7 @@ def table_for(papers: list[dict[str, str]], language: str) -> str:
         ]
     for paper in papers:
         row = [
-            paper["date"],
+            ("Unverified" if language == "en" else "\u5f85\u6838\u5b9e") if paper["date"] == "unknown" else paper["date"],
             f"**{paper['title']}**",
             paper[f"description_{language}"],
             paper[f"resources_{language}"],

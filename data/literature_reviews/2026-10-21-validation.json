@@ -1,0 +1,22 @@
+{
+  "published_catalog_count": 251,
+  "main_working_catalog_count_unchanged": 252,
+  "new_papers": 6,
+  "version_updates": 1,
+  "unknown_first_public_dates": 2,
+  "unique_normalized_titles": 251,
+  "bibliography_entries": 252,
+  "bibliography_keys_unique": true,
+  "unknown_date_bilingual_rendering": "passed",
+  "catalog_generation_check": "passed",
+  "diff_whitespace_check": "passed",
+  "source_and_method_boundary_fields": "passed",
+  "original_working_file_fingerprints_unchanged": true,
+  "mainline_category_additions": 2,
+  "related_category_additions": 4,
+  "new_date_statuses": {
+    "confirmed_weekly_new": 1,
+    "backfill": 3,
+    "first_date_unverified": 2
+  }
+}

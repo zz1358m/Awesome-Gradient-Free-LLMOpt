@@ -1,0 +1,357 @@
+{
+  "date": "2026-10-21",
+  "window_start_utc": "2026-10-14T14:09:18.467Z",
+  "window_end_utc": "2026-10-21T14:09:18.467Z",
+  "timezone": "Asia/Shanghai",
+  "summary_zh": "本轮新增6篇：确定本周首发1篇、窗口外补收录3篇、首发日期待核实2篇；另更新异步ES论文的v2题名与实验版本。GitHub目录由245条增至251条。新增中2篇暂列零阶主分类、4篇列关联研究；未将带一阶准备流程或只训练路由头的方法计为纯语言骨干零阶微调。",
+  "workspace_note_zh": "主工作目录已有252条及未提交的目录、书目、生成器修改。本轮在独立工作区基于远端245条完成，不覆盖或提交这些既有修改；其中7篇待提交收录与激活扰动分类调整保留原样，因此本报告的GitHub计数与主工作目录计数分开。",
+  "limitations_zh": "仅以明确方法关键词发现候选，未扩展裸语言模型通用语料，也未抓取会议全量列表。OpenReview和IEEE部分页面要求网站验证；相应条目只依据原始研究页面的公开索引摘要、原文标识和DOI落点核实，缺失作者、日期或训练模块明确标为待核实。没有完成全部候选的全文阅读，所有实验结果均为作者声明，未独立复现。",
+  "published_catalog_before": 245,
+  "published_catalog_after": 251,
+  "main_working_catalog_count": 252,
+  "original_working_fingerprints": {
+    "README.md": "593695c8d764ba83c3ea65d55a5a6d3d3fbbeb5a3e4c4a1906a6d6a48332bcd0",
+    "README_zh.md": "b3eac1a2f413cfa079a5aa4d74b4dfd6ecda58fd75461a2d013a0fd02a3f24b1",
+    "data/papers.json": "fa1b593478a52ee91b47aa4a61a03648af5136045136fa3af152c6d1def0e0c6",
+    "papers.bib": "c597a2d1546259baa8881fa6826d1fdee65e77080508d1e4ad526ec8f166f088",
+    "scripts/generate_catalog.py": "57aad6922c1df1606fc76a589244eec05247161401da9f3d1237eb28a62c90e7",
+    "data/literature_reviews/2026-10-18-current-status.md": "aad8be9ad2dfe0f6783bacdf98a28c4056c943afbebd9fa363c02add13966029"
+  },
+  "existing_uncommitted_only_titles": [
+    "Reward-Aware Population Scaling of Evolutionary Strategies in LLM Fine-Tuning",
+    "Dominant-Layer ZO: A Single Layer Dominates Zeroth-Order Fine-Tuning of LLMs",
+    "Resisting Harmful Instructions through Training-Free Weight Editing",
+    "Noise-Aware Shrinkage for Differentially Private Zeroth-Order Fine-Tuning of Large Language Models",
+    "AR1-ZO: Topology-Aware Rank-1 Zeroth-Order Queries for High-Rank LoRA Fine-Tuning",
+    "PACZero: PAC-Private Fine-Tuning of Language Models via Sign Quantization",
+    "Zoop it! Efficient Zero-Order Optimization with Output Perturbation"
+  ],
+  "included": [
+    {
+      "title": "Training with ML-labeled Data via Stochastic First- and Zeroth-Order Optimization",
+      "authors": [
+        "Maria-Eleni Sfyraki",
+        "Jun-Kun Wang"
+      ],
+      "date": "2026-10",
+      "first_public": "2026-10-19T17:38:58Z",
+      "status": "confirmed_weekly_new",
+      "category": "related_hybrid",
+      "url": "https://arxiv.org/abs/2610.26790",
+      "sources": [
+        "https://arxiv.org/abs/2610.26790",
+        "https://arxiv.org/html/2610.26790v1#S3",
+        "https://arxiv.org/html/2610.26790v1#A4.SS1"
+      ],
+      "description_zh": "以随机零阶更新持久微调RoBERTa，并自适应利用真实标签与模型标签；目标模型的零阶阶段无需反传，但实验先以Adam训练独立标注模型，因此全流程列为相关混合方法。",
+      "description_en": "Persistently fine-tunes RoBERTa with stochastic ZO updates using true and model-generated labels. The target ZO stage avoids backpropagation, but experiments first train a separate labeler with Adam; classified as related hybrid training.",
+      "method": "随机函数值零阶估计与标签校正权重的在线调节。",
+      "backpropagation": "目标零阶阶段不依赖反传；独立标注模型以Adam预先训练；另有独立一阶算法。",
+      "persistent_parameters": "是，目标RoBERTa参数及预先训练的标注模型参数；具体目标参数子集待核实。",
+      "contribution": "利用带噪模型标签辅助少量真实标签训练。",
+      "relevance": "高，存在直接语言模型零阶微调，但准备阶段使用一阶训练。",
+      "uncertainties": [
+        "核读摘要、正文实验及附录D.1相关段落，未完整阅读全文。",
+        "代码、录用状态、精确参数子集与作者性能声明待核实或复现。"
+      ],
+      "query": "\"evolution strategies\" \"LLM\" October 2026",
+      "bibkey": "sfyraki2026mllabeled"
+    },
+    {
+      "title": "Where to Adapt Matters: Layer-Selective Fine-Tuning for Capability Retention",
+      "authors": [
+        "Zhiqiang Pang",
+        "Zihong Sun",
+        "Qi Xie",
+        "Jun Shu",
+        "Deyu Meng",
+        "Zongben Xu"
+      ],
+      "date": "2026-10",
+      "first_public": "2026-10-08T09:59:16Z",
+      "status": "backfill",
+      "category": "related_hybrid",
+      "url": "https://arxiv.org/abs/2610.11620",
+      "sources": [
+        "https://arxiv.org/abs/2610.11620"
+      ],
+      "description_zh": "先用纯前向的层输入输出余弦相似度选择敏感层，再持久训练这些层的LoRA适配器；无反传仅针对选择代理，不能视为全流程梯度无关。补收录：2026-10-08（UTC）；后续优化器细节待核实。",
+      "description_en": "Uses forward-only input/output cosine similarity to choose layers, then persistently trains their LoRA adapters. The selection proxy is backpropagation-free; the full training pipeline is not established as gradient-free. Backfill: 2026-10-08 UTC; optimizer details unverified.",
+      "method": "无梯度的层敏感度代理，结合后续参数适配。",
+      "backpropagation": "层选择代理无反传；Fisher分析涉及反传，后续LoRA训练依赖及具体优化器待正文核实。",
+      "persistent_parameters": "是，所选层的LoRA参数；基础权重冻结范围待核实。",
+      "contribution": "通过层选择兼顾目标任务适配与通用能力保留。",
+      "relevance": "中，纯前向选择与常规模型训练的关联方法。",
+      "uncertainties": [
+        "本轮仅核实原始摘要与首发历史。",
+        "完整训练路径、代码及录用状态待核实。"
+      ],
+      "query": "\"forward-only\" \"fine-tuning\" October 2026",
+      "bibkey": "pang2026wheretoadapt"
+    },
+    {
+      "title": "For-Value: Efficient Forward-Only Data Valuation for finetuning LLMs and VLMs",
+      "authors": [
+        "Wenlong Deng",
+        "Qi Zeng",
+        "Jiaming Zhang",
+        "Minghui Chen",
+        "Zixin Ding",
+        "Christos Thrampoulidis",
+        "Boying Gong",
+        "Xiaoxiao Li"
+      ],
+      "date": "2025-08",
+      "first_public": "2025-08-13T20:33:06Z",
+      "status": "backfill",
+      "category": "related_prompt_agent",
+      "url": "https://arxiv.org/abs/2508.10180",
+      "sources": [
+        "https://arxiv.org/abs/2508.10180",
+        "https://aclanthology.org/2026.acl-long.664/",
+        "https://vickizeng.com/"
+      ],
+      "description_zh": "以末层表征与预测误差的闭式关系，通过一次前向计算样本价值；估值阶段不更新模型持久参数且无需反传，属于数据分析关联研究。补收录：2025-08-13（UTC）；已核实ACL 2026论文集，旧题名不重复收录。",
+      "description_en": "Values samples from final-layer representations and prediction errors using a closed-form forward-only calculation. Valuation requires no backpropagation or persistent model update; related data analysis. Backfill: 2025-08-13 UTC; ACL 2026 proceedings verified; old titles treated as aliases.",
+      "method": "基于隐藏表征与预测误差对齐的闭式数据估值。",
+      "backpropagation": "估值无需反传；后续微调属于另行训练，不能把估值称为参数优化。",
+      "persistent_parameters": "估值阶段不更新持久模型参数，输出样本分数。",
+      "contribution": "用纯前向统计替代昂贵的数据影响估计。",
+      "relevance": "中，语言模型内部表征与训练数据分析；符合非智能体分析例外。",
+      "uncertainties": [
+        "OpenReview旧投稿及arXiv曾更改题名；按同一作品保留ACL和arXiv来源。",
+        "仅核实官方摘要及作者主页，具体实验流程待全文核实。"
+      ],
+      "query": "\"forward-only\" \"fine-tuning\" October 2026",
+      "bibkey": "deng2025forvalue"
+    },
+    {
+      "title": "TRINITY: An Evolved LLM Coordinator",
+      "authors": [
+        "Jinglue Xu",
+        "Qi Sun",
+        "Peter Schwendeman",
+        "Stefan Nielsen",
+        "Edoardo Cetin",
+        "Yujin Tang"
+      ],
+      "date": "2025-12",
+      "first_public": "2025-12-04T11:45:21Z",
+      "status": "backfill",
+      "category": "related_agent_training",
+      "url": "https://arxiv.org/abs/2512.04695",
+      "sources": [
+        "https://arxiv.org/abs/2512.04695",
+        "https://sakana.ai/trinity/"
+      ],
+      "description_zh": "使用可分离CMA-ES持久训练小型神经路由头，以协调多个固定语言模型；基础模型权重不改。补收录：2025-12-04（UTC）。技能仅泛指能力，核心不是技能库或技能优化；作者报告的路由头规模约10K至不足20K参数，具体配置待核实。",
+      "description_en": "Uses separable CMA-ES to persistently train a small neural routing head over fixed LMs. Backfill: 2025-12-04 UTC. Skills refer to capabilities rather than a skill-library mechanism. Sources describe roughly 10K to under 20K trainable parameters; exact configuration unverified.",
+      "method": "可分离CMA-ES优化神经协调器路由参数。",
+      "backpropagation": "所提路由头优化使用无导数进化；基础语言模型冻结。",
+      "persistent_parameters": "是，神经路由头；其余紧凑语言骨干的可训练范围待正文核实。",
+      "contribution": "以可训练神经协调器进行多轮角色及模型分配。",
+      "relevance": "中高，满足智能体须训练模型参数的条件；不冒充语言骨干参数微调。",
+      "uncertainties": [
+        "作者称发表于ICLR 2026，尚未核对官方会议论文集。",
+        "原始摘要与作者页的可训练规模表述不同，需按版本核实。",
+        "未完整阅读全文或独立复现实验。"
+      ],
+      "query": "\"derivative-free\" \"LLM\" October 2026",
+      "bibkey": "xu2025trinity"
+    },
+    {
+      "title": "Memory Efficient Fine-Tuning of LLMs via Forward-Only Hessian-Free Coordinate Descent",
+      "authors": [
+        "待核实（原始匿名投稿）"
+      ],
+      "date": "unknown",
+      "first_public": null,
+      "status": "first_date_unverified",
+      "category": "zo_baselines",
+      "url": "https://openreview.net/forum?id=jMzXLsHdnF",
+      "sources": [
+        "https://openreview.net/pdf?id=jMzXLsHdnF"
+      ],
+      "description_zh": "按层划分参数块，以零阶块坐标Newton式更新与压缩对角曲率信息持久更新所选层；原始匿名稿摘要支持纯前向方案，准备阶段细节待核实。作者、首发日期及录用状态待核实，不计确定的本周新增。",
+      "description_en": "Persistently updates selected layer blocks using ZO block-coordinate Newton-style steps and compressed diagonal curvature. The indexed anonymous original abstract describes a forward-only method; preparation details, authors, first public date and acceptance remain unverified.",
+      "method": "零阶块坐标下降、层选择及压缩曲率预条件。",
+      "backpropagation": "原始摘要描述纯前向更新；完整曲率初始化与必要准备阶段待核实。",
+      "persistent_parameters": "是，选中层的语言模型权重；其余层在相应步骤固定。",
+      "contribution": "减少逐层曲率存储与零阶微调开销。",
+      "relevance": "高，直接语言模型零阶参数更新。",
+      "uncertainties": [
+        "论坛及PDF直接访问遇网站验证，核实依据为公开索引中原始PDF的题名和摘要。",
+        "作者身份、首次公开日期、代码及正式录用状态均待核实；不采用二手站作者名单补写。"
+      ],
+      "query": "\"forward-only\" \"fine-tuning\" October 2026",
+      "bibkey": "anonymousundatedhessiancoordinate"
+    },
+    {
+      "title": "Efficient Federated Fine-Tuning via Zeroth-Order Optimization for Resource-Constrained Edge Devices",
+      "authors": [
+        "待核实"
+      ],
+      "date": "unknown",
+      "first_public": null,
+      "status": "first_date_unverified",
+      "category": "zo_systems",
+      "url": "https://doi.org/10.1109/CICN67655.2025.11368000",
+      "sources": [
+        "https://doi.org/10.1109/CICN67655.2025.11368000",
+        "https://ieeexplore.ieee.org/document/11368000/"
+      ],
+      "description_zh": "讨论资源受限设备上以低秩零阶扰动进行联邦语言模型参数微调；目标更新为纯前向，服务器聚合及准备阶段是否反传待核实。原始IEEE条目存在，作者与首发日期待核实；数据库收录日期不计首次公开。",
+      "description_en": "Studies forward-only low-rank ZO federated LM parameter fine-tuning on constrained devices. Server aggregation and preparation backpropagation remain unverified. Original IEEE record exists; authors and first public date unknown. Indexing date is not treated as first publication.",
+      "method": "低秩零阶扰动与设备端纯前向联邦微调。",
+      "backpropagation": "公开原始条目摘要描述目标更新无反传；服务器及全部准备路径待核实。",
+      "persistent_parameters": "是，联邦语言模型微调参数；具体模块、冻结范围与服务器状态待核实。",
+      "contribution": "将低秩纯前向参数优化用于边缘设备联邦适配。",
+      "relevance": "高，直接语言模型参数零阶适配的系统研究。",
+      "uncertainties": [
+        "出版商页面需要JavaScript验证，仅核实可检索的原始条目摘要与DOI落点。",
+        "作者、首次公开日期、会议元数据及代码待核实；未完整阅读正文。"
+      ],
+      "query": "\"forward-only\" \"fine-tuning\" October 2026",
+      "bibkey": "undatedfederatededgedomain"
+    }
+  ],
+  "updated_existing": [
+    {
+      "title": "Asynchrony Is Nearly Free for Evolution Strategies on Long-Horizon LLM Agentic Tasks",
+      "authors": [
+        "William Hoy",
+        "Jingxuan Fan",
+        "Nurcin Celik",
+        "Xu Pan"
+      ],
+      "first_public": "2026-10-03T01:18:02Z",
+      "revision": "2026-10-14T16:48:33Z",
+      "category": "es_multi_turn",
+      "sources": [
+        "https://arxiv.org/abs/2610.04196",
+        "https://arxiv.org/html/2610.04196v2"
+      ],
+      "description_zh": "v2以Qwen3-4B-Instruct-2507在WebShop上研究有界延迟异步全参数高斯ES，参数更新无需反传；v1的Qwen2.5及终端任务记录另存版本档案。首发2026-10-03，10月14日改题与修订不计新论文；每条件训练次数及真实耗时收益仍需谨慎核实。",
+      "description_en": "Version 2 studies bounded-staleness asynchronous full-parameter Gaussian ES on WebShop with Qwen3-4B-Instruct-2507, without backpropagation in ES updates. Version 1 terminal-task details are archived. First public 2026-10-03; the October 14 title/experiment revision is not a new paper.",
+      "method": "有界延迟全参数高斯ES；持续更新语言模型策略权重，无反向传播。",
+      "persistent_parameters": "是，Qwen3-4B-Instruct-2507全参数；GRPO是独立一阶比较对象。",
+      "contribution": "v2改为WebShop上的过期反馈比例及延迟压力实验；不沿用v1终端任务结果描述。",
+      "uncertainties": [
+        "每个条件的单次训练结果不构成多次训练复现。",
+        "未独立验证真实部署吞吐收益；代码与v2逐项一致性待核实。"
+      ]
+    }
+  ],
+  "existing_duplicates": [
+    "Evolution Strategies at Scale: LLM Fine-Tuning Beyond Reinforcement Learning",
+    "SubZero+ (arXiv:2608.15665)",
+    "ComPO extension (arXiv:2609.19144)",
+    "Differentially Private Zeroth-Order Methods for Scalable Large Language Model Finetuning",
+    "Enhancing Zeroth-order Fine-tuning for Language Models with Low-rank Structures",
+    "High-Throughput and Memory-Efficient Zeroth-Order Fine-tuning LLMs",
+    "LLMs as Representation Generators for Gradient-Free Scientific Optimization: A Case Study in Battery Fast Charging",
+    "A coarse-to-fine dynamic layer pruning framework for parameter-efficient fine-tuning",
+    "Dust: Pretraining Transformers Without Backpropagation",
+    "Agentic ESOpt (arXiv:2608.17310)"
+  ],
+  "not_added": [
+    {
+      "title": "FwdLLM+: Accelerating Forward-only FedLLM with Low-rank Perturbations",
+      "url": "https://doi.org/10.1109/TMC.2026.3672496",
+      "decision": "原始出版商条目未成功核实，本轮仅发现二手摘要；保留候选记录，不据二手站直接收录。",
+      "pending": "需核实原始论文或作者研究页面、作者及首发日期。",
+      "query": "\"forward-only\" \"fine-tuning\" October 2026"
+    },
+    {
+      "title": "SecP-Tuning: Efficient Privacy-Preserving Prompt Tuning for Large Language Models via MPC",
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/7f2e5d16c2c5ac161ce7aa44af35c0fe-Abstract-Conference.html",
+      "decision": "按用户范围暂不收录：核心研究对象是提示词调优。",
+      "query": "\"forward-only\" \"fine-tuning\" October 2026"
+    },
+    {
+      "title": "PotentialEP: Backprop-Free Training of CIFAR-Scale Generative Models via Equilibrium Propagation",
+      "url": "https://arxiv.org/abs/2610.14409",
+      "decision": "本轮不收录：核心是图像生成及物理网络训练，未确认语言模型参数优化或内部适配关联。",
+      "query": "site:arxiv.org/abs/2610 \"backpropagation-free\""
+    },
+    {
+      "title": "Mono-Forward: Backpropagation-Free Algorithm for Efficient Neural Network Training Harnessing Local Errors",
+      "url": "https://arxiv.org/abs/2501.09238",
+      "decision": "本轮不收录：摘要实验为MLP/CNN图像任务，未确认语言模型研究关联。",
+      "query": "site:arxiv.org/abs/2610 \"backpropagation-free\""
+    },
+    {
+      "title": "Local learning for stable backpropagation-free neural network training towards physical learning",
+      "url": "https://arxiv.org/abs/2603.24790",
+      "decision": "本轮不收录：核心为物理网络局部学习，未确认语言模型实验或参数适配关联。",
+      "query": "site:arxiv.org/abs/2610 \"backpropagation-free\""
+    },
+    {
+      "title": "Backpropagation-free Training of Deep Physical Neural Networks",
+      "url": "https://arxiv.org/abs/2304.11042",
+      "decision": "本轮不收录：核心为物理网络的元音和图像分类，未确认语言模型研究关联。",
+      "query": "site:arxiv.org/abs/2610 \"backpropagation-free\""
+    },
+    {
+      "title": "Introducing the Fastino Training API for Supervised Fine-Tuning and Reinforcement Learning",
+      "url": "https://fastino.ai/blog/fastino-training-api",
+      "decision": "本轮不收录：产品接口发布，不是梯度无关研究；提供前向评估接口不等于训练不依赖反传。",
+      "query": "\"forward-only\" \"fine-tuning\" October 2026"
+    }
+  ],
+  "queries": [
+    "\"zeroth-order\" \"language model\" October 2026",
+    "\"gradient-free\" \"LLM\" October 2026",
+    "\"evolution strategies\" \"LLM\" October 2026",
+    "site:arxiv.org/abs/2610 \"backpropagation-free\"",
+    "site:arxiv.org/abs/2610 \"zeroth-order\" \"language\"",
+    "site:openreview.net \"ICLR 2027\" \"zeroth-order\" \"fine-tuning\"",
+    "\"derivative-free\" \"LLM\" October 2026",
+    "\"forward-only\" \"fine-tuning\" October 2026",
+    "site:arxiv.org/abs/2610 \"zeroth-order\" \"October 20\"",
+    "site:arxiv.org/abs/2610 \"evolution strategies\" \"October\"",
+    "site:openreview.net/forum \"ICLR 2027\" \"MeZO\""
+  ],
+  "category_counts": {
+    "es_pretraining": 1,
+    "es_single_turn": 15,
+    "related_hybrid": 63,
+    "es_multi_turn": 2,
+    "es_understanding": 9,
+    "zo_pretraining": 3,
+    "zo_baselines": 17,
+    "related_closed_form": 28,
+    "zo_directions": 34,
+    "zo_systems": 25,
+    "zo_alignment": 1,
+    "zo_multi_turn": 1,
+    "zo_understanding": 10,
+    "related_prompt_agent": 28,
+    "related_agent_training": 6,
+    "related_inference": 7,
+    "related_forward_gradient": 1
+  },
+  "checks": {
+    "published_catalog_count": 251,
+    "main_working_catalog_count_unchanged": 252,
+    "new_papers": 6,
+    "version_updates": 1,
+    "unknown_first_public_dates": 2,
+    "unique_normalized_titles": 251,
+    "bibliography_entries": 252,
+    "bibliography_keys_unique": true,
+    "unknown_date_bilingual_rendering": "passed",
+    "catalog_generation_check": "passed",
+    "diff_whitespace_check": "passed",
+    "source_and_method_boundary_fields": "passed",
+    "original_working_file_fingerprints_unchanged": true,
+    "mainline_category_additions": 2,
+    "related_category_additions": 4,
+    "new_date_statuses": {
+      "confirmed_weekly_new": 1,
+      "backfill": 3,
+      "first_date_unverified": 2
+    }
+  },
+  "publication_worktree": "/tmp/llm-literature-20261021-root"
+}

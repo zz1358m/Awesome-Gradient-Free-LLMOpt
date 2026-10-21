@@ -1,0 +1,46 @@
+{
+  "before": {
+    "title": "Asynchronous Is Nearly Free for Evolution Strategies on Long-Horizon Agentic Tasks",
+    "category": "es_multi_turn",
+    "date": "2026-10",
+    "description_en": "Bounded-staleness asynchronous full-parameter Gaussian ES for long-horizon agents. Updates Qwen2.5-7B-Instruct weights using rewards without backpropagation in the proposed ES procedure. Backfill: first public 2026-10-03 UTC. Higher-lag experiments use controlled artificial staleness; large-scale wall-clock gains and venue status remain unverified.",
+    "description_zh": "在长时程智能体任务中，以有界延迟异步高斯ES通过奖励持久更新Qwen2.5-7B-Instruct全模型权重，所提ES更新无需反向传播。补收录：首次公开于2026-10-03（UTC）。较高延迟实验使用人为控制的过期更新；大规模实际耗时收益及会议状态待核实。",
+    "resources_en": "[paper](https://arxiv.org/abs/2610.04196) · [code](https://github.com/Bhoy1/async-es) · backfill · 2026-10-03 UTC",
+    "resources_zh": "[论文](https://arxiv.org/abs/2610.04196) · [代码](https://github.com/Bhoy1/async-es) · 补收录 · 2026-10-03（UTC）"
+  },
+  "after": {
+    "title": "Asynchrony Is Nearly Free for Evolution Strategies on Long-Horizon LLM Agentic Tasks",
+    "category": "es_multi_turn",
+    "date": "2026-10",
+    "description_en": "Version 2 studies bounded-staleness asynchronous full-parameter Gaussian ES on WebShop with Qwen3-4B-Instruct-2507, without backpropagation in ES updates. Version 1 terminal-task details are archived. First public 2026-10-03; the October 14 title/experiment revision is not a new paper.",
+    "description_zh": "v2以Qwen3-4B-Instruct-2507在WebShop上研究有界延迟异步全参数高斯ES，参数更新无需反传；v1的Qwen2.5及终端任务记录另存版本档案。首发2026-10-03，10月14日改题与修订不计新论文；每条件训练次数及真实耗时收益仍需谨慎核实。",
+    "resources_en": "[paper](https://arxiv.org/abs/2610.04196v2) / [v1 history](https://arxiv.org/abs/2610.04196v1) / [previously listed code](https://github.com/Bhoy1/async-es) / first public 2026-10-03 UTC; revised 2026-10-14, not a new paper",
+    "resources_zh": "[论文](https://arxiv.org/abs/2610.04196v2) / [v1历史](https://arxiv.org/abs/2610.04196v1) / [原条目代码](https://github.com/Bhoy1/async-es) / 首发2026-10-03 UTC；2026-10-14修订，不计新论文"
+  },
+  "primary_version_evidence": {
+    "title": "Asynchrony Is Nearly Free for Evolution Strategies on Long-Horizon LLM Agentic Tasks",
+    "authors": [
+      "William Hoy",
+      "Jingxuan Fan",
+      "Nurcin Celik",
+      "Xu Pan"
+    ],
+    "first_public": "2026-10-03T01:18:02Z",
+    "revision": "2026-10-14T16:48:33Z",
+    "category": "es_multi_turn",
+    "sources": [
+      "https://arxiv.org/abs/2610.04196",
+      "https://arxiv.org/html/2610.04196v2"
+    ],
+    "description_zh": "v2以Qwen3-4B-Instruct-2507在WebShop上研究有界延迟异步全参数高斯ES，参数更新无需反传；v1的Qwen2.5及终端任务记录另存版本档案。首发2026-10-03，10月14日改题与修订不计新论文；每条件训练次数及真实耗时收益仍需谨慎核实。",
+    "description_en": "Version 2 studies bounded-staleness asynchronous full-parameter Gaussian ES on WebShop with Qwen3-4B-Instruct-2507, without backpropagation in ES updates. Version 1 terminal-task details are archived. First public 2026-10-03; the October 14 title/experiment revision is not a new paper.",
+    "method": "有界延迟全参数高斯ES；持续更新语言模型策略权重，无反向传播。",
+    "persistent_parameters": "是，Qwen3-4B-Instruct-2507全参数；GRPO是独立一阶比较对象。",
+    "contribution": "v2改为WebShop上的过期反馈比例及延迟压力实验；不沿用v1终端任务结果描述。",
+    "uncertainties": [
+      "每个条件的单次训练结果不构成多次训练复现。",
+      "未独立验证真实部署吞吐收益；代码与v2逐项一致性待核实。"
+    ]
+  },
+  "first_public_unchanged": true
+}

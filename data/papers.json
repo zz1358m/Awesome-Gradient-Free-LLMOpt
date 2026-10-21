@@ -18,6 +18,24 @@
     "resources_zh": "[论文](https://arxiv.org/abs/2610.06993) · [代码](https://github.com/szs777/DART-ES-Code) · 2026-10 · [ICLR 2027 投稿](https://openreview.net/forum?id=dtVcF6LLYr)"
   },
   {
+    "title": "Where to Adapt Matters: Layer-Selective Fine-Tuning for Capability Retention",
+    "category": "related_hybrid",
+    "date": "2026-10",
+    "description_en": "Uses forward-only input/output cosine similarity to choose layers, then persistently trains their LoRA adapters. The selection proxy is backpropagation-free; the full training pipeline is not established as gradient-free. Backfill: 2026-10-08 UTC; optimizer details unverified.",
+    "description_zh": "先用纯前向的层输入输出余弦相似度选择敏感层，再持久训练这些层的LoRA适配器；无反传仅针对选择代理，不能视为全流程梯度无关。补收录：2026-10-08（UTC）；后续优化器细节待核实。",
+    "resources_en": "[paper](https://arxiv.org/abs/2610.11620) / backfill / 2026-10-08T09:59:16Z / code unverified",
+    "resources_zh": "[论文](https://arxiv.org/abs/2610.11620) / 补收录 / 2026-10-08T09:59:16Z / 代码待核实"
+  },
+  {
+    "title": "Training with ML-labeled Data via Stochastic First- and Zeroth-Order Optimization",
+    "category": "related_hybrid",
+    "date": "2026-10",
+    "description_en": "Persistently fine-tunes RoBERTa with stochastic ZO updates using true and model-generated labels. The target ZO stage avoids backpropagation, but experiments first train a separate labeler with Adam; classified as related hybrid training.",
+    "description_zh": "以随机零阶更新持久微调RoBERTa，并自适应利用真实标签与模型标签；目标模型的零阶阶段无需反传，但实验先以Adam训练独立标注模型，因此全流程列为相关混合方法。",
+    "resources_en": "[paper](https://arxiv.org/abs/2610.26790) / first public 2026-10-19 UTC / 2026-10-19T17:38:58Z / code unverified",
+    "resources_zh": "[论文](https://arxiv.org/abs/2610.26790) / 首发2026-10-19 UTC / 2026-10-19T17:38:58Z / 代码待核实"
+  },
+  {
     "title": "Hyper-ES: Effective Evolution Strategies for LLM Reasoning via Descent Direction Merging",
     "category": "related_hybrid",
     "date": "2026-08",
@@ -475,6 +493,15 @@
     "description_zh": "MeZO 引入原位参数扰动和随机种子重放，使纯前向监督微调达到与推理相当的内存占用。",
     "resources_en": "[paper](https://proceedings.neurips.cc/paper_files/paper/2023/hash/a627810151be4d13f907ac898ff7e948-Abstract-Conference.html) · [code](https://github.com/princeton-nlp/MeZO) · ![NeurIPS 2023](https://img.shields.io/badge/NeurIPS-2023-orange)",
     "resources_zh": "[论文](https://proceedings.neurips.cc/paper_files/paper/2023/hash/a627810151be4d13f907ac898ff7e948-Abstract-Conference.html) · [代码](https://github.com/princeton-nlp/MeZO) · ![NeurIPS 2023](https://img.shields.io/badge/NeurIPS-2023-orange)"
+  },
+  {
+    "title": "Memory Efficient Fine-Tuning of LLMs via Forward-Only Hessian-Free Coordinate Descent",
+    "category": "zo_baselines",
+    "date": "unknown",
+    "description_en": "Persistently updates selected layer blocks using ZO block-coordinate Newton-style steps and compressed diagonal curvature. The indexed anonymous original abstract describes a forward-only method; preparation details, authors, first public date and acceptance remain unverified.",
+    "description_zh": "按层划分参数块，以零阶块坐标Newton式更新与压缩对角曲率信息持久更新所选层；原始匿名稿摘要支持纯前向方案，准备阶段细节待核实。作者、首发日期及录用状态待核实，不计确定的本周新增。",
+    "resources_en": "[paper](https://openreview.net/forum?id=jMzXLsHdnF) / first public date unverified / unverified / code unverified",
+    "resources_zh": "[论文](https://openreview.net/forum?id=jMzXLsHdnF) / 首次公开日期待核实 / 待核实 / 代码待核实"
   },
   {
     "title": "ZoAQ: Adaptive Zeroth-Order Querying via Query-Reuse Coupling",
@@ -1926,6 +1953,15 @@
     "resources_zh": "[论文](https://openreview.net/forum?id=LAmTBYPHye) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
   },
   {
+    "title": "TRINITY: An Evolved LLM Coordinator",
+    "category": "related_agent_training",
+    "date": "2025-12",
+    "description_en": "Uses separable CMA-ES to persistently train a small neural routing head over fixed LMs. Backfill: 2025-12-04 UTC. Skills refer to capabilities rather than a skill-library mechanism. Sources describe roughly 10K to under 20K trainable parameters; exact configuration unverified.",
+    "description_zh": "使用可分离CMA-ES持久训练小型神经路由头，以协调多个固定语言模型；基础模型权重不改。补收录：2025-12-04（UTC）。技能仅泛指能力，核心不是技能库或技能优化；作者报告的路由头规模约10K至不足20K参数，具体配置待核实。",
+    "resources_en": "[paper](https://arxiv.org/abs/2512.04695) / backfill / 2025-12-04T11:45:21Z / code unverified",
+    "resources_zh": "[论文](https://arxiv.org/abs/2512.04695) / 补收录 / 2025-12-04T11:45:21Z / 代码待核实"
+  },
+  {
     "title": "Outcome-Ranked Proposal Tuning: Training LLMs to Transfer Experience Across Bayesian Optimization Tasks",
     "category": "related_hybrid",
     "date": "2026",
@@ -2115,6 +2151,15 @@
     "resources_zh": "[论文](https://openreview.net/forum?id=T8c8NM6FT4) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
   },
   {
+    "title": "For-Value: Efficient Forward-Only Data Valuation for finetuning LLMs and VLMs",
+    "category": "related_prompt_agent",
+    "date": "2025-08",
+    "description_en": "Values samples from final-layer representations and prediction errors using a closed-form forward-only calculation. Valuation requires no backpropagation or persistent model update; related data analysis. Backfill: 2025-08-13 UTC; ACL 2026 proceedings verified; old titles treated as aliases.",
+    "description_zh": "以末层表征与预测误差的闭式关系，通过一次前向计算样本价值；估值阶段不更新模型持久参数且无需反传，属于数据分析关联研究。补收录：2025-08-13（UTC）；已核实ACL 2026论文集，旧题名不重复收录。",
+    "resources_en": "[paper](https://arxiv.org/abs/2508.10180) / backfill / 2025-08-13T20:33:06Z / code unverified",
+    "resources_zh": "[论文](https://arxiv.org/abs/2508.10180) / 补收录 / 2025-08-13T20:33:06Z / 代码待核实"
+  },
+  {
     "title": "CISA: Retrofitting Dense Attention Models with Chunk-Indexed Sparse Attention",
     "category": "related_inference",
     "date": "2026",
@@ -2187,13 +2232,22 @@
     "resources_zh": "[论文](https://openreview.net/forum?id=XhdOPTxLyT) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
   },
   {
-    "title": "Asynchronous Is Nearly Free for Evolution Strategies on Long-Horizon Agentic Tasks",
+    "title": "Efficient Federated Fine-Tuning via Zeroth-Order Optimization for Resource-Constrained Edge Devices",
+    "category": "zo_systems",
+    "date": "unknown",
+    "description_en": "Studies forward-only low-rank ZO federated LM parameter fine-tuning on constrained devices. Server aggregation and preparation backpropagation remain unverified. Original IEEE record exists; authors and first public date unknown. Indexing date is not treated as first publication.",
+    "description_zh": "讨论资源受限设备上以低秩零阶扰动进行联邦语言模型参数微调；目标更新为纯前向，服务器聚合及准备阶段是否反传待核实。原始IEEE条目存在，作者与首发日期待核实；数据库收录日期不计首次公开。",
+    "resources_en": "[paper](https://doi.org/10.1109/CICN67655.2025.11368000) / first public date unverified / unverified / code unverified",
+    "resources_zh": "[论文](https://doi.org/10.1109/CICN67655.2025.11368000) / 首次公开日期待核实 / 待核实 / 代码待核实"
+  },
+  {
+    "title": "Asynchrony Is Nearly Free for Evolution Strategies on Long-Horizon LLM Agentic Tasks",
     "category": "es_multi_turn",
     "date": "2026-10",
-    "description_en": "Bounded-staleness asynchronous full-parameter Gaussian ES for long-horizon agents. Updates Qwen2.5-7B-Instruct weights using rewards without backpropagation in the proposed ES procedure. Backfill: first public 2026-10-03 UTC. Higher-lag experiments use controlled artificial staleness; large-scale wall-clock gains and venue status remain unverified.",
-    "description_zh": "在长时程智能体任务中，以有界延迟异步高斯ES通过奖励持久更新Qwen2.5-7B-Instruct全模型权重，所提ES更新无需反向传播。补收录：首次公开于2026-10-03（UTC）。较高延迟实验使用人为控制的过期更新；大规模实际耗时收益及会议状态待核实。",
-    "resources_en": "[paper](https://arxiv.org/abs/2610.04196) · [code](https://github.com/Bhoy1/async-es) · backfill · 2026-10-03 UTC",
-    "resources_zh": "[论文](https://arxiv.org/abs/2610.04196) · [代码](https://github.com/Bhoy1/async-es) · 补收录 · 2026-10-03（UTC）"
+    "description_en": "Version 2 studies bounded-staleness asynchronous full-parameter Gaussian ES on WebShop with Qwen3-4B-Instruct-2507, without backpropagation in ES updates. Version 1 terminal-task details are archived. First public 2026-10-03; the October 14 title/experiment revision is not a new paper.",
+    "description_zh": "v2以Qwen3-4B-Instruct-2507在WebShop上研究有界延迟异步全参数高斯ES，参数更新无需反传；v1的Qwen2.5及终端任务记录另存版本档案。首发2026-10-03，10月14日改题与修订不计新论文；每条件训练次数及真实耗时收益仍需谨慎核实。",
+    "resources_en": "[paper](https://arxiv.org/abs/2610.04196v2) / [v1 history](https://arxiv.org/abs/2610.04196v1) / [previously listed code](https://github.com/Bhoy1/async-es) / first public 2026-10-03 UTC; revised 2026-10-14, not a new paper",
+    "resources_zh": "[论文](https://arxiv.org/abs/2610.04196v2) / [v1历史](https://arxiv.org/abs/2610.04196v1) / [原条目代码](https://github.com/Bhoy1/async-es) / 首发2026-10-03 UTC；2026-10-14修订，不计新论文"
   },
   {
     "title": "FZOO: Fast Zeroth-Order Optimizer for Fine-Tuning Large Language Models towards Adam-Scale Speed",

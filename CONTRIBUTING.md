@@ -73,3 +73,7 @@ Use the exact category keys from `data/papers.json`; the labels above describe w
 Use the existing JSON records as the format reference. Keep both descriptions factual and to one sentence, and preserve Markdown links in the two `resources_*` fields.
 
 If an implementation cannot be verified, write `code not located`. Do not copy abstracts verbatim.
+
+### Unknown publication dates
+
+When first-publication year/month is unverified, use date=unknown and state the missing facts in both resource strings and the review record. The generator renders this as Unverified / 待核实; never substitute indexing dates or guessed conference submission years.
