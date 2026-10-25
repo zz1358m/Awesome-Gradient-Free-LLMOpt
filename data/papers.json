@@ -194,8 +194,8 @@
     "date": "2026",
     "description_en": "ESRL samples trajectories from a population of locally perturbed policies and aggregates them into label-free group-relative signals for continual student updates.",
     "description_zh": "用局部参数扰动策略群体生成轨迹，并以无标签组相对信号持续更新中央学生。",
-    "resources_en": "[paper](https://openreview.net/forum?id=LOwG4xUpfa) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
-    "resources_zh": "[论文](https://openreview.net/forum?id=LOwG4xUpfa) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
+    "resources_en": "[paper](https://openreview.net/forum?id=LOwG4xUpfa) · [arXiv](https://arxiv.org/abs/2610.24137) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
+    "resources_zh": "[论文](https://openreview.net/forum?id=LOwG4xUpfa) · [arXiv](https://arxiv.org/abs/2610.24137) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
   },
   {
     "title": "Understanding Evolution Strategies for LLM Reasoning: Broader Reasoning Coverage than GRPO",
@@ -394,6 +394,15 @@
     "description_zh": "利用损失反馈与自适应阈值贪心保留有效低秩子空间方向，实现仅前向的 LLM 微调。",
     "resources_en": "[paper](https://proceedings.mlr.press/v306/fang26k.html) · code not located · ![ICML 2026](https://img.shields.io/badge/ICML-2026-orange)",
     "resources_zh": "[论文](https://proceedings.mlr.press/v306/fang26k.html) · 未找到代码 · ![ICML 2026](https://img.shields.io/badge/ICML-2026-orange)"
+  },
+  {
+    "title": "Delta N-gram: Forward-Only Continual Writing into a Language Model's Native N-gram Memory",
+    "category": "related_closed_form",
+    "date": "2026-10",
+    "description_en": "Writes new evidence into a sparse, removable patch over a language model's native hashed N-gram table using forward passes only: a small writer trained offline with the pretraining objective emits gated targets that a block-averaged delta rule mixes into the addressed rows; the persistent state is a memory patch rather than ES/ZO parameter optimization, and the writer itself is trained with gradients.",
+    "description_zh": "只用前向传播把新证据写入语言模型原生哈希 N-gram 表上可清除的稀疏补丁：离线以预训练目标训练的小型写入器给出带门控的目标，再由分块平均的 delta 规则混入对应行；持久状态是记忆补丁而非 ES/ZO 参数优化，写入器本身用梯度训练。",
+    "resources_en": "[paper](https://arxiv.org/abs/2610.31125) · [code](https://github.com/af-74413592/delta-ngram) · 2026-10",
+    "resources_zh": "[论文](https://arxiv.org/abs/2610.31125) · [代码](https://github.com/af-74413592/delta-ngram) · 2026-10"
   },
   {
     "title": "Understanding LLM Quantization through Activation-Guided Compensation and Orthogonal Residuals",
@@ -1116,6 +1125,15 @@
     "resources_zh": "[论文](https://arxiv.org/abs/2608.09292) · [代码](https://github.com/hidk1911/ZOForLLMAgents) · 2026-08 · [ICLR 2027 投稿](https://openreview.net/forum?id=qqOjD3pcxL)"
   },
   {
+    "title": "Lower Bounds for Smooth Nonconvex Zeroth-Order Optimization: The Price of Determinism under Low Curvature Trace",
+    "category": "zo_understanding",
+    "date": "2026-10",
+    "description_en": "Proves that under a low-curvature-trace (effective-rank) condition the Gaussian two-point method used in ZO fine-tuning, with rejection of loss-increasing steps, attains the optimal query cost among randomized methods, whereas every deterministic method pays an extra factor that grows roughly linearly with dimension; a theory paper motivated by ZO language-model fine-tuning.",
+    "description_zh": "证明在低曲率迹（有效秩）条件下，ZO 微调所用的高斯两点法（拒绝使损失上升的步）在随机化方法中查询代价最优，而任何确定性方法都要多付出一个大致随维度线性增长的因子；属于以零阶语言模型微调为动机的理论工作。",
+    "resources_en": "[paper](https://arxiv.org/abs/2610.27550) · [Lean formalization](https://github.com/Thefootofhappiness/zo-lower-bounds-lean) · 2026-10",
+    "resources_zh": "[论文](https://arxiv.org/abs/2610.27550) · [Lean 形式化](https://github.com/Thefootofhappiness/zo-lower-bounds-lean) · 2026-10"
+  },
+  {
     "title": "ZOIF: Zeroth-Order Influence Function Estimation for LLM Data Selection Using Only Forward Passes",
     "category": "zo_understanding",
     "date": "2026-10",
@@ -1373,8 +1391,8 @@
     "date": "2026",
     "description_en": "Each Transformer block trains a local proxy by distillation and backpropagates independently through that proxy to approximate global gradients with lower activation memory.",
     "description_zh": "每个 Transformer block 通过蒸馏训练局部 proxy，并在该 proxy 内独立反传以近似全局梯度、降低激活内存。",
-    "resources_en": "[paper](https://openreview.net/forum?id=bbhfFx9iqO) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
-    "resources_zh": "[论文](https://openreview.net/forum?id=bbhfFx9iqO) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
+    "resources_en": "[paper](https://openreview.net/forum?id=bbhfFx9iqO) · [arXiv](https://arxiv.org/abs/2610.23145) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
+    "resources_zh": "[论文](https://openreview.net/forum?id=bbhfFx9iqO) · [arXiv](https://arxiv.org/abs/2610.23145) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
   },
   {
     "title": "LoLoRA: Locally Fine-Tuned Low Rank Adapters",

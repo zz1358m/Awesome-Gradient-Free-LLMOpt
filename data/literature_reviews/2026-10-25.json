@@ -1,0 +1,115 @@
+{
+ "review_date": "2026-10-25",
+ "timezone": "Asia/Singapore",
+ "window_start_date": "2026-10-11",
+ "window_end_date": "2026-10-25",
+ "window_note_zh": "arXiv 按首次提交或最近更新日期在最近 14 天内筛选，截止本次执行；2026-10-19 的检索因 arXiv 限流未执行，本次放宽窗口补上该段。",
+ "repository": "https://github.com/zz1358m/Awesome-Gradient-Free-LLMOpt",
+ "deduplication_zh": "已核对 data/papers.json 及 data/literature_reviews/ 下全部 JSON 记录。arXiv 近 14 天共 13 个编号：2610.04196、2610.15336、2610.16451、2610.18504、2610.26790 已在目录中；2604.11399 已在 2026-10-15 记录中判过；2610.23145 与 2610.24137 是目录中两条 ICLR 2027 投稿条目（bbhfFx9iqO、LOwG4xUpfa）的署名 arXiv 版，标题与摘要内容一致，本次把 arXiv 链接补到原条目上，不新增条目；2610.24537 与 2026-10-11 ICLR 审计记录中的投稿同题，按既有范围例外不收；其余 4 个逐篇读摘要。",
+ "queries": {
+  "arxiv": [
+   "all:\"evolution strategies\" AND (all:LLM OR all:\"language model\")",
+   "all:\"zeroth-order\" AND all:\"fine-tuning\"",
+   "all:\"gradient-free\" AND all:\"language model\"",
+   "all:\"forward-only\" AND (all:LLM OR all:\"language model\")",
+   "all:MeZO"
+  ],
+  "openreview_note_zh": "ICLR 2027 的 18 个方法短语已于 2026-10-11/12/15 全部查过，投稿已截止，本次未重跑。"
+ },
+ "papers": [
+  {
+   "title": "Lower Bounds for Smooth Nonconvex Zeroth-Order Optimization: The Price of Determinism under Low Curvature Trace",
+   "authors": [
+    "Yuxing Peng",
+    "Zhiqing Tang",
+    "Weijia Jia"
+   ],
+   "first_posted": "2026-10-20T11:05:54+08:00",
+   "primary_url": "https://arxiv.org/abs/2610.27550",
+   "contribution_zh": "在低曲率迹（有效秩）条件下给出光滑非凸零阶优化的查询复杂度下界：随机化方法需要 Ω(ET) 次调用，高斯两点法在拒绝上升步时达到该界；确定性方法要多付出约随维度线性增长的因子。",
+   "method_zh": "零阶优化查询复杂度理论；不提出新的微调算法",
+   "relevance_zh": "中；解释零阶语言模型微调为何能扩展到高维的理论工作",
+   "decision": "included",
+   "category": "zo_understanding",
+   "concerns_zh": [
+    "仅依据 arXiv 原始摘要和 arXiv 元数据中的作者备注，本轮未阅读正文。",
+    "未确认正式会议录用。",
+    "摘要未提到语言模型实验，本条按理论工作归类。",
+    "作者备注给出 Lean 4 形式化仓库链接（GitHub 会重定向到另一账号下的同名仓库），未核对仓库内容。"
+   ],
+   "found_by_query": "all:\"zeroth-order\" AND all:\"fine-tuning\""
+  },
+  {
+   "title": "Delta N-gram: Forward-Only Continual Writing into a Language Model's Native N-gram Memory",
+   "authors": [
+    "Hao Wu"
+   ],
+   "first_posted": "2026-10-22T19:42:49+08:00",
+   "primary_url": "https://arxiv.org/abs/2610.31125",
+   "contribution_zh": "为语言模型原生哈希 N-gram 表提供纯前向的持续写入路径：预训练表不变，证据写入可清除的稀疏补丁；写入器离线以预训练目标训练。",
+   "method_zh": "使用时纯前向、分块平均 delta 规则的记忆写入；写入器训练依赖梯度，非 ES/ZO",
+   "relevance_zh": "中；不经端到端反传、持久安装记忆补丁的关联方法，比照 DeltaNet-PC 归入 related_closed_form",
+   "decision": "included",
+   "category": "related_closed_form",
+   "concerns_zh": [
+    "仅依据 arXiv 原始摘要和 arXiv 元数据中的作者备注，本轮未阅读正文。",
+    "未确认正式会议录用。",
+    "作者备注给出代码仓库链接，仓库可访问，未核对内容。",
+    "写入器参数规模、训练细节和补丁持久范围需正文核实。",
+    "分类为边界判断，待人工复核。"
+   ],
+   "found_by_query": "all:\"forward-only\" AND (all:LLM OR all:\"language model\")"
+  }
+ ],
+ "metadata_updates": [
+  {
+   "title": "Local proxies for memory-efficient training",
+   "openreview": "https://openreview.net/forum?id=bbhfFx9iqO",
+   "arxiv": "https://arxiv.org/abs/2610.23145",
+   "arxiv_first_posted": "2026-10-16T16:41:25+08:00",
+   "authors": [
+    "Wu S. Zihan",
+    "Brian A. Yuan",
+    "Guillaume Bellec"
+   ],
+   "note_zh": "补 arXiv 链接；日期字段未改动，跨平台首次公开日期仍以既有记录为准。"
+  },
+  {
+   "title": "Continual Test-Time Learning with Evolution Strategies",
+   "openreview": "https://openreview.net/forum?id=LOwG4xUpfa",
+   "arxiv": "https://arxiv.org/abs/2610.24137",
+   "arxiv_first_posted": "2026-10-17T03:07:34+08:00",
+   "authors": [
+    "Guangya Hao",
+    "Yiting Duan",
+    "Longyan Tan",
+    "Yunbo Long",
+    "Hao Wu",
+    "Ge Zheng",
+    "Alexandra Brintrup",
+    "Zhuokai Zhao"
+   ],
+   "note_zh": "补 arXiv 链接；日期字段未改动，跨平台首次公开日期仍以既有记录为准。"
+  }
+ ],
+ "excluded": [
+  {
+   "id": "arXiv:2608.08060",
+   "title": "ZOMP: Zeroth-Order Multi-Modal Prompt Tuning for Vision-Language Models",
+   "reason_zh": "零阶多模态提示调优（v2 更新），核心对象是提示参数，按 2026-10-12 提示词范围例外暂缓。",
+   "found_by_query": "all:\"forward-only\" AND (all:LLM OR all:\"language model\")"
+  },
+  {
+   "id": "arXiv:2610.24816",
+   "title": "First-Order LoRA Training with Phone NPUs",
+   "reason_zh": "手机 NPU 上的一阶 LoRA 训练系统；纯前向训练只是对比基线。",
+   "found_by_query": "all:\"forward-only\" AND (all:LLM OR all:\"language model\")"
+  },
+  {
+   "id": "arXiv:2610.24537",
+   "title": "Write Once, Query Many: Evolving Compact Reusable Memory for Long Videos",
+   "reason_zh": "模型冻结，演化的是工作流与算子等外部工件，按 2026-10-12 范围例外暂缓（ICLR 投稿版已在 2026-10-11 记录中）。",
+   "found_by_query": "all:\"evolution strategies\" AND (all:LLM OR all:\"language model\")"
+  }
+ ]
+}
