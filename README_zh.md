@@ -104,9 +104,11 @@ ES 和双点 ZO 都可以看作平滑目标函数的估计方法，但现有大�
 
 | 日期 | 论文 | 核心贡献 | 资源 |
 |---|---|---|---|
-| 2026-10 | **Dust: Pretraining Transformers Without Backpropagation** | 通过逐词元激活扰动和损失反馈分配学习信号，训练语言模型权重，并对残差混合标量使用权重空间 ES；大种群比较需要更多计算，相对 EGGROLL 的效率优势包含外推估计。 | [研究文章](https://qlabs.sh/research/dust) · [代码](https://github.com/qlabs-eng/dust) · 2026-10（仅确认月份；首次公开日待核实） |
+| 2026-10 | **Dust: Pretraining Transformers Without Backpropagation** | 通过逐词元激活扰动和损失反馈分配学习信号，训练语言模型权重，并对残差混合标量使用权重空间 ES；大种群比较需要更多计算，相对 EGGROLL 的效率优势包含外推估计。 | [研究文章](https://qlabs.sh/research/dust) · [代码](https://github.com/qlabs-eng/dust) · 2026-10（仅确认月份；首次公开日待核实） / [Noise基准](https://github.com/qlabs-eng/noise) |
 | 2026 | **Scaling Zero-Order Pretraining Through Model Sharding** | 通过模型分片扩展零阶语言模型预训练。 | [论文](https://openreview.net/forum?id=YRoVIXOAky) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录 |
 | 2026 | **Perturbation Propagation: Scalable Local Learning without Weight Transport** | PerProp 以局部扰动斜率和随机探针反馈替代导数及权重传输，并包含 GPT 与 Mamba 预训练实验。 | [论文](https://openreview.net/forum?id=5T4cPwU3Nh) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录 |
+| 2025-07 | **Zeroth-order Kronecker optimization for pretraining language models** | KronZO以Kronecker结构压缩表示满秩搜索方向，并按准则选择有效更新，持久预训练GPT-2 Small权重；所提更新为零阶，梯度谱分析是否参与必要初始化待核实。补收录：报告首版2025-07、2025-09修订，机构页面列出2026期刊版。 | [论文](https://www.gerad.ca/en/papers/G-2025-44) / 2025-07 / 补收录；首发日待核实 / 代码待核实 |
+| 2025-02 | **Zeroth Order Optimization for Pretraining Language Models** | 研究函数值零阶方法预训练轻量语言模型，并分析维度灾难带来的困难；所研究的零阶更新无需反传且持续改变模型权重，一阶与二阶方法作为理论联系或比较。补收录：ICPRAM 2025，首发日及完整训练模块待核实。 | [论文](https://doi.org/10.5220/0013261100003905) / 2025-02 / 补收录；首发日待核实 / 代码待核实 |
 
 ### 单轮监督微调与适配
 
@@ -217,7 +219,7 @@ ES 和双点 ZO 都可以看作平滑目标函数的估计方法，但现有大�
 
 | 日期 | 论文 | 核心贡献 | 资源 |
 |---|---|---|---|
-| 2026-10 | **Lower Bounds for Smooth Nonconvex Zeroth-Order Optimization: The Price of Determinism under Low Curvature Trace** | 证明在低曲率迹（有效秩）条件下，ZO 微调所用的高斯两点法（拒绝使损失上升的步）在随机化方法中查询代价最优，而任何确定性方法都要多付出一个大致随维度线性增长的因子；属于以零阶语言模型微调为动机的理论工作。 | [论文](https://arxiv.org/abs/2610.27550) · [Lean 形式化](https://github.com/Thefootofhappiness/zo-lower-bounds-lean) · 2026-10 |
+| 2026-10 | **Lower Bounds for Smooth Nonconvex Zeroth-Order Optimization: The Price of Determinism under Low Curvature Trace** | 在低曲率迹假设下研究随机与确定性零阶算法的查询复杂度界；属于理论研究，不实际训练语言模型或更新持久模型参数，不能计作新的语言模型微调算法。理论假设、形式化证明与录用状态待核实。 | [论文](https://arxiv.org/abs/2610.27550) · [Lean 形式化](https://github.com/Thefootofhappiness/zo-lower-bounds-lean) · 2026-10 |
 | 2026-10 | **ZOIF: Zeroth-Order Influence Function Estimation for LLM Data Selection Using Only Forward Passes** | 仅用前向传播估计影响函数以做 LLM 数据选择：零阶估计代理梯度，将逆 Hessian 向量积改写为辅助零阶优化求解，再以有限差分得到逐样本分数；它是数据选择工具，不是微调优化器。 | [论文](https://arxiv.org/abs/2610.15336) · 未找到代码 · 2026-10 |
 | 2026 | **Zeroth-Order Optimization at the Edge of Stability** | 通过 Hessian 谱刻画两点零阶方法的均方线性稳定性，并以最大特征值和迹给出稳定性界；稳定性边缘的实验证据来自全批量视觉训练。 | [论文](https://proceedings.mlr.press/v306/song26ac.html) · 未找到代码 · ![ICML 2026](https://img.shields.io/badge/ICML-2026-orange) |
 | 2026 | **When Does Symmetry Reduce Effective Rank in Zeroth-Order Optimization?** | 用对称轨道余维界定 Hessian 有效秩，并推导 ZO-SGD 的有限样本维度无关查询界。 | [论文](https://openreview.net/forum?id=EplKUVCy5D) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录 |
@@ -317,7 +319,7 @@ ES 和双点 ZO 都可以看作平滑目标函数的估计方法，但现有大�
 
 | 日期 | 论文 | 核心贡献 | 资源 |
 |---|---|---|---|
-| 2026-10 | **Delta N-gram: Forward-Only Continual Writing into a Language Model's Native N-gram Memory** | 只用前向传播把新证据写入语言模型原生哈希 N-gram 表上可清除的稀疏补丁：离线以预训练目标训练的小型写入器给出带门控的目标，再由分块平均的 delta 规则混入对应行；持久状态是记忆补丁而非 ES/ZO 参数优化，写入器本身用梯度训练。 | [论文](https://arxiv.org/abs/2610.31125) · [代码](https://github.com/af-74413592/delta-ngram) · 2026-10 |
+| 2026-10 | **Delta N-gram: Forward-Only Continual Writing into a Language Model's Native N-gram Memory** | 使用时以纯前向delta规则更新可清除的持久N-gram记忆补丁；骨干、预训练表及写入器权重冻结。约4.1M参数写入器在离线阶段通过反传训练，因此不属于全流程无反传或严格函数值零阶优化。补丁是记忆状态，不把它混称为使用时训练骨干权重。 | [论文](https://arxiv.org/abs/2610.31125) · [代码](https://github.com/af-74413592/delta-ngram) · 2026-10 |
 | 2026-09 | **Understanding LLM Quantization through Activation-Guided Compensation and Orthogonal Residuals** | 分解权重与激活量化误差，给出补偿、随机旋转符号选择和通道缩放的无反传配置；部署量化表示与变换持久改变，原始浮点权重是否直接更新待核实。补收录：2026-09-18（UTC）。 | [论文](https://arxiv.org/abs/2609.21450) / 代码待核实 / 窗口外补收录 / 2026-09-18T08:00:27Z |
 | 2026-02 | **TurboBoA: Faster and Exact Attention-aware Quantization without Backpropagation** | 通过联合多通道量化、闭式误差补偿及坐标下降网格调整，无需反向传播地构造持久部署量化权重。补收录：2026-02-04（UTC）；属于量化关联研究，具体张量更新与作者所标ICLR 2026状态待核实。 | [论文](https://arxiv.org/abs/2602.04929) / 代码待核实 / 窗口外补收录 / 2026-02-04T09:38:50Z |
 | 2026 | **Forward-Only LoRA-MoE Allocation via Module Activation Geometry** | BLAde 根据前向 activation geometry 选择 LoRA-MoE 模块，并在固定 factor budget 下联合分配 expert 数、top-k routing 和其余 LoRA ranks。 | [论文](https://openreview.net/forum?id=HFXtAkQ0YH) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录 |

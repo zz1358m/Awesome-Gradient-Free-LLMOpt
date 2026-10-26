@@ -293,8 +293,8 @@
     "date": "2026-10",
     "description_en": "Trains transformer language-model weights using token-wise activation perturbations and loss-based credit assignment, with weight-space ES for residual mixing scalars; large-population comparisons require more compute and the claimed EGGROLL efficiency gains include extrapolation.",
     "description_zh": "通过逐词元激活扰动和损失反馈分配学习信号，训练语言模型权重，并对残差混合标量使用权重空间 ES；大种群比较需要更多计算，相对 EGGROLL 的效率优势包含外推估计。",
-    "resources_en": "[research article](https://qlabs.sh/research/dust) · [code](https://github.com/qlabs-eng/dust) · 2026-10 (month only; first-publication day unverified)",
-    "resources_zh": "[研究文章](https://qlabs.sh/research/dust) · [代码](https://github.com/qlabs-eng/dust) · 2026-10（仅确认月份；首次公开日待核实）"
+    "resources_en": "[research article](https://qlabs.sh/research/dust) · [code](https://github.com/qlabs-eng/dust) · 2026-10 (month only; first-publication day unverified) / [Noise benchmark](https://github.com/qlabs-eng/noise)",
+    "resources_zh": "[研究文章](https://qlabs.sh/research/dust) · [代码](https://github.com/qlabs-eng/dust) · 2026-10（仅确认月份；首次公开日待核实） / [Noise基准](https://github.com/qlabs-eng/noise)"
   },
   {
     "title": "Scaling Zero-Order Pretraining Through Model Sharding",
@@ -313,6 +313,24 @@
     "description_zh": "PerProp 以局部扰动斜率和随机探针反馈替代导数及权重传输，并包含 GPT 与 Mamba 预训练实验。",
     "resources_en": "[paper](https://openreview.net/forum?id=5T4cPwU3Nh) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
     "resources_zh": "[论文](https://openreview.net/forum?id=5T4cPwU3Nh) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
+  },
+  {
+    "title": "Zeroth-order Kronecker optimization for pretraining language models",
+    "category": "zo_pretraining",
+    "date": "2025-07",
+    "description_en": "KronZO compresses full-rank search directions with Kronecker structure and criterion-driven selection to persistently pretrain GPT-2 Small. Proposed updates are ZO; whether gradient-spectrum analysis enters required initialization remains unverified. Backfill: July 2025 report, revised September; institutional page lists a 2026 journal version.",
+    "description_zh": "KronZO以Kronecker结构压缩表示满秩搜索方向，并按准则选择有效更新，持久预训练GPT-2 Small权重；所提更新为零阶，梯度谱分析是否参与必要初始化待核实。补收录：报告首版2025-07、2025-09修订，机构页面列出2026期刊版。",
+    "resources_en": "[paper](https://www.gerad.ca/en/papers/G-2025-44) / 2025-07 / backfill; exact first-public day unverified / code unverified",
+    "resources_zh": "[论文](https://www.gerad.ca/en/papers/G-2025-44) / 2025-07 / 补收录；首发日待核实 / 代码待核实"
+  },
+  {
+    "title": "Zeroth Order Optimization for Pretraining Language Models",
+    "category": "zo_pretraining",
+    "date": "2025-02",
+    "description_en": "Studies function-value ZO pretraining of lightweight LMs and dimensionality-related limitations. ZO updates persistently change weights without backpropagation; first-/second-order methods supply analysis or comparisons. Backfill: ICPRAM 2025; exact first-public day and module coverage unverified.",
+    "description_zh": "研究函数值零阶方法预训练轻量语言模型，并分析维度灾难带来的困难；所研究的零阶更新无需反传且持续改变模型权重，一阶与二阶方法作为理论联系或比较。补收录：ICPRAM 2025，首发日及完整训练模块待核实。",
+    "resources_en": "[paper](https://doi.org/10.5220/0013261100003905) / 2025-02 / backfill; exact first-public day unverified / code unverified",
+    "resources_zh": "[论文](https://doi.org/10.5220/0013261100003905) / 2025-02 / 补收录；首发日待核实 / 代码待核实"
   },
   {
     "title": "Accelerating LLM Pretraining with Zeroth-Order Curvature on Idle Serving Compute",
@@ -399,8 +417,8 @@
     "title": "Delta N-gram: Forward-Only Continual Writing into a Language Model's Native N-gram Memory",
     "category": "related_closed_form",
     "date": "2026-10",
-    "description_en": "Writes new evidence into a sparse, removable patch over a language model's native hashed N-gram table using forward passes only: a small writer trained offline with the pretraining objective emits gated targets that a block-averaged delta rule mixes into the addressed rows; the persistent state is a memory patch rather than ES/ZO parameter optimization, and the writer itself is trained with gradients.",
-    "description_zh": "只用前向传播把新证据写入语言模型原生哈希 N-gram 表上可清除的稀疏补丁：离线以预训练目标训练的小型写入器给出带门控的目标，再由分块平均的 delta 规则混入对应行；持久状态是记忆补丁而非 ES/ZO 参数优化，写入器本身用梯度训练。",
+    "description_en": "At use time, a forward-only delta rule updates a removable persistent N-gram memory patch; backbone, pretrained table and writer weights stay frozen. The roughly 4.1M-parameter writer is trained offline with backpropagation. The patch is memory state, not use-time backbone-weight training or strict function-value ZO.",
+    "description_zh": "使用时以纯前向delta规则更新可清除的持久N-gram记忆补丁；骨干、预训练表及写入器权重冻结。约4.1M参数写入器在离线阶段通过反传训练，因此不属于全流程无反传或严格函数值零阶优化。补丁是记忆状态，不把它混称为使用时训练骨干权重。",
     "resources_en": "[paper](https://arxiv.org/abs/2610.31125) · [code](https://github.com/af-74413592/delta-ngram) · 2026-10",
     "resources_zh": "[论文](https://arxiv.org/abs/2610.31125) · [代码](https://github.com/af-74413592/delta-ngram) · 2026-10"
   },
@@ -1128,8 +1146,8 @@
     "title": "Lower Bounds for Smooth Nonconvex Zeroth-Order Optimization: The Price of Determinism under Low Curvature Trace",
     "category": "zo_understanding",
     "date": "2026-10",
-    "description_en": "Proves that under a low-curvature-trace (effective-rank) condition the Gaussian two-point method used in ZO fine-tuning, with rejection of loss-increasing steps, attains the optimal query cost among randomized methods, whereas every deterministic method pays an extra factor that grows roughly linearly with dimension; a theory paper motivated by ZO language-model fine-tuning.",
-    "description_zh": "证明在低曲率迹（有效秩）条件下，ZO 微调所用的高斯两点法（拒绝使损失上升的步）在随机化方法中查询代价最优，而任何确定性方法都要多付出一个大致随维度线性增长的因子；属于以零阶语言模型微调为动机的理论工作。",
+    "description_en": "Analyzes query-complexity bounds for randomized and deterministic ZO algorithms under low curvature trace. This is theory, with no actual LM training or persistent model-parameter updates; not a new LM fine-tuning algorithm. Assumptions, formal proofs and acceptance remain unverified.",
+    "description_zh": "在低曲率迹假设下研究随机与确定性零阶算法的查询复杂度界；属于理论研究，不实际训练语言模型或更新持久模型参数，不能计作新的语言模型微调算法。理论假设、形式化证明与录用状态待核实。",
     "resources_en": "[paper](https://arxiv.org/abs/2610.27550) · [Lean formalization](https://github.com/Thefootofhappiness/zo-lower-bounds-lean) · 2026-10",
     "resources_zh": "[论文](https://arxiv.org/abs/2610.27550) · [Lean 形式化](https://github.com/Thefootofhappiness/zo-lower-bounds-lean) · 2026-10"
   },

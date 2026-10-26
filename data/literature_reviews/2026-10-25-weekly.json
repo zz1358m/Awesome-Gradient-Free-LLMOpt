@@ -1,0 +1,243 @@
+{
+  "date": "2026-10-25",
+  "timezone": "Asia/Shanghai",
+  "window_start_utc": "2026-10-18T14:06:49.509Z",
+  "window_end_utc": "2026-10-25T14:06:49.509Z",
+  "base_commit": "d7720e20bc73ced7e4705165fc29785a9e72d5f1",
+  "summary_zh": "按2026-10-18至2026-10-25（Asia/Shanghai）的过去一周窗口复核，并与最新远端目录去重。本周未发现值得收录的新文献（指本轮去重后尚未收录的确定本周首发文献）；补收录2篇2025年语言模型零阶预训练研究。另补齐今天先前已收录2篇文献的书目，明确参数与反传边界，并将Noise基准作为Dust的关联资源加入。GitHub目录由253条增至255条。",
+  "limitations_zh": "只使用明确方法关键词与精确题名发现候选；未抓取通用语言模型语料或会议全量投稿。OpenReview检索索引混有无关链接，未把这些结果作为新收录依据。仅核实原始摘要、机构研究页面及Delta N-gram部分方法段落，未宣称阅读全文或独立复现实验。主工作目录252条及其既有未提交修改继续保留，本轮在独立工作区发布。",
+  "published_before": 253,
+  "published_after": 255,
+  "backfills_added": 2,
+  "confirmed_new_after_dedup": 0,
+  "included": [
+    {
+      "title": "Zeroth Order Optimization for Pretraining Language Models",
+      "authors": [
+        "Nathan Allaire",
+        "Mahsa Ghazvini Nejad",
+        "Sébastien Le Digabel",
+        "Vahid Partovi Nia"
+      ],
+      "date": "2025-02",
+      "publication_period": "2025-02（会议出版月份；跨平台首发日待核实）",
+      "first_public_exact": null,
+      "status": "backfill",
+      "category": "zo_pretraining",
+      "url": "https://doi.org/10.5220/0013261100003905",
+      "sources": [
+        "https://publications.polymtl.ca/64441/",
+        "https://www.scitepress.org/Papers/2025/132611/132611.pdf"
+      ],
+      "description_zh": "研究函数值零阶方法预训练轻量语言模型，并分析维度灾难带来的困难；所研究的零阶更新无需反传且持续改变模型权重，一阶与二阶方法作为理论联系或比较。补收录：ICPRAM 2025，首发日及完整训练模块待核实。",
+      "description_en": "Studies function-value ZO pretraining of lightweight LMs and dimensionality-related limitations. ZO updates persistently change weights without backpropagation; first-/second-order methods supply analysis or comparisons. Backfill: ICPRAM 2025; exact first-public day and module coverage unverified.",
+      "method": "函数值零阶参数估计；具体扰动分布、查询配置及更新公式待正文核实。",
+      "backpropagation": "所研究的零阶预训练更新无需反传；理论讨论与一阶基线不等于所提零阶方法依赖反传。",
+      "persistent_parameters": "是，轻量语言模型预训练权重；逐模块覆盖待核实。",
+      "contribution": "分析为何现成零阶方法在预训练阶段面临维度障碍，而非宣称全面优于反传。",
+      "relevance": "高，直接语言模型零阶参数预训练与局限分析。",
+      "uncertainties": [
+        "仅核实原始摘要、机构文献记录和出版信息，未完整核读论文。",
+        "会议出版月份为2025-02；更早公开版本与首发日、代码及完整模块覆盖待核实。"
+      ],
+      "query": "\"zeroth-order\" \"language model\" October 2026",
+      "bibkey": "allaire2025pretraining",
+      "bibtype": "inproceedings"
+    },
+    {
+      "title": "Zeroth-order Kronecker optimization for pretraining language models",
+      "authors": [
+        "Nathan Allaire",
+        "Sébastien Le Digabel",
+        "Dominique Orban",
+        "Vahid Partovi Nia"
+      ],
+      "date": "2025-07",
+      "publication_period": "2025-07（机构报告首版月份，日待核实）；2025-09修订；机构页面列2026-02期刊版",
+      "first_public_exact": null,
+      "status": "backfill",
+      "category": "zo_pretraining",
+      "url": "https://www.gerad.ca/en/papers/G-2025-44",
+      "sources": [
+        "https://www.gerad.ca/en/papers/G-2025-44",
+        "https://doi.org/10.1007/s42979-025-04704-9"
+      ],
+      "description_zh": "KronZO以Kronecker结构压缩表示满秩搜索方向，并按准则选择有效更新，持久预训练GPT-2 Small权重；所提更新为零阶，梯度谱分析是否参与必要初始化待核实。补收录：报告首版2025-07、2025-09修订，机构页面列出2026期刊版。",
+      "description_en": "KronZO compresses full-rank search directions with Kronecker structure and criterion-driven selection to persistently pretrain GPT-2 Small. Proposed updates are ZO; whether gradient-spectrum analysis enters required initialization remains unverified. Backfill: July 2025 report, revised September; institutional page lists a 2026 journal version.",
+      "method": "Kronecker结构的函数值零阶搜索及准则驱动方向选择。",
+      "backpropagation": "所提预训练更新使用零阶估计；梯度谱分析与必要初始化之间的边界待核实。",
+      "persistent_parameters": "是，GPT-2 Small预训练参数；精确模块集合待核实。",
+      "contribution": "压缩搜索状态并保留满秩方向；作者仍报告最终损失落后一阶方法，不概括为已替代反传。",
+      "relevance": "高，直接语言模型零阶预训练方法。",
+      "uncertainties": [
+        "机构原始研究页面已核实；期刊出版商直接访问失败，期刊状态按机构页面注明。",
+        "正文、代码、初始化是否额外用导数及作者损失比较待核实或复现。",
+        "与同团队ICPRAM论文的题名、作者及原文标识不同，分别保留。"
+      ],
+      "query": "\"Zeroth Order Optimization for Pretraining Language Models\" authors",
+      "bibkey": "allaire2025kronzo",
+      "bibtype": "techreport"
+    }
+  ],
+  "existing_entry_and_bibliography_repairs": [
+    {
+      "before": {
+        "title": "Lower Bounds for Smooth Nonconvex Zeroth-Order Optimization: The Price of Determinism under Low Curvature Trace",
+        "category": "zo_understanding",
+        "date": "2026-10",
+        "description_en": "Proves that under a low-curvature-trace (effective-rank) condition the Gaussian two-point method used in ZO fine-tuning, with rejection of loss-increasing steps, attains the optimal query cost among randomized methods, whereas every deterministic method pays an extra factor that grows roughly linearly with dimension; a theory paper motivated by ZO language-model fine-tuning.",
+        "description_zh": "证明在低曲率迹（有效秩）条件下，ZO 微调所用的高斯两点法（拒绝使损失上升的步）在随机化方法中查询代价最优，而任何确定性方法都要多付出一个大致随维度线性增长的因子；属于以零阶语言模型微调为动机的理论工作。",
+        "resources_en": "[paper](https://arxiv.org/abs/2610.27550) · [Lean formalization](https://github.com/Thefootofhappiness/zo-lower-bounds-lean) · 2026-10",
+        "resources_zh": "[论文](https://arxiv.org/abs/2610.27550) · [Lean 形式化](https://github.com/Thefootofhappiness/zo-lower-bounds-lean) · 2026-10"
+      },
+      "after": {
+        "title": "Lower Bounds for Smooth Nonconvex Zeroth-Order Optimization: The Price of Determinism under Low Curvature Trace",
+        "category": "zo_understanding",
+        "date": "2026-10",
+        "description_en": "Analyzes query-complexity bounds for randomized and deterministic ZO algorithms under low curvature trace. This is theory, with no actual LM training or persistent model-parameter updates; not a new LM fine-tuning algorithm. Assumptions, formal proofs and acceptance remain unverified.",
+        "description_zh": "在低曲率迹假设下研究随机与确定性零阶算法的查询复杂度界；属于理论研究，不实际训练语言模型或更新持久模型参数，不能计作新的语言模型微调算法。理论假设、形式化证明与录用状态待核实。",
+        "resources_en": "[paper](https://arxiv.org/abs/2610.27550) · [Lean formalization](https://github.com/Thefootofhappiness/zo-lower-bounds-lean) · 2026-10",
+        "resources_zh": "[论文](https://arxiv.org/abs/2610.27550) · [Lean 形式化](https://github.com/Thefootofhappiness/zo-lower-bounds-lean) · 2026-10"
+      },
+      "review": {
+        "title": "Lower Bounds for Smooth Nonconvex Zeroth-Order Optimization: The Price of Determinism under Low Curvature Trace",
+        "authors": [
+          "Yuxing Peng",
+          "Zhiqing Tang",
+          "Weijia Jia"
+        ],
+        "first_public": "2026-10-20T03:05:54Z",
+        "url": "https://arxiv.org/abs/2610.27550",
+        "id": "2610.27550",
+        "category": "zo_understanding",
+        "description_zh": "在低曲率迹假设下研究随机与确定性零阶算法的查询复杂度界；属于理论研究，不实际训练语言模型或更新持久模型参数，不能计作新的语言模型微调算法。理论假设、形式化证明与录用状态待核实。",
+        "description_en": "Analyzes query-complexity bounds for randomized and deterministic ZO algorithms under low curvature trace. This is theory, with no actual LM training or persistent model-parameter updates; not a new LM fine-tuning algorithm. Assumptions, formal proofs and acceptance remain unverified.",
+        "backpropagation": "函数值查询理论；未进行语言模型参数训练，无实际反传训练路径可统计。",
+        "persistent_parameters": "不更新实际语言模型参数；研究抽象优化算法。",
+        "bibkey": "peng2026lowerbounds"
+      }
+    },
+    {
+      "before": {
+        "title": "Delta N-gram: Forward-Only Continual Writing into a Language Model's Native N-gram Memory",
+        "category": "related_closed_form",
+        "date": "2026-10",
+        "description_en": "Writes new evidence into a sparse, removable patch over a language model's native hashed N-gram table using forward passes only: a small writer trained offline with the pretraining objective emits gated targets that a block-averaged delta rule mixes into the addressed rows; the persistent state is a memory patch rather than ES/ZO parameter optimization, and the writer itself is trained with gradients.",
+        "description_zh": "只用前向传播把新证据写入语言模型原生哈希 N-gram 表上可清除的稀疏补丁：离线以预训练目标训练的小型写入器给出带门控的目标，再由分块平均的 delta 规则混入对应行；持久状态是记忆补丁而非 ES/ZO 参数优化，写入器本身用梯度训练。",
+        "resources_en": "[paper](https://arxiv.org/abs/2610.31125) · [code](https://github.com/af-74413592/delta-ngram) · 2026-10",
+        "resources_zh": "[论文](https://arxiv.org/abs/2610.31125) · [代码](https://github.com/af-74413592/delta-ngram) · 2026-10"
+      },
+      "after": {
+        "title": "Delta N-gram: Forward-Only Continual Writing into a Language Model's Native N-gram Memory",
+        "category": "related_closed_form",
+        "date": "2026-10",
+        "description_en": "At use time, a forward-only delta rule updates a removable persistent N-gram memory patch; backbone, pretrained table and writer weights stay frozen. The roughly 4.1M-parameter writer is trained offline with backpropagation. The patch is memory state, not use-time backbone-weight training or strict function-value ZO.",
+        "description_zh": "使用时以纯前向delta规则更新可清除的持久N-gram记忆补丁；骨干、预训练表及写入器权重冻结。约4.1M参数写入器在离线阶段通过反传训练，因此不属于全流程无反传或严格函数值零阶优化。补丁是记忆状态，不把它混称为使用时训练骨干权重。",
+        "resources_en": "[paper](https://arxiv.org/abs/2610.31125) · [code](https://github.com/af-74413592/delta-ngram) · 2026-10",
+        "resources_zh": "[论文](https://arxiv.org/abs/2610.31125) · [代码](https://github.com/af-74413592/delta-ngram) · 2026-10"
+      },
+      "review": {
+        "title": "Delta N-gram: Forward-Only Continual Writing into a Language Model's Native N-gram Memory",
+        "authors": [
+          "Hao Wu"
+        ],
+        "first_public": "2026-10-22T11:42:49Z",
+        "url": "https://arxiv.org/abs/2610.31125",
+        "id": "2610.31125",
+        "category": "related_closed_form",
+        "description_zh": "使用时以纯前向delta规则更新可清除的持久N-gram记忆补丁；骨干、预训练表及写入器权重冻结。约4.1M参数写入器在离线阶段通过反传训练，因此不属于全流程无反传或严格函数值零阶优化。补丁是记忆状态，不把它混称为使用时训练骨干权重。",
+        "description_en": "At use time, a forward-only delta rule updates a removable persistent N-gram memory patch; backbone, pretrained table and writer weights stay frozen. The roughly 4.1M-parameter writer is trained offline with backpropagation. The patch is memory state, not use-time backbone-weight training or strict function-value ZO.",
+        "backpropagation": "离线写入器训练使用反传，原文3.4节明确；使用时写入无需反传。",
+        "persistent_parameters": "离线训练写入器参数；使用时只改变持久记忆补丁，骨干权重、原表及写入器参数固定。",
+        "method_source": "https://arxiv.org/html/2610.31125v1#S3.SS4",
+        "bibkey": "wu2026deltangram"
+      }
+    }
+  ],
+  "resource_update": {
+    "review": {
+      "title": "Noise: Speedrun for pretraining without backpropagation",
+      "url": "https://github.com/qlabs-eng/noise",
+      "decision": "作为Dust的关联基准资源，不新增论文条目，不把社交媒体纪录或README更新日期计为论文首发。",
+      "contribution": "官方基准固定语言模型、数据与评测协议，比较不使用反传的预训练规则；当前30M赛道与旧10M赛道分开。",
+      "boundary": "规则禁止反向及前向自动微分和手写反向链；规则声明不等于已独立审计每次提交。耗时或损失纪录未复现，跨赛道不直接比较。",
+      "query": "\"zero-order\" \"FineWeb-30M\""
+    },
+    "before": {
+      "title": "Dust: Pretraining Transformers Without Backpropagation",
+      "category": "zo_pretraining",
+      "date": "2026-10",
+      "description_en": "Trains transformer language-model weights using token-wise activation perturbations and loss-based credit assignment, with weight-space ES for residual mixing scalars; large-population comparisons require more compute and the claimed EGGROLL efficiency gains include extrapolation.",
+      "description_zh": "通过逐词元激活扰动和损失反馈分配学习信号，训练语言模型权重，并对残差混合标量使用权重空间 ES；大种群比较需要更多计算，相对 EGGROLL 的效率优势包含外推估计。",
+      "resources_en": "[research article](https://qlabs.sh/research/dust) · [code](https://github.com/qlabs-eng/dust) · 2026-10 (month only; first-publication day unverified)",
+      "resources_zh": "[研究文章](https://qlabs.sh/research/dust) · [代码](https://github.com/qlabs-eng/dust) · 2026-10（仅确认月份；首次公开日待核实）"
+    },
+    "after": {
+      "title": "Dust: Pretraining Transformers Without Backpropagation",
+      "category": "zo_pretraining",
+      "date": "2026-10",
+      "description_en": "Trains transformer language-model weights using token-wise activation perturbations and loss-based credit assignment, with weight-space ES for residual mixing scalars; large-population comparisons require more compute and the claimed EGGROLL efficiency gains include extrapolation.",
+      "description_zh": "通过逐词元激活扰动和损失反馈分配学习信号，训练语言模型权重，并对残差混合标量使用权重空间 ES；大种群比较需要更多计算，相对 EGGROLL 的效率优势包含外推估计。",
+      "resources_en": "[research article](https://qlabs.sh/research/dust) · [code](https://github.com/qlabs-eng/dust) · 2026-10 (month only; first-publication day unverified) / [Noise benchmark](https://github.com/qlabs-eng/noise)",
+      "resources_zh": "[研究文章](https://qlabs.sh/research/dust) · [代码](https://github.com/qlabs-eng/dust) · 2026-10（仅确认月份；首次公开日待核实） / [Noise基准](https://github.com/qlabs-eng/noise)"
+    }
+  },
+  "excluded": [
+    {
+      "title": "SecP-Tuning / SecFwT（同一arXiv版本历史）",
+      "url": "https://arxiv.org/abs/2506.15307",
+      "decision": "核心为提示词调优，按用户范围暂不收录；早期SecFwT题名不作为不同论文补录。"
+    }
+  ],
+  "duplicates": [
+    "AdaSub-ZO (2610.15225)",
+    "Where to Adapt Matters (2610.11620)",
+    "Dust",
+    "ZO-Act (2607.01125)",
+    "ESRL (2610.24137, OpenReview LOwG4xUpfa)",
+    "LlMBO (2610.18504)",
+    "Training with ML-labeled Data (2610.26790)",
+    "ZOIF (2610.15336)",
+    "SAZO (2610.12566)",
+    "Evolution Strategies at Scale",
+    "Battery Fast Charging (10.1002/advs.78012)"
+  ],
+  "queries": [
+    "\"zeroth-order\" \"language model\" October 2026",
+    "\"gradient-free\" \"LLM\" October 2026",
+    "\"evolution strategies\" \"LLM\" October 2026",
+    "site:arxiv.org/abs/2610 \"forward-only\" \"fine-tuning\"",
+    "site:arxiv.org/abs/2610 \"zeroth-order\" \"language\" \"Oct\"",
+    "site:openreview.net \"ICLR 2027\" \"zeroth-order\"",
+    "\"Continual Test-Time Learning with Evolution Strategies\"",
+    "\"zeroth-order\" \"language model\" \"October 23\" 2026",
+    "\"Zeroth Order Optimization for Pretraining Language Models\" authors",
+    "\"SecFwT\" \"prompt\"",
+    "\"zero-order\" \"FineWeb-30M\""
+  ],
+  "main_working_count": 252,
+  "main_working_fingerprints": {
+    "README.md": "593695c8d764ba83c3ea65d55a5a6d3d3fbbeb5a3e4c4a1906a6d6a48332bcd0",
+    "README_zh.md": "b3eac1a2f413cfa079a5aa4d74b4dfd6ecda58fd75461a2d013a0fd02a3f24b1",
+    "data/papers.json": "fa1b593478a52ee91b47aa4a61a03648af5136045136fa3af152c6d1def0e0c6",
+    "papers.bib": "c597a2d1546259baa8881fa6826d1fdee65e77080508d1e4ad526ec8f166f088",
+    "scripts/generate_catalog.py": "57aad6922c1df1606fc76a589244eec05247161401da9f3d1237eb28a62c90e7",
+    "data/literature_reviews/2026-10-18-current-status.md": "aad8be9ad2dfe0f6783bacdf98a28c4056c943afbebd9fa363c02add13966029"
+  },
+  "original_same_day_report_preserved": "2026-10-25.json",
+  "checks": {
+    "published_catalog": 255,
+    "new_backfill_papers": 2,
+    "confirmed_new_after_deduplication": 0,
+    "existing_method_boundaries_updated": 2,
+    "bibliography_repairs": 2,
+    "bibliography_total": 256,
+    "bibliography_keys_unique": true,
+    "catalog_unique_normalized_titles": 255,
+    "generated_bilingual_catalogs": "passed",
+    "diff_whitespace": "passed",
+    "main_working_files_unchanged": true,
+    "main_working_catalog_preserved": 252,
+    "previous_same_day_report_preserved": true
+  }
+}
