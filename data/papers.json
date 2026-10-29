@@ -552,10 +552,10 @@
     "title": "GRZO: Group-Relative Zeroth-Order Optimization for Large Language Model Fine-Tuning",
     "category": "zo_directions",
     "date": "2026-06",
-    "description_en": "Uses per-example pseudo-independent perturbations and group-relative loss normalization for persistent LM fine-tuning without backpropagation. Backfill: first public 2026-06-01 UTC. Authors report EMNLP 2026 Findings acceptance; proceedings confirmation pending.",
-    "description_zh": "通过样本级伪独立扰动与组内损失归一化，聚合零阶方向并持久微调语言模型参数，所提更新无需反向传播。补收录：首发2026-06-01（UTC）；作者称获EMNLP 2026 Findings录用，待官方论文集核实。",
-    "resources_en": "[paper](https://arxiv.org/abs/2606.02857) / code unverified / backfill / 2026-06-01T20:19:36Z",
-    "resources_zh": "[论文](https://arxiv.org/abs/2606.02857) / 代码待核实 / 窗口外补收录 / 2026-06-01T20:19:36Z"
+    "description_en": "Uses per-example pseudo-independent perturbations and group-relative loss normalization for persistent LM fine-tuning without backpropagation. Backfill: first public 2026-06-01 UTC. Official Findings of EMNLP 2026 publication verified; this publication update is not a new first release.",
+    "description_zh": "通过样本级伪独立扰动与组内损失归一化，聚合零阶方向并持久微调语言模型参数，所提更新无需反向传播。补收录：首发2026-06-01（UTC）；已核实EMNLP 2026 Findings官方出版，出版信息更新不计作首发新论文。",
+    "resources_en": "[paper](https://arxiv.org/abs/2606.02857) / code unverified / backfill / 2026-06-01T20:19:36Z / [official proceedings](https://aclanthology.org/2026.findings-emnlp.1711/)",
+    "resources_zh": "[论文](https://arxiv.org/abs/2606.02857) / 代码待核实 / 窗口外补收录 / 2026-06-01T20:19:36Z / [官方论文集](https://aclanthology.org/2026.findings-emnlp.1711/)"
   },
   {
     "title": "Zeroth-Order Riemannian Optimization on Fixed-Rank Manifolds for LLM Fine-Tuning",
@@ -2293,5 +2293,41 @@
     "description_zh": "结合批量单边零阶估计、Rademacher扰动及损失尺度归一化和步长调整，无需反向传播即可持久微调全模型参数或参数高效适配模块。补收录：首次公开于2025-06-10（UTC），已核实发表于ICLR 2026。作者报告的前向次数节省不等于普遍达到Adam实际耗时；准备阶段细节及版本差异待核实。",
     "resources_en": "[paper](https://arxiv.org/abs/2506.09034) · [ICLR 2026](https://proceedings.iclr.cc/paper_files/paper/2026/hash/b8d4c82b365d9361863000f8d1e86f1b-Abstract-Conference.html) · [code](https://github.com/DKmiyan/FZOO) · backfill · 2025-06-10 UTC",
     "resources_zh": "[论文](https://arxiv.org/abs/2506.09034) · [ICLR 2026](https://proceedings.iclr.cc/paper_files/paper/2026/hash/b8d4c82b365d9361863000f8d1e86f1b-Abstract-Conference.html) · [代码](https://github.com/DKmiyan/FZOO) · 补收录 · 2025-06-10（UTC）"
+  },
+  {
+    "title": "What Should We Freeze? Guarded Freezing: Connectivity Shapes the Fine-Tuning of Pretrained Models",
+    "category": "related_hybrid",
+    "date": "2026-09",
+    "description_en": "Uses a forward-only drift proxy to select frozen weights before fine-tuning remaining parameters, including Qwen2.5-1.5B. The selection score is backpropagation-free; whole-pipeline gradient freedom is not established. Backfill; optimizer and module coverage unverified.",
+    "description_zh": "以前向漂移代理选择冻结位置，再微调其余参数，实验包含Qwen2.5-1.5B。无反传仅针对选择评分，全流程不能视为梯度无关。窗口外补收录；具体优化器和模块覆盖待核实。",
+    "resources_en": "[paper](https://arxiv.org/abs/2609.32124) / code unverified / backfill / 2026-09-26T00:56:28Z",
+    "resources_zh": "[论文](https://arxiv.org/abs/2609.32124) / 代码待核实 / 补收录 / 2026-09-26T00:56:28Z"
+  },
+  {
+    "title": "Memory Savings at What Cost? A Study of Alternatives to Backpropagation",
+    "category": "related_prompt_agent",
+    "date": "2025-06",
+    "description_en": "Compares BP, checkpointed BP, forward-mode AD and ZO for LM/VLM training under memory and compute constraints. These are comparison branches, not one hybrid algorithm; forward-mode AD still computes derivatives. Backfill: first public 2025-06-27; ICML 2026 publication verified.",
+    "description_zh": "比较语言及视觉语言模型训练中反传、检查点反传、前向自动微分和零阶方法的内存与计算代价。各方法是比较分支，非同一混合算法；前向自动微分仍计算导数。补收录：首发2025-06-27；ICML 2026出版已核实。",
+    "resources_en": "[paper](https://arxiv.org/abs/2506.21833) / [source 1](https://proceedings.mlr.press/v306/panchal26a.html) / code unverified / backfill / 2025-06-27T00:47:03Z",
+    "resources_zh": "[论文](https://arxiv.org/abs/2506.21833) / [原始来源1](https://proceedings.mlr.press/v306/panchal26a.html) / 代码待核实 / 补收录 / 2025-06-27T00:47:03Z"
+  },
+  {
+    "title": "Command-V: Training-Free Representation Finetuning Transfer",
+    "category": "related_closed_form",
+    "date": "unknown",
+    "description_en": "Fits linear converters between donor and recipient activation spaces to transfer an existing representation adapter without backpropagation in the transfer stage. Profiling prompts are inputs, not the optimized object. ICLR 2026 backfill; first-public date, donor training and converter persistence unverified.",
+    "description_zh": "拟合供体与接收模型激活空间间的线性转换器，无需在迁移阶段反传即可迁移既有表征适配器。用于采集激活的提示输入并非优化对象。ICLR 2026历史补收录；首发日期、供体训练依赖与转换器持久性待核实。",
+    "resources_en": "[paper](https://proceedings.iclr.cc/paper_files/paper/2026/hash/b5dd2fb3542ebe92d448aaa93cf73d23-Abstract-Conference.html) / [source 1](https://openreview.net/forum?id=oRYzpI3cmJ) / code unverified / backfill / first-public date unverified; ICLR 2026",
+    "resources_zh": "[论文](https://proceedings.iclr.cc/paper_files/paper/2026/hash/b5dd2fb3542ebe92d448aaa93cf73d23-Abstract-Conference.html) / [原始来源1](https://openreview.net/forum?id=oRYzpI3cmJ) / 代码待核实 / 补收录 / 首发日期待核实；ICLR 2026"
+  },
+  {
+    "title": "Prototype-Based Test-Time Adaptation of Vision-Language Models",
+    "category": "related_inference",
+    "date": "2026-04",
+    "description_en": "Updates class prototypes with confidence-weighted moving averages and combines prototype and CLIP logits. The proposed test-time update avoids backpropagation and changes prototype state rather than encoder weights. Backfill; this is inference adaptation, not LM parameter training; venue unverified.",
+    "description_zh": "通过置信度加权移动平均更新类别原型，并结合原型与CLIP输出。所提测试时更新无需反传，改变原型状态而非编码器权重。窗口外补收录；属于推理适配，非语言模型参数训练；录用状态待核实。",
+    "resources_en": "[paper](https://arxiv.org/abs/2604.21360) / [source 1](https://arxiv.org/html/2604.21360v1) / [code, unreviewed](https://github.com/hzhxmu/PTA) / backfill / 2026-04-23T07:20:56Z",
+    "resources_zh": "[论文](https://arxiv.org/abs/2604.21360) / [原始来源1](https://arxiv.org/html/2604.21360v1) / [代码，未审查](https://github.com/hzhxmu/PTA) / 补收录 / 2026-04-23T07:20:56Z"
   }
 ]

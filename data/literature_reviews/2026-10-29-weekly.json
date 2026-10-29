@@ -1,0 +1,235 @@
+{
+  "date": "2026-10-29",
+  "timezone": "Asia/Shanghai",
+  "window_start_utc": "2026-10-22T14:14:24.023Z",
+  "window_end_utc": "2026-10-29T14:14:24.023Z",
+  "base_commit": "5787c3b466e75ad2dcffe823c004a388803cab7a",
+  "summary_zh": "本周未发现值得收录的新文献（指去重后确定本周首发的高相关文献）。补收录4篇关联研究，其中3篇窗口外首发日期已核实，1篇为首发日期待核实的ICLR 2026历史论文。核实GRZO官方出版并更新原条目。",
+  "published_before": 255,
+  "published_after": 259,
+  "confirmed_new_after_dedup": 0,
+  "related_backfills_added": 4,
+  "pure_gradient_free_parameter_optimization_added": 0,
+  "queries": [
+    "\"zeroth-order\" \"language model\" October 2026",
+    "\"gradient-free\" \"LLM\" October 2026",
+    "\"evolution strategies\" \"LLM\" October 2026",
+    "site:arxiv.org/abs/2610 \"forward-only\" \"fine-tuning\"",
+    "site:arxiv.org/abs/2610 \"zeroth-order\" \"language\"",
+    "site:arxiv.org/abs/2610 \"evolution strategies\" \"language\"",
+    "site:openreview.net \"ICLR 2027\" \"zeroth-order\"",
+    "\"backpropagation-free\" \"language\" October 2026"
+  ],
+  "search_configuration": "Method-qualified queries, recent search filters where supported, followed by exact-title and original-source checks. No generic LM corpus or full conference enumeration.",
+  "limitations_zh": "搜索索引不保证完整覆盖；OpenReview命中混有无关链接，未将其作为收录依据。仅核实原始摘要、版本历史、官方论文集及PTA部分方法，未宣称全文阅读或独立复现。索引更新、会议出版与新闻日期不等于首发日期。",
+  "included": [
+    {
+      "title": "What Should We Freeze? Guarded Freezing: Connectivity Shapes the Fine-Tuning of Pretrained Models",
+      "authors": [
+        "Leonel Aguilar"
+      ],
+      "date": "2026-09",
+      "first_public_exact": "2026-09-26T00:56:28Z",
+      "category": "related_hybrid",
+      "url": "https://arxiv.org/abs/2609.32124",
+      "key": "aguilar2026guarded",
+      "description_en": "Uses a forward-only drift proxy to select frozen weights before fine-tuning remaining parameters, including Qwen2.5-1.5B. The selection score is backpropagation-free; whole-pipeline gradient freedom is not established. Backfill; optimizer and module coverage unverified.",
+      "description_zh": "以前向漂移代理选择冻结位置，再微调其余参数，实验包含Qwen2.5-1.5B。无反传仅针对选择评分，全流程不能视为梯度无关。窗口外补收录；具体优化器和模块覆盖待核实。",
+      "method": "前向漂移代理评分与连接结构感知冻结；随后训练未冻结的模型权重。",
+      "backpropagation": "选择代理无需反传；后续微调优化器与反传依赖待正文核实，暂归混合关联研究。",
+      "persistent_parameters": "更新未冻结的语言模型权重；具体层与参数集合待核实。",
+      "relevance": "关联模型参数选择与保留能力；不计入已确认纯梯度无关语言模型参数优化主线。",
+      "uncertainties": [
+        "仅核实原始摘要与版本历史，未阅读全文。",
+        "具体训练优化器、可训练模块、代码及录用状态待核实。"
+      ],
+      "bib_type": "article",
+      "bib_extra": "journal={arXiv preprint arXiv:2609.32124}, year={2026}"
+    },
+    {
+      "title": "Memory Savings at What Cost? A Study of Alternatives to Backpropagation",
+      "authors": [
+        "Kunjal Panchal",
+        "Sunav Choudhary",
+        "Yuriy Brun",
+        "Hui Guan"
+      ],
+      "date": "2025-06",
+      "first_public_exact": "2025-06-27T00:47:03Z",
+      "category": "related_prompt_agent",
+      "url": "https://arxiv.org/abs/2506.21833",
+      "sources": [
+        "https://proceedings.mlr.press/v306/panchal26a.html"
+      ],
+      "key": "panchal2026memory",
+      "description_en": "Compares BP, checkpointed BP, forward-mode AD and ZO for LM/VLM training under memory and compute constraints. These are comparison branches, not one hybrid algorithm; forward-mode AD still computes derivatives. Backfill: first public 2025-06-27; ICML 2026 publication verified.",
+      "description_zh": "比较语言及视觉语言模型训练中反传、检查点反传、前向自动微分和零阶方法的内存与计算代价。各方法是比较分支，非同一混合算法；前向自动微分仍计算导数。补收录：首发2025-06-27；ICML 2026出版已核实。",
+      "method": "零阶优化与前向自动微分、普通及检查点反传的对照分析。",
+      "backpropagation": "反传基线依赖反传；前向自动微分计算解析导数；零阶分支依赖函数值，不能把全部实验概括为纯梯度无关。",
+      "persistent_parameters": "各训练分支持久更新模型参数；具体模型与模块配置待正文核实。",
+      "relevance": "直接研究语言模型零阶训练的资源权衡，列为其他黑箱方法与分析。",
+      "uncertainties": [
+        "已核实原始摘要、版本历史与官方论文集；未阅读全文或复现实验。",
+        "作者比较结论仅代表其测试设置；训练模块和代码实现待核实。"
+      ],
+      "bib_type": "inproceedings",
+      "bib_extra": "booktitle={Proceedings of the 43rd International Conference on Machine Learning}, volume={306}, pages={96111--96154}, year={2026}"
+    },
+    {
+      "title": "Command-V: Training-Free Representation Finetuning Transfer",
+      "authors": [
+        "Barry Wang",
+        "Avi Schwarzschild",
+        "Alexander Robey",
+        "Ali Payani",
+        "Charles Fleming",
+        "Mingjie Sun",
+        "Daphne Ippolito"
+      ],
+      "date": "unknown",
+      "first_public_exact": null,
+      "category": "related_closed_form",
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/b5dd2fb3542ebe92d448aaa93cf73d23-Abstract-Conference.html",
+      "sources": [
+        "https://openreview.net/forum?id=oRYzpI3cmJ"
+      ],
+      "key": "wang2026commandv",
+      "description_en": "Fits linear converters between donor and recipient activation spaces to transfer an existing representation adapter without backpropagation in the transfer stage. Profiling prompts are inputs, not the optimized object. ICLR 2026 backfill; first-public date, donor training and converter persistence unverified.",
+      "description_zh": "拟合供体与接收模型激活空间间的线性转换器，无需在迁移阶段反传即可迁移既有表征适配器。用于采集激活的提示输入并非优化对象。ICLR 2026历史补收录；首发日期、供体训练依赖与转换器持久性待核实。",
+      "method": "激活空间统计拟合与线性转换，迁移既有残差表征适配器。",
+      "backpropagation": "所提迁移阶段无需反传；供体适配器此前的训练依赖待核实。",
+      "persistent_parameters": "未确认接收模型骨干权重更新；使用既有供体适配器与拟合转换器，转换器是否作为持久模型模块保存待核实。",
+      "relevance": "非智能体的无反传表征迁移关联研究；不计作已确认纯梯度无关语言模型参数训练。",
+      "uncertainties": [
+        "已核实ICLR 2026官方摘要及作者；首发具体日期待核实，不计本周确定新增。",
+        "未阅读全文；供体训练、转换器拟合细节及保存方式待核实。",
+        "提示输入用于采集激活，实际对象为表征适配器迁移，按机制保留。"
+      ],
+      "bib_type": "inproceedings",
+      "bib_extra": "booktitle={International Conference on Learning Representations}, year={2026}"
+    },
+    {
+      "title": "Prototype-Based Test-Time Adaptation of Vision-Language Models",
+      "authors": [
+        "Zhaohong Huang",
+        "Yuxin Zhang",
+        "Wenjing Liu",
+        "Fei Chao",
+        "Rongrong Ji"
+      ],
+      "date": "2026-04",
+      "first_public_exact": "2026-04-23T07:20:56Z",
+      "category": "related_inference",
+      "url": "https://arxiv.org/abs/2604.21360",
+      "sources": [
+        "https://arxiv.org/html/2604.21360v1"
+      ],
+      "key": "huang2026prototype",
+      "description_en": "Updates class prototypes with confidence-weighted moving averages and combines prototype and CLIP logits. The proposed test-time update avoids backpropagation and changes prototype state rather than encoder weights. Backfill; this is inference adaptation, not LM parameter training; venue unverified.",
+      "description_zh": "通过置信度加权移动平均更新类别原型，并结合原型与CLIP输出。所提测试时更新无需反传，改变原型状态而非编码器权重。窗口外补收录；属于推理适配，非语言模型参数训练；录用状态待核实。",
+      "method": "类别置信度加权的指数移动平均原型更新与文本锚定。",
+      "backpropagation": "所提测试时原型更新无需反传；预训练CLIP的训练不属于所提更新阶段。",
+      "persistent_parameters": "不更新语言或视觉编码器权重；更新跨测试样本累积的类别原型统计状态，不计持久模型权重训练。",
+      "relevance": "非智能体的视觉语言模型无反传推理适配，放入无参数更新的推理时校准。",
+      "uncertainties": [
+        "核实原始摘要、版本历史及方法第3.2节，未阅读全文或复现实验。",
+        "代码链接由原文给出，代码内容未审查；会议录用未由正式论文集核实。"
+      ],
+      "code": "https://github.com/hzhxmu/PTA",
+      "bib_type": "article",
+      "bib_extra": "journal={arXiv preprint arXiv:2604.21360}, year={2026}"
+    }
+  ],
+  "checked_not_added": [
+    {
+      "title": "Nonlinear Direct Feedback Alignment for Scalable Backpropagation-Free Training",
+      "url": "https://arxiv.org/abs/2610.36718",
+      "first_public_exact": "2026-10-27T06:33:06Z",
+      "decision": "暂不收录",
+      "reason": "原始摘要仅展示视觉模型及CIFAR、SVHN、ImageNet实验，未取得语言模型关联证据；不能将无反传自动等同函数值零阶方法。"
+    },
+    {
+      "title": "ZOMP",
+      "url": "https://arxiv.org/abs/2608.08060",
+      "decision": "按用户范围不收录",
+      "reason": "提示优化核心；旧文献，不计本周新增。"
+    },
+    {
+      "title": "Dust / Noise benchmark",
+      "decision": "已有条目及关联资源",
+      "reason": "近期报道不代表论文首次公开，不新增重复条目。"
+    },
+    {
+      "title": "EvoMAS",
+      "decision": "暂不收录",
+      "reason": "检索命中角色及工作流演化，未取得持久模型参数训练的原始证据；保留检查记录，不进入目录。"
+    },
+    {
+      "title": "TokenDrop",
+      "url": "https://proceedings.mlr.press/v306/kim26bc.html",
+      "decision": "不收录",
+      "reason": "检索命中反传跳过策略，未取得零阶或梯度无关模型优化机制证据。"
+    },
+    {
+      "title": "Nothing Beyond Randomness is Required for Forward-Forward Learning",
+      "decision": "暂不收录",
+      "reason": "命中通用视觉网络研究；缺少可核实语言模型关联，不因无反传关键词扩大收录范围。"
+    }
+  ],
+  "publication_update": {
+    "title": "GRZO: Group-Relative Zeroth-Order Optimization for Large Language Model Fine-Tuning",
+    "source": "https://aclanthology.org/2026.findings-emnlp.1711/",
+    "before": {
+      "title": "GRZO: Group-Relative Zeroth-Order Optimization for Large Language Model Fine-Tuning",
+      "category": "zo_directions",
+      "date": "2026-06",
+      "description_en": "Uses per-example pseudo-independent perturbations and group-relative loss normalization for persistent LM fine-tuning without backpropagation. Backfill: first public 2026-06-01 UTC. Authors report EMNLP 2026 Findings acceptance; proceedings confirmation pending.",
+      "description_zh": "通过样本级伪独立扰动与组内损失归一化，聚合零阶方向并持久微调语言模型参数，所提更新无需反向传播。补收录：首发2026-06-01（UTC）；作者称获EMNLP 2026 Findings录用，待官方论文集核实。",
+      "resources_en": "[paper](https://arxiv.org/abs/2606.02857) / code unverified / backfill / 2026-06-01T20:19:36Z",
+      "resources_zh": "[论文](https://arxiv.org/abs/2606.02857) / 代码待核实 / 窗口外补收录 / 2026-06-01T20:19:36Z"
+    },
+    "after": {
+      "title": "GRZO: Group-Relative Zeroth-Order Optimization for Large Language Model Fine-Tuning",
+      "category": "zo_directions",
+      "date": "2026-06",
+      "description_en": "Uses per-example pseudo-independent perturbations and group-relative loss normalization for persistent LM fine-tuning without backpropagation. Backfill: first public 2026-06-01 UTC. Official Findings of EMNLP 2026 publication verified; this publication update is not a new first release.",
+      "description_zh": "通过样本级伪独立扰动与组内损失归一化，聚合零阶方向并持久微调语言模型参数，所提更新无需反向传播。补收录：首发2026-06-01（UTC）；已核实EMNLP 2026 Findings官方出版，出版信息更新不计作首发新论文。",
+      "resources_en": "[paper](https://arxiv.org/abs/2606.02857) / code unverified / backfill / 2026-06-01T20:19:36Z / [official proceedings](https://aclanthology.org/2026.findings-emnlp.1711/)",
+      "resources_zh": "[论文](https://arxiv.org/abs/2606.02857) / 代码待核实 / 窗口外补收录 / 2026-06-01T20:19:36Z / [官方论文集](https://aclanthology.org/2026.findings-emnlp.1711/)"
+    },
+    "previous_bib": "@article{tan2026grzo,\n  title={GRZO: Group-Relative Zeroth-Order Optimization for Large Language Model Fine-Tuning},\n  author={Liyan Tan and Yequan Zhao and Yifan Yang and Ruijie Zhang and Xinling Yu and Zheng Zhang},\n  journal={arXiv preprint arXiv:2606.02857}, year={2026},\n  note={Added 2026-10-17; backfill; first public 2026-06-01T20:19:36Z; methodological uncertainties recorded in data/literature_reviews/2026-10-17-weekly.json},\n  url={https://arxiv.org/abs/2606.02857}\n}",
+    "new_bib": "@inproceedings{tan2026grzo,\n  title={GRZO: Group-Relative Zeroth-Order Optimization for Large Language Model Fine-Tuning},\n  author={Liyan Tan and Yequan Zhao and Yifan Yang and Ruijie Zhang and Xinling Yu and Zheng Zhang},\n  booktitle={Findings of the Association for Computational Linguistics: EMNLP 2026},\n  year={2026}, month={October}, pages={36551--36581},\n  publisher={Association for Computational Linguistics},\n  note={First public arXiv:2606.02857 on 2026-06-01T20:19:36Z; official publication verified 2026-10-29; not a new first release},\n  url={https://aclanthology.org/2026.findings-emnlp.1711/}\n}",
+    "first_public_exact": "2026-06-01T20:19:36Z",
+    "not_counted_as_new": true
+  },
+  "main_worktree_preserved": {
+    "catalog_count": 252,
+    "sha256": {
+      "README.md": "593695c8d764ba83c3ea65d55a5a6d3d3fbbeb5a3e4c4a1906a6d6a48332bcd0",
+      "README_zh.md": "b3eac1a2f413cfa079a5aa4d74b4dfd6ecda58fd75461a2d013a0fd02a3f24b1",
+      "data/papers.json": "fa1b593478a52ee91b47aa4a61a03648af5136045136fa3af152c6d1def0e0c6",
+      "papers.bib": "c597a2d1546259baa8881fa6826d1fdee65e77080508d1e4ad526ec8f166f088",
+      "scripts/generate_catalog.py": "57aad6922c1df1606fc76a589244eec05247161401da9f3d1237eb28a62c90e7",
+      "data/literature_reviews/2026-10-18-current-status.md": "aad8be9ad2dfe0f6783bacdf98a28c4056c943afbebd9fa363c02add13966029"
+    }
+  },
+  "category_counts_after": {
+    "es_pretraining": 1,
+    "es_single_turn": 15,
+    "related_hybrid": 64,
+    "es_multi_turn": 2,
+    "es_understanding": 9,
+    "zo_pretraining": 5,
+    "zo_baselines": 17,
+    "related_closed_form": 30,
+    "zo_directions": 34,
+    "zo_systems": 25,
+    "zo_alignment": 1,
+    "zo_multi_turn": 1,
+    "zo_understanding": 11,
+    "related_prompt_agent": 29,
+    "related_agent_training": 6,
+    "related_inference": 8,
+    "related_forward_gradient": 1
+  }
+}
