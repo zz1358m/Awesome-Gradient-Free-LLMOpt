@@ -1,0 +1,185 @@
+{
+ "review_date": "2026-10-30",
+ "timezone": "Asia/Singapore",
+ "window_start_date": "2026-10-23",
+ "window_end_date": "2026-10-30",
+ "window_note_zh": "arXiv 按首次提交或最近更新日期在最近 7 天内筛选，截止本次执行。另外逐篇核对了 19 个窗口外的候选编号（来自维护者本地笔记中引用的 arXiv 编号）；其中收录的 2 篇也出现在本次方法短语检索的返回结果里（只是首发日期在窗口外），found_by_query 记录的是对应的方法短语查询。",
+ "repository": "https://github.com/zz1358m/Awesome-Gradient-Free-LLMOpt",
+ "deduplication_zh": "已核对 data/papers.json、data/deferred_papers/ 及 data/literature_reviews/ 下全部 JSON 记录（含 2026-10-29-weekly.json）。arXiv 近 7 天共 7 个编号：2610.24816 已在 2026-10-25 记录中判过；2602.17155 已在目录中（本窗口内为版本更新）；其余 5 个逐篇读摘要。窗口外 19 个编号中 6 个已在目录中（2603.12228、2604.18264、2606.05516、2609.10980、2609.25510、2609.25745），其余 13 个逐篇读摘要。",
+ "queries": {
+  "arxiv": [
+   "all:\"evolution strategies\" AND (all:LLM OR all:\"language model\")",
+   "all:\"zeroth-order\" AND all:\"fine-tuning\"",
+   "all:\"gradient-free\" AND all:\"language model\"",
+   "all:\"forward-only\" AND (all:LLM OR all:\"language model\")",
+   "all:MeZO"
+  ],
+  "openreview_note_zh": "ICLR 2027 的 18 个方法短语已于 2026-10-11/12/15 全部查过，投稿已截止，本次未重跑。"
+ },
+ "papers": [
+  {
+   "title": "Greedy Local Learning for Language Model Pretraining: Gaps and Objective Design",
+   "authors": [
+    "Jihwan Moon",
+    "Sheir A. Zaheer",
+    "Jinmyoung Lee",
+    "Gunhee Kim",
+    "Chan Y. Park"
+   ],
+   "first_posted": "2026-10-04T10:10:52+08:00",
+   "primary_url": "https://arxiv.org/abs/2610.04867",
+   "contribution_zh": "在 125M/400M 参数、token 预算对齐的设置下实证研究自回归语言模型预训练中的贪心分块局部学习，测量与端到端训练的差距随块数和规模的变化，比较辅助网络和辅助目标（如多 token 预测）的设计。",
+   "method_zh": "块间梯度隔离、以局部辅助损失训练；块内仍反传，非 ES/ZO",
+   "relevance_zh": "中；避免端到端反向传播的局部学习，比照 Local proxies for memory-efficient training 归入 related_hybrid",
+   "decision": "included",
+   "category": "related_hybrid",
+   "concerns_zh": [
+    "仅依据 arXiv 原始摘要和 arXiv 元数据，本轮未阅读正文。",
+    "未确认正式会议录用。",
+    "未核实作者代码，写为 code not located。",
+    "v2 于 2026-10-26 更新，本次进入窗口是因为版本更新。",
+    "摘要中的 forward-only 指块间通信只有前向，不是零阶估计。",
+    "分类为边界判断，待人工复核。"
+   ],
+   "found_by_query": "all:\"forward-only\" AND (all:LLM OR all:\"language model\")"
+  },
+  {
+   "title": "Coverage, Not Credit: Failure-Credit Routing of Zeroth-Order Perturbation Budgets Does Not Improve On-Pool Sample Efficiency for LLM Agents",
+   "authors": [
+    "Yuxu Ge"
+   ],
+   "first_posted": "2026-08-28T15:27:02+08:00",
+   "primary_url": "https://arxiv.org/abs/2608.28011",
+   "contribution_zh": "在工具调用 LLM agent 上检验按轨迹级失败归因分配固定 ZO/ES 扰动预算是否优于均匀分配；在固定任务池上没有检测到增益，并给出几种会让冻结 LLM 上的 ZO/ES 实验失效的模式。",
+   "method_zh": "ZO/ES 扰动预算在 agent 模块间的分配；对照实验与统计检验",
+   "relevance_zh": "中高；直接分析 agent 场景下 ES/ZO 的预算分配",
+   "decision": "included",
+   "category": "es_understanding",
+   "concerns_zh": [
+    "仅依据 arXiv 原始摘要和 arXiv 元数据，本轮未阅读正文。",
+    "未确认正式会议录用。",
+    "未核实作者代码，写为 code not located。",
+    "摘要写 frozen agents，又提到累计参数移动量，具体被扰动和更新的参数集合需正文核实。",
+    "窗口外补收录。"
+   ],
+   "found_by_query": "all:\"evolution strategies\" AND (all:LLM OR all:\"language model\")"
+  },
+  {
+   "title": "Not the Dimension, the Norm: What Matters in Gradient-Free Weight Perturbation of Language Models",
+   "authors": [
+    "Taeyeong Kim",
+    "Ahhyun Kim",
+    "TaeHyeon Kim",
+    "Unggi Lee"
+   ],
+   "first_posted": "2026-08-03T10:57:20+08:00",
+   "primary_url": "https://arxiv.org/abs/2608.01624",
+   "contribution_zh": "在固定的扰动—打分—投票流程里逐一改变搜索维度、扰动子空间和扰动范数，结论是扰动范数决定成败，维度和基的选择不能解释性能。",
+   "method_zh": "随机权重扰动、候选打分与投票的无梯度适配的对照分析",
+   "relevance_zh": "中；比照 Modular Norm RandOpt 归入 related_inference",
+   "decision": "included",
+   "category": "related_inference",
+   "concerns_zh": [
+    "仅依据 arXiv 原始摘要和 arXiv 元数据，本轮未阅读正文。",
+    "未确认正式会议录用。",
+    "未核实作者代码，写为 code not located。",
+    "是否保留持久的扰动后权重需正文核实；若确认持久更新，可改归 es_understanding。",
+    "窗口外补收录。"
+   ],
+   "found_by_query": "all:\"gradient-free\" AND all:\"language model\""
+  }
+ ],
+ "metadata_updates": [],
+ "excluded": [
+  {
+   "id": "arXiv:2610.37319",
+   "title": "AnalogScout: Simulation-Efficient PVT-Aware Analog Sizing with LLM Agents",
+   "reason_zh": "LLM agent 做模拟电路尺寸设计，CMA-ES 只是对照基线，不优化语言模型参数。",
+   "found_by_query": "all:\"evolution strategies\" AND (all:LLM OR all:\"language model\")"
+  },
+  {
+   "id": "arXiv:2610.35160",
+   "title": "AutoEnergyDesign: An LLM-Driven Agent for Automatic Energy System Design Optimization",
+   "reason_zh": "冻结 LLM agent 依据仿真反馈优化能源系统配置（外部工件），(1+1)-ES 只是基线；按 2026-10-12 范围例外暂缓。",
+   "found_by_query": "all:\"evolution strategies\" AND (all:LLM OR all:\"language model\")"
+  },
+  {
+   "id": "arXiv:2610.05132",
+   "title": "SpecAgent: Empowering Program Verification with Agentic Synthesis of Formal Program Specifications",
+   "reason_zh": "程序规约合成 agent；forward-only 指工作流形态，与无梯度优化无关。",
+   "found_by_query": "all:\"forward-only\" AND (all:LLM OR all:\"language model\")"
+  },
+  {
+   "id": "arXiv:2610.33464",
+   "title": "Propasafe-Hybrid: A Text-Based Hybrid Propaganda Detection Tool",
+   "reason_zh": "宣传检测系统，与 ES/ZO 无关。",
+   "found_by_query": "all:\"forward-only\" AND (all:LLM OR all:\"language model\")"
+  },
+  {
+   "id": "arXiv:2602.07150",
+   "title": "On Randomness in Agentic Evals",
+   "reason_zh": "agent 评测方差分析，与 ES/ZO 无关。",
+   "found_by_query": "none (window-external candidate id)"
+  },
+  {
+   "id": "arXiv:2606.29824",
+   "title": "Neural Procedural Memory: Empowering LLM Agents with Implicit Activation Steering",
+   "reason_zh": "从经验中提炼 steering 向量作为 agent 程序性记忆；无 ES/ZO 机制，且以技能/记忆为核心，按范围例外暂缓。",
+   "found_by_query": "none (window-external candidate id)"
+  },
+  {
+   "id": "arXiv:2603.12298",
+   "title": "Global Evolutionary Steering: Refining Activation Steering Control via Cross-Layer Consistency",
+   "reason_zh": "无训练的 steering 向量修正；evolutionary 指表示随层演化，不是进化优化。",
+   "found_by_query": "none (window-external candidate id)"
+  },
+  {
+   "id": "arXiv:2506.10947",
+   "title": "Spurious Rewards: Rethinking Training Signals in RLVR",
+   "reason_zh": "基于梯度的 RLVR 分析，与 ES/ZO 无关。",
+   "found_by_query": "none (window-external candidate id)"
+  },
+  {
+   "id": "arXiv:2609.30218",
+   "title": "Minimally Invasive Steering of Language Models",
+   "reason_zh": "用解析梯度优化 pre-logit steering 向量，非无梯度方法。",
+   "found_by_query": "none (window-external candidate id)"
+  },
+  {
+   "id": "arXiv:2607.09156",
+   "title": "Activation Steering Transfer to Agents: One Gain Ratio Does Not Identify Potency and Efficacy",
+   "reason_zh": "steering 迁移的测量方法学，无 ES/ZO 机制。",
+   "found_by_query": "none (window-external candidate id)"
+  },
+  {
+   "id": "arXiv:2605.16362",
+   "title": "When Is Rank-1 Steering Cheap? Geometry, Granularity, and Budgeted Search",
+   "reason_zh": "steering 层与系数的预算搜索；摘要未出现无梯度方法短语，不满足方法短语发现规则，未收。",
+   "found_by_query": "none (window-external candidate id)"
+  },
+  {
+   "id": "arXiv:2609.02417",
+   "title": "Coverage, Not Targeting: A Structural Regime in Multi-Turn Agent Credit Assignment",
+   "reason_zh": "多轮 agent RL 的信用分配，基于梯度，与 ES/ZO 无关。",
+   "found_by_query": "none (window-external candidate id)"
+  },
+  {
+   "id": "arXiv:2609.18587",
+   "title": "Label-free steering: Compressing test-time reinforcement learning into bias-only subspaces",
+   "reason_zh": "只训练 bias 参数的测试时 RL，基于梯度，非 ES/ZO。",
+   "found_by_query": "none (window-external candidate id)"
+  },
+  {
+   "id": "arXiv:2504.13837",
+   "title": "Does Reinforcement Learning Really Incentivize Reasoning Capacity in LLMs Beyond the Base Model?",
+   "reason_zh": "RLVR 能力边界分析，与 ES/ZO 无关。",
+   "found_by_query": "none (window-external candidate id)"
+  },
+  {
+   "id": "arXiv:2607.27574",
+   "title": "Policy Gradient Steering: Interventions from Behavioral Objectives",
+   "reason_zh": "用策略梯度构造 steering 向量，基于梯度。",
+   "found_by_query": "none (window-external candidate id)"
+  }
+ ]
+}

@@ -6,7 +6,7 @@
 
 主目录关注持久化模型参数，包括完整权重、适配器、低秩子空间和量化权重。提示词核心研究现已暂缓；智能体研究仅在原始来源确认持久训练或合成语言模型、策略模型、适配器或等价神经控制器参数时保留。其他非提示词、非智能体边界研究仍可进入明确标注的关联分类。
 
-**最近一次文献核查：** 2026-10-25
+**最近一次文献核查：** 2026-10-30
 
 [最新 ICLR 2027 核查（覆盖范围有限）](data/literature_reviews/2026-10-11-iclr2027.json) · [2026-10-09 核查记录](data/literature_reviews/2026-10-09.json)。
 
@@ -87,6 +87,7 @@ ES 和双点 ZO 都可以看作平滑目标函数的估计方法，但现有大�
 | 日期 | 论文 | 核心贡献 | 资源 |
 |---|---|---|---|
 | 2026-08 | **Beyond the Best Guess: Improving LLM Solution Coverage with Evolution Strategies** | 说明 ES 不仅影响 pass@1，还会改变推理解法的多样性和 pass@k。 | [论文](https://arxiv.org/abs/2608.12679) · [代码](https://github.com/conorfhayes/beyond-the-best-guess) · 2026-08 |
+| 2026-08 | **Coverage, Not Credit: Failure-Credit Routing of Zeroth-Order Perturbation Budgets Does Not Improve On-Pool Sample Efficiency for LLM Agents** | 检验工具调用 LLM agent（Qwen2.5-1.5B/3B、SmolLM2-1.7B）中是否应按轨迹级失败归因在各模块间分配固定的 ZO/ES 扰动预算；在固定任务池上未发现优于均匀分配的可检测增益，并记录了在冻结 LLM 上做 ZO/ES 实验的几类失效模式。摘要未说明具体扰动的参数集合。 | [论文](https://arxiv.org/abs/2608.28011) · 未找到代码 · 2026-08 |
 | 2026-05 | **Overcoming Forgetting in LLM Fine-Tuning with Evolution Strategies** | 将遗忘重新表述为性能漂移，并提出锚定权重衰减方法。 | [论文](https://arxiv.org/abs/2605.30148) · 未找到代码 · 2026-05 · [ICLR 2027 投稿](https://openreview.net/forum?id=OBMw8FwmyZ) |
 | 2026-04 | **Matching Accuracy, Different Geometry: Evolution Strategies vs GRPO in LLM Post-Training** | 比较 ES 与 GRPO 在推理准确率相近时仍然存在差异的更新几何。 | [论文](https://arxiv.org/abs/2604.01499) · [代码](https://github.com/Bhoy1/ESvsGRPO) · 2026-04 |
 | 2026-02 | **The Blessing of Dimensionality in LLM Fine-tuning: A Variance-Curvature Perspective** | 从较低的有效曲率和先升后降的训练动态解释小规模 ES 种群为何能在极高维空间中工作；实验覆盖 Qwen2.5 的多个规模以及 GSM8K、ARC-C 和 WinoGrande。 | [论文](https://arxiv.org/abs/2602.00170) · 未找到代码 · 2026-02 · [ICLR 2027 投稿](https://openreview.net/forum?id=Pz7PpCK6Py) |
@@ -239,6 +240,7 @@ ES 和双点 ZO 都可以看作平滑目标函数的估计方法，但现有大�
 
 | 日期 | 论文 | 核心贡献 | 资源 |
 |---|---|---|---|
+| 2026-10 | **Greedy Local Learning for Language Model Pretraining: Gaps and Objective Design** | 在 125M 与 400M 参数、token 预算对齐的设置下研究自回归语言模型预训练中的贪心分块局部学习：各块之间梯度隔离、以局部辅助损失训练（块内仍使用反传），测量其与端到端训练的差距以及哪些辅助网络和目标能缩小差距。 | [论文](https://arxiv.org/abs/2610.04867) · 未找到代码 · 2026-10 |
 | 2026-10 | **Where to Adapt Matters: Layer-Selective Fine-Tuning for Capability Retention** | 先用纯前向的层输入输出余弦相似度选择敏感层，再持久训练这些层的LoRA适配器；无反传仅针对选择代理，不能视为全流程梯度无关。补收录：2026-10-08（UTC）；后续优化器细节待核实。 | [论文](https://arxiv.org/abs/2610.11620) / 补收录 / 2026-10-08T09:59:16Z / 代码待核实 |
 | 2026-10 | **Training with ML-labeled Data via Stochastic First- and Zeroth-Order Optimization** | 以随机零阶更新持久微调RoBERTa，并自适应利用真实标签与模型标签；目标模型的零阶阶段无需反传，但实验先以Adam训练独立标注模型，因此全流程列为相关混合方法。 | [论文](https://arxiv.org/abs/2610.26790) / 首发2026-10-19 UTC / 2026-10-19T17:38:58Z / 代码待核实 |
 | 2026-08 | **Hyper-ES: Effective Evolution Strategies for LLM Reasoning via Descent Direction Merging** | 混合方法：先通过梯度训练获得下降方向，再以 CMA-ES 优化 DARE-TIES 逐层合并系数；第一阶段仍使用反向传播。 | [论文](https://arxiv.org/abs/2608.05541) · [代码占位仓库](https://github.com/kuangrepi/Hyper-ES) · 2026-08 |
@@ -309,6 +311,7 @@ ES 和双点 ZO 都可以看作平滑目标函数的估计方法，但现有大�
 | 日期 | 论文 | 核心贡献 | 资源 |
 |---|---|---|---|
 | 2026-10 | **HeadEdit: Calibrating Language Model Behavior Through the Frozen Unembedding Matrix** | 从配对补全中提取低秩行为子空间，通过冻结的输出映射矩阵在推理时施加随输入变化的词表范围修正；不更新持久模型参数。 | [论文](https://arxiv.org/abs/2610.01170) · 未找到代码 · 2026-10 · [ICLR 2027 投稿](https://openreview.net/forum?id=pHZvxtuPkK) |
+| 2026-08 | **Not the Dimension, the Norm: What Matters in Gradient-Free Weight Perturbation of Language Models** | 在固定的“扰动—打分—投票”权重扰动流程中逐一改变搜索维度、扰动子空间和扰动范数，覆盖七个模型；结论是决定搜索成败的是扰动范数，而不是维度或基的选择。 | [论文](https://arxiv.org/abs/2608.01624) · 未找到代码 · 2026-08 |
 | 2026 | **ZOSteer: Steering Language Models from Scalar Rewards Alone** | ZOSteer 通过前向扰动估计激活空间奖励梯度并生成控制向量，不更新模型权重。 | [论文](https://openreview.net/forum?id=aKo2pnRE0y) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录 |
 | 2026 | **Rethinking Neural Thickets Without Weight Perturbations** | 以冻结模型的随机 logit 偏置、验证筛选和投票替代完整权重扰动，并重新解释 Neural Thickets 的增益。 | [论文](https://openreview.net/forum?id=imjxSp8e1N) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录 |
 | 2026 | **Modular Norm RandOpt: Population-Efficient Ensembling through Architecture-Aware Perturbations** | 用模块级自然范数和校准尺度采样语言模型权重扰动，再对候选排序并投票集成。 | [论文](https://openreview.net/forum?id=isaVxUY5zV) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录 |
