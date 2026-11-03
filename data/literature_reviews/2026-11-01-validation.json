@@ -1,0 +1,9 @@
+{
+  "catalog_count": 265,
+  "bib_count": 266,
+  "title_and_primary_url_dedup": true,
+  "unchanged_old_entries_except_two_documented_updates": true,
+  "bilingual_catalog_check": true,
+  "git_diff_check": true,
+  "main_worktree_fingerprints_unchanged": true
+}

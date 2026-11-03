@@ -1,0 +1,330 @@
+{
+  "trigger_date": "2026-11-01",
+  "execution_environment_date": "2026-11-03",
+  "timezone": "Asia/Shanghai",
+  "window_start_utc": "2026-10-25T14:14:04.025Z",
+  "window_end_utc": "2026-11-01T14:14:04.025Z",
+  "base_commit": "e44187fb1fca6710cd2466bd694aded55fda5b61",
+  "published_before": 262,
+  "published_after": 265,
+  "confirmed_new_after_dedup": 2,
+  "new_empirical_zo_lm_parameter_training": 1,
+  "new_es_theory_analysis": 1,
+  "related_closed_form_backfill": 1,
+  "existing_metadata_updates": 2,
+  "queries": [
+    "\"zeroth-order\" \"language model\" October November 2026",
+    "\"gradient-free\" \"LLM\" October 2026",
+    "\"evolution strategies\" \"language\" November 2026",
+    "site:arxiv.org/abs/2610 \"zeroth-order\" \"language\" after:2026-10-24",
+    "site:arxiv.org/abs/2610 \"backpropagation-free\" \"language\"",
+    "site:openreview.net \"ICLR 2027\" \"zeroth-order\"",
+    "\"forward-only\" \"fine-tuning\" \"October 2026\"",
+    "site:arxiv.org \"zeroth-order\" \"Oct 2026\" \"28\"",
+    "site:arxiv.org \"gradient-free\" \"Oct 2026\" \"29\"",
+    "site:openreview.net \"2027\" \"evolution strategies\" \"language\"",
+    "\"zeroth-order\" \"language model\" \"October 30\"",
+    "site:arxiv.org/abs/2610 \"zeroth-order\" after:2026-10-25 before:2026-11-02",
+    "site:openreview.net \"ICLR 2027\" \"gradient-free\" \"language model\"",
+    "site:arxiv.org/abs/2610 \"evolution strategies\" after:2026-10-25 before:2026-11-02",
+    "site:aclanthology.org/2026 \"zeroth-order\" optimization",
+    "\"gradient-free\" \"language model\" \"October 2026\" author"
+  ],
+  "included": [
+    {
+      "title": "Efficient Exact Unlearning for Federated Zeroth-Order Optimization",
+      "authors": [
+        "Weijun Yin",
+        "Yanqing Yao",
+        "Falko Dressler",
+        "Di Wang",
+        "Youming Tao"
+      ],
+      "date": "2026-10",
+      "first_public_exact": "2026-10-26T11:03:48Z",
+      "status": "confirmed_new",
+      "category": "zo_systems",
+      "url": "https://arxiv.org/abs/2610.35211",
+      "sources": [
+        "https://arxiv.org/html/2610.35211v1"
+      ],
+      "key": "yin2026federatedexactunlearning",
+      "description_en": "Combines seed-encoded ZO training with subsampling/noise stability and replay or rejection-reflection coupling for federated exact unlearning. Experiments include Llama-3.2-1B/3B on TOFU. Proposed updates persistently modify model parameters without backpropagation; exact module coverage and implementation unverified.",
+      "description_zh": "结合种子编码零阶训练、子采样或噪声稳定性，以及重放或拒绝—反射耦合，实现联邦精确遗忘；TOFU实验包含Llama-3.2-1B/3B。所提更新无需反传且持久改变模型参数；具体模块覆盖与实现待核实。",
+      "method": "种子编码的函数值零阶更新；子采样与加噪稳定性；训练重放及拒绝—反射耦合。",
+      "backpropagation": "所提FedZOO-S/NS及对应遗忘更新无需反传；与一阶基线的比较不构成所提算法依赖反传。",
+      "persistent_parameters": "是，联邦训练与遗忘改变语言模型参数；正文实验确认Llama-3.2-1B/3B，是否全参数及逐模块覆盖待核实。",
+      "relevance": "高，直接语言模型零阶参数训练及其联邦遗忘系统。",
+      "uncertainties": [
+        "已核实原始摘要、版本历史、方法概览和实验设置，未阅读全文或复现实验。",
+        "精确遗忘为作者在特定算法及假设下的分布性结论，不等同独立验证任意知识完全删除。",
+        "可训练模块、代码与会议录用待核实。"
+      ]
+    },
+    {
+      "title": "GROM: Gradient-Free Rapid One-Shot Machine Unlearning",
+      "authors": [
+        "Paweł Batorski",
+        "Przemysław Spurek",
+        "Paul Swoboda"
+      ],
+      "date": "2026-08",
+      "first_public_exact": "2026-08-06T09:16:53Z",
+      "status": "backfill",
+      "category": "related_closed_form",
+      "url": "https://arxiv.org/abs/2608.05783",
+      "sources": [
+        "https://arxiv.org/html/2608.05783v1"
+      ],
+      "key": "batorski2026grom",
+      "code": "https://github.com/Batorskq/GROM",
+      "description_en": "Uses forward-pass features and a ridge-regularized least-squares solution to apply a persistent additive weight edit for LM unlearning, principally to MLP down-projections. The edit uses no backpropagation or iterative ZO estimator. Historical backfill; closed-form adaptation, with code, venue and empirical claims not independently verified.",
+      "description_zh": "从前向特征求解岭正则最小二乘问题，对语言模型施加持久加性权重编辑，主要修改MLP下投影。所提编辑无需反传，也不使用迭代零阶估计器。窗口外补收录，归入闭式适配；代码、录用与实证结论待独立核实。",
+      "method": "前向特征采集与岭正则最小二乘闭式权重编辑。",
+      "backpropagation": "所提特征采集与闭式编辑不依赖反传；非迭代函数值零阶优化。",
+      "persistent_parameters": "是，直接更新MLP下投影权重；正文亦讨论语言模型输出头与注意力输出投影等可编辑矩阵。",
+      "relevance": "高相关闭式语言模型参数遗忘；单列关联研究，不计作新ES/ZO训练算法。",
+      "uncertainties": [
+        "已核实原始摘要、版本历史及方法中的可编辑矩阵与闭式目标，未阅读全文或复现实验。",
+        "原文提供代码链接，未审查实现；会议录用待核实。",
+        "最小二乘局部保持目标不等同对任意输入严格保持，也不能独立保证彻底遗忘。"
+      ]
+    },
+    {
+      "title": "Center-of-Mass Interpretation of Evolution Strategies",
+      "authors": [
+        "Akshat Gupta"
+      ],
+      "date": "2026-10",
+      "first_public_exact": "2026-10-26T17:59:33Z",
+      "status": "confirmed_new",
+      "category": "es_understanding",
+      "url": "https://arxiv.org/abs/2610.35865",
+      "sources": [
+        "https://arxiv.org/html/2610.35865v1"
+      ],
+      "key": "gupta2026centerofmass",
+      "description_en": "Interprets the mean-centered ES step geometrically as a scaled shift between the sampled centroid and reward-weighted center of mass. Motivated by ES language-model fine-tuning; theoretical analysis, not a new empirically validated LM training method. No backpropagation in the analyzed ES step; no trained modules reported.",
+      "description_zh": "将均值中心化ES更新解释为采样质心与奖励加权重心之间的缩放位移，以语言模型ES微调为动机。属于理论解释，未提供新的语言模型训练实证。所分析ES步骤无需反传；未报告实际训练模块。",
+      "method": "有限种群均值中心化ES更新的几何恒等关系与反向配对采样分析。",
+      "backpropagation": "分析的ES参数更新不需要反传；论文提供几何解释，未引入新训练实现。",
+      "persistent_parameters": "理论对象为持久模型参数的ES更新；本文未报告实际训练模型或更新模块，不能统计为新增已实证训练方法。",
+      "relevance": "中高，正文明确联系语言模型ES微调；作为ES机理分析收录。",
+      "uncertainties": [
+        "已核实原始摘要、版本历史及正文引言和更新定义，未独立验证全部推导。",
+        "几何物理解释需要非负奖励及正总质量；零均值奖励的移位处理与尺度因子应一起理解。",
+        "未核实代码或正式录用，不将理论解释写成新增性能提升。"
+      ]
+    }
+  ],
+  "updated": [
+    {
+      "title": "JARQ: Joint Alternating Refinement for Quantization",
+      "before": {
+        "title": "JARQ: Joint Alternating Refinement for Quantization",
+        "category": "related_closed_form",
+        "date": "2026",
+        "description_en": "JARQ alternates exact joint least-squares scale fitting with bounded Babai proposals that update multiple quantization codes without backpropagation.",
+        "description_zh": "JARQ 交替联合最小二乘拟合 group scales 与有界 Babai 多码提议，实现无反传量化 refinement。",
+        "resources_en": "[paper](https://openreview.net/forum?id=9lEvG6Tfku) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
+        "resources_zh": "[论文](https://openreview.net/forum?id=9lEvG6Tfku) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
+      },
+      "after": {
+        "title": "JARQ: Joint Alternating Refinement for Quantization",
+        "category": "related_closed_form",
+        "date": "2026-09",
+        "description_en": "Alternates joint least-squares scale fitting with bounded Babai code proposals for LM post-training quantization without backpropagation. Persistently changes quantization scales/codes; host quantizer preparation may have different gradient dependencies. Historical backfill; arXiv first public 2026-09-29 verified.",
+        "description_zh": "交替联合最小二乘尺度拟合与有界Babai量化码提议，无反传精炼语言模型量化参数。持久更新量化尺度与编码；初始量化器的反传依赖另行判断。历史补收录；arXiv首发2026-09-29已核实。",
+        "resources_en": "[preprint](https://arxiv.org/abs/2609.38599) / [same-title OpenReview submission](https://openreview.net/forum?id=9lEvG6Tfku) / first public 2026-09-29T22:00:00Z / code and acceptance unverified",
+        "resources_zh": "[预印本](https://arxiv.org/abs/2609.38599) / [同题OpenReview投稿](https://openreview.net/forum?id=9lEvG6Tfku) / 首发2026-09-29T22:00:00Z / 代码与录用待核实"
+      },
+      "source": "https://arxiv.org/abs/2609.38599",
+      "previous_bib": "@unpublished{iclr2027jarqjointalternatingrefinementforqua,\n  title={JARQ: Joint Alternating Refinement for Quantization},\n  author={Anonymous},\n  note={ICLR 2027 Conference Submission; decision pending; OpenReview public 2026-10-03; cross-platform first public date unverified; cycle backfill outside 2026-10-04--2026-10-11 window}, year={2026},\n  url={https://openreview.net/forum?id=9lEvG6Tfku}\n}",
+      "new_bib": "@article{iclr2027jarqjointalternatingrefinementforqua,\n  title={JARQ: Joint Alternating Refinement for Quantization},\n  author={Xinyu Wang and Sicheng Lyu and Xiao-Wen Chang},\n  journal={arXiv preprint arXiv:2609.38599}, year={2026},\n  note={arXiv authors verified; first public 2026-09-29T22:00:00Z; same-title anonymous OpenReview submission 9lEvG6Tfku retained as related source; acceptance unverified; original citation key preserved},\n  url={https://arxiv.org/abs/2609.38599}\n}",
+      "notes_zh": "作者来自arXiv实名版本；同题匿名投稿保留为关联来源，不宣称已获录用。"
+    },
+    {
+      "title": "Coverage, Not Credit: Failure-Credit Routing of Zeroth-Order Perturbation Budgets Does Not Improve On-Pool Sample Efficiency for LLM Agents",
+      "before": {
+        "title": "Coverage, Not Credit: Failure-Credit Routing of Zeroth-Order Perturbation Budgets Does Not Improve On-Pool Sample Efficiency for LLM Agents",
+        "category": "es_understanding",
+        "date": "2026-08",
+        "description_en": "Tests whether trajectory-level failure credit should decide how a fixed ZO/ES perturbation budget is split across the modules of tool-using LLM agents (Qwen2.5-1.5B/3B, SmolLM2-1.7B); finds no detectable on-pool gain over uniform allocation and documents failure modes of ZO/ES experiments on frozen LLMs. The exact perturbed parameter set is not stated in the abstract.",
+        "description_zh": "检验工具调用 LLM agent（Qwen2.5-1.5B/3B、SmolLM2-1.7B）中是否应按轨迹级失败归因在各模块间分配固定的 ZO/ES 扰动预算；在固定任务池上未发现优于均匀分配的可检测增益，并记录了在冻结 LLM 上做 ZO/ES 实验的几类失效模式。摘要未说明具体扰动的参数集合。",
+        "resources_en": "[paper](https://arxiv.org/abs/2608.28011) · code not located · 2026-08",
+        "resources_zh": "[论文](https://arxiv.org/abs/2608.28011) · 未找到代码 · 2026-08"
+      },
+      "after": {
+        "title": "Coverage, Not Credit: Failure-Credit Routing of Zeroth-Order Perturbation Budgets Does Not Improve On-Pool Sample Efficiency for LLM Agents",
+        "category": "es_understanding",
+        "date": "2026-08",
+        "description_en": "Studies allocation of ZO/ES perturbation budgets across agent modules. A frozen LM is augmented with 128 checkpointed coefficients, applied through forward hooks to q/v/o projections; mirrored ES trains these persistent adapter coefficients without backpropagation. Authors report no detectable fixed-pool routing gain over uniform allocation.",
+        "description_zh": "研究智能体模块间的ZO/ES扰动预算分配。冻结语言模型骨干，以前向钩子将128个保存到检查点的系数作用于q/v/o投影，通过镜像ES无反传训练这些持久适配参数。作者报告固定任务池上归因路由未显示优于均匀分配的可检测收益。",
+        "resources_en": "[paper](https://arxiv.org/abs/2608.28011) · code not located · 2026-08 / [persistent adapter evidence, section 3](https://arxiv.org/html/2608.28011v1)",
+        "resources_zh": "[论文](https://arxiv.org/abs/2608.28011) · 未找到代码 · 2026-08 / [持久适配参数证据：第3节](https://arxiv.org/html/2608.28011v1)"
+      },
+      "source": "https://arxiv.org/html/2608.28011v1",
+      "notes_zh": "已核实持久适配系数训练，保留es_understanding分类，不新增重复条目。未阅读全文或独立复现。"
+    }
+  ],
+  "checked_not_added": [
+    {
+      "title": "JARQ: Joint Alternating Refinement for Quantization",
+      "url": "https://arxiv.org/abs/2609.38599",
+      "decision": "existing_metadata_updated",
+      "reason": "已有同题OpenReview条目，补充arXiv作者、2026-09-29T22:00:00Z首发时间及原始链接；不新增重复条目。"
+    },
+    {
+      "title": "Coverage, Not Credit: Failure-Credit Routing of Zeroth-Order Perturbation Budgets Does Not Improve On-Pool Sample Efficiency for LLM Agents",
+      "url": "https://arxiv.org/abs/2608.28011",
+      "decision": "existing_training_boundary_verified",
+      "reason": "正文第3节明确保存128个系数，按模块经前向钩子作用于q/v/o投影；冻结骨干仍存在持久适配参数训练，保留原分类并补充说明。"
+    },
+    {
+      "title": "Distributed Zeroth-Order Composite Finite-Sum Optimization via Incremental Variance Reduction",
+      "url": "https://arxiv.org/abs/2610.41615",
+      "decision": "not_added",
+      "reason": "原始摘要仅确认逻辑及鲁棒回归实验，未取得语言模型应用证据，记录为通用优化理论候选。"
+    },
+    {
+      "title": "NablaMimic: Ultra-Efficient Humanoid Control with Differentiable Simulation",
+      "url": "https://arxiv.org/abs/2610.41654",
+      "decision": "not_added",
+      "reason": "可微仿真人形控制与一阶梯度，未确认语言模型关联；零阶关键词来自比较背景。"
+    },
+    {
+      "title": "Parameter-Efficient Neuroevolution for Diverse LLM Generation: Quality-Diversity Optimization via Prompt Embedding Evolution",
+      "url": "https://arxiv.org/abs/2605.09781",
+      "decision": "excluded_prompt_scope",
+      "reason": "以提示嵌入进化为核心，按用户范围不收录。"
+    },
+    {
+      "title": "UNBOX: Unveiling Black-box visual models with Natural-language",
+      "url": "https://arxiv.org/abs/2603.08639",
+      "decision": "excluded_external_optimization",
+      "reason": "原始摘要为语义描述搜索以分析视觉模型，未提供持久模型训练证据。"
+    },
+    {
+      "title": "Reasoning as Gradient: Scaling MLE Agents Beyond Tree Search",
+      "url": "https://arxiv.org/abs/2603.01692",
+      "decision": "not_added_pending_training_evidence",
+      "reason": "检索命中智能体搜索讨论，未取得参数训练的原始证据；不因自然语言梯度用词视为模型训练。"
+    },
+    {
+      "title": "SPAR: Experience-Driven Strategy Evolution in Multi-Session B2B Sales",
+      "url": "https://arxiv.org/abs/2611.01695",
+      "decision": "outside_trigger_window_pending",
+      "reason": "运行期间环境日期已变为11月3日；11月条目保留检查记录，未核实精确首发时刻，不计11月1日触发窗口。检索内容为记忆及策略手册进化，未取得参数训练证据。"
+    },
+    {
+      "title": "EvoRec: A Unified Self-Evolving Agentic Recommender with Dynamic Reflection Trees",
+      "url": "https://arxiv.org/abs/2611.01977",
+      "decision": "excluded_external_optimization",
+      "reason": "原始检索摘要明确不更新参数，以工作记忆和策略更新为主；且未纳入本触发窗口确定新增。"
+    },
+    {
+      "title": "Dust: Pretraining Transformers Without Backpropagation",
+      "decision": "existing_duplicate",
+      "resources": "[research article](https://qlabs.sh/research/dust) · [code](https://github.com/qlabs-eng/dust) · 2026-10 (month only; first-publication day unverified) / [Noise benchmark](https://github.com/qlabs-eng/noise)",
+      "reason": "题名与原文链接已有记录，不重复收录；索引更新不算首发。"
+    },
+    {
+      "title": "GRZO: Group-Relative Zeroth-Order Optimization for Large Language Model Fine-Tuning",
+      "decision": "existing_duplicate",
+      "resources": "[paper](https://arxiv.org/abs/2606.02857) / code unverified / backfill / 2026-06-01T20:19:36Z / [official proceedings](https://aclanthology.org/2026.findings-emnlp.1711/)",
+      "reason": "题名与原文链接已有记录，不重复收录；索引更新不算首发。"
+    },
+    {
+      "title": "Consolidating Rewarded Perturbations for LLM Post-Training",
+      "decision": "existing_duplicate",
+      "resources": "[paper](https://arxiv.org/abs/2605.31494) · [code](https://github.com/oooranz/CoRP) · 2026-05",
+      "reason": "题名与原文链接已有记录，不重复收录；索引更新不算首发。"
+    },
+    {
+      "title": "ZOIF: Zeroth-Order Influence Function Estimation for LLM Data Selection Using Only Forward Passes",
+      "decision": "existing_duplicate",
+      "resources": "[paper](https://arxiv.org/abs/2610.15336) · code not located · 2026-10",
+      "reason": "题名与原文链接已有记录，不重复收录；索引更新不算首发。"
+    },
+    {
+      "title": "TerMeZO: Ternary Sparse Zeroth-Order Optimization for Fine-tuning BitNet Models at the Edge",
+      "decision": "existing_duplicate",
+      "resources": "[paper](https://openreview.net/forum?id=bstvvfFV4y) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
+      "reason": "题名与原文链接已有记录，不重复收录；索引更新不算首发。"
+    },
+    {
+      "title": "SubZero+: Memory-Efficient Adaptive Zeroth-Order LLM Fine-Tuning in Random Subspaces",
+      "decision": "existing_duplicate",
+      "resources": "[paper](https://arxiv.org/abs/2608.15665) · code not located · 2026-08 · v2 revised 2026-09-28; ICLR 2027 status unverified · [ICLR 2027 submission](https://openreview.net/forum?id=pZjhFo9XgF)",
+      "reason": "题名与原文链接已有记录，不重复收录；索引更新不算首发。"
+    },
+    {
+      "title": "EA4LLM: A Gradient-Free Approach to Large Language Model Optimization via Evolutionary Algorithms",
+      "decision": "existing_duplicate",
+      "resources": "[paper](https://arxiv.org/abs/2510.10603) · code not located · 2025-10",
+      "reason": "题名与原文链接已有记录，不重复收录；索引更新不算首发。"
+    },
+    {
+      "title": "DART-ES: Difficulty-Aware Reweighting and Targeted Replay for Fine-Tuning LLMs with Evolution Strategies",
+      "decision": "existing_duplicate",
+      "resources": "[paper](https://arxiv.org/abs/2610.06993) · [code](https://github.com/szs777/DART-ES-Code) · 2026-10 · [ICLR 2027 submission](https://openreview.net/forum?id=dtVcF6LLYr)",
+      "reason": "题名与原文链接已有记录，不重复收录；索引更新不算首发。"
+    },
+    {
+      "title": "Where to Adapt Matters: Layer-Selective Fine-Tuning for Capability Retention",
+      "decision": "existing_duplicate",
+      "resources": "[paper](https://arxiv.org/abs/2610.11620) / backfill / 2026-10-08T09:59:16Z / code unverified",
+      "reason": "题名与原文链接已有记录，不重复收录；索引更新不算首发。"
+    },
+    {
+      "title": "Understanding LLM Quantization through Activation-Guided Compensation and Orthogonal Residuals",
+      "decision": "existing_duplicate",
+      "resources": "[paper](https://arxiv.org/abs/2609.21450) / code unverified / backfill / 2026-09-18T08:00:27Z",
+      "reason": "题名与原文链接已有记录，不重复收录；索引更新不算首发。"
+    },
+    {
+      "title": "Zeroth-Order Optimization Finds Flat Minima",
+      "decision": "existing_duplicate",
+      "resources": "[paper](https://proceedings.neurips.cc/paper_files/paper/2025/hash/ebc62a3af9342eb4ebc728e5c5bc4cca-Abstract-Conference.html) · [code](https://github.com/Liang137/FlatZero) · ![NeurIPS 2025](https://img.shields.io/badge/NeurIPS-2025-orange)",
+      "reason": "题名与原文链接已有记录，不重复收录；索引更新不算首发。"
+    },
+    {
+      "title": "LLMs as Representation Generators for Gradient-Free Scientific Optimization: A Case Study in Battery Fast Charging",
+      "decision": "existing_duplicate",
+      "resources": "[paper](https://doi.org/10.1002/advs.78012) / code unverified / first_date_unverified / first public date unverified",
+      "reason": "题名与原文链接已有记录，不重复收录；索引更新不算首发。"
+    }
+  ],
+  "main_worktree_preserved": {
+    "catalog_count": 252,
+    "sha256": {
+      "README.md": "593695c8d764ba83c3ea65d55a5a6d3d3fbbeb5a3e4c4a1906a6d6a48332bcd0",
+      "README_zh.md": "b3eac1a2f413cfa079a5aa4d74b4dfd6ecda58fd75461a2d013a0fd02a3f24b1",
+      "data/papers.json": "fa1b593478a52ee91b47aa4a61a03648af5136045136fa3af152c6d1def0e0c6",
+      "papers.bib": "c597a2d1546259baa8881fa6826d1fdee65e77080508d1e4ad526ec8f166f088",
+      "scripts/generate_catalog.py": "57aad6922c1df1606fc76a589244eec05247161401da9f3d1237eb28a62c90e7",
+      "data/literature_reviews/2026-10-18-current-status.md": "aad8be9ad2dfe0f6783bacdf98a28c4056c943afbebd9fa363c02add13966029"
+    }
+  },
+  "category_counts_after": {
+    "es_pretraining": 1,
+    "es_single_turn": 15,
+    "related_hybrid": 65,
+    "es_multi_turn": 2,
+    "es_understanding": 11,
+    "zo_pretraining": 5,
+    "zo_baselines": 17,
+    "related_closed_form": 31,
+    "zo_directions": 34,
+    "zo_systems": 26,
+    "zo_alignment": 1,
+    "zo_multi_turn": 1,
+    "zo_understanding": 11,
+    "related_prompt_agent": 29,
+    "related_agent_training": 6,
+    "related_inference": 9,
+    "related_forward_gradient": 1
+  },
+  "summary_zh": "收录2篇确定窗口内首发论文：联邦零阶参数训练与遗忘1篇，ES几何解释1篇。另补收录GROM闭式权重编辑1篇，更新JARQ首发与作者信息，并核实Coverage, Not Credit的持久适配参数训练。目录由262增至265条。",
+  "limitations_zh": "仅以明确方法关键词与精确题名检索，未扩展通用语言模型语料或会议全量投稿。索引日期不作首发证据；OpenReview命中存在无关内容，不保证全覆盖。本轮阅读原始摘要、版本历史与部分方法及实验设置，未宣称全文核读或独立复现。触发后环境日期变更，仍保留原11月1日窗口，后续命中不倒算为本周新增。"
+}

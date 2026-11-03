@@ -228,10 +228,10 @@
     "title": "Coverage, Not Credit: Failure-Credit Routing of Zeroth-Order Perturbation Budgets Does Not Improve On-Pool Sample Efficiency for LLM Agents",
     "category": "es_understanding",
     "date": "2026-08",
-    "description_en": "Tests whether trajectory-level failure credit should decide how a fixed ZO/ES perturbation budget is split across the modules of tool-using LLM agents (Qwen2.5-1.5B/3B, SmolLM2-1.7B); finds no detectable on-pool gain over uniform allocation and documents failure modes of ZO/ES experiments on frozen LLMs. The exact perturbed parameter set is not stated in the abstract.",
-    "description_zh": "检验工具调用 LLM agent（Qwen2.5-1.5B/3B、SmolLM2-1.7B）中是否应按轨迹级失败归因在各模块间分配固定的 ZO/ES 扰动预算；在固定任务池上未发现优于均匀分配的可检测增益，并记录了在冻结 LLM 上做 ZO/ES 实验的几类失效模式。摘要未说明具体扰动的参数集合。",
-    "resources_en": "[paper](https://arxiv.org/abs/2608.28011) · code not located · 2026-08",
-    "resources_zh": "[论文](https://arxiv.org/abs/2608.28011) · 未找到代码 · 2026-08"
+    "description_en": "Studies allocation of ZO/ES perturbation budgets across agent modules. A frozen LM is augmented with 128 checkpointed coefficients, applied through forward hooks to q/v/o projections; mirrored ES trains these persistent adapter coefficients without backpropagation. Authors report no detectable fixed-pool routing gain over uniform allocation.",
+    "description_zh": "研究智能体模块间的ZO/ES扰动预算分配。冻结语言模型骨干，以前向钩子将128个保存到检查点的系数作用于q/v/o投影，通过镜像ES无反传训练这些持久适配参数。作者报告固定任务池上归因路由未显示优于均匀分配的可检测收益。",
+    "resources_en": "[paper](https://arxiv.org/abs/2608.28011) · code not located · 2026-08 / [persistent adapter evidence, section 3](https://arxiv.org/html/2608.28011v1)",
+    "resources_zh": "[论文](https://arxiv.org/abs/2608.28011) · 未找到代码 · 2026-08 / [持久适配参数证据：第3节](https://arxiv.org/html/2608.28011v1)"
   },
   {
     "title": "Overcoming Forgetting in LLM Fine-Tuning with Evolution Strategies",
@@ -974,11 +974,11 @@
   {
     "title": "JARQ: Joint Alternating Refinement for Quantization",
     "category": "related_closed_form",
-    "date": "2026",
-    "description_en": "JARQ alternates exact joint least-squares scale fitting with bounded Babai proposals that update multiple quantization codes without backpropagation.",
-    "description_zh": "JARQ 交替联合最小二乘拟合 group scales 与有界 Babai 多码提议，实现无反传量化 refinement。",
-    "resources_en": "[paper](https://openreview.net/forum?id=9lEvG6Tfku) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
-    "resources_zh": "[论文](https://openreview.net/forum?id=9lEvG6Tfku) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
+    "date": "2026-09",
+    "description_en": "Alternates joint least-squares scale fitting with bounded Babai code proposals for LM post-training quantization without backpropagation. Persistently changes quantization scales/codes; host quantizer preparation may have different gradient dependencies. Historical backfill; arXiv first public 2026-09-29 verified.",
+    "description_zh": "交替联合最小二乘尺度拟合与有界Babai量化码提议，无反传精炼语言模型量化参数。持久更新量化尺度与编码；初始量化器的反传依赖另行判断。历史补收录；arXiv首发2026-09-29已核实。",
+    "resources_en": "[preprint](https://arxiv.org/abs/2609.38599) / [same-title OpenReview submission](https://openreview.net/forum?id=9lEvG6Tfku) / first public 2026-09-29T22:00:00Z / code and acceptance unverified",
+    "resources_zh": "[预印本](https://arxiv.org/abs/2609.38599) / [同题OpenReview投稿](https://openreview.net/forum?id=9lEvG6Tfku) / 首发2026-09-29T22:00:00Z / 代码与录用待核实"
   },
   {
     "title": "Inference-Native Zeroth-Order Optimization for LLMs",
@@ -2356,5 +2356,32 @@
     "description_zh": "通过置信度加权移动平均更新类别原型，并结合原型与CLIP输出。所提测试时更新无需反传，改变原型状态而非编码器权重。窗口外补收录；属于推理适配，非语言模型参数训练；录用状态待核实。",
     "resources_en": "[paper](https://arxiv.org/abs/2604.21360) / [source 1](https://arxiv.org/html/2604.21360v1) / [code, unreviewed](https://github.com/hzhxmu/PTA) / backfill / 2026-04-23T07:20:56Z",
     "resources_zh": "[论文](https://arxiv.org/abs/2604.21360) / [原始来源1](https://arxiv.org/html/2604.21360v1) / [代码，未审查](https://github.com/hzhxmu/PTA) / 补收录 / 2026-04-23T07:20:56Z"
+  },
+  {
+    "title": "Efficient Exact Unlearning for Federated Zeroth-Order Optimization",
+    "category": "zo_systems",
+    "date": "2026-10",
+    "description_en": "Combines seed-encoded ZO training with subsampling/noise stability and replay or rejection-reflection coupling for federated exact unlearning. Experiments include Llama-3.2-1B/3B on TOFU. Proposed updates persistently modify model parameters without backpropagation; exact module coverage and implementation unverified.",
+    "description_zh": "结合种子编码零阶训练、子采样或噪声稳定性，以及重放或拒绝—反射耦合，实现联邦精确遗忘；TOFU实验包含Llama-3.2-1B/3B。所提更新无需反传且持久改变模型参数；具体模块覆盖与实现待核实。",
+    "resources_en": "[paper](https://arxiv.org/abs/2610.35211) / [method](https://arxiv.org/html/2610.35211v1) / code unverified / first public / 2026-10-26T11:03:48Z",
+    "resources_zh": "[论文](https://arxiv.org/abs/2610.35211) / [方法原文](https://arxiv.org/html/2610.35211v1) / 代码待核实 / 首发 / 2026-10-26T11:03:48Z"
+  },
+  {
+    "title": "GROM: Gradient-Free Rapid One-Shot Machine Unlearning",
+    "category": "related_closed_form",
+    "date": "2026-08",
+    "description_en": "Uses forward-pass features and a ridge-regularized least-squares solution to apply a persistent additive weight edit for LM unlearning, principally to MLP down-projections. The edit uses no backpropagation or iterative ZO estimator. Historical backfill; closed-form adaptation, with code, venue and empirical claims not independently verified.",
+    "description_zh": "从前向特征求解岭正则最小二乘问题，对语言模型施加持久加性权重编辑，主要修改MLP下投影。所提编辑无需反传，也不使用迭代零阶估计器。窗口外补收录，归入闭式适配；代码、录用与实证结论待独立核实。",
+    "resources_en": "[paper](https://arxiv.org/abs/2608.05783) / [method](https://arxiv.org/html/2608.05783v1) / [code, unreviewed](https://github.com/Batorskq/GROM) / backfill / 2026-08-06T09:16:53Z",
+    "resources_zh": "[论文](https://arxiv.org/abs/2608.05783) / [方法原文](https://arxiv.org/html/2608.05783v1) / [代码，未审查](https://github.com/Batorskq/GROM) / 窗口外补收录 / 2026-08-06T09:16:53Z"
+  },
+  {
+    "title": "Center-of-Mass Interpretation of Evolution Strategies",
+    "category": "es_understanding",
+    "date": "2026-10",
+    "description_en": "Interprets the mean-centered ES step geometrically as a scaled shift between the sampled centroid and reward-weighted center of mass. Motivated by ES language-model fine-tuning; theoretical analysis, not a new empirically validated LM training method. No backpropagation in the analyzed ES step; no trained modules reported.",
+    "description_zh": "将均值中心化ES更新解释为采样质心与奖励加权重心之间的缩放位移，以语言模型ES微调为动机。属于理论解释，未提供新的语言模型训练实证。所分析ES步骤无需反传；未报告实际训练模块。",
+    "resources_en": "[paper](https://arxiv.org/abs/2610.35865) / [method](https://arxiv.org/html/2610.35865v1) / code unverified / first public / 2026-10-26T17:59:33Z",
+    "resources_zh": "[论文](https://arxiv.org/abs/2610.35865) / [方法原文](https://arxiv.org/html/2610.35865v1) / 代码待核实 / 首发 / 2026-10-26T17:59:33Z"
   }
 ]
