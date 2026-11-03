@@ -1,0 +1,28 @@
+{
+  "reason": "原始摘要将提示—参数共同演化作为所提框架及实验的重要机制；按用户2026-10-12收紧范围，涉及提示优化核心或技能—策略共同演化的论文暂不进入现行目录。此判定依据实际共同演化机制，非凭skill单词。尽管该文确有模型参数训练，仍适用优先范围限制。",
+  "source": "https://arxiv.org/abs/2608.17310",
+  "authors": [
+    "Zhi Zheng",
+    "Rongsheng Chen",
+    "Yunpeng Ba",
+    "Zhenkun Wang",
+    "Yee Whye Teh",
+    "Wee Sun Lee"
+  ],
+  "first_public": "2026-08-18T03:03:53Z",
+  "decision": "按用户范围暂不收录；完整条目与书目可恢复",
+  "uncertainty": "本轮依据原始摘要核查；将来若用户解除提示/技能范围限制，可从归档恢复并重读正文。",
+  "date": "2026-11-03",
+  "paper": {
+    "title": "Agentic ESOpt: Fine-Tuning Long-Horizon LLM Agents with Minimal GPU Memory Requirements",
+    "category": "es_multi_turn",
+    "date": "2026-08",
+    "description_en": "Full-parameter ES evaluates complete agent trajectories with environment rewards, giving trajectory-level parameter attribution without step-level credit assignment. Experiments include 15/45-turn Sudoku, ReAct-style Math and DocVQA, WebArena-Lite, and automatic heuristic design.",
+    "description_zh": "全参数 ES 使用环境奖励评估完整智能体轨迹，无需逐步信用分配即可获得轨迹级参数归因。实验涵盖 15/45 轮数独、ReAct 风格的数学和 DocVQA、WebArena-Lite，以及启发式算法的自动设计。",
+    "resources_en": "[paper](https://arxiv.org/abs/2608.17310) · [code](https://github.com/zz1358m/Agentic-ESOpt) · 2026-08 · [ICLR 2027 submission](https://openreview.net/forum?id=LfIpbuIKLb)",
+    "resources_zh": "[论文](https://arxiv.org/abs/2608.17310) · [代码](https://github.com/zz1358m/Agentic-ESOpt) · 2026-08 · [ICLR 2027 投稿](https://openreview.net/forum?id=LfIpbuIKLb)"
+  },
+  "bibtex": "@article{zheng2026agenticesopt,\n  title={Agentic ESOpt: Fine-Tuning Long-Horizon LLM Agents with Minimal GPU Memory Requirements},\n  author={Zheng, Zhi and Chen, Rongsheng and Ba, Yunpeng and Wang, Zhenkun and Teh, Yee Whye and Lee, Wee Sun},\n  journal={arXiv preprint arXiv:2608.17310}, year={2026},\n  url={https://arxiv.org/abs/2608.17310}\n}",
+  "prior_history": "Previously present in published main at 65a3b1e2af5e406a4efca71704d9cff564d2c3b6",
+  "restore_instructions": "Restore the archived seven-field record and BibTeX only after the user lifts the scope restriction, then regenerate both catalogs and recheck duplicates."
+}

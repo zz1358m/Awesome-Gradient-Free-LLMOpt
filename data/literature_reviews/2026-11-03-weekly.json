@@ -1,0 +1,326 @@
+{
+  "date": "2026-11-03",
+  "timezone": "Asia/Shanghai",
+  "window_start_utc": "2026-10-27T14:36:09Z",
+  "window_end_utc": "2026-11-03T14:36:09Z",
+  "base_commit": "65a3b1e2af5e406a4efca71704d9cff564d2c3b6",
+  "summary_zh": "本轮新增2篇11月2日arXiv初版论文（ENGINE、ZO-BOLT）与1篇作者原始研究博客；两篇会议论文跨平台最早公开日待核实，不计确定本周首次公开。ZO-Curv已有OpenReview条目，本次只补充arXiv版本、实名作者和反传边界。另按既有范围将以提示—参数共同演化为核心的Agentic ESOpt移至可恢复记录。现行目录由265条变为267条。",
+  "limitations_zh": "仅使用明确方法关键词与精确题名检索，不扩展通用语言模型语料或按时间抓取会议全量投稿。只对已发现的两个精确题名在NeurIPS官方列表中核对，未以该列表扩大发现候选。部分网页和代码访问失败，保留具体待核实事项；仅核读摘要、版本历史与部分方法和实验设置，未阅读全文或独立复现。检索结果与索引日期不代表首次公开。",
+  "published_before": 265,
+  "published_after": 267,
+  "papers_added": 2,
+  "research_blogs_added": 1,
+  "new_arxiv_v1_in_window": 2,
+  "arxiv_v1_sources_verified": 3,
+  "confirmed_first_public_in_window_earliest_verified_source": 1,
+  "cross_platform_first_public_unverified": 2,
+  "pure_zo_parameter_optimization_added": 2,
+  "related_hybrid_added": 0,
+  "existing_hybrid_metadata_updated": 1,
+  "related_weight_editing_blog_added": 1,
+  "scope_archived": 1,
+  "included": [
+    {
+      "title": "ENGINE: Endogenous Variational MultiScale Optimization for Zeroth-Order LLM Fine-Tuning",
+      "authors": [
+        "Zhuoli Ouyang",
+        "Changxi Chi",
+        "Siyuan Li",
+        "Tailin Wu"
+      ],
+      "date": "2026-11",
+      "arxiv_v1": "2026-11-02T15:31:38Z",
+      "first_public": null,
+      "status": "arxiv_v1_in_window_cross_platform_first_unverified",
+      "category": "zo_directions",
+      "url": "https://arxiv.org/abs/2611.03293",
+      "sources": [
+        "https://arxiv.org/html/2611.03293",
+        "https://neurips.cc/Downloads/2026"
+      ],
+      "code": "https://github.com/AI4Science-WestlakeU/ENGINE",
+      "key": "ouyang2026engine",
+      "kind": "paper",
+      "description_en": "Alternates LoRA-space and full-space ZO phases, transferring parameters, momentum and curvature through a V-cycle with variational multiscale correction. Persistently updates adapters and model weights using function evaluations. NeurIPS 2026 official listing verified; arXiv v1 November 2, earlier cross-platform release unverified.",
+      "description_zh": "以V循环交替执行LoRA空间与全空间零阶阶段，通过变分多尺度校正传递参数、动量和曲率，以函数值持久更新适配器及模型权重。已核实NeurIPS 2026官方列表；arXiv初版11月2日，更早跨平台公开时间待核实。",
+      "method": "低秩与全空间零阶采样，变分多尺度子网格校正，V循环耦合。",
+      "backpropagation": "所提训练阶段以函数值估计更新，不需语言模型反传；理论中的解析梯度记号不等于实际采用反传。",
+      "persistent_parameters": "是，LoRA因子及全空间阶段的模型权重；阶段边界合并并转移动量与曲率。逐层实现覆盖未全面审查。",
+      "relevance": "高，直接语言模型零阶参数优化，归入更优方向与更低方差。",
+      "uncertainties": [
+        "核实摘要、初版日期、正文第3节与作者代码说明，未阅读全文或复现实验。",
+        "官方NeurIPS 2026列表含同题条目；单篇会议页面访问失败，未核实更早公开时间或正式论文集书目信息。",
+        "代码仓库可访问，未审查全部实现；性能与理论界仍为作者结果。"
+      ]
+    },
+    {
+      "title": "The Cost of Mismatch: Noise Amplification in Zeroth-Order Reinforcement Learning",
+      "authors": [
+        "Lianmin Chen",
+        "Junbin Qiu",
+        "Chenxing Wei",
+        "Yao Shu",
+        "Kun He"
+      ],
+      "date": "2026-11",
+      "arxiv_v1": "2026-11-02T15:07:18Z",
+      "first_public": null,
+      "status": "arxiv_v1_in_window_cross_platform_first_unverified",
+      "category": "zo_alignment",
+      "url": "https://arxiv.org/abs/2611.03260",
+      "sources": [
+        "https://arxiv.org/html/2611.03260",
+        "https://neurips.cc/Downloads/2026"
+      ],
+      "code": "https://github.com/lianmin-chen/the_cost_of_mismatch",
+      "code_state": "原文提供链接，直接访问未成功，仓库内容待核实",
+      "key": "chen2026costofmismatch",
+      "kind": "paper",
+      "description_en": "Analyzes paired-evaluation data mismatch and introduces ZO-BOLT: matched-minibatch symmetric finite differences with query reuse and adaptive updates for a fixed weighted-SFT objective. Persistently trains q/k LoRA adapters without LM backpropagation; backbone frozen. NeurIPS 2026 official listing verified; earliest cross-platform release unverified.",
+      "description_zh": "分析成对函数评估的数据失配噪声，提出ZO-BOLT：以相同小批量的对称有限差分、查询重用与自适应更新优化固定加权SFT目标。无需语言模型反传，持久训练q/k投影LoRA并冻结骨干。已核实NeurIPS 2026官方列表；跨平台最早公开时间待核实。",
+      "method": "匹配数据的对称有限差分，ZoAR查询重用与R-AdaZO自适应更新。",
+      "backpropagation": "所提ZO-BOLT更新不需反传；一阶BOLT为比较分支。数据和权重在优化前构建，完整数据准备流程仍待审查。",
+      "persistent_parameters": "是，q_proj与k_proj上的LoRA，秩8；骨干冻结。论文亦有不更新参数的诊断实验，不能把诊断与端到端训练混为一谈。",
+      "relevance": "高，直接语言模型零阶后训练与噪声机理，归入偏好对齐相关训练目标。",
+      "uncertainties": [
+        "核实摘要、初版历史、算法及附录D训练设置，未阅读全文或复现实验。",
+        "理论分析对象与含历史重用、自适应预条件的完整实现不同，不能把分析保证扩张为整个优化器的保证。",
+        "作者声明NeurIPS 2026 Poster，官方列表核实同题存在；单篇详情、更早公开日和代码内容待核实。"
+      ]
+    },
+    {
+      "title": "Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights",
+      "authors": [
+        "Rikiya Takehi",
+        "Jayden Teoh",
+        "Alex Zhang",
+        "Omar Khattab"
+      ],
+      "date": "2026-11",
+      "arxiv_v1": null,
+      "first_public": "2026-11-02",
+      "status": "original_research_post_in_window_day_verified",
+      "category": "related_agent_training",
+      "url": "https://rikiyat.github.io/blog/weight-space-programming/",
+      "sources": [
+        "https://rikiyat.github.io/"
+      ],
+      "code": "https://github.com/RikiyaT/lm_understand-logs",
+      "key": "takehi2026weightspace",
+      "kind": "research_blog",
+      "description_en": "Author research blog: a fixed frontier LM reads and directly edits another network's weights, including persistent Qwen3.5-0.8B MLP edits without gradient descent. The editor is not trained; earlier networks have their own training dependencies. Related model-weight editing, not a new ES/ZO optimizer; no independent replication claimed.",
+      "description_zh": "作者研究博客：固定前沿语言模型读取并直接编辑另一模型权重，包括不经梯度下降、持久修改Qwen3.5-0.8B的MLP。编辑器不训练，实验中既有网络另有训练依赖。列为关联模型权重编辑，不视为新ES/ZO优化器，未独立复现实验。",
+      "method": "语言模型直接分析与编写模型数值权重，配合受限前向评估预算。",
+      "backpropagation": "目标权重编辑阶段不用梯度下降；被分析网络的既有PPO或Adam训练另行存在，编辑器自身不更新。",
+      "persistent_parameters": "是，原始页面实验8明确修改Qwen3.5-0.8B中第15、19层MLP输出列；与仅修改外部程序或记忆不同。",
+      "relevance": "中高，明确持久更新目标语言模型权重；以研究博客和关联参数编辑标注，放入关联智能体模型与控制器训练分类。",
+      "uncertainties": [
+        "核实作者原始研究页、发布日期、实验8和日志链接，未审查全部日志或复现。",
+        "仅为研究博客，未取得正式论文、同行评审或会议录用依据。",
+        "精确发布时间与时区未标注；作者报告的性能增益和机制解释待复核。"
+      ]
+    }
+  ],
+  "metadata_update": {
+    "source_record": {
+      "title": "Accelerating LLM Pretraining with Zeroth-Order Curvature on Idle Serving Compute",
+      "authors": [
+        "Mingchuan Ma",
+        "Dongqi Cai",
+        "Daqian Yang",
+        "Zhenyan Lu",
+        "Chen Chen",
+        "Teresa Lv",
+        "Yan Gao",
+        "Shangguang Wang",
+        "Mengwei Xu",
+        "Nicholas D. Lane",
+        "Yu Huang"
+      ],
+      "date": "2026-11",
+      "arxiv_v1": "2026-11-02T07:38:45Z",
+      "first_public": null,
+      "status": "existing_openreview_record_arxiv_version_added",
+      "category": "related_hybrid",
+      "url": "https://arxiv.org/abs/2611.02688",
+      "sources": [
+        "https://arxiv.org/html/2611.02688v1"
+      ],
+      "key": "ma2026zocurv",
+      "kind": "paper",
+      "description_en": "ZO-Curv uses forward-only queries to estimate curvature on serving devices while retaining first-order gradients for persistent LM pretraining. This is hybrid training, not gradient-free pretraining. Authors evaluate 125M–1.5B models; timing assumptions for emulated and disjoint device pools require separate interpretation. Code promised upon acceptance.",
+      "description_zh": "ZO-Curv在推理设备上以纯前向查询估计曲率，训练设备仍计算一阶梯度并持久更新预训练权重，属于混合训练。作者实验覆盖125M至1.5B；模拟与分离设备池的计时口径需分别理解。原文称录用后发布代码。",
+      "method": "函数值零阶曲率估计与一阶梯度预条件更新相结合。",
+      "backpropagation": "是，训练节点保留一阶梯度与反传；仅曲率查询使用纯前向计算。",
+      "persistent_parameters": "是，语言模型预训练权重；实验为125M至1.5B模型。具体逐模块参数排除与实现待代码发布后核实。",
+      "relevance": "高相关混合方法，归入related_hybrid，不计纯梯度无关预训练主线。",
+      "uncertainties": [
+        "核实摘要、版本历史、实验第4节与复现说明，未阅读全文或独立复现。",
+        "主实验模拟前向设备池，训练节点关键路径计时排除了并发曲率查询；另有4+4 GPU分组实测，不能混用两种计时结论。",
+        "原文承诺录用后放代码；未取得代码或正式录用证据。",
+        "仓库既有记录注明OpenReview于2026-10-03公开，本轮访问该页面失败；保留历史来源，不将11月2日arXiv初版计为全新论文。"
+      ]
+    },
+    "before": {
+      "title": "Accelerating LLM Pretraining with Zeroth-Order Curvature on Idle Serving Compute",
+      "category": "related_hybrid",
+      "date": "2026",
+      "description_en": "ZO-Curv estimates curvature with zeroth-order queries on idle forward-only serving devices and uses it to refine first-order full-parameter pretraining updates.",
+      "description_zh": "在空闲纯前向设备上以零阶查询估计曲率，用其精炼主训练端的一阶全参数更新。",
+      "resources_en": "[paper](https://openreview.net/forum?id=qh1N46HjOP) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
+      "resources_zh": "[论文](https://openreview.net/forum?id=qh1N46HjOP) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
+    },
+    "after": {
+      "title": "Accelerating LLM Pretraining with Zeroth-Order Curvature on Idle Serving Compute",
+      "category": "related_hybrid",
+      "date": "2026",
+      "description_en": "ZO-Curv uses forward-only queries to estimate curvature on serving devices while retaining first-order gradients for persistent LM pretraining. This is hybrid training, not gradient-free pretraining. Authors evaluate 125M–1.5B models; timing assumptions for emulated and disjoint device pools require separate interpretation. Code promised upon acceptance.",
+      "description_zh": "ZO-Curv在推理设备上以纯前向查询估计曲率，训练设备仍计算一阶梯度并持久更新预训练权重，属于混合训练。作者实验覆盖125M至1.5B；模拟与分离设备池的计时口径需分别理解。原文称录用后发布代码。",
+      "resources_en": "[paper](https://openreview.net/forum?id=qh1N46HjOP) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window / [arXiv v1 2026-11-02T07:38:45Z](https://arxiv.org/abs/2611.02688) / code promised upon acceptance",
+      "resources_zh": "[论文](https://openreview.net/forum?id=qh1N46HjOP) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录 / [arXiv 2026-11-02T07:38:45Z](https://arxiv.org/abs/2611.02688) / 原文称录用后发布代码"
+    },
+    "previous_bib": "@unpublished{iclr2027acceleratingllmpretrainingwithzeroth,\n  title={Accelerating LLM Pretraining with Zeroth-Order Curvature on Idle Serving Compute},\n  author={Anonymous},\n  note={ICLR 2027 Conference Submission; decision pending; OpenReview public 2026-10-03; cross-platform first public date unverified; cycle backfill outside 2026-10-04--2026-10-11 window}, year={2026},\n  url={https://openreview.net/forum?id=qh1N46HjOP}\n}",
+    "new_bib": "@article{iclr2027acceleratingllmpretrainingwithzeroth,\n  title={Accelerating LLM Pretraining with Zeroth-Order Curvature on Idle Serving Compute},\n  author={Mingchuan Ma and Dongqi Cai and Daqian Yang and Zhenyan Lu and Chen Chen and Teresa Lv and Yan Gao and Shangguang Wang and Mengwei Xu and Nicholas D. Lane and Yu Huang},\n  journal={arXiv preprint arXiv:2611.02688}, year={2026},\n  note={Existing same-title OpenReview qh1N46HjOP record retained; arXiv v1 2026-11-02T07:38:45Z is a version-source update, not a new paper; earlier public date unverified this run; citation key preserved},\n  url={https://arxiv.org/abs/2611.02688}\n}"
+  },
+  "scope_archive": "data/deferred_papers/2026-11-03-prompt-parameter-coevolution.json",
+  "checked_not_added": [
+    {
+      "title": "Online Label-Free Gradient Matching for Continual Language Model Training",
+      "url": "https://arxiv.org/abs/2611.03496",
+      "decision": "not_added",
+      "reason": "检索摘要为梯度匹配数据蒸馏，未取得梯度无关机制证据；不因标签缺失或普通模型训练而扩大收录。"
+    },
+    {
+      "title": "BISECT: Bilevel Spectral Decomposition for Low-Rank Continual Learning",
+      "url": "https://arxiv.org/abs/2611.03574",
+      "decision": "not_added",
+      "reason": "原始检索摘要仅见视觉Transformer持续学习与梯度训练，未确认语言模型关联；保留记录。"
+    },
+    {
+      "title": "3D-BBDA: Backpropagation-Free Black-Box Domain Adaptation for Robust 3D Point Cloud Recognition",
+      "url": "https://arxiv.org/abs/2611.03588",
+      "decision": "not_added",
+      "reason": "原始检索摘要为3D点云黑箱适配，未确认语言模型关联。"
+    },
+    {
+      "title": "Evolution strategies: Application in hybrid quantum-classical neural networks",
+      "url": "https://arxiv.org/abs/2205.08059",
+      "decision": "not_added",
+      "reason": "通用量子网络研究，搜索回退返回旧文，未确认语言模型关联。"
+    },
+    {
+      "title": "ComPO: Preference Alignment via Comparison Oracles",
+      "decision": "existing_duplicate",
+      "reason": "Title and original-source record already present; no duplicate added.",
+      "resources": "[paper](https://arxiv.org/abs/2505.05465) · [2026 extension](https://arxiv.org/abs/2609.19144) · [code](https://github.com/PeterLauLukChen/ComparisonPO) · ![NeurIPS 2025](https://img.shields.io/badge/NeurIPS-2025-orange)"
+    },
+    {
+      "title": "When Are Nearby Experts Composable? Cross-Task Model Merging in Neural Thickets",
+      "decision": "existing_duplicate",
+      "reason": "Title and original-source record already present; no duplicate added.",
+      "resources": "[paper](https://openreview.net/forum?id=lXiUD5V7wG) · [code/project](https://anonymous.4open.science/r/Thickets-Merge/) · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window"
+    },
+    {
+      "title": "EA4LLM: A Gradient-Free Approach to Large Language Model Optimization via Evolutionary Algorithms",
+      "decision": "existing_duplicate",
+      "reason": "Title and original-source record already present; no duplicate added.",
+      "resources": "[paper](https://arxiv.org/abs/2510.10603) · code not located · 2025-10"
+    },
+    {
+      "title": "Zeroth-Order Fine-Tuning of LLMs in Random Subspaces",
+      "decision": "existing_duplicate",
+      "reason": "Title and original-source record already present; no duplicate added.",
+      "resources": "[paper](https://openaccess.thecvf.com/content/ICCV2025/html/Yu_Zeroth-Order_Fine-Tuning_of_LLMs_in_Random_Subspaces_ICCV_2025_paper.html) · [code](https://github.com/zimingyy/SubZero) · ![ICCV 2025](https://img.shields.io/badge/ICCV-2025-orange)"
+    },
+    {
+      "title": "Evolution Strategies at Scale: LLM Fine-Tuning Beyond Reinforcement Learning",
+      "decision": "existing_duplicate",
+      "reason": "Title and original-source record already present; no duplicate added.",
+      "resources": "[paper](https://openreview.net/forum?id=i0P4ew9GpS) · [code](https://github.com/VsonicV/es-at-scale) · [earlier implementation](https://github.com/VsonicV/es-fine-tuning-paper) · ![ICML 2026](https://img.shields.io/badge/ICML-2026-orange)"
+    },
+    {
+      "title": "EGGROLL, Unrolled: Understanding and Improving Low-Rank Evolution Strategies at Scale",
+      "decision": "existing_duplicate",
+      "reason": "Title and original-source record already present; no duplicate added.",
+      "resources": "[paper](https://openreview.net/forum?id=kbNjFLXanS) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window"
+    },
+    {
+      "title": "Command-V: Training-Free Representation Finetuning Transfer",
+      "decision": "existing_duplicate",
+      "reason": "Title and original-source record already present; no duplicate added.",
+      "resources": "[paper](https://proceedings.iclr.cc/paper_files/paper/2026/hash/b5dd2fb3542ebe92d448aaa93cf73d23-Abstract-Conference.html) / [source 1](https://openreview.net/forum?id=oRYzpI3cmJ) / code unverified / backfill / first-public date unverified; ICLR 2026"
+    },
+    {
+      "title": "Quantized Evolution Strategies: High-precision Fine-tuning of Quantized LLMs at Low-precision Cost",
+      "decision": "existing_duplicate",
+      "reason": "Title and original-source record already present; no duplicate added.",
+      "resources": "[paper](https://arxiv.org/abs/2602.03120) · [code](https://github.com/dibbla/Quantized-Evolution-Strategies) · 2026-02 · [ICLR 2027 submission](https://openreview.net/forum?id=LR8wVOqE28)"
+    },
+    {
+      "title": "The Blessing of Dimensionality in LLM Fine-tuning: A Variance-Curvature Perspective",
+      "decision": "existing_duplicate",
+      "reason": "Title and original-source record already present; no duplicate added.",
+      "resources": "[paper](https://arxiv.org/abs/2602.00170) · code not located · 2026-02 · [ICLR 2027 submission](https://openreview.net/forum?id=Pz7PpCK6Py)"
+    },
+    {
+      "title": "Dust: Pretraining Transformers Without Backpropagation",
+      "decision": "existing_duplicate",
+      "reason": "Title and original-source record already present; no duplicate added.",
+      "resources": "[research article](https://qlabs.sh/research/dust) · [code](https://github.com/qlabs-eng/dust) · 2026-10 (month only; first-publication day unverified) / [Noise benchmark](https://github.com/qlabs-eng/noise)"
+    },
+    {
+      "title": "Agentic ESOpt: Fine-Tuning Long-Horizon LLM Agents with Minimal GPU Memory Requirements",
+      "decision": "archived_by_user_scope",
+      "reason": "原始摘要将提示—参数共同演化作为所提框架及实验的重要机制；按用户2026-10-12收紧范围，涉及提示优化核心或技能—策略共同演化的论文暂不进入现行目录。此判定依据实际共同演化机制，非凭skill单词。尽管该文确有模型参数训练，仍适用优先范围限制。",
+      "url": "https://arxiv.org/abs/2608.17310"
+    }
+  ],
+  "queries": [
+    "site:arxiv.org/abs/2611 \"zeroth-order\" \"language\"",
+    "site:arxiv.org/abs/2611 \"gradient-free\" \"language\"",
+    "site:arxiv.org/abs/2611 \"evolution strategies\"",
+    "site:openreview.net \"ICLR 2027\" \"zeroth-order\" language",
+    "\"zeroth-order\" \"November 2026\" \"LLM\"",
+    "\"gradient-free\" \"November 2026\" \"language model\"",
+    "\"backpropagation-free\" \"language\" after:2026-10-27 before:2026-11-04",
+    "\"evolution strategies\" \"fine-tuning\" after:2026-10-27 before:2026-11-04",
+    "\"Accelerating LLM Pretraining with Zeroth-Order Curvature on Idle Serving Compute\"",
+    "site:arxiv.org \"zeroth-order\" \"Nov\" \"2026\" pretraining",
+    "site:arxiv.org \"forward-only\" \"Nov\" \"2026\" language",
+    "site:openreview.net \"ICLR 2027\" \"backpropagation-free\"",
+    "\"zeroth-order\" \"Nov 3, 2026\" LLM",
+    "\"gradient-free\" \"Nov 2, 2026\" LLM",
+    "\"forward gradient\" \"language\" \"November 2026\"",
+    "\"Sparks of Weight-Space Programming\" site:rikiyat.github.io"
+  ],
+  "main_worktree_preserved": {
+    "catalog_count": 252,
+    "sha256": {
+      "README.md": "593695c8d764ba83c3ea65d55a5a6d3d3fbbeb5a3e4c4a1906a6d6a48332bcd0",
+      "README_zh.md": "b3eac1a2f413cfa079a5aa4d74b4dfd6ecda58fd75461a2d013a0fd02a3f24b1",
+      "data/papers.json": "fa1b593478a52ee91b47aa4a61a03648af5136045136fa3af152c6d1def0e0c6",
+      "papers.bib": "c597a2d1546259baa8881fa6826d1fdee65e77080508d1e4ad526ec8f166f088",
+      "scripts/generate_catalog.py": "57aad6922c1df1606fc76a589244eec05247161401da9f3d1237eb28a62c90e7",
+      "data/literature_reviews/2026-10-18-current-status.md": "aad8be9ad2dfe0f6783bacdf98a28c4056c943afbebd9fa363c02add13966029"
+    }
+  },
+  "category_counts_after": {
+    "es_pretraining": 1,
+    "es_single_turn": 15,
+    "related_hybrid": 65,
+    "es_understanding": 11,
+    "zo_pretraining": 5,
+    "zo_baselines": 17,
+    "related_closed_form": 31,
+    "zo_directions": 35,
+    "zo_systems": 26,
+    "zo_alignment": 2,
+    "zo_multi_turn": 1,
+    "zo_understanding": 11,
+    "related_prompt_agent": 29,
+    "related_agent_training": 7,
+    "related_inference": 9,
+    "related_forward_gradient": 1,
+    "es_multi_turn": 1
+  }
+}

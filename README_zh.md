@@ -79,7 +79,6 @@ ES 和双点 ZO 都可以看作平滑目标函数的估计方法，但现有大�
 
 | 日期 | 论文 | 核心贡献 | 资源 |
 |---|---|---|---|
-| 2026-08 | **Agentic ESOpt: Fine-Tuning Long-Horizon LLM Agents with Minimal GPU Memory Requirements** | 全参数 ES 使用环境奖励评估完整智能体轨迹，无需逐步信用分配即可获得轨迹级参数归因。实验涵盖 15/45 轮数独、ReAct 风格的数学和 DocVQA、WebArena-Lite，以及启发式算法的自动设计。 | [论文](https://arxiv.org/abs/2608.17310) · [代码](https://github.com/zz1358m/Agentic-ESOpt) · 2026-08 · [ICLR 2027 投稿](https://openreview.net/forum?id=LfIpbuIKLb) |
 | 2026-10 | **Asynchrony Is Nearly Free for Evolution Strategies on Long-Horizon LLM Agentic Tasks** | v2以Qwen3-4B-Instruct-2507在WebShop上研究有界延迟异步全参数高斯ES，参数更新无需反传；v1的Qwen2.5及终端任务记录另存版本档案。首发2026-10-03，10月14日改题与修订不计新论文；每条件训练次数及真实耗时收益仍需谨慎核实。 | [论文](https://arxiv.org/abs/2610.04196v2) / [v1历史](https://arxiv.org/abs/2610.04196v1) / [原条目代码](https://github.com/Bhoy1/async-es) / 首发2026-10-03 UTC；2026-10-14修订，不计新论文 |
 
 ### 理解 ES
@@ -174,6 +173,7 @@ ES 和双点 ZO 都可以看作平滑目标函数的估计方法，但现有大�
 | 2024-02 | **Differentially Private Zeroth-Order Methods for Scalable Large Language Model Finetuning** | 结合差分隐私与零阶函数值估计，通过阶段式超参数调度持久微调语言模型，所提更新避免常规反向传播。补收录：2024-02-12（UTC）；作者全名、具体更新模块及隐私会计细节待核实。 | [论文](https://arxiv.org/abs/2402.07818) / 代码待核实 / 窗口外补收录 / 2024-02-12T17:24:15Z |
 | 2024 | **Variance-reduced Zeroth-Order Methods for Fine-Tuning Language Models** | MeZO-SVRG 在监督 ZO 微调中加入基于锚点的控制变量。 | [论文](https://proceedings.mlr.press/v235/gautam24a.html) · [代码](https://github.com/amazon-science/mezo_svrg) · ![ICML 2024](https://img.shields.io/badge/ICML-2024-orange) |
 | 2025-06 | **FZOO: Fast Zeroth-Order Optimizer for Fine-Tuning Large Language Models towards Adam-Scale Speed** | 结合批量单边零阶估计、Rademacher扰动及损失尺度归一化和步长调整，无需反向传播即可持久微调全模型参数或参数高效适配模块。补收录：首次公开于2025-06-10（UTC），已核实发表于ICLR 2026。作者报告的前向次数节省不等于普遍达到Adam实际耗时；准备阶段细节及版本差异待核实。 | [论文](https://arxiv.org/abs/2506.09034) · [ICLR 2026](https://proceedings.iclr.cc/paper_files/paper/2026/hash/b8d4c82b365d9361863000f8d1e86f1b-Abstract-Conference.html) · [代码](https://github.com/DKmiyan/FZOO) · 补收录 · 2025-06-10（UTC） |
+| 2026-11 | **ENGINE: Endogenous Variational MultiScale Optimization for Zeroth-Order LLM Fine-Tuning** | 以V循环交替执行LoRA空间与全空间零阶阶段，通过变分多尺度校正传递参数、动量和曲率，以函数值持久更新适配器及模型权重。已核实NeurIPS 2026官方列表；arXiv初版11月2日，更早跨平台公开时间待核实。 | [原文](https://arxiv.org/abs/2611.03293) / [原始来源1](https://arxiv.org/html/2611.03293) / [原始来源2](https://neurips.cc/Downloads/2026) / [代码或日志，未审查](https://github.com/AI4Science-WestlakeU/ENGINE) / arXiv初版 2026-11-02T15:31:38Z / 跨平台最早公开日期待核实 |
 
 #### 内存系统、预条件与量化
 
@@ -211,6 +211,7 @@ ES 和双点 ZO 都可以看作平滑目标函数的估计方法，但现有大�
 | 日期 | 论文 | 核心贡献 | 资源 |
 |---|---|---|---|
 | 2025 | **ComPO: Preference Alignment via Comparison Oracles** | 利用一比特偏好比较聚合参数扰动进行零阶对齐，实践结合 DPO/SimPO 梯度训练；在 UltraFeedback 上训练并以 AlpacaEval 2、Arena-Hard 和 MT-Bench 评估，2026 扩展加入在线 KL 控制。 | [论文](https://arxiv.org/abs/2505.05465) · [2026 扩展版](https://arxiv.org/abs/2609.19144) · [代码](https://github.com/PeterLauLukChen/ComparisonPO) · ![NeurIPS 2025](https://img.shields.io/badge/NeurIPS-2025-orange) |
+| 2026-11 | **The Cost of Mismatch: Noise Amplification in Zeroth-Order Reinforcement Learning** | 分析成对函数评估的数据失配噪声，提出ZO-BOLT：以相同小批量的对称有限差分、查询重用与自适应更新优化固定加权SFT目标。无需语言模型反传，持久训练q/k投影LoRA并冻结骨干。已核实NeurIPS 2026官方列表；跨平台最早公开时间待核实。 | [原文](https://arxiv.org/abs/2611.03260) / [原始来源1](https://arxiv.org/html/2611.03260) / [原始来源2](https://neurips.cc/Downloads/2026) / [代码或日志，未审查](https://github.com/lianmin-chen/the_cost_of_mismatch) / arXiv初版 2026-11-02T15:07:18Z / 跨平台最早公开日期待核实 |
 
 ### 多轮智能体适配
 
@@ -249,7 +250,7 @@ ES 和双点 ZO 都可以看作平滑目标函数的估计方法，但现有大�
 | 2026 | **A coarse-to-fine dynamic layer pruning framework for parameter-efficient fine-tuning** | CF-PEFT以无梯度宽度学习系统初始化层评分，再按参数更新幅度逐步冻结层，持久训练保留的参数高效适配模块。无梯度仅在初始化被明确说明；后续反向传播依赖待核实，暂列相关混合方法。首次公开日期待核实，不计确定的本周新增。 | [论文](https://doi.org/10.1016/j.neucom.2026.134299) / 代码待核实 / 首次公开日期待核实，不计确定本周新增 / 首次公开日期待核实 |
 | 2026 | **Continual Test-Time Learning with Evolution Strategies** | 用局部参数扰动策略群体生成轨迹，并以无标签组相对信号持续更新中央学生。 | [论文](https://openreview.net/forum?id=LOwG4xUpfa) · [arXiv](https://arxiv.org/abs/2610.24137) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录 |
 | 2026-08 | **Understanding Evolution Strategies for LLM Reasoning: Broader Reasoning Coverage than GRPO** | 混合贡献：除 ES 分析外，论文还提出两种顺序的 sequential ES–GRPO training。 | [论文](https://arxiv.org/abs/2608.27351) · [代码](https://github.com/yunpengba7/understanding-es) · 2026-08 · [ICLR 2027 投稿](https://openreview.net/forum?id=OF8CUj7TD8) |
-| 2026 | **Accelerating LLM Pretraining with Zeroth-Order Curvature on Idle Serving Compute** | 在空闲纯前向设备上以零阶查询估计曲率，用其精炼主训练端的一阶全参数更新。 | [论文](https://openreview.net/forum?id=qh1N46HjOP) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录 |
+| 2026 | **Accelerating LLM Pretraining with Zeroth-Order Curvature on Idle Serving Compute** | ZO-Curv在推理设备上以纯前向查询估计曲率，训练设备仍计算一阶梯度并持久更新预训练权重，属于混合训练。作者实验覆盖125M至1.5B；模拟与分离设备池的计时口径需分别理解。原文称录用后发布代码。 | [论文](https://openreview.net/forum?id=qh1N46HjOP) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录 / [arXiv 2026-11-02T07:38:45Z](https://arxiv.org/abs/2611.02688) / 原文称录用后发布代码 |
 | 2026 | **Zero-Order Optimization via Learnable Direction Sampling for LLM Fine-Tuning** | 混合方向学习：finite-difference ZO 更新 LLM，REINFORCE 同时适配 Gaussian perturbation distribution。 | [论文](https://arxiv.org/abs/2602.13659) · [代码](https://github.com/brain-lab-research/zo_ldsd) · 2026 · [ICLR 2027 投稿](https://openreview.net/forum?id=CZqew9w981) |
 | 2026 | **Geometric-Steering Muon for Online Large Language Model Fine-Tuning** | GS-Muon 在 Newton–Schulz 变换间加入几何 steering，使动量方向适应在线目标的一阶或零阶信号。 | [论文](https://openreview.net/forum?id=APkYU4FkeR) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录 |
 | 2026 | **FoRA: Forward-Only Residual Adaptation for Federated Fine-Tuning of Large Language Models** | FoRA 从冻结前向 LLM 骨干分离表征，并以一阶联邦优化训练轻量因子化 residual。 | [论文](https://openreview.net/forum?id=ACuCPfyRs1) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录 |
@@ -402,6 +403,7 @@ ES 和双点 ZO 都可以看作平滑目标函数的估计方法，但现有大�
 | 2026 | **Beyond Scripted Search: Sample-Efficient Reward Discovery via Agentic Black-box Optimization** | 让 LLM 代理利用持久的候选评价历史和诊断，在运行时组织奖励函数黑盒搜索。 | [论文](https://openreview.net/forum?id=JZSS6Stlhv) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录 |
 | 2026 | **EvoForge: Agentic Online Hyperparameter Tuning for Pretraining** | 以三个协作代理和证据门控经验库在单次运行的预训练轨迹中在线调整超参数。 | [论文](https://openreview.net/forum?id=LAmTBYPHye) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录 |
 | 2025-12 | **TRINITY: An Evolved LLM Coordinator** | 使用可分离CMA-ES持久训练小型神经路由头，以协调多个固定语言模型；基础模型权重不改。补收录：2025-12-04（UTC）。技能仅泛指能力，核心不是技能库或技能优化；作者报告的路由头规模约10K至不足20K参数，具体配置待核实。 | [论文](https://arxiv.org/abs/2512.04695) / 补收录 / 2025-12-04T11:45:21Z / 代码待核实 |
+| 2026-11 | **Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights** | 作者研究博客：固定前沿语言模型读取并直接编辑另一模型权重，包括不经梯度下降、持久修改Qwen3.5-0.8B的MLP。编辑器不训练，实验中既有网络另有训练依赖。列为关联模型权重编辑，不视为新ES/ZO优化器，未独立复现实验。 | [原文](https://rikiyat.github.io/blog/weight-space-programming/) / [原始来源1](https://rikiyat.github.io/) / [代码或日志，未审查](https://github.com/RikiyaT/lm_understand-logs) / 研究博客 / 2026-11-02 |
 
 ### 机制待核实的边界研究
 

@@ -1,0 +1,10 @@
+{
+  "catalog_count": 267,
+  "bib_count": 268,
+  "title_and_primary_url_dedup": true,
+  "old_entries_unchanged_except_documented_scope_archive_and_metadata_update": true,
+  "scope_archived_record_and_bib_restorable": true,
+  "bilingual_catalog_check": true,
+  "git_diff_check": true,
+  "main_worktree_fingerprints_unchanged": true
+}
