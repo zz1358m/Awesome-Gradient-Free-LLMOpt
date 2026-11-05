@@ -1,0 +1,287 @@
+{
+  "date": "2026-11-05",
+  "timezone": "Asia/Shanghai",
+  "trigger_time_utc": "2026-11-05T14:10:50.200Z",
+  "window_start_utc": "2026-10-29T14:10:50.200Z",
+  "window_end_utc": "2026-11-05T14:10:50.200Z",
+  "base_commit": "c6c3f6ba103abb6ce55912261b475b24d1451e22",
+  "previous_same_day_report": "data/literature_reviews/2026-11-05.json",
+  "summary_zh": "在今日已有268条的远端目录上补充4篇：ZEST为2025年零阶语言模型参数优化漏收录；FAAST为2026年5月闭式适配漏收录，须标明读出和评分模块预训练依赖AdamW；SPOD与EGDR为11月3日arXiv初版的无模型权重更新推理校准，跨平台最早公开日期待核实。目录增至272条。本轮没有新增确定本周首次公开的主线论文；今日先前已收录MobileSpec不重复计数。",
+  "limitations_zh": "本报告补充今日已有2026-11-05.json记录，检索窗口仍为2026-10-29至2026-11-05；近期新增查询重点覆盖上次检查后的日期，并复用已提交的一周候选记录去重。只使用明确方法关键词和精确题名，未抓通用语言模型语料或会议全量投稿。论文或作者原始页面均已核实，部分方法和设置已阅读，未宣称全文核读或独立复现。未证实的会议声明、首次公开时间及代码实现均保留待核实标记。",
+  "published_before": 268,
+  "published_after": 272,
+  "added": 4,
+  "historical_backfills": 2,
+  "pure_zo_parameter_optimization_backfill": 1,
+  "related_closed_form_backfill": 1,
+  "related_inference_added": 2,
+  "arxiv_v1_in_window_added": 2,
+  "confirmed_first_public_in_window_added": 0,
+  "earliest_public_date_unverified": 2,
+  "included": [
+    {
+      "title": "Zeroth-Order Sharpness-Aware Learning with Exponential Tilting",
+      "authors": [
+        "Xuchen Gong",
+        "Tian Li"
+      ],
+      "date": "2025-10",
+      "arxiv_v1": "2025-10-17T19:01:34Z",
+      "first_public": "2025-10-17T19:01:34Z",
+      "status": "backfill",
+      "category": "zo_directions",
+      "url": "https://arxiv.org/abs/2510.16157",
+      "sources": [
+        "https://arxiv.org/html/2510.16157"
+      ],
+      "key": "gong2025zest",
+      "description_en": "ZEST optimizes an exponentially tilted sharpness-aware objective with paired function-value perturbations and seed-regenerated updates. It persistently updates LM weights without backpropagation; first-order SAM variants are comparison baselines. Historical backfill; exact module coverage, code and venue unverified.",
+      "description_zh": "ZEST通过成对函数值扰动和种子重建更新，优化指数倾斜的锐度感知目标；无需反传即可持久更新语言模型权重，一阶SAM方法为比较基线。历史补收录；具体模块覆盖、代码和录用待核实。",
+      "method": "指数倾斜目标；成对随机扰动的函数值加权；种子重建参数更新。",
+      "backpropagation": "ZEST更新无需反传；一阶SAM、TSAM等为独立比较分支，非ZEST必需阶段。",
+      "persistent_parameters": "是，语言模型权重；实验含RoBERTa-Base与OPT-1.3B，逐模块参数集合待核实。",
+      "relevance": "高，直接语言模型函数值零阶参数优化，放入更优方向与更低方差。",
+      "uncertainties": [
+        "核实原始摘要、版本历史、算法1和部分实验设置，未阅读全文或独立复现。",
+        "不能把近期会议解读或抓取日期视为首发；首次arXiv公开为2025-10-17。",
+        "未核实作者代码与正式录用；泛化与锐度结论保留为作者在其设置下的结果。"
+      ]
+    },
+    {
+      "title": "FAAST: Forward-Only Associative Learning via Closed-Form Fast Weights for Test-Time Supervised Adaptation",
+      "authors": [
+        "Guangsheng Bao",
+        "Hongbo Zhang",
+        "Han Cui",
+        "Ke Sun",
+        "Yanbin Zhao",
+        "Juncai He",
+        "Yue Zhang"
+      ],
+      "date": "2026-05",
+      "arxiv_v1": "2026-05-06T08:58:11Z",
+      "first_public": "2026-05-06T08:58:11Z",
+      "status": "backfill",
+      "category": "related_closed_form",
+      "url": "https://arxiv.org/abs/2605.04651",
+      "sources": [
+        "https://arxiv.org/html/2605.04651"
+      ],
+      "key": "bao2026faast",
+      "code": "https://github.com/baoguangsheng/faast",
+      "description_en": "Compiles supervised examples into closed-form fast-weight matrices over frozen LM representations. Adaptation avoids backpropagation and changes auxiliary fast weights, not backbone weights. LM experiments first pretrain token-scoring/readout components with AdamW; the entire preparation pipeline is not gradient-free. Historical backfill; venue unverified.",
+      "description_zh": "在冻结语言模型表征上，将监督样本编译为闭式快权重矩阵；适配阶段无需反传，改变辅助快权重而非骨干。语言模型实验先以AdamW预训练词元评分与读出组件，全流程并非梯度无关。历史补收录；录用待核实。",
+      "method": "基于伪逆或最小二乘的关联快权重编译与增量统计更新。",
+      "backpropagation": "测试时闭式适配不需反传；附录C.2及表7说明词元评分器和读出投影预训练采用AdamW，不能称全流程无反传。",
+      "persistent_parameters": "骨干冻结；改变可复用的任务快权重矩阵及其统计状态。另有事先训练的评分与读出参数，不计纯ES/ZO骨干训练。",
+      "relevance": "中高，非智能体的闭式语言模型适配，保留准备阶段反传边界。",
+      "uncertainties": [
+        "核实摘要、版本历史、方法及附录C.2，未阅读全文或复现。",
+        "首次提交为2026-05-06，2026-05-08是修订日期，不能混作首次公开。",
+        "代码仓库可访问但未全面审查；快权重持久保存与重置策略、全部模块实现和录用待核实。"
+      ]
+    },
+    {
+      "title": "SPOD: Recovering Suppressed Temporal Evidence in Video-LLMs via Single-Pass Orthogonal Decomposition",
+      "authors": [
+        "Yangguang Lin",
+        "Quan Fang",
+        "Xiaoyan Liu",
+        "Zefan Xu"
+      ],
+      "date": "2026-11",
+      "arxiv_v1": "2026-11-03T11:46:39Z",
+      "first_public": null,
+      "status": "arxiv_v1_in_window_earliest_public_unverified",
+      "category": "related_inference",
+      "url": "https://arxiv.org/abs/2611.04728",
+      "sources": [
+        "https://arxiv.org/html/2611.04728"
+      ],
+      "key": "lin2026spod",
+      "code": "https://github.com/VioAgnes/SPOD",
+      "description_en": "Uses frame distinctiveness and inter-frame hidden-state differences to form temporal/prior subspaces, then rescales latent components during one forward pass. No proposed backpropagation or persistent model-weight updates. Related inference calibration, not parameter training. arXiv v1 November 3; authors state ACM MM 2026, earlier release unverified.",
+      "description_zh": "利用帧区分度与帧间隐状态差异构建时间及先验子空间，在一次前向过程中重缩放隐状态分量；所提阶段不反传、不持久更新模型权重。归入关联推理校准。arXiv初版11月3日；作者称ACM MM 2026，最早公开时间待核实。",
+      "method": "隐状态几何、截断SVD、正交子空间分解与分量重缩放。",
+      "backpropagation": "所提推理干预不需反传；既有模型训练依赖另行存在。",
+      "persistent_parameters": "不更新持久模型权重；操作当前视频和生成过程的隐状态、分解基与缩放配置。",
+      "relevance": "中，视频语言模型无反传内部校准；非提示优化或外部智能体工件搜索，按现有范围保留。",
+      "uncertainties": [
+        "核实原始摘要、版本历史和部分方法及实现说明，未阅读全文或独立复现。",
+        "arXiv记载ACM MM 2026与DOI 10.1145/3767308.3835492，未独立读取正式论文集或核实更早公开时间。",
+        "代码可访问，未全面审查；不将作者的单遍效率和性能声明作为独立验证结论。"
+      ]
+    },
+    {
+      "title": "Entropy-Gated Dynamic Rectification for Object Hallucination in Large Vision-Language Models",
+      "authors": [
+        "Riasad Alvi",
+        "Md. Asaduzzaman Shuvo",
+        "Md. Ahashan Habib",
+        "Md. Faiyaz Abdullah Sayeedi"
+      ],
+      "date": "2026-11",
+      "arxiv_v1": "2026-11-03T07:31:21Z",
+      "first_public": null,
+      "status": "arxiv_v1_in_window_earliest_public_unverified",
+      "category": "related_inference",
+      "url": "https://arxiv.org/abs/2611.04438",
+      "sources": [
+        "https://arxiv.org/html/2611.04438"
+      ],
+      "key": "alvi2026egdr",
+      "code": "https://github.com/alvi-uiu/EGDR",
+      "description_en": "EGDR uses previous-token entropy to modulate a calibrated latent-steering gate. Forward-only held-out calibration sets direction/depth and gate settings; inference changes hidden states without backpropagation or persistent model-weight updates. Related inference calibration. arXiv v1 November 3; WACV 2027 claim and earliest release unverified.",
+      "description_zh": "EGDR以前一词元熵调节已校准的隐空间干预门；用留出数据前向评估确定方向、层位及门控设置，推理时改变隐状态，无需反传且不持久更新模型权重。归入关联推理校准。arXiv初版11月3日；WACV 2027声明和最早公开时间待核实。",
+      "method": "预测熵驱动阈值调节；固定潜在方向与留出数据前向校准。",
+      "backpropagation": "原文第4节明确不添加训练参数或梯度更新；校准依赖前向评估，非一阶模型训练。",
+      "persistent_parameters": "不更新骨干或适配器权重；保存校准向量、阈值及配置，逐词元改变隐状态。",
+      "relevance": "中，视觉语言模型无反传推理校准；不计梯度无关模型参数优化。",
+      "uncertainties": [
+        "核实原始摘要、版本历史、第4节与限制部分，未阅读全文或复现。",
+        "作者标注WACV 2027，未独立核实录用、正式论文集及跨平台最早日期。",
+        "正文限定两种7B LLaVA骨干和贪心解码，并报告均值而无置信区间；额外收益稳定性和校准迁移待核实。"
+      ]
+    }
+  ],
+  "checked_not_added": [
+    {
+      "title": "Training Specialist LLMs on Your Phone: Forward-Only Optimization via Block-Spectral Coordinates",
+      "url": "https://arxiv.org/abs/2611.04797",
+      "decision": "already_added_by_prior_2026_11_05_commit",
+      "reason": "最新远端c6c3f6b已收录MobileSpec；不重复新增。"
+    },
+    {
+      "title": "The Evolution Strategies Paradox: Better Models from Worse Perturbations",
+      "url": "https://arxiv.org/abs/2611.04113",
+      "decision": "existing_duplicate",
+      "reason": "已有OpenReview条目，最新远端已补arXiv链接；不将11月3日预印本版本作为新工作重复收录。"
+    },
+    {
+      "title": "Weight-Space Software Engineering (WSSE)",
+      "url": "https://github.com/v-code-895/wsse",
+      "decision": "not_added_language_model_application_unverified",
+      "reason": "已核实原始仓库及论文源文件；实证对象为生成器、超分辨模型等。语言模型权重编辑主要出现在相关工作与未来场景，未取得当前语言模型方法或实证依据。项目页与Zenodo DOI访问失败，不以第三方报道代替原始证据。"
+    },
+    {
+      "title": "Black-Box Tuning / BBTv2",
+      "url": "https://github.com/txsun1997/Black-Box-Tuning",
+      "decision": "excluded_prompt_scope",
+      "reason": "以软提示优化为核心，按用户现行范围不收录。"
+    },
+    {
+      "title": "ReflectDrive",
+      "decision": "not_added_pending_primary_training_evidence",
+      "reason": "命中第三方知识库，未取得原始研究的持久模型参数训练证据，不进入目录。"
+    },
+    {
+      "title": "AdaEvolve: Adaptive LLM Driven Zeroth-Order Optimization",
+      "decision": "not_added_pending_primary_training_evidence",
+      "reason": "命中旧文献二手解读；未取得目标模型参数训练的原始证据，不因零阶措辞新增外部工件优化。"
+    },
+    {
+      "title": "Sketchpad: certified exact arithmetic with a small vision-language model",
+      "url": "https://arxiv.org/abs/2611.04434",
+      "decision": "not_added",
+      "reason": "原始检索摘要为模型与可证明运算过程，未确认梯度无关优化机制。"
+    },
+    {
+      "title": "Backpropagation-Free Continual Learning: A Unified Energy-Based Framework, Reproducible Benchmark, and Open Challenges",
+      "url": "https://www.preprints.org/manuscript/202607.0555",
+      "decision": "not_added_pending_primary_scope_verification",
+      "reason": "检索命中通用无反传持续学习综述，未核实语言模型适用性与原始研究内容，不将其视作本周首发。"
+    },
+    {
+      "title": "Accelerating LLM Pretraining with Zeroth-Order Curvature on Idle Serving Compute",
+      "decision": "existing_duplicate",
+      "reason": "已有题名及原始链接记录，不重复收录。",
+      "resources": "[paper](https://openreview.net/forum?id=qh1N46HjOP) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window / [arXiv v1 2026-11-02T07:38:45Z](https://arxiv.org/abs/2611.02688) / code promised upon acceptance"
+    },
+    {
+      "title": "ENGINE: Endogenous Variational MultiScale Optimization for Zeroth-Order LLM Fine-Tuning",
+      "decision": "existing_duplicate",
+      "reason": "已有题名及原始链接记录，不重复收录。",
+      "resources": "[original](https://arxiv.org/abs/2611.03293) / [source 1](https://arxiv.org/html/2611.03293) / [source 2](https://neurips.cc/Downloads/2026) / [code/logs, unreviewed](https://github.com/AI4Science-WestlakeU/ENGINE) / arXiv v1 2026-11-02T15:31:38Z / earliest cross-platform release unverified"
+    },
+    {
+      "title": "The Cost of Mismatch: Noise Amplification in Zeroth-Order Reinforcement Learning",
+      "decision": "existing_duplicate",
+      "reason": "已有题名及原始链接记录，不重复收录。",
+      "resources": "[original](https://arxiv.org/abs/2611.03260) / [source 1](https://arxiv.org/html/2611.03260) / [source 2](https://neurips.cc/Downloads/2026) / [code/logs, unreviewed](https://github.com/lianmin-chen/the_cost_of_mismatch) / arXiv v1 2026-11-02T15:07:18Z / earliest cross-platform release unverified"
+    },
+    {
+      "title": "Dust: Pretraining Transformers Without Backpropagation",
+      "decision": "existing_duplicate",
+      "reason": "已有题名及原始链接记录，不重复收录。",
+      "resources": "[research article](https://qlabs.sh/research/dust) · [code](https://github.com/qlabs-eng/dust) · 2026-10 (month only; first-publication day unverified) / [Noise benchmark](https://github.com/qlabs-eng/noise)"
+    },
+    {
+      "title": "Consolidating Rewarded Perturbations for LLM Post-Training",
+      "decision": "existing_duplicate",
+      "reason": "已有题名及原始链接记录，不重复收录。",
+      "resources": "[paper](https://arxiv.org/abs/2605.31494) · [code](https://github.com/oooranz/CoRP) · 2026-05"
+    },
+    {
+      "title": "Trust the Direction, Search the Step: Zero-and-First-Order Methods for LLM Fine-Tuning",
+      "decision": "existing_duplicate",
+      "reason": "已有题名及原始链接记录，不重复收录。",
+      "resources": "[paper](https://arxiv.org/abs/2610.02190) · [code](https://github.com/nizswan/Zeroth-First-Order-Framework) · 2026-10 (venue not independently verified)"
+    },
+    {
+      "title": "Delta N-gram: Forward-Only Continual Writing into a Language Model's Native N-gram Memory",
+      "decision": "existing_duplicate",
+      "reason": "已有题名及原始链接记录，不重复收录。",
+      "resources": "[paper](https://arxiv.org/abs/2610.31125) · [code](https://github.com/af-74413592/delta-ngram) · 2026-10"
+    },
+    {
+      "title": "Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights",
+      "decision": "existing_duplicate",
+      "reason": "已有题名及原始链接记录，不重复收录。",
+      "resources": "[original](https://rikiyat.github.io/blog/weight-space-programming/) / [source 1](https://rikiyat.github.io/) / [code/logs, unreviewed](https://github.com/RikiyaT/lm_understand-logs) / research blog / 2026-11-02"
+    }
+  ],
+  "queries": [
+    "\"zeroth-order\" \"LLM\" after:2026-11-02 before:2026-11-06",
+    "\"gradient-free\" \"language model\" after:2026-11-02 before:2026-11-06",
+    "\"evolution strategies\" \"language\" after:2026-11-02 before:2026-11-06",
+    "\"backpropagation-free\" \"language\" after:2026-11-02 before:2026-11-06",
+    "\"zeroth-order\" \"language model\" \"November 4\" \"2026\"",
+    "\"gradient-free\" \"LLM\" \"November 5\" \"2026\"",
+    "\"forward-only\" \"language model\" after:2026-11-03 before:2026-11-06",
+    "site:openreview.net \"zeroth-order\" \"ICLR 2027\"",
+    "\"Zeroth-Order Sharpness-Aware Learning with Exponential Tilting\" arxiv",
+    "\"zeroth-order\" \"Nov 4\" \"2026\"",
+    "\"gradient-free\" \"Nov 4\" \"2026\"",
+    "\"FAAST: Forward-Only Associative Learning via Closed-Form Fast Weights for Test-Time Supervised Adaptation\""
+  ],
+  "main_worktree_preserved": {
+    "catalog_count": 252,
+    "sha256": {
+      "README.md": "593695c8d764ba83c3ea65d55a5a6d3d3fbbeb5a3e4c4a1906a6d6a48332bcd0",
+      "README_zh.md": "b3eac1a2f413cfa079a5aa4d74b4dfd6ecda58fd75461a2d013a0fd02a3f24b1",
+      "data/papers.json": "fa1b593478a52ee91b47aa4a61a03648af5136045136fa3af152c6d1def0e0c6",
+      "papers.bib": "c597a2d1546259baa8881fa6826d1fdee65e77080508d1e4ad526ec8f166f088",
+      "scripts/generate_catalog.py": "57aad6922c1df1606fc76a589244eec05247161401da9f3d1237eb28a62c90e7",
+      "data/literature_reviews/2026-10-18-current-status.md": "aad8be9ad2dfe0f6783bacdf98a28c4056c943afbebd9fa363c02add13966029"
+    }
+  },
+  "category_counts_after": {
+    "es_pretraining": 1,
+    "es_single_turn": 16,
+    "related_hybrid": 65,
+    "es_understanding": 11,
+    "zo_pretraining": 5,
+    "zo_baselines": 17,
+    "related_closed_form": 32,
+    "zo_directions": 36,
+    "zo_systems": 26,
+    "zo_alignment": 2,
+    "zo_multi_turn": 1,
+    "zo_understanding": 11,
+    "related_prompt_agent": 29,
+    "related_agent_training": 7,
+    "related_inference": 11,
+    "related_forward_gradient": 1,
+    "es_multi_turn": 1
+  }
+}

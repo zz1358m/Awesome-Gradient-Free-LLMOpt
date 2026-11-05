@@ -2410,5 +2410,41 @@
     "description_zh": "作者研究博客：固定前沿语言模型读取并直接编辑另一模型权重，包括不经梯度下降、持久修改Qwen3.5-0.8B的MLP。编辑器不训练，实验中既有网络另有训练依赖。列为关联模型权重编辑，不视为新ES/ZO优化器，未独立复现实验。",
     "resources_en": "[original](https://rikiyat.github.io/blog/weight-space-programming/) / [source 1](https://rikiyat.github.io/) / [code/logs, unreviewed](https://github.com/RikiyaT/lm_understand-logs) / research blog / 2026-11-02",
     "resources_zh": "[原文](https://rikiyat.github.io/blog/weight-space-programming/) / [原始来源1](https://rikiyat.github.io/) / [代码或日志，未审查](https://github.com/RikiyaT/lm_understand-logs) / 研究博客 / 2026-11-02"
+  },
+  {
+    "title": "Zeroth-Order Sharpness-Aware Learning with Exponential Tilting",
+    "category": "zo_directions",
+    "date": "2025-10",
+    "description_en": "ZEST optimizes an exponentially tilted sharpness-aware objective with paired function-value perturbations and seed-regenerated updates. It persistently updates LM weights without backpropagation; first-order SAM variants are comparison baselines. Historical backfill; exact module coverage, code and venue unverified.",
+    "description_zh": "ZEST通过成对函数值扰动和种子重建更新，优化指数倾斜的锐度感知目标；无需反传即可持久更新语言模型权重，一阶SAM方法为比较基线。历史补收录；具体模块覆盖、代码和录用待核实。",
+    "resources_en": "[paper](https://arxiv.org/abs/2510.16157) / [method](https://arxiv.org/html/2510.16157) / code unverified / backfill / 2025-10-17T19:01:34Z",
+    "resources_zh": "[论文](https://arxiv.org/abs/2510.16157) / [方法原文](https://arxiv.org/html/2510.16157) / 代码待核实 / 补收录 / 2025-10-17T19:01:34Z"
+  },
+  {
+    "title": "FAAST: Forward-Only Associative Learning via Closed-Form Fast Weights for Test-Time Supervised Adaptation",
+    "category": "related_closed_form",
+    "date": "2026-05",
+    "description_en": "Compiles supervised examples into closed-form fast-weight matrices over frozen LM representations. Adaptation avoids backpropagation and changes auxiliary fast weights, not backbone weights. LM experiments first pretrain token-scoring/readout components with AdamW; the entire preparation pipeline is not gradient-free. Historical backfill; venue unverified.",
+    "description_zh": "在冻结语言模型表征上，将监督样本编译为闭式快权重矩阵；适配阶段无需反传，改变辅助快权重而非骨干。语言模型实验先以AdamW预训练词元评分与读出组件，全流程并非梯度无关。历史补收录；录用待核实。",
+    "resources_en": "[paper](https://arxiv.org/abs/2605.04651) / [method](https://arxiv.org/html/2605.04651) / [code, unreviewed](https://github.com/baoguangsheng/faast) / backfill / 2026-05-06T08:58:11Z",
+    "resources_zh": "[论文](https://arxiv.org/abs/2605.04651) / [方法原文](https://arxiv.org/html/2605.04651) / [代码，未审查](https://github.com/baoguangsheng/faast) / 补收录 / 2026-05-06T08:58:11Z"
+  },
+  {
+    "title": "SPOD: Recovering Suppressed Temporal Evidence in Video-LLMs via Single-Pass Orthogonal Decomposition",
+    "category": "related_inference",
+    "date": "2026-11",
+    "description_en": "Uses frame distinctiveness and inter-frame hidden-state differences to form temporal/prior subspaces, then rescales latent components during one forward pass. No proposed backpropagation or persistent model-weight updates. Related inference calibration, not parameter training. arXiv v1 November 3; authors state ACM MM 2026, earlier release unverified.",
+    "description_zh": "利用帧区分度与帧间隐状态差异构建时间及先验子空间，在一次前向过程中重缩放隐状态分量；所提阶段不反传、不持久更新模型权重。归入关联推理校准。arXiv初版11月3日；作者称ACM MM 2026，最早公开时间待核实。",
+    "resources_en": "[paper](https://arxiv.org/abs/2611.04728) / [method](https://arxiv.org/html/2611.04728) / [code, unreviewed](https://github.com/VioAgnes/SPOD) / arXiv v1 / 2026-11-03T11:46:39Z / earliest public date unverified",
+    "resources_zh": "[论文](https://arxiv.org/abs/2611.04728) / [方法原文](https://arxiv.org/html/2611.04728) / [代码，未审查](https://github.com/VioAgnes/SPOD) / arXiv初版 / 2026-11-03T11:46:39Z / 最早公开日期待核实"
+  },
+  {
+    "title": "Entropy-Gated Dynamic Rectification for Object Hallucination in Large Vision-Language Models",
+    "category": "related_inference",
+    "date": "2026-11",
+    "description_en": "EGDR uses previous-token entropy to modulate a calibrated latent-steering gate. Forward-only held-out calibration sets direction/depth and gate settings; inference changes hidden states without backpropagation or persistent model-weight updates. Related inference calibration. arXiv v1 November 3; WACV 2027 claim and earliest release unverified.",
+    "description_zh": "EGDR以前一词元熵调节已校准的隐空间干预门；用留出数据前向评估确定方向、层位及门控设置，推理时改变隐状态，无需反传且不持久更新模型权重。归入关联推理校准。arXiv初版11月3日；WACV 2027声明和最早公开时间待核实。",
+    "resources_en": "[paper](https://arxiv.org/abs/2611.04438) / [method](https://arxiv.org/html/2611.04438) / [code, unreviewed](https://github.com/alvi-uiu/EGDR) / arXiv v1 / 2026-11-03T07:31:21Z / earliest public date unverified",
+    "resources_zh": "[论文](https://arxiv.org/abs/2611.04438) / [方法原文](https://arxiv.org/html/2611.04438) / [代码，未审查](https://github.com/alvi-uiu/EGDR) / arXiv初版 / 2026-11-03T07:31:21Z / 最早公开日期待核实"
   }
 ]
