@@ -1,0 +1,85 @@
+{
+ "review_date": "2026-11-05",
+ "timezone": "Asia/Singapore",
+ "window_start_date": "2026-10-29",
+ "window_end_date": "2026-11-05",
+ "window_note_zh": "arXiv 按首次提交或最近更新日期在最近 7 天内筛选，截止本次执行。与 2026-11-01、2026-11-03 两份周检的窗口有重叠，已按编号和标题去重。",
+ "repository": "https://github.com/zz1358m/Awesome-Gradient-Free-LLMOpt",
+ "deduplication_zh": "已核对 data/papers.json、data/deferred_papers/ 及 data/literature_reviews/ 下全部 JSON 记录（含 2026-11-03-weekly.json）。5 个查询共 11 个编号：2610.35160、2611.02688、2610.27550、2611.03293 已有记录；2611.04113 与目录中 OpenReview 条目 whvp3RjkiO 同题、摘要一致，作为同一工作补链接；2502.03604 与目录中 NeurIPS 2025 条目同题，补 arXiv 链接；其余 5 篇逐篇读摘要。",
+ "queries": {
+  "arxiv": [
+   "all:\"evolution strategies\" AND (all:LLM OR all:\"language model\")",
+   "all:\"zeroth-order\" AND all:\"fine-tuning\"",
+   "all:\"gradient-free\" AND all:\"language model\"",
+   "all:\"forward-only\" AND (all:LLM OR all:\"language model\")",
+   "all:MeZO"
+  ],
+  "openreview_note_zh": "ICLR 2027 的 18 个方法短语已于 2026-10-11/12/15 全部查过，投稿已截止，本次未重跑。"
+ },
+ "papers": [
+  {
+   "title": "Training Specialist LLMs on Your Phone: Forward-Only Optimization via Block-Spectral Coordinates",
+   "authors": [
+    "Liyan Tan",
+    "Yequan Zhao",
+    "Ziyue Liu",
+    "Yupeng Su",
+    "Ruijie Zhang",
+    "Zheng Zhang"
+   ],
+   "first_posted": "2026-11-03T20:32:03+08:00",
+   "primary_url": "https://arxiv.org/abs/2611.04797",
+   "contribution_zh": "提出 MobileSpec：在手机上只用前向计算、以可自动校验的任务结果作为奖励训练轻量专用模型；FuRA-S 只训练预训练权重各列块的奇异值（block-spectral coordinates），使随机扰动接近 RLVR 的权重变化形态，也可用于不改动权重的 INT4 模型适配。",
+   "method_zh": "基于随机扰动的前向更新（ES 式），扰动限定在列块奇异值上；奖励为可校验任务结果",
+   "relevance_zh": "高；直接以 ES 式扰动持久更新 LLM 参数子空间，优化的是任务 reward，摘要中与全参数 ES、LoRA 上的 ES、量化 ES 比较",
+   "decision": "included",
+   "category": "es_single_turn",
+   "concerns_zh": [
+    "仅依据 arXiv 原始摘要和 arXiv 元数据，本轮未通读正文。",
+    "摘要同时报告手机操作 agent 与 RLVR 基准；按主算法与 RLVR 基准上和 ES 的比较归入 es_single_turn，若正文以多轮 agent 训练为主可改归 es_multi_turn。",
+    "INT4 场景下更新被改写为对层输入的变换，持久存储的是专用模块而非原权重，具体存储形态待正文核实。",
+    "arXiv HTML 中未发现作者代码链接，写为 code not located。",
+    "未确认正式会议录用。"
+   ],
+   "found_by_query": "all:\"evolution strategies\" AND (all:LLM OR all:\"language model\")"
+  }
+ ],
+ "metadata_updates": [
+  {
+   "title": "The Evolution Strategies Paradox: Better Models from Worse Perturbations",
+   "change_zh": "补充 arXiv v1（2611.04113，2026-11-03T00:39:49Z）链接，并据 arXiv 元数据在 papers.bib 中填写作者。arXiv 摘要与 OpenReview whvp3RjkiO 的摘要描述同一现象和分析。arXiv HTML 中未发现作者代码链接。",
+   "found_by_query": "all:\"evolution strategies\" AND (all:LLM OR all:\"language model\")"
+  },
+  {
+   "title": "Bilevel ZOFO: Efficient LLM Fine-Tuning and Meta-Training",
+   "change_zh": "arXiv 2502.03604 在窗口内更新到 v4；补充 arXiv 链接，分类与描述不变。",
+   "found_by_query": "all:\"zeroth-order\" AND all:\"fine-tuning\""
+  }
+ ],
+ "excluded": [
+  {
+   "id": "arXiv:2610.41511",
+   "title": "Specification-Guided Generation for Large Language Models",
+   "reason_zh": "规格约束解码；forward-only 指不回溯的解码变体，不涉及参数优化或 ES/ZO。",
+   "found_by_query": "all:\"forward-only\" AND (all:LLM OR all:\"language model\")"
+  },
+  {
+   "id": "arXiv:2611.01011",
+   "title": "Leap-VLA: High-Rate Robot Control from a Low-Rate VLM Backbone",
+   "reason_zh": "VLA 架构与常规训练；forward-only 指推理时的分块边界修正，不是无梯度参数优化。",
+   "found_by_query": "all:\"forward-only\" AND (all:LLM OR all:\"language model\")"
+  },
+  {
+   "id": "arXiv:2605.14386",
+   "title": "Darwin Family: MRI-Trust-Weighted Evolutionary Merging for Training-Free Scaling of Language-Model Reasoning",
+   "reason_zh": "arXiv 元数据显示 v2 已被 arXiv 管理员撤回，不收录。",
+   "found_by_query": "all:\"gradient-free\" AND all:\"language model\""
+  },
+  {
+   "id": "arXiv:2611.01351",
+   "title": "MAPLE: A Multimodal Mobile Agent with Playbook-Learned Experience",
+   "reason_zh": "冻结 VLM 多智能体在执行时演化提示和经验；属于提示/外部工件优化，按 2026-10-12 范围例外暂缓。",
+   "found_by_query": "all:\"gradient-free\" AND all:\"language model\""
+  }
+ ]
+}

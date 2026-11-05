@@ -6,7 +6,7 @@
 
 主目录关注持久化模型参数，包括完整权重、适配器、低秩子空间和量化权重。提示词核心研究现已暂缓；智能体研究仅在原始来源确认持久训练或合成语言模型、策略模型、适配器或等价神经控制器参数时保留。其他非提示词、非智能体边界研究仍可进入明确标注的关联分类。
 
-**最近一次文献核查：** 2026-10-30
+**最近一次文献核查：** 2026-11-05
 
 [最新 ICLR 2027 核查（覆盖范围有限）](data/literature_reviews/2026-10-11-iclr2027.json) · [2026-10-09 核查记录](data/literature_reviews/2026-10-09.json)。
 
@@ -59,6 +59,7 @@ ES 和双点 ZO 都可以看作平滑目标函数的估计方法，但现有大�
 
 | 日期 | 论文 | 核心贡献 | 资源 |
 |---|---|---|---|
+| 2026-11 | **Training Specialist LLMs on Your Phone: Forward-Only Optimization via Block-Spectral Coordinates** | MobileSpec 只用前向计算和可自动校验的任务奖励在端侧训练专用模型；核心算法 FuRA-S 只扰动预训练权重各列块的奇异值，使 ES 式更新像 RLVR 那样旋转奇异向量，并能在不改动 INT4 权重本身的情况下做适配。 | [论文](https://arxiv.org/abs/2611.04797) · 未找到代码 · 2026-11 |
 | 2026-10 | **DART-ES: Difficulty-Aware Reweighting and Targeted Replay for Fine-Tuning LLMs with Evolution Strategies** | 在纯前向全参数 ES 微调中，根据种群通过率和历史难度估计重加权奖励并重放罕见可解样本；评测覆盖数学推理、指令微调、代码生成和 Countdown。 | [论文](https://arxiv.org/abs/2610.06993) · [代码](https://github.com/szs777/DART-ES-Code) · 2026-10 · [ICLR 2027 投稿](https://openreview.net/forum?id=dtVcF6LLYr) |
 | 2026-10 | **How Low Can You Go: Fine-Tuning LLMs with Bayesian Optimization (LlMBO)** | 在 TinyLoRA 式的极少参数微调中使用贝叶斯优化，无需梯度、直接优化贪心解码准确率，并在数学基准上与 GRPO 比较；方法属于贝叶斯搜索而非 ES。 | [论文](https://arxiv.org/abs/2610.18504) · 未找到代码 · 2026-10 |
 | 2026-08 | **Can Bayesian Optimization Efficiently Find a Strong Single Expert in Neural Thickets?** | 在随机线性权重子空间中使用高斯过程引导的贝叶斯优化，无需 LLM 反传即可搜索单个可部署专家；初步推理实验使用 Qwen2.5-Instruct 0.5B–3B，方法属于贝叶斯搜索。 | [论文](https://arxiv.org/abs/2608.10867) · 未找到代码 · 2026-08 |
@@ -92,7 +93,7 @@ ES 和双点 ZO 都可以看作平滑目标函数的估计方法，但现有大�
 | 2026-02 | **The Blessing of Dimensionality in LLM Fine-tuning: A Variance-Curvature Perspective** | 从较低的有效曲率和先升后降的训练动态解释小规模 ES 种群为何能在极高维空间中工作；实验覆盖 Qwen2.5 的多个规模以及 GSM8K、ARC-C 和 WinoGrande。 | [论文](https://arxiv.org/abs/2602.00170) · 未找到代码 · 2026-02 · [ICLR 2027 投稿](https://openreview.net/forum?id=Pz7PpCK6Py) |
 | 2026-01 | **Evolutionary Strategies Lead to Catastrophic Forgetting in LLMs** | 分析 ES 后训练过程中模型既有能力退化的问题。 | [论文](https://arxiv.org/abs/2601.20861) · 未找到代码 · 2026-01 |
 | 2026 | **The Exact Exchange Rate of Gradient-Free Credit** | 推导并测量矩阵层中标量广播 ES 信用信号所需前向评估的精确交换率。 | [论文](https://openreview.net/forum?id=QPRPX7pOHD) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录 |
-| 2026 | **The Evolution Strategies Paradox: Better Models from Worse Perturbations** | 解释即使所有采样扰动均弱于当前模型，ES 仍能持续改进大语言模型的现象。 | [论文](https://openreview.net/forum?id=whvp3RjkiO) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录 |
+| 2026 | **The Evolution Strategies Paradox: Better Models from Worse Perturbations** | 解释即使所有采样扰动均弱于当前模型，ES 仍能持续改进大语言模型的现象。 | [论文](https://openreview.net/forum?id=whvp3RjkiO) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录 / [arXiv 2026-11-03T00:39:49Z](https://arxiv.org/abs/2611.04113) |
 | 2026 | **EGGROLL, Unrolled: Understanding and Improving Low-Rank Evolution Strategies at Scale** | 分析并改进 EGGROLL 在大语言模型规模采用的低秩进化策略机制。 | [论文](https://openreview.net/forum?id=kbNjFLXanS) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录 |
 | 2026 | **Dimension Is Free, Horizon Is Not: When Evolution Strategies Rival Policy Gradients for LLM Fine-Tuning** | 以有效参数维数和有效信用分配时域统一比较 ES 与策略梯度，并在语言及智能体任务上验证。 | [论文](https://openreview.net/forum?id=59ufz75SkM) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录 |
 | 2026-10 | **Center-of-Mass Interpretation of Evolution Strategies** | 将均值中心化ES更新解释为采样质心与奖励加权重心之间的缩放位移，以语言模型ES微调为动机。属于理论解释，未提供新的语言模型训练实证。所分析ES步骤无需反传；未报告实际训练模块。 | [论文](https://arxiv.org/abs/2610.35865) / [方法原文](https://arxiv.org/html/2610.35865v1) / 代码待核实 / 首发 / 2026-10-26T17:59:33Z |
@@ -200,7 +201,7 @@ ES 和双点 ZO 都可以看作平滑目标函数的估计方法，但现有大�
 | 2025 | **QuZO: Quantized Zeroth-Order Fine-Tuning for Large Language Models** | 将量化整合到纯前向监督微调中。 | [论文](https://aclanthology.org/2025.emnlp-main.271/) · [代码](https://github.com/lloo099/QuZO) · ![EMNLP 2025](https://img.shields.io/badge/EMNLP-2025-orange) |
 | 2025 | **PaZO: Preconditioned Accelerated Zeroth-Order Optimization for Fine-Tuning LLMs** | 采用预条件 SPSA、对角 Hessian 估计与移动平均，稳定并加速零阶微调。 | [论文](https://proceedings.neurips.cc/paper_files/paper/2025/hash/a14193e9d9fb0b03af0b717de1cac8ac-Abstract-Conference.html) · 未找到代码 · ![NeurIPS 2025](https://img.shields.io/badge/NeurIPS-2025-orange) |
 | 2025 | **HELENE: Hessian Layer-wise Clipping and Gradient Annealing for Accelerating Fine-tuning LLM with Zeroth-order Optimization** | 引入逐层裁剪和退火机制。 | [论文](https://aclanthology.org/2025.emnlp-main.1323/) · 未找到代码 · ![EMNLP 2025](https://img.shields.io/badge/EMNLP-2025-orange) |
-| 2025 | **Bilevel ZOFO: Efficient LLM Fine-Tuning and Meta-Training** | 以双层优化结合全骨干的零阶更新与适配器的一阶更新，用于微调和元训练；属于混合 FO/ZO 方法。 | [论文](https://proceedings.neurips.cc/paper_files/paper/2025/hash/5f999632c48f87cffb214e575581e4a9-Abstract-Conference.html) · 未找到代码 · ![NeurIPS 2025](https://img.shields.io/badge/NeurIPS-2025-orange) |
+| 2025 | **Bilevel ZOFO: Efficient LLM Fine-Tuning and Meta-Training** | 以双层优化结合全骨干的零阶更新与适配器的一阶更新，用于微调和元训练；属于混合 FO/ZO 方法。 | [论文](https://proceedings.neurips.cc/paper_files/paper/2025/hash/5f999632c48f87cffb214e575581e4a9-Abstract-Conference.html) · 未找到代码 · ![NeurIPS 2025](https://img.shields.io/badge/NeurIPS-2025-orange) / [arXiv](https://arxiv.org/abs/2502.03604) |
 | 2026 | **ZORA: Zeroth-Order Reliability-Calibrated Adaptation with Shift-Sensitive Updates for Multimodal Test-Time Shifts** | ZORA 将前向零阶适配限制到漂移敏感的归一化层，并以偏差、置信度及源统计校准更新信号。 | [论文](https://openreview.net/forum?id=4rQFijPAgb) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录 |
 | 2026 | **ZO-COSMO: Index-Free One-Hop Mixing for Decentralized Zeroth-Order Optimization** | 提出 ZO-COSMO，把两查询零阶估计与保持平均值的 masked consensus 结合，在无需显式坐标索引的一跳通信中完成稀疏去中心化更新，并在八个逻辑 Qwen LoRA worker 上验证。 | [论文](https://openreview.net/forum?id=XhdOPTxLyT) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录 |
 | 待核实 | **Efficient Federated Fine-Tuning via Zeroth-Order Optimization for Resource-Constrained Edge Devices** | 讨论资源受限设备上以低秩零阶扰动进行联邦语言模型参数微调；目标更新为纯前向，服务器聚合及准备阶段是否反传待核实。原始IEEE条目存在，作者与首发日期待核实；数据库收录日期不计首次公开。 | [论文](https://doi.org/10.1109/CICN67655.2025.11368000) / 首次公开日期待核实 / 待核实 / 代码待核实 |

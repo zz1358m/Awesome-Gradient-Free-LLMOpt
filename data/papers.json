@@ -9,6 +9,15 @@
     "resources_zh": "[论文](https://arxiv.org/abs/2510.10603) · 未找到代码 · 2025-10"
   },
   {
+    "title": "Training Specialist LLMs on Your Phone: Forward-Only Optimization via Block-Spectral Coordinates",
+    "category": "es_single_turn",
+    "date": "2026-11",
+    "description_en": "MobileSpec trains on-device specialists with forward passes and verifiable task rewards; its FuRA-S algorithm perturbs only the singular values of column blocks of pretrained weights, so ES-style updates rotate singular vectors as RLVR updates tend to, and it can adapt INT4 models without changing their stored weights.",
+    "description_zh": "MobileSpec 只用前向计算和可自动校验的任务奖励在端侧训练专用模型；核心算法 FuRA-S 只扰动预训练权重各列块的奇异值，使 ES 式更新像 RLVR 那样旋转奇异向量，并能在不改动 INT4 权重本身的情况下做适配。",
+    "resources_en": "[paper](https://arxiv.org/abs/2611.04797) · code not located · 2026-11",
+    "resources_zh": "[论文](https://arxiv.org/abs/2611.04797) · 未找到代码 · 2026-11"
+  },
+  {
     "title": "DART-ES: Difficulty-Aware Reweighting and Targeted Replay for Fine-Tuning LLMs with Evolution Strategies",
     "category": "es_single_turn",
     "date": "2026-10",
@@ -275,8 +284,8 @@
     "date": "2026",
     "description_en": "Explains how ES can improve LLMs even when every sampled perturbation underperforms the current model.",
     "description_zh": "解释即使所有采样扰动均弱于当前模型，ES 仍能持续改进大语言模型的现象。",
-    "resources_en": "[paper](https://openreview.net/forum?id=whvp3RjkiO) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
-    "resources_zh": "[论文](https://openreview.net/forum?id=whvp3RjkiO) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
+    "resources_en": "[paper](https://openreview.net/forum?id=whvp3RjkiO) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window / [arXiv v1 2026-11-03T00:39:49Z](https://arxiv.org/abs/2611.04113)",
+    "resources_zh": "[论文](https://openreview.net/forum?id=whvp3RjkiO) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录 / [arXiv 2026-11-03T00:39:49Z](https://arxiv.org/abs/2611.04113)"
   },
   {
     "title": "EGGROLL, Unrolled: Understanding and Improving Low-Rank Evolution Strategies at Scale",
@@ -1130,8 +1139,8 @@
     "date": "2025",
     "description_en": "Combines ZO updates of the full backbone with FO adapter updates in a bilevel formulation for fine-tuning and meta-training.",
     "description_zh": "以双层优化结合全骨干的零阶更新与适配器的一阶更新，用于微调和元训练；属于混合 FO/ZO 方法。",
-    "resources_en": "[paper](https://proceedings.neurips.cc/paper_files/paper/2025/hash/5f999632c48f87cffb214e575581e4a9-Abstract-Conference.html) · code not located · ![NeurIPS 2025](https://img.shields.io/badge/NeurIPS-2025-orange)",
-    "resources_zh": "[论文](https://proceedings.neurips.cc/paper_files/paper/2025/hash/5f999632c48f87cffb214e575581e4a9-Abstract-Conference.html) · 未找到代码 · ![NeurIPS 2025](https://img.shields.io/badge/NeurIPS-2025-orange)"
+    "resources_en": "[paper](https://proceedings.neurips.cc/paper_files/paper/2025/hash/5f999632c48f87cffb214e575581e4a9-Abstract-Conference.html) · code not located · ![NeurIPS 2025](https://img.shields.io/badge/NeurIPS-2025-orange) / [arXiv](https://arxiv.org/abs/2502.03604)",
+    "resources_zh": "[论文](https://proceedings.neurips.cc/paper_files/paper/2025/hash/5f999632c48f87cffb214e575581e4a9-Abstract-Conference.html) · 未找到代码 · ![NeurIPS 2025](https://img.shields.io/badge/NeurIPS-2025-orange) / [arXiv](https://arxiv.org/abs/2502.03604)"
   },
   {
     "title": "ComPO: Preference Alignment via Comparison Oracles",
