@@ -1,0 +1,248 @@
+{
+  "date": "2026-11-09",
+  "timezone": "Asia/Shanghai",
+  "window_start_utc": "2026-11-02T14:08:14.774Z",
+  "window_end_utc": "2026-11-09T14:08:14.774Z",
+  "base_commit": "1d08598e0aedb482ecf8f5f12c9519b72d3df085",
+  "summary_zh": "本轮新增本周11月5日首发的ZO-LBPG，补收录8月3日首发的CoPES，两篇均明确涉及无目标模型反传的持久语言模型参数优化：前者训练冻结骨干上的8维适配器，后者以协作ES更新工具调用模型参数。目录由272条增至274条；关联研究新增0条。未恢复提示优化、技能或仅外部状态优化文献。",
+  "limitations_zh": "检索窗口为2026-11-02T14:08:14.774Z至2026-11-09T14:08:14.774Z。重点增量查询11月4日之后，结合已有11月3日与11月5日检查记录对重叠窗口去重。只使用明确方法关键词和精确题名，未抓取通用语言模型语料或会议全量列表。OpenReview索引命中部分旧文及无关结果，不保证全覆盖。两篇新增均核实原始摘要、版本历史和部分方法/设置，未宣称全文核读或独立复现。",
+  "published_before": 272,
+  "published_after": 274,
+  "added": 2,
+  "confirmed_first_public_in_window_added": 1,
+  "historical_backfills": 1,
+  "pure_gradient_free_parameter_optimization_added": 2,
+  "related_research_added": 0,
+  "included": [
+    {
+      "title": "Provable Zeroth-Order Safe Exploration for Reinforcement Learning from Human Feedback",
+      "authors": [
+        "Weiqin Chen",
+        "Xinmeng Huang",
+        "Dongsheng Ding",
+        "Santiago Paternain"
+      ],
+      "date": "2026-11",
+      "first_public": "2026-11-05T07:14:25Z",
+      "status": "confirmed_new",
+      "category": "zo_alignment",
+      "url": "https://arxiv.org/abs/2611.07561",
+      "sources": [
+        "https://arxiv.org/html/2611.07561"
+      ],
+      "key": "chen2026zolbpg",
+      "description_en": "ZO-LBPG uses preference-based zeroth-order estimates, conservative constraint margins and adaptive log-barrier steps. LM experiments persistently optimize an eight-parameter LoRA-style adapter on frozen Qwen2.5-3B without target-model backpropagation. Beaver models simulate human feedback; safety guarantees are conditional theory, not independently verified deployment safety.",
+      "description_zh": "ZO-LBPG结合偏好反馈零阶估计、保守约束裕度及自适应对数障碍步长；语言模型实验冻结Qwen2.5-3B，无目标模型反传地持久优化8参数LoRA式适配器。实验以Beaver模型模拟人工反馈；安全保证依赖理论假设，非已独立验证的部署安全。",
+      "method": "基于偏好反馈的零阶估计、耦合轨迹、约束裕度置信控制与自适应对数障碍更新。",
+      "backpropagation": "所提目标策略更新使用零阶反馈，不需对目标语言模型反传；实验中既有Beaver奖励与代价模型用于模拟评估者，非在线训练奖励模型。",
+      "persistent_parameters": "是，冻结Qwen2.5-3B-Instruct骨干，持续更新8维LoRA式适配参数；具体注入层、8维映射和完整实现待核实。",
+      "relevance": "高，直接语言模型零阶参数对齐与受约束优化，归入zo_alignment。",
+      "uncertainties": [
+        "已核实原始摘要、初版日期、第5.2节与部分方法说明，未阅读全文或独立复现。",
+        "所谓无需奖励模型指算法不直接访问潜在分数，语言模型实验仍使用Beaver-7B奖励/代价模型生成模拟偏好，非真实人工在线试验。",
+        "安全探索和全局收敛保证依赖初始可行性、反馈及策略等假设，不能推广为任意语言模型的无条件安全。",
+        "仅8维适配实证，不能视为全参数大规模验证；代码、录用和更细模块实现待核实。"
+      ]
+    },
+    {
+      "title": "Cooperative Coevolution for Resource-Constrained Agentic LLM Post-Training",
+      "authors": [
+        "Zhiyuan Wang",
+        "Shengcai Liu",
+        "Jiahao Wu",
+        "Ning Lu",
+        "Hui Ouyang",
+        "Shaofeng Zhang",
+        "Haoze Lv",
+        "Ke Tang"
+      ],
+      "date": "2026-08",
+      "first_public": "2026-08-03T15:34:45Z",
+      "status": "backfill",
+      "category": "es_multi_turn",
+      "url": "https://arxiv.org/abs/2608.02391",
+      "sources": [
+        "https://arxiv.org/html/2608.02391"
+      ],
+      "key": "wang2026copes",
+      "code": "https://github.com/MetaronWang/CoPES",
+      "description_en": "CoPES repartitions model parameters into cooperative subspaces each step, evaluates reward-scored perturbations and updates all parameter groups without backpropagation. Experiments post-train a Qwen3.5-4B tool-using agent. Historical backfill: August 3; parameter-subspace coevolution, not skill or prompt evolution. AAAI 2027 submission is an author statement, not verified acceptance.",
+      "description_zh": "CoPES逐步重新划分模型参数子空间，以奖励评估扰动并协作更新各参数组，无需反传；实验持久后训练Qwen3.5-4B工具调用智能体。8月3日历史补收录；共同演化对象为参数子空间，并非技能或提示。AAAI 2027仅为作者投稿声明，录用未核实。",
+      "method": "协作参数子空间ES；逐步随机重分组、按维度调节扰动与联合奖励标准化。",
+      "backpropagation": "所提CoPES通过前向轨迹奖励和ES参数更新训练，不使用目标模型反传；GRPO是比较基线。",
+      "persistent_parameters": "是，论文以覆盖全部参数索引的子空间分组更新Qwen3.5-4B；逐层参数例外与代码实现仍待全面审查。",
+      "relevance": "高，直接无反传智能体语言模型参数训练，归入es_multi_turn；模型参数训练证据明确，符合用户智能体范围。",
+      "uncertainties": [
+        "已核实原始摘要、初版日期、参数子空间方法及作者代码仓库，未阅读全文或独立复现。",
+        "共同演化为数值参数分组，不因co-evolution措辞套用技能排除规则；未发现以技能库或提示优化为核心的证据。",
+        "作者只声明投稿AAAI 2027，不能标记录用。",
+        "性能、GPU小时比较与理论内存口径尚未复现；代码仓库可访问，未逐文件审查。"
+      ]
+    }
+  ],
+  "checked_not_added": [
+    {
+      "title": "Training-Free Test-Time Contrastive Learning for Large Language Models",
+      "authors": [
+        "Kaiwen Zheng",
+        "Kai Zhou",
+        "Jinwu Hu",
+        "Te Gu",
+        "Mingkai Peng",
+        "Fei Liu"
+      ],
+      "url": "https://aclanthology.org/2026.findings-acl.1482/",
+      "decision": "excluded_prompt_and_external_state_scope",
+      "reason": "官方摘要明确冻结语言模型，角色扮演生成轨迹、蒸馏文本规则并检索到上下文；不持久训练模型参数，按提示与智能体外部状态范围不收录。2026年7月正式出版，不是本周首发。"
+    },
+    {
+      "title": "Compositional Unalignment: Auditing Safety in Large Vision-Language Models",
+      "authors": [
+        "Hong kyu Lee",
+        "Kai Shu",
+        "Li Xiong"
+      ],
+      "url": "https://arxiv.org/abs/2611.07216",
+      "decision": "not_added_no_verified_gradient_free_mechanism",
+      "reason": "原始摘要明确对中层激活求梯度并执行一次反向传播来提取干预方向。训练免费不等于梯度无关；未确认零阶或无反传的核心优化阶段，不将其冒充相关纯前向校准。"
+    },
+    {
+      "title": "GD-FPS: Growth-Driven Feedforward Parameter Selection for Efficient Fine-Tuning",
+      "url": "https://arxiv.org/abs/2510.27359",
+      "aliases": [
+        "FPS: Feedforward-based Parameter Selection For Efficient Fine-Tuning"
+      ],
+      "decision": "not_added_language_model_application_unverified",
+      "reason": "核实当前原始摘要与版本历史；改名后仍报告26个视觉分类/分割任务，未取得语言模型关联证据，暂不加入本目录。"
+    },
+    {
+      "title": "HyperFlow: Gradient-Free Emulation of Few-Shot Fine-Tuning",
+      "url": "https://arxiv.org/abs/2504.15323",
+      "decision": "not_added_language_model_application_unverified",
+      "reason": "原始摘要的实证为Meta-Dataset及CDFSL视觉少样本分类；辅助漂移网络先训练，未取得语言模型应用证据。"
+    },
+    {
+      "title": "Optimizing LLM Prompt Engineering with DSPy-Based Declarative Learning",
+      "url": "https://ieeexplore.ieee.org/abstract/document/11493364",
+      "decision": "excluded_prompt_scope",
+      "reason": "检索原始IEEE页面指出核心为声明式提示优化，按用户范围不收录；3月会议与4月索引并非本周首发。"
+    },
+    {
+      "title": "How Evolution Strategies Can Train Better AI Models from Worse Candidates",
+      "url": "https://www.cognizant.com/us/en/ai-lab/blog/how-evolution-strategies-improve-ai-models",
+      "decision": "author_explanation_of_existing_paper",
+      "reason": "作者机构11月5日文章解释已有ES Paradox论文，不作为独立新论文或新的首次公开日期。"
+    },
+    {
+      "title": "When Federated Learning Meets Large Language Models: Taxonomy, Challenges, and Opportunities",
+      "url": "https://www.techscience.com/cmc/v88n2/67615/html",
+      "decision": "background_search_hit_not_added",
+      "reason": "检索命中多方法联邦语言模型综述；未核实原文是否以梯度无关研究为主要对象，不扩展为通用综述收录。"
+    },
+    {
+      "title": "GRADFILTERING: Uncertainty-Aware Gradient Signal-to-Noise Data Selection for Instruction Tuning",
+      "url": "https://aclanthology.org/2026.emnlp-main.2297/",
+      "decision": "not_added_pending_method_evidence",
+      "reason": "检索摘要讨论代理训练动态的数据选择；未取得明确零阶或无反传核心机制证据，不以题名中梯度词语扩展收录。"
+    },
+    {
+      "title": "Backward--forward interacting systems with probability-valued strategies and common noise",
+      "url": "https://arxiv.org/abs/2611.09487",
+      "decision": "irrelevant_search_hit",
+      "reason": "随机系统数学论文，未确认梯度无关语言模型研究关联。"
+    },
+    {
+      "title": "The Evolution Strategies Paradox: Better Models from Worse Perturbations",
+      "decision": "existing_duplicate",
+      "reason": "已有题名及原始链接记录，不重复收录。",
+      "resources": "[paper](https://openreview.net/forum?id=whvp3RjkiO) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window / [arXiv v1 2026-11-03T00:39:49Z](https://arxiv.org/abs/2611.04113)"
+    },
+    {
+      "title": "Dust: Pretraining Transformers Without Backpropagation",
+      "decision": "existing_duplicate",
+      "reason": "已有题名及原始链接记录，不重复收录。",
+      "resources": "[research article](https://qlabs.sh/research/dust) · [code](https://github.com/qlabs-eng/dust) · 2026-10 (month only; first-publication day unverified) / [Noise benchmark](https://github.com/qlabs-eng/noise)"
+    },
+    {
+      "title": "Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights",
+      "decision": "existing_duplicate",
+      "reason": "已有题名及原始链接记录，不重复收录。",
+      "resources": "[original](https://rikiyat.github.io/blog/weight-space-programming/) / [source 1](https://rikiyat.github.io/) / [code/logs, unreviewed](https://github.com/RikiyaT/lm_understand-logs) / research blog / 2026-11-02"
+    },
+    {
+      "title": "Training Specialist LLMs on Your Phone: Forward-Only Optimization via Block-Spectral Coordinates",
+      "decision": "existing_duplicate",
+      "reason": "已有题名及原始链接记录，不重复收录。",
+      "resources": "[paper](https://arxiv.org/abs/2611.04797) · code not located · 2026-11"
+    },
+    {
+      "title": "ENGINE: Endogenous Variational MultiScale Optimization for Zeroth-Order LLM Fine-Tuning",
+      "decision": "existing_duplicate",
+      "reason": "已有题名及原始链接记录，不重复收录。",
+      "resources": "[original](https://arxiv.org/abs/2611.03293) / [source 1](https://arxiv.org/html/2611.03293) / [source 2](https://neurips.cc/Downloads/2026) / [code/logs, unreviewed](https://github.com/AI4Science-WestlakeU/ENGINE) / arXiv v1 2026-11-02T15:31:38Z / earliest cross-platform release unverified"
+    },
+    {
+      "title": "The Cost of Mismatch: Noise Amplification in Zeroth-Order Reinforcement Learning",
+      "decision": "existing_duplicate",
+      "reason": "已有题名及原始链接记录，不重复收录。",
+      "resources": "[original](https://arxiv.org/abs/2611.03260) / [source 1](https://arxiv.org/html/2611.03260) / [source 2](https://neurips.cc/Downloads/2026) / [code/logs, unreviewed](https://github.com/lianmin-chen/the_cost_of_mismatch) / arXiv v1 2026-11-02T15:07:18Z / earliest cross-platform release unverified"
+    },
+    {
+      "title": "Accelerating LLM Pretraining with Zeroth-Order Curvature on Idle Serving Compute",
+      "decision": "existing_duplicate",
+      "reason": "已有题名及原始链接记录，不重复收录。",
+      "resources": "[paper](https://openreview.net/forum?id=qh1N46HjOP) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window / [arXiv v1 2026-11-02T07:38:45Z](https://arxiv.org/abs/2611.02688) / code promised upon acceptance"
+    },
+    {
+      "title": "How Low Can You Go: Fine-Tuning LLMs with Bayesian Optimization (LlMBO)",
+      "decision": "existing_duplicate",
+      "reason": "已有题名及原始链接记录，不重复收录。",
+      "resources": "[paper](https://arxiv.org/abs/2610.18504) · code not located · 2026-10"
+    }
+  ],
+  "queries": [
+    "\"zeroth-order\" \"language model\" after:2026-11-04 before:2026-11-10",
+    "\"gradient-free\" \"LLM\" after:2026-11-04 before:2026-11-10",
+    "\"evolution strategies\" \"language\" after:2026-11-04 before:2026-11-10",
+    "\"backpropagation-free\" \"language\" after:2026-11-04 before:2026-11-10",
+    "site:arxiv.org \"zeroth-order\" \"Nov 6\" \"2026\"",
+    "site:arxiv.org \"evolution strategies\" \"Nov 6\" \"2026\"",
+    "site:openreview.net \"ICLR 2027\" \"zeroth-order\"",
+    "\"zeroth-order\" \"language\" after:2026-11-05 before:2026-11-10",
+    "\"gradient-free\" \"fine-tuning\" after:2026-11-05 before:2026-11-10",
+    "\"evolution strategies\" \"LLM\" \"November 2026\"",
+    "\"forward-only\" \"language\" after:2026-11-05 before:2026-11-10",
+    "\"CoPES\" \"Cooperative Parameter\" arxiv",
+    "\"HyperFlow: Gradient-Free Emulation of Few-Shot Fine-Tuning\""
+  ],
+  "main_worktree_preserved": {
+    "catalog_count": 252,
+    "sha256": {
+      "README.md": "593695c8d764ba83c3ea65d55a5a6d3d3fbbeb5a3e4c4a1906a6d6a48332bcd0",
+      "README_zh.md": "b3eac1a2f413cfa079a5aa4d74b4dfd6ecda58fd75461a2d013a0fd02a3f24b1",
+      "data/papers.json": "fa1b593478a52ee91b47aa4a61a03648af5136045136fa3af152c6d1def0e0c6",
+      "papers.bib": "c597a2d1546259baa8881fa6826d1fdee65e77080508d1e4ad526ec8f166f088",
+      "scripts/generate_catalog.py": "57aad6922c1df1606fc76a589244eec05247161401da9f3d1237eb28a62c90e7",
+      "data/literature_reviews/2026-10-18-current-status.md": "aad8be9ad2dfe0f6783bacdf98a28c4056c943afbebd9fa363c02add13966029"
+    }
+  },
+  "category_counts_after": {
+    "es_pretraining": 1,
+    "es_single_turn": 16,
+    "related_hybrid": 65,
+    "es_understanding": 11,
+    "zo_pretraining": 5,
+    "zo_baselines": 17,
+    "related_closed_form": 32,
+    "zo_directions": 36,
+    "zo_systems": 26,
+    "zo_alignment": 3,
+    "zo_multi_turn": 1,
+    "zo_understanding": 11,
+    "related_prompt_agent": 29,
+    "related_agent_training": 7,
+    "related_inference": 11,
+    "related_forward_gradient": 1,
+    "es_multi_turn": 2
+  }
+}

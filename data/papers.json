@@ -2446,5 +2446,23 @@
     "description_zh": "EGDR以前一词元熵调节已校准的隐空间干预门；用留出数据前向评估确定方向、层位及门控设置，推理时改变隐状态，无需反传且不持久更新模型权重。归入关联推理校准。arXiv初版11月3日；WACV 2027声明和最早公开时间待核实。",
     "resources_en": "[paper](https://arxiv.org/abs/2611.04438) / [method](https://arxiv.org/html/2611.04438) / [code, unreviewed](https://github.com/alvi-uiu/EGDR) / arXiv v1 / 2026-11-03T07:31:21Z / earliest public date unverified",
     "resources_zh": "[论文](https://arxiv.org/abs/2611.04438) / [方法原文](https://arxiv.org/html/2611.04438) / [代码，未审查](https://github.com/alvi-uiu/EGDR) / arXiv初版 / 2026-11-03T07:31:21Z / 最早公开日期待核实"
+  },
+  {
+    "title": "Provable Zeroth-Order Safe Exploration for Reinforcement Learning from Human Feedback",
+    "category": "zo_alignment",
+    "date": "2026-11",
+    "description_en": "ZO-LBPG uses preference-based zeroth-order estimates, conservative constraint margins and adaptive log-barrier steps. LM experiments persistently optimize an eight-parameter LoRA-style adapter on frozen Qwen2.5-3B without target-model backpropagation. Beaver models simulate human feedback; safety guarantees are conditional theory, not independently verified deployment safety.",
+    "description_zh": "ZO-LBPG结合偏好反馈零阶估计、保守约束裕度及自适应对数障碍步长；语言模型实验冻结Qwen2.5-3B，无目标模型反传地持久优化8参数LoRA式适配器。实验以Beaver模型模拟人工反馈；安全保证依赖理论假设，非已独立验证的部署安全。",
+    "resources_en": "[paper](https://arxiv.org/abs/2611.07561) / [method](https://arxiv.org/html/2611.07561) / code unverified / first public / 2026-11-05T07:14:25Z",
+    "resources_zh": "[论文](https://arxiv.org/abs/2611.07561) / [方法原文](https://arxiv.org/html/2611.07561) / 代码待核实 / 首发 / 2026-11-05T07:14:25Z"
+  },
+  {
+    "title": "Cooperative Coevolution for Resource-Constrained Agentic LLM Post-Training",
+    "category": "es_multi_turn",
+    "date": "2026-08",
+    "description_en": "CoPES repartitions model parameters into cooperative subspaces each step, evaluates reward-scored perturbations and updates all parameter groups without backpropagation. Experiments post-train a Qwen3.5-4B tool-using agent. Historical backfill: August 3; parameter-subspace coevolution, not skill or prompt evolution. AAAI 2027 submission is an author statement, not verified acceptance.",
+    "description_zh": "CoPES逐步重新划分模型参数子空间，以奖励评估扰动并协作更新各参数组，无需反传；实验持久后训练Qwen3.5-4B工具调用智能体。8月3日历史补收录；共同演化对象为参数子空间，并非技能或提示。AAAI 2027仅为作者投稿声明，录用未核实。",
+    "resources_en": "[paper](https://arxiv.org/abs/2608.02391) / [method](https://arxiv.org/html/2608.02391) / [code, unreviewed](https://github.com/MetaronWang/CoPES) / backfill / 2026-08-03T15:34:45Z",
+    "resources_zh": "[论文](https://arxiv.org/abs/2608.02391) / [方法原文](https://arxiv.org/html/2608.02391) / [代码，未审查](https://github.com/MetaronWang/CoPES) / 窗口外补收录 / 2026-08-03T15:34:45Z"
   }
 ]

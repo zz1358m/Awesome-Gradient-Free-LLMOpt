@@ -81,6 +81,7 @@ ES 和双点 ZO 都可以看作平滑目标函数的估计方法，但现有大�
 | 日期 | 论文 | 核心贡献 | 资源 |
 |---|---|---|---|
 | 2026-10 | **Asynchrony Is Nearly Free for Evolution Strategies on Long-Horizon LLM Agentic Tasks** | v2以Qwen3-4B-Instruct-2507在WebShop上研究有界延迟异步全参数高斯ES，参数更新无需反传；v1的Qwen2.5及终端任务记录另存版本档案。首发2026-10-03，10月14日改题与修订不计新论文；每条件训练次数及真实耗时收益仍需谨慎核实。 | [论文](https://arxiv.org/abs/2610.04196v2) / [v1历史](https://arxiv.org/abs/2610.04196v1) / [原条目代码](https://github.com/Bhoy1/async-es) / 首发2026-10-03 UTC；2026-10-14修订，不计新论文 |
+| 2026-08 | **Cooperative Coevolution for Resource-Constrained Agentic LLM Post-Training** | CoPES逐步重新划分模型参数子空间，以奖励评估扰动并协作更新各参数组，无需反传；实验持久后训练Qwen3.5-4B工具调用智能体。8月3日历史补收录；共同演化对象为参数子空间，并非技能或提示。AAAI 2027仅为作者投稿声明，录用未核实。 | [论文](https://arxiv.org/abs/2608.02391) / [方法原文](https://arxiv.org/html/2608.02391) / [代码，未审查](https://github.com/MetaronWang/CoPES) / 窗口外补收录 / 2026-08-03T15:34:45Z |
 
 ### 理解 ES
 
@@ -214,6 +215,7 @@ ES 和双点 ZO 都可以看作平滑目标函数的估计方法，但现有大�
 |---|---|---|---|
 | 2025 | **ComPO: Preference Alignment via Comparison Oracles** | 利用一比特偏好比较聚合参数扰动进行零阶对齐，实践结合 DPO/SimPO 梯度训练；在 UltraFeedback 上训练并以 AlpacaEval 2、Arena-Hard 和 MT-Bench 评估，2026 扩展加入在线 KL 控制。 | [论文](https://arxiv.org/abs/2505.05465) · [2026 扩展版](https://arxiv.org/abs/2609.19144) · [代码](https://github.com/PeterLauLukChen/ComparisonPO) · ![NeurIPS 2025](https://img.shields.io/badge/NeurIPS-2025-orange) |
 | 2026-11 | **The Cost of Mismatch: Noise Amplification in Zeroth-Order Reinforcement Learning** | 分析成对函数评估的数据失配噪声，提出ZO-BOLT：以相同小批量的对称有限差分、查询重用与自适应更新优化固定加权SFT目标。无需语言模型反传，持久训练q/k投影LoRA并冻结骨干。已核实NeurIPS 2026官方列表；跨平台最早公开时间待核实。 | [原文](https://arxiv.org/abs/2611.03260) / [原始来源1](https://arxiv.org/html/2611.03260) / [原始来源2](https://neurips.cc/Downloads/2026) / [代码或日志，未审查](https://github.com/lianmin-chen/the_cost_of_mismatch) / arXiv初版 2026-11-02T15:07:18Z / 跨平台最早公开日期待核实 |
+| 2026-11 | **Provable Zeroth-Order Safe Exploration for Reinforcement Learning from Human Feedback** | ZO-LBPG结合偏好反馈零阶估计、保守约束裕度及自适应对数障碍步长；语言模型实验冻结Qwen2.5-3B，无目标模型反传地持久优化8参数LoRA式适配器。实验以Beaver模型模拟人工反馈；安全保证依赖理论假设，非已独立验证的部署安全。 | [论文](https://arxiv.org/abs/2611.07561) / [方法原文](https://arxiv.org/html/2611.07561) / 代码待核实 / 首发 / 2026-11-05T07:14:25Z |
 
 ### 多轮智能体适配
 
