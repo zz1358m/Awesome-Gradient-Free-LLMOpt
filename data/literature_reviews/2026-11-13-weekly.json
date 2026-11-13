@@ -1,0 +1,283 @@
+{
+  "rows": [
+    {
+      "title": "Aligned but Fragile: Enhancing LLM Safety Robustness via Zeroth-Order Optimization",
+      "authors": [
+        "Zhihao Liu",
+        "Yifan Wu",
+        "Jian Lou",
+        "Di Wang",
+        "Yuxi Zhou",
+        "Yuke Hu"
+      ],
+      "date": "2026-05",
+      "first_public": "2026-05-28T05:46:38Z",
+      "arxiv_v1": "2026-05-28T05:46:38Z",
+      "status": "backfill",
+      "category": "related_hybrid",
+      "kind": "paper",
+      "url": "https://arxiv.org/abs/2605.29396",
+      "sources": [
+        "https://arxiv.org/html/2605.29396"
+      ],
+      "key": "liu2026alignedfragile",
+      "description_en": "First performs backpropagation-based safety alignment, then applies perturbation-guided ZO refinement to robustness-critical layers. Both stages persistently change LM weights; only the refinement stage is backpropagation-free. Historical backfill, not a new first release; tested robustness does not establish unconditional safety. Code and venue unverified.",
+      "description_zh": "先以反传进行安全对齐，再按扰动敏感性选择鲁棒性关键层并零阶精炼；两阶段均持久更新语言模型权重，仅精炼阶段无需反传。历史补收录，不计本周首发；所测鲁棒性不构成无条件安全保证。代码与录用待核实。",
+      "method": "一阶安全对齐后接有限差分零阶精炼，并以扰动及量化敏感性定位更新层。",
+      "backpropagation": "是，第一阶段依赖一阶梯度与反传；后续目标层零阶精炼无需反传，整体归入混合方法。",
+      "persistent_parameters": "是，Llama-3-8B-Instruct及Qwen2-7B-Instruct的模型权重，零阶阶段仅更新所选层；逐模块实现待代码核查。",
+      "relevance": "高相关混合参数优化，放入related_hybrid，不计纯梯度无关主线。",
+      "uncertainties": [
+        "核实原始摘要、初版历史、第4节及部分实验设置，未阅读全文或独立复现。",
+        "仅在所测试噪声、量化和基准下报告鲁棒性，不能推断任意攻击下安全。",
+        "作者代码、正式录用及逐层实现细节待核实。"
+      ]
+    },
+    {
+      "title": "Towards Green Text Generation: Memory-Based Speculative Decoding",
+      "authors": [
+        "Antal van den Bosch"
+      ],
+      "date": "2026-10",
+      "first_public": null,
+      "arxiv_v1": "2026-11-12T12:32:14Z",
+      "status": "backfill_prior_publication_month_author_record",
+      "category": "related_closed_form",
+      "kind": "paper",
+      "url": "https://arxiv.org/abs/2611.16714",
+      "sources": [
+        "https://arxiv.org/html/2611.16714"
+      ],
+      "key": "vandenbosch2026olifant",
+      "code": "https://github.com/antalvdb/olifant-speculative",
+      "description_en": "Olifant trains a memory-based IGTree next-token classifier offline and uses it as a CPU draft model for a fixed neural verifier. No backpropagation or persistent neural-weight updates in the proposed draft training; learned trie state persists. Related statistical LM/decoding research, not neural parameter optimization. Authors cite INLG October 2026; earliest date unverified.",
+      "description_zh": "Olifant离线训练基于记忆的IGTree下一词元分类器，作为固定神经校验模型的CPU草稿模型；所提草稿训练无需反传，不更新神经权重，持久保存统计树状态。列为统计语言模型与解码关联研究。作者注明INLG 2026年10月，最早日期待核实。",
+      "method": "信息增益排序的压缩实例树训练与查找，结合推测解码验证。",
+      "backpropagation": "所提Olifant统计草稿训练不依赖反传；既有神经校验模型及TinyLlama比较模型的预训练另行存在。",
+      "persistent_parameters": "不更新神经校验器或神经草稿模型权重；改变并保存离线学习的实例树和节点统计。非智能体外部工件搜索。",
+      "relevance": "中，明确无反传的统计语言模型草稿训练与LLM解码系统；纳入闭式、局部与统计适配关联分类，不计神经参数优化。",
+      "uncertainties": [
+        "核实原始摘要、版本历史、IGTree方法和实验设置，未阅读全文或复现。",
+        "作者期刊参考注明INLG 2026年10月出版，本轮未独立取得正式会议页面，具体首发日待核实；11月12日仅为arXiv初版。",
+        "不同KV缓存条件、硬件、域匹配和能耗口径影响结论，不能泛化作者的加速与节能倍数。",
+        "代码仓库可访问但未全面审查；统计模型实例状态与神经可训练参数须区分。"
+      ]
+    },
+    {
+      "title": "An LLM erases a concept by editing diffusion weights directly, without gradients",
+      "authors": [
+        "Javad Taghia"
+      ],
+      "aliases": [
+        "Can a Language Model Edit Diffusion Model Weights Without Gradients? Tiny-SD: A Short Report on Reducing Van Gogh-Style Reproduction"
+      ],
+      "date": "2026-11",
+      "first_public": "2026-11-08",
+      "arxiv_v1": null,
+      "status": "original_author_report_in_window",
+      "category": "related_agent_training",
+      "kind": "author_research_report",
+      "url": "https://huggingface.co/blog/javadtaghia/an-llm-erases-a-concept-by-editing-diffusion-weigh",
+      "sources": [
+        "https://www.alphaxiv.org/abs/2611.gradient-free-diffusion-weight-editing"
+      ],
+      "code": "https://huggingface.co/javadtaghia/unlearning-via-weight-code",
+      "key": "taghia2026diffusionweightedit",
+      "description_en": "Author report: a fixed LLM uses feedback and closed-form tensor edits to persistently modify tiny-sd diffusion weights without autograd in the proposed editing stage. The target is a diffusion model, not LM weights. Included as related agent-driven model editing; publication/version metadata and independent replication remain unverified.",
+      "description_zh": "作者研究报告：固定语言模型根据反馈，以闭式张量操作持久编辑tiny-sd扩散模型权重，所提编辑阶段禁用自动微分。目标是扩散模型，非语言模型权重。列为关联智能体模型编辑；版本、出版信息与独立复现待核实。",
+      "method": "语言模型工具调用、闭式最小二乘及投影类张量编辑，基于开发集反馈选择目标模型权重修改。",
+      "backpropagation": "作者称所提编辑沙箱阻止自动微分；既有扩散模型训练及梯度基线另行存在。语言模型编辑器不训练；禁用机制未独立验证。",
+      "persistent_parameters": "是，作者报告持久修改tiny-sd的注意力value矩阵，部分运行亦改key矩阵；不只修改提示或外部程序，编辑器语言模型自身不更新。",
+      "relevance": "中，语言模型驱动的梯度无关目标模型参数编辑；目标为扩散网络，单列关联研究，不计梯度无关语言模型参数训练主线。",
+      "uncertainties": [
+        "已核实作者原始Hugging Face文章、发布日期、方法及alphaXiv页面，未读到可解析的PDF正文、未审查全量日志或复现。",
+        "作者文章发布日期为2026-11-08，alphaXiv显示11月9日提交；按更早原始作者页面记录，精确时间和时区待核实。",
+        "作者文章以tiny-sd单模型为主，alphaXiv较新摘要扩展到SD v1.4；不将跨版本结果直接合并。",
+        "alphaXiv当前标题与BibTeX标题不同，保留别名待核实；其标识是平台自有字符串，并非arXiv论文编号。",
+        "所给Hugging Face模型仓库存在但无模型卡，产物完整性待核实；不宣称正式录用或同行评审。"
+      ]
+    },
+    {
+      "title": "IWIBench: Evaluating Gradient-Free Model Driven Intra-weight Injection",
+      "authors": [
+        "Chris von Csefalvay",
+        "Pranav Doma",
+        "Achyuthan Unni Krishnan",
+        "Tamás Földi"
+      ],
+      "date": "2026-11",
+      "first_public": "2026-11-05T19:50:11Z",
+      "arxiv_v1": "2026-11-05T19:50:11Z",
+      "status": "backfill",
+      "category": "related_agent_training",
+      "kind": "paper",
+      "url": "https://arxiv.org/abs/2611.08647",
+      "sources": [
+        "https://arxiv.org/html/2611.08647"
+      ],
+      "code": "https://github.com/hcltech-robotics/iwibench",
+      "key": "voncsefalvay2026iwibench",
+      "description_en": "Benchmark for fixed LLM editors that submit persistent target-model weight patches through bounded tensor-edit tools without gradients. Fresh-process evaluation isolates the patch from runtime intervention. Related model editing and evaluation, not a new ES/ZO optimizer; historical backfill. No editor-model training is established.",
+      "description_zh": "评测固定语言模型编辑器通过受限张量工具、无需梯度提交持久目标模型权重补丁，并以全新进程检验补丁效果。属于模型编辑与评测关联研究，非新ES或零阶优化器；历史补收录，未证明编辑器自身训练。",
+      "method": "通过读写权重、运行目标与检查目标四类受限工具，生成替换、缩放、复制及低秩加性等权重补丁，分离验证行为变化及保留性能。",
+      "backpropagation": "所提评测接口不提供梯度、优化器或任意程序执行；目标编辑阶段无需反传，未训练固定编辑器。既有模型预训练另行存在。",
+      "persistent_parameters": "是，持久修改Gemma 3等目标语言模型的权重；具体张量随补丁而变，架构、分词器和推理代码固定。编辑器自身参数不更新。",
+      "relevance": "高相关权重编辑基准，有明确持久语言模型参数改变证据；归关联智能体模型训练与编辑，非纯梯度无关优化算法主线。",
+      "uncertainties": [
+        "核实原始摘要、初版历史、工具与评测协议及作者代码仓库，未阅读全文、全面代码审计或复现。",
+        "初版2026-11-05早于本轮窗口，标为补收录；文稿内部11月4日日期不作为首次公开证明。",
+        "任务表现和保留能力取决于编辑器、目标及有限预算，不能推广为普遍可靠的模型编辑。",
+        "代码仓库当前更新可能晚于论文版本；逐运行具体权重修改及正式录用待核实。"
+      ]
+    }
+  ],
+  "update": {
+    "title": "Recursive Self-Improvement through Multi-Agent Self-Supervision",
+    "authors": [
+      "Hyunin Lee",
+      "Jinglue Xu",
+      "Jeffrey Seely",
+      "Donghyun Lee",
+      "Somayeh Sojoudi",
+      "Matei Zaharia",
+      "Yujin Tang"
+    ],
+    "arxiv_v1": "2026-10-08T15:44:02Z",
+    "url": "https://arxiv.org/abs/2610.12176",
+    "author_page": "https://pub.sakana.ai/mass/",
+    "code": "https://github.com/SakanaAI/mass",
+    "key": "iclr2027recursiveselfimprovementthroughmulti",
+    "category": "related_hybrid",
+    "description_en": "MASS alternates derivative-free workflow search under fixed model weights with supervised fine-tuning that persistently updates Qwen3.6-27B. The model-training stage uses backpropagation; workflow evolution is not a ZO weight optimizer. Existing entry: arXiv, named authors and author code added; earliest cross-platform release and acceptance unverified.",
+    "description_zh": "MASS交替进行固定模型下的工作流进化搜索与持久更新Qwen3.6-27B的监督微调；模型训练阶段依赖反传，工作流进化并非零阶权重优化器。既有条目补充arXiv、实名作者与代码；跨平台最早公开时间和录用待核实。",
+    "notes": "同题原始论文及作者页面确认持久模型训练，保留related_hybrid分类。更新既有条目，不增加重复记录；arXiv初版10月8日，仓库此前已有更早OpenReview来源，未把近期抓取或榜单日期计为新增。"
+  },
+  "queries": [
+    "\"zeroth-order\" \"language model\" after:2026-11-08 before:2026-11-14",
+    "\"gradient-free\" \"LLM\" after:2026-11-08 before:2026-11-14",
+    "\"evolution strategies\" \"language\" after:2026-11-08 before:2026-11-14",
+    "\"backpropagation-free\" \"language\" after:2026-11-08 before:2026-11-14",
+    "\"zeroth-order\" \"language model\" after:2026-11-09 before:2026-11-14",
+    "\"evolution strategies\" \"LLM\" after:2026-11-09 before:2026-11-14",
+    "site:openreview.net \"ICLR 2027\" \"gradient-free\"",
+    "\"zeroth-order\" \"Nov 12\" \"2026\" language",
+    "\"gradient-free\" \"Nov 12\" \"2026\" language",
+    "\"backpropagation-free\" \"Nov 11\" \"2026\" language",
+    "\"evolution strategies\" \"Nov 11\" \"2026\" LLM",
+    "\"Recursive Self-Improvement through Multi-Agent Self-Supervision\" arxiv",
+    "\"Towards Green Text Generation: Memory-Based Speculative Decoding\" site:aclanthology.org",
+    "\"IWIBench\" arxiv",
+    "\"Zeroth-Order Optimization at the Edge of Stability\" arxiv"
+  ],
+  "checks": [
+    {
+      "title": "Backpropagation-Free Continual Learning: A Unified Energy-Based Framework, Reproducible Benchmark, and Open Challenges",
+      "authors": [
+        "Cesar Hernando Valencia Niño"
+      ],
+      "url": "https://www.mdpi.com/2813-2203/5/4/53",
+      "decision": "not_added_language_model_scope_insufficient",
+      "reason": "已核实原始期刊页面：基准使用MNIST、Fashion-MNIST和CIFAR-10，语言模型尺度的局部能量持续学习被明确列为范围外。今日期刊出版不等同已有2026年7月预印本候选的首次公开，不因新索引增加条目。"
+    },
+    {
+      "title": "Reasoning as Gradient: Scaling MLE Agents Beyond Tree Search",
+      "url": "https://aclanthology.org/2026.findings-acl.438/",
+      "decision": "not_added_pending_model_training_evidence",
+      "reason": "命中已有旧研究的会议页面索引；未新增取得语言模型参数训练证据，维持检查记录，不把自然语言梯度措辞算作模型训练。"
+    },
+    {
+      "title": "PromptDescent / OPRO implementation",
+      "url": "https://github.com/datadave22/PromptDescent",
+      "decision": "excluded_prompt_scope",
+      "reason": "核心为自然语言提示优化，按用户范围不收录。"
+    },
+    {
+      "title": "Local Pheromone Network / pheromone-network implementation",
+      "url": "https://github.com/Wrste/pheromone-network",
+      "decision": "excluded_external_state_scope",
+      "reason": "检索描述为智能体长期记忆及关联链接的人工Hebbian更新，未核实目标模型参数训练证据，不作为本轮收录。"
+    },
+    {
+      "title": "Zeroth-Order Optimization at the Edge of Stability",
+      "url": "https://arxiv.org/abs/2604.14669",
+      "decision": "existing_duplicate",
+      "reason": "原始论文确认作者Minhak Song、Liang Zhang、Bingcong Li、Niao He、Michael Muehlebach、Sewoong Oh；arXiv初版2026-04-16。标题及链接已存在目录与书目，不重复收录，机构网页日期不视为首发。"
+    },
+    {
+      "title": "Backpropagation-Free Test-Time Adaptation via Probabilistic Gaussian Alignment",
+      "url": "https://jglobal.jst.go.jp/en/detail?JGLOBAL_ID=202502209597748100",
+      "decision": "not_added_pending_language_model_scope",
+      "reason": "仅命中旧研究索引，未完成原始研究及语言模型适用性核查，保存检查记录。"
+    },
+    {
+      "title": "RoboScript",
+      "decision": "not_added_pending_model_training_evidence",
+      "reason": "第三方每日简报提及无梯度机器人脚本生成；未取得持续更新模型参数的原始证据，不以脚本执行或外部程序优化作为模型训练。"
+    },
+    {
+      "title": "AgenticESOpt",
+      "decision": "excluded_previous_scope_decision",
+      "reason": "此前2026-11-03已按提示优化与参数共同演化的核心研究范围排除，本轮检索再次命中，不恢复现行目录。"
+    }
+  ],
+  "summary": "新增4条关联研究：Aligned but Fragile、Olifant、IWIBench三条补收录，以及11月8日作者发布的扩散权重编辑研究报告。另更新既有MASS来源、作者、代码和反传边界。目录274增至278；纯梯度无关语言模型参数优化主线新增0条。统计草稿与扩散权重编辑分别保留非神经参数及非语言模型目标的边界，IWIBench是评测基准而非新优化器。",
+  "limits": "窗口为2026-11-06T14:09:19.299Z至2026-11-13T14:09:19.299Z。增量检索结合已保存11月9日报告对重叠窗口去重，仅用明确方法关键词与精确题名；未扩展到通用语言模型语料或会议全量列表。原始摘要、作者页面及部分方法设置已核实，未宣称阅读全文或独立复现。网页更新、期刊出版、社区榜单和arXiv后补版本不等同首次公开；OpenReview检索覆盖有限，未取到的原始材料如实标注。",
+  "labels": {
+    "authors": "作者",
+    "date": "首次公开及版本",
+    "source": "原文",
+    "contribution": "核心贡献",
+    "method": "方法",
+    "bp": "反传依赖",
+    "params": "持久参数及更新模块",
+    "relevance": "相关性",
+    "position": "实际位置",
+    "unknown": "待人工核实",
+    "update": "既有条目更新",
+    "checks": "全部候选检查记录",
+    "limits": "检索与限制"
+  },
+  "automation_id": "9-00-asia-shanghai-arxiv-openreview-ai-ml-n-2",
+  "window_start": "2026-11-06T14:09:19.299Z",
+  "window_end": "2026-11-13T14:09:19.299Z",
+  "base_commit": "5565068f6b732cccbf0124c4c4691443f11ea523",
+  "counts": {
+    "before": 274,
+    "after": 278,
+    "added": 4,
+    "paper_backfills": 3,
+    "author_reports_in_window": 1,
+    "mainline_optimizer_added": 0,
+    "existing_metadata_updates": 1
+  },
+  "metadata_update_audit": {
+    "before": {
+      "title": "Recursive Self-Improvement through Multi-Agent Self-Supervision",
+      "category": "related_hybrid",
+      "date": "2026",
+      "description_en": "MASS alternates guarded evolutionary search over multi-agent workflows with supervised fine-tuning on the optimized workflows' self-generated traces.",
+      "description_zh": "交替进化多智能体工作流并在其自生成轨迹上监督微调模型，形成递归自举环路。",
+      "resources_en": "[paper](https://openreview.net/forum?id=lHLch9v09X) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
+      "resources_zh": "[论文](https://openreview.net/forum?id=lHLch9v09X) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
+    },
+    "after": {
+      "title": "Recursive Self-Improvement through Multi-Agent Self-Supervision",
+      "category": "related_hybrid",
+      "date": "2026",
+      "description_en": "MASS alternates derivative-free workflow search under fixed model weights with supervised fine-tuning that persistently updates Qwen3.6-27B. The model-training stage uses backpropagation; workflow evolution is not a ZO weight optimizer. Existing entry: arXiv, named authors and author code added; earliest cross-platform release and acceptance unverified.",
+      "description_zh": "MASS交替进行固定模型下的工作流进化搜索与持久更新Qwen3.6-27B的监督微调；模型训练阶段依赖反传，工作流进化并非零阶权重优化器。既有条目补充arXiv、实名作者与代码；跨平台最早公开时间和录用待核实。",
+      "resources_en": "[paper](https://arxiv.org/abs/2610.12176) / [author page](https://pub.sakana.ai/mass/) / [code](https://github.com/SakanaAI/mass) / [existing OpenReview](https://openreview.net/forum?id=lHLch9v09X) / first public and acceptance unverified",
+      "resources_zh": "[论文](https://arxiv.org/abs/2610.12176) / [作者页面](https://pub.sakana.ai/mass/) / [代码](https://github.com/SakanaAI/mass) / [既有OpenReview](https://openreview.net/forum?id=lHLch9v09X) / 最早公开与录用待核实"
+    },
+    "bib_before": "@unpublished{iclr2027recursiveselfimprovementthroughmulti,\n  title={Recursive Self-Improvement through Multi-Agent Self-Supervision},\n  author={Anonymous},\n  note={ICLR 2027 Conference Submission; decision pending; OpenReview public 2026-10-03; cross-platform first public date unverified; cycle backfill outside 2026-10-04--2026-10-11 window}, year={2026},\n  url={https://openreview.net/forum?id=lHLch9v09X}\n}",
+    "bib_after": "@article{iclr2027recursiveselfimprovementthroughmulti,\n  title={Recursive Self-Improvement through Multi-Agent Self-Supervision},\n  author={Hyunin Lee and Jinglue Xu and Jeffrey Seely and Donghyun Lee and Somayeh Sojoudi and Matei Zaharia and Yujin Tang},\n  year={2026},\n  journal={arXiv preprint arXiv:2610.12176},\n  url={https://arxiv.org/abs/2610.12176},\n  note={Existing same-title OpenReview source: https://openreview.net/forum?id=lHLch9v09X; arXiv v1 2026-10-08; earliest cross-platform publication and acceptance unverified}\n}"
+  },
+  "original_worktree_sha256": {
+    "README.md": "593695c8d764ba83c3ea65d55a5a6d3d3fbbeb5a3e4c4a1906a6d6a48332bcd0",
+    "README_zh.md": "b3eac1a2f413cfa079a5aa4d74b4dfd6ecda58fd75461a2d013a0fd02a3f24b1",
+    "data/papers.json": "fa1b593478a52ee91b47aa4a61a03648af5136045136fa3af152c6d1def0e0c6",
+    "papers.bib": "c597a2d1546259baa8881fa6826d1fdee65e77080508d1e4ad526ec8f166f088",
+    "scripts/generate_catalog.py": "57aad6922c1df1606fc76a589244eec05247161401da9f3d1237eb28a62c90e7",
+    "data/literature_reviews/2026-10-18-current-status.md": "aad8be9ad2dfe0f6783bacdf98a28c4056c943afbebd9fa363c02add13966029"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "catalog_before": 274,
+  "catalog_after": 278,
+  "bib_before": 275,
+  "bib_after": 279,
+  "unique_titles": true,
+  "unique_bib_keys": true,
+  "new_bib_keys": [
+    "liu2026alignedfragile",
+    "taghia2026diffusionweightedit",
+    "vandenbosch2026olifant",
+    "voncsefalvay2026iwibench"
+  ],
+  "old_records_unchanged_except_mass": true,
+  "original_dirty_worktree_unchanged": true,
+  "original_worktree_sha256": {
+    "README.md": "593695c8d764ba83c3ea65d55a5a6d3d3fbbeb5a3e4c4a1906a6d6a48332bcd0",
+    "README_zh.md": "b3eac1a2f413cfa079a5aa4d74b4dfd6ecda58fd75461a2d013a0fd02a3f24b1",
+    "data/papers.json": "fa1b593478a52ee91b47aa4a61a03648af5136045136fa3af152c6d1def0e0c6",
+    "papers.bib": "c597a2d1546259baa8881fa6826d1fdee65e77080508d1e4ad526ec8f166f088",
+    "scripts/generate_catalog.py": "57aad6922c1df1606fc76a589244eec05247161401da9f3d1237eb28a62c90e7",
+    "data/literature_reviews/2026-10-18-current-status.md": "aad8be9ad2dfe0f6783bacdf98a28c4056c943afbebd9fa363c02add13966029"
+  },
+  "generator_check": "Catalog is up to date (278 papers).\n",
+  "diff_check": "passed",
+  "category_additions": {
+    "related_hybrid": 1,
+    "related_closed_form": 1,
+    "related_agent_training": 2
+  }
+}

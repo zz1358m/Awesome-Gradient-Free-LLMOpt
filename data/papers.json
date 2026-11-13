@@ -1344,10 +1344,10 @@
     "title": "Recursive Self-Improvement through Multi-Agent Self-Supervision",
     "category": "related_hybrid",
     "date": "2026",
-    "description_en": "MASS alternates guarded evolutionary search over multi-agent workflows with supervised fine-tuning on the optimized workflows' self-generated traces.",
-    "description_zh": "交替进化多智能体工作流并在其自生成轨迹上监督微调模型，形成递归自举环路。",
-    "resources_en": "[paper](https://openreview.net/forum?id=lHLch9v09X) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
-    "resources_zh": "[论文](https://openreview.net/forum?id=lHLch9v09X) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
+    "description_en": "MASS alternates derivative-free workflow search under fixed model weights with supervised fine-tuning that persistently updates Qwen3.6-27B. The model-training stage uses backpropagation; workflow evolution is not a ZO weight optimizer. Existing entry: arXiv, named authors and author code added; earliest cross-platform release and acceptance unverified.",
+    "description_zh": "MASS交替进行固定模型下的工作流进化搜索与持久更新Qwen3.6-27B的监督微调；模型训练阶段依赖反传，工作流进化并非零阶权重优化器。既有条目补充arXiv、实名作者与代码；跨平台最早公开时间和录用待核实。",
+    "resources_en": "[paper](https://arxiv.org/abs/2610.12176) / [author page](https://pub.sakana.ai/mass/) / [code](https://github.com/SakanaAI/mass) / [existing OpenReview](https://openreview.net/forum?id=lHLch9v09X) / first public and acceptance unverified",
+    "resources_zh": "[论文](https://arxiv.org/abs/2610.12176) / [作者页面](https://pub.sakana.ai/mass/) / [代码](https://github.com/SakanaAI/mass) / [既有OpenReview](https://openreview.net/forum?id=lHLch9v09X) / 最早公开与录用待核实"
   },
   {
     "title": "RaSTA: Random Subspace Tuning Adaptation",
@@ -2464,5 +2464,41 @@
     "description_zh": "CoPES逐步重新划分模型参数子空间，以奖励评估扰动并协作更新各参数组，无需反传；实验持久后训练Qwen3.5-4B工具调用智能体。8月3日历史补收录；共同演化对象为参数子空间，并非技能或提示。AAAI 2027仅为作者投稿声明，录用未核实。",
     "resources_en": "[paper](https://arxiv.org/abs/2608.02391) / [method](https://arxiv.org/html/2608.02391) / [code, unreviewed](https://github.com/MetaronWang/CoPES) / backfill / 2026-08-03T15:34:45Z",
     "resources_zh": "[论文](https://arxiv.org/abs/2608.02391) / [方法原文](https://arxiv.org/html/2608.02391) / [代码，未审查](https://github.com/MetaronWang/CoPES) / 窗口外补收录 / 2026-08-03T15:34:45Z"
+  },
+  {
+    "title": "Aligned but Fragile: Enhancing LLM Safety Robustness via Zeroth-Order Optimization",
+    "category": "related_hybrid",
+    "date": "2026-05",
+    "description_en": "First performs backpropagation-based safety alignment, then applies perturbation-guided ZO refinement to robustness-critical layers. Both stages persistently change LM weights; only the refinement stage is backpropagation-free. Historical backfill, not a new first release; tested robustness does not establish unconditional safety. Code and venue unverified.",
+    "description_zh": "先以反传进行安全对齐，再按扰动敏感性选择鲁棒性关键层并零阶精炼；两阶段均持久更新语言模型权重，仅精炼阶段无需反传。历史补收录，不计本周首发；所测鲁棒性不构成无条件安全保证。代码与录用待核实。",
+    "resources_en": "[source](https://arxiv.org/abs/2605.29396) / backfill / earliest public: 2026-05-28T05:46:38Z",
+    "resources_zh": "[原文](https://arxiv.org/abs/2605.29396) / 补收录 / 最早公开：2026-05-28T05:46:38Z"
+  },
+  {
+    "title": "Towards Green Text Generation: Memory-Based Speculative Decoding",
+    "category": "related_closed_form",
+    "date": "2026-10",
+    "description_en": "Olifant trains a memory-based IGTree next-token classifier offline and uses it as a CPU draft model for a fixed neural verifier. No backpropagation or persistent neural-weight updates in the proposed draft training; learned trie state persists. Related statistical LM/decoding research, not neural parameter optimization. Authors cite INLG October 2026; earliest date unverified.",
+    "description_zh": "Olifant离线训练基于记忆的IGTree下一词元分类器，作为固定神经校验模型的CPU草稿模型；所提草稿训练无需反传，不更新神经权重，持久保存统计树状态。列为统计语言模型与解码关联研究。作者注明INLG 2026年10月，最早日期待核实。",
+    "resources_en": "[source](https://arxiv.org/abs/2611.16714) / [author code/artifacts](https://github.com/antalvdb/olifant-speculative) / backfill / earliest public: unverified; author record: October 2026",
+    "resources_zh": "[原文](https://arxiv.org/abs/2611.16714) / [作者代码或产物](https://github.com/antalvdb/olifant-speculative) / 补收录 / 最早公开：待核实；作者记录为2026年10月"
+  },
+  {
+    "title": "An LLM erases a concept by editing diffusion weights directly, without gradients",
+    "category": "related_agent_training",
+    "date": "2026-11",
+    "description_en": "Author report: a fixed LLM uses feedback and closed-form tensor edits to persistently modify tiny-sd diffusion weights without autograd in the proposed editing stage. The target is a diffusion model, not LM weights. Included as related agent-driven model editing; publication/version metadata and independent replication remain unverified.",
+    "description_zh": "作者研究报告：固定语言模型根据反馈，以闭式张量操作持久编辑tiny-sd扩散模型权重，所提编辑阶段禁用自动微分。目标是扩散模型，非语言模型权重。列为关联智能体模型编辑；版本、出版信息与独立复现待核实。",
+    "resources_en": "[source](https://huggingface.co/blog/javadtaghia/an-llm-erases-a-concept-by-editing-diffusion-weigh) / [author code/artifacts](https://huggingface.co/javadtaghia/unlearning-via-weight-code) / author research report / 2026-11-08 / peer review unverified",
+    "resources_zh": "[原文](https://huggingface.co/blog/javadtaghia/an-llm-erases-a-concept-by-editing-diffusion-weigh) / [作者代码或产物](https://huggingface.co/javadtaghia/unlearning-via-weight-code) / 作者研究报告 / 2026-11-08 / 同行评审待核实"
+  },
+  {
+    "title": "IWIBench: Evaluating Gradient-Free Model Driven Intra-weight Injection",
+    "category": "related_agent_training",
+    "date": "2026-11",
+    "description_en": "Benchmark for fixed LLM editors that submit persistent target-model weight patches through bounded tensor-edit tools without gradients. Fresh-process evaluation isolates the patch from runtime intervention. Related model editing and evaluation, not a new ES/ZO optimizer; historical backfill. No editor-model training is established.",
+    "description_zh": "评测固定语言模型编辑器通过受限张量工具、无需梯度提交持久目标模型权重补丁，并以全新进程检验补丁效果。属于模型编辑与评测关联研究，非新ES或零阶优化器；历史补收录，未证明编辑器自身训练。",
+    "resources_en": "[source](https://arxiv.org/abs/2611.08647) / [author code/artifacts](https://github.com/hcltech-robotics/iwibench) / backfill / earliest public: 2026-11-05T19:50:11Z",
+    "resources_zh": "[原文](https://arxiv.org/abs/2611.08647) / [作者代码或产物](https://github.com/hcltech-robotics/iwibench) / 补收录 / 最早公开：2026-11-05T19:50:11Z"
   }
 ]
