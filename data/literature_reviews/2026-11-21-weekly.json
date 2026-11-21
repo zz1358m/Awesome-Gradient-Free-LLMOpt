@@ -1,0 +1,430 @@
+{
+  "rows": [
+    {
+      "title": "Contrastive Activation-Guided Zeroth-Order Preference Optimisation for Memory-Efficient LLM Alignment",
+      "authors": [
+        "Weiyun Huang",
+        "Alessio Galatolo"
+      ],
+      "url": "https://arxiv.org/abs/2611.20635",
+      "arxiv_v1": "2026-11-16T06:55:27Z",
+      "first_public": null,
+      "category": "zo_alignment",
+      "date": "2026-11",
+      "description_en": "CA-ZODPO persistently optimizes LM weights with central finite differences in low-rank subspaces derived from chosen-versus-rejected activation differences, with low-rank momentum. The proposed preference-update stage is backpropagation-free; the experimental initial policy/reference is prepared with SFT. AXIOM workshop listing verified; earliest public date unverified.",
+      "description_zh": "CA-ZODPO以偏好对激活差异构造低秩子空间，用中心有限差分及低秩动量持久更新语言模型权重。所提偏好更新阶段无需反传，实验初始策略与参考模型先经监督微调。已核实AXIOM工作坊名单，跨平台首发待核实。",
+      "method": "对比激活引导低秩扰动、双点有限差分、低秩坐标动量。",
+      "backpropagation": "CA-ZODPO偏好更新不反传；实验先进行监督微调，准备初始策略和固定参考模型，该准备阶段属于一阶训练。主分类只描述所提零阶更新阶段。",
+      "persistent_parameters": "是，Qwen2.5-1.5B线性层权重在激活子空间内更新，非线性参数使用各向同性扰动；参考模型固定。",
+      "uncertainties": "工作坊官方名单存在，但OpenReview验证阻断首发时间；不能称全流程从零训练无反传。作者报告显存与偏好评测结果未独立复现。；未独立复现，完整实现及跨平台首发仍需人工复核。",
+      "status": "first_public_unverified",
+      "code": null,
+      "sources": [
+        "https://arxiv.org/html/2611.20635",
+        "https://axiom-neurips2026.github.io/",
+        "https://openreview.net/forum?id=X5eqc4PAur"
+      ],
+      "key": "review202611211"
+    },
+    {
+      "title": "WeightCode: Installing New Capabilities into Neural Networks via Weight-Space Programming",
+      "authors": [
+        "Bo Li",
+        "Taoyong Cui",
+        "Bob Zhang",
+        "Mengran Li",
+        "Chengyang Zhang",
+        "Yang Zhang",
+        "Pheng Ann Heng",
+        "Wanli Ouyang",
+        "Zhenfei Yin",
+        "Yingcheng Wu",
+        "Ling Yang"
+      ],
+      "url": "https://arxiv.org/abs/2611.25476",
+      "arxiv_v1": "2026-11-19T04:04:29Z",
+      "first_public": null,
+      "category": "related_agent_training",
+      "date": "2026-11",
+      "description_en": "A frozen LLM writes reusable programs that compute persistent target-network weight edits; inference then runs independently with unchanged architecture and forward code. Related model editing, not editor-LM training. General capability installation is distinguished from skill libraries/composition; earliest release before the arXiv version is unverified.",
+      "description_zh": "冻结语言模型编写可复用程序，依据目标网络权重计算并写入持久参数修改；修改后架构及前向代码固定，推理独立运行。属关联模型编辑，编辑器自身不训练；实际机制为权重构造，非技能库或技能组合。早于arXiv的公开时间待核实。",
+      "method": "可执行权重程序读取已有权重和任务知识，直接构造修改，并跨检查点重新计算编辑。",
+      "backpropagation": "所提权重构造无需反传；既有目标网络预训练与微调基线另行存在，编辑器固定。",
+      "persistent_parameters": "是，序列、导航、视觉分类网络权重；视觉Transformer可写入噪声校正门等参数，目标并非统一为语言模型。",
+      "uncertainties": "代码仓库早于本轮即曾检索命中，不把11月19日arXiv日期直接当作首次公开；逐程序更新模块、保留约束及跨模型复用待核实。；未独立复现，完整实现及跨平台首发仍需人工复核。",
+      "status": "first_public_unverified",
+      "code": "https://github.com/Gen-Verse/WeightCode",
+      "sources": [
+        "https://arxiv.org/html/2611.25476"
+      ],
+      "key": "review202611212"
+    },
+    {
+      "title": "What Does Weight-Space Programming Add to Diffusion Editing? Program Construction versus Score-Guided Refinement",
+      "authors": [
+        "Zitian Gao",
+        "Jingyi Xu",
+        "Ziqi Han",
+        "Chengkai Lei",
+        "Ye Liu",
+        "Liangliang Shi"
+      ],
+      "url": "https://arxiv.org/abs/2611.22228",
+      "arxiv_v1": "2026-11-17T05:18:15Z",
+      "first_public": "2026-11-17T05:18:15Z",
+      "category": "related_agent_training",
+      "date": "2026-11",
+      "description_en": "Studies fixed-LLM weight-program construction separately from score-guided rewriting for Stable Diffusion editing. Programs supply protected text-state subspaces and update directions; a shared CMA-ES fitter chooses coefficients. Persistent diffusion edits, not LM training. Proxy-score improvement need not preserve VLM joint success.",
+      "description_zh": "分别评测固定语言模型生成权重程序及按评分重写程序；以保护文本状态子空间和更新方向配合共享CMA-ES系数拟合，持久修改扩散模型。目标为扩散网络，非语言模型训练；代理分数提升未必保留联合成功率。",
+      "method": "闭式受保护方向构造、至多四维系数的CMA-ES搜索、评分反馈程序重写。",
+      "backpropagation": "所提闭式方向与CMA-ES系数搜索无反传；已有扩散模型和评分器预训练另行存在。",
+      "persistent_parameters": "是，Stable Diffusion 1.4文本条件相关可编辑矩阵；编辑器固定，具体逐层张量须核对。",
+      "uncertainties": "预注册重写与探索性单次程序比较须分开；图像整体指标和主体局部变化不能互相替代；共享拟合预算只覆盖对应阶段。；未独立复现，完整实现及跨平台首发仍需人工复核。",
+      "status": "in_window",
+      "code": null,
+      "sources": [
+        "https://arxiv.org/html/2611.22228"
+      ],
+      "key": "review202611213"
+    },
+    {
+      "title": "Weight Space Programming for Vision Language Model Repair",
+      "authors": [
+        "Avinash Goutham Aluguvelly"
+      ],
+      "url": "https://arxiv.org/abs/2611.23615",
+      "arxiv_v1": "2026-11-17T23:07:36Z",
+      "first_public": "2026-11-17T23:07:36Z",
+      "category": "related_agent_training",
+      "date": "2026-11",
+      "description_en": "Directly repairs persistent VLM weights with a fixed coding agent. Controlled faults expose low-bit precision cues: rounding away those cues substantially weakens unaided repair. Related weight-editing reliability study; planted-fault repair does not establish general adaptation or naturally occurring failure repair.",
+      "description_zh": "固定编程智能体直接修复视觉语言模型权重；受控故障产生的低比特精度痕迹可辅助定位，移除痕迹后无提示修复明显减弱。列为权重编辑可靠性研究，不将人工故障恢复外推为一般适配能力。",
+      "method": "直接权重读写、人工缩放或噪声故障、舍入控制及精度痕迹消融。",
+      "backpropagation": "所提修复不依赖梯度，既有视觉语言模型预训练另行存在。",
+      "persistent_parameters": "是，SmolVLM-256M与LFM2-VL-450M投影器、视觉编码器及部分回答词元嵌入；语言骨干没有统一冻结声明，按具体编辑记录核对。",
+      "uncertainties": "摘要与方法使用当前v2（11月19日），首次提交为11月17日；逐运行成功与失败、提示含故障先验及自然故障外推待复核。；未独立复现，完整实现及跨平台首发仍需人工复核。",
+      "status": "in_window",
+      "code": null,
+      "sources": [
+        "https://arxiv.org/html/2611.23615"
+      ],
+      "key": "review202611214"
+    },
+    {
+      "title": "Weight-space programming for tractor guidance controller: large language models natively write neural network weights that steer a real tractor",
+      "authors": [
+        "Timo Oksanen"
+      ],
+      "url": "https://arxiv.org/abs/2611.21958",
+      "arxiv_v1": "2026-11-16T22:39:25Z",
+      "first_public": "2026-11-16T22:39:25Z",
+      "category": "related_agent_training",
+      "date": "2026-11",
+      "description_en": "Fixed LLMs directly repair or construct a persistent 253-parameter neural tractor controller using limited simulated feedback. Related policy-weight engineering, not LM training. ES, gradient descent and pure pursuit are comparison methods; field-test claims are author-reported within the studied tractor/path conditions.",
+      "description_zh": "固定语言模型利用有限仿真反馈，直接修复或构造253参数拖拉机神经控制器，并报告田间测试。属策略权重工程关联研究，非语言模型训练；进化策略、梯度下降及纯追踪作为比较方法。",
+      "method": "神经控制器直接权重构造与修复，结合闭环控制推理及有限仿真评测。",
+      "backpropagation": "语言模型编写控制器的阶段无反传；原始控制器训练和梯度下降基线使用梯度，分开记录。",
+      "persistent_parameters": "是，253参数神经转向控制器权重；语言模型自身固定。",
+      "uncertainties": "单设备与有限路径条件下的结果不构成普遍安全保证；仿真调用预算、控制器结构及实车误差口径待复核。；未独立复现，完整实现及跨平台首发仍需人工复核。",
+      "status": "in_window",
+      "code": null,
+      "sources": [
+        "https://arxiv.org/html/2611.21958"
+      ],
+      "key": "review202611215"
+    },
+    {
+      "title": "Zero-Shot Weight-Space Programming for Prediction and Classification of Target Variables in Structured Datasets",
+      "authors": [
+        "Eduardo C. Garrido-Merchán"
+      ],
+      "url": "https://arxiv.org/abs/2611.19292",
+      "arxiv_v1": "2026-11-14T09:37:17Z",
+      "first_public": "2026-11-14T09:37:17Z",
+      "category": "related_agent_training",
+      "date": "2026-11",
+      "description_en": "An LLM infers structure from a supplied small dataset and writes every feed-forward-network weight and bias as numbers without gradients, execution or pre-evaluation. Related persistent model construction, not LM-weight training. Historical backfill; linear successes and oblique-coordinate failures are distinguished.",
+      "description_zh": "语言模型读取小数据集，直接给出前馈网络全部权重与偏置数值，构造时无梯度、代码执行或预评测。属持久模型构造关联研究，非语言模型权重训练；历史补收录，线性成功与斜坐标结构失败分开说明。",
+      "method": "零样本数值权重编程、封存构造与预注册预期分数。",
+      "backpropagation": "所提构造无需反传；梯度训练网络仅为比较基线。",
+      "persistent_parameters": "是，所给前馈预测或分类网络的权重与偏置；固定语言模型自身不训练。",
+      "uncertainties": "初版11月14日09:37早于本轮窗口，v2为11月17日；数据暴露、构造器失败和多重比较校正须按原文核对。；未独立复现，完整实现及跨平台首发仍需人工复核。",
+      "status": "backfill",
+      "code": null,
+      "sources": [],
+      "key": "review202611216"
+    },
+    {
+      "title": "Weight-Space Programming Changes How an LLM Uses Python for Computational Biology",
+      "authors": [
+        "Makoto Sato"
+      ],
+      "url": "https://arxiv.org/abs/2611.20566",
+      "arxiv_v1": "2026-11-16T05:44:25Z",
+      "first_public": "2026-11-16T05:44:25Z",
+      "category": "related_agent_training",
+      "date": "2026-11",
+      "description_en": "A fixed LLM edits Qwen3.5-0.8B weights and evaluates resulting Python use on computational-biology tasks. Persistent LM editing, not merely generated-code refinement. Authors distinguish correct computation, answer submission and formatting; gains do not uniformly imply better underlying calculation.",
+      "description_zh": "固定语言模型编辑Qwen3.5-0.8B权重后，评测其在计算生物学任务中使用Python的变化。有持久语言模型参数修改证据；正确计算、最终提交和格式合规分别统计，不能把答案增益统一解释为计算能力增强。",
+      "method": "语言模型直接权重编辑与成对工具使用评测。",
+      "backpropagation": "原始摘要明确编辑无需梯度训练；既有模型预训练另行存在，完整实现未审计。",
+      "persistent_parameters": "是，Qwen3.5-0.8B编辑检查点；具体层与张量待核实，固定编辑器自身不更新。",
+      "uncertainties": "仅核实原始摘要及初版历史，未通读PDF；同一50题上的后续检查点评测、测试种子和格式判定须人工复核。；未独立复现，完整实现及跨平台首发仍需人工复核。",
+      "status": "in_window",
+      "code": null,
+      "sources": [],
+      "key": "review202611217"
+    },
+    {
+      "title": "Dune: A Zeroth-Order Optimizer with Time-Conditioned Historical Error Regression for VLA Test-Time Adaptation",
+      "authors": [
+        "Chengyang Dong",
+        "Ze Chen",
+        "Kai Ye",
+        "Chutian Wang",
+        "Heng Xu",
+        "Wei Mo",
+        "Maomao Li",
+        "Jiayan Xu",
+        "Jiayuan Wu",
+        "Yihao Xiao",
+        "Linhua Ye",
+        "Zhonghua Peng",
+        "Ruize Han",
+        "Jialong Sun"
+      ],
+      "url": "https://arxiv.org/abs/2611.25400",
+      "arxiv_v1": "2026-11-19T02:40:38Z",
+      "first_public": "2026-11-19T02:40:38Z",
+      "date": "2026-11",
+      "category": "zo_systems",
+      "description_en": "Dune fuses Dust activation-perturbation observations with time-conditioned online ridge-regression error predictions. Persistently adapts SmolVLA's action expert and projection layers without global backpropagation; the SmolVLM2 vision-language backbone stays frozen. VLA action-side ZO adaptation, not language-backbone training. Authors' results do not establish superiority to first-order AdamW.",
+      "description_zh": "Dune融合Dust激活扰动观测与按时间条件化的在线岭回归误差预测，无需全局反传，持久适配SmolVLA动作专家及投影层；SmolVLM2视觉语言骨干冻结。属VLA动作侧零阶适配，不计语言骨干训练；结果未证明优于一阶AdamW。",
+      "method": "激活扰动估计、按流匹配时间分桶的衰减岭回归历史误差预测、当前与历史观测融合。",
+      "backpropagation": "所提适配无全局反传，历史映射通过岭回归解线性系统；既有模型预训练与一阶基线另行存在。",
+      "persistent_parameters": "是，仅动作专家与关联投影层；视觉语言骨干明确冻结，另持久维护优化器回归统计。",
+      "uncertainties": "测试时适配实验使用专家演示与动作目标，不能直接等同无标签自主在线学习；Dust比较步数不同，理论适用条件、代码及真实机器人泛化待核实；未全面审计或复现。",
+      "status": "in_window",
+      "code": null,
+      "sources": [
+        "https://arxiv.org/html/2611.25400"
+      ],
+      "key": "review202611218"
+    }
+  ],
+  "window_start": "2026-11-14T14:11:23.274Z",
+  "window_end": "2026-11-21T14:11:23.274Z",
+  "summary": "新增8条：2条零阶方法（CA-ZODPO偏好更新、Dune冻结语言骨干的动作侧适配），6条模型权重编辑与构造关联研究。5条原始版本日期在窗口内、1条补收录、2条跨平台首次公开待核实；不将arXiv补版统一算作首次发布。既有Doesn't Need Transformers补充arXiv与精确版本时点，不增加条目。目录288增至296。",
+  "limits": "仅使用明确梯度无关方法词及精确题名发现候选；不扩展到通用语言模型语料或全量会议投稿列表。重叠窗口结合11月17日报告去重。核实原始摘要、版本历史及可取得的部分方法正文，未宣称全文通读、代码全面审计或独立复现。OpenReview两条论坛访问均遇网站验证，未绕过验证。首发不明条目不计确定本周新增；工作坊录用与主会议录用分开。",
+  "queries": [
+    "\"zeroth-order\" \"language model\" after:2026-11-14 before:2026-11-22",
+    "\"gradient-free\" \"LLM\" after:2026-11-14 before:2026-11-22",
+    "\"evolution strategies\" \"language model\" after:2026-11-14 before:2026-11-22",
+    "\"backpropagation-free\" \"language\" after:2026-11-14 before:2026-11-22",
+    "\"zeroth-order\" \"LLM\" after:2026-11-17 before:2026-11-22",
+    "site:openreview.net \"gradient-free\" \"2027\" after:2026-11-14",
+    "\"weight-space programming\" after:2026-11-17 before:2026-11-22",
+    "\"Contrastive Activation-Guided\" OpenReview AXIOM",
+    "\"zeroth-order\" \"language\" \"Nov 20\" \"2026\"",
+    "\"gradient-free\" \"language\" \"Nov 19\" \"2026\"",
+    "\"evolution strategies\" \"language\" \"Nov 18\" \"2026\"",
+    "\"zeroth-order\" \"vision-language-action\" after:2026-11-14 before:2026-11-22",
+    "\"gradient-free\" \"fine-tuning\" after:2026-11-18 before:2026-11-22",
+    "\"evolution strategies\" \"fine-tuning\" after:2026-11-18 before:2026-11-22",
+    "\"forward gradient\" \"language\" after:2026-11-14 before:2026-11-22",
+    "\"Atomic MathReasoner\" arxiv"
+  ],
+  "checks": [
+    {
+      "title": "Atomic MathReasoner: Instance-Level Composition of Atomic Reasoning Skills for Mathematical LLMs",
+      "url": "https://arxiv.org/abs/2611.24846",
+      "decision": "excluded_user_skill_scope",
+      "reason": "原始摘要确认技能专用LoRA库、技能组合原型的无梯度搜索及路由蒸馏。即使训练模型参数，仍按用户技能核心研究暂不收录；保留完整来源、作者及日期，不恢复目录。"
+    },
+    {
+      "title": "Adaptive and Neutral Theory of Evolution Strategies for Large Language Models",
+      "url": "https://openreview.net/forum?id=apl2nYU8FS",
+      "decision": "pending_primary_access",
+      "reason": "本轮原始论坛仍跳转网站验证；二手作者和NeurIPS标签不替代原始来源核实。"
+    },
+    {
+      "title": "FLEX: Continuous Agent Evolution via Forward Learning from Experience",
+      "url": "https://arxiv.org/abs/2511.06449",
+      "decision": "excluded_external_state",
+      "reason": "旧研究检索所见核心为经验库与反思；未取得持久模型参数更新证据，按用户范围不收录。"
+    },
+    {
+      "title": "Combining Large Language Models and Gradient-Free Optimization for Automatic Control Policy Synthesis",
+      "url": "https://ieeexplore.ieee.org/abstract/document/11615978",
+      "decision": "excluded_external_program_parameters",
+      "reason": "原始出版摘要明确优化符号程序数值参数，未说明神经模型参数训练。会议为2026年5月、8月入库，近期抓取不算首发。"
+    },
+    {
+      "title": "Backpropagation-Free Continual Learning: A Unified Energy-Based Framework, Reproducible Benchmark, and Open Challenges",
+      "url": "https://www.mdpi.com/2813-2203/5/4/53",
+      "decision": "out_of_scope",
+      "reason": "沿用原始页面明确小型视觉基准、语言模型局部持续学习在范围外的判断。"
+    },
+    {
+      "title": "Contrastive Activation-Guided Zeroth-Order Preference Optimisation for Memory-Efficient LLM Alignment",
+      "url": "https://axiom-neurips2026.github.io/",
+      "decision": "included_venue_check",
+      "reason": "官方AXIOM工作坊名单列有同题论文，论坛X5eqc4PAur需网站验证，最早公开时点未取得。监督微调初始化与零阶偏好阶段分开。"
+    },
+    {
+      "title": "Weight-Space Programming Doesn't Need Transformers",
+      "url": "https://arxiv.org/abs/2611.22055",
+      "decision": "existing_metadata_update",
+      "reason": "作者、题名别名与已收录alphaXiv条目一致；补充11月17日01:33:13 UTC的arXiv初版，保留旧平台来源，不重复收录。"
+    },
+    {
+      "title": "Memory Savings at What Cost? A Study of Alternatives to Backpropagation",
+      "url": null,
+      "decision": "existing_duplicate",
+      "reason": "目录已有同题研究，会议聚合页近期索引不作为新论文。"
+    },
+    {
+      "title": "Dust: Pretraining Transformers Without Backpropagation",
+      "url": "https://qlabs.sh/research/dust/",
+      "decision": "existing_duplicate",
+      "reason": "目录已有原始作者研究，不重复添加转载。"
+    },
+    {
+      "title": "Consolidating Rewarded Perturbations for LLM Post-Training",
+      "url": "https://arxiv.org/abs/2605.31494",
+      "decision": "existing_duplicate",
+      "reason": "已收录，PDF镜像抓取更新不算新增。"
+    },
+    {
+      "title": "VLA-ZO: Fast Zeroth-Order Adaptation for Vision-Language-Action Models",
+      "url": "https://arxiv.org/abs/2610.06271",
+      "decision": "existing_duplicate",
+      "reason": "已有冻结语言骨干、动作侧参数更新条目，不因聚合页更新新增。"
+    },
+    {
+      "title": "How Low Can You Go: Fine-Tuning LLMs with Bayesian Optimization (LlMBO)",
+      "url": null,
+      "decision": "existing_duplicate",
+      "reason": "现行目录已有同题研究。"
+    },
+    {
+      "title": "Evolution Strategies at the Hyperscale",
+      "url": null,
+      "decision": "existing_duplicate",
+      "reason": "现行目录已有同题研究。"
+    },
+    {
+      "title": "Gradient-Aware AI Agents for Autonomous Turbulence Model Discovery via Differentiable CFD",
+      "url": "https://arxiv.org/abs/2611.16082",
+      "decision": "previous_not_added",
+      "reason": "沿用前轮，主要贡献是可微CFD一阶训练，未确认新的梯度无关模型适配机制。"
+    },
+    {
+      "title": "Reliable Gradient-free and Likelihood-free Prompt Tuning",
+      "url": null,
+      "decision": "excluded_prompt_scope",
+      "reason": "提示训练核心研究，按用户范围排除。"
+    },
+    {
+      "title": "Weight-space programming for auditing clinical decision networks",
+      "url": "https://humza.ai/blog/weight-space-programming/",
+      "decision": "pending_original_method_check",
+      "reason": "原始作者博客候选链接存在于检索；本轮未完成审计与持久模型编辑机制、首次公开核实，不将博客抓取日期算首发。"
+    },
+    {
+      "title": "Interpretable weight-space programming builds transparent transformers and brain encoding models",
+      "url": "https://arxiv.org/abs/2611.18114",
+      "decision": "existing_first_date_question",
+      "reason": "已有条目。另一综述提及11月2日早期作者报告，但本轮未核实该早期原始页面；不据综述直接改写首发历史，保留待查。"
+    },
+    {
+      "title": "RAIN-Merging: A Gradient-Free Method to Enhance Instruction Following in Large Reasoning Models with Preserved Thinking Format",
+      "url": null,
+      "decision": "pending_primary_identity",
+      "reason": "命中作者聚合页面，未完成原始论文标识和目录匹配，保留精确题名待查。"
+    },
+    {
+      "title": "Backpropagation-Free Learning through Gradient Aligned Feedbacks",
+      "url": null,
+      "decision": "historical_pending_recheck",
+      "reason": "旧研究二手索引命中，未完成原始论文与目录匹配，不据抓取日期新增。"
+    },
+    {
+      "title": "Weight-space programming tooling and tutorials",
+      "url": "https://github.com/ulkuderner/weight-space-programming",
+      "decision": "implementation_not_independent_paper",
+      "reason": "工具封装、教程、复现仓库和研究综述不自动当作独立新增论文；技能封装本身不进入文献目录。"
+    }
+  ],
+  "update": {
+    "title": "Weight-Space Programming Doesn’t Need Transformers",
+    "url": "https://arxiv.org/abs/2611.22055",
+    "arxiv_v1": "2026-11-17T01:33:13Z",
+    "key": "review202611176",
+    "authors": [
+      "Hyunjong Ok",
+      "Jaeho Lee"
+    ],
+    "note": "同题作者及方法一致。保留原alphaXiv链接；当前arXiv初版时点已核实，跨平台最早时间仍未精确确认。更新既有条目，不增加计数。"
+  },
+  "excluded_complete": {
+    "title": "Atomic MathReasoner: Instance-Level Composition of Atomic Reasoning Skills for Mathematical LLMs",
+    "authors": [
+      "Jiashu Li",
+      "Tianyu Gao",
+      "Qinglong Liu",
+      "Jinping Wang",
+      "Ye Wei",
+      "Zhiqiang Gao"
+    ],
+    "arxiv_v1": "2026-11-18T18:08:08Z",
+    "url": "https://arxiv.org/abs/2611.24846",
+    "method": "技能专用LoRA专家训练、梯度无关组合原型搜索、轻量路由器蒸馏",
+    "persistent_parameters": "有，LoRA专家与路由器；梯度无关仅组合搜索阶段，完整训练含梯度依赖。",
+    "decision": "按用户范围暂不收录，技能库和技能组合核心研究。",
+    "restore_only_after_user_lifts_restriction": true
+  },
+  "automation_id": "9-00-asia-shanghai-arxiv-openreview-ai-ml-n-2",
+  "base_commit": "0289131b0ec3d8d637bc5be09ba852be5309d4a8",
+  "counts": {
+    "before": 288,
+    "after": 296,
+    "added": 8,
+    "first_known_dates_in_window": 5,
+    "backfill": 1,
+    "first_public_unverified": 2,
+    "zeroth_order_method_entries": 2,
+    "related_model_editing_entries": 6,
+    "metadata_updates": 1
+  },
+  "metadata_update_audit": {
+    "before": {
+      "title": "Weight-Space Programming Doesn’t Need Transformers",
+      "category": "related_agent_training",
+      "date": "2026-11",
+      "description_en": "Compares LLM-written fixed-network weights with freely designed associative-memory architectures. Included for the explicit persistent neural-weight construction arm. Sparse fact tables are distinguished from neural parameter training. Related architecture study; alphaXiv preprint, not a verified arXiv ID.",
+      "description_zh": "比较语言模型直接编写固定网络权重与自由设计关联记忆架构；按明确的持久神经权重构造实验收录。稀疏事实表与神经参数训练分开说明。属关联架构研究，alphaXiv标识并非已核实arXiv编号。",
+      "resources_en": "[source](https://www.alphaxiv.org/abs/2611.weight-space-programming-associative-memory) / [author code, implementation unreviewed](https://github.com/effl-lab/Weight-Space-Programming) / exact public time unverified / 2026-11-17 / acceptance unverified",
+      "resources_zh": "[原文](https://www.alphaxiv.org/abs/2611.weight-space-programming-associative-memory) / [作者代码，实现未审计](https://github.com/effl-lab/Weight-Space-Programming) / 精确公开时点待核实 / 2026-11-17 / 录用待核实"
+    },
+    "after": {
+      "title": "Weight-Space Programming Doesn’t Need Transformers",
+      "category": "related_agent_training",
+      "date": "2026-11",
+      "description_en": "Compares LLM-written fixed-network weights with freely designed associative-memory architectures. Included for the explicit persistent neural-weight construction arm. Sparse fact tables are distinguished from neural parameter training. Related architecture study; existing alphaXiv source and verified arXiv version retained.",
+      "description_zh": "比较语言模型直接编写固定网络权重与自由设计关联记忆架构；按明确的持久神经权重构造实验收录。稀疏事实表与神经参数训练分开说明。属关联架构研究，已补充核实的arXiv版本，旧alphaXiv自有标识另行保留。",
+      "resources_en": "[source](https://www.alphaxiv.org/abs/2611.weight-space-programming-associative-memory) / [author code, implementation unreviewed](https://github.com/effl-lab/Weight-Space-Programming) / earliest cross-platform release unverified / 2026-11-17 / acceptance unverified / [arXiv](https://arxiv.org/abs/2611.22055) / arXiv v1 2026-11-17T01:33:13Z",
+      "resources_zh": "[原文](https://www.alphaxiv.org/abs/2611.weight-space-programming-associative-memory) / [作者代码，实现未审计](https://github.com/effl-lab/Weight-Space-Programming) / 跨平台最早公开待核实 / 2026-11-17 / 录用待核实 / [arXiv](https://arxiv.org/abs/2611.22055) / arXiv初版 2026-11-17T01:33:13Z"
+    },
+    "bib_before": "@misc{review202611176,\n  title={Weight-Space Programming Doesn’t Need Transformers},\n  author={Hyunjong Ok and Jaeho Lee},\n  year={2026},\n  url={https://www.alphaxiv.org/abs/2611.weight-space-programming-associative-memory},\n  note={Added 2026-11-17; date_only_time_unverified; first verified source date 2026-11-17; boundaries and uncertainties: data/literature_reviews/2026-11-17-weekly.json; alphaXiv platform identifier is not an arXiv ID; peer review unverified}\n}",
+    "bib_after": "@article{review202611176,\n  title={Weight-Space Programming Doesn’t Need Transformers},\n  author={Hyunjong Ok and Jaeho Lee},\n  year={2026},\n  journal={arXiv preprint arXiv:2611.22055},\n  url={https://arxiv.org/abs/2611.22055},\n  note={Existing alphaXiv source: https://www.alphaxiv.org/abs/2611.weight-space-programming-associative-memory; arXiv v1 2026-11-17T01:33:13Z; earliest cross-platform release and peer review unverified; metadata update 2026-11-21}\n}"
+  },
+  "original_worktree_sha256": {
+    "README.md": "593695c8d764ba83c3ea65d55a5a6d3d3fbbeb5a3e4c4a1906a6d6a48332bcd0",
+    "README_zh.md": "b3eac1a2f413cfa079a5aa4d74b4dfd6ecda58fd75461a2d013a0fd02a3f24b1",
+    "data/papers.json": "fa1b593478a52ee91b47aa4a61a03648af5136045136fa3af152c6d1def0e0c6",
+    "papers.bib": "c597a2d1546259baa8881fa6826d1fdee65e77080508d1e4ad526ec8f166f088",
+    "scripts/generate_catalog.py": "57aad6922c1df1606fc76a589244eec05247161401da9f3d1237eb28a62c90e7",
+    "data/literature_reviews/2026-10-18-current-status.md": "aad8be9ad2dfe0f6783bacdf98a28c4056c943afbebd9fa363c02add13966029"
+  }
+}
