@@ -97,7 +97,6 @@ ES 和双点 ZO 都可以看作平滑目标函数的估计方法，但现有大�
 | 2026 | **The Evolution Strategies Paradox: Better Models from Worse Perturbations** | 解释即使所有采样扰动均弱于当前模型，ES 仍能持续改进大语言模型的现象。 | [论文](https://openreview.net/forum?id=whvp3RjkiO) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录 / [arXiv 2026-11-03T00:39:49Z](https://arxiv.org/abs/2611.04113) |
 | 2026 | **EGGROLL, Unrolled: Understanding and Improving Low-Rank Evolution Strategies at Scale** | 分析并改进 EGGROLL 在大语言模型规模采用的低秩进化策略机制。 | [论文](https://openreview.net/forum?id=kbNjFLXanS) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录 |
 | 2026 | **Dimension Is Free, Horizon Is Not: When Evolution Strategies Rival Policy Gradients for LLM Fine-Tuning** | 以有效参数维数和有效信用分配时域统一比较 ES 与策略梯度，并在语言及智能体任务上验证。 | [论文](https://openreview.net/forum?id=59ufz75SkM) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录 |
-| 2026-10 | **Center-of-Mass Interpretation of Evolution Strategies** | 将均值中心化ES更新解释为采样质心与奖励加权重心之间的缩放位移，以语言模型ES微调为动机。属于理论解释，未提供新的语言模型训练实证。所分析ES步骤无需反传；未报告实际训练模块。 | [论文](https://arxiv.org/abs/2610.35865) / [方法原文](https://arxiv.org/html/2610.35865v1) / 代码待核实 / 首发 / 2026-10-26T17:59:33Z |
 
 ## 零阶优化
 

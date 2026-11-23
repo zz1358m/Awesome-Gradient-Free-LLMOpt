@@ -1,0 +1,25 @@
+{
+  "date": "2026-11-23",
+  "title": "Center-of-Mass Interpretation of Evolution Strategies",
+  "key": "gupta2026centerofmass",
+  "url": "https://arxiv.org/abs/2610.35865",
+  "reason": "用户明确要求移除：该研究主要为通用ES几何解释，缺少针对语言模型的专门方法与训练实证，与当前仓库LLM主线关联不足。",
+  "decision": "按用户范围移出现行目录及书目；保留可恢复条目、原始来源、检查记录和历史收录记录。",
+  "instruction": "未经用户另行要求，不在自动更新中重新加入该条目。",
+  "base_commit": "0d57cf0b339a2a7d645c2924b088bb725cae7108",
+  "paper": {
+    "title": "Center-of-Mass Interpretation of Evolution Strategies",
+    "category": "es_understanding",
+    "date": "2026-10",
+    "description_en": "Interprets the mean-centered ES step geometrically as a scaled shift between the sampled centroid and reward-weighted center of mass. Motivated by ES language-model fine-tuning; theoretical analysis, not a new empirically validated LM training method. No backpropagation in the analyzed ES step; no trained modules reported.",
+    "description_zh": "将均值中心化ES更新解释为采样质心与奖励加权重心之间的缩放位移，以语言模型ES微调为动机。属于理论解释，未提供新的语言模型训练实证。所分析ES步骤无需反传；未报告实际训练模块。",
+    "resources_en": "[paper](https://arxiv.org/abs/2610.35865) / [method](https://arxiv.org/html/2610.35865v1) / code unverified / first public / 2026-10-26T17:59:33Z",
+    "resources_zh": "[论文](https://arxiv.org/abs/2610.35865) / [方法原文](https://arxiv.org/html/2610.35865v1) / 代码待核实 / 首发 / 2026-10-26T17:59:33Z"
+  },
+  "bibtex": "@article{gupta2026centerofmass,\n  title={Center-of-Mass Interpretation of Evolution Strategies},\n  author={Akshat Gupta},\n  journal={arXiv preprint arXiv:2610.35865}, year={2026},\n  note={Review trigger 2026-11-01; confirmed_new; first public 2026-10-26T17:59:33Z; scope and uncertainties in data/literature_reviews/2026-11-01-weekly.json},\n  url={https://arxiv.org/abs/2610.35865}\n}",
+  "history_records_preserved": [
+    "data/literature_reviews/2026-11-01-weekly.md",
+    "data/literature_reviews/2026-11-01-weekly.json"
+  ],
+  "first_public_previously_verified": "2026-10-26T17:59:33Z"
+}

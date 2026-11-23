@@ -2376,15 +2376,6 @@
     "resources_zh": "[论文](https://arxiv.org/abs/2608.05783) / [方法原文](https://arxiv.org/html/2608.05783v1) / [代码，未审查](https://github.com/Batorskq/GROM) / 窗口外补收录 / 2026-08-06T09:16:53Z"
   },
   {
-    "title": "Center-of-Mass Interpretation of Evolution Strategies",
-    "category": "es_understanding",
-    "date": "2026-10",
-    "description_en": "Interprets the mean-centered ES step geometrically as a scaled shift between the sampled centroid and reward-weighted center of mass. Motivated by ES language-model fine-tuning; theoretical analysis, not a new empirically validated LM training method. No backpropagation in the analyzed ES step; no trained modules reported.",
-    "description_zh": "将均值中心化ES更新解释为采样质心与奖励加权重心之间的缩放位移，以语言模型ES微调为动机。属于理论解释，未提供新的语言模型训练实证。所分析ES步骤无需反传；未报告实际训练模块。",
-    "resources_en": "[paper](https://arxiv.org/abs/2610.35865) / [method](https://arxiv.org/html/2610.35865v1) / code unverified / first public / 2026-10-26T17:59:33Z",
-    "resources_zh": "[论文](https://arxiv.org/abs/2610.35865) / [方法原文](https://arxiv.org/html/2610.35865v1) / 代码待核实 / 首发 / 2026-10-26T17:59:33Z"
-  },
-  {
     "title": "ENGINE: Endogenous Variational MultiScale Optimization for Zeroth-Order LLM Fine-Tuning",
     "category": "zo_directions",
     "date": "2026-11",
