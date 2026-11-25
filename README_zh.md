@@ -75,6 +75,7 @@ ES 和双点 ZO 都可以看作平滑目标函数的估计方法，但现有大�
 | 2025-07 | **ESSA: Evolutionary Strategies for Scalable Alignment** | 对 LoRA 适配器的奇异值坐标进行演化，并支持低精度推理；在 GSM8K、PRM800K 和 IFEval 上进行评测。 | [论文](https://arxiv.org/abs/2507.04453) · 未找到代码 · 2025-07 |
 | 2025 | **Evolutionary System 2 Reasoning: An Empirical Proof** | ERO 通过演化模型参数，增强模型的 System 2 reasoning 能力。 | [论文](https://doi.org/10.66361/jiss.38) · [代码](https://github.com/MetaEvo/ERO) · ![JISS 2025](https://img.shields.io/badge/JISS-2025-orange) |
 | 2024-03 | **Derivative-Free Optimization for Low-Rank Adaptation in Large Language Models** | C-LoRA与F-LoRA分别用CMA-ES和烟花算法逐层搜索低维坐标，持久更新注意力Q/K的低秩适配参数，基础权重冻结、无需反向传播。补收录：2024-03-04（UTC）；摘要页与正文第二作者姓名不一致，待核实。 | [论文](https://arxiv.org/abs/2403.01754) / [代码](https://github.com/stan-anony/derivative_free_lora_rank) / 窗口外补收录 / 2024-03-04T06:20:31Z |
+| 2026-11 | **ARS-VLM: Visually Aligned Augmented Random Search for Vision-Language Models** | ARS-VLM以跨图块视图的对比视觉子空间、分层软约束及双视图筛选进行纯前向VLM后训练，持久更新解码器投影权重；语言解码器并未冻结。显存静态账本不能当作峰值训练显存。 | [论文](https://arxiv.org/abs/2611.32147) / 2026-11-24T08:02:52Z / arXiv初版；跨平台更早首发待核实 / 代码与录用待核实 |
 
 ### 多轮与智能体推理
 
@@ -96,7 +97,7 @@ ES 和双点 ZO 都可以看作平滑目标函数的估计方法，但现有大�
 | 2026 | **The Exact Exchange Rate of Gradient-Free Credit** | 推导并测量矩阵层中标量广播 ES 信用信号所需前向评估的精确交换率。 | [论文](https://openreview.net/forum?id=QPRPX7pOHD) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录 |
 | 2026 | **The Evolution Strategies Paradox: Better Models from Worse Perturbations** | 解释即使所有采样扰动均弱于当前模型，ES 仍能持续改进大语言模型的现象。 | [论文](https://openreview.net/forum?id=whvp3RjkiO) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录 / [arXiv 2026-11-03T00:39:49Z](https://arxiv.org/abs/2611.04113) |
 | 2026 | **EGGROLL, Unrolled: Understanding and Improving Low-Rank Evolution Strategies at Scale** | 分析并改进 EGGROLL 在大语言模型规模采用的低秩进化策略机制。 | [论文](https://openreview.net/forum?id=kbNjFLXanS) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录 |
-| 2026 | **Dimension Is Free, Horizon Is Not: When Evolution Strategies Rival Policy Gradients for LLM Fine-Tuning** | 以有效参数维数和有效信用分配时域统一比较 ES 与策略梯度，并在语言及智能体任务上验证。 | [论文](https://openreview.net/forum?id=59ufz75SkM) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录 |
+| 2026 | **Dimension Is Free, Horizon Is Not: When Evolution Strategies Rival Policy Gradients for LLM Fine-Tuning** | 以有效参数维数和有效信用分配时域统一比较 ES 与策略梯度，并在语言及智能体任务上验证。 | [论文](https://openreview.net/forum?id=59ufz75SkM) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录 / [arXiv版](https://arxiv.org/abs/2611.29795) / arXiv v1 2026-11-22T21:54:42Z / 已有十月投稿的新公开版本，非本周新论文 |
 
 ## 零阶优化
 
@@ -176,6 +177,7 @@ ES 和双点 ZO 都可以看作平滑目标函数的估计方法，但现有大�
 | 2025-06 | **FZOO: Fast Zeroth-Order Optimizer for Fine-Tuning Large Language Models towards Adam-Scale Speed** | 结合批量单边零阶估计、Rademacher扰动及损失尺度归一化和步长调整，无需反向传播即可持久微调全模型参数或参数高效适配模块。补收录：首次公开于2025-06-10（UTC），已核实发表于ICLR 2026。作者报告的前向次数节省不等于普遍达到Adam实际耗时；准备阶段细节及版本差异待核实。 | [论文](https://arxiv.org/abs/2506.09034) · [ICLR 2026](https://proceedings.iclr.cc/paper_files/paper/2026/hash/b8d4c82b365d9361863000f8d1e86f1b-Abstract-Conference.html) · [代码](https://github.com/DKmiyan/FZOO) · 补收录 · 2025-06-10（UTC） |
 | 2026-11 | **ENGINE: Endogenous Variational MultiScale Optimization for Zeroth-Order LLM Fine-Tuning** | 以V循环交替执行LoRA空间与全空间零阶阶段，通过变分多尺度校正传递参数、动量和曲率，以函数值持久更新适配器及模型权重。已核实NeurIPS 2026官方列表；arXiv初版11月2日，更早跨平台公开时间待核实。 | [原文](https://arxiv.org/abs/2611.03293) / [原始来源1](https://arxiv.org/html/2611.03293) / [原始来源2](https://neurips.cc/Downloads/2026) / [代码或日志，未审查](https://github.com/AI4Science-WestlakeU/ENGINE) / arXiv初版 2026-11-02T15:31:38Z / 跨平台最早公开日期待核实 |
 | 2025-10 | **Zeroth-Order Sharpness-Aware Learning with Exponential Tilting** | ZEST通过成对函数值扰动和种子重建更新，优化指数倾斜的锐度感知目标；无需反传即可持久更新语言模型权重，一阶SAM方法为比较基线。历史补收录；具体模块覆盖、代码和录用待核实。 | [论文](https://arxiv.org/abs/2510.16157) / [方法原文](https://arxiv.org/html/2510.16157) / 代码待核实 / 补收录 / 2025-10-17T19:01:34Z |
+| 2026-11 | **PAMS: Preconditioned Activation-Metric Subspace for Zeroth-Order LLM Fine-tuning** | 在线跟踪前向激活的低秩子空间和谱，调整双点零阶扰动几何并持久更新语言模型层权重；任务损失不反传，子空间采用显式矩阵更新。 | [论文](https://arxiv.org/abs/2611.28476) / 2026-11-21T01:49:52Z / arXiv初版；跨平台更早首发待核实 / 代码与录用待核实 |
 
 #### 内存系统、预条件与量化
 
@@ -208,6 +210,8 @@ ES 和双点 ZO 都可以看作平滑目标函数的估计方法，但现有大�
 | 待核实 | **Efficient Federated Fine-Tuning via Zeroth-Order Optimization for Resource-Constrained Edge Devices** | 讨论资源受限设备上以低秩零阶扰动进行联邦语言模型参数微调；目标更新为纯前向，服务器聚合及准备阶段是否反传待核实。原始IEEE条目存在，作者与首发日期待核实；数据库收录日期不计首次公开。 | [论文](https://doi.org/10.1109/CICN67655.2025.11368000) / 首次公开日期待核实 / 待核实 / 代码待核实 |
 | 2026-10 | **Efficient Exact Unlearning for Federated Zeroth-Order Optimization** | 结合种子编码零阶训练、子采样或噪声稳定性，以及重放或拒绝—反射耦合，实现联邦精确遗忘；TOFU实验包含Llama-3.2-1B/3B。所提更新无需反传且持久改变模型参数；具体模块覆盖与实现待核实。 | [论文](https://arxiv.org/abs/2610.35211) / [方法原文](https://arxiv.org/html/2610.35211v1) / 代码待核实 / 首发 / 2026-10-26T11:03:48Z |
 | 2026-11 | **Dune: A Zeroth-Order Optimizer with Time-Conditioned Historical Error Regression for VLA Test-Time Adaptation** | Dune融合Dust激活扰动观测与按时间条件化的在线岭回归误差预测，无需全局反传，持久适配SmolVLA动作专家及投影层；SmolVLM2视觉语言骨干冻结。属VLA动作侧零阶适配，不计语言骨干训练；结果未证明优于一阶AdamW。 | [论文](https://arxiv.org/abs/2611.25400) / arXiv初版 2026-11-19T02:40:38Z / 录用待核实 |
+| 2026-11 | **AutoClip-DPZO: Practical Private Clipping Selection for Differentially Private Zeroth-Order LLM Fine-Tuning** | 将差分隐私零阶微调的裁剪阈值选择转为私有分位数估计，避免反复微调搜索；DPZO持久更新语言模型参数，阈值选择和训练的隐私开销均需计入。 | [论文](https://arxiv.org/abs/2611.30352) / 2026-11-23T09:23:42Z / arXiv初版；跨平台更早首发待核实 / 代码与录用待核实 |
+| 2026-11 | **LIELLA: Private Edge Adaptation with Photonic Weight Streams** | LIELLA以冻结的TinyLlama光子权重流支持客户端私有适配器，零阶分支用P-RGE或SubZero+持久更新适配器；反传分支单独评测。属于硬件与系统研究，能耗主要为模型估计和噪声仿真。 | [论文](https://arxiv.org/abs/2611.29343) / 2026-11-22T09:27:02Z / arXiv初版；跨平台更早首发待核实 / 代码与录用待核实 |
 
 ### 偏好对齐
 
@@ -314,6 +318,10 @@ ES 和双点 ZO 都可以看作平滑目标函数的估计方法，但现有大�
 | 2026 | **HO-FL: Hybrid-Order Federated Learning for Heterogeneous Edge Devices** | 提出 HO-FL：各客户端按内存预算选择模型分段边界，用 ZO 训练底段、FO 训练顶段，并针对不同边界带来的更新质量与数据代表性权衡设计客户端采样近似；摘要报告了语言任务实验。 | [论文](https://openreview.net/forum?id=iVQu1sp529) · [代码/项目](https://anonymous.4open.science/r/ICLR-HO-FL/) · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录 |
 | 2026-09 | **What Should We Freeze? Guarded Freezing: Connectivity Shapes the Fine-Tuning of Pretrained Models** | 以前向漂移代理选择冻结位置，再微调其余参数，实验包含Qwen2.5-1.5B。无反传仅针对选择评分，全流程不能视为梯度无关。窗口外补收录；具体优化器和模块覆盖待核实。 | [论文](https://arxiv.org/abs/2609.32124) / 代码待核实 / 补收录 / 2026-09-26T00:56:28Z |
 | 2026-05 | **Aligned but Fragile: Enhancing LLM Safety Robustness via Zeroth-Order Optimization** | 先以反传进行安全对齐，再按扰动敏感性选择鲁棒性关键层并零阶精炼；两阶段均持久更新语言模型权重，仅精炼阶段无需反传。历史补收录，不计本周首发；所测鲁棒性不构成无条件安全保证。代码与录用待核实。 | [原文](https://arxiv.org/abs/2605.29396) / 补收录 / 最早公开：2026-05-28T05:46:38Z |
+| 2026-11 | **Writing Weights or Training Them? Spatial Reasoning through Weight-Space Programming and Low-Rank Adaptation** | 比较Qwen3.5-0.8B的直接权重修补与梯度LoRA适配：修补收益较小但较能保留相邻任务，LoRA目标任务收益更大但有干扰。属两条路线比较，非新的纯零阶优化器。 | [论文](https://arxiv.org/abs/2611.27089) / 2026-11-20T04:05:14Z / arXiv初版；跨平台更早首发待核实 / 代码与录用待核实 |
+| 2026-11 | **FORTH: Grounding Tactile VLA Execution via Forward-Only Proxy-Control Pairing** | FORTH在冻结4比特视觉语言骨干上，用token并行激活扰动更新动作头秩8适配器，配合局部Forward-Forward触觉表征和防滑控制；语言骨干不训练，局部训练是否反传待核实。 | [论文](https://arxiv.org/abs/2611.26744) / 2026-11-19T19:42:19Z / arXiv初版；跨平台更早首发待核实 / 代码与录用待核实 |
+| 2026-11 | **Training Vision Models for LLM-Driven Weight-Space Programming** | 先训练更便于编辑的视觉网络，再让固定语言模型无梯度持久修改视觉网络权重；提出ERT并与普通及梯度可编辑训练比较。编辑阶段无梯度不等于准备训练无反传。 | [论文](https://arxiv.org/abs/2611.26408) / 2026-11-19T16:56:27Z / arXiv初版；跨平台更早首发待核实 / 代码与录用待核实 |
+| 2026-11 | **DMT-Attack: Diffusion-Prior Texture Search for Closed-Loop Vision-Language-Action Policies** | DMT-Attack冻结VLA与扩散模型，通过教师潜变量初始化及PPO训练潜变量提议网络生成纹理；梯度无关仅指不穿过被攻击模型，不是训练全流程无反传。 | [论文](https://arxiv.org/abs/2611.25695) / 2026-11-19T08:09:25Z / arXiv初版；跨平台更早首发待核实 / 代码与录用待核实 |
 
 ### 无参数更新的推理时校准
 
@@ -368,6 +376,7 @@ ES 和双点 ZO 都可以看作平滑目标函数的估计方法，但现有大�
 | 2026-08 | **GROM: Gradient-Free Rapid One-Shot Machine Unlearning** | 从前向特征求解岭正则最小二乘问题，对语言模型施加持久加性权重编辑，主要修改MLP下投影。所提编辑无需反传，也不使用迭代零阶估计器。窗口外补收录，归入闭式适配；代码、录用与实证结论待独立核实。 | [论文](https://arxiv.org/abs/2608.05783) / [方法原文](https://arxiv.org/html/2608.05783v1) / [代码，未审查](https://github.com/Batorskq/GROM) / 窗口外补收录 / 2026-08-06T09:16:53Z |
 | 2026-05 | **FAAST: Forward-Only Associative Learning via Closed-Form Fast Weights for Test-Time Supervised Adaptation** | 在冻结语言模型表征上，将监督样本编译为闭式快权重矩阵；适配阶段无需反传，改变辅助快权重而非骨干。语言模型实验先以AdamW预训练词元评分与读出组件，全流程并非梯度无关。历史补收录；录用待核实。 | [论文](https://arxiv.org/abs/2605.04651) / [方法原文](https://arxiv.org/html/2605.04651) / [代码，未审查](https://github.com/baoguangsheng/faast) / 补收录 / 2026-05-06T08:58:11Z |
 | 2026-10 | **Towards Green Text Generation: Memory-Based Speculative Decoding** | Olifant离线训练基于记忆的IGTree下一词元分类器，作为固定神经校验模型的CPU草稿模型；所提草稿训练无需反传，不更新神经权重，持久保存统计树状态。列为统计语言模型与解码关联研究。作者注明INLG 2026年10月，最早日期待核实。 | [原文](https://arxiv.org/abs/2611.16714) / [作者代码或产物](https://github.com/antalvdb/olifant-speculative) / 补收录 / 最早公开：待核实；作者记录为2026年10月 |
+| 2026-11 | **A CPU Inside an LLM: Zero-Gradient Compilation of Exact Circuits into Pretrained Weights** | 用解析电路嫁接把确定性算术与逻辑计算写入语言模型权重，并扩展隐藏宽度；没有梯度训练，属于闭式构造。其架构扩展和限定输入格式应与一般微调区分。 | [论文](https://arxiv.org/abs/2611.26450) / 2026-11-19T17:18:38Z / arXiv初版；跨平台更早首发待核实 / 代码与录用待核实 |
 
 ### 其他黑箱方法与分析
 
@@ -402,6 +411,7 @@ ES 和双点 ZO 都可以看作平滑目标函数的估计方法，但现有大�
 | 2026 | **Breaking the Refusal Barrier: Stochastic Discovery of Residual  Unsafe Behaviors in Aligned Language Models** | SEEK 以无梯度随机输入/响应采样发现残余不安全行为，再将其用于独立安全微调。 | [论文](https://openreview.net/forum?id=T8c8NM6FT4) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录 |
 | 2025-08 | **For-Value: Efficient Forward-Only Data Valuation for finetuning LLMs and VLMs** | 以末层表征与预测误差的闭式关系，通过一次前向计算样本价值；估值阶段不更新模型持久参数且无需反传，属于数据分析关联研究。补收录：2025-08-13（UTC）；已核实ACL 2026论文集，旧题名不重复收录。 | [论文](https://arxiv.org/abs/2508.10180) / 补收录 / 2025-08-13T20:33:06Z / 代码待核实 |
 | 2025-06 | **Memory Savings at What Cost? A Study of Alternatives to Backpropagation** | 比较语言及视觉语言模型训练中反传、检查点反传、前向自动微分和零阶方法的内存与计算代价。各方法是比较分支，非同一混合算法；前向自动微分仍计算导数。补收录：首发2025-06-27；ICML 2026出版已核实。 | [论文](https://arxiv.org/abs/2506.21833) / [原始来源1](https://proceedings.mlr.press/v306/panchal26a.html) / 代码待核实 / 补收录 / 2025-06-27T00:47:03Z |
+| 2026-11 | **When Fog Becomes a Weapon: Atmospheric Attacks on Visible-Infrared Vision-Language Models** | FMA用CMA-ES搜索共享7维三维雾状态，评测冻结可见光/红外模型及语言输出的鲁棒性；不更新任何目标模型参数。属于非智能体的黑箱攻击关联研究。 | [论文](https://arxiv.org/abs/2611.28592) / 2026-11-21T05:50:16Z / arXiv初版；跨平台更早首发待核实 / 代码与录用待核实 |
 
 ### 关联智能体模型与控制器训练
 
@@ -432,6 +442,9 @@ ES 和双点 ZO 都可以看作平滑目标函数的估计方法，但现有大�
 | 2026-11 | **Weight-space programming for tractor guidance controller: large language models natively write neural network weights that steer a real tractor** | 固定语言模型利用有限仿真反馈，直接修复或构造253参数拖拉机神经控制器，并报告田间测试。属策略权重工程关联研究，非语言模型训练；进化策略、梯度下降及纯追踪作为比较方法。 | [论文](https://arxiv.org/abs/2611.21958) / arXiv初版 2026-11-16T22:39:25Z / 录用待核实 |
 | 2026-11 | **Zero-Shot Weight-Space Programming for Prediction and Classification of Target Variables in Structured Datasets** | 语言模型读取小数据集，直接给出前馈网络全部权重与偏置数值，构造时无梯度、代码执行或预评测。属持久模型构造关联研究，非语言模型权重训练；历史补收录，线性成功与斜坐标结构失败分开说明。 | [论文](https://arxiv.org/abs/2611.19292) / 补收录 / arXiv初版 2026-11-14T09:37:17Z / 录用待核实 |
 | 2026-11 | **Weight-Space Programming Changes How an LLM Uses Python for Computational Biology** | 固定语言模型编辑Qwen3.5-0.8B权重后，评测其在计算生物学任务中使用Python的变化。有持久语言模型参数修改证据；正确计算、最终提交和格式合规分别统计，不能把答案增益统一解释为计算能力增强。 | [论文](https://arxiv.org/abs/2611.20566) / arXiv初版 2026-11-16T05:44:25Z / 录用待核实 |
+| 2026-11 | **Weight-Space Programming Writes In-Context Learning and Matches Fine-Tuning in Language Models** | 固定语言模型编辑器将示例引起的激活差异写入较弱语言模型的持久权重，包含近静默MLP单元；编辑阶段禁止反传。属权重编辑而非输入提示搜索，收益对措辞与编辑器敏感。 | [论文](https://arxiv.org/abs/2611.26841) / 2026-11-19T21:50:37Z / arXiv初版；跨平台更早首发待核实 / 代码与录用待核实 |
+| 2026-11 | **Weight-space programming and mechanistic interpretability for model editing in particle physics** | 固定语言模型智能体用闭式计算与有限前向查询修复粒子物理网络的持久权重，非语言模型训练；另有依赖先训练稀疏自编码器的独立修复路线。 | [论文](https://arxiv.org/abs/2611.27079) / 2026-11-20T03:46:32Z / arXiv初版；跨平台更早首发待核实 / 代码与录用待核实 |
+| 2026-11 | **Gradient-Free Few-Shot Adaptation of Vision Models via Agentic Coding** | 固定编程智能体直接设置冻结检测器的新类分类头权重，无梯度；与微调比较显示优势受样本数和旧类保留约束限制。目标是视觉模型，按持久权重编辑关联研究补收录。 | [论文](https://arxiv.org/abs/2611.28105) / 2026-11-17T17:53:36Z / 补收录，非本周首发 / 代码与录用待核实 |
 
 ### 机制待核实的边界研究
 

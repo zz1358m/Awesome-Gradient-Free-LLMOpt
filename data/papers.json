@@ -302,8 +302,8 @@
     "date": "2026",
     "description_en": "Compares ES and policy gradients through effective parameter dimension and effective credit-assignment horizon on language and agentic tasks.",
     "description_zh": "以有效参数维数和有效信用分配时域统一比较 ES 与策略梯度，并在语言及智能体任务上验证。",
-    "resources_en": "[paper](https://openreview.net/forum?id=59ufz75SkM) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
-    "resources_zh": "[论文](https://openreview.net/forum?id=59ufz75SkM) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
+    "resources_en": "[paper](https://openreview.net/forum?id=59ufz75SkM) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window / [arXiv](https://arxiv.org/abs/2611.29795) / arXiv v1 2026-11-22T21:54:42Z / existing October submission; not a new weekly paper",
+    "resources_zh": "[论文](https://openreview.net/forum?id=59ufz75SkM) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录 / [arXiv版](https://arxiv.org/abs/2611.29795) / arXiv v1 2026-11-22T21:54:42Z / 已有十月投稿的新公开版本，非本周新论文"
   },
   {
     "title": "Dust: Pretraining Transformers Without Backpropagation",
@@ -2653,5 +2653,122 @@
     "description_zh": "Dune融合Dust激活扰动观测与按时间条件化的在线岭回归误差预测，无需全局反传，持久适配SmolVLA动作专家及投影层；SmolVLM2视觉语言骨干冻结。属VLA动作侧零阶适配，不计语言骨干训练；结果未证明优于一阶AdamW。",
     "resources_en": "[paper](https://arxiv.org/abs/2611.25400) / arXiv v1 2026-11-19T02:40:38Z / acceptance unverified",
     "resources_zh": "[论文](https://arxiv.org/abs/2611.25400) / arXiv初版 2026-11-19T02:40:38Z / 录用待核实"
+  },
+  {
+    "title": "PAMS: Preconditioned Activation-Metric Subspace for Zeroth-Order LLM Fine-tuning",
+    "category": "zo_directions",
+    "date": "2026-11",
+    "description_en": "Tracks activation subspaces and spectra to precondition two-point ZO perturbations and persistently update LM weights without task-loss backpropagation; subspace tracking uses explicit matrix operations.",
+    "description_zh": "在线跟踪前向激活的低秩子空间和谱，调整双点零阶扰动几何并持久更新语言模型层权重；任务损失不反传，子空间采用显式矩阵更新。",
+    "resources_en": "[paper](https://arxiv.org/abs/2611.28476) / 2026-11-21T01:49:52Z / arXiv v1; earlier release unverified / code and acceptance unverified",
+    "resources_zh": "[论文](https://arxiv.org/abs/2611.28476) / 2026-11-21T01:49:52Z / arXiv初版；跨平台更早首发待核实 / 代码与录用待核实"
+  },
+  {
+    "title": "AutoClip-DPZO: Practical Private Clipping Selection for Differentially Private Zeroth-Order LLM Fine-Tuning",
+    "category": "zo_systems",
+    "date": "2026-11",
+    "description_en": "Chooses DPZO clipping thresholds through private quantile estimation instead of repeated fine-tuning search. DPZO persistently updates LM parameters without model backpropagation; selection and release privacy costs must both be accounted for.",
+    "description_zh": "将差分隐私零阶微调的裁剪阈值选择转为私有分位数估计，避免反复微调搜索；DPZO持久更新语言模型参数，阈值选择和训练的隐私开销均需计入。",
+    "resources_en": "[paper](https://arxiv.org/abs/2611.30352) / 2026-11-23T09:23:42Z / arXiv v1; earlier release unverified / code and acceptance unverified",
+    "resources_zh": "[论文](https://arxiv.org/abs/2611.30352) / 2026-11-23T09:23:42Z / arXiv初版；跨平台更早首发待核实 / 代码与录用待核实"
+  },
+  {
+    "title": "ARS-VLM: Visually Aligned Augmented Random Search for Vision-Language Models",
+    "category": "es_single_turn",
+    "date": "2026-11",
+    "description_en": "Uses cross-grid visual subspaces, layer-selective soft constraints and dual-view top-k ARS selection for forward-only VLM post-training. Persistently updates decoder projections, so the language decoder is not frozen. Reported static memory is not peak training memory.",
+    "description_zh": "ARS-VLM以跨图块视图的对比视觉子空间、分层软约束及双视图筛选进行纯前向VLM后训练，持久更新解码器投影权重；语言解码器并未冻结。显存静态账本不能当作峰值训练显存。",
+    "resources_en": "[paper](https://arxiv.org/abs/2611.32147) / 2026-11-24T08:02:52Z / arXiv v1; earlier release unverified / code and acceptance unverified",
+    "resources_zh": "[论文](https://arxiv.org/abs/2611.32147) / 2026-11-24T08:02:52Z / arXiv初版；跨平台更早首发待核实 / 代码与录用待核实"
+  },
+  {
+    "title": "Weight-Space Programming Writes In-Context Learning and Matches Fine-Tuning in Language Models",
+    "category": "related_agent_training",
+    "date": "2026-11",
+    "description_en": "Frozen LM editors write example-induced activation differences into persistent target-LM weights, including near-silent MLP units, under a no-backpropagation editing protocol. Related parameter editing rather than input-prompt search; gains depend on wording and editor.",
+    "description_zh": "固定语言模型编辑器将示例引起的激活差异写入较弱语言模型的持久权重，包含近静默MLP单元；编辑阶段禁止反传。属权重编辑而非输入提示搜索，收益对措辞与编辑器敏感。",
+    "resources_en": "[paper](https://arxiv.org/abs/2611.26841) / 2026-11-19T21:50:37Z / arXiv v1; earlier release unverified / code and acceptance unverified",
+    "resources_zh": "[论文](https://arxiv.org/abs/2611.26841) / 2026-11-19T21:50:37Z / arXiv初版；跨平台更早首发待核实 / 代码与录用待核实"
+  },
+  {
+    "title": "Weight-space programming and mechanistic interpretability for model editing in particle physics",
+    "category": "related_agent_training",
+    "date": "2026-11",
+    "description_en": "Fixed LM agents use closed-form edits and bounded forward queries to repair persistent particle-physics network weights, not LM weights. A separate repair route depends on trained sparse autoencoders; do not describe the entire study as gradient-free.",
+    "description_zh": "固定语言模型智能体用闭式计算与有限前向查询修复粒子物理网络的持久权重，非语言模型训练；另有依赖先训练稀疏自编码器的独立修复路线。",
+    "resources_en": "[paper](https://arxiv.org/abs/2611.27079) / 2026-11-20T03:46:32Z / arXiv v1; earlier release unverified / code and acceptance unverified",
+    "resources_zh": "[论文](https://arxiv.org/abs/2611.27079) / 2026-11-20T03:46:32Z / arXiv初版；跨平台更早首发待核实 / 代码与录用待核实"
+  },
+  {
+    "title": "Writing Weights or Training Them? Spatial Reasoning through Weight-Space Programming and Low-Rank Adaptation",
+    "category": "related_hybrid",
+    "date": "2026-11",
+    "description_en": "Compares persistent direct edits of Qwen3.5-0.8B with gradient-trained LoRA. The public patch preserves neighboring-task performance better, while LoRA brings larger target gains and interference. Related comparison of separate routes, not a new pure ZO optimizer.",
+    "description_zh": "比较Qwen3.5-0.8B的直接权重修补与梯度LoRA适配：修补收益较小但较能保留相邻任务，LoRA目标任务收益更大但有干扰。属两条路线比较，非新的纯零阶优化器。",
+    "resources_en": "[paper](https://arxiv.org/abs/2611.27089) / 2026-11-20T04:05:14Z / arXiv v1; earlier release unverified / code and acceptance unverified",
+    "resources_zh": "[论文](https://arxiv.org/abs/2611.27089) / 2026-11-20T04:05:14Z / arXiv初版；跨平台更早首发待核实 / 代码与录用待核实"
+  },
+  {
+    "title": "LIELLA: Private Edge Adaptation with Photonic Weight Streams",
+    "category": "zo_systems",
+    "date": "2026-11",
+    "description_en": "Streams a frozen TinyLlama backbone to private client adapters. Its forward-only arm uses P-RGE or SubZero+ to persistently update adapter parameters; backpropagation is evaluated separately. Hardware/system study with modeled energy and simulated optical noise.",
+    "description_zh": "LIELLA以冻结的TinyLlama光子权重流支持客户端私有适配器，零阶分支用P-RGE或SubZero+持久更新适配器；反传分支单独评测。属于硬件与系统研究，能耗主要为模型估计和噪声仿真。",
+    "resources_en": "[paper](https://arxiv.org/abs/2611.29343) / 2026-11-22T09:27:02Z / arXiv v1; earlier release unverified / code and acceptance unverified",
+    "resources_zh": "[论文](https://arxiv.org/abs/2611.29343) / 2026-11-22T09:27:02Z / arXiv初版；跨平台更早首发待核实 / 代码与录用待核实"
+  },
+  {
+    "title": "FORTH: Grounding Tactile VLA Execution via Forward-Only Proxy-Control Pairing",
+    "category": "related_hybrid",
+    "date": "2026-11",
+    "description_en": "Combines token-parallel activation-perturbation updates of a rank-8 action-head adapter with local Forward-Forward tactile features and slip control. The 4-bit vision-language backbone stays frozen; local training derivatives require verification.",
+    "description_zh": "FORTH在冻结4比特视觉语言骨干上，用token并行激活扰动更新动作头秩8适配器，配合局部Forward-Forward触觉表征和防滑控制；语言骨干不训练，局部训练是否反传待核实。",
+    "resources_en": "[paper](https://arxiv.org/abs/2611.26744) / 2026-11-19T19:42:19Z / arXiv v1; earlier release unverified / code and acceptance unverified",
+    "resources_zh": "[论文](https://arxiv.org/abs/2611.26744) / 2026-11-19T19:42:19Z / arXiv初版；跨平台更早首发待核实 / 代码与录用待核实"
+  },
+  {
+    "title": "Training Vision Models for LLM-Driven Weight-Space Programming",
+    "category": "related_hybrid",
+    "date": "2026-11",
+    "description_en": "Prepares vision networks for subsequent no-gradient persistent editing by fixed LMs. Introduces Edit-Ready Training and compares preparation strategies. The editor does not train, while vision-network preparation uses gradient training; targets are vision models.",
+    "description_zh": "先训练更便于编辑的视觉网络，再让固定语言模型无梯度持久修改视觉网络权重；提出ERT并与普通及梯度可编辑训练比较。编辑阶段无梯度不等于准备训练无反传。",
+    "resources_en": "[paper](https://arxiv.org/abs/2611.26408) / 2026-11-19T16:56:27Z / arXiv v1; earlier release unverified / code and acceptance unverified",
+    "resources_zh": "[论文](https://arxiv.org/abs/2611.26408) / 2026-11-19T16:56:27Z / arXiv初版；跨平台更早首发待核实 / 代码与录用待核实"
+  },
+  {
+    "title": "A CPU Inside an LLM: Zero-Gradient Compilation of Exact Circuits into Pretrained Weights",
+    "category": "related_closed_form",
+    "date": "2026-11",
+    "description_en": "Analytically grafts deterministic arithmetic and logic circuits into persistent LM weights, including hidden-width extension, without gradient training. Related closed-form construction, with architecture changes and constrained formats distinguished from ordinary fine-tuning.",
+    "description_zh": "用解析电路嫁接把确定性算术与逻辑计算写入语言模型权重，并扩展隐藏宽度；没有梯度训练，属于闭式构造。其架构扩展和限定输入格式应与一般微调区分。",
+    "resources_en": "[paper](https://arxiv.org/abs/2611.26450) / 2026-11-19T17:18:38Z / arXiv v1; earlier release unverified / code and acceptance unverified",
+    "resources_zh": "[论文](https://arxiv.org/abs/2611.26450) / 2026-11-19T17:18:38Z / arXiv初版；跨平台更早首发待核实 / 代码与录用待核实"
+  },
+  {
+    "title": "Gradient-Free Few-Shot Adaptation of Vision Models via Agentic Coding",
+    "category": "related_agent_training",
+    "date": "2026-11",
+    "description_en": "A fixed coding agent directly sets new-class head weights of a frozen detector without gradients. Gains are limited by shot count and old-class retention. Related persistent vision-model editing, not LM-weight training; historical backfill.",
+    "description_zh": "固定编程智能体直接设置冻结检测器的新类分类头权重，无梯度；与微调比较显示优势受样本数和旧类保留约束限制。目标是视觉模型，按持久权重编辑关联研究补收录。",
+    "resources_en": "[paper](https://arxiv.org/abs/2611.28105) / 2026-11-17T17:53:36Z / historical backfill; not this week's first release / code and acceptance unverified",
+    "resources_zh": "[论文](https://arxiv.org/abs/2611.28105) / 2026-11-17T17:53:36Z / 补收录，非本周首发 / 代码与录用待核实"
+  },
+  {
+    "title": "DMT-Attack: Diffusion-Prior Texture Search for Closed-Loop Vision-Language-Action Policies",
+    "category": "related_hybrid",
+    "date": "2026-11",
+    "description_en": "Freezes the target VLA and diffusion decoder while training a latent proposal network with teacher initialization and PPO to search textures. Gradient-free refers to target-model queries, not the full proposal-training pipeline; LM/VLA weights are not updated.",
+    "description_zh": "DMT-Attack冻结VLA与扩散模型，通过教师潜变量初始化及PPO训练潜变量提议网络生成纹理；梯度无关仅指不穿过被攻击模型，不是训练全流程无反传。",
+    "resources_en": "[paper](https://arxiv.org/abs/2611.25695) / 2026-11-19T08:09:25Z / arXiv v1; earlier release unverified / code and acceptance unverified",
+    "resources_zh": "[论文](https://arxiv.org/abs/2611.25695) / 2026-11-19T08:09:25Z / arXiv初版；跨平台更早首发待核实 / 代码与录用待核实"
+  },
+  {
+    "title": "When Fog Becomes a Weapon: Atmospheric Attacks on Visible-Infrared Vision-Language Models",
+    "category": "related_prompt_agent",
+    "date": "2026-11",
+    "description_en": "Uses CMA-ES over a shared 7D atmospheric state to study robustness of frozen visible/infrared models and transferred language outputs. No persistent target-model updates; related non-agent black-box robustness research, not LM parameter optimization.",
+    "description_zh": "FMA用CMA-ES搜索共享7维三维雾状态，评测冻结可见光/红外模型及语言输出的鲁棒性；不更新任何目标模型参数。属于非智能体的黑箱攻击关联研究。",
+    "resources_en": "[paper](https://arxiv.org/abs/2611.28592) / 2026-11-21T05:50:16Z / arXiv v1; earlier release unverified / code and acceptance unverified",
+    "resources_zh": "[论文](https://arxiv.org/abs/2611.28592) / 2026-11-21T05:50:16Z / arXiv初版；跨平台更早首发待核实 / 代码与录用待核实"
   }
 ]

@@ -1,0 +1,765 @@
+{
+  "automation_id": "9-00-asia-shanghai-arxiv-openreview-ai-ml-n-2",
+  "checked_at": "2026-11-25T14:10:31Z",
+  "window": {
+    "start": "2026-11-18T14:10:31Z",
+    "end": "2026-11-25T14:10:31Z"
+  },
+  "base_commit": "771756b576e898608e03a58b8a9cde92295c08c5",
+  "rows": [
+    {
+      "id": "2611.28476",
+      "category": "zo_directions",
+      "description_zh": "在线跟踪前向激活的低秩子空间和谱，调整双点零阶扰动几何并持久更新语言模型层权重；任务损失不反传，子空间采用显式矩阵更新。",
+      "description_en": "Tracks activation subspaces and spectra to precondition two-point ZO perturbations and persistently update LM weights without task-loss backpropagation; subspace tracking uses explicit matrix operations.",
+      "method": "激活谱预条件、双点有限差分、在线低秩跟踪。",
+      "backpropagation": "否，所提任务权重更新无需反传；子空间的解析矩阵迭代不等同于对任务损失反传。",
+      "persistent_parameters": "是，语言模型层权重；另维护低秩基与谱统计。",
+      "relevance": "高：直接梯度无关语言模型参数优化。",
+      "uncertainties": "需复核预条件偏差、额外前向计算与不同基线的预算公平性。代码、录用、跨平台更早首发与独立复现待核实。",
+      "kind": "core",
+      "title": "PAMS: Preconditioned Activation-Metric Subspace for Zeroth-Order LLM Fine-tuning",
+      "authors": [
+        "Pradeep Kumar Ragu Chanthar",
+        "Saksham Sahai Srivastava",
+        "Jaewoo Lee"
+      ],
+      "url": "https://arxiv.org/abs/2611.28476",
+      "arxiv_v1": "2026-11-21T01:49:52Z",
+      "first_public_status": "earliest_verified_arxiv_date; earlier_cross_platform_release_unverified",
+      "sources": [
+        "https://arxiv.org/abs/2611.28476",
+        "https://arxiv.org/html/2611.28476v1"
+      ],
+      "code": null,
+      "venue": "preprint; acceptance unverified",
+      "decision": "included",
+      "key": "review202611251"
+    },
+    {
+      "id": "2611.30352",
+      "category": "zo_systems",
+      "description_zh": "将差分隐私零阶微调的裁剪阈值选择转为私有分位数估计，避免反复微调搜索；DPZO持久更新语言模型参数，阈值选择和训练的隐私开销均需计入。",
+      "description_en": "Chooses DPZO clipping thresholds through private quantile estimation instead of repeated fine-tuning search. DPZO persistently updates LM parameters without model backpropagation; selection and release privacy costs must both be accounted for.",
+      "method": "多方向零阶估计、差分隐私裁剪、私有分位数估计。",
+      "backpropagation": "所提DPZO更新不对模型反传；一阶DPSGD仅为对照。",
+      "persistent_parameters": "是，目标语言模型可训练参数；裁剪阈值是超参数，不冒充模型权重。",
+      "relevance": "高：隐私保护下的零阶语言模型微调。",
+      "uncertainties": "隐私会计、离线校准的公开数据假设及完整实现待复核。代码、录用、跨平台更早首发与独立复现待核实。",
+      "kind": "core",
+      "title": "AutoClip-DPZO: Practical Private Clipping Selection for Differentially Private Zeroth-Order LLM Fine-Tuning",
+      "authors": [
+        "Xinghe Chen",
+        "Haichao Sha",
+        "Zihao Wang",
+        "Xiaokui Xiao",
+        "XiaoFeng Wang",
+        "Wei Dong"
+      ],
+      "url": "https://arxiv.org/abs/2611.30352",
+      "arxiv_v1": "2026-11-23T09:23:42Z",
+      "first_public_status": "earliest_verified_arxiv_date; earlier_cross_platform_release_unverified",
+      "sources": [
+        "https://arxiv.org/abs/2611.30352",
+        "https://arxiv.org/html/2611.30352v1"
+      ],
+      "code": null,
+      "venue": "preprint; acceptance unverified",
+      "decision": "included",
+      "key": "review202611252"
+    },
+    {
+      "id": "2611.32147",
+      "category": "es_single_turn",
+      "description_zh": "ARS-VLM以跨图块视图的对比视觉子空间、分层软约束及双视图筛选进行纯前向VLM后训练，持久更新解码器投影权重；语言解码器并未冻结。显存静态账本不能当作峰值训练显存。",
+      "description_en": "Uses cross-grid visual subspaces, layer-selective soft constraints and dual-view top-k ARS selection for forward-only VLM post-training. Persistently updates decoder projections, so the language decoder is not frozen. Reported static memory is not peak training memory.",
+      "method": "正负成对扰动、top-k增强随机搜索、跨视图子空间约束。",
+      "backpropagation": "所提更新无需反传；GRPO是独立对照。",
+      "persistent_parameters": "是，Qwen3-VL解码器Wq/Wk/Wv/Wgate/Wup等二维输入投影；视觉编码器等其余模块覆盖待实现核实。",
+      "relevance": "高：VLM语言解码侧直接梯度无关参数后训练。",
+      "uncertainties": "完整模块覆盖、不同检查点/指标下收益及计时和峰值显存需复核。代码、录用、跨平台更早首发与独立复现待核实。",
+      "kind": "core",
+      "title": "ARS-VLM: Visually Aligned Augmented Random Search for Vision-Language Models",
+      "authors": [
+        "Xiangwei Wang",
+        "Jianyuan Lin",
+        "Peng Wang",
+        "Saman Halgamuge"
+      ],
+      "url": "https://arxiv.org/abs/2611.32147",
+      "arxiv_v1": "2026-11-24T08:02:52Z",
+      "first_public_status": "earliest_verified_arxiv_date; earlier_cross_platform_release_unverified",
+      "sources": [
+        "https://arxiv.org/abs/2611.32147",
+        "https://arxiv.org/html/2611.32147v1"
+      ],
+      "code": null,
+      "venue": "preprint; acceptance unverified",
+      "decision": "included",
+      "key": "review202611253"
+    },
+    {
+      "id": "2611.26841",
+      "category": "related_agent_training",
+      "description_zh": "固定语言模型编辑器将示例引起的激活差异写入较弱语言模型的持久权重，包含近静默MLP单元；编辑阶段禁止反传。属权重编辑而非输入提示搜索，收益对措辞与编辑器敏感。",
+      "description_en": "Frozen LM editors write example-induced activation differences into persistent target-LM weights, including near-silent MLP units, under a no-backpropagation editing protocol. Related parameter editing rather than input-prompt search; gains depend on wording and editor.",
+      "method": "激活差异任务向量、直接权重编程与闭式编辑。",
+      "backpropagation": "编辑阶段禁止反传；LoRA/微调为独立梯度对照，编辑器不训练。",
+      "persistent_parameters": "是，较弱目标语言模型权重；不是仅改变上下文。",
+      "relevance": "中高：直接语言模型权重编辑关联研究。",
+      "uncertainties": "提示格式绑定、未完成运行、隐含额外示例以及跨措辞迁移需复核。代码、录用、跨平台更早首发与独立复现待核实。",
+      "kind": "related",
+      "title": "Weight-Space Programming Writes In-Context Learning and Matches Fine-Tuning in Language Models",
+      "authors": [
+        "Konstantinos Skianis",
+        "Aristidis Likas"
+      ],
+      "url": "https://arxiv.org/abs/2611.26841",
+      "arxiv_v1": "2026-11-19T21:50:37Z",
+      "first_public_status": "earliest_verified_arxiv_date; earlier_cross_platform_release_unverified",
+      "sources": [
+        "https://arxiv.org/abs/2611.26841",
+        "https://arxiv.org/html/2611.26841v2"
+      ],
+      "code": null,
+      "venue": "preprint; acceptance unverified",
+      "decision": "included",
+      "key": "review202611254"
+    },
+    {
+      "id": "2611.27079",
+      "category": "related_agent_training",
+      "description_zh": "固定语言模型智能体用闭式计算与有限前向查询修复粒子物理网络的持久权重，非语言模型训练；另有依赖先训练稀疏自编码器的独立修复路线。",
+      "description_en": "Fixed LM agents use closed-form edits and bounded forward queries to repair persistent particle-physics network weights, not LM weights. A separate repair route depends on trained sparse autoencoders; do not describe the entire study as gradient-free.",
+      "method": "直接权重编程、投影、奇异值分解和最小二乘等闭式计算。",
+      "backpropagation": "智能体编辑阶段禁止梯度；预训练目标和独立SAE路线包含训练，不能称全流程无反传。",
+      "persistent_parameters": "是，粒子物理网络主体/分类头的许可权重；编辑器语言模型固定。",
+      "relevance": "中：语言模型驱动非语言目标网络修复。",
+      "uncertainties": "SAE准备开销、编辑大小、物理扰动泛化及不同路线的比较待复核。代码、录用、跨平台更早首发与独立复现待核实。",
+      "kind": "related",
+      "title": "Weight-space programming and mechanistic interpretability for model editing in particle physics",
+      "authors": [
+        "Raphaël Bonnet-Guerrini",
+        "Johann Ioannou-Nikolaides",
+        "Troels Petersen"
+      ],
+      "url": "https://arxiv.org/abs/2611.27079",
+      "arxiv_v1": "2026-11-20T03:46:32Z",
+      "first_public_status": "earliest_verified_arxiv_date; earlier_cross_platform_release_unverified",
+      "sources": [
+        "https://arxiv.org/abs/2611.27079",
+        "https://arxiv.org/html/2611.27079v1"
+      ],
+      "code": null,
+      "venue": "preprint; acceptance unverified",
+      "decision": "included",
+      "key": "review202611255"
+    },
+    {
+      "id": "2611.27089",
+      "category": "related_hybrid",
+      "description_zh": "比较Qwen3.5-0.8B的直接权重修补与梯度LoRA适配：修补收益较小但较能保留相邻任务，LoRA目标任务收益更大但有干扰。属两条路线比较，非新的纯零阶优化器。",
+      "description_en": "Compares persistent direct edits of Qwen3.5-0.8B with gradient-trained LoRA. The public patch preserves neighboring-task performance better, while LoRA brings larger target gains and interference. Related comparison of separate routes, not a new pure ZO optimizer.",
+      "method": "直接持久权重修补与闭式编辑；另有一阶低秩适配对照。",
+      "backpropagation": "LoRA路线依赖梯度；闭式编辑路线不用梯度，两者不是同一零阶流程。",
+      "persistent_parameters": "是，目标语言模型权重或秩一LoRA；基础网络和编辑器角色分别说明。",
+      "relevance": "中高：梯度无关语言模型编辑的能力与遗忘边界。",
+      "uncertainties": "小样本任务、推理开关/答案格式混杂及跨任务遗忘需复核。代码、录用、跨平台更早首发与独立复现待核实。",
+      "kind": "related",
+      "title": "Writing Weights or Training Them? Spatial Reasoning through Weight-Space Programming and Low-Rank Adaptation",
+      "authors": [
+        "Yalin Yang",
+        "Xiao Huang",
+        "Yanan Wu",
+        "Hao Yang",
+        "Ryan Zhenqi Zhou"
+      ],
+      "url": "https://arxiv.org/abs/2611.27089",
+      "arxiv_v1": "2026-11-20T04:05:14Z",
+      "first_public_status": "earliest_verified_arxiv_date; earlier_cross_platform_release_unverified",
+      "sources": [
+        "https://arxiv.org/abs/2611.27089",
+        "https://arxiv.org/html/2611.27089v1"
+      ],
+      "code": null,
+      "venue": "preprint; acceptance unverified",
+      "decision": "included",
+      "key": "review202611256"
+    },
+    {
+      "id": "2611.29343",
+      "category": "zo_systems",
+      "description_zh": "LIELLA以冻结的TinyLlama光子权重流支持客户端私有适配器，零阶分支用P-RGE或SubZero+持久更新适配器；反传分支单独评测。属于硬件与系统研究，能耗主要为模型估计和噪声仿真。",
+      "description_en": "Streams a frozen TinyLlama backbone to private client adapters. Its forward-only arm uses P-RGE or SubZero+ to persistently update adapter parameters; backpropagation is evaluated separately. Hardware/system study with modeled energy and simulated optical noise.",
+      "method": "P-RGE正负成对随机估计、SubZero+随机子空间零阶优化。",
+      "backpropagation": "零阶分支不反传；另有独立BP分支，非全篇全流程梯度无关。",
+      "persistent_parameters": "是，LoRA-FA私有因子或LoRA-XS私有核及校准参数；共享语言骨干冻结。",
+      "relevance": "高关联系统研究：零阶语言模型适配器训练。",
+      "uncertainties": "硬件实测与仿真、隐私含义和差分隐私保证的区别、训练峰值内存待复核。代码、录用、跨平台更早首发与独立复现待核实。",
+      "kind": "related",
+      "title": "LIELLA: Private Edge Adaptation with Photonic Weight Streams",
+      "authors": [
+        "Yuexun Huang",
+        "Kfir Sulimany",
+        "Ke Lin",
+        "Xiangyu Ren",
+        "Dirk Englund",
+        "Liang Jiang"
+      ],
+      "url": "https://arxiv.org/abs/2611.29343",
+      "arxiv_v1": "2026-11-22T09:27:02Z",
+      "first_public_status": "earliest_verified_arxiv_date; earlier_cross_platform_release_unverified",
+      "sources": [
+        "https://arxiv.org/abs/2611.29343",
+        "https://arxiv.org/html/2611.29343v1"
+      ],
+      "code": null,
+      "venue": "preprint; acceptance unverified",
+      "decision": "included",
+      "key": "review202611257"
+    },
+    {
+      "id": "2611.26744",
+      "category": "related_hybrid",
+      "description_zh": "FORTH在冻结4比特视觉语言骨干上，用token并行激活扰动更新动作头秩8适配器，配合局部Forward-Forward触觉表征和防滑控制；语言骨干不训练，局部训练是否反传待核实。",
+      "description_en": "Combines token-parallel activation-perturbation updates of a rank-8 action-head adapter with local Forward-Forward tactile features and slip control. The 4-bit vision-language backbone stays frozen; local training derivatives require verification.",
+      "method": "token并行双点激活扰动、低秩动作头适配、局部Forward-Forward目标。",
+      "backpropagation": "无全局反传；动作适配器为零阶更新，局部FF训练是否含层内反传待核实，不能称全流程无梯度。",
+      "persistent_parameters": "是，动作头秩8适配器；局部触觉块训练后冻结，视觉语言骨干冻结。",
+      "relevance": "中：VLA动作侧零阶与局部学习混合研究，非语言骨干训练。",
+      "uncertainties": "局部优化器实现、触觉块训练/冻结时序及物理控制结论外推待复核。代码、录用、跨平台更早首发与独立复现待核实。",
+      "kind": "related",
+      "title": "FORTH: Grounding Tactile VLA Execution via Forward-Only Proxy-Control Pairing",
+      "authors": [
+        "Junde Li",
+        "Wei-Han Yu",
+        "Xiangyi Chu",
+        "Yaoxin Li",
+        "Jiawei Xu",
+        "Ka-Fai Un",
+        "Pui-In Mak"
+      ],
+      "url": "https://arxiv.org/abs/2611.26744",
+      "arxiv_v1": "2026-11-19T19:42:19Z",
+      "first_public_status": "earliest_verified_arxiv_date; earlier_cross_platform_release_unverified",
+      "sources": [
+        "https://arxiv.org/abs/2611.26744",
+        "https://arxiv.org/html/2611.26744v1"
+      ],
+      "code": null,
+      "venue": "preprint; acceptance unverified",
+      "decision": "included",
+      "key": "review202611258"
+    },
+    {
+      "id": "2611.26408",
+      "category": "related_hybrid",
+      "description_zh": "先训练更便于编辑的视觉网络，再让固定语言模型无梯度持久修改视觉网络权重；提出ERT并与普通及梯度可编辑训练比较。编辑阶段无梯度不等于准备训练无反传。",
+      "description_en": "Prepares vision networks for subsequent no-gradient persistent editing by fixed LMs. Introduces Edit-Ready Training and compares preparation strategies. The editor does not train, while vision-network preparation uses gradient training; targets are vision models.",
+      "method": "固定语言模型直接稀疏/闭式权重编辑，ERT模拟编辑训练。",
+      "backpropagation": "准备视觉网络的训练依赖梯度；随后智能体编辑阶段禁止梯度。",
+      "persistent_parameters": "是，视觉CNN/ViT及分类头；语言模型编辑器不更新。",
+      "relevance": "中：参数训练加梯度无关模型编辑的混合关联研究。",
+      "uncertainties": "准备训练成本、多编辑器/任务方差及代码承诺是否兑现待核实。代码、录用、跨平台更早首发与独立复现待核实。",
+      "kind": "related",
+      "title": "Training Vision Models for LLM-Driven Weight-Space Programming",
+      "authors": [
+        "Timo Ropinski",
+        "Sebastian Kranz"
+      ],
+      "url": "https://arxiv.org/abs/2611.26408",
+      "arxiv_v1": "2026-11-19T16:56:27Z",
+      "first_public_status": "earliest_verified_arxiv_date; earlier_cross_platform_release_unverified",
+      "sources": [
+        "https://arxiv.org/abs/2611.26408",
+        "https://arxiv.org/html/2611.26408v1"
+      ],
+      "code": null,
+      "venue": "preprint; acceptance unverified",
+      "decision": "included",
+      "key": "review202611259"
+    },
+    {
+      "id": "2611.26450",
+      "category": "related_closed_form",
+      "description_zh": "用解析电路嫁接把确定性算术与逻辑计算写入语言模型权重，并扩展隐藏宽度；没有梯度训练，属于闭式构造。其架构扩展和限定输入格式应与一般微调区分。",
+      "description_en": "Analytically grafts deterministic arithmetic and logic circuits into persistent LM weights, including hidden-width extension, without gradient training. Related closed-form construction, with architecture changes and constrained formats distinguished from ordinary fine-tuning.",
+      "method": "解析电路编译、宽度扩展、归一化补偿和闭式权重构造。",
+      "backpropagation": "所提编译/安装无梯度；LoRA是独立对照。",
+      "persistent_parameters": "是，扩展后的嵌入/注意力/MLP/输出等电路张量；并非保持所有架构不变。",
+      "relevance": "中高：无需梯度的语言模型权重能力构造。",
+      "uncertainties": "复杂解析证明、触发输入格式、宽度/侧支代价及安全泛化待独立复核。代码、录用、跨平台更早首发与独立复现待核实。",
+      "kind": "related",
+      "title": "A CPU Inside an LLM: Zero-Gradient Compilation of Exact Circuits into Pretrained Weights",
+      "authors": [
+        "Tanmay Sah"
+      ],
+      "url": "https://arxiv.org/abs/2611.26450",
+      "arxiv_v1": "2026-11-19T17:18:38Z",
+      "first_public_status": "earliest_verified_arxiv_date; earlier_cross_platform_release_unverified",
+      "sources": [
+        "https://arxiv.org/abs/2611.26450",
+        "https://arxiv.org/html/2611.26450v1"
+      ],
+      "code": null,
+      "venue": "preprint; acceptance unverified",
+      "decision": "included",
+      "key": "review2026112510"
+    },
+    {
+      "id": "2611.28105",
+      "category": "related_agent_training",
+      "description_zh": "固定编程智能体直接设置冻结检测器的新类分类头权重，无梯度；与微调比较显示优势受样本数和旧类保留约束限制。目标是视觉模型，按持久权重编辑关联研究补收录。",
+      "description_en": "A fixed coding agent directly sets new-class head weights of a frozen detector without gradients. Gains are limited by shot count and old-class retention. Related persistent vision-model editing, not LM-weight training; historical backfill.",
+      "method": "智能体生成权重设置程序、闭式分类头构造。",
+      "backpropagation": "智能体编辑不反传；梯度微调为独立基线。",
+      "persistent_parameters": "是，目标检测器新类头权重；检测骨干和语言编辑器冻结。",
+      "relevance": "中：语言模型驱动的视觉网络参数构造。",
+      "uncertainties": "首次发布为11月17日，不能按本周网页索引计新；少样本优势与旧类损失需复核。代码、录用、跨平台更早首发与独立复现待核实。",
+      "kind": "backfill",
+      "title": "Gradient-Free Few-Shot Adaptation of Vision Models via Agentic Coding",
+      "authors": [
+        "Khayrul Islam"
+      ],
+      "url": "https://arxiv.org/abs/2611.28105",
+      "arxiv_v1": "2026-11-17T17:53:36Z",
+      "first_public_status": "earliest_verified_arxiv_date; earlier_cross_platform_release_unverified",
+      "sources": [
+        "https://arxiv.org/abs/2611.28105",
+        "https://arxiv.org/html/2611.28105v1"
+      ],
+      "code": null,
+      "venue": "preprint; acceptance unverified",
+      "decision": "included",
+      "key": "review2026112511"
+    },
+    {
+      "id": "2611.25695",
+      "category": "related_hybrid",
+      "description_zh": "DMT-Attack冻结VLA与扩散模型，通过教师潜变量初始化及PPO训练潜变量提议网络生成纹理；梯度无关仅指不穿过被攻击模型，不是训练全流程无反传。",
+      "description_en": "Freezes the target VLA and diffusion decoder while training a latent proposal network with teacher initialization and PPO to search textures. Gradient-free refers to target-model queries, not the full proposal-training pipeline; LM/VLA weights are not updated.",
+      "method": "扩散先验潜空间提议、黑箱rollout评分、PPO提议策略训练。",
+      "backpropagation": "PPO提议网络训练依赖一阶梯度；不对VLA或扩散模型反传。",
+      "persistent_parameters": "是，提议策略和价值网络；目标VLA、语言骨干及扩散模型冻结。",
+      "relevance": "中：训练型提议策略的相关混合优化与模型鲁棒性研究。",
+      "uncertainties": "提议训练总成本、灰箱可见信息和测试预算公平性待复核。代码、录用、跨平台更早首发与独立复现待核实。",
+      "kind": "related",
+      "title": "DMT-Attack: Diffusion-Prior Texture Search for Closed-Loop Vision-Language-Action Policies",
+      "authors": [
+        "Jun Xia",
+        "Shangwen Wang",
+        "Jun Ma",
+        "Ruichao Ren",
+        "Zhouyang Jia",
+        "Xin Zhao",
+        "Huijun Liu",
+        "Jie Yu"
+      ],
+      "url": "https://arxiv.org/abs/2611.25695",
+      "arxiv_v1": "2026-11-19T08:09:25Z",
+      "first_public_status": "earliest_verified_arxiv_date; earlier_cross_platform_release_unverified",
+      "sources": [
+        "https://arxiv.org/abs/2611.25695",
+        "https://arxiv.org/html/2611.25695v1"
+      ],
+      "code": null,
+      "venue": "preprint; acceptance unverified",
+      "decision": "included",
+      "key": "review2026112512"
+    },
+    {
+      "id": "2611.28592",
+      "category": "related_prompt_agent",
+      "description_zh": "FMA用CMA-ES搜索共享7维三维雾状态，评测冻结可见光/红外模型及语言输出的鲁棒性；不更新任何目标模型参数。属于非智能体的黑箱攻击关联研究。",
+      "description_en": "Uses CMA-ES over a shared 7D atmospheric state to study robustness of frozen visible/infrared models and transferred language outputs. No persistent target-model updates; related non-agent black-box robustness research, not LM parameter optimization.",
+      "method": "7维大气状态CMA-ES黑箱搜索。",
+      "backpropagation": "攻击搜索不反传；冻结模型已有预训练不属于所提优化。",
+      "persistent_parameters": "否，优化环境状态；目标视觉语言网络全部冻结。",
+      "relevance": "中低：梯度无关方法在VLM鲁棒性中的边界研究，与现有黑箱攻击分类一致。",
+      "uncertainties": "分类代理向生成式VLM的迁移、真实传感器与渲染假设待复核；不计参数优化主线。代码、录用、跨平台更早首发与独立复现待核实。",
+      "kind": "related",
+      "title": "When Fog Becomes a Weapon: Atmospheric Attacks on Visible-Infrared Vision-Language Models",
+      "authors": [
+        "Chengyin Hu",
+        "Dehe Zhao",
+        "Dingyi Lu",
+        "Qike Zhang",
+        "Jiaju Han",
+        "Banglong Nong",
+        "Xu Kang",
+        "Jiujiang Guo",
+        "Kalibinuer Tiliwalidi",
+        "Jiahuan Long"
+      ],
+      "url": "https://arxiv.org/abs/2611.28592",
+      "arxiv_v1": "2026-11-21T05:50:16Z",
+      "first_public_status": "earliest_verified_arxiv_date; earlier_cross_platform_release_unverified",
+      "sources": [
+        "https://arxiv.org/abs/2611.28592",
+        "https://arxiv.org/html/2611.28592v1"
+      ],
+      "code": null,
+      "venue": "preprint; acceptance unverified",
+      "decision": "included",
+      "key": "review2026112513"
+    }
+  ],
+  "duplicates": [
+    {
+      "title": "WeightCode: Installing New Capabilities into Neural Networks via Weight-Space Programming",
+      "id": "2611.25476",
+      "decision": "already_cataloged"
+    },
+    {
+      "title": "Dune: A Zeroth-Order Optimizer with Time-Conditioned Historical Error Regression for VLA Test-Time Adaptation",
+      "id": "2611.25400",
+      "decision": "already_cataloged"
+    }
+  ],
+  "excluded_or_record_only": [
+    {
+      "id": "2611.28907",
+      "title": "STRIDE: Strategy-to-Tactics Retrieval-Guided Skill Disclosure and Evolution for Agentic Reinforcement Learning",
+      "authors": [
+        "Shixin Hong",
+        "Wanqing Cui",
+        "Yibo Hu",
+        "Naen Xu",
+        "Zhiwei Huang",
+        "Meiguang Jin",
+        "Junfeng Ma"
+      ],
+      "arxiv_v1": "2026-11-21T16:31:55Z",
+      "url": "https://arxiv.org/abs/2611.28907",
+      "decision": "excluded_user_scope_skill",
+      "reason": "Skill retrieval, disclosure and skill-bank evolution are core mechanisms. Preserve record; do not include even if policy parameters are trained."
+    },
+    {
+      "title": "The Weight-Space Programming Illusion: Gradient-Free Weight Edits Did Not Beat Random Noise on Filipino",
+      "url": "https://huggingface.co/blog/Neurips-2026-MLIntern-Repro/the-weight-space-programming-illusion-gradient-fre",
+      "decision": "record_only_nonpaper",
+      "reason": "Original research blog and code lead; a scholarly paper version, author list and exact earliest release not verified."
+    },
+    {
+      "title": "Compiled Injection: Deterministic Activation Engineering for Pretrained LLMs",
+      "url": "https://github.com/DRawson5570/compiled-injection",
+      "decision": "record_only_project_documentation",
+      "reason": "Original repository exists but says techniques developed May 2026; no verified new paper version or first-public date. Do not treat recent crawl as new."
+    }
+  ],
+  "metadata_updates": [
+    {
+      "before": {
+        "title": "Dimension Is Free, Horizon Is Not: When Evolution Strategies Rival Policy Gradients for LLM Fine-Tuning",
+        "category": "es_understanding",
+        "date": "2026",
+        "description_en": "Compares ES and policy gradients through effective parameter dimension and effective credit-assignment horizon on language and agentic tasks.",
+        "description_zh": "以有效参数维数和有效信用分配时域统一比较 ES 与策略梯度，并在语言及智能体任务上验证。",
+        "resources_en": "[paper](https://openreview.net/forum?id=59ufz75SkM) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window",
+        "resources_zh": "[论文](https://openreview.net/forum?id=59ufz75SkM) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录"
+      },
+      "after": {
+        "title": "Dimension Is Free, Horizon Is Not: When Evolution Strategies Rival Policy Gradients for LLM Fine-Tuning",
+        "category": "es_understanding",
+        "date": "2026",
+        "description_en": "Compares ES and policy gradients through effective parameter dimension and effective credit-assignment horizon on language and agentic tasks.",
+        "description_zh": "以有效参数维数和有效信用分配时域统一比较 ES 与策略梯度，并在语言及智能体任务上验证。",
+        "resources_en": "[paper](https://openreview.net/forum?id=59ufz75SkM) · code not located · ![ICLR 2027 Submission](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview public on 2026-10-03; cross-platform first public date unverified; cycle backfill outside the 2026-10-04–2026-10-11 window / [arXiv](https://arxiv.org/abs/2611.29795) / arXiv v1 2026-11-22T21:54:42Z / existing October submission; not a new weekly paper",
+        "resources_zh": "[论文](https://openreview.net/forum?id=59ufz75SkM) · 未找到代码 · ![ICLR 2027 投稿](https://img.shields.io/badge/ICLR_2027-Submission-lightgrey) · OpenReview 于 2026-10-03 公开；跨平台首次公开日期待核实；属 2026-10-04–2026-10-11 窗口外的周期补收录 / [arXiv版](https://arxiv.org/abs/2611.29795) / arXiv v1 2026-11-22T21:54:42Z / 已有十月投稿的新公开版本，非本周新论文"
+      },
+      "authors": [
+        "Qiyao Liang",
+        "Kajetan Schweighofer",
+        "Xin Qiu",
+        "Risto Miikkulainen"
+      ],
+      "arxiv_v1": "2026-11-22T21:54:42Z",
+      "note": "Existing October ICLR submission and COLM workshop version; do not count new arXiv posting as first paper release.",
+      "bib_before": "@unpublished{iclr2027dimensionisfreehorizonisnotwhenevolu,\n  title={Dimension Is Free, Horizon Is Not: When Evolution Strategies Rival Policy Gradients for LLM Fine-Tuning},\n  author={Anonymous},\n  note={ICLR 2027 Conference Submission; decision pending; OpenReview public 2026-10-03; cross-platform first public date unverified; cycle backfill outside 2026-10-04--2026-10-11 window}, year={2026},\n  url={https://openreview.net/forum?id=59ufz75SkM}\n}",
+      "bib_after": "@unpublished{iclr2027dimensionisfreehorizonisnotwhenevolu,\n  title={Dimension Is Free, Horizon Is Not: When Evolution Strategies Rival Policy Gradients for LLM Fine-Tuning},\n  author={Liang, Qiyao and Schweighofer, Kajetan and Qiu, Xin and Miikkulainen, Risto},\n  note={ICLR 2027 Conference Submission; decision pending; OpenReview public 2026-10-03; cross-platform first public date unverified; cycle backfill outside 2026-10-04--2026-10-11 window}, year={2026},\n  url={https://openreview.net/forum?id=59ufz75SkM},\n  eprint={2611.29795}, archivePrefix={arXiv}\n}"
+    }
+  ],
+  "counts": {
+    "before": 295,
+    "after": 308,
+    "added": 13,
+    "direct_new_method_papers": 3,
+    "related": 10,
+    "arxiv_first_dates_in_window": 12,
+    "backfill": 1,
+    "metadata_updates": 1
+  },
+  "coverage": {
+    "discovery": "Explicit zeroth-order, gradient-free, derivative-free, evolution strategies, finite-difference, zero-gradient and weight-space-programming phrases, plus exact candidate titles. No generic LM corpus or bulk conference lists.",
+    "queries": [
+      "zeroth-order language after:2026-11-18 before:2026-11-26",
+      "evolution strategies LLM after:2026-11-18 before:2026-11-26",
+      "gradient-free fine-tuning after:2026-11-18 before:2026-11-26",
+      "derivative-free language model after:2026-11-18 before:2026-11-26",
+      "weight-space programming site:arxiv.org after:2026-11-18 before:2026-11-26",
+      "finite-difference LLM site:arxiv.org after:2026-11-18 before:2026-11-26",
+      "zeroth-order fine-tuning site:openreview.net after:2026-11-18 before:2026-11-26",
+      "black-box optimization fine-tuning site:arxiv.org after:2026-11-18 before:2026-11-26"
+    ],
+    "conference_limitations": "ICLR group page returned a Loading shell. Exact-title searches for PAMS, ARS-VLM and AutoClip-DPZO did not verify conference submissions. No complete conference or author-homepage coverage claimed."
+  },
+  "original_worktree_sha256": {
+    "README.md": "593695c8d764ba83c3ea65d55a5a6d3d3fbbeb5a3e4c4a1906a6d6a48332bcd0",
+    "README_zh.md": "b3eac1a2f413cfa079a5aa4d74b4dfd6ecda58fd75461a2d013a0fd02a3f24b1",
+    "data/papers.json": "fa1b593478a52ee91b47aa4a61a03648af5136045136fa3af152c6d1def0e0c6",
+    "papers.bib": "c597a2d1546259baa8881fa6826d1fdee65e77080508d1e4ad526ec8f166f088",
+    "scripts/generate_catalog.py": "57aad6922c1df1606fc76a589244eec05247161401da9f3d1237eb28a62c90e7",
+    "data/literature_reviews/2026-10-18-current-status.md": "aad8be9ad2dfe0f6783bacdf98a28c4056c943afbebd9fa363c02add13966029"
+  },
+  "source_metadata": [
+    {
+      "id": "2611.28476",
+      "title": [
+        "PAMS: Preconditioned Activation-Metric Subspace for Zeroth-Order LLM Fine-tuning"
+      ],
+      "authors": [
+        "Chanthar, Pradeep Kumar Ragu",
+        "Srivastava, Saksham Sahai",
+        "Lee, Jaewoo"
+      ],
+      "publication": [
+        "2026/11/21"
+      ],
+      "history": "Submission history From: Jaewoo Lee [ view email ] [v1] Sat, 21 Nov 2026 01:49:52 UTC (1,907 KB)"
+    },
+    {
+      "id": "2611.30352",
+      "title": [
+        "AutoClip-DPZO: Practical Private Clipping Selection for Differentially Private Zeroth-Order LLM Fine-Tuning"
+      ],
+      "authors": [
+        "Chen, Xinghe",
+        "Sha, Haichao",
+        "Wang, Zihao",
+        "Xiao, Xiaokui",
+        "Wang, XiaoFeng",
+        "Dong, Wei"
+      ],
+      "publication": [
+        "2026/11/23"
+      ],
+      "history": "Submission history From: Xinghe Chen [ view email ] [v1] Mon, 23 Nov 2026 09:23:42 UTC (780 KB)"
+    },
+    {
+      "id": "2611.32147",
+      "title": [
+        "ARS-VLM: Visually Aligned Augmented Random Search for Vision-Language Models"
+      ],
+      "authors": [
+        "Wang, Xiangwei",
+        "Lin, Jianyuan",
+        "Wang, Peng",
+        "Halgamuge, Saman"
+      ],
+      "publication": [
+        "2026/11/24"
+      ],
+      "history": "Submission history From: Xiangwei Wang [ view email ] [v1] Tue, 24 Nov 2026 08:02:52 UTC (4,031 KB)"
+    },
+    {
+      "id": "2611.26841",
+      "title": [
+        "Weight-Space Programming Writes In-Context Learning and Matches Fine-Tuning in Language Models"
+      ],
+      "authors": [
+        "Skianis, Konstantinos",
+        "Likas, Aristidis"
+      ],
+      "publication": [
+        "2026/11/19"
+      ],
+      "history": "Submission history From: Konstantinos Skianis [ view email ] [v1] Thu, 19 Nov 2026 21:50:37 UTC (71 KB) [v2] Mon, 23 Nov 2026 09:44:08 UTC (71 KB)"
+    },
+    {
+      "id": "2611.27079",
+      "title": [
+        "Weight-space programming and mechanistic interpretability for model editing in particle physics"
+      ],
+      "authors": [
+        "Bonnet-Guerrini, Raphaël",
+        "Ioannou-Nikolaides, Johann",
+        "Petersen, Troels"
+      ],
+      "publication": [
+        "2026/11/20"
+      ],
+      "history": "Submission history From: Johann Ioannou-Nikolaides [ view email ] [v1] Fri, 20 Nov 2026 03:46:32 UTC (3,199 KB)"
+    },
+    {
+      "id": "2611.27089",
+      "title": [
+        "Writing Weights or Training Them? Spatial Reasoning through Weight-Space Programming and Low-Rank Adaptation"
+      ],
+      "authors": [
+        "Yang, Yalin",
+        "Huang, Xiao",
+        "Wu, Yanan",
+        "Yang, Hao",
+        "Zhou, Ryan Zhenqi"
+      ],
+      "publication": [
+        "2026/11/20"
+      ],
+      "history": "Submission history From: Yalin Yang [ view email ] [v1] Fri, 20 Nov 2026 04:05:14 UTC (204 KB)"
+    },
+    {
+      "id": "2611.29343",
+      "title": [
+        "LIELLA: Private Edge Adaptation with Photonic Weight Streams"
+      ],
+      "authors": [
+        "Huang, Yuexun",
+        "Sulimany, Kfir",
+        "Lin, Ke",
+        "Ren, Xiangyu",
+        "Englund, Dirk",
+        "Jiang, Liang"
+      ],
+      "publication": [
+        "2026/11/22"
+      ],
+      "history": "Submission history From: Yuexun Huang [ view email ] [v1] Sun, 22 Nov 2026 09:27:02 UTC (597 KB)"
+    },
+    {
+      "id": "2611.26744",
+      "title": [
+        "FORTH: Grounding Tactile VLA Execution via Forward-Only Proxy-Control Pairing"
+      ],
+      "authors": [
+        "Li, Junde",
+        "Yu, Wei-Han",
+        "Chu, Xiangyi",
+        "Li, Yaoxin",
+        "Xu, Jiawei",
+        "Un, Ka-Fai",
+        "Mak, Pui-In"
+      ],
+      "publication": [
+        "2026/11/19"
+      ],
+      "history": "Submission history From: Junde Li [ view email ] [v1] Thu, 19 Nov 2026 19:42:19 UTC (1,918 KB)"
+    },
+    {
+      "id": "2611.26408",
+      "title": [
+        "Training Vision Models for LLM-Driven Weight-Space Programming"
+      ],
+      "authors": [
+        "Ropinski, Timo",
+        "Kranz, Sebastian"
+      ],
+      "publication": [
+        "2026/11/19"
+      ],
+      "history": "Submission history From: Timo Ropinski [ view email ] [v1] Thu, 19 Nov 2026 16:56:27 UTC (4,415 KB)"
+    },
+    {
+      "id": "2611.26450",
+      "title": [
+        "A CPU Inside an LLM: Zero-Gradient Compilation of Exact Circuits into Pretrained Weights"
+      ],
+      "authors": [
+        "Sah, Tanmay"
+      ],
+      "publication": [
+        "2026/11/19"
+      ],
+      "history": "Submission history From: Tanmay Sah [ view email ] [v1] Thu, 19 Nov 2026 17:18:38 UTC (90 KB)"
+    },
+    {
+      "id": "2611.28105",
+      "title": [
+        "Gradient-Free Few-Shot Adaptation of Vision Models via Agentic Coding"
+      ],
+      "authors": [
+        "Islam, Khayrul"
+      ],
+      "publication": [
+        "2026/11/17"
+      ],
+      "history": "Submission history From: Khayrul Islam [ view email ] [v1] Tue, 17 Nov 2026 17:53:36 UTC (299 KB)"
+    },
+    {
+      "id": "2611.29795",
+      "title": [
+        "Dimension Is Free, Horizon Is Not: When Evolution Strategies Rival Policy Gradients for LLM Fine-Tuning"
+      ],
+      "authors": [
+        "Liang, Qiyao",
+        "Schweighofer, Kajetan",
+        "Qiu, Xin",
+        "Miikkulainen, Risto"
+      ],
+      "publication": [
+        "2026/11/22"
+      ],
+      "history": "Submission history From: Qiyao Liang [ view email ] [v1] Sun, 22 Nov 2026 21:54:42 UTC (1,999 KB)"
+    },
+    {
+      "id": "2611.25695",
+      "title": [
+        "DMT-Attack: Diffusion-Prior Texture Search for Closed-Loop Vision-Language-Action Policies"
+      ],
+      "authors": [
+        "Xia, Jun",
+        "Wang, Shangwen",
+        "Ma, Jun",
+        "Ren, Ruichao",
+        "Jia, Zhouyang",
+        "Zhao, Xin",
+        "Liu, Huijun",
+        "Yu, Jie"
+      ],
+      "publication": [
+        "2026/11/19"
+      ],
+      "history": "Submission history From: Jun Xia [ view email ] [v1] Thu, 19 Nov 2026 08:09:25 UTC (10,155 KB)"
+    },
+    {
+      "id": "2611.28592",
+      "title": [
+        "When Fog Becomes a Weapon: Atmospheric Attacks on Visible-Infrared Vision-Language Models"
+      ],
+      "authors": [
+        "Hu, Chengyin",
+        "Zhao, Dehe",
+        "Lu, Dingyi",
+        "Zhang, Qike",
+        "Han, Jiaju",
+        "Nong, Banglong",
+        "Kang, Xu",
+        "Guo, Jiujiang",
+        "Tiliwalidi, Kalibinuer",
+        "Long, Jiahuan"
+      ],
+      "publication": [
+        "2026/11/21"
+      ],
+      "history": "Submission history From: Dehe Zhao [ view email ] [v1] Sat, 21 Nov 2026 05:50:16 UTC (35,309 KB)"
+    },
+    {
+      "id": "2611.28907",
+      "title": [
+        "STRIDE: Strategy-to-Tactics Retrieval-Guided Skill Disclosure and Evolution for Agentic Reinforcement Learning"
+      ],
+      "authors": [
+        "Hong, Shixin",
+        "Cui, Wanqing",
+        "Hu, Yibo",
+        "Xu, Naen",
+        "Huang, Zhiwei",
+        "Jin, Meiguang",
+        "Ma, Junfeng"
+      ],
+      "publication": [
+        "2026/11/21"
+      ],
+      "history": "Submission history From: Shixin Hong [ view email ] [v1] Sat, 21 Nov 2026 16:31:55 UTC (1,123 KB)"
+    }
+  ]
+}

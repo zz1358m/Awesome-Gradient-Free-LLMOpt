@@ -1,0 +1,14 @@
+{
+  "catalog_count": 308,
+  "bibliography_count": 309,
+  "added_count": 13,
+  "new_bib_keys_unique": true,
+  "new_primary_urls_unique": true,
+  "normalized_titles_unique": true,
+  "new_entries_in_both_readmes": true,
+  "original_dirty_worktree_unchanged": true,
+  "skill_candidate_excluded": true,
+  "center_of_mass_not_restored": true,
+  "generator_check": "passed",
+  "git_diff_check": "passed"
+}
